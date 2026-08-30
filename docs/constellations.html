@@ -68,6 +68,13 @@ svg.hov .fmark.hl{opacity:1}
 .pfam{font-size:15px;padding:2px 8px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
 #fcount{color:#E3C377;font-size:11.5px;margin-left:6px}
 footer{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align:center}
+.bar{background:#15131C;border:1px solid #2A2734;border-radius:12px;padding:12px 14px;gap:8px}
+.pchip{padding:3px 10px}
+.pfam{padding:2px 7px}
+#tip{border-radius:8px;box-shadow:0 8px 28px #000A}
+h1{letter-spacing:.06em}
+footer{line-height:1.8}
+::selection{background:#D4AF5E44}
 </style>
 <header>
   <div class="topline">
@@ -2305,5 +2312,7 @@ document.querySelectorAll('.fmark').forEach(a => {
 });
 </script>
 
+<a href="index.html" id="suitehome" title="All spell graphs" aria-label="All spell graphs">✨</a>
+<style>#suitehome{position:fixed;right:16px;bottom:16px;z-index:9;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;text-decoration:none;background:var(--panel,#1D1A23);border:1px solid var(--line,#3a3647);box-shadow:0 4px 16px #0004;opacity:.85}#suitehome:hover{opacity:1;border-color:var(--accent,#D4AF5E)}</style>
 </body>
 </html>

@@ -164,7 +164,7 @@ Spirit Guardians,3,Conjuration,,,,Defense boost,Cleric,yes
 Stinking Cloud,3,Conjuration,,,,Utility & world,Bard/Sorcerer/Wizard,yes
 Tiny Hut,3,Evocation,,,,Defense boost,Bard/Wizard,
 Tongues,3,Divination,,,,Utility & world,Bard/Cleric/Sorcerer/Warlock/Wizard,
-Vampiric Touch,3,Necromancy,,,,Damage,Warlock/Wizard,yes
+Vampiric Touch,3,Necromancy,,,,Resource warfare,Warlock/Wizard,yes
 Water Breathing,3,Transmutation,The Touch-Buff Skeleton,🤝,Shared engine,Mobility,Druid/Ranger/Sorcerer/Wizard,
 Water Walk,3,Transmutation,The Touch-Buff Skeleton,🤝,Shared engine,Mobility,Cleric/Druid/Ranger/Sorcerer,
 Wind Wall,3,Evocation,,,,Damage,Druid/Ranger,

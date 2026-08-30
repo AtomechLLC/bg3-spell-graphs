@@ -65,6 +65,14 @@ code{font:500 13px "IBM Plex Mono",monospace;background:var(--code-bg);padding:1
 footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);
   font-size:12.5px;color:var(--muted)}
 @media (max-width:640px){.prow{grid-template-columns:1fr}}
+::selection{background:color-mix(in srgb,var(--accent) 24%,transparent)}
+h2{text-wrap:balance}
+.prow{transition:background .12s}
+.prow:hover{background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.chip{background:var(--panel)}
+a{color:var(--accent)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion: reduce){.prow{transition:none}}
 </style>
 <main>
 <h1>The Purpose Atlas</h1>
@@ -264,5 +272,7 @@ the Larian Codex (BG3), the Azeroth Codex (WoW Classic), and Spell Constellation
 Game content © Wizards of the Coast / Larian Studios / Blizzard Entertainment; research reference.</footer>
 </main>
 
+<a href="index.html" id="suitehome" title="All spell graphs" aria-label="All spell graphs">✨</a>
+<style>#suitehome{position:fixed;right:16px;bottom:16px;z-index:9;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;text-decoration:none;background:var(--panel,#1D1A23);border:1px solid var(--line,#3a3647);box-shadow:0 4px 16px #0004;opacity:.85}#suitehome:hover{opacity:1;border-color:var(--accent,#D4AF5E)}</style>
 </body>
 </html>

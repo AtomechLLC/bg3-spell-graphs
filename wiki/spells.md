@@ -169,7 +169,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 3 | <img class="sic" data-i="stinking-cloud" alt=""> **Stinking Cloud** | Conjuration | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 3 | **Tiny Hut** | Evocation | — |  | 🛡️ Defense boost | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 3 | **Tongues** | Divination | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 3 | <img class="sic" data-i="vampiric-touch" alt=""> **Vampiric Touch** | Necromancy | — |  | 💥 Damage | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="vampiric-touch" alt=""> **Vampiric Touch** | Necromancy | — |  | 🧛 Resource warfare | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 3 | **Water Breathing** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | <span class="tier tier-engine">Shared engine</span> | 🌀 Mobility | [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 3 | **Water Walk** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | <span class="tier tier-engine">Shared engine</span> | 🌀 Mobility | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
 | 3 | **Wind Wall** | Evocation | — |  | 💥 Damage | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |

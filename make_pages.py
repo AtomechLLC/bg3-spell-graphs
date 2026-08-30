@@ -24,9 +24,16 @@ def wrap(src, dst, emoji):
     m = re.search(r"<title>(.*?)</title>\s*", frag)
     title = m.group(1) if m else dst
     frag = frag.replace(m.group(0), "", 1) if m else frag
+    home = ('<a href="index.html" id="suitehome" title="All spell graphs" '
+            'aria-label="All spell graphs">✨</a>\n'
+            '<style>#suitehome{position:fixed;right:16px;bottom:16px;z-index:9;width:40px;height:40px;'
+            'border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;'
+            'text-decoration:none;background:var(--panel,#1D1A23);border:1px solid var(--line,#3a3647);'
+            'box-shadow:0 4px 16px #0004;opacity:.85}'
+            '#suitehome:hover{opacity:1;border-color:var(--accent,#D4AF5E)}</style>')
     html = (f'<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             f'<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            f'<title>{title}</title>\n{favicon(emoji)}\n</head>\n<body>\n{frag}\n</body>\n</html>\n')
+            f'<title>{title}</title>\n{favicon(emoji)}\n</head>\n<body>\n{frag}\n{home}\n</body>\n</html>\n')
     with open(os.path.join("docs", dst), "w", encoding="utf-8") as f:
         f.write(html)
     print(f"docs/{dst}: {os.path.getsize(os.path.join('docs', dst)) // 1024} KB — {title}")
@@ -43,52 +50,110 @@ INDEX = f"""<!doctype html>
 <title>BG3 Spell Graphs</title>
 {favicon("✨")}
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Alegreya:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Alegreya:ital,wght@0,400;0,600;1,400&family=Spectral:wght@600&family=Marcellus&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 *{{box-sizing:border-box}}
-body{{margin:0;background:#101016;color:#DCD3BF;font:400 16.5px/1.6 Alegreya,Georgia,serif;
-  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:60px 20px 40px}}
-h1{{font:700 34px Cinzel,Georgia,serif;color:#E3C377;margin:0 0 6px;letter-spacing:.05em;
+:root{{
+  --bg:#0F0E14; --panel:#1B1822; --panel-hi:#211D2B; --line:#2E2A3A; --ink:#DCD3BF;
+  --muted:#9A94A8; --gold:#D4AF5E; --gold-ink:#E3C377;
+  --srd:#7BA3EC; --bg3:#E0713F; --wow:#3FBF8B; --atlas:#A79BF0;
+}}
+html{{background:var(--bg)}}
+body{{margin:0;background:
+  radial-gradient(1100px 500px at 50% -140px,#241E3300 0%,#241E3366 45%,#0000 70%),
+  var(--bg);
+  color:var(--ink);font:400 16.5px/1.6 Alegreya,Georgia,serif;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:64px 20px 44px}}
+.eyebrow{{font:500 10.5px "IBM Plex Mono",monospace;color:var(--muted);letter-spacing:.24em;
+  text-transform:uppercase;margin-bottom:14px;text-align:center}}
+h1{{font:700 40px/1.1 Cinzel,Georgia,serif;color:var(--gold-ink);margin:0 0 10px;letter-spacing:.05em;
   text-align:center;text-wrap:balance}}
-.sub{{color:#9A907B;font:400 12.5px "IBM Plex Mono",monospace;margin-bottom:44px;text-align:center}}
-.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;
-  width:100%;max-width:980px}}
-a.card{{display:block;background:#1D1A23;border:1px solid #322D3B;border-radius:10px;
-  padding:26px 24px;color:inherit;text-decoration:none;transition:border-color .15s}}
-a.card:hover{{border-color:#D4AF5E}}
-.card .em{{font-size:30px;display:block;margin-bottom:10px}}
-.card h2{{font:600 19px Cinzel,Georgia,serif;color:#E3C377;margin:0 0 8px}}
-.card p{{margin:0;font-size:14.5px;color:#B4AC99}}
-footer{{margin-top:52px;color:#8a879a;font-size:12px;max-width:760px;text-align:center;line-height:1.7}}
-footer a{{color:#D4AF5E;text-decoration:none}}
+.sub{{color:var(--muted);font:400 15px Alegreya,Georgia,serif;font-style:italic;
+  margin-bottom:26px;text-align:center;max-width:56ch}}
+.stats{{display:flex;gap:0;flex-wrap:wrap;justify-content:center;margin-bottom:52px;
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}}
+.stat{{padding:12px 26px;text-align:center}}
+.stat + .stat{{border-left:1px solid var(--line)}}
+.stat b{{display:block;font:500 21px "IBM Plex Mono",monospace;color:var(--gold-ink);
+  font-variant-numeric:tabular-nums}}
+.stat span{{font:400 10.5px "IBM Plex Mono",monospace;color:var(--muted);
+  letter-spacing:.14em;text-transform:uppercase}}
+.slabel{{width:100%;max-width:1020px;font:500 11px "IBM Plex Mono",monospace;color:var(--muted);
+  letter-spacing:.2em;text-transform:uppercase;margin:0 0 14px;display:flex;align-items:center;gap:14px}}
+.slabel::after{{content:"";flex:1;height:1px;background:var(--line)}}
+.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;
+  width:100%;max-width:1020px;margin-bottom:40px}}
+a.card{{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:22px 22px 24px;color:inherit;text-decoration:none;position:relative;
+  transition:border-color .15s, transform .15s, background .15s}}
+a.card:hover{{border-color:var(--ac);background:var(--panel-hi);transform:translateY(-2px)}}
+a.card:focus-visible{{outline:2px solid var(--ac);outline-offset:2px}}
+.card .em{{width:46px;height:46px;border-radius:10px;display:flex;align-items:center;
+  justify-content:center;font-size:24px;margin-bottom:14px;
+  background:color-mix(in srgb,var(--ac) 13%,transparent);
+  border:1px solid color-mix(in srgb,var(--ac) 30%,transparent)}}
+.card h2{{font:600 19px/1.25 var(--face,Cinzel),Georgia,serif;color:var(--ink);margin:0 0 4px}}
+.card .meta{{font:400 11px "IBM Plex Mono",monospace;color:var(--ac);letter-spacing:.06em;
+  margin-bottom:10px;font-variant-numeric:tabular-nums}}
+.card p{{margin:0;font-size:14px;line-height:1.55;color:var(--muted)}}
+footer{{margin-top:16px;color:#8a879a;font-size:12px;max-width:760px;text-align:center;line-height:1.75}}
+footer a{{color:var(--gold)}}
+footer a:hover{{color:var(--gold-ink)}}
+@media (prefers-reduced-motion: reduce){{a.card{{transition:none}}a.card:hover{{transform:none}}}}
+@media (max-width:560px){{.stat{{padding:10px 16px}}h1{{font-size:31px}}}}
 </style>
 </head>
 <body>
+<div class="eyebrow">Atomech · skill-homogeneity research</div>
 <h1>BG3 Spell Graphs</h1>
-<div class="sub">how often a game re-sells the same spell design — d&amp;d 5e srd vs. baldur's gate 3</div>
+<div class="sub">how often a game re-sells the same spell design —
+D&amp;D 5e, Baldur's Gate&nbsp;3, and WoW Classic, measured on their own data</div>
+<div class="stats">
+  <div class="stat"><b>953</b><span>abilities</span></div>
+  <div class="stat"><b>3</b><span>games</span></div>
+  <div class="stat"><b>86</b><span>families</span></div>
+  <div class="stat"><b>19</b><span>purposes</span></div>
+</div>
+<div class="slabel">The codices</div>
 <div class="cards">
-<a class="card" href="constellations.html"><span class="em">🌌</span><h2>Spell Constellations</h2>
-<p>Interactive cluster map of all 213 BG3 class spells — switch between family, class, and school
-layouts; toggle picker chips to light up overlaps.</p></a>
-<a class="card" href="azeroth-constellations.html"><span class="em">🌠</span><h2>Azeroth Constellations</h2>
-<p>The WoW twin of the cluster map: 423 classic abilities in four layouts — family, class, school,
-and the WoW-remapped purpose taxonomy — with the same overlap pickers.</p></a>
-<a class="card" href="larian-codex.html"><span class="em">🦑</span><h2>The Larian Codex</h2>
-<p>The homogeneity analysis on BG3's own game data: 19 template families, 28 container spells,
-duplicate SKUs, the surface engine, and the upcast clone farm.</p></a>
-<a class="card" href="reskin-codex.html"><span class="em">🧬</span><h2>The Reskin Codex</h2>
-<p>The tabletop companion: all 319 D&amp;D 5e SRD spells — 24 families of near-identical design,
-per-class lists, and the cross-class overlap matrix.</p></a>
-<a class="card" href="azeroth-codex.html"><span class="em">🐉</span><h2>The Azeroth Codex</h2>
-<p>WoW Classic's 423 trainer abilities from the game's own data: 32 function-primary families at
-100% coverage, the mechanical-twin matrix, the rank clone farm, and the Effects Ledger.</p></a>
-<a class="card" href="purpose-atlas.html"><span class="em">🎯</span><h2>The Purpose Atlas</h2>
-<p>What every spell is <em>for</em>: 953 abilities across all three games in one nineteen-purpose
-taxonomy — and the divergences that reveal each medium's design priorities.</p></a>
+<a class="card" href="reskin-codex.html" style="--ac:var(--srd);--face:Spectral">
+<span class="em">🧬</span><h2>The Reskin Codex</h2>
+<div class="meta">D&amp;D 5e SRD · 319 spells · 24 families</div>
+<p>The tabletop baseline: families of near-identical design, per-class lists, and the
+cross-class overlap matrix — similarity measured on masked spell text.</p></a>
+<a class="card" href="larian-codex.html" style="--ac:var(--bg3);--face:Cinzel">
+<span class="em">🦑</span><h2>The Larian Codex</h2>
+<div class="meta">Baldur's Gate 3 · 211 spells · 30 families · 96% familied</div>
+<p>The video-game port measured on its own game data: 28 container spells, the surface engine,
+the upcast clone farm, duplicate SKUs, and the mechanical-twin matrix.</p></a>
+<a class="card" href="azeroth-codex.html" style="--ac:var(--wow);--face:Marcellus">
+<span class="em">🐉</span><h2>The Azeroth Codex</h2>
+<div class="meta">WoW Classic · 423 abilities · 32 families · 100% familied</div>
+<p>Every trainer ability from the client's own tables, in function-primary families —
+plus the rank clone farm, the twin matrix, and the Effects Ledger.</p></a>
+</div>
+<div class="slabel">The sky charts &amp; the atlas</div>
+<div class="cards">
+<a class="card" href="constellations.html" style="--ac:var(--gold);--face:Cinzel">
+<span class="em">🌌</span><h2>Spell Constellations</h2>
+<div class="meta">BG3 · 211 spells · 4 layouts</div>
+<p>The interactive cluster map — family, class, school, and purpose layouts, with picker
+chips that light up overlaps and hotkeys to cycle every group.</p></a>
+<a class="card" href="azeroth-constellations.html" style="--ac:var(--gold);--face:Cinzel">
+<span class="em">🌠</span><h2>Azeroth Constellations</h2>
+<div class="meta">WoW Classic · 423 abilities · 4 layouts</div>
+<p>The WoW twin of the cluster map, drawn from blended effect-signature similarity —
+same layouts, same overlap pickers, same hotkeys.</p></a>
+<a class="card" href="purpose-atlas.html" style="--ac:var(--atlas);--face:Spectral">
+<span class="em">🎯</span><h2>The Purpose Atlas</h2>
+<div class="meta">All three games · 953 abilities · 19 purposes</div>
+<p>What every spell is <em>for</em> — one functional taxonomy across all three games, and the
+divergences that reveal each medium's design priorities.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
-Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast, shown for research
-reference. Pipeline and sources: <a href="https://github.com/AtomechLLC/bg3-spell-graphs">github.com/AtomechLLC/bg3-spell-graphs</a></footer>
+Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data
+© Blizzard Entertainment — shown for research reference.
+Pipeline and sources: <a href="https://github.com/AtomechLLC/bg3-spell-graphs">github.com/AtomechLLC/bg3-spell-graphs</a></footer>
 </body>
 </html>
 """

@@ -464,6 +464,13 @@ svg.hov .fmark.hl{{opacity:1}}
 .pfam{{font-size:15px;padding:2px 8px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}}
 #fcount{{color:#E3C377;font-size:11.5px;margin-left:6px}}
 footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align:center}}
+.bar{{background:#15131C;border:1px solid #2A2734;border-radius:12px;padding:12px 14px;gap:8px}}
+.pchip{{padding:3px 10px}}
+.pfam{{padding:2px 7px}}
+#tip{{border-radius:8px;box-shadow:0 8px 28px #000A}}
+h1{{letter-spacing:.06em}}
+footer{{line-height:1.8}}
+::selection{{background:#D4AF5E44}}
 </style>
 <header>
   <div class="topline">

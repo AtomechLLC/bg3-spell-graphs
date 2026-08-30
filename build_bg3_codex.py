@@ -826,7 +826,17 @@ nav .femoji{display:inline-block;width:20px;font-size:13px}
 }
 @media (prefers-reduced-motion: reduce){nav{transition:none}}
 footer{max-width:76ch;margin:50px auto 0;padding-top:14px;border-top:1px solid var(--line);
-  font-size:12.5px;color:var(--muted)}
+  font-size:12.5px;color:var(--muted);line-height:1.75}
+::selection{background:color-mix(in srgb,var(--accent) 26%,transparent)}
+h2,h3{text-wrap:balance}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+nav{scrollbar-width:thin;scrollbar-color:var(--line) transparent;overscroll-behavior:contain}
+.crumb{text-transform:uppercase;letter-spacing:.11em;font-size:10.5px}
+.tw{border-radius:8px}
+tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--ink) 3%,transparent)}
+tbody tr:hover td{background:color-mix(in srgb,var(--accent) 10%,transparent)}
+.tier{border:1px solid color-mix(in srgb,currentColor 30%,transparent)}
+.sic{background:var(--panel);border:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
 </style>
 <button id="menu" aria-label="Menu">☰ pages</button>
 <div class="layout">
