@@ -1,6 +1,6 @@
 # Priest Spellbook (Classic)
 
-**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **21** in an identified family (48%)
+**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **22** in an identified family (50%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]], **9%** with [[classes/druid|Druid]], **7%** with [[classes/shaman|Shaman]] — and **20%** twinned inside its own book.
 
@@ -16,7 +16,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 36 | <img class="sic" data-i="dispel-magic" alt=""> **Dispel Magic** | Holy | 2 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 40 | <img class="sic" data-i="power-infusion" alt=""> **Power Infusion** | Holy | 1 | — |
 | 44 | <img class="sic" data-i="mind-vision" alt=""> **Mind Vision** | Shadow | 2 | — |
-| 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Shadow | 3 | — |
+| 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Shadow | 3 | [[families/soothe|🕊️ The Soothe Pair]] |
 | 54 | <img class="sic" data-i="smite" alt=""> **Smite** | Holy | 8 | [[families/bolts|🏹 The Bolt Engine]] |
 | 56 | <img class="sic" data-i="flash-heal" alt=""> **Flash Heal** | Holy | 7 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
 | 56 | <img class="sic" data-i="mana-burn" alt=""> **Mana Burn** | Shadow | 5 | — |

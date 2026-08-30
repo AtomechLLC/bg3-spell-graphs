@@ -1,6 +1,6 @@
 # Rogue Spellbook (Classic)
 
-**30 abilities** (95 spellbook entries counting ranks — 68% of the book is rank copies) · **10** in an identified family (33%)
+**30 abilities** (95 spellbook entries counting ranks — 68% of the book is rank copies) · **11** in an identified family (37%)
 
 Mechanical twins (effect similarity ≥ 0.75): **20%** with [[classes/druid|Druid]], **3%** with [[classes/warrior|Warrior]], **0%** with [[classes/warlock|Warlock]] — and **17%** twinned inside its own book.
 
@@ -17,7 +17,7 @@ Mechanical twins (effect similarity ≥ 0.75): **20%** with [[classes/druid|Drui
 | 30 | <img class="sic" data-i="disarm-trap" alt=""> **Disarm Trap** | Physical | 1 | — |
 | 34 | <img class="sic" data-i="blind" alt=""> **Blind** | Nature | 1 | — |
 | 38 | <img class="sic" data-i="mind-numbing-poison-ii" alt=""> **Mind-numbing Poison II** | Physical | 1 | [[families/poisons|🧪 The Numbered Vials]] |
-| 40 | <img class="sic" data-i="safe-fall" alt=""> **Safe Fall** | Physical | 1 | — |
+| 40 | <img class="sic" data-i="safe-fall" alt=""> **Safe Fall** | Physical | 1 | [[families/cat-is-rogue|🐱 The Druid Costume Shop]] |
 | 42 | <img class="sic" data-i="slice-and-dice" alt=""> **Slice and Dice** | Physical | 2 | — |
 | 42 | <img class="sic" data-i="vanish" alt=""> **Vanish** | Physical | 2 | — |
 | 48 | <img class="sic" data-i="sap" alt=""> **Sap** | Physical | 3 | — |

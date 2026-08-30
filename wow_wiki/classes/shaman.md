@@ -1,6 +1,6 @@
 # Shaman Spellbook (Classic)
 
-**45 abilities** (166 spellbook entries counting ranks — 73% of the book is rank copies) · **30** in an identified family (67%)
+**45 abilities** (166 spellbook entries counting ranks — 73% of the book is rank copies) · **31** in an identified family (69%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Druid]], **9%** with [[classes/priest|Priest]], **4%** with [[classes/paladin|Paladin]] — and **58%** twinned inside its own book.
 
@@ -18,7 +18,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Drui
 | 30 | <img class="sic" data-i="astral-recall" alt=""> **Astral Recall** | Nature | 1 | — |
 | 30 | <img class="sic" data-i="grounding-totem" alt=""> **Grounding Totem** | Nature | 1 | [[families/totems|🗿 The Totem Foundry]] |
 | 30 | <img class="sic" data-i="reincarnation" alt=""> **Reincarnation** | Nature | 1 | — |
-| 32 | <img class="sic" data-i="purge" alt=""> **Purge** | Nature | 2 | — |
+| 32 | <img class="sic" data-i="purge" alt=""> **Purge** | Nature | 2 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 34 | <img class="sic" data-i="sentry-totem" alt=""> **Sentry Totem** | Nature | 1 | — |
 | 38 | <img class="sic" data-i="disease-cleansing-totem" alt=""> **Disease Cleansing Totem** | Nature | 1 | [[families/totems|🗿 The Totem Foundry]] |
 | 52 | <img class="sic" data-i="fire-nova-totem" alt=""> **Fire Nova Totem** | Fire | 5 | [[families/totems|🗿 The Totem Foundry]] |

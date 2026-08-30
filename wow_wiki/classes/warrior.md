@@ -1,6 +1,6 @@
 # Warrior Spellbook (Classic)
 
-**34 abilities** (108 spellbook entries counting ranks — 69% of the book is rank copies) · **6** in an identified family (18%)
+**34 abilities** (108 spellbook entries counting ranks — 69% of the book is rank copies) · **8** in an identified family (24%)
 
 Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/druid|Druid]], **3%** with [[classes/warlock|Warlock]], **3%** with [[classes/shaman|Shaman]] — and **0%** twinned inside its own book.
 
@@ -19,9 +19,9 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/druid|Druid
 | 30 | <img class="sic" data-i="berserker-stance" alt=""> **Berserker Stance** | Physical | 1 | — |
 | 32 | <img class="sic" data-i="berserker-rage" alt=""> **Berserker Rage** | Physical | 1 | — |
 | 36 | <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Physical | 1 | — |
-| 46 | <img class="sic" data-i="charge" alt=""> **Charge** | Physical | 3 | — |
+| 46 | <img class="sic" data-i="charge" alt=""> **Charge** | Physical | 3 | [[families/gap-closers|🏃 The Gap Closers]] |
 | 50 | <img class="sic" data-i="recklessness" alt=""> **Recklessness** | Physical | 1 | — |
-| 52 | <img class="sic" data-i="intercept" alt=""> **Intercept** | Physical | 3 | — |
+| 52 | <img class="sic" data-i="intercept" alt=""> **Intercept** | Physical | 3 | [[families/gap-closers|🏃 The Gap Closers]] |
 | 52 | <img class="sic" data-i="shield-bash" alt=""> **Shield Bash** | Physical | 3 | [[families/interrupts|✋ The Interrupt Union]] |
 | 54 | <img class="sic" data-i="demoralizing-shout" alt=""> **Demoralizing Shout** | Physical | 5 | — |
 | 54 | <img class="sic" data-i="hamstring" alt=""> **Hamstring** | Physical | 3 | — |

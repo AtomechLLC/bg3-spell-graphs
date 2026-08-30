@@ -1,6 +1,6 @@
 # Hunter Spellbook (Classic)
 
-**54 abilities** (140 spellbook entries counting ranks — 61% of the book is rank copies) · **24** in an identified family (44%)
+**54 abilities** (140 spellbook entries counting ranks — 61% of the book is rank copies) · **28** in an identified family (52%)
 
 Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Warlock]], **13%** with [[classes/druid|Druid]], **4%** with [[classes/paladin|Paladin]] — and **31%** twinned inside its own book.
 
@@ -26,7 +26,7 @@ Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Wa
 | 24 | <img class="sic" data-i="track-hidden" alt=""> **Track Hidden** | Physical | 1 | [[families/tracking|🐾 The Tracking Dial]] |
 | 26 | <img class="sic" data-i="rapid-fire" alt=""> **Rapid Fire** | Arcane | 1 | — |
 | 26 | <img class="sic" data-i="track-elementals" alt=""> **Track Elementals** | Physical | 1 | [[families/tracking|🐾 The Tracking Dial]] |
-| 28 | <img class="sic" data-i="frost-trap" alt=""> **Frost Trap** | Frost | 1 | — |
+| 28 | <img class="sic" data-i="frost-trap" alt=""> **Frost Trap** | Frost | 1 | [[families/traps|🪤 The Trap Line]] |
 | 30 | <img class="sic" data-i="aspect-of-the-beast" alt=""> **Aspect of the Beast** | Nature | 1 | [[families/aspects|🦅 The Aspect Dial]] |
 | 30 | <img class="sic" data-i="feign-death" alt=""> **Feign Death** | Physical | 1 | — |
 | 32 | <img class="sic" data-i="flare" alt=""> **Flare** | Arcane | 1 | — |
@@ -39,9 +39,9 @@ Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Wa
 | 50 | <img class="sic" data-i="track-dragonkin" alt=""> **Track Dragonkin** | Physical | 1 | [[families/tracking|🐾 The Tracking Dial]] |
 | 52 | <img class="sic" data-i="scorpid-sting" alt=""> **Scorpid Sting** | Nature | 4 | [[families/stings|🦂 The Sting Clip]] |
 | 54 | <img class="sic" data-i="counterattack" alt=""> **Counterattack** | Physical | 3 | — |
-| 54 | <img class="sic" data-i="explosive-trap" alt=""> **Explosive Trap** | Fire | 3 | — |
+| 54 | <img class="sic" data-i="explosive-trap" alt=""> **Explosive Trap** | Fire | 3 | [[families/traps|🪤 The Trap Line]] |
 | 56 | <img class="sic" data-i="aspect-of-the-wild" alt=""> **Aspect of the Wild** | Nature | 2 | [[families/aspects|🦅 The Aspect Dial]] |
-| 56 | <img class="sic" data-i="immolation-trap" alt=""> **Immolation Trap** | Fire | 5 | — |
+| 56 | <img class="sic" data-i="immolation-trap" alt=""> **Immolation Trap** | Fire | 5 | [[families/traps|🪤 The Trap Line]] |
 | 56 | <img class="sic" data-i="raptor-strike" alt=""> **Raptor Strike** | Physical | 8 | — |
 | 56 | <img class="sic" data-i="scorpid-poison" alt=""> **Scorpid Poison** | Physical | 4 | — |
 | 56 | <img class="sic" data-i="viper-sting" alt=""> **Viper Sting** | Nature | 3 | [[families/stings|🦂 The Sting Clip]] |
@@ -52,7 +52,7 @@ Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Wa
 | 60 | <img class="sic" data-i="aspect-of-the-hawk" alt=""> **Aspect of the Hawk** | Nature | 7 | [[families/aspects|🦅 The Aspect Dial]] |
 | 60 | <img class="sic" data-i="black-arrow" alt=""> **Black Arrow** | Shadow | 2 | — |
 | 60 | <img class="sic" data-i="distracting-shot" alt=""> **Distracting Shot** | Arcane | 6 | — |
-| 60 | <img class="sic" data-i="freezing-trap" alt=""> **Freezing Trap** | Frost | 3 | — |
+| 60 | <img class="sic" data-i="freezing-trap" alt=""> **Freezing Trap** | Frost | 3 | [[families/traps|🪤 The Trap Line]] |
 | 60 | <img class="sic" data-i="lightning-breath" alt=""> **Lightning Breath** | Physical | 6 | — |
 | 60 | <img class="sic" data-i="mend-pet" alt=""> **Mend Pet** | Nature | 7 | — |
 | 60 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Physical | 5 | — |

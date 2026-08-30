@@ -98,7 +98,7 @@ Track Elementals,Hunter,26,Physical,1,The Tracking Dial,Verbatim clone,Informati
 Challenging Roar,Druid,28,Physical,1,The Druid Costume Shop,Verbatim clone,Threat control
 Conjure Mana Agate,Mage,28,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Firestone (Lesser),Warlock,28,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
-Frost Trap,Hunter,28,Frost,1,,,Disables
+Frost Trap,Hunter,28,Frost,1,The Trap Line,Shared template,Disables
 Shield Wall,Warrior,28,Physical,1,,,Defense boost
 Water Walking,Shaman,28,Nature,1,,,Mobility
 Aspect of the Beast,Hunter,30,Nature,1,The Aspect Dial,Shared template,Role shift
@@ -118,7 +118,7 @@ Travel Form,Druid,30,Physical,1,,,Mobility
 Abolish Disease,Priest,32,Holy,1,The Cleanse Counter,Verbatim clone,Negation
 Berserker Rage,Warrior,32,Physical,1,,,Disables
 Flare,Hunter,32,Arcane,1,,,Deception & stealth
-Purge,Shaman,32,Nature,2,,,Negation
+Purge,Shaman,32,Nature,2,The Cleanse Counter,Verbatim clone,Negation
 Track Demons,Hunter,32,Physical,1,The Tracking Dial,Verbatim clone,Information
 Track Humanoids,Druid,32,Physical,1,The Tracking Dial,Verbatim clone,Information
 Blind,Rogue,34,Nature,1,,,Disables
@@ -140,14 +140,14 @@ Aspect of the Pack,Hunter,40,Nature,1,The Aspect Dial,Shared template,Role shift
 Combustion,Mage,40,Fire,1,,,Damage
 Create Soulstone,Warlock,40,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Dire Bear Form,Druid,40,Physical,1,,,Role shift
-Feline Grace,Druid,40,Physical,1,,,Damage
+Feline Grace,Druid,40,Physical,1,The Druid Costume Shop,Verbatim clone,Damage
 Moonkin Form,Druid,40,Physical,1,,,Role shift
 Portal: Ironforge,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Orgrimmar,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Stormwind,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Undercity,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Power Infusion,Priest,40,Holy,1,,,Offense boost
-Safe Fall,Rogue,40,Physical,1,,,Damage
+Safe Fall,Rogue,40,Physical,1,The Druid Costume Shop,Verbatim clone,Damage
 Summon Felsteed,Warlock,40,Shadow,1,The Menagerie,Shared template,Creating entities
 Summon Warhorse,Paladin,40,Holy,1,The Menagerie,Shared template,Creating entities
 Track Giants,Hunter,40,Physical,1,The Tracking Dial,Verbatim clone,Information
@@ -157,7 +157,7 @@ Vanish,Rogue,42,Physical,2,,,Deception & stealth
 Barkskin,Druid,44,Nature,1,,,Disables
 Mind Vision,Priest,44,Shadow,2,,,Information
 Bash,Druid,46,Physical,3,,,Disables
-Charge,Warrior,46,Physical,3,,,Provisioning
+Charge,Warrior,46,Physical,3,The Gap Closers,Verbatim clone,Provisioning
 Create Firestone (Greater),Warlock,46,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Healthstone (Greater),Warlock,46,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
 Dash,Druid,46,Physical,2,,,Mobility
@@ -182,10 +182,10 @@ Track Dragonkin,Hunter,50,Physical,1,The Tracking Dial,Verbatim clone,Informatio
 Cower,Druid,52,Physical,3,The Druid Costume Shop,Verbatim clone,Threat control
 Curse of Weakness,Warlock,52,Shadow,6,The Curse Catalogue,Shared template,Degradation
 Demoralizing Roar,Druid,52,Physical,5,,,Offense boost
-Drain Soul,Warlock,52,Shadow,4,,,Resource warfare
+Drain Soul,Warlock,52,Shadow,4,The Shard Economy,Shared engine,Resource warfare
 Fire Nova Totem,Shaman,52,Fire,5,The Totem Foundry,Shared template,Creating entities
-Intercept,Warrior,52,Physical,3,,,Disables
-Mind Soothe,Priest,52,Shadow,3,,,Degradation
+Intercept,Warrior,52,Physical,3,The Gap Closers,Verbatim clone,Disables
+Mind Soothe,Priest,52,Shadow,3,The Soothe Pair,Verbatim clone,Degradation
 Mind-numbing Poison III,Rogue,52,Physical,1,The Numbered Vials,Verbatim clone,Degradation
 Scorpid Sting,Hunter,52,Nature,4,The Sting Clip,Verbatim clone,Degradation
 Seal of the Crusader,Paladin,52,Holy,6,The Seal Press,Shared template,Offense boost
@@ -201,7 +201,7 @@ Counterattack,Hunter,54,Physical,3,,,Disables
 Demoralizing Shout,Warrior,54,Physical,5,,,Degradation
 Drain Life,Warlock,54,Shadow,6,,,Resource warfare
 Drain Mana,Warlock,54,Shadow,4,,,Resource warfare
-Explosive Trap,Hunter,54,Fire,3,,,Role shift
+Explosive Trap,Hunter,54,Fire,3,The Trap Line,Shared template,Role shift
 Faerie Fire,Druid,54,Nature,4,,,Degradation
 Faerie Fire (Feral),Druid,54,Nature,4,,,Degradation
 Fire Blast,Mage,54,Fire,7,,,Damage
@@ -218,7 +218,7 @@ Shred,Druid,54,Physical,5,The Druid Costume Shop,Verbatim clone,Damage
 Sinister Strike,Rogue,54,Physical,8,,,Damage
 Slam,Warrior,54,Physical,4,,,Damage
 Smite,Priest,54,Holy,8,The Bolt Engine,Shared engine,Damage
-Soothe Animal,Druid,54,Nature,3,,,Degradation
+Soothe Animal,Druid,54,Nature,3,The Soothe Pair,Verbatim clone,Degradation
 Stoneskin Totem,Shaman,54,Nature,6,The Totem Foundry,Shared template,Creating entities
 Swipe,Druid,54,Physical,5,,,Damage
 Thorns,Druid,54,Nature,6,,,Defense boost
@@ -239,7 +239,7 @@ Flametongue Weapon,Shaman,56,Fire,6,,,Offense boost
 Flash Heal,Priest,56,Holy,7,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Frenzied Regeneration,Druid,56,Physical,3,,,Healing & revival
 Frost Resistance Aura,Paladin,56,Holy,3,The Status Boost Rack,Shared template,Defense boost
-Immolation Trap,Hunter,56,Fire,5,,,Role shift
+Immolation Trap,Hunter,56,Fire,5,The Trap Line,Shared template,Role shift
 Life Tap,Warlock,56,Shadow,6,,,Resource warfare
 Lightning Bolt,Shaman,56,Nature,10,The Bolt Engine,Shared engine,Damage
 Lightning Shield,Shaman,56,Nature,7,,,Defense boost
@@ -254,7 +254,7 @@ Raptor Strike,Hunter,56,Physical,8,,,Damage
 Retribution Aura,Paladin,56,Holy,5,The Status Boost Rack,Shared template,Damage
 Scorpid Poison,Hunter,56,Physical,4,,,Damage
 Shadow Protection,Priest,56,Shadow,3,The Status Boost Rack,Shared template,Defense boost
-Shadowburn,Warlock,56,Shadow,6,,,Damage
+Shadowburn,Warlock,56,Shadow,6,The Shard Economy,Shared engine,Damage
 Soul Fire,Warlock,56,Fire,2,,,Damage
 Viper Sting,Hunter,56,Nature,3,The Sting Clip,Verbatim clone,Resource warfare
 Windwall Totem,Shaman,56,Nature,3,The Totem Foundry,Shared template,Creating entities
@@ -343,7 +343,7 @@ Fire Resistance Aura,Paladin,60,Holy,3,The Status Boost Rack,Shared template,Def
 Fire Ward,Mage,60,Fire,5,The Protection Rack,Shared template,Defense boost
 Fireball,Mage,60,Fire,12,The Bolt Engine,Shared engine,Damage
 Flame Shock,Shaman,60,Fire,6,The Shock Battery,Verbatim clone,Damage
-Freezing Trap,Hunter,60,Frost,3,,,Role shift
+Freezing Trap,Hunter,60,Frost,3,The Trap Line,Shared template,Role shift
 Frost Ward,Mage,60,Frost,5,The Protection Rack,Shared template,Defense boost
 Frostbolt,Mage,60,Frost,11,The Bolt Engine,Shared engine,Damage
 Gift of the Wild,Druid,60,Nature,2,The Status Boost Rack,Shared template,Offense boost

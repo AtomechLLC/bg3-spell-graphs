@@ -22,6 +22,9 @@ EFFECT_NAME = {
     59: "Open Lock (item)", 60: "Proficiency", 61: "Send Event", 62: "Power Burn",
     63: "Threat", 64: "Trigger Spell", 65: "Health Funnel", 66: "Power Funnel",
     114: "Taunt", 30: "Give Power",
+    47: "Trade Skill Window", 71: "Pickpocket", 79: "Sanctuary (drop combat)",
+    96: "Charge", 101: "Feed Pet", 167: "Sense Undead", 320: "Summon Trap",
+    329: "Resurrect",
     67: "Heal Max Health", 68: "Interrupt Cast", 69: "Distract", 70: "Pull",
     75: "Attack Me", 77: "Script Effect", 80: "Add Combo Points", 83: "Duel",
     85: "Summon Player", 88: "Feed Pet", 89: "Dismiss Pet", 94: "Self Resurrect",
@@ -63,6 +66,12 @@ AURA_NAME = {
     129: "Mod Speed Always", 132: "Mod Increase Energy %", 133: "Mod Increase Health %",
     149: "Decrease Pushback Time by %",
     134: "Mod Manaregen Interrupt", 135: "Mod Healing Done", 138: "Mod Haste",
+    86: "Create Soul Shard on Death", 88: "Periodic Health Funnel",
+    91: "Mod Detect Range", 92: "Prevent Fleeing", 93: "Unattackable",
+    100: "Detect Magic Aura", 113: "Reduce Fall Damage",
+    117: "Mod Mechanic Resistance", 120: "Untrackable", 121: "Empathy",
+    136: "Mod Healing Done %", 137: "Mod Total Stat %", 144: "Safe Fall",
+    161: "Mod Health Regen %", 562: "Split Damage %",
 }
 STAT = {-1: "All Stats", 0: "Strength", 1: "Agility", 2: "Stamina",
         3: "Intellect", 4: "Spirit"}

@@ -1,6 +1,6 @@
 # Warlock Spellbook (Classic)
 
-**65 abilities** (165 spellbook entries counting ranks — 61% of the book is rank copies) · **43** in an identified family (66%)
+**65 abilities** (165 spellbook entries counting ranks — 61% of the book is rank copies) · **45** in an identified family (69%)
 
 Mechanical twins (effect similarity ≥ 0.75): **6%** with [[classes/paladin|Paladin]], **3%** with [[classes/priest|Priest]], **3%** with [[classes/mage|Mage]] — and **58%** twinned inside its own book.
 
@@ -38,7 +38,7 @@ Mechanical twins (effect similarity ≥ 0.75): **6%** with [[classes/paladin|Pal
 | 50 | <img class="sic" data-i="detect-greater-invisibility" alt=""> **Detect Greater Invisibility** | Shadow | 1 | — |
 | 50 | <img class="sic" data-i="inferno" alt=""> **Inferno** | Shadow | 1 | [[families/summons|😈 The Menagerie]] |
 | 52 | <img class="sic" data-i="curse-of-weakness" alt=""> **Curse of Weakness** | Shadow | 6 | [[families/curses|💀 The Curse Catalogue]] |
-| 52 | <img class="sic" data-i="drain-soul" alt=""> **Drain Soul** | Shadow | 4 | — |
+| 52 | <img class="sic" data-i="drain-soul" alt=""> **Drain Soul** | Shadow | 4 | [[families/shards|🔮 The Shard Economy]] |
 | 54 | <img class="sic" data-i="drain-life" alt=""> **Drain Life** | Shadow | 6 | — |
 | 54 | <img class="sic" data-i="drain-mana" alt=""> **Drain Mana** | Shadow | 4 | — |
 | 54 | <img class="sic" data-i="hellfire" alt=""> **Hellfire** | Fire | 3 | — |
@@ -48,7 +48,7 @@ Mechanical twins (effect similarity ≥ 0.75): **6%** with [[classes/paladin|Pal
 | 56 | <img class="sic" data-i="curse-of-shadow" alt=""> **Curse of Shadow** | Shadow | 2 | [[families/curses|💀 The Curse Catalogue]] |
 | 56 | <img class="sic" data-i="fear" alt=""> **Fear** | Shadow | 3 | [[families/fears|😱 The Fear Franchise]] |
 | 56 | <img class="sic" data-i="life-tap" alt=""> **Life Tap** | Shadow | 6 | — |
-| 56 | <img class="sic" data-i="shadowburn" alt=""> **Shadowburn** | Shadow | 6 | — |
+| 56 | <img class="sic" data-i="shadowburn" alt=""> **Shadowburn** | Shadow | 6 | [[families/shards|🔮 The Shard Economy]] |
 | 56 | <img class="sic" data-i="soul-fire" alt=""> **Soul Fire** | Fire | 2 | — |
 | 58 | <img class="sic" data-i="create-healthstone-major" alt=""> **Create Healthstone (Major)** | Shadow | 1 | [[families/conjured|💎 The Conjured Commissary]] |
 | 58 | <img class="sic" data-i="curse-of-agony" alt=""> **Curse of Agony** | Shadow | 5 | [[families/curses|💀 The Curse Catalogue]] |

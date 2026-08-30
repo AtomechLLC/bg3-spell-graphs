@@ -849,11 +849,18 @@
 },
 "5502": {
 "name": "Sense Undead",
-"effects": []
+"effects": [
+"Apply Aura: Track Creatures (Undead)",
+"Update Player Phase"
+]
 },
 "19746": {
 "name": "Concentration Aura",
-"effects": []
+"effects": [
+"Apply Area Aura: Decrease Pushback Time by % (Arcane, Fire, Frost, Holy, Nature, Physical, Shadow)",
+"Apply Area Aura: Give % Chance to Resist Mechanic (Interrupted)",
+"Apply Area Aura: Give % Chance to Resist Mechanic (Silenced)"
+]
 },
 "20164": {
 "name": "Seal of Justice",
@@ -865,7 +872,11 @@
 },
 "19752": {
 "name": "Divine Intervention",
-"effects": []
+"effects": [
+"Abort All Pending Attacks",
+"Trigger Spell\nDivine Intervention",
+"Instakill"
+]
 },
 "20218": {
 "name": "Sanctity Aura",
@@ -1041,7 +1052,10 @@
 },
 "10060": {
 "name": "Power Infusion",
-"effects": []
+"effects": [
+"Apply Aura: Mod Healing Power - % (All)",
+"Apply Aura: Mod Damage Done % (All)"
+]
 },
 "10909": {
 "name": "Mind Vision",
@@ -1109,7 +1123,10 @@
 },
 "19293": {
 "name": "Elune's Grace",
-"effects": []
+"effects": [
+"Apply Aura: Mod Ranged Damage Taken - Flat (1)",
+"Apply Aura: Mod Dodge %"
+]
 },
 "10942": {
 "name": "Fade",
@@ -1237,7 +1254,11 @@
 },
 "1857": {
 "name": "Vanish",
-"effects": []
+"effects": [
+"Trigger Spell\nVanish",
+"Trigger Spell\nVanish Purge",
+"Abort All Pending Attacks"
+]
 },
 "11297": {
 "name": "Sap",
@@ -1493,7 +1514,10 @@
 },
 "696": {
 "name": "Demon Skin",
-"effects": []
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Regen Health - Works in Combat"
+]
 },
 "697": {
 "name": "Summon Voidwalker",
@@ -1613,7 +1637,11 @@
 },
 "11675": {
 "name": "Drain Soul",
-"effects": []
+"effects": [
+"Apply Aura: Create Item on Death\nSoul Shard",
+"Apply Aura: Periodic Damage",
+"Apply Aura: Proc Trigger Spell"
+]
 },
 "11700": {
 "name": "Drain Life",
@@ -1637,7 +1665,11 @@
 },
 "11717": {
 "name": "Curse of Recklessness",
-"effects": []
+"effects": [
+"Apply Aura: Mod Melee Attack Power",
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Cannot Flee"
+]
 },
 "17937": {
 "name": "Curse of Shadow",
@@ -1653,7 +1685,10 @@
 },
 "18871": {
 "name": "Shadowburn",
-"effects": []
+"effects": [
+"Apply Aura: Create Item on Death\nSoul Shard",
+"School Damage (Shadow)"
+]
 },
 "17924": {
 "name": "Soul Fire",
@@ -1717,11 +1752,18 @@
 },
 "11735": {
 "name": "Demon Armor",
-"effects": []
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Mod Resistance (Shadow)",
+"Apply Aura: Regen Health - Works in Combat"
+]
 },
 "11695": {
 "name": "Health Funnel",
-"effects": []
+"effects": [
+"Apply Aura: Periodic Heal",
+"Apply Aura: Mod Health Regen %"
+]
 },
 "25309": {
 "name": "Immolate",
@@ -1797,7 +1839,11 @@
 },
 "11578": {
 "name": "Charge",
-"effects": []
+"effects": [
+"Charge",
+"Give Power (Rage)",
+"Trigger Spell\nCharge Stun"
+]
 },
 "1719": {
 "name": "Recklessness",
@@ -1805,7 +1851,10 @@
 },
 "20617": {
 "name": "Intercept",
-"effects": []
+"effects": [
+"Charge",
+"Trigger Spell\nIntercept Stun"
+]
 },
 "1672": {
 "name": "Shield Bash",

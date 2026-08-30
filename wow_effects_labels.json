@@ -120,7 +120,7 @@
 "20719": {
 "name": "Feline Grace",
 "effects": [
-"Apply Aura: Aura #144"
+"Apply Aura: Safe Fall"
 ],
 "source": "client-db"
 },
@@ -209,7 +209,7 @@
 "9901": {
 "name": "Soothe Animal",
 "effects": [
-"Apply Aura: Aura #91"
+"Apply Aura: Mod Detect Range"
 ],
 "source": "client-db"
 },
@@ -365,7 +365,7 @@
 "20748": {
 "name": "Rebirth",
 "effects": [
-"Effect #329"
+"Resurrect"
 ],
 "source": "client-db"
 },
@@ -451,7 +451,7 @@
 "5149": {
 "name": "Beast Training",
 "effects": [
-"Effect #47"
+"Trade Skill Window"
 ],
 "source": "client-db"
 },
@@ -474,7 +474,7 @@
 "6991": {
 "name": "Feed Pet",
 "effects": [
-"Effect #101"
+"Feed Pet"
 ],
 "source": "client-db"
 },
@@ -535,7 +535,7 @@
 "1462": {
 "name": "Beast Lore",
 "effects": [
-"Apply Aura: Aura #121"
+"Apply Aura: Empathy"
 ],
 "source": "client-db"
 },
@@ -565,14 +565,14 @@
 "13809": {
 "name": "Frost Trap",
 "effects": [
-"Effect #320"
+"Summon Trap"
 ],
 "source": "client-db"
 },
 "13161": {
 "name": "Aspect of the Beast",
 "effects": [
-"Apply Aura: Aura #120"
+"Apply Aura: Untrackable"
 ],
 "source": "client-db"
 },
@@ -661,7 +661,7 @@
 "14317": {
 "name": "Explosive Trap",
 "effects": [
-"Effect #320"
+"Summon Trap"
 ],
 "source": "client-db"
 },
@@ -675,7 +675,7 @@
 "14305": {
 "name": "Immolation Trap",
 "effects": [
-"Effect #320"
+"Summon Trap"
 ],
 "source": "client-db"
 },
@@ -756,7 +756,7 @@
 "14311": {
 "name": "Freezing Trap",
 "effects": [
-"Effect #320"
+"Summon Trap"
 ],
 "source": "client-db"
 },
@@ -836,7 +836,7 @@
 "2855": {
 "name": "Detect Magic",
 "effects": [
-"Apply Aura: Aura #100"
+"Apply Aura: Detect Magic Aura"
 ],
 "source": "client-db"
 },
@@ -1244,7 +1244,7 @@
 "20217": {
 "name": "Blessing of Kings",
 "effects": [
-"Apply Aura: Aura #137"
+"Apply Aura: Mod Total Stat %"
 ],
 "source": "client-db"
 },
@@ -1258,19 +1258,19 @@
 "5502": {
 "name": "Sense Undead",
 "effects": [
-"Apply Aura: Track Creatures",
-"Effect #167"
+"Apply Aura: Track Creatures (Undead)",
+"Update Player Phase"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "19746": {
 "name": "Concentration Aura",
 "effects": [
-"Apply Area Aura: Decrease Pushback Time by %",
-"Apply Area Aura: Aura #117",
-"Apply Area Aura: Aura #117"
+"Apply Area Aura: Decrease Pushback Time by % (Arcane, Fire, Frost, Holy, Nature, Physical, Shadow)",
+"Apply Area Aura: Give % Chance to Resist Mechanic (Interrupted)",
+"Apply Area Aura: Give % Chance to Resist Mechanic (Silenced)"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "20164": {
 "name": "Seal of Justice",
@@ -1291,14 +1291,11 @@
 "19752": {
 "name": "Divine Intervention",
 "effects": [
-"Effect #79",
-"Trigger Spell",
-"→ Apply Aura: School Immunity",
-"→ Apply Aura: Stun",
-"→ Apply Aura: Aura #93",
+"Abort All Pending Attacks",
+"Trigger Spell\nDivine Intervention",
 "Instakill"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "20218": {
 "name": "Sanctity Aura",
@@ -1378,7 +1375,7 @@
 "20729": {
 "name": "Blessing of Sacrifice",
 "effects": [
-"Apply Aura: Aura #562"
+"Apply Aura: Split Damage %"
 ],
 "source": "client-db"
 },
@@ -1480,7 +1477,7 @@
 "25898": {
 "name": "Greater Blessing of Kings",
 "effects": [
-"Apply Aura: Aura #137"
+"Apply Aura: Mod Total Stat %"
 ],
 "source": "client-db"
 },
@@ -1545,7 +1542,7 @@
 "20773": {
 "name": "Redemption",
 "effects": [
-"Effect #329"
+"Resurrect"
 ],
 "source": "client-db"
 },
@@ -1630,10 +1627,10 @@
 "10060": {
 "name": "Power Infusion",
 "effects": [
-"Apply Aura: Aura #136",
-"Apply Aura: Mod Damage % Done"
+"Apply Aura: Mod Healing Power - % (All)",
+"Apply Aura: Mod Damage Done % (All)"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "10909": {
 "name": "Mind Vision",
@@ -1647,7 +1644,7 @@
 "10953": {
 "name": "Mind Soothe",
 "effects": [
-"Apply Aura: Aura #91"
+"Apply Aura: Mod Detect Range"
 ],
 "source": "client-db"
 },
@@ -1720,7 +1717,7 @@
 "20770": {
 "name": "Resurrection",
 "effects": [
-"Effect #329"
+"Resurrect"
 ],
 "source": "client-db"
 },
@@ -1755,10 +1752,10 @@
 "19293": {
 "name": "Elune's Grace",
 "effects": [
-"Apply Aura: Aura #113",
+"Apply Aura: Mod Ranged Damage Taken - Flat (1)",
 "Apply Aura: Mod Dodge %"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "10942": {
 "name": "Fade",
@@ -1902,7 +1899,7 @@
 "921": {
 "name": "Pick Pocket",
 "effects": [
-"Effect #71"
+"Pickpocket"
 ],
 "source": "client-db"
 },
@@ -1916,7 +1913,7 @@
 "2842": {
 "name": "Poisons",
 "effects": [
-"Effect #47"
+"Trade Skill Window"
 ],
 "source": "client-db"
 },
@@ -1975,7 +1972,7 @@
 "1860": {
 "name": "Safe Fall",
 "effects": [
-"Apply Aura: Aura #144"
+"Apply Aura: Safe Fall"
 ],
 "source": "client-db"
 },
@@ -1990,15 +1987,11 @@
 "1857": {
 "name": "Vanish",
 "effects": [
-"Trigger Spell",
-"→ Apply Aura: Mod Stealth",
-"→ Apply Aura: Mod Increase Speed",
-"Trigger Spell",
-"→ Apply Aura: Immunity - Mechanic",
-"→ Apply Aura: Immunity - Mechanic",
-"Effect #79"
+"Trigger Spell\nVanish",
+"Trigger Spell\nVanish Purge",
+"Abort All Pending Attacks"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "11297": {
 "name": "Sap",
@@ -2376,7 +2369,7 @@
 "20777": {
 "name": "Ancestral Spirit",
 "effects": [
-"Effect #329"
+"Resurrect"
 ],
 "source": "client-db"
 },
@@ -2470,10 +2463,10 @@
 "696": {
 "name": "Demon Skin",
 "effects": [
-"Apply Aura: Mod Resistance",
-"Apply Aura: Aura #161"
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Regen Health - Works in Combat"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "697": {
 "name": "Summon Voidwalker",
@@ -2688,13 +2681,11 @@
 "11675": {
 "name": "Drain Soul",
 "effects": [
-"Apply Aura: Aura #86",
+"Apply Aura: Create Item on Death\nSoul Shard",
 "Apply Aura: Periodic Damage",
-"Apply Aura: Proc Trigger Spell",
-"→ Apply Aura: Mod Power Regen %",
-"→ Apply Aura: Mod Manaregen Interrupt"
+"Apply Aura: Proc Trigger Spell"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "11700": {
 "name": "Drain Life",
@@ -2738,11 +2729,11 @@
 "11717": {
 "name": "Curse of Recklessness",
 "effects": [
-"Apply Aura: Mod Attack Power",
-"Apply Aura: Mod Resistance",
-"Apply Aura: Aura #92"
+"Apply Aura: Mod Melee Attack Power",
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Cannot Flee"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "17937": {
 "name": "Curse of Shadow",
@@ -2770,10 +2761,10 @@
 "18871": {
 "name": "Shadowburn",
 "effects": [
-"Apply Aura: Aura #86",
+"Apply Aura: Create Item on Death\nSoul Shard",
 "School Damage (Shadow)"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "17924": {
 "name": "Soul Fire",
@@ -2888,19 +2879,19 @@
 "11735": {
 "name": "Demon Armor",
 "effects": [
-"Apply Aura: Mod Resistance",
-"Apply Aura: Mod Resistance",
-"Apply Aura: Aura #161"
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Mod Resistance (Shadow)",
+"Apply Aura: Regen Health - Works in Combat"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "11695": {
 "name": "Health Funnel",
 "effects": [
 "Apply Aura: Periodic Heal",
-"Apply Aura: Aura #88"
+"Apply Aura: Mod Health Regen %"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "25309": {
 "name": "Immolate",
@@ -3043,12 +3034,11 @@
 "11578": {
 "name": "Charge",
 "effects": [
-"Effect #96",
-"Give Power",
-"Trigger Spell",
-"→ Apply Aura: Stun"
+"Charge",
+"Give Power (Rage)",
+"Trigger Spell\nCharge Stun"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "1719": {
 "name": "Recklessness",
@@ -3062,12 +3052,10 @@
 "20617": {
 "name": "Intercept",
 "effects": [
-"Effect #96",
-"Trigger Spell",
-"→ Apply Aura: Stun",
-"→ School Damage (Physical)"
+"Charge",
+"Trigger Spell\nIntercept Stun"
 ],
-"source": "client-db"
+"source": "wowhead"
 },
 "1672": {
 "name": "Shield Bash",
