@@ -1,8 +1,20 @@
-# Raw extracted game data — © Larian Studios / Wizards of the Coast.
-# Not redistributed; regenerate from an owned BG3 install (see README).
+# Raw extracted game data — © Larian Studios / Wizards of the Coast / Blizzard.
+# Not redistributed; regenerate via the extraction scripts (see README).
 bg3_data/
 bg3_icons/
 bg3_codex_icons/
+wow_icons/
+wow_SkillLine.csv
+wow_SkillLineAbility.csv
+wow_Spell.csv
+wow_SpellLevels.csv
+wow_SpellMisc.csv
+wow_SpellName.csv
+
+# scratch
+probe.bin
+wiki_test*.json
+builds.json
 
 __pycache__/
 preview.html
