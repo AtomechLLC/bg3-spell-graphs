@@ -1,49 +1,49 @@
 ability,classes,level,school,ranks,family,tier,purpose
 Auto Shot,Hunter,1,Physical,1,,,Damage
-Battle Stance,Warrior,1,Physical,1,,,Role shift
+Battle Stance,Warrior,1,Physical,1,The Form Rack,Shared template,Role shift
 Cobra Reflexes,Hunter,1,Physical,1,,,Damage
 Pick Lock,Rogue,1,Physical,1,,,Utility & world
 Summon Imp,Warlock,1,Shadow,1,The Menagerie,Shared template,Creating entities
-Track Beasts,Hunter,1,Physical,1,The Tracking Dial,Verbatim clone,Information
-Vampiric Embrace,Priest,1,Shadow,1,,,Damage
+Track Beasts,Hunter,1,Physical,1,The Surveillance Suite,Verbatim clone,Information
+Vampiric Embrace,Priest,1,Shadow,1,The Siphon Set,Shared engine,Damage
 Aspect of the Monkey,Hunter,4,Nature,1,The Aspect Dial,Shared template,Role shift
 Ice Block,Mage,4,Frost,1,,,Disables
-Judgement,Paladin,4,Holy,1,,,Damage
+Judgement,Paladin,4,Holy,1,The Seal Press,Shared template,Damage
 Pick Pocket,Rogue,4,Physical,1,,,Utility & world
 Earthbind Totem,Shaman,6,Nature,1,The Totem Foundry,Shared template,Creating entities
-Mangle,Druid,6,Physical,1,,,Disables
-Concussive Shot,Hunter,8,Arcane,1,,,Disables
+Mangle,Druid,6,Physical,1,The Whetstone & The Strike,Shared template,Disables
+Concussive Shot,Hunter,8,Arcane,1,The Slow Lane,Shared template,Disables
 Evasion,Rogue,8,Physical,1,,,Defense boost
 Purify,Paladin,8,Holy,1,The Cleanse Counter,Verbatim clone,Negation
 Bear Form,Druid,10,Physical,1,The Form Rack,Shared template,Role shift
 Beast Training,Hunter,10,Physical,1,,,Companion upkeep
-Bloodrage,Warrior,10,Physical,1,,,Provisioning
+Bloodrage,Warrior,10,Physical,1,The Siphon Set,Shared engine,Provisioning
 Call Pet,Hunter,10,Physical,1,The Menagerie,Shared template,Companion upkeep
-Chilled,Mage,10,Frost,3,,,Disables
+Chilled,Mage,10,Frost,3,The Slow Lane,Shared template,Disables
 Create Healthstone (Minor),Warlock,10,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
-Defensive Stance,Warrior,10,Physical,1,,,Role shift
+Defensive Stance,Warrior,10,Physical,1,The Form Rack,Shared template,Role shift
 Demon Skin,Warlock,10,Shadow,2,The Protection Rack,Shared template,Defense boost
 Dismiss Pet,Hunter,10,Physical,1,The Menagerie,Shared template,Companion upkeep
 Feed Pet,Hunter,10,Physical,1,,,Companion upkeep
-Growl,Druid,10,Physical,1,The Druid Costume Shop,Verbatim clone,Threat control
+Growl,Druid,10,Physical,1,The Aggro Ledger,Verbatim clone,Threat control
 Lesser Heal,Priest,10,Holy,3,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Revive Pet,Hunter,10,Nature,1,The Menagerie,Shared template,Companion upkeep
 Summon Voidwalker,Warlock,10,Shadow,1,The Menagerie,Shared template,Creating entities
 Tame Beast,Hunter,10,Nature,1,The Menagerie,Shared template,Companion upkeep
-Taunt,Warrior,10,Physical,1,The Druid Costume Shop,Verbatim clone,Threat control
-Teleport: Moonglade,Druid,10,Arcane,1,,,Mobility
-Track Humanoids,Hunter,10,Physical,1,The Tracking Dial,Verbatim clone,Information
-Enrage,Druid,12,Physical,1,,,Provisioning
-Slow Fall,Mage,12,Arcane,1,,,Mobility
+Taunt,Warrior,10,Physical,1,The Aggro Ledger,Verbatim clone,Threat control
+Teleport: Moonglade,Druid,10,Arcane,1,The Travel Agency,Verbatim clone,Mobility
+Track Humanoids,Hunter,10,Physical,1,The Surveillance Suite,Verbatim clone,Information
+Enrage,Druid,12,Physical,1,The Siphon Set,Shared engine,Provisioning
+Slow Fall,Mage,12,Arcane,1,The Travel Agency,Verbatim clone,Mobility
 Cure Disease,Priest,14,Holy,1,The Cleanse Counter,Verbatim clone,Negation
 Cure Poison,Druid,14,Nature,1,The Cleanse Counter,Verbatim clone,Negation
-Eagle Eye,Hunter,14,Arcane,1,,,Information
+Eagle Eye,Hunter,14,Arcane,1,The Surveillance Suite,Verbatim clone,Information
 Eyes of the Beast,Hunter,14,Nature,1,The Menagerie,Shared template,Companion upkeep
 Aquatic Form,Druid,16,Physical,1,The Form Rack,Shared template,Mobility
-Aquatic Form (Passive),Druid,16,Nature,1,,,Role shift
+Aquatic Form (Passive),Druid,16,Nature,1,The Travel Agency,Verbatim clone,Role shift
 Cure Poison,Shaman,16,Nature,1,The Cleanse Counter,Verbatim clone,Negation
-Detect Magic,Mage,16,Arcane,1,,,Information
-Righteous Fury,Paladin,16,Holy,1,,,Threat control
+Detect Magic,Mage,16,Arcane,1,The Surveillance Suite,Verbatim clone,Information
+Righteous Fury,Paladin,16,Holy,1,The Aggro Ledger,Verbatim clone,Threat control
 Shield Block,Warrior,16,Physical,1,,,Defense boost
 Unending Breath,Warlock,16,Shadow,1,The Deep Breath Pair,Verbatim clone,Utility & world
 Blessing of Freedom,Paladin,18,Holy,1,The Status Boost Rack,Shared template,Utility & world
@@ -51,20 +51,20 @@ Create Soulstone (Minor),Warlock,18,Shadow,1,The Resurrection Union,Verbatim clo
 Disarm,Warrior,18,Physical,1,,,Disables
 Divine Protection,Paladin,18,Holy,2,,,Disables
 Remove Lesser Curse,Mage,18,Arcane,1,The Cleanse Counter,Verbatim clone,Negation
-Track Undead,Hunter,18,Physical,1,The Tracking Dial,Verbatim clone,Information
+Track Undead,Hunter,18,Physical,1,The Surveillance Suite,Verbatim clone,Information
 Tremor Totem,Shaman,18,Nature,1,The Totem Foundry,Shared template,Creating entities
 Aspect of the Cheetah,Hunter,20,Nature,1,The Aspect Dial,Shared template,Role shift
 Blessing of Kings,Paladin,20,Holy,1,The Status Boost Rack,Shared template,Utility & world
-Blink,Mage,20,Arcane,1,,,Mobility
+Blink,Mage,20,Arcane,1,The Travel Agency,Verbatim clone,Mobility
 Cat Form,Druid,20,Physical,1,The Form Rack,Shared template,Role shift
 Fear Ward,Priest,20,Holy,1,,,Disables
 Frost Armor,Mage,20,Frost,3,The Protection Rack,Shared template,Defense boost
-Ghost Wolf,Shaman,20,Nature,1,,,Mobility
+Ghost Wolf,Shaman,20,Nature,1,The Travel Agency,Verbatim clone,Mobility
 Poisons,Rogue,20,Physical,1,,,Utility & world
-Repentance,Paladin,20,Holy,1,,,Disables
+Repentance,Paladin,20,Holy,1,The Crowd Control Cabinet,Shared template,Disables
 Retaliation,Warrior,20,Physical,1,,,Utility & world
 Ritual of Summoning,Warlock,20,Shadow,1,The Menagerie,Shared template,Mobility
-Sense Undead,Paladin,20,Holy,1,The Tracking Dial,Verbatim clone,Information
+Sense Undead,Paladin,20,Holy,1,The Surveillance Suite,Verbatim clone,Information
 Summon Incubus,Warlock,20,Shadow,1,The Menagerie,Shared template,Creating entities
 Summon Succubus,Warlock,20,Shadow,1,The Menagerie,Shared template,Creating entities
 Teleport: Ironforge,Mage,20,Arcane,1,The Hearth Network,Verbatim clone,Mobility
@@ -76,40 +76,40 @@ Create Healthstone (Lesser),Warlock,22,Shadow,1,The Conjured Commissary,Verbatim
 Cure Disease,Shaman,22,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Distract,Rogue,22,Physical,1,,,Deception & stealth
 Eye of Kilrogg,Warlock,22,Shadow,1,The Menagerie,Shared template,Information
-Intimidating Shout,Warrior,22,Physical,1,The Fear Franchise,Shared template,Disables
+Intimidating Shout,Warrior,22,Physical,1,The Crowd Control Cabinet,Shared template,Disables
 Poison Cleansing Totem,Shaman,22,Nature,1,The Totem Foundry,Shared template,Creating entities
 Seal of Justice,Paladin,22,Holy,1,The Seal Press,Shared template,Offense boost
 Water Breathing,Shaman,22,Nature,1,The Deep Breath Pair,Verbatim clone,Utility & world
 Beast Lore,Hunter,24,Nature,1,,,Companion upkeep
 Counterspell,Mage,24,Arcane,1,The Interrupt Union,Verbatim clone,Negation
-Detect Traps,Rogue,24,Physical,1,,,Information
+Detect Traps,Rogue,24,Physical,1,The Surveillance Suite,Verbatim clone,Information
 Mind-numbing Poison,Rogue,24,Physical,1,The Numbered Vials,Verbatim clone,Degradation
 Remove Curse,Druid,24,Arcane,1,The Cleanse Counter,Verbatim clone,Negation
-Sense Demons,Warlock,24,Shadow,1,The Tracking Dial,Verbatim clone,Information
-Track Hidden,Hunter,24,Physical,1,The Tracking Dial,Verbatim clone,Information
+Sense Demons,Warlock,24,Shadow,1,The Surveillance Suite,Verbatim clone,Information
+Track Hidden,Hunter,24,Physical,1,The Surveillance Suite,Verbatim clone,Information
 Abolish Poison,Druid,26,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Blessing of Salvation,Paladin,26,Holy,1,The Status Boost Rack,Shared template,Threat control
-Challenging Shout,Warrior,26,Physical,1,The Druid Costume Shop,Verbatim clone,Threat control
-Cheap Shot,Rogue,26,Physical,1,The Stun Union,Verbatim clone,Disables
-Detect Lesser Invisibility,Warlock,26,Shadow,1,The Invisibility Arms Race,Verbatim clone,Information
-Far Sight,Shaman,26,Nature,1,,,Information
+Challenging Shout,Warrior,26,Physical,1,The Aggro Ledger,Verbatim clone,Threat control
+Cheap Shot,Rogue,26,Physical,1,The Crowd Control Cabinet,Shared template,Disables
+Detect Lesser Invisibility,Warlock,26,Shadow,1,The Surveillance Suite,Verbatim clone,Information
+Far Sight,Shaman,26,Nature,1,The Surveillance Suite,Verbatim clone,Information
 Rapid Fire,Hunter,26,Arcane,1,,,Utility & world
-Track Elementals,Hunter,26,Physical,1,The Tracking Dial,Verbatim clone,Information
-Challenging Roar,Druid,28,Physical,1,The Druid Costume Shop,Verbatim clone,Threat control
+Track Elementals,Hunter,26,Physical,1,The Surveillance Suite,Verbatim clone,Information
+Challenging Roar,Druid,28,Physical,1,The Aggro Ledger,Verbatim clone,Threat control
 Conjure Mana Agate,Mage,28,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Firestone (Lesser),Warlock,28,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
 Frost Trap,Hunter,28,Frost,1,The Trap Line,Shared template,Disables
 Shield Wall,Warrior,28,Physical,1,,,Defense boost
-Water Walking,Shaman,28,Nature,1,,,Mobility
+Water Walking,Shaman,28,Nature,1,The Travel Agency,Verbatim clone,Mobility
 Aspect of the Beast,Hunter,30,Nature,1,The Aspect Dial,Shared template,Role shift
-Astral Recall,Shaman,30,Nature,1,,,Mobility
-Berserker Stance,Warrior,30,Physical,1,,,Role shift
+Astral Recall,Shaman,30,Nature,1,The Travel Agency,Verbatim clone,Mobility
+Berserker Stance,Warrior,30,Physical,1,The Form Rack,Shared template,Role shift
 Create Soulstone (Lesser),Warlock,30,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Disarm Trap,Rogue,30,Physical,1,,,Utility & world
 Divine Intervention,Paladin,30,Holy,1,,,Damage
-Feign Death,Hunter,30,Physical,1,,,Threat control
+Feign Death,Hunter,30,Physical,1,The Vanishing Act,Verbatim clone,Threat control
 Grounding Totem,Shaman,30,Nature,1,The Totem Foundry,Shared template,Creating entities
-Reincarnation,Shaman,30,Nature,1,,,Healing & revival
+Reincarnation,Shaman,30,Nature,1,The Resurrection Union,Verbatim clone,Healing & revival
 Sanctity Aura,Paladin,30,Holy,1,The Status Boost Rack,Shared template,Damage
 Summon Felhunter,Warlock,30,Shadow,1,The Menagerie,Shared template,Creating entities
 Teleport: Darnassus,Mage,30,Arcane,1,The Hearth Network,Verbatim clone,Mobility
@@ -117,127 +117,127 @@ Teleport: Thunder Bluff,Mage,30,Arcane,1,The Hearth Network,Verbatim clone,Mobil
 Travel Form,Druid,30,Physical,1,The Form Rack,Shared template,Mobility
 Abolish Disease,Priest,32,Holy,1,The Cleanse Counter,Verbatim clone,Negation
 Berserker Rage,Warrior,32,Physical,1,,,Disables
-Flare,Hunter,32,Arcane,1,,,Deception & stealth
+Flare,Hunter,32,Arcane,1,The Surveillance Suite,Verbatim clone,Deception & stealth
 Purge,Shaman,32,Nature,2,The Cleanse Counter,Verbatim clone,Negation
-Track Demons,Hunter,32,Physical,1,The Tracking Dial,Verbatim clone,Information
-Track Humanoids,Druid,32,Physical,1,The Tracking Dial,Verbatim clone,Information
-Blind,Rogue,34,Nature,1,,,Disables
+Track Demons,Hunter,32,Physical,1,The Surveillance Suite,Verbatim clone,Information
+Track Humanoids,Druid,32,Physical,1,The Surveillance Suite,Verbatim clone,Information
+Blind,Rogue,34,Nature,1,The Crowd Control Cabinet,Shared template,Disables
 Create Healthstone,Warlock,34,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
 Heal,Priest,34,Holy,4,"One Heal, Nine Names",Verbatim clone,Healing & revival
-Levitate,Priest,34,Holy,1,,,Disables
-Sentry Totem,Shaman,34,Nature,1,,,Creating entities
+Levitate,Priest,34,Holy,1,The Travel Agency,Verbatim clone,Disables
+Sentry Totem,Shaman,34,Nature,1,The Surveillance Suite,Verbatim clone,Creating entities
 Create Firestone,Warlock,36,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Spellstone,Warlock,36,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
 Dispel Magic,Priest,36,Holy,2,The Cleanse Counter,Verbatim clone,Negation
-Whirlwind,Warrior,36,Physical,1,,,Damage
+Whirlwind,Warrior,36,Physical,1,The Whetstone & The Strike,Shared template,Damage
 Blessing of Protection,Paladin,38,Holy,3,,,Disables
 Conjure Mana Jade,Mage,38,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
-Curse of Idiocy,Warlock,38,Shadow,1,,,Degradation
-Detect Invisibility,Warlock,38,Shadow,1,The Invisibility Arms Race,Verbatim clone,Information
+Curse of Idiocy,Warlock,38,Shadow,1,The Debuff Bureau,Shared template,Degradation
+Detect Invisibility,Warlock,38,Shadow,1,The Surveillance Suite,Verbatim clone,Information
 Disease Cleansing Totem,Shaman,38,Nature,1,The Totem Foundry,Shared template,Creating entities
 Mind-numbing Poison II,Rogue,38,Physical,1,The Numbered Vials,Verbatim clone,Degradation
 Aspect of the Pack,Hunter,40,Nature,1,The Aspect Dial,Shared template,Role shift
 Combustion,Mage,40,Fire,1,,,Damage
 Create Soulstone,Warlock,40,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Dire Bear Form,Druid,40,Physical,1,The Form Rack,Shared template,Role shift
-Feline Grace,Druid,40,Physical,1,The Druid Costume Shop,Verbatim clone,Damage
+Feline Grace,Druid,40,Physical,1,The Travel Agency,Verbatim clone,Damage
 Moonkin Form,Druid,40,Physical,1,The Form Rack,Shared template,Role shift
 Portal: Ironforge,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Orgrimmar,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Stormwind,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Undercity,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Power Infusion,Priest,40,Holy,1,,,Offense boost
-Safe Fall,Rogue,40,Physical,1,The Druid Costume Shop,Verbatim clone,Damage
+Safe Fall,Rogue,40,Physical,1,The Travel Agency,Verbatim clone,Damage
 Summon Felsteed,Warlock,40,Shadow,1,The Menagerie,Shared template,Creating entities
 Summon Warhorse,Paladin,40,Holy,1,The Menagerie,Shared template,Creating entities
-Track Giants,Hunter,40,Physical,1,The Tracking Dial,Verbatim clone,Information
+Track Giants,Hunter,40,Physical,1,The Surveillance Suite,Verbatim clone,Information
 Cleanse,Paladin,42,Holy,1,The Cleanse Counter,Verbatim clone,Negation
-Slice and Dice,Rogue,42,Physical,2,,,Utility & world
-Vanish,Rogue,42,Physical,2,,,Deception & stealth
+Slice and Dice,Rogue,42,Physical,2,The Whetstone & The Strike,Shared template,Utility & world
+Vanish,Rogue,42,Physical,2,The Vanishing Act,Verbatim clone,Deception & stealth
 Barkskin,Druid,44,Nature,1,,,Disables
-Mind Vision,Priest,44,Shadow,2,,,Information
-Bash,Druid,46,Physical,3,The Stun Union,Verbatim clone,Disables
+Mind Vision,Priest,44,Shadow,2,The Surveillance Suite,Verbatim clone,Information
+Bash,Druid,46,Physical,3,The Crowd Control Cabinet,Shared template,Disables
 Charge,Warrior,46,Physical,3,The Gap Closers,Verbatim clone,Provisioning
 Create Firestone (Greater),Warlock,46,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Healthstone (Greater),Warlock,46,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
-Dash,Druid,46,Physical,2,The Druid Costume Shop,Verbatim clone,Mobility
-Scare Beast,Hunter,46,Nature,3,The Fear Franchise,Shared template,Disables
-Banish,Warlock,48,Shadow,2,,,Disables
+Dash,Druid,46,Physical,2,The Travel Agency,Verbatim clone,Mobility
+Scare Beast,Hunter,46,Nature,3,The Crowd Control Cabinet,Shared template,Disables
+Banish,Warlock,48,Shadow,2,The Crowd Control Cabinet,Shared template,Disables
 Conjure Mana Citrine,Mage,48,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Spellstone (Greater),Warlock,48,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
-Disengage,Hunter,48,Physical,3,,,Utility & world
-Sap,Rogue,48,Physical,3,The Sleepers,Verbatim clone,Disables
+Disengage,Hunter,48,Physical,3,The Aggro Ledger,Verbatim clone,Utility & world
+Sap,Rogue,48,Physical,3,The Crowd Control Cabinet,Shared template,Disables
 Create Soulstone (Greater),Warlock,50,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
-Curse of Tongues,Warlock,50,Shadow,2,The Curse Catalogue,Shared template,Degradation
-Detect Greater Invisibility,Warlock,50,Shadow,1,The Invisibility Arms Race,Verbatim clone,Information
+Curse of Tongues,Warlock,50,Shadow,2,The Debuff Bureau,Shared template,Degradation
+Detect Greater Invisibility,Warlock,50,Shadow,1,The Surveillance Suite,Verbatim clone,Information
 Divine Shield,Paladin,50,Holy,2,,,Degradation
 Inferno,Warlock,50,Shadow,1,The Menagerie,Shared template,Creating entities
-Kidney Shot,Rogue,50,Physical,2,The Stun Union,Verbatim clone,Disables
-Lay on Hands,Paladin,50,Holy,3,,,Healing & revival
+Kidney Shot,Rogue,50,Physical,2,The Crowd Control Cabinet,Shared template,Disables
+Lay on Hands,Paladin,50,Holy,3,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Portal: Darnassus,Mage,50,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Thunder Bluff,Mage,50,Arcane,1,The Hearth Network,Verbatim clone,Mobility
-Prowl,Hunter,50,Physical,3,The Druid Costume Shop,Verbatim clone,Deception & stealth
+Prowl,Hunter,50,Physical,3,The Vanishing Act,Verbatim clone,Deception & stealth
 Recklessness,Warrior,50,Physical,1,,,Disables
-Track Dragonkin,Hunter,50,Physical,1,The Tracking Dial,Verbatim clone,Information
-Cower,Druid,52,Physical,3,The Druid Costume Shop,Verbatim clone,Threat control
-Curse of Weakness,Warlock,52,Shadow,6,The Curse Catalogue,Shared template,Degradation
-Demoralizing Roar,Druid,52,Physical,5,,,Offense boost
+Track Dragonkin,Hunter,50,Physical,1,The Surveillance Suite,Verbatim clone,Information
+Cower,Druid,52,Physical,3,The Aggro Ledger,Verbatim clone,Threat control
+Curse of Weakness,Warlock,52,Shadow,6,The Debuff Bureau,Shared template,Degradation
+Demoralizing Roar,Druid,52,Physical,5,The Debuff Bureau,Shared template,Offense boost
 Drain Soul,Warlock,52,Shadow,4,The Shard Economy,Shared engine,Resource warfare
 Fire Nova Totem,Shaman,52,Fire,5,The Totem Foundry,Shared template,Creating entities
 Intercept,Warrior,52,Physical,3,The Gap Closers,Verbatim clone,Disables
 Mind Soothe,Priest,52,Shadow,3,The Soothe Pair,Verbatim clone,Degradation
 Mind-numbing Poison III,Rogue,52,Physical,1,The Numbered Vials,Verbatim clone,Degradation
-Scorpid Sting,Hunter,52,Nature,4,The Sting Clip,Verbatim clone,Degradation
+Scorpid Sting,Hunter,52,Nature,4,The Affliction Engine,Shared engine,Degradation
 Seal of the Crusader,Paladin,52,Holy,6,The Seal Press,Shared template,Offense boost
 Shadow Resistance Aura,Paladin,52,Holy,3,The Status Boost Rack,Shared template,Defense boost
 Shield Bash,Warrior,52,Physical,3,The Interrupt Union,Verbatim clone,Negation
-Turn Undead,Paladin,52,Nature,3,The Fear Franchise,Shared template,Disables
+Turn Undead,Paladin,52,Nature,3,The Crowd Control Cabinet,Shared template,Disables
 Windfury Totem,Shaman,52,Nature,3,The Totem Foundry,Shared template,Creating entities
 Amplify Magic,Mage,54,Arcane,4,Amplify & Dampen,Verbatim clone,Defense boost
-Arcane Explosion,Mage,54,Arcane,6,,,Damage
+Arcane Explosion,Mage,54,Arcane,6,The Area Barrage,Shared template,Damage
 Blessing of Sacrifice,Paladin,54,Holy,2,The Status Boost Rack,Shared template,Damage
-Chain Heal,Shaman,54,Nature,3,,,Healing & revival
-Counterattack,Hunter,54,Physical,3,,,Disables
-Demoralizing Shout,Warrior,54,Physical,5,,,Degradation
+Chain Heal,Shaman,54,Nature,3,"One Heal, Nine Names",Verbatim clone,Healing & revival
+Counterattack,Hunter,54,Physical,3,The Whetstone & The Strike,Shared template,Disables
+Demoralizing Shout,Warrior,54,Physical,5,The Debuff Bureau,Shared template,Degradation
 Drain Life,Warlock,54,Shadow,6,The Siphon Set,Shared engine,Resource warfare
 Drain Mana,Warlock,54,Shadow,4,The Siphon Set,Shared engine,Resource warfare
 Explosive Trap,Hunter,54,Fire,3,The Trap Line,Shared template,Role shift
-Faerie Fire,Druid,54,Nature,4,The Druid Costume Shop,Verbatim clone,Degradation
-Faerie Fire (Feral),Druid,54,Nature,4,The Druid Costume Shop,Verbatim clone,Degradation
+Faerie Fire,Druid,54,Nature,4,The Debuff Bureau,Shared template,Degradation
+Faerie Fire (Feral),Druid,54,Nature,4,The Debuff Bureau,Shared template,Degradation
 Fire Blast,Mage,54,Fire,7,The Bolt Engine,Shared engine,Damage
-Frost Nova,Mage,54,Frost,4,,,Disables
+Frost Nova,Mage,54,Frost,4,The Slow Lane,Shared template,Disables
 Frost Resistance Totem,Shaman,54,Fire,3,The Totem Foundry,Shared template,Creating entities
 Garrote,Rogue,54,Physical,6,The Affliction Engine,Shared engine,Damage
-Hammer of Justice,Paladin,54,Holy,4,The Stun Union,Verbatim clone,Disables
-Hamstring,Warrior,54,Physical,3,,,Disables
-Hellfire,Warlock,54,Fire,3,,,Damage
-Howl of Terror,Warlock,54,Shadow,2,The Fear Franchise,Shared template,Disables
-Rake,Druid,54,Physical,4,,,Damage
-Rockbiter Weapon,Shaman,54,Nature,7,,,Offense boost
-Shred,Druid,54,Physical,5,The Druid Costume Shop,Verbatim clone,Damage
-Sinister Strike,Rogue,54,Physical,8,,,Damage
-Slam,Warrior,54,Physical,4,,,Damage
+Hammer of Justice,Paladin,54,Holy,4,The Crowd Control Cabinet,Shared template,Disables
+Hamstring,Warrior,54,Physical,3,The Slow Lane,Shared template,Disables
+Hellfire,Warlock,54,Fire,3,The Area Barrage,Shared template,Damage
+Howl of Terror,Warlock,54,Shadow,2,The Crowd Control Cabinet,Shared template,Disables
+Rake,Druid,54,Physical,4,The Affliction Engine,Shared engine,Damage
+Rockbiter Weapon,Shaman,54,Nature,7,The Whetstone & The Strike,Shared template,Offense boost
+Shred,Druid,54,Physical,5,The Whetstone & The Strike,Shared template,Damage
+Sinister Strike,Rogue,54,Physical,8,The Whetstone & The Strike,Shared template,Damage
+Slam,Warrior,54,Physical,4,The Whetstone & The Strike,Shared template,Damage
 Smite,Priest,54,Holy,8,The Bolt Engine,Shared engine,Damage
 Soothe Animal,Druid,54,Nature,3,The Soothe Pair,Verbatim clone,Degradation
 Stoneskin Totem,Shaman,54,Nature,6,The Totem Foundry,Shared template,Creating entities
-Swipe,Druid,54,Physical,5,,,Damage
+Swipe,Druid,54,Physical,5,The Whetstone & The Strike,Shared template,Damage
 Thorns,Druid,54,Nature,6,The Static Shell,Verbatim clone,Defense boost
 Wrath,Druid,54,Nature,8,The Bolt Engine,Shared engine,Damage
 Arcane Brilliance,Mage,56,Arcane,1,The Status Boost Rack,Shared template,Offense boost
 Arcane Intellect,Mage,56,Arcane,5,The Status Boost Rack,Shared template,Offense boost
-Arcane Missiles,Mage,56,Arcane,8,,,Damage
+Arcane Missiles,Mage,56,Arcane,8,The Bolt Engine,Shared engine,Damage
 Aspect of the Wild,Hunter,56,Nature,2,The Aspect Dial,Shared template,Role shift
-Chain Lightning,Shaman,56,Nature,4,,,Damage
+Chain Lightning,Shaman,56,Nature,4,The Bolt Engine,Shared engine,Damage
 Create Firestone (Major),Warlock,56,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
-Curse of Recklessness,Warlock,56,Shadow,4,The Curse Catalogue,Shared template,Degradation
-Curse of Shadow,Warlock,56,Shadow,2,The Curse Catalogue,Shared template,Degradation
-Execute,Warrior,56,Physical,5,,,Damage
-Expose Armor,Rogue,56,Physical,5,,,Degradation
-Fear,Warlock,56,Shadow,3,The Fear Franchise,Shared template,Disables
-Flamestrike,Mage,56,Fire,6,,,Damage
-Flametongue Weapon,Shaman,56,Fire,6,,,Offense boost
+Curse of Recklessness,Warlock,56,Shadow,4,The Debuff Bureau,Shared template,Degradation
+Curse of Shadow,Warlock,56,Shadow,2,The Debuff Bureau,Shared template,Degradation
+Execute,Warrior,56,Physical,5,The Whetstone & The Strike,Shared template,Damage
+Expose Armor,Rogue,56,Physical,5,The Debuff Bureau,Shared template,Degradation
+Fear,Warlock,56,Shadow,3,The Crowd Control Cabinet,Shared template,Disables
+Flamestrike,Mage,56,Fire,6,The Area Barrage,Shared template,Damage
+Flametongue Weapon,Shaman,56,Fire,6,The Whetstone & The Strike,Shared template,Offense boost
 Flash Heal,Priest,56,Holy,7,"One Heal, Nine Names",Verbatim clone,Healing & revival
-Frenzied Regeneration,Druid,56,Physical,3,,,Healing & revival
+Frenzied Regeneration,Druid,56,Physical,3,The Mending Clock,Verbatim clone,Healing & revival
 Frost Resistance Aura,Paladin,56,Holy,3,The Status Boost Rack,Shared template,Defense boost
 Immolation Trap,Hunter,56,Fire,5,The Trap Line,Shared template,Role shift
 Life Tap,Warlock,56,Shadow,6,The Siphon Set,Shared engine,Resource warfare
@@ -246,108 +246,108 @@ Lightning Shield,Shaman,56,Nature,7,The Static Shell,Verbatim clone,Defense boos
 Magma Totem,Shaman,56,Fire,4,The Totem Foundry,Shared template,Creating entities
 Mana Burn,Priest,56,Shadow,5,The Siphon Set,Shared engine,Resource warfare
 Mana Spring Totem,Shaman,56,Frost,4,The Totem Foundry,Shared template,Creating entities
-Mocking Blow,Warrior,56,Physical,5,,,Threat control
-Pounce,Druid,56,Physical,3,,,Disables
+Mocking Blow,Warrior,56,Physical,5,The Aggro Ledger,Verbatim clone,Threat control
+Pounce,Druid,56,Physical,3,The Crowd Control Cabinet,Shared template,Disables
 Prayer of Shadow Protection,Priest,56,Holy,1,The Status Boost Rack,Shared template,Defense boost
-Psychic Scream,Priest,56,Shadow,4,The Fear Franchise,Shared template,Disables
-Raptor Strike,Hunter,56,Physical,8,,,Damage
+Psychic Scream,Priest,56,Shadow,4,The Crowd Control Cabinet,Shared template,Disables
+Raptor Strike,Hunter,56,Physical,8,The Whetstone & The Strike,Shared template,Damage
 Retribution Aura,Paladin,56,Holy,5,The Status Boost Rack,Shared template,Damage
 Scorpid Poison,Hunter,56,Physical,4,,,Damage
 Shadow Protection,Priest,56,Shadow,3,The Status Boost Rack,Shared template,Defense boost
 Shadowburn,Warlock,56,Shadow,6,The Shard Economy,Shared engine,Damage
 Soul Fire,Warlock,56,Fire,2,The Bolt Engine,Shared engine,Damage
-Viper Sting,Hunter,56,Nature,3,The Sting Clip,Verbatim clone,Resource warfare
+Viper Sting,Hunter,56,Nature,3,The Affliction Engine,Shared engine,Resource warfare
 Windwall Totem,Shaman,56,Nature,3,The Totem Foundry,Shared template,Creating entities
-Ambush,Rogue,58,Physical,6,The Druid Costume Shop,Verbatim clone,Damage
-Claw,Druid,58,Physical,5,,,Damage
-Cone of Cold,Mage,58,Frost,5,,,Disables
+Ambush,Rogue,58,Physical,6,The Whetstone & The Strike,Shared template,Damage
+Claw,Druid,58,Physical,5,The Whetstone & The Strike,Shared template,Damage
+Cone of Cold,Mage,58,Frost,5,The Slow Lane,Shared template,Disables
 Conjure Mana Ruby,Mage,58,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Healthstone (Major),Warlock,58,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
-Curse of Agony,Warlock,58,Shadow,5,The Curse Catalogue,Shared template,Degradation
-Death Coil,Warlock,58,Shadow,3,,,Disables
-Desperate Prayer,Priest,58,Holy,7,,,Healing & revival
-Entangling Roots,Druid,58,Nature,6,,,Disables
+Curse of Agony,Warlock,58,Shadow,5,The Debuff Bureau,Shared template,Degradation
+Death Coil,Warlock,58,Shadow,3,The Crowd Control Cabinet,Shared template,Disables
+Desperate Prayer,Priest,58,Holy,7,"One Heal, Nine Names",Verbatim clone,Healing & revival
+Entangling Roots,Druid,58,Nature,6,The Slow Lane,Shared template,Disables
 Fire Resistance Totem,Shaman,58,Frost,3,The Totem Foundry,Shared template,Creating entities
 Flametongue Totem,Shaman,58,Fire,4,The Totem Foundry,Shared template,Creating entities
 Flash of Light,Paladin,58,Holy,7,"One Heal, Nine Names",Verbatim clone,Healing & revival
-Frost Shock,Shaman,58,Frost,4,The Shock Battery,Verbatim clone,Damage
-Frostbrand Weapon,Shaman,58,Frost,5,,,Offense boost
-Hemorrhage,Rogue,58,Physical,3,,,Damage
-Hibernate,Druid,58,Nature,3,The Sleepers,Verbatim clone,Disables
-Hunter's Mark,Hunter,58,Arcane,4,,,Deception & stealth
+Frost Shock,Shaman,58,Frost,4,The Slow Lane,Shared template,Damage
+Frostbrand Weapon,Shaman,58,Frost,5,The Whetstone & The Strike,Shared template,Offense boost
+Hemorrhage,Rogue,58,Physical,3,The Whetstone & The Strike,Shared template,Damage
+Hibernate,Druid,58,Nature,3,The Crowd Control Cabinet,Shared template,Disables
+Hunter's Mark,Hunter,58,Arcane,4,The Debuff Bureau,Shared template,Deception & stealth
 Ice Barrier,Mage,58,Frost,4,,,Defense boost
 Kick,Rogue,58,Physical,4,The Interrupt Union,Verbatim clone,Negation
 Mage Armor,Mage,58,Arcane,3,The Protection Rack,Shared template,Defense boost
 Mana Tide Totem,Shaman,58,Frost,3,The Totem Foundry,Shared template,Creating entities
-Maul,Druid,58,Physical,7,,,Damage
+Maul,Druid,58,Physical,7,The Whetstone & The Strike,Shared template,Damage
 Mind Blast,Priest,58,Shadow,9,The Bolt Engine,Shared engine,Damage
-Mind Control,Priest,58,Shadow,3,,,Disables
-Mongoose Bite,Hunter,58,Physical,4,,,Damage
+Mind Control,Priest,58,Shadow,3,The Crowd Control Cabinet,Shared template,Disables
+Mongoose Bite,Hunter,58,Physical,4,The Whetstone & The Strike,Shared template,Damage
 Moonfire,Druid,58,Arcane,10,The Affliction Engine,Shared engine,Damage
-Nature's Grasp,Druid,58,Nature,6,,,Disables
+Nature's Grasp,Druid,58,Nature,6,The Slow Lane,Shared template,Disables
 Pummel,Warrior,58,Physical,2,The Interrupt Union,Verbatim clone,Negation
-Rain of Fire,Warlock,58,Fire,4,,,Damage
-Ravage,Druid,58,Physical,4,The Druid Costume Shop,Verbatim clone,Damage
+Rain of Fire,Warlock,58,Fire,4,The Area Barrage,Shared template,Damage
+Ravage,Druid,58,Physical,4,The Whetstone & The Strike,Shared template,Damage
 Resurrection,Priest,58,Holy,5,The Resurrection Union,Verbatim clone,Healing & revival
 Scorch,Mage,58,Fire,7,The Bolt Engine,Shared engine,Damage
 Seal of Righteousness,Paladin,58,Holy,8,The Seal Press,Shared template,Offense boost
 Seal of Wisdom,Paladin,58,Holy,3,The Seal Press,Shared template,Offense boost
-Searing Pain,Warlock,58,Fire,6,,,Damage
+Searing Pain,Warlock,58,Fire,6,The Bolt Engine,Shared engine,Damage
 Shadow Word: Pain,Priest,58,Shadow,8,The Affliction Engine,Shared engine,Damage
 Siphon Life,Warlock,58,Shadow,4,The Siphon Set,Shared engine,Resource warfare
-Sprint,Rogue,58,Physical,3,The Druid Costume Shop,Verbatim clone,Mobility
-Starshards,Priest,58,Arcane,7,,,Damage
+Sprint,Rogue,58,Physical,3,The Travel Agency,Verbatim clone,Mobility
+Starshards,Priest,58,Arcane,7,The Affliction Engine,Shared engine,Damage
 Stoneclaw Totem,Shaman,58,Nature,6,The Totem Foundry,Shared template,Creating entities
-Subjugate Demon,Warlock,58,Shadow,3,,,Disables
-Sunder Armor,Warrior,58,Physical,5,,,Degradation
-Thunder Clap,Warrior,58,Physical,6,,,Damage
-Volley,Hunter,58,Arcane,3,,,Damage
+Subjugate Demon,Warlock,58,Shadow,3,The Crowd Control Cabinet,Shared template,Disables
+Sunder Armor,Warrior,58,Physical,5,The Debuff Bureau,Shared template,Degradation
+Thunder Clap,Warrior,58,Physical,6,The Whetstone & The Strike,Shared template,Damage
+Volley,Hunter,58,Arcane,3,The Area Barrage,Shared template,Damage
 Ancestral Spirit,Shaman,60,Nature,5,The Resurrection Union,Verbatim clone,Healing & revival
-Arcane Shot,Hunter,60,Arcane,8,,,Damage
+Arcane Shot,Hunter,60,Arcane,8,The Bolt Engine,Shared engine,Damage
 Aspect of the Hawk,Hunter,60,Nature,7,The Aspect Dial,Shared template,Role shift
-Backstab,Rogue,60,Physical,9,The Druid Costume Shop,Verbatim clone,Damage
-Battle Shout,Warrior,60,Physical,7,,,Offense boost
-Black Arrow,Hunter,60,Shadow,2,,,Disables
-Blast Wave,Mage,60,Fire,5,,,Disables
+Backstab,Rogue,60,Physical,9,The Whetstone & The Strike,Shared template,Damage
+Battle Shout,Warrior,60,Physical,7,The Status Boost Rack,Shared template,Offense boost
+Black Arrow,Hunter,60,Shadow,2,The Affliction Engine,Shared engine,Disables
+Blast Wave,Mage,60,Fire,5,The Slow Lane,Shared template,Disables
 Blessing of Light,Paladin,60,Holy,3,The Status Boost Rack,Shared template,Defense boost
 Blessing of Might,Paladin,60,Holy,7,The Status Boost Rack,Shared template,Offense boost
 Blessing of Wisdom,Paladin,60,Holy,6,The Status Boost Rack,Shared template,Provisioning
-Blizzard,Mage,60,Frost,6,,,Damage
-Bloodthirst,Warrior,60,Physical,4,,,Damage
-Cleave,Warrior,60,Physical,5,,,Damage
-Conflagrate,Warlock,60,Fire,4,,,Damage
+Blizzard,Mage,60,Frost,6,The Area Barrage,Shared template,Damage
+Bloodthirst,Warrior,60,Physical,4,The Whetstone & The Strike,Shared template,Damage
+Cleave,Warrior,60,Physical,5,The Whetstone & The Strike,Shared template,Damage
+Conflagrate,Warlock,60,Fire,4,The Bolt Engine,Shared engine,Damage
 Conjure Food,Mage,60,Arcane,7,The Conjured Commissary,Verbatim clone,Provisioning
 Conjure Water,Mage,60,Arcane,7,The Conjured Commissary,Verbatim clone,Provisioning
-Consecration,Paladin,60,Holy,5,,,Damage
+Consecration,Paladin,60,Holy,5,The Area Barrage,Shared template,Damage
 Corruption,Warlock,60,Shadow,7,The Affliction Engine,Shared engine,Damage
 Create Soulstone (Major),Warlock,60,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Create Spellstone (Major),Warlock,60,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
-Curse of Doom,Warlock,60,Shadow,1,The Curse Catalogue,Shared template,Degradation
-Curse of the Elements,Warlock,60,Shadow,3,The Curse Catalogue,Shared template,Degradation
+Curse of Doom,Warlock,60,Shadow,1,The Debuff Bureau,Shared template,Degradation
+Curse of the Elements,Warlock,60,Shadow,3,The Debuff Bureau,Shared template,Degradation
 Dampen Magic,Mage,60,Arcane,5,Amplify & Dampen,Verbatim clone,Defense boost
-Dark Pact,Warlock,60,Shadow,3,,,Provisioning
+Dark Pact,Warlock,60,Shadow,3,The Siphon Set,Shared engine,Provisioning
 Demon Armor,Warlock,60,Shadow,5,The Protection Rack,Shared template,Defense boost
 Devotion Aura,Paladin,60,Holy,7,The Status Boost Rack,Shared template,Utility & world
-Devouring Plague,Priest,60,Shadow,6,,,Damage
-Distracting Shot,Hunter,60,Arcane,6,,,Utility & world
+Devouring Plague,Priest,60,Shadow,6,The Affliction Engine,Shared engine,Damage
+Distracting Shot,Hunter,60,Arcane,6,The Aggro Ledger,Verbatim clone,Utility & world
 Divine Spirit,Priest,60,Holy,4,The Status Boost Rack,Shared template,Offense boost
 Earth Shock,Shaman,60,Nature,7,The Interrupt Union,Verbatim clone,Negation
 Elune's Grace,Priest,60,Holy,5,,,Defense boost
-Eviscerate,Rogue,60,Physical,9,,,Damage
-Exorcism,Paladin,60,Holy,6,,,Damage
-Fade,Priest,60,Shadow,6,,,Threat control
-Feedback,Priest,60,Shadow,5,,,Damage
-Feint,Rogue,60,Physical,5,The Druid Costume Shop,Verbatim clone,Threat control
-Ferocious Bite,Druid,60,Physical,5,,,Damage
+Eviscerate,Rogue,60,Physical,9,The Whetstone & The Strike,Shared template,Damage
+Exorcism,Paladin,60,Holy,6,The Bolt Engine,Shared engine,Damage
+Fade,Priest,60,Shadow,6,The Aggro Ledger,Verbatim clone,Threat control
+Feedback,Priest,60,Shadow,5,The Siphon Set,Shared engine,Damage
+Feint,Rogue,60,Physical,5,The Aggro Ledger,Verbatim clone,Threat control
+Ferocious Bite,Druid,60,Physical,5,The Whetstone & The Strike,Shared template,Damage
 Fire Resistance Aura,Paladin,60,Holy,3,The Status Boost Rack,Shared template,Defense boost
 Fire Ward,Mage,60,Fire,5,The Protection Rack,Shared template,Defense boost
 Fireball,Mage,60,Fire,12,The Bolt Engine,Shared engine,Damage
-Flame Shock,Shaman,60,Fire,6,The Shock Battery,Verbatim clone,Damage
+Flame Shock,Shaman,60,Fire,6,The Affliction Engine,Shared engine,Damage
 Freezing Trap,Hunter,60,Frost,3,The Trap Line,Shared template,Role shift
 Frost Ward,Mage,60,Frost,5,The Protection Rack,Shared template,Defense boost
 Frostbolt,Mage,60,Frost,11,The Bolt Engine,Shared engine,Damage
 Gift of the Wild,Druid,60,Nature,2,The Status Boost Rack,Shared template,Offense boost
-Gouge,Rogue,60,Physical,5,,,Disables
+Gouge,Rogue,60,Physical,5,The Crowd Control Cabinet,Shared template,Disables
 Grace of Air Totem,Shaman,60,Nature,3,The Totem Foundry,Shared template,Creating entities
 Greater Blessing of Kings,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Utility & world
 Greater Blessing of Light,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Defense boost
@@ -356,41 +356,41 @@ Greater Blessing of Salvation,Paladin,60,Holy,1,The Status Boost Rack,Shared tem
 Greater Blessing of Sanctuary,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Degradation
 Greater Blessing of Wisdom,Paladin,60,Holy,2,The Status Boost Rack,Shared template,Provisioning
 Greater Heal,Priest,60,Holy,5,"One Heal, Nine Names",Verbatim clone,Healing & revival
-Hammer of Wrath,Paladin,60,Holy,3,,,Damage
+Hammer of Wrath,Paladin,60,Holy,3,The Bolt Engine,Shared engine,Damage
 Healing Stream Totem,Shaman,60,Frost,5,The Totem Foundry,Shared template,Creating entities
 Healing Touch,Druid,60,Nature,11,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Healing Wave,Shaman,60,Nature,10,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Health Funnel,Warlock,60,Shadow,7,,,Companion upkeep
-Heroic Strike,Warrior,60,Physical,9,,,Damage
-Hex of Weakness,Priest,60,Shadow,6,,,Degradation
+Heroic Strike,Warrior,60,Physical,9,The Whetstone & The Strike,Shared template,Damage
+Hex of Weakness,Priest,60,Shadow,6,The Debuff Bureau,Shared template,Degradation
 Holy Fire,Priest,60,Holy,8,The Bolt Engine,Shared engine,Damage
 Holy Light,Paladin,60,Holy,9,"One Heal, Nine Names",Verbatim clone,Healing & revival
-Holy Nova,Priest,60,Holy,6,,,Damage
-Holy Wrath,Paladin,60,Holy,2,,,Damage
-Hurricane,Druid,60,Nature,3,,,Damage
+Holy Nova,Priest,60,Holy,6,The Area Barrage,Shared template,Damage
+Holy Wrath,Paladin,60,Holy,2,The Bolt Engine,Shared engine,Damage
+Hurricane,Druid,60,Nature,3,The Area Barrage,Shared template,Damage
 Ice Armor,Mage,60,Frost,4,The Protection Rack,Shared template,Defense boost
 Immolate,Warlock,60,Fire,8,The Affliction Engine,Shared engine,Damage
 Inner Fire,Priest,60,Holy,6,The Protection Rack,Shared template,Defense boost
-Insect Swarm,Druid,60,Nature,5,,,Damage
+Insect Swarm,Druid,60,Nature,5,The Affliction Engine,Shared engine,Damage
 Lesser Healing Wave,Shaman,60,Nature,6,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Lightning Breath,Hunter,60,Physical,6,,,Damage
-Lightwell,Priest,60,Holy,3,,,Creating entities
+Lightwell,Priest,60,Holy,3,The Menagerie,Shared template,Creating entities
 Mana Shield,Mage,60,Arcane,6,,,Defense boost
 Mark of the Wild,Druid,60,Nature,7,The Status Boost Rack,Shared template,Offense boost
 Mend Pet,Hunter,60,Nature,7,,,Companion upkeep
-Mind Flay,Priest,60,Shadow,6,,,Disables
-Mortal Strike,Warrior,60,Physical,4,,,Damage
+Mind Flay,Priest,60,Shadow,6,The Affliction Engine,Shared engine,Disables
+Mortal Strike,Warrior,60,Physical,4,The Whetstone & The Strike,Shared template,Damage
 Multi-Shot,Hunter,60,Physical,5,,,Damage
 Nature Resistance Totem,Shaman,60,Nature,3,The Totem Foundry,Shared template,Creating entities
-Overpower,Warrior,60,Physical,4,,,Damage
-Polymorph,Mage,60,Arcane,5,The Polymorph Barn,Verbatim clone,Disables
-Polymorph: Cow,Mage,60,Arcane,1,The Polymorph Barn,Verbatim clone,Disables
+Overpower,Warrior,60,Physical,4,The Whetstone & The Strike,Shared template,Damage
+Polymorph,Mage,60,Arcane,5,The Crowd Control Cabinet,Shared template,Disables
+Polymorph: Cow,Mage,60,Arcane,1,The Crowd Control Cabinet,Shared template,Disables
 Power Word: Fortitude,Priest,60,Holy,6,The Status Boost Rack,Shared template,Offense boost
 Power Word: Shield,Priest,60,Holy,10,The Protection Rack,Shared template,Defense boost
 Prayer of Fortitude,Priest,60,Holy,2,The Status Boost Rack,Shared template,Offense boost
-Prayer of Healing,Priest,60,Holy,5,,,Healing & revival
+Prayer of Healing,Priest,60,Holy,5,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Prayer of Spirit,Priest,60,Holy,1,The Status Boost Rack,Shared template,Offense boost
-Prowl,Druid,60,Physical,3,The Druid Costume Shop,Verbatim clone,Deception & stealth
+Prowl,Druid,60,Physical,3,The Vanishing Act,Verbatim clone,Deception & stealth
 Pyroblast,Mage,60,Fire,8,The Bolt Engine,Shared engine,Damage
 Rebirth,Druid,60,Nature,5,The Resurrection Union,Verbatim clone,Healing & revival
 Redemption,Paladin,60,Holy,5,The Resurrection Union,Verbatim clone,Healing & revival
@@ -398,27 +398,27 @@ Regrowth,Druid,60,Nature,9,The Mending Clock,Verbatim clone,Healing & revival
 Rejuvenation,Druid,60,Nature,11,The Mending Clock,Verbatim clone,Healing & revival
 Rend,Warrior,60,Physical,7,The Affliction Engine,Shared engine,Damage
 Renew,Priest,60,Holy,10,The Mending Clock,Verbatim clone,Healing & revival
-Revenge,Warrior,60,Physical,6,,,Damage
-Rip,Druid,60,Physical,6,,,Damage
+Revenge,Warrior,60,Physical,6,The Whetstone & The Strike,Shared template,Damage
+Rip,Druid,60,Physical,6,The Affliction Engine,Shared engine,Damage
 Ritual of Doom,Warlock,60,Shadow,1,The Menagerie,Shared template,Creating entities
 Rupture,Rogue,60,Physical,6,The Affliction Engine,Shared engine,Damage
 Seal of Light,Paladin,60,Holy,4,The Seal Press,Shared template,Offense boost
 Searing Totem,Shaman,60,Fire,6,The Totem Foundry,Shared template,Creating entities
 Serpent Sting,Hunter,60,Nature,9,The Affliction Engine,Shared engine,Damage
-Shackle Undead,Priest,60,Holy,3,,,Disables
+Shackle Undead,Priest,60,Holy,3,The Crowd Control Cabinet,Shared template,Disables
 Shadow Bolt,Warlock,60,Shadow,10,The Bolt Engine,Shared engine,Damage
 Shadow Ward,Warlock,60,Shadow,4,The Protection Rack,Shared template,Defense boost
 Shadowguard,Priest,60,Shadow,6,The Static Shell,Verbatim clone,Damage
 Shield Slam,Warrior,60,Physical,4,,,Negation
 Starfire,Druid,60,Arcane,7,The Bolt Engine,Shared engine,Damage
-Stealth,Rogue,60,Physical,4,The Druid Costume Shop,Verbatim clone,Deception & stealth
+Stealth,Rogue,60,Physical,4,The Vanishing Act,Verbatim clone,Deception & stealth
 Strength of Earth Totem,Shaman,60,Nature,5,The Totem Foundry,Shared template,Creating entities
 Summon Charger,Paladin,60,Holy,1,The Menagerie,Shared template,Creating entities
 Summon Dreadsteed,Warlock,60,Shadow,1,The Menagerie,Shared template,Creating entities
-Tiger's Fury,Druid,60,Physical,4,,,Offense boost
-Touch of Weakness,Priest,60,Shadow,6,,,Damage
+Tiger's Fury,Druid,60,Physical,4,The Whetstone & The Strike,Shared template,Offense boost
+Touch of Weakness,Priest,60,Shadow,6,The Debuff Bureau,Shared template,Damage
 Tranquility,Druid,60,Nature,4,The Mending Clock,Verbatim clone,Utility & world
 Tranquilizing Shot,Hunter,60,Nature,1,,,Negation
-Windfury Weapon,Shaman,60,Nature,4,,,Offense boost
-Wing Clip,Hunter,60,Physical,3,,,Disables
-Wyvern Sting,Hunter,60,Nature,3,The Sleepers,Verbatim clone,Disables
+Windfury Weapon,Shaman,60,Nature,4,The Whetstone & The Strike,Shared template,Offense boost
+Wing Clip,Hunter,60,Physical,3,The Slow Lane,Shared template,Disables
+Wyvern Sting,Hunter,60,Nature,3,The Crowd Control Cabinet,Shared template,Disables

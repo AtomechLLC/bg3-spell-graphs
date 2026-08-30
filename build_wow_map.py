@@ -452,7 +452,8 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
   <div class="bgroup"><span class="blabel"></span>
     <button class="pchip" id="clear">✕ clear</button><span id="fcount"></span></div>
 </div>
-<footer>WoW Classic Era · {len(RECS)} trainer abilities · lines (family view) connect tooltips ≥ 0.88 similar ·
+<footer>⌨ ←/→ cycles the active layout's groups · ↑/↓ or 1–4 switches layouts · esc clears ·
+WoW Classic Era · {len(RECS)} trainer abilities · lines (family view) connect blended mechanics ≥ 0.88 ·
 hover any ability, class, school, or family mark · icons via warcraft.wiki.gg © Blizzard Entertainment ·
 sibling of the Baldur's Gate 3 Spell Constellations</footer>
 <script>
@@ -528,6 +529,35 @@ let v0 = 'fam';
 try {{ v0 = localStorage.getItem('wow-constellation-view') || 'fam'; }} catch (e) {{}}
 if (!['fam','cls','sch','pur'].includes(v0)) v0 = 'fam';
 show(v0);
+const VIEWS = ['fam', 'cls', 'sch', 'pur'];
+const CYCLE = {{fam: {json.dumps([f["slug"] for f in FAMS])},
+  cls: {json.dumps(CLASSES)}, sch: {json.dumps(SCHOOLS)}, pur: {json.dumps(PURS)}}};
+function selectOnly(g, val) {{
+  state[g].clear();
+  if (val !== null) state[g].add(val);
+  document.querySelectorAll('.pchip[data-g="' + g + '"]').forEach(b =>
+    b.classList.toggle('on', b.dataset.val === val));
+  applyFilter();
+}}
+function cycleGroup(dir) {{
+  const g = document.querySelector('.view.on').dataset.v;
+  const vals = CYCLE[g];
+  const cur = state[g].size === 1 ? vals.indexOf([...state[g]][0]) : -1;
+  const next = ((cur + dir) % (vals.length + 1) + vals.length + 1) % (vals.length + 1);
+  selectOnly(g, next === vals.length ? null : vals[next]);
+}}
+document.addEventListener('keydown', e => {{
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'ArrowRight') {{ cycleGroup(1); e.preventDefault(); }}
+  else if (e.key === 'ArrowLeft') {{ cycleGroup(-1); e.preventDefault(); }}
+  else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {{
+    const i = VIEWS.indexOf(document.querySelector('.view.on').dataset.v);
+    show(VIEWS[(i + (e.key === 'ArrowDown' ? 1 : -1) + VIEWS.length) % VIEWS.length]);
+    e.preventDefault();
+  }}
+  else if (e.key >= '1' && e.key <= '4') show(VIEWS[+e.key - 1]);
+  else if (e.key === 'Escape') document.getElementById('clear').click();
+}});
 document.querySelectorAll('.n').forEach(n => {{
   const svg = n.closest('svg');
   n.addEventListener('mouseenter', () => {{

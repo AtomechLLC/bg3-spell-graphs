@@ -1,6 +1,6 @@
 # <span class="femoji">😈</span> The Menagerie
 
-<span class="tier tier-template">Shared template</span> · 18 abilities · mechanical similarity 0.14–1.00
+<span class="tier tier-template">Shared template</span> · 19 abilities · mechanical similarity 0.14–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -11,6 +11,7 @@
 | <img class="sic" data-i="eyes-of-the-beast" alt=""> **Eyes of the Beast** | Hunter | 14 | Nature | 1 | Take direct control of your pet and see through its eyes for X. |
 | <img class="sic" data-i="summon-warhorse" alt=""> **Summon Warhorse** | Paladin | 40 | Holy | 1 | Summons a warhorse, which serves as a mount.  Speed is increased by X%. |
 | <img class="sic" data-i="summon-charger" alt=""> **Summon Charger** | Paladin | 60 | Holy | 1 | Summons a Charger, which serves as a mount.  Speed is increased by X%. |
+| <img class="sic" data-i="lightwell" alt=""> **Lightwell** | Priest | 60 | Holy | 3 | Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore X  |
 | <img class="sic" data-i="summon-imp" alt=""> **Summon Imp** | Warlock | 1 | Shadow | 1 | Summons an Imp under the command of the Warlock. |
 | <img class="sic" data-i="summon-voidwalker" alt=""> **Summon Voidwalker** | Warlock | 10 | Shadow | 1 | Summons a Voidwalker under the command of the Warlock. |
 | <img class="sic" data-i="ritual-of-summoning" alt=""> **Ritual of Summoning** | Warlock | 20 | Shadow | 1 | Begins a ritual that summons the targeted group member.  Requires the caster and 2 additional party members to |
@@ -32,4 +33,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/hunter|Hunter]] · [[classes/paladin|Paladin]] · [[classes/warlock|Warlock]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/hunter|Hunter]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/warlock|Warlock]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*

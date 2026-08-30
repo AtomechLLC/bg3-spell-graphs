@@ -499,7 +499,8 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
   <div class="bgroup"><span class="blabel"></span>
     <button class="pchip" id="clear">✕ clear</button><span id="fcount"></span></div>
 </div>
-<footer>pick a clustering method above · toggle the pickers below to light up overlaps in any layout —
+<footer>⌨ ←/→ cycles through the active layout's groups · ↑/↓ or 1–4 switches layouts · esc clears ·
+pick a clustering method above · toggle the pickers below to light up overlaps in any layout —
 classes intersect (Cleric + Wizard = spells on both lists), schools and families add ·
 lines (family view) connect mechanics ≥ 0.88 similar · hover any spell, class name, or family mark ·
 icons © Larian Studios &amp; Wizards of the Coast</footer>
@@ -617,6 +618,38 @@ document.querySelectorAll('.n').forEach(n => {{
     tip.style.display = 'none';
   }});
 }});
+// ---- keyboard: arrows cycle groups/layouts, digits jump, esc clears ---
+const VIEWS = ['fam', 'cls', 'sch', 'pur'];
+const CYCLE = {{fam: {json.dumps([f["slug"] for f in C.F])},
+  cls: {json.dumps(CLASSES)}, sch: {json.dumps(SCHOOLS)}, pur: {json.dumps(PURS)}}};
+const CYCLE_GROUP = {{fam: 'fam', cls: 'cls', sch: 'sch', pur: 'pur'}};
+function selectOnly(g, val) {{
+  state[g].clear();
+  if (val !== null) state[g].add(val);
+  document.querySelectorAll('.pchip[data-g="' + g + '"]').forEach(b =>
+    b.classList.toggle('on', b.dataset.val === val));
+  applyFilter();
+}}
+function cycleGroup(dir) {{
+  const v = document.querySelector('.view.on').dataset.v;
+  const g = CYCLE_GROUP[v], vals = CYCLE[v];
+  const cur = state[g].size === 1 ? vals.indexOf([...state[g]][0]) : -1;
+  const next = ((cur + dir) % (vals.length + 1) + vals.length + 1) % (vals.length + 1);
+  selectOnly(g, next === vals.length ? null : vals[next]);
+}}
+document.addEventListener('keydown', e => {{
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'ArrowRight') {{ cycleGroup(1); e.preventDefault(); }}
+  else if (e.key === 'ArrowLeft') {{ cycleGroup(-1); e.preventDefault(); }}
+  else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {{
+    const i = VIEWS.indexOf(document.querySelector('.view.on').dataset.v);
+    show(VIEWS[(i + (e.key === 'ArrowDown' ? 1 : -1) + VIEWS.length) % VIEWS.length]);
+    e.preventDefault();
+  }}
+  else if (e.key >= '1' && e.key <= '4') show(VIEWS[+e.key - 1]);
+  else if (e.key === 'Escape') document.getElementById('clear').click();
+}});
+
 // hover a class/school name -> highlight every spell it owns
 document.querySelectorAll('text.anchor').forEach(a => {{
   const svg = a.closest('svg');

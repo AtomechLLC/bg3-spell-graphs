@@ -26,4 +26,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/mage|Mage]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/mage|Mage]] · [[families/travel|The Travel Agency]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

@@ -1,9 +1,10 @@
 # <span class="femoji">⏳</span> The Mending Clock
 
-<span class="tier tier-clone">Verbatim clone</span> · 4 abilities · mechanical similarity 0.32–0.79
+<span class="tier tier-clone">Verbatim clone</span> · 5 abilities · mechanical similarity 0.17–0.79
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
+| <img class="sic" data-i="frenzied-regeneration" alt=""> **Frenzied Regeneration** | Druid | 56 | Physical | 3 | Converts up to 10 rage per second into health for X.  Each point of rage is converted into X health. |
 | <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Druid | 60 | Nature | 9 | Heals a friendly target for X and another X over X. |
 | <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Druid | 60 | Nature | 11 | Heals the target for X over X. |
 | <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Druid | 60 | Nature | 4 | Regenerates all nearby group members for $?X[X][X] every X seconds for X.  Druid must channel to maintain the  |

@@ -1,6 +1,6 @@
 # <span class="femoji">🙌</span> The Status Boost Rack
 
-<span class="tier tier-template">Shared template</span> · 30 abilities · mechanical similarity 0.11–1.00
+<span class="tier tier-template">Shared template</span> · 31 abilities · mechanical similarity 0.11–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -34,6 +34,7 @@
 | <img class="sic" data-i="power-word-fortitude" alt=""> **Power Word: Fortitude** | Priest | 60 | Holy | 6 | Power infuses the target, increasing their Stamina by X for X. |
 | <img class="sic" data-i="prayer-of-fortitude" alt=""> **Prayer of Fortitude** | Priest | 60 | Holy | 2 | Power infuses the target's party, increasing their Stamina by X for X. |
 | <img class="sic" data-i="prayer-of-spirit" alt=""> **Prayer of Spirit** | Priest | 60 | Holy | 1 | Power infuses the target's party, increasing their Spirit by X for X. |
+| <img class="sic" data-i="battle-shout" alt=""> **Battle Shout** | Warrior | 60 | Physical | 7 | The warrior shouts, increasing the melee attack power of all party members within X yards by X.  Lasts X. |
 
 **Shared skeleton.** One design — 'grant a friendly target a persistent stat modifier' — delivered through three chassis. The buff-and-prayer pairs (Arcane Intellect→Brilliance, Fortitude→Prayer of Fortitude, Mark→Gift) double every buff into a party version with a reagent cost. The Blessing rack sells the same chassis seven times (Might/Wisdom/Kings measure 0.83–0.91), each with a 'Greater' twin. The Aura carousel broadcasts it in a 30-yard radius, one at a time — the resistance trio is word-identical but for the school (0.9+).
 
@@ -44,4 +45,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[families/aspects|The Aspect Dial]] · [[families/curses|The Curse Catalogue]] · [[families/teleports|The Hearth Network]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/warrior|Warrior]] · [[families/aspects|The Aspect Dial]] · [[families/curses|The Debuff Bureau]] · [[families/teleports|The Hearth Network]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

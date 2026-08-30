@@ -1,9 +1,10 @@
 # <span class="femoji">✝️</span> The Seal Press
 
-<span class="tier tier-template">Shared template</span> · 5 abilities · mechanical similarity 0.64–0.95
+<span class="tier tier-template">Shared template</span> · 6 abilities · mechanical similarity 0.18–0.95
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
+| <img class="sic" data-i="judgement" alt=""> **Judgement** | Paladin | 4 | Holy | 1 | Unleashes the energy of a Seal spell upon an enemy.  Refer to individual Seals for Judgement effect. |
 | <img class="sic" data-i="seal-of-justice" alt=""> **Seal of Justice** | Paladin | 22 | Holy | 1 | Fills the Paladin with the spirit of justice for X, giving each melee attack a chance to stun for X.  Only one |
 | <img class="sic" data-i="seal-of-the-crusader" alt=""> **Seal of the Crusader** | Paladin | 52 | Holy | 6 | Fills the Paladin with the spirit of a crusader for X, granting X melee attack power.  The Paladin also attack |
 | <img class="sic" data-i="seal-of-righteousness" alt=""> **Seal of Righteousness** | Paladin | 58 | Holy | 8 | Fills the Paladin with holy spirit for X, granting each melee attack an additional $/87;20286s3 to $/25;20286s |
