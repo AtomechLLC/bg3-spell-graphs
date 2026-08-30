@@ -8,19 +8,19 @@ Before any reskin analysis: **70% of the classic spellbook is rank duplicates** 
 
 ## Axis 1 — the same ability in several class books
 
-Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), classic WoW ships **the same design as separate class-branded spells**: nine heals that are [[families/heals|one heal]], four [[families/rez|resurrections]], four [[families/interrupts|interrupts]], one [[families/protection|protection effect]] wearing armor, ward, and shield vocabularies across four classes, Cure Poison printed verbatim in two books, and the Feral Druid — [[families/cat-is-rogue|a licensed photocopy of the Rogue and Warrior kits]]. Exact name sharing is rare (the matrix below), because the *names* are the reskin:
+Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), classic WoW ships **the same design as separate class-branded spells**: nine heals that are [[families/heals|one heal]], five [[families/interrupts|interrupts]], the [[families/rez|resurrection franchise]], one [[families/protection|protection effect]] wearing armor, ward, and shield vocabularies across four classes, Cure Poison printed verbatim in two books, and the Feral Druid — [[families/cat-is-rogue|a licensed photocopy of the Rogue and Warrior kits]]. Because the *names* are the reskin, name sharing is near zero and useless as a measure — so the matrix below measures **mechanics**: the share of the row class's kit that has an effect-twin in the column class's book (blended `SpellEffect`-signature similarity ≥ 0.75; the bold diagonal is each class twinned against *its own* book). Standouts: **20%** of the Rogue book has a twin in Druid's; **13%** of the Hunter book has a twin in Warlock's; **13%** of the Hunter book has a twin in Druid's.
 
-| ↓ · shares names with → | [[classes/druid|Drui]] | [[classes/hunter|Hunt]] | [[classes/mage|Mage]] | [[classes/paladin|Pala]] | [[classes/priest|Prie]] | [[classes/rogue|Rogu]] | [[classes/shaman|Sham]] | [[classes/warlock|Warl]] | [[classes/warrior|Warr]] |
+| ↓ has effect-twins in → | [[classes/druid|Drui]] | [[classes/hunter|Hunt]] | [[classes/mage|Mage]] | [[classes/paladin|Pala]] | [[classes/priest|Prie]] | [[classes/rogue|Rogu]] | [[classes/shaman|Sham]] | [[classes/warlock|Warl]] | [[classes/warrior|Warr]] |
 |---|---|---|---|---|---|---|---|---|---|
-| [[classes/druid|Druid]] (53) | — | 4% | 0% | 0% | 0% | 0% | 2% | 0% | 0% |
-| [[classes/hunter|Hunter]] (54) | 4% | — | 0% | 0% | 0% | 0% | 0% | 0% | 0% |
-| [[classes/mage|Mage]] (51) | 0% | 0% | — | 0% | 0% | 0% | 0% | 0% | 0% |
-| [[classes/paladin|Paladin]] (47) | 0% | 0% | 0% | — | 0% | 0% | 0% | 0% | 0% |
-| [[classes/priest|Priest]] (44) | 0% | 0% | 0% | 0% | — | 0% | 2% | 0% | 0% |
-| [[classes/rogue|Rogue]] (30) | 0% | 0% | 0% | 0% | 0% | — | 0% | 0% | 0% |
-| [[classes/shaman|Shaman]] (45) | 2% | 0% | 0% | 0% | 2% | 0% | — | 0% | 0% |
-| [[classes/warlock|Warlock]] (65) | 0% | 0% | 0% | 0% | 0% | 0% | 0% | — | 0% |
-| [[classes/warrior|Warrior]] (34) | 0% | 0% | 0% | 0% | 0% | 0% | 0% | 0% | — |
+| [[classes/druid|Druid]] (53) | **25%** | 4% | 2% | 8% | 8% | 11% | 6% | 2% | 6% |
+| [[classes/hunter|Hunter]] (54) | 13% | **31%** | 0% | 4% | 0% | 0% | 0% | 13% | 2% |
+| [[classes/mage|Mage]] (51) | 2% | 0% | **59%** | 0% | 10% | 0% | 2% | 8% | 0% |
+| [[classes/paladin|Paladin]] (47) | 9% | 4% | 0% | **49%** | 9% | 0% | 6% | 9% | 0% |
+| [[classes/priest|Priest]] (44) | 9% | 0% | 11% | 7% | **20%** | 0% | 7% | 5% | 0% |
+| [[classes/rogue|Rogue]] (30) | 20% | 0% | 0% | 0% | 0% | **17%** | 0% | 0% | 3% |
+| [[classes/shaman|Shaman]] (45) | 11% | 0% | 2% | 4% | 9% | 0% | **58%** | 2% | 2% |
+| [[classes/warlock|Warlock]] (65) | 2% | 3% | 3% | 6% | 3% | 0% | 2% | **58%** | 2% |
+| [[classes/warrior|Warrior]] (34) | 9% | 3% | 0% | 0% | 0% | 3% | 3% | 3% | **0%** |
 
 ## Axis 2 — one chassis, many payloads
 

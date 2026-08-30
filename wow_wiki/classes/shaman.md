@@ -2,7 +2,7 @@
 
 **45 abilities** (166 spellbook entries counting ranks — 73% of the book is rank copies) · **30** in an identified family (67%)
 
-Shared ability names: **2%** with [[classes/priest|Priest]], **2%** with [[classes/druid|Druid]], **0%** with [[classes/warrior|Warrior]].
+Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Druid]], **9%** with [[classes/priest|Priest]], **4%** with [[classes/paladin|Paladin]] — and **58%** twinned inside its own book.
 
 | Lv | Ability | School | Ranks | Family |
 |---|---|---|---|---|
@@ -55,4 +55,4 @@ Shared ability names: **2%** with [[classes/priest|Priest]], **2%** with [[class
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[overview|Overview]]*
+*Linked from: [[classes/mage|Mage]] · [[classes/priest|Priest]] · [[classes/warrior|Warrior]] · [[overview|Overview]]*

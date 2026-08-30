@@ -2,7 +2,7 @@
 
 **44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **21** in an identified family (48%)
 
-Shared ability names: **2%** with [[classes/shaman|Shaman]], **0%** with [[classes/warrior|Warrior]], **0%** with [[classes/warlock|Warlock]].
+Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]], **9%** with [[classes/druid|Druid]], **7%** with [[classes/shaman|Shaman]] — and **20%** twinned inside its own book.
 
 | Lv | Ability | School | Ranks | Family |
 |---|---|---|---|---|
@@ -54,4 +54,4 @@ Shared ability names: **2%** with [[classes/shaman|Shaman]], **0%** with [[class
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/shaman|Shaman]] · [[overview|Overview]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/shaman|Shaman]] · [[classes/warlock|Warlock]] · [[overview|Overview]]*

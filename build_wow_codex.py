@@ -224,6 +224,24 @@ for f in F:
     for m in f["members"]:
         FAMILY_OF[m] = f
 
+# ---------------------------------------------- cross-class mechanical twins
+# An ability in class A counts toward A->B if class B's book holds a different
+# ability with blended effect similarity >= TWIN_T. Diagonal = within-class twins.
+TWIN_T = 0.75
+TWIN = {A: {B: set() for B in CLASSES} for A in CLASSES}
+if os.path.exists("wow_cluster_sims.json"):
+    for k, v in json.load(open("wow_cluster_sims.json")).items():
+        if v < TWIN_T:
+            continue
+        a, b = (int(x) for x in k.split("|"))
+        ra, rb = BYID.get(a), BYID.get(b)
+        if not ra or not rb:
+            continue
+        for ca in ra["classes"]:
+            for cb in rb["classes"]:
+                TWIN[ca][cb].add(a)
+                TWIN[cb][ca].add(b)
+
 # ---------------------------------------------------------------- icons
 ICON_URIS = {}
 def icon_key(r):
@@ -280,14 +298,14 @@ Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Metho
 def class_recs(c):
     return sorted((r for r in RECS if c in r["classes"]), key=lambda r: (r["level"], r["name"]))
 
-names_of = {c: {r["name"] for r in class_recs(c)} for c in CLASSES}
 for c in CLASSES:
     lst = class_recs(c)
     in_fam = [r for r in lst if r["id"] in FAMILY_OF]
     ranks = sum(r["rank_count"] for r in lst)
-    ov = sorted(((100 * len(names_of[c] & names_of[b]) / len(names_of[c]), b)
+    ov = sorted(((100 * len(TWIN[c][b]) / len(lst), b)
                  for b in CLASSES if b != c), reverse=True)[:3]
     ovtxt = ", ".join(f"**{p:.0f}%** with {f'[[classes/{b.lower()}|{b}]]'}" for p, b in ov)
+    ovtxt += f" — and **{100 * len(TWIN[c][c]) / len(lst):.0f}%** twinned inside its own book"
     rows = ["| Lv | Ability | School | Ranks | Family |", "|---|---|---|---|---|"]
     for r in lst:
         fm = FAMILY_OF.get(r["id"])
@@ -297,7 +315,7 @@ for c in CLASSES:
 
 **{len(lst)} abilities** ({ranks} spellbook entries counting ranks — {100*(ranks-len(lst))/max(1,ranks):.0f}% of the book is rank copies) · **{len(in_fam)}** in an identified family ({100*len(in_fam)/max(1,len(lst)):.0f}%)
 
-Shared ability names: {ovtxt}.
+Mechanical twins (effect similarity ≥ {TWIN_T}): {ovtxt}.
 
 {chr(10).join(rows)}
 
@@ -339,7 +357,7 @@ Which WoW Classic abilities are mostly the same ability. Of **{N} distinct train
 
 {chr(10).join(prow)}
 
-Scores are masked-tooltip similarity ([[methodology|method]]); classic tooltips are macro-parameterized in the game data itself, so the masking mostly just removes what Blizzard already treats as a variable.
+Scores are the blended mechanical similarity — 0.6 × `SpellEffect` signature (effect types, aura codes, targets) + 0.4 × masked tooltip ([[methodology|method]]) — so two abilities that act through the same machinery measure as twins even when their tooltips read differently.
 """)
 
 # methodology
@@ -359,14 +377,21 @@ page("methodology", "Methodology", "Start", f"""# Methodology
 **Reproduce.** `wow_dataset.py` → `wow_analyze.py` → `wow_icons.py` → `build_wow_codex.py`. Companion codices: the D&D 5e SRD and Baldur's Gate 3.
 """)
 
-# overview
-mat = ["| ↓ · shares names with → | " + " | ".join(f"[[classes/{c.lower()}|{c[:4]}]]" for c in CLASSES) + " |",
+# overview — cross-class mechanical-twin matrix (diagonal = within-class twins)
+mat = ["| ↓ has effect-twins in → | " + " | ".join(f"[[classes/{c.lower()}|{c[:4]}]]" for c in CLASSES) + " |",
        "|---|" + "---|" * len(CLASSES)]
 for a in CLASSES:
+    na = len(class_recs(a))
     cells = []
     for b in CLASSES:
-        cells.append("—" if a == b else f"{100 * len(names_of[a] & names_of[b]) / len(names_of[a]):.0f}%")
-    mat.append(f"| [[classes/{a.lower()}|{a}]] ({len(names_of[a])}) | " + " | ".join(cells) + " |")
+        pct = 100 * len(TWIN[a][b]) / na
+        cells.append(f"**{pct:.0f}%**" if a == b else f"{pct:.0f}%")
+    mat.append(f"| [[classes/{a.lower()}|{a}]] ({na}) | " + " | ".join(cells) + " |")
+
+top_cross = sorted(((100 * len(TWIN[a][b]) / len(class_recs(a)), a, b)
+                    for a in CLASSES for b in CLASSES if a != b), reverse=True)[:3]
+top_cross_txt = "; ".join(
+    f"**{p:.0f}%** of the {a} book has a twin in {b}'s" for p, a, b in top_cross)
 
 page("overview", "Overview", "Start", f"""# How Homogeneous Are WoW Classic Spells?
 
@@ -378,7 +403,7 @@ Before any reskin analysis: **{100*(n_rank_entries-N)/n_rank_entries:.0f}% of th
 
 ## Axis 1 — the same ability in several class books
 
-Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), classic WoW ships **the same design as separate class-branded spells**: nine heals that are [[families/heals|one heal]], four [[families/rez|resurrections]], four [[families/interrupts|interrupts]], one [[families/protection|protection effect]] wearing armor, ward, and shield vocabularies across four classes, Cure Poison printed verbatim in two books, and the Feral Druid — [[families/cat-is-rogue|a licensed photocopy of the Rogue and Warrior kits]]. Exact name sharing is rare (the matrix below), because the *names* are the reskin:
+Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), classic WoW ships **the same design as separate class-branded spells**: nine heals that are [[families/heals|one heal]], five [[families/interrupts|interrupts]], the [[families/rez|resurrection franchise]], one [[families/protection|protection effect]] wearing armor, ward, and shield vocabularies across four classes, Cure Poison printed verbatim in two books, and the Feral Druid — [[families/cat-is-rogue|a licensed photocopy of the Rogue and Warrior kits]]. Because the *names* are the reskin, name sharing is near zero and useless as a measure — so the matrix below measures **mechanics**: the share of the row class's kit that has an effect-twin in the column class's book (blended `SpellEffect`-signature similarity ≥ {TWIN_T}; the bold diagonal is each class twinned against *its own* book). Standouts: {top_cross_txt}.
 
 {chr(10).join(mat)}
 
