@@ -38,12 +38,12 @@ Mechanical twins (effect similarity ≥ 0.75): **10%** with [[classes/priest|Pri
 | 56 | <img class="sic" data-i="arcane-intellect" alt=""> **Arcane Intellect** | Arcane | 5 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 56 | <img class="sic" data-i="arcane-missiles" alt=""> **Arcane Missiles** | Arcane | 8 | [[families/bolts|🏹 The Bolt Engine]] |
 | 56 | <img class="sic" data-i="flamestrike" alt=""> **Flamestrike** | Fire | 6 | [[families/aoe-damage|💥 The Area Barrage]] |
-| 58 | <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Frost | 5 | [[families/snares|🥶 The Slow Lane]] |
+| 58 | <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Frost | 5 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 58 | <img class="sic" data-i="conjure-mana-ruby" alt=""> **Conjure Mana Ruby** | Arcane | 1 | [[families/conjured|💎 The Conjured Commissary]] |
 | 58 | <img class="sic" data-i="ice-barrier" alt=""> **Ice Barrier** | Frost | 4 | — |
 | 58 | <img class="sic" data-i="mage-armor" alt=""> **Mage Armor** | Arcane | 3 | [[families/protection|🧿 The Protection Rack]] |
 | 58 | <img class="sic" data-i="scorch" alt=""> **Scorch** | Fire | 7 | [[families/bolts|🏹 The Bolt Engine]] |
-| 60 | <img class="sic" data-i="blast-wave" alt=""> **Blast Wave** | Fire | 5 | [[families/snares|🥶 The Slow Lane]] |
+| 60 | <img class="sic" data-i="blast-wave" alt=""> **Blast Wave** | Fire | 5 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="blizzard" alt=""> **Blizzard** | Frost | 6 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="conjure-food" alt=""> **Conjure Food** | Arcane | 7 | [[families/conjured|💎 The Conjured Commissary]] |
 | 60 | <img class="sic" data-i="conjure-water" alt=""> **Conjure Water** | Arcane | 7 | [[families/conjured|💎 The Conjured Commissary]] |

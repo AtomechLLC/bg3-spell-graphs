@@ -1,6 +1,6 @@
 # The Identical-Spell List
 
-Which WoW Classic abilities are mostly the same ability. Of **423 distinct trainer-taught class abilities**, **386 (91%) fall into 34 families** — by far the highest of the three games studied, because classic WoW reskins along an axis the others barely use: **across classes**.
+Which WoW Classic abilities are mostly the same ability. Of **423 distinct trainer-taught class abilities**, **387 (91%) fall into 34 families** — by far the highest of the three games studied, because classic WoW reskins along an axis the others barely use: **across classes**.
 
 - <span class="tier tier-clone">Verbatim clone</span> — same sentence, one noun swapped (often into a different class's book).
 - <span class="tier tier-template">Shared template</span> — one chassis, many payloads (totems, blessings, curses).
@@ -26,19 +26,19 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 | [[families/soothe|🕊️ The Soothe Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 2 classes | 0.90 | humanoid vs. beast |
 | [[families/mirror|🪞 Amplify & Dampen]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.86 | the sign |
 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 31 abilities · 5 classes | 1.00 | the stat granted, and the delivery: touch, blessing slot, or radius |
-| [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 31 abilities · 5 classes | 0.97 | how the weapon hit is made bigger: imbue, on-next-swing, opener, or finisher |
+| [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 28 abilities · 5 classes | 0.97 | how the weapon hit is made bigger: imbue, on-next-swing, opener, or finisher |
 | [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | 24 abilities · 8 classes | 0.98 | the flavor of lost agency: flee, sleep, stun, sheep, charm, or exile |
 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 21 abilities · 1 classes | 0.98 | the payload planted in the ground |
 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 19 abilities · 4 classes | 1.00 | who — or what — answers the call, and which class holds the leash |
 | [[families/curses|💀 The Debuff Bureau]] | <span class="tier tier-template">Shared template</span> | 17 abilities · 6 classes | 1.00 | the stat taken away, and which class's stamp is on the form |
+| [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 17 abilities · 8 classes | 0.75 | the shape and school of the field |
 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 10 abilities · 3 classes | 0.95 | how the damage is refused: armor, absorb, or school ward |
-| [[families/snares|🥶 The Slow Lane]] | <span class="tier tier-template">Shared template</span> | 10 abilities · 5 classes | 0.71 | root vs. snare, and the delivery |
 | [[families/forms|🐻 The Form Rack]] | <span class="tier tier-template">Shared template</span> | 9 abilities · 2 classes | 1.00 | the body — or posture — worn |
-| [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 9 abilities · 6 classes | 0.75 | the shape and school of the field |
+| [[families/snares|🥶 The Slow Lane]] | <span class="tier tier-template">Shared template</span> | 8 abilities · 5 classes | 0.71 | root vs. snare, and the delivery |
 | [[families/aspects|🦅 The Aspect Dial]] | <span class="tier tier-template">Shared template</span> | 6 abilities · 1 classes | 0.82 | the animal and its bonus |
 | [[families/seals|✝️ The Seal Press]] | <span class="tier tier-template">Shared template</span> | 6 abilities · 1 classes | 0.95 | the on-hit payload |
 | [[families/traps|🪤 The Trap Line]] | <span class="tier tier-template">Shared template</span> | 4 abilities · 1 classes | 0.91 | the payload buried in the ground |
-| [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 21 abilities · 7 classes | 0.92 | school, speed, and rider |
+| [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 19 abilities · 7 classes | 0.92 | school, speed, and rider |
 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | 18 abilities · 7 classes | 0.86 | school, duration, and delivery |
 | [[families/siphons|🧛 The Siphon Set]] | <span class="tier tier-engine">Shared engine</span> | 10 abilities · 4 classes | 0.93 | what is drained, and in which direction |
 | [[families/shards|🔮 The Shard Economy]] | <span class="tier tier-engine">Shared engine</span> | 2 abilities · 1 classes | 0.65 | channel vs. burst delivery |

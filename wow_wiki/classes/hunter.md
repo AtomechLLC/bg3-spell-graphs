@@ -1,6 +1,6 @@
 # Hunter Spellbook (Classic)
 
-**54 abilities** (140 spellbook entries counting ranks — 61% of the book is rank copies) · **43** in an identified family (80%)
+**54 abilities** (140 spellbook entries counting ranks — 61% of the book is rank copies) · **44** in an identified family (81%)
 
 Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Warlock]], **13%** with [[classes/druid|Druid]], **4%** with [[classes/paladin|Paladin]] — and **31%** twinned inside its own book.
 
@@ -55,7 +55,7 @@ Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Wa
 | 60 | <img class="sic" data-i="freezing-trap" alt=""> **Freezing Trap** | Frost | 3 | [[families/traps|🪤 The Trap Line]] |
 | 60 | <img class="sic" data-i="lightning-breath" alt=""> **Lightning Breath** | Physical | 6 | — |
 | 60 | <img class="sic" data-i="mend-pet" alt=""> **Mend Pet** | Nature | 7 | — |
-| 60 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Physical | 5 | — |
+| 60 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Physical | 5 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="serpent-sting" alt=""> **Serpent Sting** | Nature | 9 | [[families/dots|🩸 The Affliction Engine]] |
 | 60 | <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Nature | 1 | — |
 | 60 | <img class="sic" data-i="wing-clip" alt=""> **Wing Clip** | Physical | 3 | [[families/snares|🥶 The Slow Lane]] |

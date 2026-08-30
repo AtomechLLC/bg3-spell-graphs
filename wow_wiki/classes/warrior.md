@@ -18,7 +18,7 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/druid|Druid
 | 28 | <img class="sic" data-i="shield-wall" alt=""> **Shield Wall** | Physical | 1 | — |
 | 30 | <img class="sic" data-i="berserker-stance" alt=""> **Berserker Stance** | Physical | 1 | [[families/forms|🐻 The Form Rack]] |
 | 32 | <img class="sic" data-i="berserker-rage" alt=""> **Berserker Rage** | Physical | 1 | — |
-| 36 | <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Physical | 1 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
+| 36 | <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Physical | 1 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 46 | <img class="sic" data-i="charge" alt=""> **Charge** | Physical | 3 | [[families/gap-closers|🏃 The Gap Closers]] |
 | 50 | <img class="sic" data-i="recklessness" alt=""> **Recklessness** | Physical | 1 | — |
 | 52 | <img class="sic" data-i="intercept" alt=""> **Intercept** | Physical | 3 | [[families/gap-closers|🏃 The Gap Closers]] |
@@ -30,10 +30,10 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/druid|Druid
 | 56 | <img class="sic" data-i="mocking-blow" alt=""> **Mocking Blow** | Physical | 5 | [[families/threat|😡 The Aggro Ledger]] |
 | 58 | <img class="sic" data-i="pummel" alt=""> **Pummel** | Physical | 2 | [[families/interrupts|✋ The Interrupt Union]] |
 | 58 | <img class="sic" data-i="sunder-armor" alt=""> **Sunder Armor** | Physical | 5 | [[families/curses|💀 The Debuff Bureau]] |
-| 58 | <img class="sic" data-i="thunder-clap" alt=""> **Thunder Clap** | Physical | 6 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
+| 58 | <img class="sic" data-i="thunder-clap" alt=""> **Thunder Clap** | Physical | 6 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="battle-shout" alt=""> **Battle Shout** | Physical | 7 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="bloodthirst" alt=""> **Bloodthirst** | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
-| 60 | <img class="sic" data-i="cleave" alt=""> **Cleave** | Physical | 5 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
+| 60 | <img class="sic" data-i="cleave" alt=""> **Cleave** | Physical | 5 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="heroic-strike" alt=""> **Heroic Strike** | Physical | 9 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
 | 60 | <img class="sic" data-i="mortal-strike" alt=""> **Mortal Strike** | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
 | 60 | <img class="sic" data-i="overpower" alt=""> **Overpower** | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |

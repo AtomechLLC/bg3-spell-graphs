@@ -27,7 +27,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Drui
 | 54 | <img class="sic" data-i="frost-resistance-totem" alt=""> **Frost Resistance Totem** | Fire | 3 | [[families/totems|🗿 The Totem Foundry]] |
 | 54 | <img class="sic" data-i="rockbiter-weapon" alt=""> **Rockbiter Weapon** | Nature | 7 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
 | 54 | <img class="sic" data-i="stoneskin-totem" alt=""> **Stoneskin Totem** | Nature | 6 | [[families/totems|🗿 The Totem Foundry]] |
-| 56 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Nature | 4 | [[families/bolts|🏹 The Bolt Engine]] |
+| 56 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Nature | 4 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 56 | <img class="sic" data-i="flametongue-weapon" alt=""> **Flametongue Weapon** | Fire | 6 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
 | 56 | <img class="sic" data-i="lightning-bolt" alt=""> **Lightning Bolt** | Nature | 10 | [[families/bolts|🏹 The Bolt Engine]] |
 | 56 | <img class="sic" data-i="lightning-shield" alt=""> **Lightning Shield** | Nature | 7 | [[families/static-shell|🌩️ The Static Shell]] |

@@ -49,7 +49,7 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/warlock|War
 | 60 | <img class="sic" data-i="greater-blessing-of-wisdom" alt=""> **Greater Blessing of Wisdom** | Holy | 2 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="hammer-of-wrath" alt=""> **Hammer of Wrath** | Holy | 3 | [[families/bolts|🏹 The Bolt Engine]] |
 | 60 | <img class="sic" data-i="holy-light" alt=""> **Holy Light** | Holy | 9 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
-| 60 | <img class="sic" data-i="holy-wrath" alt=""> **Holy Wrath** | Holy | 2 | [[families/bolts|🏹 The Bolt Engine]] |
+| 60 | <img class="sic" data-i="holy-wrath" alt=""> **Holy Wrath** | Holy | 2 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="redemption" alt=""> **Redemption** | Holy | 5 | [[families/rez|⚰️ The Resurrection Union]] |
 | 60 | <img class="sic" data-i="seal-of-light" alt=""> **Seal of Light** | Holy | 4 | [[families/seals|✝️ The Seal Press]] |
 | 60 | <img class="sic" data-i="summon-charger" alt=""> **Summon Charger** | Holy | 1 | [[families/summons|😈 The Menagerie]] |

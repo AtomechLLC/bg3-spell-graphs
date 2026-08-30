@@ -134,7 +134,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 36 | <img class="sic" data-i="create-firestone" alt=""> **Create Firestone** | Warlock | Fire | 1 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 36 | <img class="sic" data-i="create-spellstone" alt=""> **Create Spellstone** | Warlock | Shadow | 1 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 36 | <img class="sic" data-i="dispel-magic" alt=""> **Dispel Magic** | Priest | Holy | 2 | [[families/cleanses|🧼 The Cleanse Counter]] | <span class="tier tier-clone">Verbatim clone</span> | 🧯 Negation |
-| 36 | <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Warrior | Physical | 1 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
+| 36 | <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Warrior | Physical | 1 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 38 | <img class="sic" data-i="blessing-of-protection" alt=""> **Blessing of Protection** | Paladin | Holy | 3 | — |  | ⛓️ Disables |
 | 38 | <img class="sic" data-i="conjure-mana-jade" alt=""> **Conjure Mana Jade** | Mage | Arcane | 1 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 38 | <img class="sic" data-i="curse-of-idiocy" alt=""> **Curse of Idiocy** | Warlock | Shadow | 1 | [[families/curses|💀 The Debuff Bureau]] | <span class="tier tier-template">Shared template</span> | 🩸 Degradation |
@@ -232,7 +232,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 56 | <img class="sic" data-i="arcane-intellect" alt=""> **Arcane Intellect** | Mage | Arcane | 5 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | ⚔️ Offense boost |
 | 56 | <img class="sic" data-i="arcane-missiles" alt=""> **Arcane Missiles** | Mage | Arcane | 8 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
 | 56 | <img class="sic" data-i="aspect-of-the-wild" alt=""> **Aspect of the Wild** | Hunter | Nature | 2 | [[families/aspects|🦅 The Aspect Dial]] | <span class="tier tier-template">Shared template</span> | 🐻 Role shift |
-| 56 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Shaman | Nature | 4 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
+| 56 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Shaman | Nature | 4 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 56 | <img class="sic" data-i="create-firestone-major" alt=""> **Create Firestone (Major)** | Warlock | Fire | 1 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 56 | <img class="sic" data-i="curse-of-recklessness" alt=""> **Curse of Recklessness** | Warlock | Shadow | 4 | [[families/curses|💀 The Debuff Bureau]] | <span class="tier tier-template">Shared template</span> | 🩸 Degradation |
 | 56 | <img class="sic" data-i="curse-of-shadow" alt=""> **Curse of Shadow** | Warlock | Shadow | 2 | [[families/curses|💀 The Debuff Bureau]] | <span class="tier tier-template">Shared template</span> | 🩸 Degradation |
@@ -265,7 +265,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 56 | <img class="sic" data-i="windwall-totem" alt=""> **Windwall Totem** | Shaman | Nature | 3 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 58 | <img class="sic" data-i="ambush" alt=""> **Ambush** | Rogue | Physical | 6 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 58 | <img class="sic" data-i="claw" alt=""> **Claw** | Druid | Physical | 5 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
-| 58 | <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Mage | Frost | 5 | [[families/snares|🥶 The Slow Lane]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
+| 58 | <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Mage | Frost | 5 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 58 | <img class="sic" data-i="conjure-mana-ruby" alt=""> **Conjure Mana Ruby** | Mage | Arcane | 1 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 58 | <img class="sic" data-i="create-healthstone-major" alt=""> **Create Healthstone (Major)** | Warlock | Shadow | 1 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 58 | <img class="sic" data-i="curse-of-agony" alt=""> **Curse of Agony** | Warlock | Shadow | 5 | [[families/curses|💀 The Debuff Bureau]] | <span class="tier tier-template">Shared template</span> | 🩸 Degradation |
@@ -305,7 +305,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 58 | <img class="sic" data-i="stoneclaw-totem" alt=""> **Stoneclaw Totem** | Shaman | Nature | 6 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 58 | <img class="sic" data-i="subjugate-demon" alt=""> **Subjugate Demon** | Warlock | Shadow | 3 | [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 58 | <img class="sic" data-i="sunder-armor" alt=""> **Sunder Armor** | Warrior | Physical | 5 | [[families/curses|💀 The Debuff Bureau]] | <span class="tier tier-template">Shared template</span> | 🩸 Degradation |
-| 58 | <img class="sic" data-i="thunder-clap" alt=""> **Thunder Clap** | Warrior | Physical | 6 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
+| 58 | <img class="sic" data-i="thunder-clap" alt=""> **Thunder Clap** | Warrior | Physical | 6 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 58 | <img class="sic" data-i="volley" alt=""> **Volley** | Hunter | Arcane | 3 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="ancestral-spirit" alt=""> **Ancestral Spirit** | Shaman | Nature | 5 | [[families/rez|⚰️ The Resurrection Union]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
 | 60 | <img class="sic" data-i="arcane-shot" alt=""> **Arcane Shot** | Hunter | Arcane | 8 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
@@ -313,13 +313,13 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 60 | <img class="sic" data-i="backstab" alt=""> **Backstab** | Rogue | Physical | 9 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="battle-shout" alt=""> **Battle Shout** | Warrior | Physical | 7 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | ⚔️ Offense boost |
 | 60 | <img class="sic" data-i="black-arrow" alt=""> **Black Arrow** | Hunter | Shadow | 2 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | ⛓️ Disables |
-| 60 | <img class="sic" data-i="blast-wave" alt=""> **Blast Wave** | Mage | Fire | 5 | [[families/snares|🥶 The Slow Lane]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
+| 60 | <img class="sic" data-i="blast-wave" alt=""> **Blast Wave** | Mage | Fire | 5 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 60 | <img class="sic" data-i="blessing-of-light" alt=""> **Blessing of Light** | Paladin | Holy | 3 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 🛡️ Defense boost |
 | 60 | <img class="sic" data-i="blessing-of-might" alt=""> **Blessing of Might** | Paladin | Holy | 7 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | ⚔️ Offense boost |
 | 60 | <img class="sic" data-i="blessing-of-wisdom" alt=""> **Blessing of Wisdom** | Paladin | Holy | 6 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 🧺 Provisioning |
 | 60 | <img class="sic" data-i="blizzard" alt=""> **Blizzard** | Mage | Frost | 6 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="bloodthirst" alt=""> **Bloodthirst** | Warrior | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
-| 60 | <img class="sic" data-i="cleave" alt=""> **Cleave** | Warrior | Physical | 5 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
+| 60 | <img class="sic" data-i="cleave" alt=""> **Cleave** | Warrior | Physical | 5 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="conflagrate" alt=""> **Conflagrate** | Warlock | Fire | 4 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="conjure-food" alt=""> **Conjure Food** | Mage | Arcane | 7 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
 | 60 | <img class="sic" data-i="conjure-water" alt=""> **Conjure Water** | Mage | Arcane | 7 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 🧺 Provisioning |
@@ -371,7 +371,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 60 | <img class="sic" data-i="holy-fire" alt=""> **Holy Fire** | Priest | Holy | 8 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="holy-light" alt=""> **Holy Light** | Paladin | Holy | 9 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
 | 60 | <img class="sic" data-i="holy-nova" alt=""> **Holy Nova** | Priest | Holy | 6 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
-| 60 | <img class="sic" data-i="holy-wrath" alt=""> **Holy Wrath** | Paladin | Holy | 2 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
+| 60 | <img class="sic" data-i="holy-wrath" alt=""> **Holy Wrath** | Paladin | Holy | 2 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="hurricane" alt=""> **Hurricane** | Druid | Nature | 3 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="ice-armor" alt=""> **Ice Armor** | Mage | Frost | 4 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 🛡️ Defense boost |
 | 60 | <img class="sic" data-i="immolate" alt=""> **Immolate** | Warlock | Fire | 8 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
@@ -385,7 +385,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 60 | <img class="sic" data-i="mend-pet" alt=""> **Mend Pet** | Hunter | Nature | 7 | — |  | 🐕 Companion upkeep |
 | 60 | <img class="sic" data-i="mind-flay" alt=""> **Mind Flay** | Priest | Shadow | 6 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | ⛓️ Disables |
 | 60 | <img class="sic" data-i="mortal-strike" alt=""> **Mortal Strike** | Warrior | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
-| 60 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Hunter | Physical | 5 | — |  | 💥 Damage |
+| 60 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Hunter | Physical | 5 | [[families/aoe-damage|💥 The Area Barrage]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="nature-resistance-totem" alt=""> **Nature Resistance Totem** | Shaman | Nature | 3 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 60 | <img class="sic" data-i="overpower" alt=""> **Overpower** | Warrior | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="polymorph" alt=""> **Polymorph** | Mage | Arcane | 5 | [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |

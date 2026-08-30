@@ -1,6 +1,6 @@
 # <span class="femoji">⚔️</span> The Whetstone & The Strike
 
-<span class="tier tier-template">Shared template</span> · 31 abilities · mechanical similarity 0.18–0.97
+<span class="tier tier-template">Shared template</span> · 28 abilities · mechanical similarity 0.18–0.97
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -28,12 +28,9 @@
 | <img class="sic" data-i="flametongue-weapon" alt=""> **Flametongue Weapon** | Shaman | 56 | Fire | 6 | Imbue the Shaman's weapon with fire.  Each hit causes $/77;16344m1 to $/25;16344M1 additional Fire damage, bas |
 | <img class="sic" data-i="frostbrand-weapon" alt=""> **Frostbrand Weapon** | Shaman | 58 | Frost | 5 | Imbue the Shaman's weapon with frost.  Each hit has a chance of causing X additional Frost damage and slowing  |
 | <img class="sic" data-i="windfury-weapon" alt=""> **Windfury Weapon** | Shaman | 60 | Nature | 4 | Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you X extra X:attacks; with X extr |
-| <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Warrior | 36 | Physical | 1 | In a whirlwind of steel you attack up to X enemies within X yards, causing weapon damage to each enemy. |
 | <img class="sic" data-i="slam" alt=""> **Slam** | Warrior | 54 | Physical | 4 | Slams the opponent, causing weapon damage plus X. |
 | <img class="sic" data-i="execute" alt=""> **Execute** | Warrior | 56 | Physical | 5 | Attempt to finish off a wounded foe, causing X damage and converting each extra point of rage into $*10;F1 add |
-| <img class="sic" data-i="thunder-clap" alt=""> **Thunder Clap** | Warrior | 58 | Physical | 6 | Blasts nearby enemies with thunder increasing the time between their attacks by X% for X and doing X damage to |
 | <img class="sic" data-i="bloodthirst" alt=""> **Bloodthirst** | Warrior | 60 | Physical | 4 | Instantly attack the target causing damage equal to X% of your attack power.  In addition, the next X successf |
-| <img class="sic" data-i="cleave" alt=""> **Cleave** | Warrior | 60 | Physical | 5 | A sweeping attack that does your weapon damage plus X to the target and his nearest ally. |
 | <img class="sic" data-i="heroic-strike" alt=""> **Heroic Strike** | Warrior | 60 | Physical | 9 | A strong attack that increases melee damage by X and causes a high amount of threat. |
 | <img class="sic" data-i="mortal-strike" alt=""> **Mortal Strike** | Warrior | 60 | Physical | 4 | A vicious strike that deals weapon damage plus X and wounds the target, reducing the effectiveness of any heal |
 | <img class="sic" data-i="overpower" alt=""> **Overpower** | Warrior | 60 | Physical | 4 | Instantly overpower the enemy, causing weapon damage plus X.  Only useable after the target dodges.  The Overp |
