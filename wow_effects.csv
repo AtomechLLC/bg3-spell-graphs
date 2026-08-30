@@ -1,0 +1,427 @@
+ability,classes,wowhead_effects,effect_profile
+Abolish Disease,Priest,Apply Aura: Periodically trigger spell + → Dispel + Dispel,Dispel / cleanse
+Abolish Poison,Druid,Apply Aura: Periodically trigger spell + Dispel (Poison),Dispel / cleanse
+Ambush,Rogue,Normalized Weapon Dmg + Weapon % Damage + Add Combo Points,Weapon strike
+Amplify Magic,Mage,Apply Aura: Mod Damage Taken (All) + Apply Aura: Mod Healing Taken - Flat (All),Stat & combat mods
+Ancestral Spirit,Shaman,Effect #329,Other / utility
+Aquatic Form,Druid,Apply Aura: Shapeshift (Aquatic Form) + Apply Aura: Immunity - Mechanic (Polymorphed),Shapeshift
+Aquatic Form (Passive),Druid,Apply Aura: Increase Swim Speed % + Apply Aura: Underwater Breathing,Movement
+Arcane Brilliance,Mage,Apply Aura: Mod Stat (Intellect),Stat & combat mods
+Arcane Explosion,Mage,School Damage (Arcane),Direct spell damage
+Arcane Intellect,Mage,Apply Aura: Mod Stat (Intellect),Stat & combat mods
+Arcane Missiles,Mage,Apply Aura: Periodically trigger spell + → School Damage (Arcane) + Apply Aura: Dummy,Direct spell damage
+Arcane Shot,Hunter,School Damage (Arcane),Direct spell damage
+Aspect of the Beast,Hunter,Apply Aura: Aura #120,Other / utility
+Aspect of the Cheetah,Hunter,Apply Aura: Increase Run Speed % + Apply Aura: Proc Trigger Spell,Movement
+Aspect of the Hawk,Hunter,Apply Aura: Mod Ranged Attack Power + Apply Aura: Proc Trigger Spell,Stat & combat mods
+Aspect of the Monkey,Hunter,Apply Aura: Mod Dodge %,Stat & combat mods
+Aspect of the Pack,Hunter,Apply Area Aura: Increase Run Speed % + Apply Area Aura: Proc Trigger Spell,Movement
+Aspect of the Wild,Hunter,Apply Area Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
+Astral Recall,Shaman,Teleport Units,Teleportation
+Auto Shot,Hunter,Weapon Damage,Weapon strike
+Backstab,Rogue,Normalized Weapon Dmg + Weapon % Damage + Add Combo Points,Weapon strike
+Banish,Warlock,Apply Aura: Stun + Apply Aura: School Immunity,Hard control
+Barkskin,Druid,"Apply Aura: Decrease Pushback Time by % (Arcane, Fire, Frost, Holy, Nature, Physical, Shadow) + Apply Aura: Modifies Cast Time (10)",Other / utility
+Bash,Druid,Apply Aura: Stun,Hard control
+Battle Shout,Warrior,Apply Aura: Mod Attack Power,Stat & combat mods
+Battle Stance,Warrior,Apply Aura: Shapeshift,Shapeshift
+Bear Form,Druid,Apply Aura: Shapeshift (Bear Form) + Apply Aura: Immunity - Mechanic (Polymorphed),Shapeshift
+Beast Lore,Hunter,Apply Aura: Aura #121,Other / utility
+Beast Training,Hunter,Effect #47,Other / utility
+Berserker Rage,Warrior,Apply Aura: Immunity - Mechanic + Apply Aura: Immunity - Mechanic,Immunity
+Berserker Stance,Warrior,Apply Aura: Shapeshift,Shapeshift
+Black Arrow,Hunter,Apply Aura: Decrease Run Speed % + Apply Aura: Periodic Damage + Apply Aura: Periodically Drain Power (Mana),Damage over time
+Blast Wave,Mage,School Damage (Fire) + Apply Aura: Mod Decrease Speed,Root & snare
+Blessing of Freedom,Paladin,Apply Aura: Immunity - Mechanic + Apply Aura: Immunity - Mechanic,Immunity
+Blessing of Kings,Paladin,Apply Aura: Aura #137,Other / utility
+Blessing of Light,Paladin,Apply Aura: Dummy + Apply Aura: Dummy,Other / utility
+Blessing of Might,Paladin,Apply Aura: Mod Attack Power,Stat & combat mods
+Blessing of Protection,Paladin,Apply Aura: School Immunity + Apply Aura: Mod Pacify,Hard control
+Blessing of Sacrifice,Paladin,Apply Aura: Aura #562,Other / utility
+Blessing of Salvation,Paladin,Apply Aura: Mod Threat,Threat manipulation
+Blessing of Wisdom,Paladin,Apply Aura: Periodically give power,Other / utility
+Blind,Rogue,Apply Aura: Mod Decrease Speed + Apply Aura: Mod Confuse,Hard control
+Blink,Mage,Blink + Apply Aura: Immunity - Mechanic (Stunned) + Apply Aura: Immunity - Mechanic (Rooted),Immunity
+Blizzard,Mage,Apply Aura: Periodic Damage,Damage over time
+Bloodrage,Warrior,Give Power + Trigger Spell + → Apply Aura: Periodically give power + → Apply Aura: Interrupt Power Decay,Resource manipulation
+Bloodthirst,Warrior,School Damage (Physical),Direct spell damage
+Call Pet,Hunter,Summon Pet (0) + Script Effect,Summoning
+Cat Form,Druid,Apply Aura: Shapeshift (Cat Form) + Apply Aura: Immunity - Mechanic (Polymorphed) + Apply Aura: Periodically trigger spell,Shapeshift
+Chain Heal,Shaman,Heal,Healing
+Chain Lightning,Shaman,School Damage (Nature),Direct spell damage
+Challenging Roar,Druid,Apply Aura: Taunt,Threat manipulation
+Challenging Shout,Warrior,Apply Aura: Taunt,Threat manipulation
+Charge,Warrior,Effect #96 + Give Power + Trigger Spell + → Apply Aura: Stun,Hard control
+Cheap Shot,Rogue,Apply Aura: Stun + Add Combo Points,Hard control
+Chilled,Mage,Apply Aura: Mod Decrease Speed,Root & snare
+Claw,Druid,Deal Weapon Damage + Add Combo Points,Weapon strike
+Cleanse,Paladin,Dispel + Dispel + Dispel,Dispel / cleanse
+Cleave,Warrior,Weapon Damage (noschool),Weapon strike
+Cobra Reflexes,Hunter,Learn Spell,Other / utility
+Combustion,Mage,"Apply Aura: Dummy + Trigger Spell
+Combustion",Other / utility
+Concentration Aura,Paladin,Apply Area Aura: Decrease Pushback Time by % + Apply Area Aura: Aura #117 + Apply Area Aura: Aura #117,Other / utility
+Concussive Shot,Hunter,Apply Aura: Mod Decrease Speed,Root & snare
+Cone of Cold,Mage,Apply Aura: Mod Decrease Speed + School Damage (Frost),Root & snare
+Conflagrate,Warlock,School Damage (Fire),Direct spell damage
+Conjure Food,Mage,Create Item,Item creation
+Conjure Mana Agate,Mage,Create Item,Item creation
+Conjure Mana Citrine,Mage,Create Item,Item creation
+Conjure Mana Jade,Mage,Create Item,Item creation
+Conjure Mana Ruby,Mage,Create Item,Item creation
+Conjure Water,Mage,Create Item,Item creation
+Consecration,Paladin,Apply Aura: Periodic Damage,Damage over time
+Corruption,Warlock,Apply Aura: Periodic Damage,Damage over time
+Counterattack,Hunter,School Damage (Physical) + Apply Aura: Root,Direct spell damage
+Counterspell,Mage,Interrupt Cast,Interrupt / lockout
+Cower,Druid,Threat,Threat manipulation
+Create Firestone,Warlock,Create Item,Item creation
+Create Firestone (Greater),Warlock,Create Item,Item creation
+Create Firestone (Lesser),Warlock,Create Item,Item creation
+Create Firestone (Major),Warlock,Create Item,Item creation
+Create Healthstone,Warlock,Script Effect,Other / utility
+Create Healthstone (Greater),Warlock,Script Effect,Other / utility
+Create Healthstone (Lesser),Warlock,Script Effect,Other / utility
+Create Healthstone (Major),Warlock,Script Effect,Other / utility
+Create Healthstone (Minor),Warlock,Script Effect,Other / utility
+Create Soulstone,Warlock,Create Item,Item creation
+Create Soulstone (Greater),Warlock,Create Item,Item creation
+Create Soulstone (Lesser),Warlock,Create Item,Item creation
+Create Soulstone (Major),Warlock,Create Item,Item creation
+Create Soulstone (Minor),Warlock,Create Item,Item creation
+Create Spellstone,Warlock,Create Item,Item creation
+Create Spellstone (Greater),Warlock,Create Item,Item creation
+Create Spellstone (Major),Warlock,Create Item,Item creation
+Cure Disease,Priest,Dispel,Dispel / cleanse
+Cure Disease,Shaman,Dispel,Dispel / cleanse
+Cure Poison,Druid,Dispel,Dispel / cleanse
+Cure Poison,Shaman,Dispel,Dispel / cleanse
+Curse of Agony,Warlock,Apply Aura: Periodic Damage,Damage over time
+Curse of Doom,Warlock,Apply Aura: Periodic Damage,Damage over time
+Curse of Idiocy,Warlock,Apply Aura: Mod Stat (Intellect) + Apply Aura: Mod Stat (Spirit) + Apply Aura: Periodically trigger spell,Stat & combat mods
+Curse of Recklessness,Warlock,Apply Aura: Mod Attack Power + Apply Aura: Mod Resistance + Apply Aura: Aura #92,Stat & combat mods
+Curse of Shadow,Warlock,Apply Aura: Mod Resistance + Apply Aura: Mod Damage % Taken,Stat & combat mods
+Curse of Tongues,Warlock,Apply Aura: Mod Casting Speed + Apply Aura: Mod Language,Stat & combat mods
+Curse of Weakness,Warlock,Apply Aura: Mod Damage Done,Stat & combat mods
+Curse of the Elements,Warlock,Apply Aura: Mod Resistance + Apply Aura: Mod Damage % Taken,Stat & combat mods
+Dampen Magic,Mage,Apply Aura: Mod Damage Taken + Apply Aura: Mod Healing Taken - Flat,Stat & combat mods
+Dark Pact,Warlock,Power Drain,Resource manipulation
+Dash,Druid,Apply Aura: Mod Increase Speed,Movement
+Death Coil,Warlock,Health Leech + Apply Aura: Mod Fear,Hard control
+Defensive Stance,Warrior,Apply Aura: Shapeshift,Shapeshift
+Demon Armor,Warlock,Apply Aura: Mod Resistance + Apply Aura: Mod Resistance + Apply Aura: Aura #161,Stat & combat mods
+Demon Skin,Warlock,Apply Aura: Mod Resistance + Apply Aura: Aura #161,Stat & combat mods
+Demoralizing Roar,Druid,Apply Aura: Mod Attack Power,Stat & combat mods
+Demoralizing Shout,Warrior,Apply Aura: Mod Attack Power,Stat & combat mods
+Desperate Prayer,Priest,Heal,Healing
+Detect Greater Invisibility,Warlock,Apply Aura: Mod Invisibility Detection,Concealment
+Detect Invisibility,Warlock,Apply Aura: Mod Invisibility Detection,Concealment
+Detect Lesser Invisibility,Warlock,Apply Aura: Mod Invisibility Detection,Concealment
+Detect Magic,Mage,Apply Aura: Aura #100,Other / utility
+Detect Traps,Rogue,Apply Aura: Mod Stealth Detect + Apply Aura: Mod Invisibility Detection,Concealment
+Devotion Aura,Paladin,Apply Area Aura: Mod Resistance,Stat & combat mods
+Devouring Plague,Priest,Apply Aura: Periodic Leech,Damage over time
+Dire Bear Form,Druid,Apply Aura: Shapeshift (Dire Bear Form) + Apply Aura: Immunity - Mechanic (Polymorphed),Shapeshift
+Disarm,Warrior,Apply Aura: Mod Disarm,Other / utility
+Disarm Trap,Rogue,Open Lock,Other / utility
+Disease Cleansing Totem,Shaman,Summon,Summoning
+Disengage,Hunter,Threat,Threat manipulation
+Dismiss Pet,Hunter,Drain Power (27) + Dismiss Pet,Companion care
+Dispel Magic,Priest,Dispel,Dispel / cleanse
+Distract,Rogue,Distract,Other / utility
+Distracting Shot,Hunter,Threat,Threat manipulation
+Divine Intervention,Paladin,Effect #79 + Trigger Spell + → Apply Aura: School Immunity + → Apply Aura: Stun + → Apply Aura: Aura #93 + Instakill,Hard control
+Divine Protection,Paladin,Apply Aura: Mod Pacify + Apply Aura: School Immunity + Apply Aura: School Immunity,Hard control
+Divine Shield,Paladin,Apply Aura: School Immunity + Apply Aura: Mod Haste + Apply Aura: School Immunity + Apply Aura: Mod Damage % Done,Stat & combat mods
+Divine Spirit,Priest,Apply Aura: Mod Stat (Spirit),Stat & combat mods
+Drain Life,Warlock,Apply Aura: Periodic Leech,Damage over time
+Drain Mana,Warlock,Apply Aura: Periodic Mana Leech,Resource manipulation
+Drain Soul,Warlock,Apply Aura: Aura #86 + Apply Aura: Periodic Damage + Apply Aura: Proc Trigger Spell + → Apply Aura: Mod Power Regen % + → Apply Aura: Mod Manaregen Interrupt,Damage over time
+Eagle Eye,Hunter,Far Sight + Apply Aura: Dummy,Perception
+Earth Shock,Shaman,School Damage (Nature) + Interrupt Cast,Interrupt / lockout
+Earthbind Totem,Shaman,Summon,Summoning
+Elune's Grace,Priest,Apply Aura: Aura #113 + Apply Aura: Mod Dodge %,Stat & combat mods
+Enrage,Druid,Apply Aura: Periodically give power (Rage) + Give Power (Rage) + Apply Aura: Interrupt Power Decay + Apply Aura: Dummy,Resource manipulation
+Entangling Roots,Druid,Apply Aura: Root + Apply Aura: Periodic Damage,Damage over time
+Evasion,Rogue,Apply Aura: Mod Dodge %,Stat & combat mods
+Eviscerate,Rogue,School Damage (Physical) + Dummy,Direct spell damage
+Execute,Warrior,Dummy + Trigger Spell + → Apply Aura: Dummy,Other / utility
+Exorcism,Paladin,School Damage (Holy),Direct spell damage
+Explosive Trap,Hunter,Effect #320,Other / utility
+Expose Armor,Rogue,Apply Aura: Mod Resistance + Dummy,Stat & combat mods
+Eye of Kilrogg,Warlock,Summon + Apply Aura: Dummy,Summoning
+Eyes of the Beast,Hunter,Apply Aura: Mod Possess Pet + Apply Aura: Dummy,Companion care
+Fade,Priest,Apply Aura: Mod Total Threat,Threat manipulation
+Faerie Fire,Druid,Apply Aura: Mod Resistance (Physical) + Apply Aura: Immunity - Debuffs Only (6) + Apply Aura: Immunity - Debuffs Only (5),Stat & combat mods
+Faerie Fire (Feral),Druid,Apply Aura: Mod Resistance (Physical) + Apply Aura: Immunity - Debuffs Only (6) + Apply Aura: Immunity - Debuffs Only (5),Stat & combat mods
+Far Sight,Shaman,Far Sight + Apply Aura: Dummy,Perception
+Fear,Warlock,Apply Aura: Mod Fear + Apply Aura: Mod Increase Speed,Hard control
+Fear Ward,Priest,Apply Aura: Immunity - Mechanic,Immunity
+Feed Pet,Hunter,Effect #101,Other / utility
+Feedback,Priest,Apply Aura: Proc Trigger Spell + → Power Burn,Resource manipulation
+Feign Death,Hunter,Apply Aura: Feign Death,Concealment
+Feint,Rogue,Threat,Threat manipulation
+Feline Grace,Druid,Apply Aura: Aura #144,Other / utility
+Ferocious Bite,Druid,School Damage (Physical),Direct spell damage
+Fire Blast,Mage,School Damage (Fire),Direct spell damage
+Fire Nova Totem,Shaman,Summon,Summoning
+Fire Resistance Aura,Paladin,Apply Area Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
+Fire Resistance Totem,Shaman,Summon,Summoning
+Fire Ward,Mage,Apply Aura: School Absorb + Apply Aura: Reflect School Spells,Absorb & shields
+Fireball,Mage,School Damage (Fire) + Apply Aura: Periodic Damage,Damage + affliction
+Flame Shock,Shaman,School Damage (Fire) + Apply Aura: Periodic Damage + Apply Aura: Dummy,Damage + affliction
+Flamestrike,Mage,School Damage (Fire) + Apply Aura: Periodic Damage,Damage + affliction
+Flametongue Totem,Shaman,Summon,Summoning
+Flametongue Weapon,Shaman,Enchant Item (temporary),Item creation
+Flare,Hunter,Persistent Area Aura: Immunity - Debuffs Only (5) + Persistent Area Aura: Immunity - Debuffs Only (6),Immunity
+Flash Heal,Priest,Heal,Healing
+Flash of Light,Paladin,Script Effect,Other / utility
+Freezing Trap,Hunter,Effect #320,Other / utility
+Frenzied Regeneration,Druid,Apply Aura: Periodically trigger spell,Other / utility
+Frost Armor,Mage,Apply Aura: Mod Resistance (Physical) + Apply Aura: Proc Trigger Spell,Stat & combat mods
+Frost Nova,Mage,School Damage (Frost) + Apply Aura: Root,Direct spell damage
+Frost Resistance Aura,Paladin,Apply Area Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
+Frost Resistance Totem,Shaman,Summon,Summoning
+Frost Shock,Shaman,Apply Aura: Mod Decrease Speed + School Damage (Frost),Root & snare
+Frost Trap,Hunter,Effect #320,Other / utility
+Frost Ward,Mage,Apply Aura: School Absorb + Apply Aura: Reflect School Spells,Absorb & shields
+Frostbolt,Mage,Apply Aura: Mod Decrease Speed + School Damage (Frost),Root & snare
+Frostbrand Weapon,Shaman,Enchant Item (temporary),Item creation
+Garrote,Rogue,Apply Aura: Periodic Damage + Add Combo Points,Damage over time
+Ghost Wolf,Shaman,Apply Aura: Shapeshift + Apply Aura: Mod Increase Speed,Shapeshift
+Gift of the Wild,Druid,Apply Aura: Mod Resistance (Physical) + Apply Aura: Mod Stat (All) + Apply Aura: Mod Resistance - Flat - Does not Stack (126),Stat & combat mods
+Gouge,Rogue,School Damage (Physical) + Add Combo Points + Apply Aura: Stun,Hard control
+Grace of Air Totem,Shaman,Summon,Summoning
+Greater Blessing of Kings,Paladin,Apply Aura: Aura #137,Other / utility
+Greater Blessing of Light,Paladin,Apply Aura: Dummy + Apply Aura: Dummy,Other / utility
+Greater Blessing of Might,Paladin,Apply Aura: Mod Attack Power,Stat & combat mods
+Greater Blessing of Salvation,Paladin,Apply Aura: Mod Threat,Threat manipulation
+Greater Blessing of Sanctuary,Paladin,Apply Aura: Mod Damage Taken + Apply Aura: Proc Trigger Damage,Stat & combat mods
+Greater Blessing of Wisdom,Paladin,Apply Aura: Periodically give power,Other / utility
+Greater Heal,Priest,Heal,Healing
+Grounding Totem,Shaman,Summon,Summoning
+Growl,Druid,Taunt + Apply Aura: Taunt,Threat manipulation
+Hammer of Justice,Paladin,Apply Aura: Stun,Hard control
+Hammer of Wrath,Paladin,School Damage (Holy),Direct spell damage
+Hamstring,Warrior,School Damage (Physical) + Apply Aura: Mod Decrease Speed,Root & snare
+Heal,Priest,Heal,Healing
+Healing Stream Totem,Shaman,Summon,Summoning
+Healing Touch,Druid,Heal,Healing
+Healing Wave,Shaman,Heal,Healing
+Health Funnel,Warlock,Apply Aura: Periodic Heal + Apply Aura: Aura #88,Healing
+Hellfire,Warlock,Apply Aura: Periodically trigger spell + → School Damage (Fire) + Apply Aura: Periodic Damage + Apply Aura: Immunity - Mechanic,Damage + affliction
+Hemorrhage,Rogue,Weapon Damage (noschool) + Add Combo Points + Apply Aura: Mod Damage Taken,Weapon strike
+Heroic Strike,Warrior,Weapon Damage (noschool),Weapon strike
+Hex of Weakness,Priest,Apply Aura: Mod Damage Done + Apply Aura: Mod Healing Received %,Stat & combat mods
+Hibernate,Druid,Apply Aura: Stun,Hard control
+Holy Fire,Priest,School Damage (Holy) + Apply Aura: Periodic Damage,Damage + affliction
+Holy Light,Paladin,Script Effect,Other / utility
+Holy Nova,Priest,School Damage (Holy),Direct spell damage
+Holy Wrath,Paladin,School Damage (Holy),Direct spell damage
+Howl of Terror,Warlock,Apply Aura: Mod Fear + Apply Aura: Mod Increase Speed,Hard control
+Hunter's Mark,Hunter,Apply Aura: Stalked + Apply Aura: Mod Attacker Ranged Attack Power,Stat & combat mods
+Hurricane,Druid,Persistent Area Aura: Periodic Damage + Persistent Area Aura: Mod Melee Attack Speed - %,Damage over time
+Ice Armor,Mage,Apply Aura: Mod Resistance + Apply Aura: Proc Trigger Spell + → Apply Aura: Mod Decrease Speed + → Apply Aura: Mod Haste + Apply Aura: Mod Resistance,Root & snare
+Ice Barrier,Mage,Apply Aura: School Absorb,Absorb & shields
+Ice Block,Mage,Apply Aura: Stun + Apply Aura: Immunity (Physical) + Apply Aura: Immunity (All),Hard control
+Immolate,Warlock,Apply Aura: Periodic Damage + School Damage (Fire) + Script Effect,Damage + affliction
+Immolation Trap,Hunter,Effect #320,Other / utility
+Inferno,Warlock,Summon,Summoning
+Inner Fire,Priest,Apply Aura: Mod Resistance,Stat & combat mods
+Insect Swarm,Druid,Apply Aura: Periodic Damage + Apply Aura: Mod Melee & Ranged Hit Chance %,Damage over time
+Intercept,Warrior,Effect #96 + Trigger Spell + → Apply Aura: Stun + → School Damage (Physical),Hard control
+Intimidating Shout,Warrior,Trigger Spell + → Apply Aura: Stun + Apply Aura: Mod Fear + Apply Aura: Mod Increase Speed,Hard control
+Judgement,Paladin,Script Effect,Other / utility
+Kick,Rogue,School Damage (Physical) + Interrupt Cast,Interrupt / lockout
+Kidney Shot,Rogue,Apply Aura: Stun + Dummy + Apply Aura: Mod Damage % Taken,Hard control
+Lay on Hands,Paladin,Heal Max Health + Give Power,Healing
+Lesser Heal,Priest,Heal,Healing
+Lesser Healing Wave,Shaman,Heal,Healing
+Levitate,Priest,Apply Aura: Feather Fall + Apply Aura: Hover + Apply Aura: Water Walk,Movement
+Life Tap,Warlock,Dummy,Other / utility
+Lightning Bolt,Shaman,School Damage (Nature),Direct spell damage
+Lightning Breath,Hunter,Learn Spell,Other / utility
+Lightning Shield,Shaman,Apply Aura: Proc Trigger Spell + → Dummy,Other / utility
+Lightwell,Priest,Trans Door,Summoning
+Mage Armor,Mage,Apply Aura: Mod Resistance + Apply Aura: Mod Manaregen Interrupt,Stat & combat mods
+Magma Totem,Shaman,Summon,Summoning
+Mana Burn,Priest,Power Burn,Resource manipulation
+Mana Shield,Mage,Apply Aura: Mana Shield,Absorb & shields
+Mana Spring Totem,Shaman,Summon,Summoning
+Mana Tide Totem,Shaman,Summon,Summoning
+Mangle,Druid,School Damage (Physical) + Apply Aura: Stun,Hard control
+Mark of the Wild,Druid,Apply Aura: Mod Resistance (Physical) + Apply Aura: Mod Stat (All) + Apply Aura: Mod Resistance - Flat - Does not Stack (126),Stat & combat mods
+Maul,Druid,Weapon Damage,Weapon strike
+Mend Pet,Hunter,Apply Aura: Periodic Heal,Healing
+Mind Blast,Priest,School Damage (Shadow),Direct spell damage
+Mind Control,Priest,Apply Aura: Mod Possess + Apply Aura: Dummy + Apply Aura: Mod Haste,Hard control
+Mind Flay,Priest,Apply Aura: Periodic Damage + Apply Aura: Mod Decrease Speed,Root & snare
+Mind Soothe,Priest,Apply Aura: Aura #91,Other / utility
+Mind Vision,Priest,Apply Aura: Bind Sight + Apply Aura: Dummy + Apply Aura: Mod Stalked,Perception
+Mind-numbing Poison,Rogue,Create Item,Item creation
+Mind-numbing Poison II,Rogue,Create Item,Item creation
+Mind-numbing Poison III,Rogue,Create Item,Item creation
+Mocking Blow,Warrior,School Damage (Physical) + Apply Aura: Taunt,Threat manipulation
+Mongoose Bite,Hunter,School Damage (Physical),Direct spell damage
+Moonfire,Druid,Apply Aura: Periodic Damage + School Damage (Arcane),Damage + affliction
+Moonkin Form,Druid,"Apply Aura: Shapeshift (Moonkin Form) + Apply Aura: Immunity - Mechanic (Polymorphed) + Trigger Spell
+Moonkin Aura + Apply Aura: Mod Threat (72)",Shapeshift
+Mortal Strike,Warrior,Apply Aura: Mod Healing Received % + Normalized Weapon Dmg,Weapon strike
+Multi-Shot,Hunter,Normalized Weapon Dmg,Weapon strike
+Nature Resistance Totem,Shaman,Summon,Summoning
+Nature's Grasp,Druid,Apply Aura: Proc Trigger Spell + → Apply Aura: Mod Root + → Apply Aura: Periodic Damage,Root & snare
+Overpower,Warrior,Normalized Weapon Dmg,Weapon strike
+Pick Lock,Rogue,Open Lock,Other / utility
+Pick Pocket,Rogue,Effect #71,Other / utility
+Poison Cleansing Totem,Shaman,Summon,Summoning
+Poisons,Rogue,Effect #47,Other / utility
+Polymorph,Mage,Apply Aura: Mod Confuse + Apply Aura: Transform + Dispel Mechanic,Dispel / cleanse
+Polymorph: Cow,Mage,Apply Aura: Mod Confuse + Apply Aura: Transform + Dispel Mechanic,Dispel / cleanse
+Portal: Darnassus,Mage,Trans Door,Summoning
+Portal: Ironforge,Mage,Trans Door,Summoning
+Portal: Orgrimmar,Mage,Trans Door,Summoning
+Portal: Stormwind,Mage,Trans Door,Summoning
+Portal: Thunder Bluff,Mage,Trans Door,Summoning
+Portal: Undercity,Mage,Trans Door,Summoning
+Pounce,Druid,"Apply Aura: Stun + Trigger Spell
+Pounce Bleed + Add Combo Points",Hard control
+Power Infusion,Priest,Apply Aura: Aura #136 + Apply Aura: Mod Damage % Done,Stat & combat mods
+Power Word: Fortitude,Priest,Apply Aura: Mod Stat (Stamina),Stat & combat mods
+Power Word: Shield,Priest,Apply Aura: School Absorb,Absorb & shields
+Prayer of Fortitude,Priest,Apply Aura: Mod Stat (Stamina),Stat & combat mods
+Prayer of Healing,Priest,Heal,Healing
+Prayer of Shadow Protection,Priest,Apply Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
+Prayer of Spirit,Priest,Apply Aura: Mod Stat (Spirit),Stat & combat mods
+Prowl,Druid,Apply Aura: Stealth + Apply Aura: Decrease Run Speed %,Concealment
+Prowl,Hunter,Learn Spell,Other / utility
+Psychic Scream,Priest,Apply Aura: Mod Fear + Apply Aura: Mod Increase Speed,Hard control
+Pummel,Warrior,School Damage (Physical) + Interrupt Cast,Interrupt / lockout
+Purge,Shaman,Dispel,Dispel / cleanse
+Purify,Paladin,Dispel + Dispel,Dispel / cleanse
+Pyroblast,Mage,School Damage (Fire) + Apply Aura: Periodic Damage,Damage + affliction
+Rain of Fire,Warlock,Apply Aura: Periodic Damage + Apply Aura: Dummy,Damage over time
+Rake,Druid,School Damage (Physical) + Apply Aura: Periodic Damage + Add Combo Points,Damage + affliction
+Rapid Fire,Hunter,Apply Aura: Mod Ranged Attack Speed - % + Apply Aura: Mod Melee Attack Speed - %,Other / utility
+Raptor Strike,Hunter,Weapon Damage,Weapon strike
+Ravage,Druid,Deal Weapon Damage + Weapon Damage - % + Add Combo Points,Weapon strike
+Rebirth,Druid,Effect #329,Other / utility
+Recklessness,Warrior,Apply Aura: Mod Crit % + Apply Aura: Mod Damage % Taken + Apply Aura: Immunity - Mechanic,Stat & combat mods
+Redemption,Paladin,Effect #329,Other / utility
+Regrowth,Druid,Heal + Apply Aura: Periodic Heal,Healing
+Reincarnation,Shaman,Apply Aura: Dummy,Other / utility
+Rejuvenation,Druid,Apply Aura: Periodic Heal,Healing
+Remove Curse,Druid,Dispel,Dispel / cleanse
+Remove Lesser Curse,Mage,Dispel,Dispel / cleanse
+Rend,Warrior,Apply Aura: Periodic Damage,Damage over time
+Renew,Priest,Apply Aura: Periodic Heal,Healing
+Repentance,Paladin,Apply Aura: Stun,Hard control
+Resurrection,Priest,Effect #329,Other / utility
+Retaliation,Warrior,Apply Aura: Dummy,Other / utility
+Retribution Aura,Paladin,Apply Area Aura: Damage Shield,Absorb & shields
+Revenge,Warrior,School Damage (Physical),Direct spell damage
+Revive Pet,Hunter,Summon Dead Pet,Companion care
+Righteous Fury,Paladin,Apply Aura: Mod Threat + Apply Aura: Add Pct Modifier,Threat manipulation
+Rip,Druid,Apply Aura: Periodic Damage,Damage over time
+Ritual of Doom,Warlock,Trans Door,Summoning
+Ritual of Summoning,Warlock,Trans Door,Summoning
+Rockbiter Weapon,Shaman,Enchant Item (temporary),Item creation
+Rupture,Rogue,Apply Aura: Periodic Damage + Dummy,Damage over time
+Safe Fall,Rogue,Apply Aura: Aura #144,Other / utility
+Sanctity Aura,Paladin,Apply Area Aura: Mod Damage % Done,Stat & combat mods
+Sap,Rogue,Apply Aura: Stun,Hard control
+Scare Beast,Hunter,Apply Aura: Fear + Apply Aura: Increase Run Speed %,Hard control
+Scorch,Mage,School Damage (Fire),Direct spell damage
+Scorpid Poison,Hunter,Learn Spell,Other / utility
+Scorpid Sting,Hunter,Apply Aura: Mod Stat (Strength) + Apply Aura: Mod Stat (Agility),Stat & combat mods
+Seal of Justice,Paladin,Apply Aura: Proc Trigger Spell + → Apply Aura: Stun + Apply Aura: Dummy,Hard control
+Seal of Light,Paladin,Apply Aura: Proc Trigger Spell + → Heal + Apply Aura: Dummy,Healing
+Seal of Righteousness,Paladin,Apply Aura: Dummy + Apply Aura: Dummy,Other / utility
+Seal of Wisdom,Paladin,Apply Aura: Proc Trigger Spell + → Give Power + Apply Aura: Dummy,Resource manipulation
+Seal of the Crusader,Paladin,Apply Aura: Mod Attack Power + Apply Aura: Mod Attack Speed + Apply Aura: Dummy,Stat & combat mods
+Searing Pain,Warlock,School Damage (Fire),Direct spell damage
+Searing Totem,Shaman,Summon,Summoning
+Sense Demons,Warlock,Apply Aura: Track Creatures,Perception
+Sense Undead,Paladin,Apply Aura: Track Creatures + Effect #167,Perception
+Sentry Totem,Shaman,Summon + Apply Aura: Dummy,Summoning
+Serpent Sting,Hunter,Apply Aura: Periodic Damage,Damage over time
+Shackle Undead,Priest,Apply Aura: Stun,Hard control
+Shadow Bolt,Warlock,School Damage (Shadow),Direct spell damage
+Shadow Protection,Priest,Apply Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
+Shadow Resistance Aura,Paladin,Apply Area Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
+Shadow Ward,Warlock,Apply Aura: School Absorb,Absorb & shields
+Shadow Word: Pain,Priest,Apply Aura: Periodic Damage,Damage over time
+Shadowburn,Warlock,Apply Aura: Aura #86 + School Damage (Shadow),Direct spell damage
+Shadowguard,Priest,Apply Aura: Proc Trigger Spell + → Dummy,Other / utility
+Shield Bash,Warrior,Interrupt Cast + School Damage (Physical),Interrupt / lockout
+Shield Block,Warrior,Apply Aura: Mod Block %,Stat & combat mods
+Shield Slam,Warrior,Dispel + School Damage (Physical),Dispel / cleanse
+Shield Wall,Warrior,Apply Aura: Mod Damage % Taken,Stat & combat mods
+Shred,Druid,Deal Weapon Damage + Weapon Damage - % + Add Combo Points,Weapon strike
+Sinister Strike,Rogue,Normalized Weapon Dmg + Add Combo Points,Weapon strike
+Siphon Life,Warlock,Apply Aura: Periodic Leech,Damage over time
+Slam,Warrior,Weapon Damage (noschool),Weapon strike
+Slice and Dice,Rogue,Dummy + Apply Aura: Mod Haste,Other / utility
+Slow Fall,Mage,Apply Aura: Feather Fall,Movement
+Smite,Priest,School Damage (Holy),Direct spell damage
+Soothe Animal,Druid,Apply Aura: Aura #91,Other / utility
+Soul Fire,Warlock,School Damage (Fire),Direct spell damage
+Sprint,Rogue,Apply Aura: Mod Increase Speed,Movement
+Starfire,Druid,School Damage (Arcane),Direct spell damage
+Starshards,Priest,Apply Aura: Periodic Damage,Damage over time
+Stealth,Rogue,Apply Aura: Shapeshift + Apply Aura: Mod Stealth + Apply Aura: Mod Decrease Speed,Concealment
+Stoneclaw Totem,Shaman,Summon,Summoning
+Stoneskin Totem,Shaman,Summon,Summoning
+Strength of Earth Totem,Shaman,Summon,Summoning
+Subjugate Demon,Warlock,Apply Aura: Mod Charm + Apply Aura: Mod Haste + Apply Aura: Mod Casting Speed,Hard control
+Summon Charger,Paladin,Apply Aura: Mounted + Apply Aura: Mod Increase Mounted Speed + Script Effect,Movement
+Summon Dreadsteed,Warlock,Apply Aura: Mounted + Apply Aura: Mod Increase Mounted Speed + Script Effect,Movement
+Summon Felhunter,Warlock,Summon Pet,Summoning
+Summon Felsteed,Warlock,Apply Aura: Mounted + Apply Aura: Mod Increase Mounted Speed + Script Effect,Movement
+Summon Imp,Warlock,Summon Pet,Summoning
+Summon Incubus,Warlock,Summon Pet,Summoning
+Summon Succubus,Warlock,Summon Pet,Summoning
+Summon Voidwalker,Warlock,Summon Pet,Summoning
+Summon Warhorse,Paladin,Apply Aura: Mounted + Apply Aura: Mod Increase Mounted Speed + Script Effect,Movement
+Sunder Armor,Warrior,Apply Aura: Mod Resistance,Stat & combat mods
+Swipe,Druid,School Damage (Physical),Direct spell damage
+Tame Beast,Hunter,Threat + Apply Aura: Periodically trigger spell + Apply Aura: Mod Resistance % (Physical),Threat manipulation
+Taunt,Warrior,Taunt + Apply Aura: Taunt,Threat manipulation
+Teleport: Darnassus,Mage,Teleport Units + Script Effect,Teleportation
+Teleport: Ironforge,Mage,Teleport Units + Script Effect,Teleportation
+Teleport: Moonglade,Druid,Teleport Units,Teleportation
+Teleport: Orgrimmar,Mage,Teleport Units + Script Effect,Teleportation
+Teleport: Stormwind,Mage,Teleport Units + Script Effect,Teleportation
+Teleport: Thunder Bluff,Mage,Teleport Units + Script Effect,Teleportation
+Teleport: Undercity,Mage,Teleport Units + Script Effect,Teleportation
+Thorns,Druid,Apply Aura: Damage Shield,Absorb & shields
+Thunder Clap,Warrior,School Damage (Physical) + Apply Aura: Mod Haste,Direct spell damage
+Tiger's Fury,Druid,Apply Aura: Mod Damage Done,Stat & combat mods
+Touch of Weakness,Priest,Apply Aura: Proc Trigger Spell + → Dummy,Other / utility
+Track Beasts,Hunter,Apply Aura: Track Creatures (Beast) + Apply Aura: Track Resources (24),Perception
+Track Demons,Hunter,Apply Aura: Track Creatures,Perception
+Track Dragonkin,Hunter,Apply Aura: Track Creatures,Perception
+Track Elementals,Hunter,Apply Aura: Track Creatures,Perception
+Track Giants,Hunter,Apply Aura: Track Creatures,Perception
+Track Hidden,Hunter,Apply Aura: Track Hidden + Apply Aura: Stealth Detection,Concealment
+Track Humanoids,Druid,Apply Aura: Track Creatures,Perception
+Track Humanoids,Hunter,Apply Aura: Track Creatures,Perception
+Track Undead,Hunter,Apply Aura: Track Creatures,Perception
+Tranquility,Druid,Apply Area Aura: Periodic Heal,Healing
+Tranquilizing Shot,Hunter,Dispel,Dispel / cleanse
+Travel Form,Druid,Apply Aura: Shapeshift (Travel Form) + Apply Aura: Immunity - Mechanic (Polymorphed),Shapeshift
+Tremor Totem,Shaman,Summon,Summoning
+Turn Undead,Paladin,Apply Aura: Mod Fear + Apply Aura: Mod Increase Speed,Hard control
+Unending Breath,Warlock,Apply Aura: Underwater Breathing,Movement
+Vampiric Embrace,Priest,Apply Aura: Dummy,Other / utility
+Vanish,Rogue,Trigger Spell + → Apply Aura: Mod Stealth + → Apply Aura: Mod Increase Speed + Trigger Spell + → Apply Aura: Immunity - Mechanic + → Apply Aura: Immunity - Mechanic + Effect #79,Concealment
+Viper Sting,Hunter,Apply Aura: Periodic Mana Leech,Resource manipulation
+Volley,Hunter,Apply Aura: Periodic Damage,Damage over time
+Water Breathing,Shaman,Apply Aura: Underwater Breathing,Movement
+Water Walking,Shaman,Apply Aura: Water Walk,Movement
+Whirlwind,Warrior,Normalized Weapon Dmg,Weapon strike
+Windfury Totem,Shaman,Summon,Summoning
+Windfury Weapon,Shaman,Enchant Item (temporary),Item creation
+Windwall Totem,Shaman,Summon,Summoning
+Wing Clip,Hunter,Apply Aura: Decrease Run Speed % + School Damage (Physical),Direct spell damage
+Wrath,Druid,School Damage (Nature),Direct spell damage
+Wyvern Sting,Hunter,Apply Aura: Stun,Hard control

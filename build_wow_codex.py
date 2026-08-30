@@ -360,6 +360,97 @@ Which WoW Classic abilities are mostly the same ability. Of **{N} distinct train
 Scores are the blended mechanical similarity — 0.6 × `SpellEffect` signature (effect types, aura codes, targets) + 0.4 × masked tooltip ([[methodology|method]]) — so two abilities that act through the same machinery measure as twins even when their tooltips read differently.
 """)
 
+# effects ledger — wowhead effect boxes per ability, categorized by composition
+EFFECT_PROFILES = [
+    ("Companion care",        r"Tame Creature|Dismiss Pet|Feed Pet|Learn Pet Spell|Mod Possess Pet|Health Funnel|Summon Dead Pet"),
+    ("Summoning",             r"Summon|Trans Door"),
+    ("Concealment",           r"\bStealth\b|Invisibility|Feign Death|Camouflage"),
+    ("Shapeshift",            r"Shapeshift"),
+    ("Teleportation",         r"Teleport"),
+    ("Item creation",         r"Create Item|Enchant Item"),
+    ("Resurrection",          r"Resurrect"),
+    ("Threat manipulation",   r"Attack Me|Taunt|Mod (Total )?Threat|^Threat"),
+    ("Interrupt / lockout",   r"Interrupt Cast|Mod Silence"),
+    ("Dispel / cleanse",      r"Dispel"),
+    ("Hard control",          r"\bStun\b|Fear\b|Confuse|\bCharm|Mod Possess(?! Pet)|Transform|Pacify|\bSleep\b"),
+    ("Root & snare",          r"Mod Root|Mod Decrease Speed"),
+    ("Damage + affliction",   None),   # direct + periodic, resolved in code
+    ("Damage over time",      r"Periodic (Damage|Leech)"),
+    ("Weapon strike",         r"Weapon (Damage|Dmg)|Normalized|Extra Attacks|Combo Points"),
+    ("Direct spell damage",   r"School Damage|Health Leech|Instakill|Environmental Damage"),
+    ("Healing",               r"\bHeal\b|Periodic Heal|Heal Max Health|Obs Mod Health|Health Regen"),
+    ("Absorb & shields",      r"School Absorb|Mana Shield|Damage Shield"),
+    ("Resource manipulation", r"Energize|Give Power|Power (Drain|Burn|Funnel)|Mana Leech|Obs Mod Power|Power Regen"),
+    ("Stat & combat mods",    r"Mod Stat|Attack Power|Mod Damage|Mod Resistance|Mod (Spell )?(Crit|Hit)|Mod Attack Speed|Mod Casting Speed|Mod (Parry|Dodge|Block)|Mod Healing|Mod Skill|Flat Modifier|Pct Modifier|Mod Scale"),
+    ("Perception",            r"Track |Far Sight|Bind Sight|Detect|Stealth Detect"),
+    ("Movement",              r"Increase.*Speed|Mounted|Water Walk|Feather Fall|Water Breathing|Underwater Breathing|Hover|Leap"),
+    ("Immunity",              r"Immunity"),
+]
+
+def effect_profile(labels):
+    joined = " | ".join(labels)
+    direct = re.search(r"School Damage|Weapon (Damage|Dmg)|Normalized|Health Leech", joined)
+    periodic = re.search(r"Periodic (Damage|Leech)", joined)
+    for name, pat in EFFECT_PROFILES:
+        if name == "Damage + affliction":
+            if direct and periodic:
+                return name
+            continue
+        if pat and re.search(pat, joined):
+            return name
+    return "Other / utility"
+
+WH = {}
+if os.path.exists("wow_effects_labels.json"):
+    WH = json.load(open("wow_effects_labels.json", encoding="utf-8"))
+
+if WH:
+    prof_of = {}
+    with open("wow_effects.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csvlib.writer(fh)
+        w.writerow(["ability", "classes", "wowhead_effects", "effect_profile"])
+        for r in sorted(RECS, key=lambda r: r["name"]):
+            labels = (WH.get(str(r["id"])) or {}).get("effects") or []
+            prof = effect_profile(labels) if labels else "Other / utility"
+            prof_of[r["id"]] = (prof, labels)
+            w.writerow([r["name"], "/".join(r["classes"]), " + ".join(labels), prof])
+
+    prof_counts = defaultdict(int)
+    for prof, _ in prof_of.values():
+        prof_counts[prof] += 1
+    order = [p for p, _ in EFFECT_PROFILES] + ["Other / utility"]
+    sumrows = ["| Effect profile | Abilities | Share |", "|---|---|---|"]
+    for p in order:
+        if prof_counts.get(p):
+            sumrows.append(f"| **{p}** | {prof_counts[p]} | {100*prof_counts[p]/len(RECS):.0f}% |")
+
+    lrows = ["| Ability | Classes | Effect boxes (wowhead) | Profile |", "|---|---|---|---|"]
+    for r in sorted(RECS, key=lambda r: (prof_of[r['id']][0], r["name"])):
+        prof, labels = prof_of[r["id"]]
+        fx = " + ".join(labels).replace("|", "/") or "*(no effect boxes)*"
+        lrows.append(f"| {sp_name(r)} | {'/'.join(r['classes'])} | {fx} | {prof} |")
+
+    page("effects", "The Effects Ledger", "Start", f"""# The Effects Ledger
+
+Every ability's **effect boxes in wowhead's vocabulary**, categorized purely by **effect
+composition** — what the machinery does, with no reading of names or tooltip prose. Sourcing:
+57 abilities carry effect boxes pulled verbatim from wowhead.com/classic before its CDN blocked
+bulk access; the remaining 366 are decoded from the client's own `SpellEffect` rows (the
+identical data wowhead renders) into the same vocabulary, including effect names learned from
+the wowhead overlap itself. Validation on the 57-page overlap: 78% of wowhead's labels are
+reproduced exactly after normalization; the rest differ only in wowhead's added qualifiers.
+
+## Profiles by composition
+
+{chr(10).join(sumrows)}
+
+## Every ability's effect boxes
+
+{chr(10).join(lrows)}
+
+Back to [[overview|Overview]] · [[methodology|Methodology]]
+""", icon="⚙️")
+
 # methodology
 n_rank_entries = sum(r["rank_count"] for r in RECS)
 page("methodology", "Methodology", "Start", f"""# Methodology
@@ -538,7 +629,8 @@ def md_to_html(md):
 PAGES_HTML = {s: md_to_html(p["md"]) for s, p in PAGES.items()}
 
 NAV = [
-    ("Start", ["overview", "findings", "spells", "methodology"]),
+    ("Start", ["overview", "findings", "spells"] +
+     (["effects"] if "effects" in PAGES else []) + ["methodology"]),
     ("Families · Clones", [f"families/{f['slug']}" for f in F if f["tier"] == CLONE]),
     ("Families · Templates", [f"families/{f['slug']}" for f in F if f["tier"] == TEMPLATE]),
     ("Families · Engines", [f"families/{f['slug']}" for f in F if f["tier"] == ENGINE]),

@@ -35,4 +35,4 @@ Classic's signature template shape is the **payload rack**: [[families/totems|21
 - **How:** [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/shaman|Shaman]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/shaman|Shaman]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[effects|The Effects Ledger]] · [[spells|All Abilities, Tagged]]*

@@ -1,0 +1,1882 @@
+{
+"22570": {
+"name": "Mangle",
+"effects": [
+"School Damage (Physical)",
+"Apply Aura: Stun"
+]
+},
+"5487": {
+"name": "Bear Form",
+"effects": [
+"Apply Aura: Shapeshift (Bear Form)",
+"Apply Aura: Immunity - Mechanic (Polymorphed)"
+]
+},
+"6795": {
+"name": "Growl",
+"effects": [
+"Taunt",
+"Apply Aura: Taunt"
+]
+},
+"18960": {
+"name": "Teleport: Moonglade",
+"effects": []
+},
+"5229": {
+"name": "Enrage",
+"effects": [
+"Apply Aura: Periodically give power (Rage)",
+"Give Power (Rage)",
+"Apply Aura: Interrupt Power Decay",
+"Apply Aura: Dummy"
+]
+},
+"8946": {
+"name": "Cure Poison",
+"effects": []
+},
+"1066": {
+"name": "Aquatic Form",
+"effects": [
+"Apply Aura: Shapeshift (Aquatic Form)",
+"Apply Aura: Immunity - Mechanic (Polymorphed)"
+]
+},
+"5421": {
+"name": "Aquatic Form (Passive)",
+"effects": [
+"Apply Aura: Increase Swim Speed %",
+"Apply Aura: Underwater Breathing"
+]
+},
+"768": {
+"name": "Cat Form",
+"effects": [
+"Apply Aura: Shapeshift (Cat Form)",
+"Apply Aura: Immunity - Mechanic (Polymorphed)",
+"Apply Aura: Periodically trigger spell"
+]
+},
+"2782": {
+"name": "Remove Curse",
+"effects": []
+},
+"2893": {
+"name": "Abolish Poison",
+"effects": [
+"Apply Aura: Periodically trigger spell",
+"Dispel (Poison)"
+]
+},
+"5209": {
+"name": "Challenging Roar",
+"effects": []
+},
+"783": {
+"name": "Travel Form",
+"effects": [
+"Apply Aura: Shapeshift (Travel Form)",
+"Apply Aura: Immunity - Mechanic (Polymorphed)"
+]
+},
+"5225": {
+"name": "Track Humanoids",
+"effects": []
+},
+"9634": {
+"name": "Dire Bear Form",
+"effects": [
+"Apply Aura: Shapeshift (Dire Bear Form)",
+"Apply Aura: Immunity - Mechanic (Polymorphed)"
+]
+},
+"20719": {
+"name": "Feline Grace",
+"effects": []
+},
+"24858": {
+"name": "Moonkin Form",
+"effects": [
+"Apply Aura: Shapeshift (Moonkin Form)",
+"Apply Aura: Immunity - Mechanic (Polymorphed)",
+"Trigger Spell\nMoonkin Aura",
+"Apply Aura: Mod Threat (72)"
+]
+},
+"22812": {
+"name": "Barkskin",
+"effects": [
+"Apply Aura: Decrease Pushback Time by % (Arcane, Fire, Frost, Holy, Nature, Physical, Shadow)",
+"Apply Aura: Modifies Cast Time (10)"
+]
+},
+"8983": {
+"name": "Bash",
+"effects": []
+},
+"9821": {
+"name": "Dash",
+"effects": []
+},
+"9892": {
+"name": "Cower",
+"effects": []
+},
+"9898": {
+"name": "Demoralizing Roar",
+"effects": []
+},
+"9907": {
+"name": "Faerie Fire",
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Immunity - Debuffs Only (6)",
+"Apply Aura: Immunity - Debuffs Only (5)"
+]
+},
+"17392": {
+"name": "Faerie Fire (Feral)",
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Immunity - Debuffs Only (6)",
+"Apply Aura: Immunity - Debuffs Only (5)"
+]
+},
+"9904": {
+"name": "Rake",
+"effects": [
+"School Damage (Physical)",
+"Apply Aura: Periodic Damage",
+"Add Combo Points"
+]
+},
+"9830": {
+"name": "Shred",
+"effects": [
+"Deal Weapon Damage",
+"Weapon Damage - %",
+"Add Combo Points"
+]
+},
+"9901": {
+"name": "Soothe Animal",
+"effects": []
+},
+"9908": {
+"name": "Swipe",
+"effects": []
+},
+"9910": {
+"name": "Thorns",
+"effects": []
+},
+"9912": {
+"name": "Wrath",
+"effects": []
+},
+"22896": {
+"name": "Frenzied Regeneration",
+"effects": []
+},
+"9827": {
+"name": "Pounce",
+"effects": [
+"Apply Aura: Stun",
+"Trigger Spell\nPounce Bleed",
+"Add Combo Points"
+]
+},
+"9850": {
+"name": "Claw",
+"effects": [
+"Deal Weapon Damage",
+"Add Combo Points"
+]
+},
+"9853": {
+"name": "Entangling Roots",
+"effects": [
+"Apply Aura: Root",
+"Apply Aura: Periodic Damage"
+]
+},
+"18658": {
+"name": "Hibernate",
+"effects": []
+},
+"9881": {
+"name": "Maul",
+"effects": []
+},
+"9835": {
+"name": "Moonfire",
+"effects": [
+"Apply Aura: Periodic Damage",
+"School Damage (Arcane)"
+]
+},
+"17329": {
+"name": "Nature's Grasp",
+"effects": []
+},
+"9867": {
+"name": "Ravage",
+"effects": [
+"Deal Weapon Damage",
+"Weapon Damage - %",
+"Add Combo Points"
+]
+},
+"31018": {
+"name": "Ferocious Bite",
+"effects": []
+},
+"21850": {
+"name": "Gift of the Wild",
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Mod Stat (All)",
+"Apply Aura: Mod Resistance - Flat - Does not Stack (126)"
+]
+},
+"25297": {
+"name": "Healing Touch",
+"effects": []
+},
+"17402": {
+"name": "Hurricane",
+"effects": [
+"Persistent Area Aura: Periodic Damage",
+"Persistent Area Aura: Mod Melee Attack Speed - %"
+]
+},
+"24977": {
+"name": "Insect Swarm",
+"effects": [
+"Apply Aura: Periodic Damage",
+"Apply Aura: Mod Melee & Ranged Hit Chance %"
+]
+},
+"9885": {
+"name": "Mark of the Wild",
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Mod Stat (All)",
+"Apply Aura: Mod Resistance - Flat - Does not Stack (126)"
+]
+},
+"9913": {
+"name": "Prowl",
+"effects": [
+"Apply Aura: Stealth",
+"Apply Aura: Decrease Run Speed %"
+]
+},
+"20748": {
+"name": "Rebirth",
+"effects": []
+},
+"9858": {
+"name": "Regrowth",
+"effects": [
+"Heal",
+"Apply Aura: Periodic Heal"
+]
+},
+"25299": {
+"name": "Rejuvenation",
+"effects": []
+},
+"9896": {
+"name": "Rip",
+"effects": []
+},
+"25298": {
+"name": "Starfire",
+"effects": []
+},
+"9846": {
+"name": "Tiger's Fury",
+"effects": []
+},
+"9863": {
+"name": "Tranquility",
+"effects": []
+},
+"75": {
+"name": "Auto Shot",
+"effects": []
+},
+"25077": {
+"name": "Cobra Reflexes",
+"effects": []
+},
+"1494": {
+"name": "Track Beasts",
+"effects": [
+"Apply Aura: Track Creatures (Beast)",
+"Apply Aura: Track Resources (24)"
+]
+},
+"13163": {
+"name": "Aspect of the Monkey",
+"effects": []
+},
+"5116": {
+"name": "Concussive Shot",
+"effects": []
+},
+"5149": {
+"name": "Beast Training",
+"effects": []
+},
+"883": {
+"name": "Call Pet",
+"effects": [
+"Summon Pet (0)",
+"Script Effect"
+]
+},
+"2641": {
+"name": "Dismiss Pet",
+"effects": [
+"Drain Power (27)",
+"Dismiss Pet"
+]
+},
+"6991": {
+"name": "Feed Pet",
+"effects": []
+},
+"982": {
+"name": "Revive Pet",
+"effects": []
+},
+"1515": {
+"name": "Tame Beast",
+"effects": [
+"Threat",
+"Apply Aura: Periodically trigger spell",
+"Apply Aura: Mod Resistance % (Physical)"
+]
+},
+"19883": {
+"name": "Track Humanoids",
+"effects": []
+},
+"6197": {
+"name": "Eagle Eye",
+"effects": [
+"Far Sight",
+"Apply Aura: Dummy"
+]
+},
+"1002": {
+"name": "Eyes of the Beast",
+"effects": [
+"Apply Aura: Mod Possess Pet",
+"Apply Aura: Dummy"
+]
+},
+"19884": {
+"name": "Track Undead",
+"effects": []
+},
+"5118": {
+"name": "Aspect of the Cheetah",
+"effects": [
+"Apply Aura: Increase Run Speed %",
+"Apply Aura: Proc Trigger Spell"
+]
+},
+"1462": {
+"name": "Beast Lore",
+"effects": []
+},
+"19885": {
+"name": "Track Hidden",
+"effects": [
+"Apply Aura: Track Hidden",
+"Apply Aura: Stealth Detection"
+]
+},
+"3045": {
+"name": "Rapid Fire",
+"effects": [
+"Apply Aura: Mod Ranged Attack Speed - %",
+"Apply Aura: Mod Melee Attack Speed - %"
+]
+},
+"19880": {
+"name": "Track Elementals",
+"effects": []
+},
+"13809": {
+"name": "Frost Trap",
+"effects": []
+},
+"13161": {
+"name": "Aspect of the Beast",
+"effects": []
+},
+"5384": {
+"name": "Feign Death",
+"effects": []
+},
+"1543": {
+"name": "Flare",
+"effects": [
+"Persistent Area Aura: Immunity - Debuffs Only (5)",
+"Persistent Area Aura: Immunity - Debuffs Only (6)"
+]
+},
+"19878": {
+"name": "Track Demons",
+"effects": []
+},
+"13159": {
+"name": "Aspect of the Pack",
+"effects": [
+"Apply Area Aura: Increase Run Speed %",
+"Apply Area Aura: Proc Trigger Spell"
+]
+},
+"19882": {
+"name": "Track Giants",
+"effects": []
+},
+"14327": {
+"name": "Scare Beast",
+"effects": [
+"Apply Aura: Fear",
+"Apply Aura: Increase Run Speed %"
+]
+},
+"14273": {
+"name": "Disengage",
+"effects": []
+},
+"24455": {
+"name": "Prowl",
+"effects": []
+},
+"19879": {
+"name": "Track Dragonkin",
+"effects": []
+},
+"14277": {
+"name": "Scorpid Sting",
+"effects": [
+"Apply Aura: Mod Stat (Strength)",
+"Apply Aura: Mod Stat (Agility)"
+]
+},
+"20910": {
+"name": "Counterattack",
+"effects": [
+"School Damage (Physical)",
+"Apply Aura: Root"
+]
+},
+"14317": {
+"name": "Explosive Trap",
+"effects": []
+},
+"20190": {
+"name": "Aspect of the Wild",
+"effects": []
+},
+"14305": {
+"name": "Immolation Trap",
+"effects": []
+},
+"14266": {
+"name": "Raptor Strike",
+"effects": []
+},
+"24589": {
+"name": "Scorpid Poison",
+"effects": []
+},
+"14280": {
+"name": "Viper Sting",
+"effects": []
+},
+"14325": {
+"name": "Hunter's Mark",
+"effects": [
+"Apply Aura: Stalked",
+"Apply Aura: Mod Attacker Ranged Attack Power"
+]
+},
+"14271": {
+"name": "Mongoose Bite",
+"effects": []
+},
+"14295": {
+"name": "Volley",
+"effects": []
+},
+"14287": {
+"name": "Arcane Shot",
+"effects": []
+},
+"25296": {
+"name": "Aspect of the Hawk",
+"effects": [
+"Apply Aura: Mod Ranged Attack Power",
+"Apply Aura: Proc Trigger Spell"
+]
+},
+"14296": {
+"name": "Black Arrow",
+"effects": [
+"Apply Aura: Decrease Run Speed %",
+"Apply Aura: Periodic Damage",
+"Apply Aura: Periodically Drain Power (Mana)"
+]
+},
+"15632": {
+"name": "Distracting Shot",
+"effects": []
+},
+"14311": {
+"name": "Freezing Trap",
+"effects": []
+},
+"25017": {
+"name": "Lightning Breath",
+"effects": []
+},
+"13544": {
+"name": "Mend Pet",
+"effects": []
+},
+"25294": {
+"name": "Multi-Shot",
+"effects": []
+},
+"25295": {
+"name": "Serpent Sting",
+"effects": []
+},
+"19801": {
+"name": "Tranquilizing Shot",
+"effects": []
+},
+"14268": {
+"name": "Wing Clip",
+"effects": [
+"Apply Aura: Decrease Run Speed %",
+"School Damage (Physical)"
+]
+},
+"24133": {
+"name": "Wyvern Sting",
+"effects": []
+},
+"11958": {
+"name": "Ice Block",
+"effects": [
+"Apply Aura: Stun",
+"Apply Aura: Immunity (Physical)",
+"Apply Aura: Immunity (All)"
+]
+},
+"12486": {
+"name": "Chilled",
+"effects": []
+},
+"130": {
+"name": "Slow Fall",
+"effects": []
+},
+"2855": {
+"name": "Detect Magic",
+"effects": []
+},
+"475": {
+"name": "Remove Lesser Curse",
+"effects": []
+},
+"1953": {
+"name": "Blink",
+"effects": [
+"Blink",
+"Apply Aura: Immunity - Mechanic (Stunned)",
+"Apply Aura: Immunity - Mechanic (Rooted)"
+]
+},
+"7301": {
+"name": "Frost Armor",
+"effects": [
+"Apply Aura: Mod Resistance (Physical)",
+"Apply Aura: Proc Trigger Spell"
+]
+},
+"3562": {
+"name": "Teleport: Ironforge",
+"effects": [
+"Teleport Units",
+"Script Effect"
+]
+},
+"3567": {
+"name": "Teleport: Orgrimmar",
+"effects": [
+"Teleport Units",
+"Script Effect"
+]
+},
+"3561": {
+"name": "Teleport: Stormwind",
+"effects": [
+"Teleport Units",
+"Script Effect"
+]
+},
+"3563": {
+"name": "Teleport: Undercity",
+"effects": [
+"Teleport Units",
+"Script Effect"
+]
+},
+"2139": {
+"name": "Counterspell",
+"effects": []
+},
+"759": {
+"name": "Conjure Mana Agate",
+"effects": []
+},
+"3565": {
+"name": "Teleport: Darnassus",
+"effects": [
+"Teleport Units",
+"Script Effect"
+]
+},
+"3566": {
+"name": "Teleport: Thunder Bluff",
+"effects": [
+"Teleport Units",
+"Script Effect"
+]
+},
+"3552": {
+"name": "Conjure Mana Jade",
+"effects": []
+},
+"11129": {
+"name": "Combustion",
+"effects": [
+"Apply Aura: Dummy",
+"Trigger Spell\nCombustion"
+]
+},
+"11416": {
+"name": "Portal: Ironforge",
+"effects": []
+},
+"11417": {
+"name": "Portal: Orgrimmar",
+"effects": []
+},
+"10059": {
+"name": "Portal: Stormwind",
+"effects": []
+},
+"11418": {
+"name": "Portal: Undercity",
+"effects": []
+},
+"10053": {
+"name": "Conjure Mana Citrine",
+"effects": []
+},
+"11419": {
+"name": "Portal: Darnassus",
+"effects": []
+},
+"11420": {
+"name": "Portal: Thunder Bluff",
+"effects": []
+},
+"10170": {
+"name": "Amplify Magic",
+"effects": [
+"Apply Aura: Mod Damage Taken (All)",
+"Apply Aura: Mod Healing Taken - Flat (All)"
+]
+},
+"10202": {
+"name": "Arcane Explosion",
+"effects": []
+},
+"10199": {
+"name": "Fire Blast",
+"effects": []
+},
+"10230": {
+"name": "Frost Nova",
+"effects": [
+"School Damage (Frost)",
+"Apply Aura: Root"
+]
+},
+"23028": {
+"name": "Arcane Brilliance",
+"effects": []
+},
+"10157": {
+"name": "Arcane Intellect",
+"effects": []
+},
+"25345": {
+"name": "Arcane Missiles",
+"effects": []
+},
+"10216": {
+"name": "Flamestrike",
+"effects": []
+},
+"10161": {
+"name": "Cone of Cold",
+"effects": []
+},
+"10054": {
+"name": "Conjure Mana Ruby",
+"effects": []
+},
+"13033": {
+"name": "Ice Barrier",
+"effects": []
+},
+"22783": {
+"name": "Mage Armor",
+"effects": []
+},
+"10207": {
+"name": "Scorch",
+"effects": []
+},
+"13021": {
+"name": "Blast Wave",
+"effects": []
+},
+"10187": {
+"name": "Blizzard",
+"effects": []
+},
+"28612": {
+"name": "Conjure Food",
+"effects": []
+},
+"10140": {
+"name": "Conjure Water",
+"effects": []
+},
+"10174": {
+"name": "Dampen Magic",
+"effects": []
+},
+"10225": {
+"name": "Fire Ward",
+"effects": []
+},
+"25306": {
+"name": "Fireball",
+"effects": []
+},
+"28609": {
+"name": "Frost Ward",
+"effects": []
+},
+"25304": {
+"name": "Frostbolt",
+"effects": []
+},
+"10220": {
+"name": "Ice Armor",
+"effects": []
+},
+"10193": {
+"name": "Mana Shield",
+"effects": []
+},
+"12826": {
+"name": "Polymorph",
+"effects": []
+},
+"28270": {
+"name": "Polymorph: Cow",
+"effects": []
+},
+"18809": {
+"name": "Pyroblast",
+"effects": []
+},
+"20271": {
+"name": "Judgement",
+"effects": []
+},
+"1152": {
+"name": "Purify",
+"effects": []
+},
+"25780": {
+"name": "Righteous Fury",
+"effects": []
+},
+"1044": {
+"name": "Blessing of Freedom",
+"effects": []
+},
+"5573": {
+"name": "Divine Protection",
+"effects": []
+},
+"20217": {
+"name": "Blessing of Kings",
+"effects": []
+},
+"20066": {
+"name": "Repentance",
+"effects": []
+},
+"5502": {
+"name": "Sense Undead",
+"effects": []
+},
+"19746": {
+"name": "Concentration Aura",
+"effects": []
+},
+"20164": {
+"name": "Seal of Justice",
+"effects": []
+},
+"1038": {
+"name": "Blessing of Salvation",
+"effects": []
+},
+"19752": {
+"name": "Divine Intervention",
+"effects": []
+},
+"20218": {
+"name": "Sanctity Aura",
+"effects": []
+},
+"10278": {
+"name": "Blessing of Protection",
+"effects": []
+},
+"13819": {
+"name": "Summon Warhorse",
+"effects": []
+},
+"4987": {
+"name": "Cleanse",
+"effects": []
+},
+"1020": {
+"name": "Divine Shield",
+"effects": []
+},
+"10310": {
+"name": "Lay on Hands",
+"effects": []
+},
+"20308": {
+"name": "Seal of the Crusader",
+"effects": []
+},
+"19896": {
+"name": "Shadow Resistance Aura",
+"effects": []
+},
+"10326": {
+"name": "Turn Undead",
+"effects": []
+},
+"20729": {
+"name": "Blessing of Sacrifice",
+"effects": []
+},
+"10308": {
+"name": "Hammer of Justice",
+"effects": []
+},
+"19898": {
+"name": "Frost Resistance Aura",
+"effects": []
+},
+"10301": {
+"name": "Retribution Aura",
+"effects": []
+},
+"19943": {
+"name": "Flash of Light",
+"effects": []
+},
+"20293": {
+"name": "Seal of Righteousness",
+"effects": []
+},
+"20357": {
+"name": "Seal of Wisdom",
+"effects": []
+},
+"19979": {
+"name": "Blessing of Light",
+"effects": []
+},
+"25291": {
+"name": "Blessing of Might",
+"effects": []
+},
+"25290": {
+"name": "Blessing of Wisdom",
+"effects": []
+},
+"20924": {
+"name": "Consecration",
+"effects": []
+},
+"10293": {
+"name": "Devotion Aura",
+"effects": []
+},
+"10314": {
+"name": "Exorcism",
+"effects": []
+},
+"19900": {
+"name": "Fire Resistance Aura",
+"effects": []
+},
+"25898": {
+"name": "Greater Blessing of Kings",
+"effects": []
+},
+"25890": {
+"name": "Greater Blessing of Light",
+"effects": []
+},
+"25916": {
+"name": "Greater Blessing of Might",
+"effects": []
+},
+"25895": {
+"name": "Greater Blessing of Salvation",
+"effects": []
+},
+"25899": {
+"name": "Greater Blessing of Sanctuary",
+"effects": []
+},
+"25918": {
+"name": "Greater Blessing of Wisdom",
+"effects": []
+},
+"24239": {
+"name": "Hammer of Wrath",
+"effects": []
+},
+"25292": {
+"name": "Holy Light",
+"effects": []
+},
+"10318": {
+"name": "Holy Wrath",
+"effects": []
+},
+"20773": {
+"name": "Redemption",
+"effects": []
+},
+"20349": {
+"name": "Seal of Light",
+"effects": []
+},
+"23214": {
+"name": "Summon Charger",
+"effects": []
+},
+"15286": {
+"name": "Vampiric Embrace",
+"effects": []
+},
+"2053": {
+"name": "Lesser Heal",
+"effects": []
+},
+"528": {
+"name": "Cure Disease",
+"effects": []
+},
+"6346": {
+"name": "Fear Ward",
+"effects": []
+},
+"552": {
+"name": "Abolish Disease",
+"effects": []
+},
+"6064": {
+"name": "Heal",
+"effects": []
+},
+"1706": {
+"name": "Levitate",
+"effects": []
+},
+"988": {
+"name": "Dispel Magic",
+"effects": []
+},
+"10060": {
+"name": "Power Infusion",
+"effects": []
+},
+"10909": {
+"name": "Mind Vision",
+"effects": []
+},
+"10953": {
+"name": "Mind Soothe",
+"effects": []
+},
+"10934": {
+"name": "Smite",
+"effects": []
+},
+"10917": {
+"name": "Flash Heal",
+"effects": []
+},
+"10876": {
+"name": "Mana Burn",
+"effects": []
+},
+"27683": {
+"name": "Prayer of Shadow Protection",
+"effects": []
+},
+"10890": {
+"name": "Psychic Scream",
+"effects": []
+},
+"10958": {
+"name": "Shadow Protection",
+"effects": []
+},
+"19243": {
+"name": "Desperate Prayer",
+"effects": []
+},
+"10947": {
+"name": "Mind Blast",
+"effects": []
+},
+"10912": {
+"name": "Mind Control",
+"effects": []
+},
+"20770": {
+"name": "Resurrection",
+"effects": []
+},
+"10894": {
+"name": "Shadow Word: Pain",
+"effects": []
+},
+"19305": {
+"name": "Starshards",
+"effects": []
+},
+"19280": {
+"name": "Devouring Plague",
+"effects": []
+},
+"27841": {
+"name": "Divine Spirit",
+"effects": []
+},
+"19293": {
+"name": "Elune's Grace",
+"effects": []
+},
+"10942": {
+"name": "Fade",
+"effects": []
+},
+"19275": {
+"name": "Feedback",
+"effects": []
+},
+"25314": {
+"name": "Greater Heal",
+"effects": []
+},
+"19285": {
+"name": "Hex of Weakness",
+"effects": []
+},
+"15261": {
+"name": "Holy Fire",
+"effects": []
+},
+"27801": {
+"name": "Holy Nova",
+"effects": []
+},
+"10952": {
+"name": "Inner Fire",
+"effects": []
+},
+"27871": {
+"name": "Lightwell",
+"effects": []
+},
+"18807": {
+"name": "Mind Flay",
+"effects": []
+},
+"10938": {
+"name": "Power Word: Fortitude",
+"effects": []
+},
+"10901": {
+"name": "Power Word: Shield",
+"effects": []
+},
+"21564": {
+"name": "Prayer of Fortitude",
+"effects": []
+},
+"25316": {
+"name": "Prayer of Healing",
+"effects": []
+},
+"27681": {
+"name": "Prayer of Spirit",
+"effects": []
+},
+"25315": {
+"name": "Renew",
+"effects": []
+},
+"10955": {
+"name": "Shackle Undead",
+"effects": []
+},
+"19312": {
+"name": "Shadowguard",
+"effects": []
+},
+"19266": {
+"name": "Touch of Weakness",
+"effects": []
+},
+"1804": {
+"name": "Pick Lock",
+"effects": []
+},
+"921": {
+"name": "Pick Pocket",
+"effects": []
+},
+"5277": {
+"name": "Evasion",
+"effects": []
+},
+"2842": {
+"name": "Poisons",
+"effects": []
+},
+"1725": {
+"name": "Distract",
+"effects": []
+},
+"2836": {
+"name": "Detect Traps",
+"effects": []
+},
+"5763": {
+"name": "Mind-numbing Poison",
+"effects": []
+},
+"1833": {
+"name": "Cheap Shot",
+"effects": []
+},
+"1842": {
+"name": "Disarm Trap",
+"effects": []
+},
+"2094": {
+"name": "Blind",
+"effects": []
+},
+"8694": {
+"name": "Mind-numbing Poison II",
+"effects": []
+},
+"1860": {
+"name": "Safe Fall",
+"effects": []
+},
+"6774": {
+"name": "Slice and Dice",
+"effects": []
+},
+"1857": {
+"name": "Vanish",
+"effects": []
+},
+"11297": {
+"name": "Sap",
+"effects": []
+},
+"8643": {
+"name": "Kidney Shot",
+"effects": []
+},
+"11400": {
+"name": "Mind-numbing Poison III",
+"effects": []
+},
+"11290": {
+"name": "Garrote",
+"effects": []
+},
+"11294": {
+"name": "Sinister Strike",
+"effects": []
+},
+"11198": {
+"name": "Expose Armor",
+"effects": []
+},
+"11269": {
+"name": "Ambush",
+"effects": []
+},
+"17348": {
+"name": "Hemorrhage",
+"effects": []
+},
+"1769": {
+"name": "Kick",
+"effects": []
+},
+"11305": {
+"name": "Sprint",
+"effects": []
+},
+"25300": {
+"name": "Backstab",
+"effects": []
+},
+"31016": {
+"name": "Eviscerate",
+"effects": []
+},
+"25302": {
+"name": "Feint",
+"effects": []
+},
+"11286": {
+"name": "Gouge",
+"effects": []
+},
+"11275": {
+"name": "Rupture",
+"effects": []
+},
+"1787": {
+"name": "Stealth",
+"effects": []
+},
+"2484": {
+"name": "Earthbind Totem",
+"effects": []
+},
+"526": {
+"name": "Cure Poison",
+"effects": []
+},
+"8143": {
+"name": "Tremor Totem",
+"effects": []
+},
+"2645": {
+"name": "Ghost Wolf",
+"effects": []
+},
+"2870": {
+"name": "Cure Disease",
+"effects": []
+},
+"8166": {
+"name": "Poison Cleansing Totem",
+"effects": []
+},
+"131": {
+"name": "Water Breathing",
+"effects": []
+},
+"6196": {
+"name": "Far Sight",
+"effects": []
+},
+"546": {
+"name": "Water Walking",
+"effects": []
+},
+"556": {
+"name": "Astral Recall",
+"effects": []
+},
+"8177": {
+"name": "Grounding Totem",
+"effects": []
+},
+"20608": {
+"name": "Reincarnation",
+"effects": []
+},
+"8012": {
+"name": "Purge",
+"effects": []
+},
+"6495": {
+"name": "Sentry Totem",
+"effects": []
+},
+"8170": {
+"name": "Disease Cleansing Totem",
+"effects": []
+},
+"11315": {
+"name": "Fire Nova Totem",
+"effects": []
+},
+"10614": {
+"name": "Windfury Totem",
+"effects": []
+},
+"10623": {
+"name": "Chain Heal",
+"effects": []
+},
+"10479": {
+"name": "Frost Resistance Totem",
+"effects": []
+},
+"16316": {
+"name": "Rockbiter Weapon",
+"effects": []
+},
+"10408": {
+"name": "Stoneskin Totem",
+"effects": []
+},
+"10605": {
+"name": "Chain Lightning",
+"effects": []
+},
+"16342": {
+"name": "Flametongue Weapon",
+"effects": []
+},
+"15208": {
+"name": "Lightning Bolt",
+"effects": []
+},
+"10432": {
+"name": "Lightning Shield",
+"effects": []
+},
+"10587": {
+"name": "Magma Totem",
+"effects": []
+},
+"10497": {
+"name": "Mana Spring Totem",
+"effects": []
+},
+"15112": {
+"name": "Windwall Totem",
+"effects": []
+},
+"10538": {
+"name": "Fire Resistance Totem",
+"effects": []
+},
+"16387": {
+"name": "Flametongue Totem",
+"effects": []
+},
+"10473": {
+"name": "Frost Shock",
+"effects": []
+},
+"16356": {
+"name": "Frostbrand Weapon",
+"effects": []
+},
+"17359": {
+"name": "Mana Tide Totem",
+"effects": []
+},
+"10428": {
+"name": "Stoneclaw Totem",
+"effects": []
+},
+"20777": {
+"name": "Ancestral Spirit",
+"effects": []
+},
+"10414": {
+"name": "Earth Shock",
+"effects": []
+},
+"29228": {
+"name": "Flame Shock",
+"effects": []
+},
+"25359": {
+"name": "Grace of Air Totem",
+"effects": []
+},
+"10463": {
+"name": "Healing Stream Totem",
+"effects": []
+},
+"25357": {
+"name": "Healing Wave",
+"effects": []
+},
+"10468": {
+"name": "Lesser Healing Wave",
+"effects": []
+},
+"10601": {
+"name": "Nature Resistance Totem",
+"effects": []
+},
+"10438": {
+"name": "Searing Totem",
+"effects": []
+},
+"25361": {
+"name": "Strength of Earth Totem",
+"effects": []
+},
+"16362": {
+"name": "Windfury Weapon",
+"effects": []
+},
+"688": {
+"name": "Summon Imp",
+"effects": []
+},
+"6201": {
+"name": "Create Healthstone (Minor)",
+"effects": []
+},
+"696": {
+"name": "Demon Skin",
+"effects": []
+},
+"697": {
+"name": "Summon Voidwalker",
+"effects": []
+},
+"5697": {
+"name": "Unending Breath",
+"effects": []
+},
+"693": {
+"name": "Create Soulstone (Minor)",
+"effects": []
+},
+"698": {
+"name": "Ritual of Summoning",
+"effects": []
+},
+"713": {
+"name": "Summon Incubus",
+"effects": []
+},
+"712": {
+"name": "Summon Succubus",
+"effects": []
+},
+"6202": {
+"name": "Create Healthstone (Lesser)",
+"effects": []
+},
+"126": {
+"name": "Eye of Kilrogg",
+"effects": []
+},
+"5500": {
+"name": "Sense Demons",
+"effects": []
+},
+"132": {
+"name": "Detect Lesser Invisibility",
+"effects": []
+},
+"6366": {
+"name": "Create Firestone (Lesser)",
+"effects": []
+},
+"20752": {
+"name": "Create Soulstone (Lesser)",
+"effects": []
+},
+"691": {
+"name": "Summon Felhunter",
+"effects": []
+},
+"5699": {
+"name": "Create Healthstone",
+"effects": []
+},
+"17951": {
+"name": "Create Firestone",
+"effects": []
+},
+"2362": {
+"name": "Create Spellstone",
+"effects": []
+},
+"1010": {
+"name": "Curse of Idiocy",
+"effects": []
+},
+"2970": {
+"name": "Detect Invisibility",
+"effects": []
+},
+"20755": {
+"name": "Create Soulstone",
+"effects": []
+},
+"5784": {
+"name": "Summon Felsteed",
+"effects": []
+},
+"17952": {
+"name": "Create Firestone (Greater)",
+"effects": []
+},
+"11729": {
+"name": "Create Healthstone (Greater)",
+"effects": []
+},
+"18647": {
+"name": "Banish",
+"effects": []
+},
+"17727": {
+"name": "Create Spellstone (Greater)",
+"effects": []
+},
+"20756": {
+"name": "Create Soulstone (Greater)",
+"effects": []
+},
+"11719": {
+"name": "Curse of Tongues",
+"effects": []
+},
+"11743": {
+"name": "Detect Greater Invisibility",
+"effects": []
+},
+"1122": {
+"name": "Inferno",
+"effects": []
+},
+"11708": {
+"name": "Curse of Weakness",
+"effects": []
+},
+"11675": {
+"name": "Drain Soul",
+"effects": []
+},
+"11700": {
+"name": "Drain Life",
+"effects": []
+},
+"11704": {
+"name": "Drain Mana",
+"effects": []
+},
+"11684": {
+"name": "Hellfire",
+"effects": []
+},
+"17928": {
+"name": "Howl of Terror",
+"effects": []
+},
+"17953": {
+"name": "Create Firestone (Major)",
+"effects": []
+},
+"11717": {
+"name": "Curse of Recklessness",
+"effects": []
+},
+"17937": {
+"name": "Curse of Shadow",
+"effects": []
+},
+"6215": {
+"name": "Fear",
+"effects": []
+},
+"11689": {
+"name": "Life Tap",
+"effects": []
+},
+"18871": {
+"name": "Shadowburn",
+"effects": []
+},
+"17924": {
+"name": "Soul Fire",
+"effects": []
+},
+"11730": {
+"name": "Create Healthstone (Major)",
+"effects": []
+},
+"11713": {
+"name": "Curse of Agony",
+"effects": []
+},
+"17926": {
+"name": "Death Coil",
+"effects": []
+},
+"11678": {
+"name": "Rain of Fire",
+"effects": []
+},
+"17923": {
+"name": "Searing Pain",
+"effects": []
+},
+"18881": {
+"name": "Siphon Life",
+"effects": []
+},
+"11726": {
+"name": "Subjugate Demon",
+"effects": []
+},
+"18932": {
+"name": "Conflagrate",
+"effects": []
+},
+"25311": {
+"name": "Corruption",
+"effects": []
+},
+"20757": {
+"name": "Create Soulstone (Major)",
+"effects": []
+},
+"17728": {
+"name": "Create Spellstone (Major)",
+"effects": []
+},
+"603": {
+"name": "Curse of Doom",
+"effects": []
+},
+"11722": {
+"name": "Curse of the Elements",
+"effects": []
+},
+"18938": {
+"name": "Dark Pact",
+"effects": []
+},
+"11735": {
+"name": "Demon Armor",
+"effects": []
+},
+"11695": {
+"name": "Health Funnel",
+"effects": []
+},
+"25309": {
+"name": "Immolate",
+"effects": []
+},
+"18540": {
+"name": "Ritual of Doom",
+"effects": []
+},
+"25307": {
+"name": "Shadow Bolt",
+"effects": []
+},
+"28610": {
+"name": "Shadow Ward",
+"effects": []
+},
+"23161": {
+"name": "Summon Dreadsteed",
+"effects": []
+},
+"2457": {
+"name": "Battle Stance",
+"effects": []
+},
+"2687": {
+"name": "Bloodrage",
+"effects": []
+},
+"71": {
+"name": "Defensive Stance",
+"effects": []
+},
+"355": {
+"name": "Taunt",
+"effects": []
+},
+"2565": {
+"name": "Shield Block",
+"effects": []
+},
+"676": {
+"name": "Disarm",
+"effects": []
+},
+"20230": {
+"name": "Retaliation",
+"effects": []
+},
+"5246": {
+"name": "Intimidating Shout",
+"effects": []
+},
+"1161": {
+"name": "Challenging Shout",
+"effects": []
+},
+"871": {
+"name": "Shield Wall",
+"effects": []
+},
+"2458": {
+"name": "Berserker Stance",
+"effects": []
+},
+"18499": {
+"name": "Berserker Rage",
+"effects": []
+},
+"1680": {
+"name": "Whirlwind",
+"effects": []
+},
+"11578": {
+"name": "Charge",
+"effects": []
+},
+"1719": {
+"name": "Recklessness",
+"effects": []
+},
+"20617": {
+"name": "Intercept",
+"effects": []
+},
+"1672": {
+"name": "Shield Bash",
+"effects": []
+},
+"11556": {
+"name": "Demoralizing Shout",
+"effects": []
+},
+"7373": {
+"name": "Hamstring",
+"effects": []
+},
+"11605": {
+"name": "Slam",
+"effects": []
+},
+"20662": {
+"name": "Execute",
+"effects": []
+},
+"20560": {
+"name": "Mocking Blow",
+"effects": []
+},
+"6554": {
+"name": "Pummel",
+"effects": []
+},
+"11597": {
+"name": "Sunder Armor",
+"effects": []
+},
+"11581": {
+"name": "Thunder Clap",
+"effects": []
+},
+"25289": {
+"name": "Battle Shout",
+"effects": []
+},
+"23894": {
+"name": "Bloodthirst",
+"effects": []
+},
+"20569": {
+"name": "Cleave",
+"effects": []
+},
+"25286": {
+"name": "Heroic Strike",
+"effects": []
+},
+"21553": {
+"name": "Mortal Strike",
+"effects": []
+},
+"11585": {
+"name": "Overpower",
+"effects": []
+},
+"11574": {
+"name": "Rend",
+"effects": []
+},
+"25288": {
+"name": "Revenge",
+"effects": []
+},
+"23925": {
+"name": "Shield Slam",
+"effects": []
+}
+}
