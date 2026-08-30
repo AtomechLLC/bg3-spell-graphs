@@ -34,6 +34,12 @@ RAMP = [("1 class", "#2e5286"), ("2 classes", "#3987e5"),
 def ramp_color(n):
     return RAMP[0][1] if n <= 1 else RAMP[1][1] if n == 2 else RAMP[2][1] if n <= 4 else RAMP[3][1]
 
+from purpose_defs import load_purposes, PEMOJI as PUR_EMOJI, PSHORT as PUR_SHORT, PLABEL as PUR_LABEL
+BG3_PUR = load_purposes("Baldur's Gate 3")
+
+def pur_of(r):
+    return BG3_PUR.get(r["name"].lower(), "utility")
+
 def fam_of(r):
     fm = FAMILY_OF.get(r["id"])
     if not fm:
@@ -53,7 +59,8 @@ def uni_attrs(r):
     return {"cl": "|" + "|".join(r["classes"]) + "|",
             "sc": r.get("school") or "",
             "fs": fm["slug"] if fm else "",
-            "tier": fm["tier"] if fm else ""}
+            "tier": fm["tier"] if fm else "",
+            "pur": pur_of(r)}
 
 # ---------------------------------------------------------------- icons (shared)
 ICON_URIS = {}
@@ -234,6 +241,12 @@ CANCHOR = {c: (CX + 555 * math.cos(2 * math.pi * i / len(CLASSES) - math.pi / 2)
 cpos = anchor_layout(DPOP, lambda r: [c for c in r["classes"] if c in CANCHOR] or ["Wizard"],
                      CANCHOR, seed=7)
 
+PURS = [p for p in PUR_SHORT if any(pur_of(r) == p for r in DPOP)]
+PANCHOR = {p: (CX + 585 * math.cos(2 * math.pi * i / len(PURS) - math.pi / 2),
+               CY + 390 * math.sin(2 * math.pi * i / len(PURS) - math.pi / 2))
+           for i, p in enumerate(PURS)}
+ppos = anchor_layout(DPOP, lambda r: [pur_of(r)], PANCHOR, seed=13, pull_solo=0.11)
+
 SCHOOLS = sorted({r["school"] for r in DPOP if r["school"] and r["school"] != "None"})
 SANCHOR = {s: (CX + 545 * math.cos(2 * math.pi * i / len(SCHOOLS) - math.pi / 2),
                CY + 360 * math.sin(2 * math.pi * i / len(SCHOOLS) - math.pi / 2))
@@ -345,6 +358,30 @@ for r in DPOP:
 sv3 += anchor_labels(SANCHOR, counts_s)
 SVG_SCH = "\n".join(sv3)
 
+# --- purposes svg
+counts_p = {p: sum(1 for r in DPOP if pur_of(r) == p) for p in PURS}
+sv4 = [f'<rect width="{W}" height="{H}" fill="{SURFACE}" rx="14"/>']
+for p in PURS:
+    ax, ay = PANCHOR[p]
+    sv4.append(f'<circle cx="{ax:.0f}" cy="{ay:.0f}" r="130" fill="#D4AF5E" opacity="0.05" filter="url(#blur)"/>')
+for r in DPOP:
+    col, famname = tier_color(r)
+    pk = pur_of(r)
+    sv4.append(node_svg(r, ppos[r["id"]], col,
+                        {**uni_attrs(r), "sub": PUR_EMOJI[pk] + " " + PUR_LABEL[pk] + " · " + famname}))
+for p in PURS:
+    ax, ay = PANCHOR[p]
+    lx = min(max(ax, 100), W - 100)
+    dy = -16 if ay < CY else 30
+    sv4.append(f'<text x="{lx:.0f}" y="{ay + dy:.0f}" text-anchor="middle" fill="#E3C377" '
+               f'font-family="Cinzel,Georgia,serif" font-size="15" font-weight="600" '
+               f'letter-spacing="1.5" stroke="{SURFACE}" stroke-width="6" paint-order="stroke" '
+               f'class="anchor" data-c="{p}"><tspan class="femoji">{PUR_EMOJI[p]}</tspan> {PUR_SHORT[p]}</text>')
+    sv4.append(f'<text x="{lx:.0f}" y="{ay + dy + 16:.0f}" text-anchor="middle" fill="#a8a4b5" '
+               f'font-family="IBM Plex Mono,monospace" font-size="11" stroke="{SURFACE}" '
+               f'stroke-width="5" paint-order="stroke">{counts_p[p]}</text>')
+SVG_PUR = "\n".join(sv4)
+
 tier_chips = "".join(
     f'<span class="chip"><span class="dot" style="background:{c}"></span>{l}</span>'
     for l, c in [("clone family", TIER_COLOR["clone"]), ("template family", TIER_COLOR["template"]),
@@ -361,6 +398,9 @@ pick_tier = "".join(
 pick_fam = "".join(
     f'<button class="pchip pfam" data-g="fam" data-val="{f["slug"]}" title="{f["title"]}" '
     f'aria-label="{f["title"]}">{f["icon"]}</button>' for f in C.F)
+pick_pur = "".join(
+    f'<button class="pchip" data-g="pur" data-val="{p}" title="{PUR_LABEL[p]}">'
+    f'<span class="femoji">{PUR_EMOJI[p]}</span>{PUR_SHORT[p].lower()}</button>' for p in PURS)
 
 HTML = f"""<title>Spell Constellations</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -433,6 +473,7 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
         <button data-v="fam" role="tab">BY FAMILY</button>
         <button data-v="cls" role="tab">BY CLASS</button>
         <button data-v="sch" role="tab">BY SCHOOL</button>
+        <button data-v="pur" role="tab">BY PURPOSE</button>
       </div>
       <button id="copybtn" class="pchip" title="Copy the current view (with active filters) as a PNG image">⧉ copy image</button>
     </div>
@@ -446,12 +487,15 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
     <defs><filter id="blur2"><feGaussianBlur stdDeviation="30"/></filter></defs>{SVG_CLS}</svg></div>
   <div class="view" data-v="sch"><svg viewBox="0 0 {W} {H}" role="img" aria-label="Spells clustered by school of magic">
     <defs><filter id="blur3"><feGaussianBlur stdDeviation="30"/></filter></defs>{SVG_SCH}</svg></div>
+  <div class="view" data-v="pur"><svg viewBox="0 0 {W} {H}" role="img" aria-label="Spells clustered by functional purpose">
+    <defs><filter id="blur4"><feGaussianBlur stdDeviation="30"/></filter></defs>{SVG_PUR}</svg></div>
   <div id="tip"></div>
 </div>
 <div class="bar">
   <div class="bgroup"><span class="blabel">Classes</span>{pick_cls}</div>
   <div class="bgroup"><span class="blabel">Schools</span>{pick_sch}</div>
   <div class="bgroup"><span class="blabel">Families</span>{pick_tier}{pick_fam}</div>
+  <div class="bgroup"><span class="blabel">Purposes</span>{pick_pur}</div>
   <div class="bgroup"><span class="blabel"></span>
     <button class="pchip" id="clear">✕ clear</button><span id="fcount"></span></div>
 </div>
@@ -463,9 +507,10 @@ icons © Larian Studios &amp; Wizards of the Coast</footer>
 const ICONS = {json.dumps(ICON_URIS)};
 const SUBS = {{fam: "{len(POP)} spells · similar mechanics attract · variants orbit their container",
   cls: "{len(DPOP)} spells drawn toward every class that learns them · brighter = more shared",
-  sch: "{len(DPOP)} spells grouped by school of magic · rings colored by family tier"}};
+  sch: "{len(DPOP)} spells grouped by school of magic · rings colored by family tier",
+  pur: "{len(DPOP)} spells grouped by what they are for · rings colored by family tier"}};
 const LEGS = {{fam: `{tier_chips}<span class="chip"><span class="ringchip"></span>variants orbit</span>`,
-  cls: `{ramp_chips}`, sch: `{tier_chips}`}};
+  cls: `{ramp_chips}`, sch: `{tier_chips}`, pur: `{tier_chips}`}};
 document.querySelectorAll('image.sic').forEach(el => {{
   const d = ICONS[el.dataset.i];
   if (d) el.setAttribute('href', d); else el.remove();
@@ -481,24 +526,28 @@ function show(v) {{
 }}
 
 // ---- overlap pickers -------------------------------------------------
-const state = {{cls: new Set(), sch: new Set(), tier: new Set(), fam: new Set()}};
+const state = {{cls: new Set(), sch: new Set(), tier: new Set(), fam: new Set(), pur: new Set()}};
 function matches(n) {{
   const d = n.dataset;
   for (const c of state.cls) if (!(d.cl || '').includes('|' + c + '|')) return false;
   if (state.sch.size && !state.sch.has(d.sc)) return false;
+  if (state.pur.size && !state.pur.has(d.pur)) return false;
   if ((state.tier.size + state.fam.size) &&
       !(state.tier.has(d.tier) || state.fam.has(d.fs))) return false;
   return true;
 }}
+function anySel() {{
+  return state.cls.size + state.sch.size + state.tier.size + state.fam.size + state.pur.size > 0;
+}}
 function updateCount() {{
-  const any = state.cls.size + state.sch.size + state.tier.size + state.fam.size > 0;
+  const any = anySel();
   const el = document.getElementById('fcount');
   if (!any) {{ el.textContent = ''; return; }}
   const act = document.querySelector('.view.on svg');
   el.textContent = act.querySelectorAll('.n.lit').length + ' spells lit';
 }}
 function applyFilter() {{
-  const any = state.cls.size + state.sch.size + state.tier.size + state.fam.size > 0;
+  const any = anySel();
   document.querySelectorAll('.view svg').forEach(svg => {{
     svg.classList.toggle('filtered', any);
     const lit = new Set();
@@ -531,7 +580,7 @@ document.querySelectorAll('.seg button').forEach(b =>
   b.addEventListener('click', () => show(b.dataset.v)));
 let v0 = 'fam';
 try {{ v0 = localStorage.getItem('constellation-view') || 'fam'; }} catch (e) {{}}
-if (!['fam','cls','sch'].includes(v0)) v0 = 'fam';
+if (!['fam','cls','sch','pur'].includes(v0)) v0 = 'fam';
 show(v0);
 document.querySelectorAll('.n').forEach(n => {{
   const svg = n.closest('svg');
@@ -573,7 +622,8 @@ document.querySelectorAll('text.anchor').forEach(a => {{
   const svg = a.closest('svg');
   const view = a.closest('.view').dataset.v;
   const c = a.dataset.c;
-  const sel = view === 'cls' ? '.n[data-cl*="|' + c + '|"]' : '.n[data-sc="' + c + '"]';
+  const sel = view === 'cls' ? '.n[data-cl*="|' + c + '|"]'
+    : view === 'pur' ? '.n[data-pur="' + c + '"]' : '.n[data-sc="' + c + '"]';
   a.addEventListener('mouseenter', () => {{
     svg.classList.add('hov');
     a.classList.add('hl');

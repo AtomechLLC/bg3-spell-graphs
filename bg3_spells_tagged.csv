@@ -1,212 +1,212 @@
-spell,level,school,type,family,tier,container_variants,classes
-Acid Splash,0,Conjuration,Projectile,The Damage Cantrip Engine,Shared engine,,Fighter/Rogue/Sorcerer/Wizard
-Blade Ward,0,Abjuration,Shout,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Bone Chill,0,Necromancy,Target,The Damage Cantrip Engine,Shared engine,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Booming Blade,0,Evocation,Target,,,,Fighter/Rogue/Sorcerer/Warlock/Wizard
-Bursting Sinew,0,Necromancy,Target,,,,Cleric/Fighter/Rogue/Sorcerer/Wizard
-Dancing Lights,0,Evocation,Target,,,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Eldritch Blast,0,Evocation,Projectile,The Damage Cantrip Engine,Shared engine,,Bard/Warlock
-Fire Bolt,0,Evocation,Projectile,The Damage Cantrip Engine,Shared engine,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Friends,0,Enchantment,Target,,,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Guidance,0,Divination,Target,Guidance & Resistance,Shared engine,,Cleric/Druid
-Light,0,Evocation,Target,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
-Mage Hand,0,Conjuration,Target,,,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Minor Illusion,0,Illusion,Target,,,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Poison Spray,0,Conjuration,Projectile,The Damage Cantrip Engine,Shared engine,,Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Produce Flame,0,Conjuration,Shout,,,,Cleric/Druid
-Ray of Frost,0,Evocation,Projectile,The Damage Cantrip Engine,Shared engine,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Resistance,0,Abjuration,Target,Guidance & Resistance,Shared engine,,Cleric/Druid
-Sacred Flame,0,Evocation,Target,The Damage Cantrip Engine,Shared engine,,Bard/Cleric
-Shillelagh,0,Transmutation,Shout,,,,Cleric/Druid
-Shocking Grasp,0,Evocation,Target,The Damage Cantrip Engine,Shared engine,,Fighter/Rogue/Sorcerer/Wizard
-Thaumaturgy,0,Transmutation,Shout,,,,Cleric
-Thorn Whip,0,Transmutation,Target,The Damage Cantrip Engine,Shared engine,,Cleric/Druid
-Toll the Dead,0,Necromancy,Target,,,,Cleric/Fighter/Rogue/Warlock/Wizard
-True Strike,0,Divination,Target,,,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Vicious Mockery,0,Enchantment,Target,,,,Bard
-Animal Friendship,1,Enchantment,Target,The Charm Pair,Verbatim clone,,Bard/Cleric/Druid/Ranger
-Armour of Agathys,1,Abjuration,Shout,,,,Bard/Warlock
-Arms of Hadar,1,Conjuration,Shout,,,,Warlock
-Bane,1,Enchantment,Target,Bane & Bless,Verbatim clone,,Bard/Cleric
-Bless,1,Enchantment,Target,Bane & Bless,Verbatim clone,,Bard/Cleric/Paladin
-Burning Hands,1,Evocation,Zone,,,,Cleric/Fighter/Rogue/Sorcerer/Wizard
-Charm Person,1,Enchantment,Target,The Charm Pair,Verbatim clone,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Chromatic Orb,1,Evocation,Projectile,,,6,Bard/Fighter/Rogue/Sorcerer/Wizard
-Colour Spray,1,Illusion,Zone,The Hit-Point Pool Engine,Shared template,,Fighter/Rogue/Sorcerer/Wizard
-Command,1,Enchantment,Target,,,5,Bard/Cleric/Paladin
-Compelled Duel,1,Enchantment,Target,,,,Paladin
-Create or Destroy Water,1,Transmutation,Target,,,2,Cleric/Druid/Sorcerer
-Cure Wounds,1,Evocation,Target,The Cure Family,Verbatim clone,,Bard/Cleric/Druid/Paladin/Ranger
-Disguise Self,1,Illusion,Shout,,,32,Bard/Cleric/Fighter/Ranger/Rogue/Sorcerer/Wizard
-Dissonant Whispers,1,Enchantment,Target,,,,Bard
-Divine Favour,1,Evocation,Shout,,,,Cleric/Paladin
-Enhance Leap,1,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,,Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
-Ensnaring Strike,1,Conjuration,Projectile,,,2,Ranger
-Entangle,1,Conjuration,Target,The Surface Engine,Shared template,,Bard/Druid
-Expeditious Retreat,1,Transmutation,Shout,,,,Fighter/Rogue/Sorcerer/Warlock/Wizard
-Faerie Fire,1,Evocation,Target,,,,Bard/Cleric/Druid
-False Life,1,Necromancy,Shout,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
-Feather Fall,1,Transmutation,Shout,The Touch-Buff Skeleton,Shared engine,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Find Familiar,1,Conjuration,Target,The Summoning Contract,Shared template,6,Fighter/Rogue/Wizard
-Fog Cloud,1,Conjuration,Target,The Surface Engine,Shared template,,Cleric/Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
-Goodberry,1,Transmutation,Target,,,,Druid/Ranger
-Grease,1,Conjuration,Target,The Surface Engine,Shared template,,Fighter/Rogue/Wizard
-Guiding Bolt,1,Evocation,Projectile,,,,Bard/Cleric
-Hail of Thorns,1,Conjuration,Projectile,,,,Ranger
-Healing Word,1,Evocation,Target,The Cure Family,Verbatim clone,,Bard/Cleric/Druid
-Hellish Rebuke,1,Evocation,Shout,,,,Bard/Paladin/Warlock
-Heroism,1,Enchantment,Target,,,,Bard/Paladin
-Hex,1,Enchantment,Target,,,6,Bard/Warlock
-Hunter's Mark,1,Divination,Target,,,,Bard/Ranger
-Ice Knife,1,Conjuration,Projectile,,,,Bard/Druid/Fighter/Rogue/Sorcerer/Wizard
-Inflict Wounds,1,Necromancy,Target,,,,Cleric/Paladin
-Longstrider,1,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,,Bard/Druid/Fighter/Ranger/Rogue/Wizard
-Mage Armour,1,Abjuration,Target,The Armour-Class Wardrobe,Verbatim clone,,Fighter/Rogue/Sorcerer/Wizard
-Magic Missile,1,Evocation,Projectile,,,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Protection from Evil and Good,1,Abjuration,Target,,,,Cleric/Fighter/Paladin/Rogue/Warlock/Wizard
-Ray of Sickness,1,Necromancy,Projectile,,,,Cleric/Fighter/Rogue/Sorcerer/Wizard
-Sanctuary,1,Abjuration,Target,,,,Bard/Cleric
-Searing Smite,1,Evocation,Target,The Smite Armoury,Shared template,,Paladin
-Shield,1,Abjuration,Shout,The Duplicate SKUs,Verbatim clone,,Fighter/Rogue/Sorcerer/Warlock/Wizard
-Shield of Faith,1,Abjuration,Target,The Armour-Class Wardrobe,Verbatim clone,,Cleric/Paladin
-Sleep,1,Enchantment,Target,The Hit-Point Pool Engine,Shared template,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
-Speak with Animals,1,Divination,Shout,,,,Bard/Cleric/Druid/Ranger
-Tasha's Hideous Laughter,1,Enchantment,Target,,,,Bard/Fighter/Rogue/Wizard
-Thunderous Smite,1,Evocation,Target,The Smite Armoury,Shared template,,Bard/Paladin
-Thunderwave,1,Evocation,Zone,The Elemental Blast Template,Shared template,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
-Witch Bolt,1,Evocation,Projectile,,,,Fighter/Rogue/Sorcerer/Warlock/Wizard
-Wrathful Smite,1,Evocation,Target,The Smite Armoury,Shared template,,Paladin/Warlock
-Aid,2,Abjuration,Shout,,,,Cleric/Paladin
-Arcane Lock,2,Abjuration,Target,,,,Bard/Fighter/Rogue/Wizard
-Barkskin,2,Transmutation,Target,The Armour-Class Wardrobe,Verbatim clone,,Cleric/Druid/Ranger
-Blindness,2,Necromancy,Target,,,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
-Blur,2,Illusion,Shout,,,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Branding Smite,2,Evocation,Target,The Smite Armoury,Shared template,2,Paladin/Warlock
-Calm Emotions,2,Enchantment,Target,,,,Bard/Cleric
-Cloud of Daggers,2,Conjuration,Target,,,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Crown of Madness,2,Enchantment,Target,,,,Bard/Fighter/Paladin/Rogue/Sorcerer/Warlock/Wizard
-Darkness,2,Evocation,Target,The Duplicate SKUs,Verbatim clone,,Bard/Fighter/Paladin/Rogue/Sorcerer/Warlock/Wizard
-Darkvision,2,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,,Bard/Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
-Detect Thoughts,2,Divination,Shout,,,,Bard/Druid/Fighter/Rogue/Sorcerer/Wizard
-Enhance Ability,2,Transmutation,Target,,,6,Bard/Cleric/Druid/Sorcerer
-Enlarge/Reduce,2,Transmutation,Target,,,2,Fighter/Rogue/Sorcerer/Wizard
-Enthrall,2,Enchantment,Target,,,,Bard/Warlock
-Eyes of the Dark: Darkness,2,Evocation,Target,The Duplicate SKUs,Verbatim clone,,Sorcerer
-Flame Blade,2,Evocation,Shout,,,,Druid
-Flaming Sphere,2,Conjuration,Target,The Summoning Contract,Shared template,,Cleric/Druid/Fighter/Rogue/Wizard
-Gust of Wind,2,Evocation,Zone,,,,Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
-Heat Metal,2,Transmutation,Target,,,,Bard/Druid
-Hold Person,2,Enchantment,Target,The Hold Pair,Verbatim clone,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Invisibility,2,Illusion,Target,The Invisibility Ladder,Verbatim clone,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Knock,2,Transmutation,Target,,,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Lesser Restoration,2,Abjuration,Target,The Cleanse Counter,Shared engine,,Bard/Cleric/Druid/Paladin/Ranger
-Magic Weapon,2,Transmutation,Target,,,,Cleric/Fighter/Paladin/Rogue/Wizard
-Melf's Acid Arrow,2,Evocation,Projectile,,,,Fighter/Rogue/Wizard
-Mirror Image,2,Illusion,Shout,,,,Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Misty Step,2,Conjuration,Target,The Blink Ladder,Shared template,,Bard/Fighter/Ranger/Rogue/Sorcerer/Warlock/Wizard
-Moonbeam,2,Evocation,Target,,,,Druid
-Pass Without Trace,2,Abjuration,Shout,,,,Bard/Cleric/Druid/Ranger
-Phantasmal Force,2,Illusion,Target,,,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Prayer of Healing,2,Evocation,Shout,The Cure Family,Verbatim clone,,Cleric
-Protection from Poison,2,Abjuration,Target,The Cleanse Counter,Shared engine,,Cleric/Druid/Paladin/Ranger
-Ray of Enfeeblement,2,Necromancy,Projectile,,,,Bard/Cleric/Fighter/Rogue/Warlock/Wizard
-Scorching Ray,2,Evocation,Projectile,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
-See Invisibility,2,Divination,Shout,,,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Shadow Blade,2,Illusion,Shout,,,,Fighter/Rogue/Sorcerer/Warlock/Wizard
-Shatter,2,Evocation,Target,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
-Silence,2,Illusion,Target,,,,Bard/Cleric/Ranger
-Spike Growth,2,Transmutation,Target,The Surface Engine,Shared template,,Bard/Cleric/Druid/Ranger
-Spiritual Weapon,2,Evocation,Target,The Summoning Contract,Shared template,6,Bard/Cleric
-Warding Bond,2,Abjuration,Target,,,,Cleric
-Web,2,Conjuration,Target,The Surface Engine,Shared template,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Animate Dead,3,Necromancy,Target,The Summoning Contract,Shared template,2,Bard/Cleric/Druid/Paladin/Wizard
-Beacon of Hope,3,Abjuration,Shout,,,,Cleric
-Bestow Curse,3,Necromancy,Target,,,9,Bard/Cleric/Paladin/Wizard
-Blinding Smite,3,Evocation,Target,The Smite Armoury,Shared template,,Paladin
-Blink,3,Transmutation,Shout,,,,Sorcerer/Warlock/Wizard
-Call Lightning,3,Conjuration,Target,,,,Bard/Cleric/Druid/Sorcerer
-Conjure Barrage,3,Conjuration,Zone,,,2,Ranger
-Counterspell,3,Abjuration,Target,,,,Bard/Sorcerer/Warlock/Wizard
-Crusader's Mantle,3,Evocation,Shout,,,,Bard/Cleric/Paladin
-Daylight,3,Evocation,Target,,,2,Bard/Cleric/Druid/Paladin/Ranger/Sorcerer
-Elemental Weapon,3,Transmutation,Target,,,5,Paladin/Warlock
-Fear,3,Illusion,Zone,,,,Bard/Cleric/Ranger/Sorcerer/Warlock/Wizard
-Feign Death,3,Necromancy,Target,,,,Bard/Cleric/Druid/Wizard
-Fireball,3,Evocation,Projectile,The Elemental Blast Template,Shared template,,Bard/Cleric/Sorcerer/Wizard
-Gaseous Form,3,Transmutation,Target,,,,Bard/Druid/Sorcerer/Warlock/Wizard
-Glyph of Warding,3,Abjuration,Target,,,7,Bard/Cleric/Wizard
-Grant Flight,3,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,,Bard/Sorcerer/Warlock/Wizard
-Haste,3,Transmutation,Target,,,,Bard/Sorcerer/Wizard
-Hunger of Hadar,3,Conjuration,Target,,,,Bard/Warlock
-Hypnotic Pattern,3,Illusion,Target,,,,Bard/Sorcerer/Warlock/Wizard
-Lightning Arrow,3,Transmutation,Projectile,,,,Ranger
-Lightning Bolt,3,Evocation,Zone,The Elemental Blast Template,Shared template,,Bard/Sorcerer/Wizard
-Mass Healing Word,3,Evocation,Shout,The Cure Family,Verbatim clone,,Bard/Cleric
-Plant Growth,3,Transmutation,Target,The Surface Engine,Shared template,,Bard/Cleric/Druid/Ranger
-Protection from Energy,3,Abjuration,Target,,,5,Cleric/Druid/Ranger/Sorcerer/Wizard
-Remove Curse,3,Abjuration,Target,The Cleanse Counter,Shared engine,,Bard/Cleric/Paladin/Warlock/Wizard
-Revivify,3,Necromancy,Teleportation,,,,Bard/Cleric/Paladin
-Sleet Storm,3,Conjuration,Target,The Surface Engine,Shared template,,Bard/Cleric/Druid/Sorcerer/Wizard
-Slow,3,Transmutation,Target,,,,Bard/Cleric/Sorcerer/Wizard
-Speak with Dead,3,Necromancy,Target,,,,Bard/Cleric
-Spirit Guardians,3,Conjuration,Shout,,,2,Bard/Cleric
-Stinking Cloud,3,Conjuration,Target,The Surface Engine,Shared template,,Bard/Sorcerer/Wizard
-Vampiric Touch,3,Necromancy,Target,,,,Bard/Cleric/Warlock/Wizard
-Warden of Vitality,3,Evocation,Shout,,,,Bard/Paladin
-Banishment,4,Abjuration,Target,,,,Bard/Cleric/Sorcerer/Warlock/Wizard
-Blight,4,Necromancy,Target,,,,Bard/Cleric/Druid/Sorcerer/Warlock/Wizard
-Confusion,4,Enchantment,Target,,,,Bard/Cleric/Druid/Sorcerer/Wizard
-Conjure Minor Elemental,4,Conjuration,Target,The Summoning Contract,Shared template,3,Druid/Wizard
-Conjure Woodland Being,4,Conjuration,Target,,,,Druid
-Death Ward,4,Abjuration,Target,,,,Bard/Cleric
-Dimension Door,4,Conjuration,Teleportation,The Blink Ladder,Shared template,,Bard/Cleric/Sorcerer/Warlock/Wizard
-Dominate Beast,4,Enchantment,Target,The Dominate Pair,Verbatim clone,,Bard/Cleric/Druid/Sorcerer/Warlock
-Evard's Black Tentacles,4,Conjuration,Target,The Surface Engine,Shared template,,Wizard
-Fire Shield,4,Evocation,Shout,,,2,Bard/Wizard
-Freedom of Movement,4,Abjuration,Target,The Touch-Buff Skeleton,Shared engine,,Bard/Cleric/Druid
-Grasping Vine,4,Conjuration,Target,,,,Cleric/Druid
-Greater Invisibility,4,Illusion,Target,The Invisibility Ladder,Verbatim clone,,Bard/Sorcerer/Warlock/Wizard
-Guardian of Faith,4,Conjuration,Target,,,,Bard/Cleric
-Ice Storm,4,Evocation,Target,The Elemental Blast Template,Shared template,,Bard/Cleric/Druid/Sorcerer/Wizard
-Otiluke's Resilient Sphere,4,Evocation,Target,,,,Cleric/Wizard
-Phantasmal Killer,4,Illusion,Target,,,,Warlock/Wizard
-Polymorph,4,Transmutation,Target,,,,Bard/Cleric/Druid/Sorcerer/Wizard
-Staggering Smite,4,Evocation,Target,The Smite Armoury,Shared template,,Warlock
-Stoneskin,4,Abjuration,Target,,,,Cleric/Druid/Sorcerer/Wizard
-Wall of Fire,4,Evocation,Wall,The Wall Foundry,Shared template,,Bard/Cleric/Druid/Sorcerer/Wizard
-Banishing Smite,5,Abjuration,Projectile,The Smite Armoury,Shared template,2,Bard/Warlock
-Cloudkill,5,Conjuration,Target,The Surface Engine,Shared template,,Cleric/Druid/Sorcerer/Wizard
-Cone of Cold,5,Evocation,Zone,The Elemental Blast Template,Shared template,,Bard/Sorcerer/Warlock/Wizard
-Conjure Elemental,5,Conjuration,Target,The Summoning Contract,Shared template,4,Bard/Druid/Wizard
-Contagion,5,Necromancy,Target,,,6,Bard/Cleric/Druid
-Destructive Wave,5,Evocation,Shout,,,2,Cleric
-Dispel Evil And Good,5,Abjuration,Shout,,,,Cleric
-Dominate Person,5,Enchantment,Target,The Dominate Pair,Verbatim clone,,Bard/Cleric/Sorcerer/Wizard
-Flame Strike,5,Evocation,Target,The Elemental Blast Template,Shared template,,Cleric
-Greater Restoration,5,Abjuration,Target,The Cleanse Counter,Shared engine,,Bard/Cleric/Druid
-Hold Monster,5,Enchantment,Target,The Hold Pair,Verbatim clone,,Bard/Cleric/Sorcerer/Warlock/Wizard
-Insect Plague,5,Conjuration,Target,,,,Cleric/Druid/Sorcerer
-Mass Cure Wounds,5,Evocation,Target,The Cure Family,Verbatim clone,,Bard/Cleric/Druid
-Planar Binding,5,Abjuration,Target,,,,Bard/Cleric/Druid/Wizard
-Seeming,5,Illusion,Target,,,,Bard/Cleric/Sorcerer/Wizard
-Telekinesis,5,Transmutation,Throw,,,,Cleric/Sorcerer/Wizard
-Wall of Stone,5,Evocation,Wall,The Wall Foundry,Shared template,,Bard/Cleric/Druid/Sorcerer/Wizard
-Arcane Gate,6,Conjuration,Teleportation,,,,Sorcerer/Warlock/Wizard
-Blade Barrier,6,Evocation,Wall,The Wall Foundry,Shared template,,Cleric
-Chain Lightning,6,Evocation,Projectile,,,,Sorcerer/Wizard
-Circle of Death,6,Necromancy,Target,The Elemental Blast Template,Shared template,,Sorcerer/Warlock/Wizard
-Create Undead,6,Necromancy,Target,,,,Cleric/Warlock/Wizard
-Disintegrate,6,Transmutation,Projectile,,,,Sorcerer/Wizard
-Eyebite,6,Necromancy,Target,,,3,Bard/Sorcerer/Warlock/Wizard
-Flesh to Stone,6,Transmutation,Target,,,,Warlock/Wizard
-Globe of Invulnerability,6,Abjuration,Target,,,,Sorcerer/Wizard
-Harm,6,Necromancy,Target,,,,Cleric
-Heal,6,Evocation,Target,,,,Cleric/Druid
-Heroes' Feast,6,Conjuration,Shout,,,,Cleric/Druid
-Otiluke's Freezing Sphere,6,Evocation,Target,,,2,Wizard
-Otto's Irresistible Dance,6,Enchantment,Target,,,,Bard/Wizard
-Planar Ally,6,Conjuration,Target,The Summoning Contract,Shared template,3,Cleric
-Sunbeam,6,Evocation,Zone,The Elemental Blast Template,Shared template,,Druid/Sorcerer/Wizard
-Wall of Ice,6,Evocation,Wall,The Wall Foundry,Shared template,,Wizard
-Wall of Thorns,6,Conjuration,Wall,The Wall Foundry,Shared template,,Druid
-Wind Walk,6,Transmutation,Shout,,,,Druid
+spell,level,school,type,family,tier,purpose,container_variants,classes
+Acid Splash,0,Conjuration,Projectile,The Damage Cantrip Engine,Shared engine,Damage,,Fighter/Rogue/Sorcerer/Wizard
+Blade Ward,0,Abjuration,Shout,,,Defense boost,,Bard/Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Bone Chill,0,Necromancy,Target,The Damage Cantrip Engine,Shared engine,Damage,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Booming Blade,0,Evocation,Target,,,Damage,,Fighter/Rogue/Sorcerer/Warlock/Wizard
+Bursting Sinew,0,Necromancy,Target,,,Damage,,Cleric/Fighter/Rogue/Sorcerer/Wizard
+Dancing Lights,0,Evocation,Target,,,Utility & world,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Eldritch Blast,0,Evocation,Projectile,The Damage Cantrip Engine,Shared engine,Damage,,Bard/Warlock
+Fire Bolt,0,Evocation,Projectile,The Damage Cantrip Engine,Shared engine,Damage,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Friends,0,Enchantment,Target,,,Utility & world,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Guidance,0,Divination,Target,Guidance & Resistance,Shared engine,Offense boost,,Cleric/Druid
+Light,0,Evocation,Target,,,Utility & world,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
+Mage Hand,0,Conjuration,Target,,,Creating entities,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Minor Illusion,0,Illusion,Target,,,Deception & stealth,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Poison Spray,0,Conjuration,Projectile,The Damage Cantrip Engine,Shared engine,Damage,,Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Produce Flame,0,Conjuration,Shout,,,Utility & world,,Cleric/Druid
+Ray of Frost,0,Evocation,Projectile,The Damage Cantrip Engine,Shared engine,Damage,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Resistance,0,Abjuration,Target,Guidance & Resistance,Shared engine,Offense boost,,Cleric/Druid
+Sacred Flame,0,Evocation,Target,The Damage Cantrip Engine,Shared engine,Damage,,Bard/Cleric
+Shillelagh,0,Transmutation,Shout,,,Offense boost,,Cleric/Druid
+Shocking Grasp,0,Evocation,Target,The Damage Cantrip Engine,Shared engine,Damage,,Fighter/Rogue/Sorcerer/Wizard
+Thaumaturgy,0,Transmutation,Shout,,,Utility & world,,Cleric
+Thorn Whip,0,Transmutation,Target,The Damage Cantrip Engine,Shared engine,Damage,,Cleric/Druid
+Toll the Dead,0,Necromancy,Target,,,Damage,,Cleric/Fighter/Rogue/Warlock/Wizard
+True Strike,0,Divination,Target,,,Offense boost,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Vicious Mockery,0,Enchantment,Target,,,Offense boost,,Bard
+Animal Friendship,1,Enchantment,Target,The Charm Pair,Verbatim clone,Disables,,Bard/Cleric/Druid/Ranger
+Armour of Agathys,1,Abjuration,Shout,,,Utility & world,,Bard/Warlock
+Arms of Hadar,1,Conjuration,Shout,,,Damage,,Warlock
+Bane,1,Enchantment,Target,Bane & Bless,Verbatim clone,Offense boost,,Bard/Cleric
+Bless,1,Enchantment,Target,Bane & Bless,Verbatim clone,Offense boost,,Bard/Cleric/Paladin
+Burning Hands,1,Evocation,Zone,,,Damage,,Cleric/Fighter/Rogue/Sorcerer/Wizard
+Charm Person,1,Enchantment,Target,The Charm Pair,Verbatim clone,Disables,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Chromatic Orb,1,Evocation,Projectile,,,Zone control,6,Bard/Fighter/Rogue/Sorcerer/Wizard
+Colour Spray,1,Illusion,Zone,The Hit-Point Pool Engine,Shared template,Disables,,Fighter/Rogue/Sorcerer/Wizard
+Command,1,Enchantment,Target,,,Disables,5,Bard/Cleric/Paladin
+Compelled Duel,1,Enchantment,Target,,,Threat control,,Paladin
+Create or Destroy Water,1,Transmutation,Target,,,Utility & world,2,Cleric/Druid/Sorcerer
+Cure Wounds,1,Evocation,Target,The Cure Family,Verbatim clone,Healing & revival,,Bard/Cleric/Druid/Paladin/Ranger
+Disguise Self,1,Illusion,Shout,,,Deception & stealth,32,Bard/Cleric/Fighter/Ranger/Rogue/Sorcerer/Wizard
+Dissonant Whispers,1,Enchantment,Target,,,Disables,,Bard
+Divine Favour,1,Evocation,Shout,,,Utility & world,,Cleric/Paladin
+Enhance Leap,1,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,Mobility,,Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
+Ensnaring Strike,1,Conjuration,Projectile,,,Creating entities,2,Ranger
+Entangle,1,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Bard/Druid
+Expeditious Retreat,1,Transmutation,Shout,,,Mobility,,Fighter/Rogue/Sorcerer/Warlock/Wizard
+Faerie Fire,1,Evocation,Target,,,Utility & world,,Bard/Cleric/Druid
+False Life,1,Necromancy,Shout,,,Utility & world,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
+Feather Fall,1,Transmutation,Shout,The Touch-Buff Skeleton,Shared engine,Mobility,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Find Familiar,1,Conjuration,Target,The Summoning Contract,Shared template,Creating entities,6,Fighter/Rogue/Wizard
+Fog Cloud,1,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Cleric/Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
+Goodberry,1,Transmutation,Target,,,Provisioning,,Druid/Ranger
+Grease,1,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Fighter/Rogue/Wizard
+Guiding Bolt,1,Evocation,Projectile,,,Offense boost,,Bard/Cleric
+Hail of Thorns,1,Conjuration,Projectile,,,Damage,,Ranger
+Healing Word,1,Evocation,Target,The Cure Family,Verbatim clone,Healing & revival,,Bard/Cleric/Druid
+Hellish Rebuke,1,Evocation,Shout,,,Offense boost,,Bard/Paladin/Warlock
+Heroism,1,Enchantment,Target,,,Utility & world,,Bard/Paladin
+Hex,1,Enchantment,Target,,,Disables,6,Bard/Warlock
+Hunter's Mark,1,Divination,Target,,,Damage,,Bard/Ranger
+Ice Knife,1,Conjuration,Projectile,,,Damage,,Bard/Druid/Fighter/Rogue/Sorcerer/Wizard
+Inflict Wounds,1,Necromancy,Target,,,Damage,,Cleric/Paladin
+Longstrider,1,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,Mobility,,Bard/Druid/Fighter/Ranger/Rogue/Wizard
+Mage Armour,1,Abjuration,Target,The Armour-Class Wardrobe,Verbatim clone,Defense boost,,Fighter/Rogue/Sorcerer/Wizard
+Magic Missile,1,Evocation,Projectile,,,Damage,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Protection from Evil and Good,1,Abjuration,Target,,,Defense boost,,Cleric/Fighter/Paladin/Rogue/Warlock/Wizard
+Ray of Sickness,1,Necromancy,Projectile,,,Damage,,Cleric/Fighter/Rogue/Sorcerer/Wizard
+Sanctuary,1,Abjuration,Target,,,Damage,,Bard/Cleric
+Searing Smite,1,Evocation,Target,The Smite Armoury,Shared template,Damage,,Paladin
+Shield,1,Abjuration,Shout,The Duplicate SKUs,Verbatim clone,Defense boost,,Fighter/Rogue/Sorcerer/Warlock/Wizard
+Shield of Faith,1,Abjuration,Target,The Armour-Class Wardrobe,Verbatim clone,Defense boost,,Cleric/Paladin
+Sleep,1,Enchantment,Target,The Hit-Point Pool Engine,Shared template,Disables,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
+Speak with Animals,1,Divination,Shout,,,Information,,Bard/Cleric/Druid/Ranger
+Tasha's Hideous Laughter,1,Enchantment,Target,,,Disables,,Bard/Fighter/Rogue/Wizard
+Thunderous Smite,1,Evocation,Target,The Smite Armoury,Shared template,Damage,,Bard/Paladin
+Thunderwave,1,Evocation,Zone,The Elemental Blast Template,Shared template,Damage,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
+Witch Bolt,1,Evocation,Projectile,,,Damage,,Fighter/Rogue/Sorcerer/Warlock/Wizard
+Wrathful Smite,1,Evocation,Target,The Smite Armoury,Shared template,Damage,,Paladin/Warlock
+Aid,2,Abjuration,Shout,,,Defense boost,,Cleric/Paladin
+Arcane Lock,2,Abjuration,Target,,,Utility & world,,Bard/Fighter/Rogue/Wizard
+Barkskin,2,Transmutation,Target,The Armour-Class Wardrobe,Verbatim clone,Defense boost,,Cleric/Druid/Ranger
+Blindness,2,Necromancy,Target,,,Disables,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
+Blur,2,Illusion,Shout,,,Degradation,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Branding Smite,2,Evocation,Target,The Smite Armoury,Shared template,Damage,2,Paladin/Warlock
+Calm Emotions,2,Enchantment,Target,,,Disables,,Bard/Cleric
+Cloud of Daggers,2,Conjuration,Target,,,Damage,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Crown of Madness,2,Enchantment,Target,,,Utility & world,,Bard/Fighter/Paladin/Rogue/Sorcerer/Warlock/Wizard
+Darkness,2,Evocation,Target,The Duplicate SKUs,Verbatim clone,Defense boost,,Bard/Fighter/Paladin/Rogue/Sorcerer/Warlock/Wizard
+Darkvision,2,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,Mobility,,Bard/Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
+Detect Thoughts,2,Divination,Shout,,,Information,,Bard/Druid/Fighter/Rogue/Sorcerer/Wizard
+Enhance Ability,2,Transmutation,Target,,,Utility & world,6,Bard/Cleric/Druid/Sorcerer
+Enlarge/Reduce,2,Transmutation,Target,,,Damage,2,Fighter/Rogue/Sorcerer/Wizard
+Enthrall,2,Enchantment,Target,,,Utility & world,,Bard/Warlock
+Eyes of the Dark: Darkness,2,Evocation,Target,The Duplicate SKUs,Verbatim clone,Defense boost,,Sorcerer
+Flame Blade,2,Evocation,Shout,,,Utility & world,,Druid
+Flaming Sphere,2,Conjuration,Target,The Summoning Contract,Shared template,Creating entities,,Cleric/Druid/Fighter/Rogue/Wizard
+Gust of Wind,2,Evocation,Zone,,,Creating entities,,Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
+Heat Metal,2,Transmutation,Target,,,Degradation,,Bard/Druid
+Hold Person,2,Enchantment,Target,The Hold Pair,Verbatim clone,Disables,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Invisibility,2,Illusion,Target,The Invisibility Ladder,Verbatim clone,Deception & stealth,,Bard/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Knock,2,Transmutation,Target,,,Disables,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Lesser Restoration,2,Abjuration,Target,The Cleanse Counter,Shared engine,Negation,,Bard/Cleric/Druid/Paladin/Ranger
+Magic Weapon,2,Transmutation,Target,,,Offense boost,,Cleric/Fighter/Paladin/Rogue/Wizard
+Melf's Acid Arrow,2,Evocation,Projectile,,,Damage,,Fighter/Rogue/Wizard
+Mirror Image,2,Illusion,Shout,,,Deception & stealth,,Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Misty Step,2,Conjuration,Target,The Blink Ladder,Shared template,Mobility,,Bard/Fighter/Ranger/Rogue/Sorcerer/Warlock/Wizard
+Moonbeam,2,Evocation,Target,,,Damage,,Druid
+Pass Without Trace,2,Abjuration,Shout,,,Disables,,Bard/Cleric/Druid/Ranger
+Phantasmal Force,2,Illusion,Target,,,Damage,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Prayer of Healing,2,Evocation,Shout,The Cure Family,Verbatim clone,Healing & revival,,Cleric
+Protection from Poison,2,Abjuration,Target,The Cleanse Counter,Shared engine,Negation,,Cleric/Druid/Paladin/Ranger
+Ray of Enfeeblement,2,Necromancy,Projectile,,,Degradation,,Bard/Cleric/Fighter/Rogue/Warlock/Wizard
+Scorching Ray,2,Evocation,Projectile,,,Damage,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
+See Invisibility,2,Divination,Shout,,,Deception & stealth,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Shadow Blade,2,Illusion,Shout,,,Creating entities,,Fighter/Rogue/Sorcerer/Warlock/Wizard
+Shatter,2,Evocation,Target,,,Damage,,Bard/Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
+Silence,2,Illusion,Target,,,Disables,,Bard/Cleric/Ranger
+Spike Growth,2,Transmutation,Target,The Surface Engine,Shared template,Zone control,,Bard/Cleric/Druid/Ranger
+Spiritual Weapon,2,Evocation,Target,The Summoning Contract,Shared template,Creating entities,6,Bard/Cleric
+Warding Bond,2,Abjuration,Target,,,Defense boost,,Cleric
+Web,2,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Bard/Fighter/Rogue/Sorcerer/Wizard
+Animate Dead,3,Necromancy,Target,The Summoning Contract,Shared template,Creating entities,2,Bard/Cleric/Druid/Paladin/Wizard
+Beacon of Hope,3,Abjuration,Shout,,,Healing & revival,,Cleric
+Bestow Curse,3,Necromancy,Target,,,Damage,9,Bard/Cleric/Paladin/Wizard
+Blinding Smite,3,Evocation,Target,The Smite Armoury,Shared template,Damage,,Paladin
+Blink,3,Transmutation,Shout,,,Mobility,,Sorcerer/Warlock/Wizard
+Call Lightning,3,Conjuration,Target,,,Damage,,Bard/Cleric/Druid/Sorcerer
+Conjure Barrage,3,Conjuration,Zone,,,Damage,2,Ranger
+Counterspell,3,Abjuration,Target,,,Negation,,Bard/Sorcerer/Warlock/Wizard
+Crusader's Mantle,3,Evocation,Shout,,,Offense boost,,Bard/Cleric/Paladin
+Daylight,3,Evocation,Target,,,Negation,2,Bard/Cleric/Druid/Paladin/Ranger/Sorcerer
+Elemental Weapon,3,Transmutation,Target,,,Offense boost,5,Paladin/Warlock
+Fear,3,Illusion,Zone,,,Disables,,Bard/Cleric/Ranger/Sorcerer/Warlock/Wizard
+Feign Death,3,Necromancy,Target,,,Threat control,,Bard/Cleric/Druid/Wizard
+Fireball,3,Evocation,Projectile,The Elemental Blast Template,Shared template,Damage,,Bard/Cleric/Sorcerer/Wizard
+Gaseous Form,3,Transmutation,Target,,,Role shift,,Bard/Druid/Sorcerer/Warlock/Wizard
+Glyph of Warding,3,Abjuration,Target,,,Utility & world,7,Bard/Cleric/Wizard
+Grant Flight,3,Transmutation,Target,The Touch-Buff Skeleton,Shared engine,Mobility,,Bard/Sorcerer/Warlock/Wizard
+Haste,3,Transmutation,Target,,,Offense boost,,Bard/Sorcerer/Wizard
+Hunger of Hadar,3,Conjuration,Target,,,Disables,,Bard/Warlock
+Hypnotic Pattern,3,Illusion,Target,,,Disables,,Bard/Sorcerer/Warlock/Wizard
+Lightning Arrow,3,Transmutation,Projectile,,,Defense boost,,Ranger
+Lightning Bolt,3,Evocation,Zone,The Elemental Blast Template,Shared template,Damage,,Bard/Sorcerer/Wizard
+Mass Healing Word,3,Evocation,Shout,The Cure Family,Verbatim clone,Healing & revival,,Bard/Cleric
+Plant Growth,3,Transmutation,Target,The Surface Engine,Shared template,Zone control,,Bard/Cleric/Druid/Ranger
+Protection from Energy,3,Abjuration,Target,,,Defense boost,5,Cleric/Druid/Ranger/Sorcerer/Wizard
+Remove Curse,3,Abjuration,Target,The Cleanse Counter,Shared engine,Negation,,Bard/Cleric/Paladin/Warlock/Wizard
+Revivify,3,Necromancy,Teleportation,,,Healing & revival,,Bard/Cleric/Paladin
+Sleet Storm,3,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Bard/Cleric/Druid/Sorcerer/Wizard
+Slow,3,Transmutation,Target,,,Disables,,Bard/Cleric/Sorcerer/Wizard
+Speak with Dead,3,Necromancy,Target,,,Utility & world,,Bard/Cleric
+Spirit Guardians,3,Conjuration,Shout,,,Mobility,2,Bard/Cleric
+Stinking Cloud,3,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Bard/Sorcerer/Wizard
+Vampiric Touch,3,Necromancy,Target,,,Healing & revival,,Bard/Cleric/Warlock/Wizard
+Warden of Vitality,3,Evocation,Shout,,,Healing & revival,,Bard/Paladin
+Banishment,4,Abjuration,Target,,,Removing entities,,Bard/Cleric/Sorcerer/Warlock/Wizard
+Blight,4,Necromancy,Target,,,Damage,,Bard/Cleric/Druid/Sorcerer/Warlock/Wizard
+Confusion,4,Enchantment,Target,,,Disables,,Bard/Cleric/Druid/Sorcerer/Wizard
+Conjure Minor Elemental,4,Conjuration,Target,The Summoning Contract,Shared template,Creating entities,3,Druid/Wizard
+Conjure Woodland Being,4,Conjuration,Target,,,Zone control,,Druid
+Death Ward,4,Abjuration,Target,,,Defense boost,,Bard/Cleric
+Dimension Door,4,Conjuration,Teleportation,The Blink Ladder,Shared template,Mobility,,Bard/Cleric/Sorcerer/Warlock/Wizard
+Dominate Beast,4,Enchantment,Target,The Dominate Pair,Verbatim clone,Disables,,Bard/Cleric/Druid/Sorcerer/Warlock
+Evard's Black Tentacles,4,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Wizard
+Fire Shield,4,Evocation,Shout,,,Defense boost,2,Bard/Wizard
+Freedom of Movement,4,Abjuration,Target,The Touch-Buff Skeleton,Shared engine,Mobility,,Bard/Cleric/Druid
+Grasping Vine,4,Conjuration,Target,,,Creating entities,,Cleric/Druid
+Greater Invisibility,4,Illusion,Target,The Invisibility Ladder,Verbatim clone,Deception & stealth,,Bard/Sorcerer/Warlock/Wizard
+Guardian of Faith,4,Conjuration,Target,,,Damage,,Bard/Cleric
+Ice Storm,4,Evocation,Target,The Elemental Blast Template,Shared template,Damage,,Bard/Cleric/Druid/Sorcerer/Wizard
+Otiluke's Resilient Sphere,4,Evocation,Target,,,Damage,,Cleric/Wizard
+Phantasmal Killer,4,Illusion,Target,,,Disables,,Warlock/Wizard
+Polymorph,4,Transmutation,Target,,,Disables,,Bard/Cleric/Druid/Sorcerer/Wizard
+Staggering Smite,4,Evocation,Target,The Smite Armoury,Shared template,Damage,,Warlock
+Stoneskin,4,Abjuration,Target,,,Defense boost,,Cleric/Druid/Sorcerer/Wizard
+Wall of Fire,4,Evocation,Wall,The Wall Foundry,Shared template,Zone control,,Bard/Cleric/Druid/Sorcerer/Wizard
+Banishing Smite,5,Abjuration,Projectile,The Smite Armoury,Shared template,Damage,2,Bard/Warlock
+Cloudkill,5,Conjuration,Target,The Surface Engine,Shared template,Zone control,,Cleric/Druid/Sorcerer/Wizard
+Cone of Cold,5,Evocation,Zone,The Elemental Blast Template,Shared template,Damage,,Bard/Sorcerer/Warlock/Wizard
+Conjure Elemental,5,Conjuration,Target,The Summoning Contract,Shared template,Creating entities,4,Bard/Druid/Wizard
+Contagion,5,Necromancy,Target,,,Utility & world,6,Bard/Cleric/Druid
+Destructive Wave,5,Evocation,Shout,,,Disables,2,Cleric
+Dispel Evil And Good,5,Abjuration,Shout,,,Negation,,Cleric
+Dominate Person,5,Enchantment,Target,The Dominate Pair,Verbatim clone,Disables,,Bard/Cleric/Sorcerer/Wizard
+Flame Strike,5,Evocation,Target,The Elemental Blast Template,Shared template,Damage,,Cleric
+Greater Restoration,5,Abjuration,Target,The Cleanse Counter,Shared engine,Negation,,Bard/Cleric/Druid
+Hold Monster,5,Enchantment,Target,The Hold Pair,Verbatim clone,Disables,,Bard/Cleric/Sorcerer/Warlock/Wizard
+Insect Plague,5,Conjuration,Target,,,Damage,,Cleric/Druid/Sorcerer
+Mass Cure Wounds,5,Evocation,Target,The Cure Family,Verbatim clone,Healing & revival,,Bard/Cleric/Druid
+Planar Binding,5,Abjuration,Target,,,Utility & world,,Bard/Cleric/Druid/Wizard
+Seeming,5,Illusion,Target,,,Deception & stealth,,Bard/Cleric/Sorcerer/Wizard
+Telekinesis,5,Transmutation,Throw,,,Disables,,Cleric/Sorcerer/Wizard
+Wall of Stone,5,Evocation,Wall,The Wall Foundry,Shared template,Zone control,,Bard/Cleric/Druid/Sorcerer/Wizard
+Arcane Gate,6,Conjuration,Teleportation,,,Mobility,,Sorcerer/Warlock/Wizard
+Blade Barrier,6,Evocation,Wall,The Wall Foundry,Shared template,Zone control,,Cleric
+Chain Lightning,6,Evocation,Projectile,,,Mobility,,Sorcerer/Wizard
+Circle of Death,6,Necromancy,Target,The Elemental Blast Template,Shared template,Damage,,Sorcerer/Warlock/Wizard
+Create Undead,6,Necromancy,Target,,,Creating entities,,Cleric/Warlock/Wizard
+Disintegrate,6,Transmutation,Projectile,,,Damage,,Sorcerer/Wizard
+Eyebite,6,Necromancy,Target,,,Disables,3,Bard/Sorcerer/Warlock/Wizard
+Flesh to Stone,6,Transmutation,Target,,,Disables,,Warlock/Wizard
+Globe of Invulnerability,6,Abjuration,Target,,,Zone control,,Sorcerer/Wizard
+Harm,6,Necromancy,Target,,,Damage,,Cleric
+Heal,6,Evocation,Target,,,Healing & revival,,Cleric/Druid
+Heroes' Feast,6,Conjuration,Shout,,,Utility & world,,Cleric/Druid
+Otiluke's Freezing Sphere,6,Evocation,Target,,,Damage,2,Wizard
+Otto's Irresistible Dance,6,Enchantment,Target,,,Offense boost,,Bard/Wizard
+Planar Ally,6,Conjuration,Target,The Summoning Contract,Shared template,Creating entities,3,Cleric
+Sunbeam,6,Evocation,Zone,The Elemental Blast Template,Shared template,Damage,,Druid/Sorcerer/Wizard
+Wall of Ice,6,Evocation,Wall,The Wall Foundry,Shared template,Zone control,,Wizard
+Wall of Thorns,6,Conjuration,Wall,The Wall Foundry,Shared template,Zone control,,Druid
+Wind Walk,6,Transmutation,Shout,,,Role shift,,Druid

@@ -403,18 +403,26 @@ Classic's signature template shape is the **payload rack**: [[families/totems|21
 """)
 
 # tagged table + csv
-trow = ["| Lv | Ability | Classes | School | Ranks | Family | Tier |", "|---|---|---|---|---|---|---|"]
+from purpose_defs import load_purposes, PEMOJI as PUR_EMOJI, PLABEL as PUR_LABEL
+WOW_PUR = load_purposes("WoW Classic")
+
+def pur_txt(name):
+    p = WOW_PUR.get(name.lower())
+    return f'{PUR_EMOJI[p]} {PUR_LABEL[p]}' if p else ""
+
+trow = ["| Lv | Ability | Classes | School | Ranks | Family | Tier | Purpose |", "|---|---|---|---|---|---|---|---|"]
 with open("wow_spells_tagged.csv", "w", newline="", encoding="utf-8") as fh:
     w = csvlib.writer(fh)
-    w.writerow(["ability", "classes", "level", "school", "ranks", "family", "tier"])
+    w.writerow(["ability", "classes", "level", "school", "ranks", "family", "tier", "purpose"])
     for r in sorted(RECS, key=lambda r: (r["level"], r["name"])):
         fm = FAMILY_OF.get(r["id"])
         w.writerow([r["name"], "/".join(r["classes"]), r["level"], r["school"], r["rank_count"],
-                    fm["title"] if fm else "", TIER_LABEL[fm["tier"]] if fm else ""])
+                    fm["title"] if fm else "", TIER_LABEL[fm["tier"]] if fm else "",
+                    PUR_LABEL.get(WOW_PUR.get(r["name"].lower(), ""), "")])
         fl = f"[[families/{fm['slug']}|{fm['icon']} {fm['title']}]]" if fm else "—"
         tt = f'<span class="tier tier-{fm["tier"]}">{TIER_LABEL[fm["tier"]]}</span>' if fm else ""
         trow.append(f"| {r['level']} | {sp_name(r)} | {'/'.join(r['classes'])} | {r['school']} | "
-                    f"{r['rank_count']} | {fl} | {tt} |")
+                    f"{r['rank_count']} | {fl} | {tt} | {pur_txt(r['name'])} |")
 
 page("spells", "All Abilities, Tagged", "Start", f"""# All Abilities, Tagged by Family
 

@@ -371,24 +371,32 @@ Similarity is evidence, not the verdict — [[families/hold|Hold Person / Hold M
 
 # all-spells table, tagged by family
 import csv as _csv
+from purpose_defs import load_purposes, PEMOJI as PUR_EMOJI, PLABEL as PUR_LABEL
+SRD_PUR = load_purposes("D&D 5e SRD")
+
+def pur_txt(name):
+    p = SRD_PUR.get(name.lower())
+    return f'{PUR_EMOJI[p]} {PUR_LABEL[p]}' if p else ""
+
 with open("spells_tagged_by_family.csv", "w", newline="", encoding="utf-8") as fh:
     w = _csv.writer(fh)
-    w.writerow(["spell", "level", "school", "family", "family_icon", "tier", "classes", "in_bg3"])
+    w.writerow(["spell", "level", "school", "family", "family_icon", "tier", "purpose", "classes", "in_bg3"])
     for s in sorted(spells, key=lambda s: (int(s["level"]), s["name"])):
         f = FAMILY_OF.get(s["index"])
         w.writerow([s["name"], int(s["level"]), s["school"]["name"],
                     f["title"] if f else "", f["icon"] if f else "",
                     TIER_LABEL[f["tier"]] if f else "",
+                    PUR_LABEL.get(SRD_PUR.get(s["name"].lower(), ""), ""),
                     "/".join(s["_classes"]),
                     "yes" if s["index"] in BG3_URIS else ""])
 
-tag_rows = ["| Lv | Spell | School | Family | Tier | Classes |", "|---|---|---|---|---|---|"]
+tag_rows = ["| Lv | Spell | School | Family | Tier | Purpose | Classes |", "|---|---|---|---|---|---|---|"]
 for s in sorted(spells, key=lambda s: (int(s["level"]), s["name"])):
     f = FAMILY_OF.get(s["index"])
     ftxt = fam_link(f) if f else "—"
     ttxt = f'<span class="tier tier-{f["tier"]}">{TIER_LABEL[f["tier"]]}</span>' if f else ""
     cls = ", ".join(cls_link(c) for c in s["_classes"])
-    tag_rows.append(f"| {lvl(s)} | {sp_name(s)} | {s['school']['name']} | {ftxt} | {ttxt} | {cls} |")
+    tag_rows.append(f"| {lvl(s)} | {sp_name(s)} | {s['school']['name']} | {ftxt} | {ttxt} | {pur_txt(s['name'])} | {cls} |")
 
 page("spells", "All Spells, Tagged", "Start", f"""# All Spells, Tagged by Family
 

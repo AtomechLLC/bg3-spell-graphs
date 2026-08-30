@@ -484,20 +484,28 @@ The companion codex to the tabletop study: the same homogeneity analysis, run on
 """)
 
 # all-spells table + csv
-trow = ["| Lv | Spell | School | Family | Tier | Classes |", "|---|---|---|---|---|---|"]
+from purpose_defs import load_purposes, PEMOJI as PUR_EMOJI, PLABEL as PUR_LABEL
+BG3_PUR = load_purposes("Baldur's Gate 3")
+
+def pur_txt(name):
+    p = BG3_PUR.get(name.lower())
+    return f'{PUR_EMOJI[p]} {PUR_LABEL[p]}' if p else ""
+
+trow = ["| Lv | Spell | School | Family | Tier | Purpose | Classes |", "|---|---|---|---|---|---|---|"]
 with open("bg3_spells_tagged.csv", "w", newline="", encoding="utf-8") as fh:
     w = csvlib.writer(fh)
-    w.writerow(["spell", "level", "school", "type", "family", "tier", "container_variants", "classes"])
+    w.writerow(["spell", "level", "school", "type", "family", "tier", "purpose", "container_variants", "classes"])
     for r in sorted(DPOP, key=lambda r: (r["level"], r["name"])):
         fm = FAMILY_OF.get(r["id"]) or next(
             (FAMILY_OF[x["id"]] for x in POP
              if x["name"] == r["name"] and x["level"] == r["level"] and x["id"] in FAMILY_OF), None)
         w.writerow([r["name"], r["level"], r["school"], r["stype"],
                     fm["title"] if fm else "", TIER_LABEL[fm["tier"]] if fm else "",
+                    PUR_LABEL.get(BG3_PUR.get(r["name"].lower(), ""), ""),
                     len(r["children"]) or "", "/".join(r["classes"])])
         fl = fam_link(fm) if fm else ("📦 [[containers|container]]" if r["children"] else "—")
         tt = f'<span class="tier tier-{fm["tier"]}">{TIER_LABEL[fm["tier"]]}</span>' if fm else ""
-        trow.append(f"| {lvl(r)} | {sp_name(r)} | {r['school']} | {fl} | {tt} | "
+        trow.append(f"| {lvl(r)} | {sp_name(r)} | {r['school']} | {fl} | {tt} | {pur_txt(r['name'])} | "
                     f"{', '.join(cls_link(c) for c in r['classes'])} |")
 
 page("spells", "All Spells, Tagged", "Start", f"""# All Spells, Tagged by Family

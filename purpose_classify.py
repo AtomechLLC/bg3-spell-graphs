@@ -9,26 +9,7 @@ import re
 from collections import defaultdict
 
 # ---------------------------------------------------------------- taxonomy
-# (key, label, user-requested?, one-line definition)
-PURPOSES = [
-    ("damage",     "Damage",              True,  "reduce enemy hit points"),
-    ("offboost",   "Offense boost",       True,  "make allies hit harder or truer"),
-    ("defboost",   "Defense boost",       True,  "make allies harder to hurt"),
-    ("negation",   "Negation",            True,  "cancel spells, effects, or afflictions (counter, dispel, cleanse)"),
-    ("create",     "Creating entities",   True,  "put a new acting thing on the board (creature, weapon, totem-servant)"),
-    ("remove",     "Removing entities",   True,  "take a creature off the board without hp damage (banish, turn, rout)"),
-    ("disable",    "Disables",            True,  "deny enemy actions: stun, hold, sleep, fear, root, slow, silence"),
-    ("degrade",    "Degradation",         False, "weaken without disabling: stat drains, vulnerability, damage-taken up"),
-    ("heal",       "Healing & revival",   False, "restore hit points or life"),
-    ("mobility",   "Mobility",            False, "move yourself or allies: teleport, speed, flight, charge"),
-    ("zone",       "Zone control",        False, "shape space: walls, surfaces, areas that persist"),
-    ("info",       "Information",         False, "learn what you could not see: detect, track, scry, identify"),
-    ("stealth",    "Deception & stealth", False, "not being seen, or being seen wrongly: invisibility, illusion, disguise"),
-    ("provision",  "Provisioning",        False, "manufacture resources for later: food, gems, stones, scrolls"),
-    ("threat",     "Threat control",      False, "edit who enemies attack: taunts, feints, aggro dumps"),
-    ("roleshift",  "Role shift",          False, "swap your whole kit: forms, stances, exclusive modes"),
-    ("utility",    "Utility & world",     False, "everything that touches the world, not the fight"),
-]
+from purpose_defs import PURPOSES
 PKEYS = [p[0] for p in PURPOSES]
 
 # ------------------------------------------------- family -> purpose (all games)

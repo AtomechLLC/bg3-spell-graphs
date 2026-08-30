@@ -4,7 +4,7 @@ import html as H
 import os
 from collections import defaultdict
 
-from purpose_classify import PURPOSES
+from purpose_defs import PURPOSES
 
 GAMES = ["D&D 5e SRD", "Baldur's Gate 3", "WoW Classic"]
 GKEY = {"D&D 5e SRD": "srd", "Baldur's Gate 3": "bg3", "WoW Classic": "wow"}
