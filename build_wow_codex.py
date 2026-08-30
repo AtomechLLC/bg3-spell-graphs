@@ -384,9 +384,12 @@ for a in CLASSES:
     na = len(class_recs(a))
     cells = []
     for b in CLASSES:
-        pct = 100 * len(TWIN[a][b]) / na
-        cells.append(f"**{pct:.0f}%**" if a == b else f"{pct:.0f}%")
+        cells.append("—" if a == b else f"{100 * len(TWIN[a][b]) / na:.0f}%")
     mat.append(f"| [[classes/{a.lower()}|{a}]] ({na}) | " + " | ".join(cells) + " |")
+
+internal = sorted(((100 * len(TWIN[c][c]) / len(class_recs(c)), c) for c in CLASSES),
+                  reverse=True)
+internal_txt = " · ".join(f"[[classes/{c.lower()}|{c}]] **{p:.0f}%**" for p, c in internal)
 
 top_cross = sorted(((100 * len(TWIN[a][b]) / len(class_recs(a)), a, b)
                     for a in CLASSES for b in CLASSES if a != b), reverse=True)[:3]
@@ -403,9 +406,11 @@ Before any reskin analysis: **{100*(n_rank_entries-N)/n_rank_entries:.0f}% of th
 
 ## Axis 1 — the same ability in several class books
 
-Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), classic WoW ships **the same design as separate class-branded spells**: nine heals that are [[families/heals|one heal]], five [[families/interrupts|interrupts]], the [[families/rez|resurrection franchise]], one [[families/protection|protection effect]] wearing armor, ward, and shield vocabularies across four classes, Cure Poison printed verbatim in two books, and the Feral Druid — [[families/cat-is-rogue|a licensed photocopy of the Rogue and Warrior kits]]. Because the *names* are the reskin, name sharing is near zero and useless as a measure — so the matrix below measures **mechanics**: the share of the row class's kit that has an effect-twin in the column class's book (blended `SpellEffect`-signature similarity ≥ {TWIN_T}; the bold diagonal is each class twinned against *its own* book). Standouts: {top_cross_txt}.
+Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), classic WoW ships **the same design as separate class-branded spells**: nine heals that are [[families/heals|one heal]], five [[families/interrupts|interrupts]], the [[families/rez|resurrection franchise]], one [[families/protection|protection effect]] wearing armor, ward, and shield vocabularies across four classes, Cure Poison printed verbatim in two books, and the Feral Druid — [[families/cat-is-rogue|a licensed photocopy of the Rogue and Warrior kits]]. Because the *names* are the reskin, name sharing is near zero and useless as a measure — so the matrix below measures **mechanics**: the share of the row class's kit that has an effect-twin in the column class's book (a *different* ability with blended `SpellEffect`-signature similarity ≥ {TWIN_T}). Standouts: {top_cross_txt}.
 
 {chr(10).join(mat)}
+
+**Internal redundancy** — the same measure pointed at each class's *own* book (how much of the kit has a different in-book twin): {internal_txt}. The teleport matrix, the totem foundry, and the conjured-stone commissary are why the top three look the way they do.
 
 ## Axis 2 — one chassis, many payloads
 
