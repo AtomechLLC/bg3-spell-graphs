@@ -529,119 +529,119 @@ Baldur's Gate 3,Gust of Wind,negation,effect,
 Baldur's Gate 3,Lightning Bolt,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Sunbeam,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Thunderwave,damage,family,The Elemental Blast Template
-WoW Classic,Mangle,disable,effect,
-WoW Classic,Bear Form,roleshift,override,
-WoW Classic,Growl,threat,override,The Druid Costume Shop
-WoW Classic,Teleport: Moonglade,mobility,rule,
-WoW Classic,Enrage,provision,effect,
+WoW Classic,Mangle,damage,family,The Whetstone & The Strike
+WoW Classic,Bear Form,roleshift,override,The Form Rack
+WoW Classic,Growl,threat,override,The Aggro Ledger
+WoW Classic,Teleport: Moonglade,mobility,family,The Travel Agency
+WoW Classic,Enrage,drain,family,The Siphon Set
 WoW Classic,Cure Poison,negation,family,The Cleanse Counter
-WoW Classic,Aquatic Form,mobility,override,
-WoW Classic,Aquatic Form (Passive),roleshift,rule,
-WoW Classic,Cat Form,roleshift,override,
+WoW Classic,Aquatic Form,mobility,override,The Form Rack
+WoW Classic,Aquatic Form (Passive),mobility,family,The Travel Agency
+WoW Classic,Cat Form,roleshift,override,The Form Rack
 WoW Classic,Remove Curse,negation,family,The Cleanse Counter
 WoW Classic,Abolish Poison,negation,family,The Cleanse Counter
-WoW Classic,Challenging Roar,threat,override,The Druid Costume Shop
-WoW Classic,Travel Form,mobility,override,
-WoW Classic,Track Humanoids,info,family,The Tracking Dial
-WoW Classic,Dire Bear Form,roleshift,override,
-WoW Classic,Feline Grace,damage,rule,
-WoW Classic,Moonkin Form,roleshift,effect,
-WoW Classic,Barkskin,disable,rule,
-WoW Classic,Bash,disable,effect,
-WoW Classic,Dash,mobility,effect,
-WoW Classic,Cower,threat,override,The Druid Costume Shop
-WoW Classic,Demoralizing Roar,offboost,effect,
-WoW Classic,Faerie Fire,degrade,effect,
-WoW Classic,Faerie Fire (Feral),degrade,effect,
-WoW Classic,Rake,damage,effect,
-WoW Classic,Shred,damage,family,The Druid Costume Shop
-WoW Classic,Soothe Animal,degrade,rule,
-WoW Classic,Swipe,damage,effect,
-WoW Classic,Thorns,defboost,effect,
+WoW Classic,Challenging Roar,threat,override,The Aggro Ledger
+WoW Classic,Travel Form,mobility,override,The Form Rack
+WoW Classic,Track Humanoids,info,family,The Surveillance Suite
+WoW Classic,Dire Bear Form,roleshift,override,The Form Rack
+WoW Classic,Feline Grace,mobility,family,The Travel Agency
+WoW Classic,Moonkin Form,roleshift,family,The Form Rack
+WoW Classic,Barkskin,defboost,family,The Protection Rack
+WoW Classic,Bash,disable,family,The Crowd Control Cabinet
+WoW Classic,Dash,mobility,family,The Travel Agency
+WoW Classic,Cower,threat,override,The Aggro Ledger
+WoW Classic,Demoralizing Roar,degrade,family,The Debuff Bureau
+WoW Classic,Faerie Fire,degrade,family,The Debuff Bureau
+WoW Classic,Faerie Fire (Feral),degrade,family,The Debuff Bureau
+WoW Classic,Rake,damage,family,The Affliction Engine
+WoW Classic,Shred,damage,family,The Whetstone & The Strike
+WoW Classic,Soothe Animal,utility,family,The Fieldcraft Kit
+WoW Classic,Swipe,damage,family,The Whetstone & The Strike
+WoW Classic,Thorns,defboost,family,The Static Shell
 WoW Classic,Wrath,damage,family,The Bolt Engine
-WoW Classic,Frenzied Regeneration,heal,override,
-WoW Classic,Pounce,disable,effect,
-WoW Classic,Claw,damage,effect,
-WoW Classic,Entangling Roots,disable,effect,
-WoW Classic,Hibernate,disable,effect,
-WoW Classic,Maul,damage,effect,
+WoW Classic,Frenzied Regeneration,heal,override,The Mending Clock
+WoW Classic,Pounce,disable,family,The Crowd Control Cabinet
+WoW Classic,Claw,damage,family,The Whetstone & The Strike
+WoW Classic,Entangling Roots,disable,family,The Slow Lane
+WoW Classic,Hibernate,disable,family,The Crowd Control Cabinet
+WoW Classic,Maul,damage,family,The Whetstone & The Strike
 WoW Classic,Moonfire,damage,family,The Affliction Engine
-WoW Classic,Nature's Grasp,disable,override,
-WoW Classic,Ravage,damage,family,The Druid Costume Shop
-WoW Classic,Ferocious Bite,damage,effect,
-WoW Classic,Gift of the Wild,offboost,effect,The Status Boost Rack
+WoW Classic,Nature's Grasp,disable,override,The Slow Lane
+WoW Classic,Ravage,damage,family,The Whetstone & The Strike
+WoW Classic,Ferocious Bite,damage,family,The Whetstone & The Strike
+WoW Classic,Gift of the Wild,offboost,family,The Status Boost Rack
 WoW Classic,Healing Touch,heal,family,"One Heal, Nine Names"
-WoW Classic,Hurricane,damage,rule,
-WoW Classic,Insect Swarm,damage,effect,
-WoW Classic,Mark of the Wild,offboost,effect,The Status Boost Rack
-WoW Classic,Prowl,stealth,override,The Druid Costume Shop
+WoW Classic,Hurricane,damage,family,The Area Barrage
+WoW Classic,Insect Swarm,damage,family,The Affliction Engine
+WoW Classic,Mark of the Wild,offboost,family,The Status Boost Rack
+WoW Classic,Prowl,stealth,override,The Vanishing Act
 WoW Classic,Rebirth,heal,override,The Resurrection Union
-WoW Classic,Regrowth,heal,effect,
-WoW Classic,Rejuvenation,heal,effect,
-WoW Classic,Rip,damage,effect,
+WoW Classic,Regrowth,heal,family,The Mending Clock
+WoW Classic,Rejuvenation,heal,family,The Mending Clock
+WoW Classic,Rip,damage,family,The Affliction Engine
 WoW Classic,Starfire,damage,family,The Bolt Engine
-WoW Classic,Tiger's Fury,offboost,effect,
-WoW Classic,Tranquility,utility,fallback,
-WoW Classic,Auto Shot,damage,override,
-WoW Classic,Cobra Reflexes,damage,rule,
-WoW Classic,Track Beasts,info,family,The Tracking Dial
+WoW Classic,Tiger's Fury,damage,family,The Whetstone & The Strike
+WoW Classic,Tranquility,heal,family,The Mending Clock
+WoW Classic,Auto Shot,damage,override,The Whetstone & The Strike
+WoW Classic,Cobra Reflexes,create,family,The Menagerie
+WoW Classic,Track Beasts,info,family,The Surveillance Suite
 WoW Classic,Aspect of the Monkey,roleshift,family,The Aspect Dial
-WoW Classic,Concussive Shot,disable,effect,
-WoW Classic,Beast Training,companion,override,
+WoW Classic,Concussive Shot,disable,family,The Slow Lane
+WoW Classic,Beast Training,companion,override,The Menagerie
 WoW Classic,Call Pet,companion,override,The Menagerie
 WoW Classic,Dismiss Pet,companion,override,The Menagerie
-WoW Classic,Feed Pet,companion,override,
+WoW Classic,Feed Pet,companion,override,The Menagerie
 WoW Classic,Revive Pet,companion,override,The Menagerie
 WoW Classic,Tame Beast,companion,override,The Menagerie
-WoW Classic,Track Humanoids,info,family,The Tracking Dial
-WoW Classic,Eagle Eye,info,rule,
+WoW Classic,Track Humanoids,info,family,The Surveillance Suite
+WoW Classic,Eagle Eye,info,family,The Surveillance Suite
 WoW Classic,Eyes of the Beast,companion,override,The Menagerie
-WoW Classic,Track Undead,info,family,The Tracking Dial
+WoW Classic,Track Undead,info,family,The Surveillance Suite
 WoW Classic,Aspect of the Cheetah,roleshift,family,The Aspect Dial
-WoW Classic,Beast Lore,companion,override,
-WoW Classic,Track Hidden,info,family,The Tracking Dial
-WoW Classic,Rapid Fire,utility,fallback,
-WoW Classic,Track Elementals,info,family,The Tracking Dial
-WoW Classic,Frost Trap,disable,rule,
+WoW Classic,Beast Lore,companion,override,The Menagerie
+WoW Classic,Track Hidden,info,family,The Surveillance Suite
+WoW Classic,Rapid Fire,offboost,family,The Status Boost Rack
+WoW Classic,Track Elementals,info,family,The Surveillance Suite
+WoW Classic,Frost Trap,disable,rule,The Trap Line
 WoW Classic,Aspect of the Beast,roleshift,family,The Aspect Dial
-WoW Classic,Feign Death,threat,rule,
-WoW Classic,Flare,stealth,rule,
-WoW Classic,Track Demons,info,family,The Tracking Dial
+WoW Classic,Feign Death,stealth,family,The Vanishing Act
+WoW Classic,Flare,info,family,The Surveillance Suite
+WoW Classic,Track Demons,info,family,The Surveillance Suite
 WoW Classic,Aspect of the Pack,roleshift,family,The Aspect Dial
-WoW Classic,Track Giants,info,family,The Tracking Dial
-WoW Classic,Scare Beast,disable,family,The Fear Franchise
-WoW Classic,Disengage,utility,fallback,
-WoW Classic,Prowl,stealth,override,The Druid Costume Shop
-WoW Classic,Track Dragonkin,info,family,The Tracking Dial
-WoW Classic,Scorpid Sting,degrade,family,The Sting Clip
-WoW Classic,Counterattack,disable,effect,
-WoW Classic,Explosive Trap,roleshift,rule,
+WoW Classic,Track Giants,info,family,The Surveillance Suite
+WoW Classic,Scare Beast,disable,family,The Crowd Control Cabinet
+WoW Classic,Disengage,threat,family,The Aggro Ledger
+WoW Classic,Prowl,stealth,override,The Vanishing Act
+WoW Classic,Track Dragonkin,info,family,The Surveillance Suite
+WoW Classic,Scorpid Sting,damage,family,The Affliction Engine
+WoW Classic,Counterattack,damage,family,The Whetstone & The Strike
+WoW Classic,Explosive Trap,roleshift,rule,The Trap Line
 WoW Classic,Aspect of the Wild,roleshift,family,The Aspect Dial
-WoW Classic,Immolation Trap,roleshift,rule,
-WoW Classic,Raptor Strike,damage,effect,
-WoW Classic,Scorpid Poison,damage,rule,
-WoW Classic,Viper Sting,drain,override,The Sting Clip
-WoW Classic,Hunter's Mark,stealth,rule,
-WoW Classic,Mongoose Bite,damage,effect,
-WoW Classic,Volley,damage,rule,
-WoW Classic,Arcane Shot,damage,effect,
+WoW Classic,Immolation Trap,roleshift,rule,The Trap Line
+WoW Classic,Raptor Strike,damage,family,The Whetstone & The Strike
+WoW Classic,Scorpid Poison,create,family,The Menagerie
+WoW Classic,Viper Sting,drain,override,The Affliction Engine
+WoW Classic,Hunter's Mark,degrade,family,The Debuff Bureau
+WoW Classic,Mongoose Bite,damage,family,The Whetstone & The Strike
+WoW Classic,Volley,damage,family,The Area Barrage
+WoW Classic,Arcane Shot,damage,family,The Bolt Engine
 WoW Classic,Aspect of the Hawk,roleshift,family,The Aspect Dial
-WoW Classic,Black Arrow,disable,effect,
-WoW Classic,Distracting Shot,utility,fallback,
-WoW Classic,Freezing Trap,roleshift,rule,
-WoW Classic,Lightning Breath,damage,rule,
-WoW Classic,Mend Pet,companion,override,
-WoW Classic,Multi-Shot,damage,effect,
+WoW Classic,Black Arrow,damage,family,The Affliction Engine
+WoW Classic,Distracting Shot,threat,family,The Aggro Ledger
+WoW Classic,Freezing Trap,roleshift,rule,The Trap Line
+WoW Classic,Lightning Breath,create,family,The Menagerie
+WoW Classic,Mend Pet,companion,override,The Mending Clock
+WoW Classic,Multi-Shot,damage,family,The Area Barrage
 WoW Classic,Serpent Sting,damage,family,The Affliction Engine
-WoW Classic,Tranquilizing Shot,negation,effect,
-WoW Classic,Wing Clip,disable,effect,
-WoW Classic,Wyvern Sting,disable,effect,
-WoW Classic,Ice Block,disable,effect,
-WoW Classic,Chilled,disable,effect,
-WoW Classic,Slow Fall,mobility,override,
-WoW Classic,Detect Magic,info,rule,
+WoW Classic,Tranquilizing Shot,negation,family,The Cleanse Counter
+WoW Classic,Wing Clip,disable,family,The Slow Lane
+WoW Classic,Wyvern Sting,disable,family,The Crowd Control Cabinet
+WoW Classic,Ice Block,defboost,family,The Protection Rack
+WoW Classic,Chilled,disable,family,The Slow Lane
+WoW Classic,Slow Fall,mobility,override,The Travel Agency
+WoW Classic,Detect Magic,info,family,The Surveillance Suite
 WoW Classic,Remove Lesser Curse,negation,family,The Cleanse Counter
-WoW Classic,Blink,mobility,override,
+WoW Classic,Blink,mobility,override,The Travel Agency
 WoW Classic,Frost Armor,defboost,family,The Protection Rack
 WoW Classic,Teleport: Ironforge,mobility,family,The Hearth Network
 WoW Classic,Teleport: Orgrimmar,mobility,family,The Hearth Network
@@ -652,7 +652,7 @@ WoW Classic,Conjure Mana Agate,provision,family,The Conjured Commissary
 WoW Classic,Teleport: Darnassus,mobility,family,The Hearth Network
 WoW Classic,Teleport: Thunder Bluff,mobility,family,The Hearth Network
 WoW Classic,Conjure Mana Jade,provision,family,The Conjured Commissary
-WoW Classic,Combustion,damage,rule,
+WoW Classic,Combustion,offboost,family,The Status Boost Rack
 WoW Classic,Portal: Ironforge,mobility,family,The Hearth Network
 WoW Classic,Portal: Orgrimmar,mobility,family,The Hearth Network
 WoW Classic,Portal: Stormwind,mobility,family,The Hearth Network
@@ -660,191 +660,191 @@ WoW Classic,Portal: Undercity,mobility,family,The Hearth Network
 WoW Classic,Conjure Mana Citrine,provision,family,The Conjured Commissary
 WoW Classic,Portal: Darnassus,mobility,family,The Hearth Network
 WoW Classic,Portal: Thunder Bluff,mobility,family,The Hearth Network
-WoW Classic,Amplify Magic,defboost,family,Amplify & Dampen
-WoW Classic,Arcane Explosion,damage,effect,
-WoW Classic,Fire Blast,damage,effect,
-WoW Classic,Frost Nova,disable,effect,
-WoW Classic,Arcane Brilliance,offboost,effect,The Status Boost Rack
-WoW Classic,Arcane Intellect,offboost,effect,The Status Boost Rack
-WoW Classic,Arcane Missiles,damage,rule,
-WoW Classic,Flamestrike,damage,effect,
-WoW Classic,Cone of Cold,disable,effect,
+WoW Classic,Amplify Magic,offboost,rule,Amplify & Dampen
+WoW Classic,Arcane Explosion,damage,family,The Area Barrage
+WoW Classic,Fire Blast,damage,family,The Bolt Engine
+WoW Classic,Frost Nova,disable,family,The Slow Lane
+WoW Classic,Arcane Brilliance,offboost,family,The Status Boost Rack
+WoW Classic,Arcane Intellect,offboost,family,The Status Boost Rack
+WoW Classic,Arcane Missiles,damage,family,The Bolt Engine
+WoW Classic,Flamestrike,damage,family,The Area Barrage
+WoW Classic,Cone of Cold,damage,family,The Area Barrage
 WoW Classic,Conjure Mana Ruby,provision,family,The Conjured Commissary
-WoW Classic,Ice Barrier,defboost,effect,
+WoW Classic,Ice Barrier,defboost,family,The Protection Rack
 WoW Classic,Mage Armor,defboost,family,The Protection Rack
-WoW Classic,Scorch,damage,effect,
-WoW Classic,Blast Wave,disable,effect,
-WoW Classic,Blizzard,damage,rule,
+WoW Classic,Scorch,damage,family,The Bolt Engine
+WoW Classic,Blast Wave,damage,family,The Area Barrage
+WoW Classic,Blizzard,damage,family,The Area Barrage
 WoW Classic,Conjure Food,provision,family,The Conjured Commissary
 WoW Classic,Conjure Water,provision,family,The Conjured Commissary
-WoW Classic,Dampen Magic,defboost,family,Amplify & Dampen
+WoW Classic,Dampen Magic,damage,rule,Amplify & Dampen
 WoW Classic,Fire Ward,defboost,family,The Protection Rack
 WoW Classic,Fireball,damage,family,The Bolt Engine
 WoW Classic,Frost Ward,defboost,family,The Protection Rack
 WoW Classic,Frostbolt,damage,family,The Bolt Engine
 WoW Classic,Ice Armor,defboost,family,The Protection Rack
-WoW Classic,Mana Shield,defboost,rule,
-WoW Classic,Polymorph,disable,override,The Polymorph Barn
-WoW Classic,Polymorph: Cow,disable,family,The Polymorph Barn
+WoW Classic,Mana Shield,defboost,family,The Protection Rack
+WoW Classic,Polymorph,disable,override,The Crowd Control Cabinet
+WoW Classic,Polymorph: Cow,disable,family,The Crowd Control Cabinet
 WoW Classic,Pyroblast,damage,family,The Bolt Engine
-WoW Classic,Judgement,damage,override,
+WoW Classic,Judgement,damage,override,The Seal Press
 WoW Classic,Purify,negation,family,The Cleanse Counter
-WoW Classic,Righteous Fury,threat,effect,
-WoW Classic,Blessing of Freedom,utility,fallback,The Status Boost Rack
-WoW Classic,Divine Protection,disable,effect,
-WoW Classic,Blessing of Kings,utility,fallback,The Status Boost Rack
-WoW Classic,Repentance,disable,effect,
-WoW Classic,Sense Undead,info,family,The Tracking Dial
-WoW Classic,Concentration Aura,negation,rule,The Status Boost Rack
+WoW Classic,Righteous Fury,threat,family,The Aggro Ledger
+WoW Classic,Blessing of Freedom,offboost,family,The Status Boost Rack
+WoW Classic,Divine Protection,defboost,family,The Protection Rack
+WoW Classic,Blessing of Kings,offboost,family,The Status Boost Rack
+WoW Classic,Repentance,disable,family,The Crowd Control Cabinet
+WoW Classic,Sense Undead,info,family,The Surveillance Suite
+WoW Classic,Concentration Aura,offboost,family,The Status Boost Rack
 WoW Classic,Seal of Justice,offboost,family,The Seal Press
 WoW Classic,Blessing of Salvation,threat,override,The Status Boost Rack
-WoW Classic,Divine Intervention,damage,effect,
-WoW Classic,Sanctity Aura,damage,rule,The Status Boost Rack
-WoW Classic,Blessing of Protection,disable,effect,
+WoW Classic,Divine Intervention,defboost,family,The Protection Rack
+WoW Classic,Sanctity Aura,offboost,family,The Status Boost Rack
+WoW Classic,Blessing of Protection,defboost,family,The Protection Rack
 WoW Classic,Summon Warhorse,create,family,The Menagerie
 WoW Classic,Cleanse,negation,family,The Cleanse Counter
-WoW Classic,Divine Shield,degrade,effect,
-WoW Classic,Lay on Hands,heal,override,
+WoW Classic,Divine Shield,defboost,family,The Protection Rack
+WoW Classic,Lay on Hands,heal,override,"One Heal, Nine Names"
 WoW Classic,Seal of the Crusader,offboost,family,The Seal Press
-WoW Classic,Shadow Resistance Aura,defboost,rule,The Status Boost Rack
-WoW Classic,Turn Undead,disable,override,
-WoW Classic,Blessing of Sacrifice,damage,rule,The Status Boost Rack
-WoW Classic,Hammer of Justice,disable,effect,
-WoW Classic,Frost Resistance Aura,defboost,rule,The Status Boost Rack
-WoW Classic,Retribution Aura,damage,rule,The Status Boost Rack
+WoW Classic,Shadow Resistance Aura,offboost,family,The Status Boost Rack
+WoW Classic,Turn Undead,disable,override,The Crowd Control Cabinet
+WoW Classic,Blessing of Sacrifice,offboost,family,The Status Boost Rack
+WoW Classic,Hammer of Justice,disable,family,The Crowd Control Cabinet
+WoW Classic,Frost Resistance Aura,offboost,family,The Status Boost Rack
+WoW Classic,Retribution Aura,offboost,family,The Status Boost Rack
 WoW Classic,Flash of Light,heal,family,"One Heal, Nine Names"
 WoW Classic,Seal of Righteousness,offboost,family,The Seal Press
 WoW Classic,Seal of Wisdom,offboost,family,The Seal Press
 WoW Classic,Blessing of Light,defboost,override,The Status Boost Rack
-WoW Classic,Blessing of Might,offboost,effect,The Status Boost Rack
-WoW Classic,Blessing of Wisdom,provision,effect,The Status Boost Rack
-WoW Classic,Consecration,damage,rule,
-WoW Classic,Devotion Aura,utility,fallback,The Status Boost Rack
-WoW Classic,Exorcism,damage,override,
-WoW Classic,Fire Resistance Aura,defboost,rule,The Status Boost Rack
-WoW Classic,Greater Blessing of Kings,utility,fallback,
-WoW Classic,Greater Blessing of Light,defboost,override,
-WoW Classic,Greater Blessing of Might,offboost,effect,
-WoW Classic,Greater Blessing of Salvation,threat,override,
-WoW Classic,Greater Blessing of Sanctuary,degrade,rule,
-WoW Classic,Greater Blessing of Wisdom,provision,effect,
-WoW Classic,Hammer of Wrath,damage,effect,
+WoW Classic,Blessing of Might,offboost,family,The Status Boost Rack
+WoW Classic,Blessing of Wisdom,offboost,family,The Status Boost Rack
+WoW Classic,Consecration,damage,family,The Area Barrage
+WoW Classic,Devotion Aura,offboost,family,The Status Boost Rack
+WoW Classic,Exorcism,damage,override,The Bolt Engine
+WoW Classic,Fire Resistance Aura,offboost,family,The Status Boost Rack
+WoW Classic,Greater Blessing of Kings,offboost,family,The Status Boost Rack
+WoW Classic,Greater Blessing of Light,defboost,override,The Status Boost Rack
+WoW Classic,Greater Blessing of Might,offboost,family,The Status Boost Rack
+WoW Classic,Greater Blessing of Salvation,threat,override,The Status Boost Rack
+WoW Classic,Greater Blessing of Sanctuary,offboost,family,The Status Boost Rack
+WoW Classic,Greater Blessing of Wisdom,offboost,family,The Status Boost Rack
+WoW Classic,Hammer of Wrath,damage,family,The Bolt Engine
 WoW Classic,Holy Light,heal,family,"One Heal, Nine Names"
-WoW Classic,Holy Wrath,damage,effect,
+WoW Classic,Holy Wrath,damage,family,The Area Barrage
 WoW Classic,Redemption,heal,override,The Resurrection Union
 WoW Classic,Seal of Light,offboost,family,The Seal Press
 WoW Classic,Summon Charger,create,family,The Menagerie
-WoW Classic,Vampiric Embrace,damage,rule,
+WoW Classic,Vampiric Embrace,drain,family,The Siphon Set
 WoW Classic,Lesser Heal,heal,family,"One Heal, Nine Names"
 WoW Classic,Cure Disease,negation,family,The Cleanse Counter
-WoW Classic,Fear Ward,disable,rule,
+WoW Classic,Fear Ward,defboost,family,The Protection Rack
 WoW Classic,Abolish Disease,negation,family,The Cleanse Counter
 WoW Classic,Heal,heal,family,"One Heal, Nine Names"
-WoW Classic,Levitate,disable,rule,
+WoW Classic,Levitate,mobility,family,The Travel Agency
 WoW Classic,Dispel Magic,negation,override,The Cleanse Counter
-WoW Classic,Power Infusion,offboost,effect,
-WoW Classic,Mind Vision,info,override,
-WoW Classic,Mind Soothe,degrade,rule,
+WoW Classic,Power Infusion,offboost,family,The Status Boost Rack
+WoW Classic,Mind Vision,info,override,The Surveillance Suite
+WoW Classic,Mind Soothe,utility,family,The Fieldcraft Kit
 WoW Classic,Smite,damage,family,The Bolt Engine
 WoW Classic,Flash Heal,heal,family,"One Heal, Nine Names"
-WoW Classic,Mana Burn,drain,override,
-WoW Classic,Prayer of Shadow Protection,defboost,rule,The Status Boost Rack
-WoW Classic,Psychic Scream,disable,family,The Fear Franchise
-WoW Classic,Shadow Protection,defboost,rule,The Status Boost Rack
-WoW Classic,Desperate Prayer,heal,effect,
+WoW Classic,Mana Burn,drain,override,The Siphon Set
+WoW Classic,Prayer of Shadow Protection,offboost,family,The Status Boost Rack
+WoW Classic,Psychic Scream,disable,family,The Crowd Control Cabinet
+WoW Classic,Shadow Protection,offboost,family,The Status Boost Rack
+WoW Classic,Desperate Prayer,heal,family,"One Heal, Nine Names"
 WoW Classic,Mind Blast,damage,family,The Bolt Engine
-WoW Classic,Mind Control,disable,override,
+WoW Classic,Mind Control,disable,override,The Crowd Control Cabinet
 WoW Classic,Resurrection,heal,override,The Resurrection Union
 WoW Classic,Shadow Word: Pain,damage,family,The Affliction Engine
-WoW Classic,Starshards,damage,effect,
-WoW Classic,Devouring Plague,damage,effect,
-WoW Classic,Divine Spirit,offboost,effect,The Status Boost Rack
-WoW Classic,Elune's Grace,defboost,effect,
-WoW Classic,Fade,threat,override,
-WoW Classic,Feedback,damage,rule,
+WoW Classic,Starshards,damage,family,The Affliction Engine
+WoW Classic,Devouring Plague,damage,family,The Affliction Engine
+WoW Classic,Divine Spirit,offboost,family,The Status Boost Rack
+WoW Classic,Elune's Grace,defboost,family,The Protection Rack
+WoW Classic,Fade,threat,override,The Aggro Ledger
+WoW Classic,Feedback,drain,family,The Siphon Set
 WoW Classic,Greater Heal,heal,family,"One Heal, Nine Names"
-WoW Classic,Hex of Weakness,degrade,effect,
+WoW Classic,Hex of Weakness,degrade,family,The Debuff Bureau
 WoW Classic,Holy Fire,damage,family,The Bolt Engine
-WoW Classic,Holy Nova,damage,effect,
+WoW Classic,Holy Nova,damage,family,The Area Barrage
 WoW Classic,Inner Fire,defboost,family,The Protection Rack
-WoW Classic,Lightwell,create,effect,
-WoW Classic,Mind Flay,disable,effect,
-WoW Classic,Power Word: Fortitude,offboost,effect,The Status Boost Rack
+WoW Classic,Lightwell,create,family,The Menagerie
+WoW Classic,Mind Flay,damage,family,The Affliction Engine
+WoW Classic,Power Word: Fortitude,offboost,family,The Status Boost Rack
 WoW Classic,Power Word: Shield,defboost,override,The Protection Rack
-WoW Classic,Prayer of Fortitude,offboost,effect,The Status Boost Rack
-WoW Classic,Prayer of Healing,heal,effect,
-WoW Classic,Prayer of Spirit,offboost,effect,The Status Boost Rack
-WoW Classic,Renew,heal,effect,
-WoW Classic,Shackle Undead,disable,effect,
-WoW Classic,Shadowguard,damage,effect,
-WoW Classic,Touch of Weakness,damage,rule,
-WoW Classic,Pick Lock,utility,effect,
-WoW Classic,Pick Pocket,utility,fallback,
-WoW Classic,Evasion,defboost,override,
-WoW Classic,Poisons,utility,fallback,
-WoW Classic,Distract,stealth,rule,
-WoW Classic,Detect Traps,info,effect,
-WoW Classic,Mind-numbing Poison,degrade,family,The Numbered Vials
-WoW Classic,Cheap Shot,disable,effect,
-WoW Classic,Disarm Trap,utility,effect,
-WoW Classic,Blind,disable,effect,
-WoW Classic,Mind-numbing Poison II,degrade,family,The Numbered Vials
-WoW Classic,Safe Fall,damage,rule,
-WoW Classic,Slice and Dice,utility,fallback,
-WoW Classic,Vanish,stealth,rule,
-WoW Classic,Sap,disable,effect,
-WoW Classic,Kidney Shot,disable,effect,
-WoW Classic,Mind-numbing Poison III,degrade,family,The Numbered Vials
+WoW Classic,Prayer of Fortitude,offboost,family,The Status Boost Rack
+WoW Classic,Prayer of Healing,heal,family,"One Heal, Nine Names"
+WoW Classic,Prayer of Spirit,offboost,family,The Status Boost Rack
+WoW Classic,Renew,heal,family,The Mending Clock
+WoW Classic,Shackle Undead,disable,family,The Crowd Control Cabinet
+WoW Classic,Shadowguard,defboost,family,The Static Shell
+WoW Classic,Touch of Weakness,degrade,family,The Debuff Bureau
+WoW Classic,Pick Lock,utility,family,The Fieldcraft Kit
+WoW Classic,Pick Pocket,utility,family,The Fieldcraft Kit
+WoW Classic,Evasion,defboost,override,The Protection Rack
+WoW Classic,Poisons,utility,family,The Fieldcraft Kit
+WoW Classic,Distract,threat,family,The Aggro Ledger
+WoW Classic,Detect Traps,info,family,The Surveillance Suite
+WoW Classic,Mind-numbing Poison,damage,family,The Whetstone & The Strike
+WoW Classic,Cheap Shot,disable,family,The Crowd Control Cabinet
+WoW Classic,Disarm Trap,utility,family,The Fieldcraft Kit
+WoW Classic,Blind,disable,family,The Crowd Control Cabinet
+WoW Classic,Mind-numbing Poison II,damage,family,The Whetstone & The Strike
+WoW Classic,Safe Fall,mobility,family,The Travel Agency
+WoW Classic,Slice and Dice,damage,family,The Whetstone & The Strike
+WoW Classic,Vanish,stealth,family,The Vanishing Act
+WoW Classic,Sap,disable,family,The Crowd Control Cabinet
+WoW Classic,Kidney Shot,disable,family,The Crowd Control Cabinet
+WoW Classic,Mind-numbing Poison III,damage,family,The Whetstone & The Strike
 WoW Classic,Garrote,damage,family,The Affliction Engine
-WoW Classic,Sinister Strike,damage,effect,
-WoW Classic,Expose Armor,degrade,effect,
-WoW Classic,Ambush,damage,family,The Druid Costume Shop
-WoW Classic,Hemorrhage,damage,effect,
+WoW Classic,Sinister Strike,damage,family,The Whetstone & The Strike
+WoW Classic,Expose Armor,degrade,family,The Debuff Bureau
+WoW Classic,Ambush,damage,family,The Whetstone & The Strike
+WoW Classic,Hemorrhage,damage,family,The Whetstone & The Strike
 WoW Classic,Kick,negation,family,The Interrupt Union
-WoW Classic,Sprint,mobility,effect,
-WoW Classic,Backstab,damage,family,The Druid Costume Shop
-WoW Classic,Eviscerate,damage,effect,
-WoW Classic,Feint,threat,override,The Druid Costume Shop
-WoW Classic,Gouge,disable,effect,
+WoW Classic,Sprint,mobility,family,The Travel Agency
+WoW Classic,Backstab,damage,family,The Whetstone & The Strike
+WoW Classic,Eviscerate,damage,family,The Whetstone & The Strike
+WoW Classic,Feint,threat,override,The Aggro Ledger
+WoW Classic,Gouge,disable,family,The Crowd Control Cabinet
 WoW Classic,Rupture,damage,family,The Affliction Engine
-WoW Classic,Stealth,stealth,override,The Druid Costume Shop
+WoW Classic,Stealth,stealth,override,The Vanishing Act
 WoW Classic,Earthbind Totem,create,family,The Totem Foundry
 WoW Classic,Cure Poison,negation,family,The Cleanse Counter
 WoW Classic,Tremor Totem,create,family,The Totem Foundry
-WoW Classic,Ghost Wolf,mobility,override,
+WoW Classic,Ghost Wolf,mobility,override,The Travel Agency
 WoW Classic,Cure Disease,negation,family,The Cleanse Counter
 WoW Classic,Poison Cleansing Totem,create,family,The Totem Foundry
-WoW Classic,Water Breathing,utility,fallback,
-WoW Classic,Far Sight,info,rule,
-WoW Classic,Water Walking,mobility,rule,
-WoW Classic,Astral Recall,mobility,override,
+WoW Classic,Water Breathing,utility,family,The Fieldcraft Kit
+WoW Classic,Far Sight,info,family,The Surveillance Suite
+WoW Classic,Water Walking,mobility,family,The Travel Agency
+WoW Classic,Astral Recall,mobility,override,The Travel Agency
 WoW Classic,Grounding Totem,create,family,The Totem Foundry
-WoW Classic,Reincarnation,heal,rule,
-WoW Classic,Purge,negation,override,
-WoW Classic,Sentry Totem,create,effect,
+WoW Classic,Reincarnation,heal,family,The Resurrection Union
+WoW Classic,Purge,negation,override,The Cleanse Counter
+WoW Classic,Sentry Totem,info,family,The Surveillance Suite
 WoW Classic,Disease Cleansing Totem,create,family,The Totem Foundry
 WoW Classic,Fire Nova Totem,create,family,The Totem Foundry
 WoW Classic,Windfury Totem,create,family,The Totem Foundry
-WoW Classic,Chain Heal,heal,effect,
+WoW Classic,Chain Heal,heal,family,"One Heal, Nine Names"
 WoW Classic,Frost Resistance Totem,create,family,The Totem Foundry
-WoW Classic,Rockbiter Weapon,offboost,override,
+WoW Classic,Rockbiter Weapon,offboost,override,The Whetstone & The Strike
 WoW Classic,Stoneskin Totem,create,family,The Totem Foundry
-WoW Classic,Chain Lightning,damage,effect,
-WoW Classic,Flametongue Weapon,offboost,override,
+WoW Classic,Chain Lightning,damage,family,The Area Barrage
+WoW Classic,Flametongue Weapon,offboost,override,The Whetstone & The Strike
 WoW Classic,Lightning Bolt,damage,family,The Bolt Engine
-WoW Classic,Lightning Shield,defboost,rule,
+WoW Classic,Lightning Shield,defboost,family,The Static Shell
 WoW Classic,Magma Totem,create,family,The Totem Foundry
 WoW Classic,Mana Spring Totem,create,family,The Totem Foundry
 WoW Classic,Windwall Totem,create,family,The Totem Foundry
 WoW Classic,Fire Resistance Totem,create,family,The Totem Foundry
 WoW Classic,Flametongue Totem,create,family,The Totem Foundry
-WoW Classic,Frost Shock,damage,family,The Shock Battery
-WoW Classic,Frostbrand Weapon,offboost,override,
+WoW Classic,Frost Shock,disable,family,The Slow Lane
+WoW Classic,Frostbrand Weapon,offboost,override,The Whetstone & The Strike
 WoW Classic,Mana Tide Totem,create,family,The Totem Foundry
 WoW Classic,Stoneclaw Totem,create,family,The Totem Foundry
 WoW Classic,Ancestral Spirit,heal,override,The Resurrection Union
 WoW Classic,Earth Shock,negation,family,The Interrupt Union
-WoW Classic,Flame Shock,damage,family,The Shock Battery
+WoW Classic,Flame Shock,damage,family,The Affliction Engine
 WoW Classic,Grace of Air Totem,create,family,The Totem Foundry
 WoW Classic,Healing Stream Totem,create,family,The Totem Foundry
 WoW Classic,Healing Wave,heal,family,"One Heal, Nine Names"
@@ -852,103 +852,103 @@ WoW Classic,Lesser Healing Wave,heal,family,"One Heal, Nine Names"
 WoW Classic,Nature Resistance Totem,create,family,The Totem Foundry
 WoW Classic,Searing Totem,create,family,The Totem Foundry
 WoW Classic,Strength of Earth Totem,create,family,The Totem Foundry
-WoW Classic,Windfury Weapon,offboost,override,
+WoW Classic,Windfury Weapon,offboost,override,The Whetstone & The Strike
 WoW Classic,Summon Imp,create,family,The Menagerie
 WoW Classic,Create Healthstone (Minor),provision,family,The Conjured Commissary
 WoW Classic,Demon Skin,defboost,family,The Protection Rack
 WoW Classic,Summon Voidwalker,create,family,The Menagerie
-WoW Classic,Unending Breath,utility,fallback,
+WoW Classic,Unending Breath,utility,family,The Fieldcraft Kit
 WoW Classic,Create Soulstone (Minor),heal,family,The Resurrection Union
 WoW Classic,Ritual of Summoning,mobility,override,The Menagerie
-WoW Classic,Summon Incubus,create,effect,
+WoW Classic,Summon Incubus,create,family,The Menagerie
 WoW Classic,Summon Succubus,create,family,The Menagerie
 WoW Classic,Create Healthstone (Lesser),provision,family,The Conjured Commissary
 WoW Classic,Eye of Kilrogg,info,override,The Menagerie
-WoW Classic,Sense Demons,info,family,The Tracking Dial
-WoW Classic,Detect Lesser Invisibility,info,effect,
+WoW Classic,Sense Demons,info,family,The Surveillance Suite
+WoW Classic,Detect Lesser Invisibility,info,family,The Surveillance Suite
 WoW Classic,Create Firestone (Lesser),provision,family,The Conjured Commissary
 WoW Classic,Create Soulstone (Lesser),heal,family,The Resurrection Union
 WoW Classic,Summon Felhunter,create,family,The Menagerie
 WoW Classic,Create Healthstone,provision,family,The Conjured Commissary
 WoW Classic,Create Firestone,provision,family,The Conjured Commissary
 WoW Classic,Create Spellstone,provision,family,The Conjured Commissary
-WoW Classic,Curse of Idiocy,degrade,effect,
-WoW Classic,Detect Invisibility,info,effect,
+WoW Classic,Curse of Idiocy,degrade,family,The Debuff Bureau
+WoW Classic,Detect Invisibility,info,family,The Surveillance Suite
 WoW Classic,Create Soulstone,heal,family,The Resurrection Union
 WoW Classic,Summon Felsteed,create,family,The Menagerie
 WoW Classic,Create Firestone (Greater),provision,family,The Conjured Commissary
 WoW Classic,Create Healthstone (Greater),provision,family,The Conjured Commissary
-WoW Classic,Banish,disable,override,
+WoW Classic,Banish,disable,override,The Crowd Control Cabinet
 WoW Classic,Create Spellstone (Greater),provision,family,The Conjured Commissary
 WoW Classic,Create Soulstone (Greater),heal,family,The Resurrection Union
-WoW Classic,Curse of Tongues,degrade,family,The Curse Catalogue
-WoW Classic,Detect Greater Invisibility,info,effect,
+WoW Classic,Curse of Tongues,degrade,family,The Debuff Bureau
+WoW Classic,Detect Greater Invisibility,info,family,The Surveillance Suite
 WoW Classic,Inferno,create,family,The Menagerie
-WoW Classic,Curse of Weakness,degrade,family,The Curse Catalogue
-WoW Classic,Drain Soul,drain,override,
-WoW Classic,Drain Life,drain,override,
-WoW Classic,Drain Mana,drain,override,
-WoW Classic,Hellfire,damage,effect,
-WoW Classic,Howl of Terror,disable,family,The Fear Franchise
+WoW Classic,Curse of Weakness,degrade,family,The Debuff Bureau
+WoW Classic,Drain Soul,drain,override,The Shard Economy
+WoW Classic,Drain Life,drain,override,The Siphon Set
+WoW Classic,Drain Mana,drain,override,The Siphon Set
+WoW Classic,Hellfire,damage,family,The Area Barrage
+WoW Classic,Howl of Terror,disable,family,The Crowd Control Cabinet
 WoW Classic,Create Firestone (Major),provision,family,The Conjured Commissary
-WoW Classic,Curse of Recklessness,degrade,family,The Curse Catalogue
-WoW Classic,Curse of Shadow,degrade,family,The Curse Catalogue
-WoW Classic,Fear,disable,override,The Fear Franchise
-WoW Classic,Life Tap,drain,override,
-WoW Classic,Shadowburn,damage,effect,
-WoW Classic,Soul Fire,damage,effect,
+WoW Classic,Curse of Recklessness,degrade,family,The Debuff Bureau
+WoW Classic,Curse of Shadow,degrade,family,The Debuff Bureau
+WoW Classic,Fear,disable,override,The Crowd Control Cabinet
+WoW Classic,Life Tap,drain,override,The Siphon Set
+WoW Classic,Shadowburn,drain,family,The Shard Economy
+WoW Classic,Soul Fire,damage,family,The Bolt Engine
 WoW Classic,Create Healthstone (Major),provision,family,The Conjured Commissary
-WoW Classic,Curse of Agony,degrade,family,The Curse Catalogue
-WoW Classic,Death Coil,disable,effect,
-WoW Classic,Rain of Fire,damage,rule,
-WoW Classic,Searing Pain,damage,effect,
-WoW Classic,Siphon Life,drain,override,
-WoW Classic,Subjugate Demon,disable,rule,
-WoW Classic,Conflagrate,damage,effect,
+WoW Classic,Curse of Agony,degrade,family,The Debuff Bureau
+WoW Classic,Death Coil,disable,family,The Crowd Control Cabinet
+WoW Classic,Rain of Fire,damage,family,The Area Barrage
+WoW Classic,Searing Pain,damage,family,The Bolt Engine
+WoW Classic,Siphon Life,drain,override,The Siphon Set
+WoW Classic,Subjugate Demon,disable,family,The Crowd Control Cabinet
+WoW Classic,Conflagrate,damage,family,The Bolt Engine
 WoW Classic,Corruption,damage,family,The Affliction Engine
 WoW Classic,Create Soulstone (Major),heal,family,The Resurrection Union
 WoW Classic,Create Spellstone (Major),provision,family,The Conjured Commissary
-WoW Classic,Curse of Doom,degrade,family,The Curse Catalogue
-WoW Classic,Curse of the Elements,degrade,family,The Curse Catalogue
-WoW Classic,Dark Pact,provision,override,
+WoW Classic,Curse of Doom,degrade,family,The Debuff Bureau
+WoW Classic,Curse of the Elements,degrade,family,The Debuff Bureau
+WoW Classic,Dark Pact,provision,override,The Siphon Set
 WoW Classic,Demon Armor,defboost,family,The Protection Rack
-WoW Classic,Health Funnel,companion,override,
+WoW Classic,Health Funnel,companion,override,The Mending Clock
 WoW Classic,Immolate,damage,family,The Affliction Engine
 WoW Classic,Ritual of Doom,create,family,The Menagerie
 WoW Classic,Shadow Bolt,damage,family,The Bolt Engine
 WoW Classic,Shadow Ward,defboost,family,The Protection Rack
 WoW Classic,Summon Dreadsteed,create,family,The Menagerie
-WoW Classic,Battle Stance,roleshift,override,
-WoW Classic,Bloodrage,provision,effect,
-WoW Classic,Defensive Stance,roleshift,override,
-WoW Classic,Taunt,threat,override,The Druid Costume Shop
-WoW Classic,Shield Block,defboost,rule,
-WoW Classic,Disarm,disable,override,
-WoW Classic,Retaliation,utility,fallback,
-WoW Classic,Intimidating Shout,disable,family,The Fear Franchise
-WoW Classic,Challenging Shout,threat,override,The Druid Costume Shop
-WoW Classic,Shield Wall,defboost,rule,
-WoW Classic,Berserker Stance,roleshift,override,
-WoW Classic,Berserker Rage,disable,rule,
-WoW Classic,Whirlwind,damage,effect,
-WoW Classic,Charge,provision,effect,
-WoW Classic,Recklessness,disable,rule,
-WoW Classic,Intercept,disable,rule,
+WoW Classic,Battle Stance,roleshift,override,The Form Rack
+WoW Classic,Bloodrage,drain,family,The Siphon Set
+WoW Classic,Defensive Stance,roleshift,override,The Form Rack
+WoW Classic,Taunt,threat,override,The Aggro Ledger
+WoW Classic,Shield Block,defboost,family,The Protection Rack
+WoW Classic,Disarm,disable,override,The Crowd Control Cabinet
+WoW Classic,Retaliation,defboost,family,The Static Shell
+WoW Classic,Intimidating Shout,disable,family,The Crowd Control Cabinet
+WoW Classic,Challenging Shout,threat,override,The Aggro Ledger
+WoW Classic,Shield Wall,defboost,family,The Protection Rack
+WoW Classic,Berserker Stance,roleshift,override,The Form Rack
+WoW Classic,Berserker Rage,defboost,family,The Protection Rack
+WoW Classic,Whirlwind,damage,family,The Area Barrage
+WoW Classic,Charge,mobility,family,The Gap Closers
+WoW Classic,Recklessness,offboost,family,The Status Boost Rack
+WoW Classic,Intercept,mobility,family,The Gap Closers
 WoW Classic,Shield Bash,negation,family,The Interrupt Union
-WoW Classic,Demoralizing Shout,degrade,override,
-WoW Classic,Hamstring,disable,effect,
-WoW Classic,Slam,damage,effect,
-WoW Classic,Execute,damage,rule,
-WoW Classic,Mocking Blow,threat,override,
+WoW Classic,Demoralizing Shout,degrade,override,The Debuff Bureau
+WoW Classic,Hamstring,disable,family,The Slow Lane
+WoW Classic,Slam,damage,family,The Whetstone & The Strike
+WoW Classic,Execute,damage,family,The Whetstone & The Strike
+WoW Classic,Mocking Blow,threat,override,The Aggro Ledger
 WoW Classic,Pummel,negation,family,The Interrupt Union
-WoW Classic,Sunder Armor,degrade,override,
-WoW Classic,Thunder Clap,damage,effect,
-WoW Classic,Battle Shout,offboost,effect,
-WoW Classic,Bloodthirst,damage,effect,
-WoW Classic,Cleave,damage,effect,
-WoW Classic,Heroic Strike,damage,effect,
-WoW Classic,Mortal Strike,damage,effect,
-WoW Classic,Overpower,damage,effect,
+WoW Classic,Sunder Armor,degrade,override,The Debuff Bureau
+WoW Classic,Thunder Clap,damage,family,The Area Barrage
+WoW Classic,Battle Shout,offboost,family,The Status Boost Rack
+WoW Classic,Bloodthirst,damage,family,The Whetstone & The Strike
+WoW Classic,Cleave,damage,family,The Area Barrage
+WoW Classic,Heroic Strike,damage,family,The Whetstone & The Strike
+WoW Classic,Mortal Strike,damage,family,The Whetstone & The Strike
+WoW Classic,Overpower,damage,family,The Whetstone & The Strike
 WoW Classic,Rend,damage,family,The Affliction Engine
-WoW Classic,Revenge,damage,effect,
-WoW Classic,Shield Slam,negation,effect,
+WoW Classic,Revenge,damage,family,The Whetstone & The Strike
+WoW Classic,Shield Slam,negation,family,The Cleanse Counter

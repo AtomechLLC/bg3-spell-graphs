@@ -119,8 +119,9 @@ footer{{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);
 <p>The third axis of the homogeneity study. Families ask <em>how is it built</em>; class lists ask
 <em>who owns it</em>; purpose asks <em>what is it for</em>. Every ability in the three datasets —
 {tot['D&D 5e SRD']} D&amp;D SRD spells, {tot["Baldur's Gate 3"]} Baldur's Gate 3 spells,
-{tot['WoW Classic']} WoW Classic abilities — classified into seventeen functional purposes:
-seven requested, ten more that the data itself argues for.</p>
+{tot['WoW Classic']} WoW Classic abilities — classified into nineteen functional purposes:
+seven requested, twelve more that the data itself argues for (including two the WoW remap
+proposed: resource warfare and companion upkeep).</p>
 
 <div class="legend">
 <span><span class="dot" style="background:var(--srd)"></span>D&amp;D 5e SRD</span>

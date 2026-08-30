@@ -29,14 +29,17 @@ FAM_PURPOSE = {
     "conjure": "create", "cleanse": "negation", "d4-riders": "offboost",
     "ac-wardrobe": "defboost", "hp-pool-bg3": "disable",
     # WoW
-    "tracking": "info", "conjured": "provision", "heals": "heal",
-    "group-ladder": "offboost", "blessings": "offboost", "auras": "defboost",
-    "aspects": "roleshift", "stings": "degrade", "shocks": "damage",
-    "totems": "create", "curses": "degrade", "protection-wow": "defboost",
-    "bolts": "damage", "dots": "damage", "summons": "create", "rez": "heal",
-    "cat-is-rogue": "damage", "interrupts": "negation", "fears": "disable",
-    "cleanses": "negation", "mirror": "defboost", "seals": "offboost",
-    "polymorph-wow": "disable", "poisons": "degrade",
+    # WoW — current function-primary family slugs
+    "tracking": "info", "conjured": "provision", "heals": "heal", "hots": "heal",
+    "status-boosts": "offboost", "aspects": "roleshift", "totems": "create",
+    "curses": "degrade", "protection-wow": "defboost", "bolts": "damage",
+    "dots": "damage", "aoe-damage": "damage", "melee-enhance": "damage",
+    "summons": "create", "rez": "heal", "interrupts": "negation",
+    "cleanses": "negation", "seals": "offboost", "cc": "disable",
+    "snares": "disable", "travel": "mobility", "teleports": "mobility",
+    "concealment": "stealth", "threat": "threat", "forms": "roleshift",
+    "siphons": "drain", "shards": "drain", "gap-closers": "mobility",
+    "static-shell": "defboost", "fieldcraft": "utility",
 }
 
 # ------------------------------------------------- keyword rules (ordered)

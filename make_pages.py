@@ -80,10 +80,10 @@ duplicate SKUs, the surface engine, and the upcast clone farm.</p></a>
 <p>The tabletop companion: all 319 D&amp;D 5e SRD spells — 24 families of near-identical design,
 per-class lists, and the cross-class overlap matrix.</p></a>
 <a class="card" href="azeroth-codex.html"><span class="em">🐉</span><h2>The Azeroth Codex</h2>
-<p>WoW Classic's 423 trainer abilities from the game's own data: 25 families, the cross-class
-copy shop, and the rank clone farm — 69% of the spellbook is the same spell again.</p></a>
+<p>WoW Classic's 423 trainer abilities from the game's own data: 32 function-primary families at
+100% coverage, the mechanical-twin matrix, the rank clone farm, and the Effects Ledger.</p></a>
 <a class="card" href="purpose-atlas.html"><span class="em">🎯</span><h2>The Purpose Atlas</h2>
-<p>What every spell is <em>for</em>: 953 abilities across all three games in one functional
+<p>What every spell is <em>for</em>: 953 abilities across all three games in one nineteen-purpose
 taxonomy — and the divergences that reveal each medium's design priorities.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).

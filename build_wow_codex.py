@@ -570,7 +570,7 @@ page("methodology", "Methodology", "Start", f"""# Methodology
 
 **Known limits.** Talents are excluded (trainer spellbook only); pet abilities excluded; Classic Era data includes minor anniversary-era tuning. Cross-era comparison uses the same masks as the SRD and BG3 studies but the population definitions differ slightly per game — the headline percentages are directional, not decimal-precise.
 
-**Reproduce.** `wow_dataset.py` → `wow_analyze.py` → `wow_icons.py` → `build_wow_codex.py`. Companion codices: the D&D 5e SRD and Baldur's Gate 3.
+**Reproduce.** `wow_dataset.py` → `wow_analyze.py` (blended `SpellEffect`-signature similarity) → `wow_icons.py` → `wow_wowhead_pull.py` + `wow_effects_decode.py` (the Effects Ledger) → `build_wow_codex.py` → `build_wow_map.py`. Family curation is function-primary, verified against effect rows and documented player usage. Companion codices: the D&D 5e SRD and Baldur's Gate 3.
 """)
 
 # overview — cross-class mechanical-twin matrix (diagonal = within-class twins)
