@@ -16,7 +16,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 36 | <img class="sic" data-i="dispel-magic" alt=""> **Dispel Magic** | Holy | 2 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 40 | <img class="sic" data-i="power-infusion" alt=""> **Power Infusion** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 44 | <img class="sic" data-i="mind-vision" alt=""> **Mind Vision** | Shadow | 2 | [[families/tracking|🐾 The Surveillance Suite]] |
-| 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Shadow | 3 | [[families/soothe|🕊️ The Soothe Pair]] |
+| 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Shadow | 3 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] |
 | 54 | <img class="sic" data-i="smite" alt=""> **Smite** | Holy | 8 | [[families/bolts|🏹 The Bolt Engine]] |
 | 56 | <img class="sic" data-i="flash-heal" alt=""> **Flash Heal** | Holy | 7 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
 | 56 | <img class="sic" data-i="mana-burn" alt=""> **Mana Burn** | Shadow | 5 | [[families/siphons|🧛 The Siphon Set]] |

@@ -10,7 +10,7 @@ Mechanical twins (effect similarity ≥ 0.75): **6%** with [[classes/paladin|Pal
 | 10 | <img class="sic" data-i="create-healthstone-minor" alt=""> **Create Healthstone (Minor)** | Shadow | 1 | [[families/conjured|💎 The Conjured Commissary]] |
 | 10 | <img class="sic" data-i="demon-skin" alt=""> **Demon Skin** | Shadow | 2 | [[families/protection|🧿 The Protection Rack]] |
 | 10 | <img class="sic" data-i="summon-voidwalker" alt=""> **Summon Voidwalker** | Shadow | 1 | [[families/summons|😈 The Menagerie]] |
-| 16 | <img class="sic" data-i="unending-breath" alt=""> **Unending Breath** | Shadow | 1 | [[families/breath|🫧 The Deep Breath Pair]] |
+| 16 | <img class="sic" data-i="unending-breath" alt=""> **Unending Breath** | Shadow | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] |
 | 18 | <img class="sic" data-i="create-soulstone-minor" alt=""> **Create Soulstone (Minor)** | Shadow | 1 | [[families/rez|⚰️ The Resurrection Union]] |
 | 20 | <img class="sic" data-i="ritual-of-summoning" alt=""> **Ritual of Summoning** | Shadow | 1 | [[families/summons|😈 The Menagerie]] |
 | 20 | <img class="sic" data-i="summon-incubus" alt=""> **Summon Incubus** | Shadow | 1 | [[families/summons|😈 The Menagerie]] |

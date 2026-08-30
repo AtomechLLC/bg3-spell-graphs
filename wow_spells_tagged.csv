@@ -2,14 +2,14 @@ ability,classes,level,school,ranks,family,tier,purpose
 Auto Shot,Hunter,1,Physical,1,The Whetstone & The Strike,Shared template,Damage
 Battle Stance,Warrior,1,Physical,1,The Form Rack,Shared template,Role shift
 Cobra Reflexes,Hunter,1,Physical,1,The Menagerie,Shared template,Damage
-Pick Lock,Rogue,1,Physical,1,,,Utility & world
+Pick Lock,Rogue,1,Physical,1,The Fieldcraft Kit,Shared engine,Utility & world
 Summon Imp,Warlock,1,Shadow,1,The Menagerie,Shared template,Creating entities
 Track Beasts,Hunter,1,Physical,1,The Surveillance Suite,Verbatim clone,Information
 Vampiric Embrace,Priest,1,Shadow,1,The Siphon Set,Shared engine,Damage
 Aspect of the Monkey,Hunter,4,Nature,1,The Aspect Dial,Shared template,Role shift
 Ice Block,Mage,4,Frost,1,The Protection Rack,Shared template,Disables
 Judgement,Paladin,4,Holy,1,The Seal Press,Shared template,Damage
-Pick Pocket,Rogue,4,Physical,1,,,Utility & world
+Pick Pocket,Rogue,4,Physical,1,The Fieldcraft Kit,Shared engine,Utility & world
 Earthbind Totem,Shaman,6,Nature,1,The Totem Foundry,Shared template,Creating entities
 Mangle,Druid,6,Physical,1,The Whetstone & The Strike,Shared template,Disables
 Concussive Shot,Hunter,8,Arcane,1,The Slow Lane,Shared template,Disables
@@ -45,7 +45,7 @@ Cure Poison,Shaman,16,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Detect Magic,Mage,16,Arcane,1,The Surveillance Suite,Verbatim clone,Information
 Righteous Fury,Paladin,16,Holy,1,The Aggro Ledger,Verbatim clone,Threat control
 Shield Block,Warrior,16,Physical,1,The Protection Rack,Shared template,Defense boost
-Unending Breath,Warlock,16,Shadow,1,The Deep Breath Pair,Verbatim clone,Utility & world
+Unending Breath,Warlock,16,Shadow,1,The Fieldcraft Kit,Shared engine,Utility & world
 Blessing of Freedom,Paladin,18,Holy,1,The Status Boost Rack,Shared template,Utility & world
 Create Soulstone (Minor),Warlock,18,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Disarm,Warrior,18,Physical,1,The Crowd Control Cabinet,Shared template,Disables
@@ -60,7 +60,7 @@ Cat Form,Druid,20,Physical,1,The Form Rack,Shared template,Role shift
 Fear Ward,Priest,20,Holy,1,The Protection Rack,Shared template,Disables
 Frost Armor,Mage,20,Frost,3,The Protection Rack,Shared template,Defense boost
 Ghost Wolf,Shaman,20,Nature,1,The Travel Agency,Verbatim clone,Mobility
-Poisons,Rogue,20,Physical,1,,,Utility & world
+Poisons,Rogue,20,Physical,1,The Fieldcraft Kit,Shared engine,Utility & world
 Repentance,Paladin,20,Holy,1,The Crowd Control Cabinet,Shared template,Disables
 Retaliation,Warrior,20,Physical,1,The Static Shell,Verbatim clone,Utility & world
 Ritual of Summoning,Warlock,20,Shadow,1,The Menagerie,Shared template,Mobility
@@ -79,7 +79,7 @@ Eye of Kilrogg,Warlock,22,Shadow,1,The Menagerie,Shared template,Information
 Intimidating Shout,Warrior,22,Physical,1,The Crowd Control Cabinet,Shared template,Disables
 Poison Cleansing Totem,Shaman,22,Nature,1,The Totem Foundry,Shared template,Creating entities
 Seal of Justice,Paladin,22,Holy,1,The Seal Press,Shared template,Offense boost
-Water Breathing,Shaman,22,Nature,1,The Deep Breath Pair,Verbatim clone,Utility & world
+Water Breathing,Shaman,22,Nature,1,The Fieldcraft Kit,Shared engine,Utility & world
 Beast Lore,Hunter,24,Nature,1,The Menagerie,Shared template,Companion upkeep
 Counterspell,Mage,24,Arcane,1,The Interrupt Union,Verbatim clone,Negation
 Detect Traps,Rogue,24,Physical,1,The Surveillance Suite,Verbatim clone,Information
@@ -105,7 +105,7 @@ Aspect of the Beast,Hunter,30,Nature,1,The Aspect Dial,Shared template,Role shif
 Astral Recall,Shaman,30,Nature,1,The Travel Agency,Verbatim clone,Mobility
 Berserker Stance,Warrior,30,Physical,1,The Form Rack,Shared template,Role shift
 Create Soulstone (Lesser),Warlock,30,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
-Disarm Trap,Rogue,30,Physical,1,,,Utility & world
+Disarm Trap,Rogue,30,Physical,1,The Fieldcraft Kit,Shared engine,Utility & world
 Divine Intervention,Paladin,30,Holy,1,The Protection Rack,Shared template,Damage
 Feign Death,Hunter,30,Physical,1,The Vanishing Act,Verbatim clone,Threat control
 Grounding Totem,Shaman,30,Nature,1,The Totem Foundry,Shared template,Creating entities
@@ -185,7 +185,7 @@ Demoralizing Roar,Druid,52,Physical,5,The Debuff Bureau,Shared template,Offense 
 Drain Soul,Warlock,52,Shadow,4,The Shard Economy,Shared engine,Resource warfare
 Fire Nova Totem,Shaman,52,Fire,5,The Totem Foundry,Shared template,Creating entities
 Intercept,Warrior,52,Physical,3,The Gap Closers,Verbatim clone,Disables
-Mind Soothe,Priest,52,Shadow,3,The Soothe Pair,Verbatim clone,Degradation
+Mind Soothe,Priest,52,Shadow,3,The Fieldcraft Kit,Shared engine,Degradation
 Mind-numbing Poison III,Rogue,52,Physical,1,The Whetstone & The Strike,Shared template,Degradation
 Scorpid Sting,Hunter,52,Nature,4,The Affliction Engine,Shared engine,Degradation
 Seal of the Crusader,Paladin,52,Holy,6,The Seal Press,Shared template,Offense boost
@@ -218,7 +218,7 @@ Shred,Druid,54,Physical,5,The Whetstone & The Strike,Shared template,Damage
 Sinister Strike,Rogue,54,Physical,8,The Whetstone & The Strike,Shared template,Damage
 Slam,Warrior,54,Physical,4,The Whetstone & The Strike,Shared template,Damage
 Smite,Priest,54,Holy,8,The Bolt Engine,Shared engine,Damage
-Soothe Animal,Druid,54,Nature,3,The Soothe Pair,Verbatim clone,Degradation
+Soothe Animal,Druid,54,Nature,3,The Fieldcraft Kit,Shared engine,Degradation
 Stoneskin Totem,Shaman,54,Nature,6,The Totem Foundry,Shared template,Creating entities
 Swipe,Druid,54,Physical,5,The Whetstone & The Strike,Shared template,Damage
 Thorns,Druid,54,Nature,6,The Static Shell,Verbatim clone,Defense boost

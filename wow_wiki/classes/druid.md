@@ -32,7 +32,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/rogue|Rogu
 | 54 | <img class="sic" data-i="faerie-fire-feral" alt=""> **Faerie Fire (Feral)** | Nature | 4 | [[families/curses|💀 The Debuff Bureau]] |
 | 54 | <img class="sic" data-i="rake" alt=""> **Rake** | Physical | 4 | [[families/dots|🩸 The Affliction Engine]] |
 | 54 | <img class="sic" data-i="shred" alt=""> **Shred** | Physical | 5 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
-| 54 | <img class="sic" data-i="soothe-animal" alt=""> **Soothe Animal** | Nature | 3 | [[families/soothe|🕊️ The Soothe Pair]] |
+| 54 | <img class="sic" data-i="soothe-animal" alt=""> **Soothe Animal** | Nature | 3 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] |
 | 54 | <img class="sic" data-i="swipe" alt=""> **Swipe** | Physical | 5 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] |
 | 54 | <img class="sic" data-i="thorns" alt=""> **Thorns** | Nature | 6 | [[families/static-shell|🌩️ The Static Shell]] |
 | 54 | <img class="sic" data-i="wrath" alt=""> **Wrath** | Nature | 8 | [[families/bolts|🏹 The Bolt Engine]] |

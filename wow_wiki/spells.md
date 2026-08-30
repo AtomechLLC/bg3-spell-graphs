@@ -7,14 +7,14 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 1 | <img class="sic" data-i="auto-shot" alt=""> **Auto Shot** | Hunter | Physical | 1 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 1 | <img class="sic" data-i="battle-stance" alt=""> **Battle Stance** | Warrior | Physical | 1 | [[families/forms|🐻 The Form Rack]] | <span class="tier tier-template">Shared template</span> | 🐻 Role shift |
 | 1 | <img class="sic" data-i="cobra-reflexes" alt=""> **Cobra Reflexes** | Hunter | Physical | 1 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
-| 1 | <img class="sic" data-i="pick-lock" alt=""> **Pick Lock** | Rogue | Physical | 1 | — |  | 🔧 Utility & world |
+| 1 | <img class="sic" data-i="pick-lock" alt=""> **Pick Lock** | Rogue | Physical | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🔧 Utility & world |
 | 1 | <img class="sic" data-i="summon-imp" alt=""> **Summon Imp** | Warlock | Shadow | 1 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 1 | <img class="sic" data-i="track-beasts" alt=""> **Track Beasts** | Hunter | Physical | 1 | [[families/tracking|🐾 The Surveillance Suite]] | <span class="tier tier-clone">Verbatim clone</span> | 👁️ Information |
 | 1 | <img class="sic" data-i="vampiric-embrace" alt=""> **Vampiric Embrace** | Priest | Shadow | 1 | [[families/siphons|🧛 The Siphon Set]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
 | 4 | <img class="sic" data-i="aspect-of-the-monkey" alt=""> **Aspect of the Monkey** | Hunter | Nature | 1 | [[families/aspects|🦅 The Aspect Dial]] | <span class="tier tier-template">Shared template</span> | 🐻 Role shift |
 | 4 | <img class="sic" data-i="ice-block" alt=""> **Ice Block** | Mage | Frost | 1 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 4 | <img class="sic" data-i="judgement" alt=""> **Judgement** | Paladin | Holy | 1 | [[families/seals|✝️ The Seal Press]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
-| 4 | <img class="sic" data-i="pick-pocket" alt=""> **Pick Pocket** | Rogue | Physical | 1 | — |  | 🔧 Utility & world |
+| 4 | <img class="sic" data-i="pick-pocket" alt=""> **Pick Pocket** | Rogue | Physical | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🔧 Utility & world |
 | 6 | <img class="sic" data-i="earthbind-totem" alt=""> **Earthbind Totem** | Shaman | Nature | 1 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 6 | <img class="sic" data-i="mangle" alt=""> **Mangle** | Druid | Physical | 1 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 8 | <img class="sic" data-i="concussive-shot" alt=""> **Concussive Shot** | Hunter | Arcane | 1 | [[families/snares|🥶 The Slow Lane]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
@@ -50,7 +50,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 16 | <img class="sic" data-i="detect-magic" alt=""> **Detect Magic** | Mage | Arcane | 1 | [[families/tracking|🐾 The Surveillance Suite]] | <span class="tier tier-clone">Verbatim clone</span> | 👁️ Information |
 | 16 | <img class="sic" data-i="righteous-fury" alt=""> **Righteous Fury** | Paladin | Holy | 1 | [[families/threat|😡 The Aggro Ledger]] | <span class="tier tier-clone">Verbatim clone</span> | 😡 Threat control |
 | 16 | <img class="sic" data-i="shield-block" alt=""> **Shield Block** | Warrior | Physical | 1 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 🛡️ Defense boost |
-| 16 | <img class="sic" data-i="unending-breath" alt=""> **Unending Breath** | Warlock | Shadow | 1 | [[families/breath|🫧 The Deep Breath Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 🔧 Utility & world |
+| 16 | <img class="sic" data-i="unending-breath" alt=""> **Unending Breath** | Warlock | Shadow | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🔧 Utility & world |
 | 18 | <img class="sic" data-i="blessing-of-freedom" alt=""> **Blessing of Freedom** | Paladin | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 🔧 Utility & world |
 | 18 | <img class="sic" data-i="create-soulstone-minor" alt=""> **Create Soulstone (Minor)** | Warlock | Shadow | 1 | [[families/rez|⚰️ The Resurrection Union]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
 | 18 | <img class="sic" data-i="disarm" alt=""> **Disarm** | Warrior | Physical | 1 | [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
@@ -65,7 +65,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 20 | <img class="sic" data-i="fear-ward" alt=""> **Fear Ward** | Priest | Holy | 1 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 20 | <img class="sic" data-i="frost-armor" alt=""> **Frost Armor** | Mage | Frost | 3 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 🛡️ Defense boost |
 | 20 | <img class="sic" data-i="ghost-wolf" alt=""> **Ghost Wolf** | Shaman | Nature | 1 | [[families/travel|🌀 The Travel Agency]] | <span class="tier tier-clone">Verbatim clone</span> | 🌀 Mobility |
-| 20 | <img class="sic" data-i="poisons" alt=""> **Poisons** | Rogue | Physical | 1 | — |  | 🔧 Utility & world |
+| 20 | <img class="sic" data-i="poisons" alt=""> **Poisons** | Rogue | Physical | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🔧 Utility & world |
 | 20 | <img class="sic" data-i="repentance" alt=""> **Repentance** | Paladin | Holy | 1 | [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 20 | <img class="sic" data-i="retaliation" alt=""> **Retaliation** | Warrior | Physical | 1 | [[families/static-shell|🌩️ The Static Shell]] | <span class="tier tier-clone">Verbatim clone</span> | 🔧 Utility & world |
 | 20 | <img class="sic" data-i="ritual-of-summoning" alt=""> **Ritual of Summoning** | Warlock | Shadow | 1 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 🌀 Mobility |
@@ -84,7 +84,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 22 | <img class="sic" data-i="intimidating-shout" alt=""> **Intimidating Shout** | Warrior | Physical | 1 | [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables |
 | 22 | <img class="sic" data-i="poison-cleansing-totem" alt=""> **Poison Cleansing Totem** | Shaman | Nature | 1 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 22 | <img class="sic" data-i="seal-of-justice" alt=""> **Seal of Justice** | Paladin | Holy | 1 | [[families/seals|✝️ The Seal Press]] | <span class="tier tier-template">Shared template</span> | ⚔️ Offense boost |
-| 22 | <img class="sic" data-i="water-breathing" alt=""> **Water Breathing** | Shaman | Nature | 1 | [[families/breath|🫧 The Deep Breath Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 🔧 Utility & world |
+| 22 | <img class="sic" data-i="water-breathing" alt=""> **Water Breathing** | Shaman | Nature | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🔧 Utility & world |
 | 24 | <img class="sic" data-i="beast-lore" alt=""> **Beast Lore** | Hunter | Nature | 1 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 🐕 Companion upkeep |
 | 24 | <img class="sic" data-i="counterspell" alt=""> **Counterspell** | Mage | Arcane | 1 | [[families/interrupts|✋ The Interrupt Union]] | <span class="tier tier-clone">Verbatim clone</span> | 🧯 Negation |
 | 24 | <img class="sic" data-i="detect-traps" alt=""> **Detect Traps** | Rogue | Physical | 1 | [[families/tracking|🐾 The Surveillance Suite]] | <span class="tier tier-clone">Verbatim clone</span> | 👁️ Information |
@@ -110,7 +110,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 30 | <img class="sic" data-i="astral-recall" alt=""> **Astral Recall** | Shaman | Nature | 1 | [[families/travel|🌀 The Travel Agency]] | <span class="tier tier-clone">Verbatim clone</span> | 🌀 Mobility |
 | 30 | <img class="sic" data-i="berserker-stance" alt=""> **Berserker Stance** | Warrior | Physical | 1 | [[families/forms|🐻 The Form Rack]] | <span class="tier tier-template">Shared template</span> | 🐻 Role shift |
 | 30 | <img class="sic" data-i="create-soulstone-lesser" alt=""> **Create Soulstone (Lesser)** | Warlock | Shadow | 1 | [[families/rez|⚰️ The Resurrection Union]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
-| 30 | <img class="sic" data-i="disarm-trap" alt=""> **Disarm Trap** | Rogue | Physical | 1 | — |  | 🔧 Utility & world |
+| 30 | <img class="sic" data-i="disarm-trap" alt=""> **Disarm Trap** | Rogue | Physical | 1 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🔧 Utility & world |
 | 30 | <img class="sic" data-i="divine-intervention" alt=""> **Divine Intervention** | Paladin | Holy | 1 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 30 | <img class="sic" data-i="feign-death" alt=""> **Feign Death** | Hunter | Physical | 1 | [[families/concealment|🎭 The Vanishing Act]] | <span class="tier tier-clone">Verbatim clone</span> | 😡 Threat control |
 | 30 | <img class="sic" data-i="grounding-totem" alt=""> **Grounding Totem** | Shaman | Nature | 1 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
@@ -190,7 +190,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 52 | <img class="sic" data-i="drain-soul" alt=""> **Drain Soul** | Warlock | Shadow | 4 | [[families/shards|🔮 The Shard Economy]] | <span class="tier tier-engine">Shared engine</span> | 🧛 Resource warfare |
 | 52 | <img class="sic" data-i="fire-nova-totem" alt=""> **Fire Nova Totem** | Shaman | Fire | 5 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 52 | <img class="sic" data-i="intercept" alt=""> **Intercept** | Warrior | Physical | 3 | [[families/gap-closers|🏃 The Gap Closers]] | <span class="tier tier-clone">Verbatim clone</span> | ⛓️ Disables |
-| 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Priest | Shadow | 3 | [[families/soothe|🕊️ The Soothe Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 🩸 Degradation |
+| 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Priest | Shadow | 3 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🩸 Degradation |
 | 52 | <img class="sic" data-i="mind-numbing-poison-iii" alt=""> **Mind-numbing Poison III** | Rogue | Physical | 1 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 🩸 Degradation |
 | 52 | <img class="sic" data-i="scorpid-sting" alt=""> **Scorpid Sting** | Hunter | Nature | 4 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | 🩸 Degradation |
 | 52 | <img class="sic" data-i="seal-of-the-crusader" alt=""> **Seal of the Crusader** | Paladin | Holy | 6 | [[families/seals|✝️ The Seal Press]] | <span class="tier tier-template">Shared template</span> | ⚔️ Offense boost |
@@ -223,7 +223,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 54 | <img class="sic" data-i="sinister-strike" alt=""> **Sinister Strike** | Rogue | Physical | 8 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 54 | <img class="sic" data-i="slam" alt=""> **Slam** | Warrior | Physical | 4 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 54 | <img class="sic" data-i="smite" alt=""> **Smite** | Priest | Holy | 8 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
-| 54 | <img class="sic" data-i="soothe-animal" alt=""> **Soothe Animal** | Druid | Nature | 3 | [[families/soothe|🕊️ The Soothe Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 🩸 Degradation |
+| 54 | <img class="sic" data-i="soothe-animal" alt=""> **Soothe Animal** | Druid | Nature | 3 | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | <span class="tier tier-engine">Shared engine</span> | 🩸 Degradation |
 | 54 | <img class="sic" data-i="stoneskin-totem" alt=""> **Stoneskin Totem** | Shaman | Nature | 6 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 54 | <img class="sic" data-i="swipe" alt=""> **Swipe** | Druid | Physical | 5 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 💥 Damage |
 | 54 | <img class="sic" data-i="thorns" alt=""> **Thorns** | Druid | Nature | 6 | [[families/static-shell|🌩️ The Static Shell]] | <span class="tier tier-clone">Verbatim clone</span> | 🛡️ Defense boost |
