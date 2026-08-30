@@ -23,11 +23,14 @@ FAM_PURPOSE = {
     "attack-cantrips": "damage", "phantom-armory": "create", "dispel": "negation",
     "darkness-daylight": "zone", "speak-with": "info", "protection": "defboost",
     "touch-buffs": "mobility", "guidance-resistance": "offboost",
-    # BG3 — current function-primary family slugs
+    # BG3 — native families + WoW-lens gap-fills
     "duplicate-skus": "defboost", "walls": "zone",
-    "surfaces": "zone", "melee-enhance": "damage", "travel": "mobility",
+    "surfaces": "zone", "smites": "damage", "imbues": "offboost",
+    "teleports": "mobility", "charm": "disable", "cc-misc": "disable",
     "conjure": "create", "cleanse": "negation", "d4-riders": "offboost",
-    "ac-wardrobe": "defboost", "cc": "disable", "fieldcraft": "utility",
+    "ac-wardrobe": "defboost", "fieldcraft": "utility",
+    "marks": "degrade", "zones": "damage", "temp-hp": "defboost",
+    "provisions": "provision", "bolts": "damage",
     # WoW
     # WoW — current function-primary family slugs
     "tracking": "info", "conjured": "provision", "heals": "heal", "hots": "heal",
@@ -168,6 +171,7 @@ def srd_effect_purpose(s):
 
 OVERRIDES = {
     # cross-game judgment calls
+    "compelled duel": "threat",
     "magic missile": "damage", "eldritch blast": "damage", "spiritual weapon": "create",
     "counterspell": "negation", "dispel magic": "negation", "silence": "disable",
     "banishment": "remove", "turn undead": "remove", "exorcism": "damage",

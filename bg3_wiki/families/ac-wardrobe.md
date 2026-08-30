@@ -17,4 +17,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/wizard|Wizard]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/wizard|Wizard]] · [[families/protection|The Protection Rack]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*

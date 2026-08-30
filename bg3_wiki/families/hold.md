@@ -16,4 +16,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/cc-misc|The Control Ward]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*

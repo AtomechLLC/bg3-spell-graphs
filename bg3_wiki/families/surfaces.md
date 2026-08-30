@@ -24,4 +24,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/zones|The Blender Aisle]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
