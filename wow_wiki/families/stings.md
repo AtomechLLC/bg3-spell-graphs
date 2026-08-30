@@ -4,9 +4,9 @@
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Scorpid Sting** | Hunter | 52 | Nature | 4 | Stings the target, reducing Strength and Agility by X for X.  Only one Sting per Hunter can be active on any o |
-| **Viper Sting** | Hunter | 56 | Nature | 3 | Stings the target, draining X mana over X.  Only one Sting per Hunter can be active on any one target. |
-| **Serpent Sting** | Hunter | 60 | Nature | 9 | Stings the target, causing X Nature damage over X.  Only one Sting per Hunter can be active on any one target. |
+| <img class="sic" data-i="scorpid-sting" alt=""> **Scorpid Sting** | Hunter | 52 | Nature | 4 | Stings the target, reducing Strength and Agility by X for X.  Only one Sting per Hunter can be active on any o |
+| <img class="sic" data-i="viper-sting" alt=""> **Viper Sting** | Hunter | 56 | Nature | 3 | Stings the target, draining X mana over X.  Only one Sting per Hunter can be active on any one target. |
+| <img class="sic" data-i="serpent-sting" alt=""> **Serpent Sting** | Hunter | 60 | Nature | 9 | Stings the target, causing X Nature damage over X.  Only one Sting per Hunter can be active on any one target. |
 
 **Shared skeleton.** 'Stings the target, causing X over/for Y sec.' Serpent/Viper measure 0.89, Scorpid 0.81 against both.
 

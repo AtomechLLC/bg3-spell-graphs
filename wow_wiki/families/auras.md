@@ -4,13 +4,13 @@
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Concentration Aura** | Paladin | 22 | Holy | 1 | Gives a X% chance of ignoring spell interruption when damaged to all party members within X yards.  Players ma |
-| **Sanctity Aura** | Paladin | 30 | Holy | 1 | Increases Holy damage done by party members within X yards by X%.  Players may only have one Aura on them per  |
-| **Shadow Resistance Aura** | Paladin | 52 | Holy | 3 | Gives X additional Shadow resistance to all party members within X yards.  Players may only have one Aura on t |
-| **Frost Resistance Aura** | Paladin | 56 | Holy | 3 | Gives X additional Frost resistance to all party members within X yards.  Players may only have one Aura on th |
-| **Retribution Aura** | Paladin | 56 | Holy | 5 | Causes X Holy damage to any creature that strikes a party member within X yards.  Players may only have one Au |
-| **Devotion Aura** | Paladin | 60 | Holy | 7 | Gives X additional armor to party members within X yards.  Players may only have one Aura on them per Paladin  |
-| **Fire Resistance Aura** | Paladin | 60 | Holy | 3 | Gives X additional Fire resistance to all party members within X yards.  Players may only have one Aura on the |
+| <img class="sic" data-i="concentration-aura" alt=""> **Concentration Aura** | Paladin | 22 | Holy | 1 | Gives a X% chance of ignoring spell interruption when damaged to all party members within X yards.  Players ma |
+| <img class="sic" data-i="sanctity-aura" alt=""> **Sanctity Aura** | Paladin | 30 | Holy | 1 | Increases Holy damage done by party members within X yards by X%.  Players may only have one Aura on them per  |
+| <img class="sic" data-i="shadow-resistance-aura" alt=""> **Shadow Resistance Aura** | Paladin | 52 | Holy | 3 | Gives X additional Shadow resistance to all party members within X yards.  Players may only have one Aura on t |
+| <img class="sic" data-i="frost-resistance-aura" alt=""> **Frost Resistance Aura** | Paladin | 56 | Holy | 3 | Gives X additional Frost resistance to all party members within X yards.  Players may only have one Aura on th |
+| <img class="sic" data-i="retribution-aura" alt=""> **Retribution Aura** | Paladin | 56 | Holy | 5 | Causes X Holy damage to any creature that strikes a party member within X yards.  Players may only have one Au |
+| <img class="sic" data-i="devotion-aura" alt=""> **Devotion Aura** | Paladin | 60 | Holy | 7 | Gives X additional armor to party members within X yards.  Players may only have one Aura on them per Paladin  |
+| <img class="sic" data-i="fire-resistance-aura" alt=""> **Fire Resistance Aura** | Paladin | 60 | Holy | 3 | Gives X additional Fire resistance to all party members within X yards.  Players may only have one Aura on the |
 
 **Shared skeleton.** 'Gives X to all party members within 30 yards.' The three resistance auras are word-identical but for the school (0.9+); the rest swap the granted stat.
 

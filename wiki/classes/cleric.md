@@ -1,6 +1,6 @@
 # Cleric Spell List
 
-**105 spells** in the SRD · **27** exclusive to Cleric (26%) · **28** belong to an identified [[findings|template family]] (27%)
+**105 spells** in the SRD · **27** exclusive to Cleric (26%) · **29** belong to an identified [[findings|template family]] (28%)
 
 List overlap: **38%** shared with [[classes/druid|Druid]], **35%** shared with [[classes/wizard|Wizard]], **34%** shared with [[classes/bard|Bard]].
 
@@ -92,7 +92,7 @@ List overlap: **38%** shared with [[classes/druid|Druid]], **35%** shared with [
 | 6 | <img class="sic" data-i="harm" alt=""> **Harm** | Necromancy | — | *(exclusive)* |
 | 6 | <img class="sic" data-i="heal" alt=""> **Heal** | Evocation | — | [[classes/druid|Druid]] |
 | 6 | <img class="sic" data-i="heroes-feast" alt=""> **Heroes' Feast** | Conjuration | — | [[classes/druid|Druid]] |
-| 6 | <img class="sic" data-i="planar-ally" alt=""> **Planar Ally** | Conjuration | — | *(exclusive)* |
+| 6 | <img class="sic" data-i="planar-ally" alt=""> **Planar Ally** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | *(exclusive)* |
 | 6 | <img class="sic" data-i="true-seeing" alt=""> **True Seeing** | Divination | — | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 6 | **Word of Recall** | Conjuration | — | *(exclusive)* |
 | 7 | **Conjure Celestial** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | *(exclusive)* |

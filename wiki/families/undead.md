@@ -11,9 +11,9 @@
 
 **What varies.** The product tier (skeletons and zombies at 3rd, ghouls at 6th) and the batch sizes.
 
-**Design read.** A subscription mechanic — the 24-hour re-upkeep clause — copied wholesale between two levels of the same product line.
+**Design read.** A subscription mechanic — the 24-hour re-upkeep clause — copied wholesale between two levels of the same product line. The fourth shelf of the conjuration aisle: entities *raised* rather than called, alongside [[families/conjure-table|units]], [[families/conjure-single|champions]], and [[families/phantom-armory|objects]].
 
 See the full ranked list on [[findings|The Identical-Spell List]], or how scores were computed in [[methodology|Methodology]].
 
 ---
-*Linked from: [[classes/cleric|Cleric]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/cleric|Cleric]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/phantom-armory|The Phantom Armory]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*

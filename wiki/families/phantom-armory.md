@@ -15,9 +15,9 @@
 
 **What varies.** The conjured thing (floating weapon, sword of force, giant hand, rolling fire sphere, watchdog, invisible butler), its damage or utility, and its duration.
 
-**Design read.** The third shelf of the conjuration aisle: [[families/conjure-table|units by menu]], [[families/conjure-single|single champions]], and here the objects and weapons — the summoning contract applied to things instead of creatures.
+**Design read.** One shelf of the conjuration aisle: [[families/conjure-table|units by menu]], [[families/conjure-single|single champions]], [[families/undead|raised undead]], and here the objects and weapons — the summoning contract applied to things instead of creatures.
 
 See the full ranked list on [[findings|The Identical-Spell List]], or how scores were computed in [[methodology|Methodology]].
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/undead|The Undead Workshop]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*

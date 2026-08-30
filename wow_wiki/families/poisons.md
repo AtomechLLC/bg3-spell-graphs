@@ -4,11 +4,11 @@
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Mind-numbing Poison** | Rogue | 24 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
+| <img class="sic" data-i="mind-numbing-poison" alt=""> **Mind-numbing Poison** | Rogue | 24 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
 Each strike has a 20% chance of poisoning the enemy, in |
-| **Mind-numbing Poison II** | Rogue | 38 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
+| <img class="sic" data-i="mind-numbing-poison-ii" alt=""> **Mind-numbing Poison II** | Rogue | 38 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
 Each strike has a 20% chance of poisoning the enemy, in |
-| **Mind-numbing Poison III** | Rogue | 52 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
+| <img class="sic" data-i="mind-numbing-poison-iii" alt=""> **Mind-numbing Poison III** | Rogue | 52 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
 Each strike has a 20% chance of poisoning the enemy, in |
 
 **Shared skeleton.** 'Coats a weapon with poison that lasts X…' — the same vial three times, with the rank number promoted into the spell name (0.9+ pairwise). The rest of the poison rack (Instant, Deadly, Crippling, Wound) is item-crafted rather than trainer-taught, so it sits outside this population.

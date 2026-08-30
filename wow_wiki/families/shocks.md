@@ -4,9 +4,9 @@
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Frost Shock** | Shaman | 58 | Frost | 4 | Instantly shocks the target with frost, causing X Frost damage and slowing movement speed by X%.  Lasts X. |
-| **Earth Shock** | Shaman | 60 | Nature | 7 | Instantly shocks the target with concussive force, causing X Nature damage.  It also interrupts spellcasting a |
-| **Flame Shock** | Shaman | 60 | Fire | 6 | Instantly sears the target with fire, causing X Fire damage immediately and X Fire damage over X. |
+| <img class="sic" data-i="frost-shock" alt=""> **Frost Shock** | Shaman | 58 | Frost | 4 | Instantly shocks the target with frost, causing X Frost damage and slowing movement speed by X%.  Lasts X. |
+| <img class="sic" data-i="earth-shock" alt=""> **Earth Shock** | Shaman | 60 | Nature | 7 | Instantly shocks the target with concussive force, causing X Nature damage.  It also interrupts spellcasting a |
+| <img class="sic" data-i="flame-shock" alt=""> **Flame Shock** | Shaman | 60 | Fire | 6 | Instantly sears the target with fire, causing X Fire damage immediately and X Fire damage over X. |
 
 **Shared skeleton.** 'Instantly shocks the target with X, causing Y damage plus Z.' The famous instant-nuke trio; Earth Shock even measures 0.72 against Warrior and Rogue interrupts — it IS the Shaman's [[families/interrupts|interrupt]] wearing an elemental coat.
 

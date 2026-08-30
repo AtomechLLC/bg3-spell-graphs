@@ -5,11 +5,11 @@
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | **Aspect of the Monkey** | Hunter | 4 | Nature | 1 | The hunter takes on the aspects of a monkey, increasing chance to dodge by X%.  Only one Aspect can be active  |
-| **Aspect of the Cheetah** | Hunter | 20 | Nature | 1 | The hunter takes on the aspects of a cheetah, increasing movement speed by X%.  If the hunter takes damage, X: |
-| **Aspect of the Beast** | Hunter | 30 | Nature | 1 | The hunter takes on the aspects of a beast, becoming untrackable.  Only one Aspect can be active at a time. |
-| **Aspect of the Pack** | Hunter | 40 | Nature | 1 | The hunter and group members within X yards take on the aspects of a pack of cheetahs, increasing movement spe |
-| **Aspect of the Wild** | Hunter | 56 | Nature | 2 | The hunter and group members within X yards take on the aspect of the wild, increasing Nature resistance by X. |
-| **Aspect of the Hawk** | Hunter | 60 | Nature | 7 | The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by X.  Only one Aspect can be active |
+| <img class="sic" data-i="aspect-of-the-cheetah" alt=""> **Aspect of the Cheetah** | Hunter | 20 | Nature | 1 | The hunter takes on the aspects of a cheetah, increasing movement speed by X%.  If the hunter takes damage, X: |
+| <img class="sic" data-i="aspect-of-the-beast" alt=""> **Aspect of the Beast** | Hunter | 30 | Nature | 1 | The hunter takes on the aspects of a beast, becoming untrackable.  Only one Aspect can be active at a time. |
+| <img class="sic" data-i="aspect-of-the-pack" alt=""> **Aspect of the Pack** | Hunter | 40 | Nature | 1 | The hunter and group members within X yards take on the aspects of a pack of cheetahs, increasing movement spe |
+| <img class="sic" data-i="aspect-of-the-wild" alt=""> **Aspect of the Wild** | Hunter | 56 | Nature | 2 | The hunter and group members within X yards take on the aspect of the wild, increasing Nature resistance by X. |
+| <img class="sic" data-i="aspect-of-the-hawk" alt=""> **Aspect of the Hawk** | Hunter | 60 | Nature | 7 | The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by X.  Only one Aspect can be active |
 
 **Shared skeleton.** 'The hunter takes on the aspect of X, gaining Y. Only one Aspect can be active at a time.' Monkey/Hawk measure 0.82.
 

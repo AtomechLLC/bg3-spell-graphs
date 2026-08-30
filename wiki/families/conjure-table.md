@@ -17,4 +17,4 @@
 See the full ranked list on [[findings|The Identical-Spell List]], or how scores were computed in [[methodology|Methodology]].
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/ranger|Ranger]] · [[classes/wizard|Wizard]] · [[families/conjure-single|Conjure a Champion]] · [[families/phantom-armory|The Phantom Armory]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/ranger|Ranger]] · [[classes/wizard|Wizard]] · [[families/conjure-single|Conjure a Champion]] · [[families/phantom-armory|The Phantom Armory]] · [[families/undead|The Undead Workshop]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*

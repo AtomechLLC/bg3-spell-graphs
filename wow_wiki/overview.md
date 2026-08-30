@@ -24,7 +24,7 @@ Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), cl
 
 ## Axis 2 — one chassis, many payloads
 
-Classic's signature template shape is the **payload rack**: [[families/totems|21 totems]], [[families/blessings|8 blessings]] (×2 with Greaters), [[families/curses|8 curses]], [[families/tracking|10 tracking dials]], [[families/teleports|a 6×2 teleport matrix]], [[families/conjured|23 conjured consumables]], [[families/seals|6 seals]], [[families/poisons|5 poisons]], [[families/aspects|6 aspects]]. **202 of 423 abilities (48%) sit in 25 families.**
+Classic's signature template shape is the **payload rack**: [[families/totems|21 totems]], [[families/blessings|8 blessings]] (×2 with Greaters), [[families/curses|8 curses]], [[families/tracking|10 tracking dials]], [[families/teleports|a 6×2 teleport matrix]], [[families/conjured|23 conjured consumables]], [[families/seals|6 seals]], [[families/poisons|5 poisons]], [[families/aspects|6 aspects]]. **206 of 423 abilities (49%) sit in 25 families.**
 
 ## Browse
 

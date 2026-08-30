@@ -1,6 +1,6 @@
 # All Spells, Tagged by Family
 
-Every one of the **319 SRD spells**, flat, with its family tag — **79 spells carry a tag** (25%), the rest are mechanically singular designs (marked —). Tiers are defined on [[findings|The Identical-Spell List]]; family pages hold the member stat tables and design reads.
+Every one of the **319 SRD spells**, flat, with its family tag — **80 spells carry a tag** (25%), the rest are mechanically singular designs (marked —). Tiers are defined on [[findings|The Identical-Spell List]]; family pages hold the member stat tables and design reads.
 
 | Lv | Spell | School | Family | Tier | Classes |
 |---|---|---|---|---|---|
@@ -263,7 +263,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **79 spells c
 | 6 | <img class="sic" data-i="magic-jar" alt=""> **Magic Jar** | Necromancy | — |  | [[classes/wizard|Wizard]] |
 | 6 | **Mass Suggestion** | Enchantment | [[families/suggestion|💬 The Suggestion Pair]] | <span class="tier tier-template">Shared template</span> | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 6 | **Move Earth** | Transmutation | — |  | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 6 | <img class="sic" data-i="planar-ally" alt=""> **Planar Ally** | Conjuration | — |  | [[classes/cleric|Cleric]] |
+| 6 | <img class="sic" data-i="planar-ally" alt=""> **Planar Ally** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | <span class="tier tier-template">Shared template</span> | [[classes/cleric|Cleric]] |
 | 6 | **Programmed Illusion** | Illusion | — |  | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 6 | <img class="sic" data-i="sunbeam" alt=""> **Sunbeam** | Evocation | — |  | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 6 | **Transport via Plants** | Conjuration | — |  | [[classes/druid|Druid]] |

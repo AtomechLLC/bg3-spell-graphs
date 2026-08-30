@@ -5,17 +5,17 @@
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | **Teleport: Ironforge** | Mage | 20 | Arcane | 1 | Teleports the caster to Ironforge. |
-| **Teleport: Orgrimmar** | Mage | 20 | Arcane | 1 | Teleports the caster to Orgrimmar. |
-| **Teleport: Stormwind** | Mage | 20 | Arcane | 1 | Teleports the caster to Stormwind. |
+| <img class="sic" data-i="teleport-orgrimmar" alt=""> **Teleport: Orgrimmar** | Mage | 20 | Arcane | 1 | Teleports the caster to Orgrimmar. |
+| <img class="sic" data-i="teleport-stormwind" alt=""> **Teleport: Stormwind** | Mage | 20 | Arcane | 1 | Teleports the caster to Stormwind. |
 | **Teleport: Undercity** | Mage | 20 | Arcane | 1 | Teleports the caster to Undercity. |
-| **Teleport: Darnassus** | Mage | 30 | Arcane | 1 | Teleports the caster to Darnassus. |
-| **Teleport: Thunder Bluff** | Mage | 30 | Arcane | 1 | Teleports the caster to Thunder Bluff. |
+| <img class="sic" data-i="teleport-darnassus" alt=""> **Teleport: Darnassus** | Mage | 30 | Arcane | 1 | Teleports the caster to Darnassus. |
+| <img class="sic" data-i="teleport-thunder-bluff" alt=""> **Teleport: Thunder Bluff** | Mage | 30 | Arcane | 1 | Teleports the caster to Thunder Bluff. |
 | **Portal: Ironforge** | Mage | 40 | Arcane | 1 | Creates a portal, teleporting group members that use it to Ironforge. |
-| **Portal: Orgrimmar** | Mage | 40 | Arcane | 1 | Creates a portal, teleporting group members that use it to Orgrimmar. |
+| <img class="sic" data-i="portal-orgrimmar" alt=""> **Portal: Orgrimmar** | Mage | 40 | Arcane | 1 | Creates a portal, teleporting group members that use it to Orgrimmar. |
 | **Portal: Stormwind** | Mage | 40 | Arcane | 1 | Creates a portal, teleporting group members that use it to Stormwind. |
 | **Portal: Undercity** | Mage | 40 | Arcane | 1 | Creates a portal, teleporting group members that use it to Undercity. |
-| **Portal: Darnassus** | Mage | 50 | Arcane | 1 | Creates a portal, teleporting group members that use it to Darnassus. |
-| **Portal: Thunder Bluff** | Mage | 50 | Arcane | 1 | Creates a portal, teleporting group members that use it to Thunder Bluff. |
+| <img class="sic" data-i="portal-darnassus" alt=""> **Portal: Darnassus** | Mage | 50 | Arcane | 1 | Creates a portal, teleporting group members that use it to Darnassus. |
+| <img class="sic" data-i="portal-thunder-bluff" alt=""> **Portal: Thunder Bluff** | Mage | 50 | Arcane | 1 | Creates a portal, teleporting group members that use it to Thunder Bluff. |
 
 **Shared skeleton.** 'Teleports the caster to X' / 'Creates a portal, teleporting group members that use it to X.' Twelve spellbook entries from two sentence templates and six city names.
 

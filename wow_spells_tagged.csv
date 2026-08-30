@@ -63,7 +63,7 @@ Ghost Wolf,Shaman,20,Nature,1,,
 Poisons,Rogue,20,Physical,1,,
 Repentance,Paladin,20,Holy,1,,
 Retaliation,Warrior,20,Physical,1,,
-Ritual of Summoning,Warlock,20,Shadow,1,,
+Ritual of Summoning,Warlock,20,Shadow,1,The Stable & The Circle,Shared template
 Sense Undead,Paladin,20,Holy,1,The Tracking Dial,Verbatim clone
 Summon Incubus,Warlock,20,Shadow,1,,
 Summon Succubus,Warlock,20,Shadow,1,The Stable & The Circle,Shared template
@@ -75,7 +75,7 @@ Concentration Aura,Paladin,22,Holy,1,The Aura Carousel,Shared template
 Create Healthstone (Lesser),Warlock,22,Shadow,1,The Conjured Commissary,Verbatim clone
 Cure Disease,Shaman,22,Nature,1,The Cleanse Counter,Verbatim clone
 Distract,Rogue,22,Physical,1,,
-Eye of Kilrogg,Warlock,22,Shadow,1,,
+Eye of Kilrogg,Warlock,22,Shadow,1,The Stable & The Circle,Shared template
 Intimidating Shout,Warrior,22,Physical,1,The Fear Franchise,Shared template
 Poison Cleansing Totem,Shaman,22,Nature,1,The Totem Foundry,Shared template
 Seal of Justice,Paladin,22,Holy,1,The Seal Press,Shared template
@@ -171,7 +171,7 @@ Create Soulstone (Greater),Warlock,50,Shadow,1,The Conjured Commissary,Verbatim 
 Curse of Tongues,Warlock,50,Shadow,2,The Curse Catalogue,Shared template
 Detect Greater Invisibility,Warlock,50,Shadow,1,,
 Divine Shield,Paladin,50,Holy,2,,
-Inferno,Warlock,50,Shadow,1,,
+Inferno,Warlock,50,Shadow,1,The Stable & The Circle,Shared template
 Kidney Shot,Rogue,50,Physical,2,,
 Lay on Hands,Paladin,50,Holy,3,,
 Portal: Darnassus,Mage,50,Arcane,1,The Hearth Network,Verbatim clone
@@ -400,7 +400,7 @@ Rend,Warrior,60,Physical,7,The Affliction Engine,Shared engine
 Renew,Priest,60,Holy,10,,
 Revenge,Warrior,60,Physical,6,,
 Rip,Druid,60,Physical,6,,
-Ritual of Doom,Warlock,60,Shadow,1,,
+Ritual of Doom,Warlock,60,Shadow,1,The Stable & The Circle,Shared template
 Rupture,Rogue,60,Physical,6,The Affliction Engine,Shared engine
 Seal of Light,Paladin,60,Holy,4,The Seal Press,Shared template
 Searing Totem,Shaman,60,Fire,6,The Totem Foundry,Shared template

@@ -4,10 +4,10 @@
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Kick** | Rogue | 58 | Physical | 4 | A quick kick that injures a single foe for X damage.  It also interrupts spellcasting and prevents any spell i |
-| **Earth Shock** | Shaman | 60 | Nature | 7 | Instantly shocks the target with concussive force, causing X Nature damage.  It also interrupts spellcasting a |
-| **Shield Bash** | Warrior | 52 | Physical | 3 | Bashes the target with your shield for X damage.  It also interrupts spellcasting and prevents any spell in th |
-| **Pummel** | Warrior | 58 | Physical | 2 | Pummel the target for X damage.  It also interrupts spellcasting and prevents any spell in that school from be |
+| <img class="sic" data-i="kick" alt=""> **Kick** | Rogue | 58 | Physical | 4 | A quick kick that injures a single foe for X damage.  It also interrupts spellcasting and prevents any spell i |
+| <img class="sic" data-i="earth-shock" alt=""> **Earth Shock** | Shaman | 60 | Nature | 7 | Instantly shocks the target with concussive force, causing X Nature damage.  It also interrupts spellcasting a |
+| <img class="sic" data-i="shield-bash" alt=""> **Shield Bash** | Warrior | 52 | Physical | 3 | Bashes the target with your shield for X damage.  It also interrupts spellcasting and prevents any spell in th |
+| <img class="sic" data-i="pummel" alt=""> **Pummel** | Warrior | 58 | Physical | 2 | Pummel the target for X damage.  It also interrupts spellcasting and prevents any spell in that school from be |
 
 **Shared skeleton.** 'Deals X damage and interrupts the spell being cast, preventing that school for Y sec.' Kick/Pummel/Shield Bash are word-for-word siblings; Earth Shock measures 0.72 against them from another class's book.
 

@@ -1,6 +1,6 @@
 # The Identical-Spell List
 
-The deliverable: which D&D 5e spells are mostly the same spell. **79 of 319 SRD spells (25%) fall into 24 families** of near-identical design, sorted into three tiers:
+The deliverable: which D&D 5e spells are mostly the same spell. **80 of 319 SRD spells (25%) fall into 24 families** of near-identical design, sorted into three tiers:
 
 - <span class="tier tier-clone">Verbatim clone</span> — the rules text is the same spell with nouns swapped (damage type, target type, check vs. save).
 - <span class="tier tier-template">Shared template</span> — same sentence-level structure and resolution; parameters and one or two clauses differ.
@@ -19,7 +19,7 @@ Two recurring shapes worth naming: **horizontal reskins** (same level band, diff
 | [[families/hold|⛓️ The Hold Pair]] | <span class="tier tier-clone">Verbatim clone</span> | Hold Monster, Hold Person | 0.69 | humanoid vs. any creature; level 2 vs. 5 |
 | [[families/bane-bless|⚖️ Bane & Bless]] | <span class="tier tier-clone">Verbatim clone</span> | Bane, Bless | 0.86 | add vs. subtract the d4; Bane allows a save |
 | [[families/blast|💥 The Elemental Blast Template]] | <span class="tier tier-template">Shared template</span> | Burning Hands, Circle of Death, Cone of Cold, Fireball, Flame Strike, Hellish Rebuke, Ice Storm, Lightning Bolt | 0.74 | area shape, damage type, dice, save ability |
-| [[families/conjure-single|🧞 Conjure a Champion]] | <span class="tier tier-template">Shared template</span> | Conjure Celestial, Conjure Elemental, Conjure Fey | 0.81 | creature type, CR cap, what happens when concentration breaks |
+| [[families/conjure-single|🧞 Conjure a Champion]] | <span class="tier tier-template">Shared template</span> | Conjure Celestial, Conjure Elemental, Conjure Fey, Planar Ally | 0.81 | creature type, CR cap, and what the summons costs you |
 | [[families/locate|🧭 The Locate Series]] | <span class="tier tier-template">Shared template</span> | Locate Animals or Plants, Locate Creature, Locate Object | 0.63 | what is sensed; the blocking material |
 | [[families/detect|👁️ The Detect Series]] | <span class="tier tier-template">Shared template</span> | Detect Evil and Good, Detect Magic, Detect Poison and Disease | 0.62 | what is sensed |
 | [[families/polymorph|🐸 The Polymorph Ladder]] | <span class="tier tier-template">Shared template</span> | Animal Shapes, Polymorph, True Polymorph | 0.71 | scope, permanence, target count |

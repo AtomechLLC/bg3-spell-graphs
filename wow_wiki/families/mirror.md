@@ -4,8 +4,8 @@
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Amplify Magic** | Mage | 54 | Arcane | 4 | Amplifies magic used against the targeted party member, increasing damage taken from spells by up to X and hea |
-| **Dampen Magic** | Mage | 60 | Arcane | 5 | Dampens magic used against the targeted party member, decreasing damage taken from spells by up to X and heali |
+| <img class="sic" data-i="amplify-magic" alt=""> **Amplify Magic** | Mage | 54 | Arcane | 4 | Amplifies magic used against the targeted party member, increasing damage taken from spells by up to X and hea |
+| <img class="sic" data-i="dampen-magic" alt=""> **Dampen Magic** | Mage | 60 | Arcane | 5 | Dampens magic used against the targeted party member, decreasing damage taken from spells by up to X and heali |
 
 **Shared skeleton.** 'Amplifies/Dampens magic used against the targeted party member, increasing/decreasing healing and damage taken by X.' A perfect mirror pair (0.87).
 

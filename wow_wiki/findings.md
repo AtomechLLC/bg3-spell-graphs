@@ -1,6 +1,6 @@
 # The Identical-Spell List
 
-Which WoW Classic abilities are mostly the same ability. Of **423 distinct trainer-taught class abilities**, **202 (48%) fall into 25 families** — by far the highest of the three games studied, because classic WoW reskins along an axis the others barely use: **across classes**.
+Which WoW Classic abilities are mostly the same ability. Of **423 distinct trainer-taught class abilities**, **206 (49%) fall into 25 families** — by far the highest of the three games studied, because classic WoW reskins along an axis the others barely use: **across classes**.
 
 - <span class="tier tier-clone">Verbatim clone</span> — same sentence, one noun swapped (often into a different class's book).
 - <span class="tier tier-template">Shared template</span> — one chassis, many payloads (totems, blessings, curses).
@@ -22,9 +22,9 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 | [[families/mirror|🪞 Amplify & Dampen]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.91 | the sign |
 | [[families/polymorph|🐑 The Polymorph Barn]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.96 | the barnyard animal |
 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 21 abilities · 1 classes | 1.00 | the payload planted in the ground |
+| [[families/summons|😈 The Stable & The Circle]] | <span class="tier tier-template">Shared template</span> | 12 abilities · 2 classes | 1.00 | who — or what — answers the call |
 | [[families/group-ladder|🙌 The Greater Ladder]] | <span class="tier tier-template">Shared template</span> | 10 abilities · 3 classes | 1.00 | single target vs. whole party; reagent cost |
 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 10 abilities · 3 classes | 1.00 | how the damage is refused: armor, absorb, or school ward |
-| [[families/summons|😈 The Stable & The Circle]] | <span class="tier tier-template">Shared template</span> | 8 abilities · 2 classes | 1.00 | who answers the call |
 | [[families/blessings|⚖️ The Blessing Rack]] | <span class="tier tier-template">Shared template</span> | 7 abilities · 1 classes | 0.91 | the stat blessed |
 | [[families/auras|🛡️ The Aura Carousel]] | <span class="tier tier-template">Shared template</span> | 7 abilities · 1 classes | 1.00 | the passive granted to the party |
 | [[families/curses|💀 The Curse Catalogue]] | <span class="tier tier-template">Shared template</span> | 7 abilities · 1 classes | 1.00 | the affliction applied |

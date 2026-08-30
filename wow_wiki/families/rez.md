@@ -5,9 +5,9 @@
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | <img class="sic" data-i="rebirth" alt=""> **Rebirth** | Druid | 60 | Nature | 5 | Returns the spirit to the body, restoring a dead target to life with X health and X mana. |
-| **Redemption** | Paladin | 60 | Holy | 5 | Brings a dead player back to life with X health and X mana.  Cannot be cast when in combat. |
-| **Resurrection** | Priest | 58 | Holy | 5 | Brings a dead player back to life with X health and X mana.  Cannot be cast when in combat. |
-| **Ancestral Spirit** | Shaman | 60 | Nature | 5 | Returns the spirit to the body, restoring a dead target to life with X health and X mana.  Cannot be cast when |
+| <img class="sic" data-i="redemption" alt=""> **Redemption** | Paladin | 60 | Holy | 5 | Brings a dead player back to life with X health and X mana.  Cannot be cast when in combat. |
+| <img class="sic" data-i="resurrection" alt=""> **Resurrection** | Priest | 58 | Holy | 5 | Brings a dead player back to life with X health and X mana.  Cannot be cast when in combat. |
+| <img class="sic" data-i="ancestral-spirit" alt=""> **Ancestral Spirit** | Shaman | 60 | Nature | 5 | Returns the spirit to the body, restoring a dead target to life with X health and X mana.  Cannot be cast when |
 
 **Shared skeleton.** 'Returns the spirit to the body, restoring a dead target to life with X health and mana.' Four classes, four names, one sentence (0.85+ pairwise; Rebirth adds 'usable in combat').
 
