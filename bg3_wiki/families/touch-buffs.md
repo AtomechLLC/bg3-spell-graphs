@@ -1,6 +1,6 @@
 # <span class="femoji">🤝</span> The Touch-Buff Skeleton
 
-<span class="tier tier-engine">Shared engine</span> · 7 spells · mechanical similarity 0.71–0.91
+<span class="tier tier-engine">Shared engine</span> · 8 spells · mechanical similarity 0.71–0.91
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|
@@ -11,8 +11,9 @@
 | <img class="sic" data-i="Target_GaseousForm" alt=""> **Gaseous Form** | 3 | Transmutation | Target | Action + L3 slot |  |  | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | <img class="sic" data-i="Target_Fly" alt=""> **Grant Flight** | 3 | Transmutation | Target | Action + L3 slot |  |  | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | <img class="sic" data-i="Target_FreedomOfMovement" alt=""> **Freedom of Movement** | 4 | Abjuration | Target | Action + L4 slot |  |  | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
+| <img class="sic" data-i="Shout_WindWalk" alt=""> **Wind Walk** | 6 | Transmutation | Shout | Action + L6 slot |  |  | [[classes/druid|Druid]] |
 
-**Shared skeleton.** Touch a willing creature; apply a long-duration movement condition. Enhance Leap vs. Longstrider: 0.86 signature. Gaseous Form joins from the unfamilied list — same skeleton, with 'become a cloud' as the verb.
+**Shared skeleton.** Touch a willing creature; apply a long-duration movement condition. Enhance Leap vs. Longstrider: 0.86 signature. Gaseous Form joins from the unfamilied list — same skeleton, with 'become a cloud' as the verb — and Wind Walk applies the literal `GASEOUS_FORM` status to the whole party: the mass-market edition of the same entry.
 
 **What varies.** The verb (speed, jump, fly, see, fall, move freely, mist), duration, and ritual eligibility.
 

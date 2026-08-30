@@ -1,6 +1,6 @@
 # Paladin Spell List (BG3)
 
-**29 spells** reachable through Paladin progressions · **24** in an identified family (83%)
+**29 spells** reachable through Paladin progressions · **27** in an identified family (93%)
 
 List overlap: **59%** with [[classes/cleric|Cleric]], **55%** with [[classes/bard|Bard]], **28%** with [[classes/warlock|Warlock]].
 
@@ -13,8 +13,8 @@ List overlap: **59%** with [[classes/cleric|Cleric]], **55%** with [[classes/bar
 | 1 | <img class="sic" data-i="Shout_DivineFavor" alt=""> **Divine Favour** | Evocation | [[families/imbues|⚔️ The Imbue Shelf]] | [[classes/cleric|Cleric]] |
 | 1 | <img class="sic" data-i="Shout_HellishRebuke" alt=""> **Hellish Rebuke** | Evocation | [[families/protection|🛡️ The Protection Rack]] | [[classes/bard|Bard]], [[classes/warlock|Warlock]] |
 | 1 | <img class="sic" data-i="Target_Heroism" alt=""> **Heroism** | Enchantment | [[families/temp-hp|🩹 The Temp-HP Ledger]] | [[classes/bard|Bard]] |
-| 1 | <img class="sic" data-i="Target_InflictWounds" alt=""> **Inflict Wounds** | Necromancy | — | [[classes/cleric|Cleric]] |
-| 1 | <img class="sic" data-i="Target_ProtectionFromEvilAndGood" alt=""> **Protection from Evil and Good** | Abjuration | — | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 1 | <img class="sic" data-i="Target_InflictWounds" alt=""> **Inflict Wounds** | Necromancy | [[families/bolts|🏹 The Bolt Rack]] | [[classes/cleric|Cleric]] |
+| 1 | <img class="sic" data-i="Target_ProtectionFromEvilAndGood" alt=""> **Protection from Evil and Good** | Abjuration | [[families/protection|🛡️ The Protection Rack]] | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Target_Smite_Searing" alt=""> **Searing Smite** | Evocation | [[families/smites|🔨 The Smite Armoury]] | *(exclusive)* |
 | 1 | <img class="sic" data-i="Target_ShieldOfFaith" alt=""> **Shield of Faith** | Abjuration | [[families/ac-wardrobe|🛡️ The Armour-Class Wardrobe]] | [[classes/cleric|Cleric]] |
 | 1 | <img class="sic" data-i="Target_Smite_Thunderous" alt=""> **Thunderous Smite** | Evocation | [[families/smites|🔨 The Smite Armoury]] | [[classes/bard|Bard]] |
@@ -30,7 +30,7 @@ List overlap: **59%** with [[classes/cleric|Cleric]], **55%** with [[classes/bar
 | 3 | <img class="sic" data-i="Target_BestowCurse" alt=""> **Bestow Curse** | Necromancy | [[families/marks|🏷️ The Mark & Curse Desk]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_Smite_Blinding" alt=""> **Blinding Smite** | Evocation | [[families/smites|🔨 The Smite Armoury]] | *(exclusive)* |
 | 3 | <img class="sic" data-i="Shout_CrusadersMantle" alt=""> **Crusader's Mantle** | Evocation | [[families/imbues|⚔️ The Imbue Shelf]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
-| 3 | <img class="sic" data-i="Target_Daylight_Container" alt=""> **Daylight** | Evocation | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
+| 3 | <img class="sic" data-i="Target_Daylight_Container" alt=""> **Daylight** | Evocation | [[families/counters|🚫 The Cancel Desk]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
 | 3 | <img class="sic" data-i="Target_ElementalWeapon" alt=""> **Elemental Weapon** | Transmutation | [[families/imbues|⚔️ The Imbue Shelf]] | [[classes/warlock|Warlock]] |
 | 3 | <img class="sic" data-i="Target_RemoveCurse" alt=""> **Remove Curse** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Teleportation_Revivify" alt=""> **Revivify** | Necromancy | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
@@ -56,4 +56,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/bane-bless|Bane & Bless]] · [[families/cc-misc|The Control Ward]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/cure|The Cure Family]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/imbues|The Imbue Shelf]] · [[families/marks|The Mark & Curse Desk]] · [[families/protection|The Protection Rack]] · [[families/smites|The Smite Armoury]] · [[families/temp-hp|The Temp-HP Ledger]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/bane-bless|Bane & Bless]] · [[families/bolts|The Bolt Rack]] · [[families/cc-misc|The Control Ward]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/counters|The Cancel Desk]] · [[families/cure|The Cure Family]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/imbues|The Imbue Shelf]] · [[families/marks|The Mark & Curse Desk]] · [[families/protection|The Protection Rack]] · [[families/smites|The Smite Armoury]] · [[families/temp-hp|The Temp-HP Ledger]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

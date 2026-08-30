@@ -1,6 +1,6 @@
 # Ranger Spell List (BG3)
 
-**25 spells** reachable through Ranger progressions · **21** in an identified family (84%)
+**25 spells** reachable through Ranger progressions · **25** in an identified family (100%)
 
 List overlap: **64%** with [[classes/druid|Druid]], **60%** with [[classes/cleric|Cleric]], **60%** with [[classes/bard|Bard]].
 
@@ -21,12 +21,12 @@ List overlap: **64%** with [[classes/druid|Druid]], **60%** with [[classes/cleri
 | 2 | <img class="sic" data-i="Target_Darkvision" alt=""> **Darkvision** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_LesserRestoration" alt=""> **Lesser Restoration** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]] |
 | 2 | <img class="sic" data-i="Target_MistyStep" alt=""> **Misty Step** | Conjuration | [[families/teleports|🌀 The Blink Ladder]] | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 2 | <img class="sic" data-i="Shout_PassWithoutTrace" alt=""> **Pass Without Trace** | Abjuration | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
+| 2 | <img class="sic" data-i="Shout_PassWithoutTrace" alt=""> **Pass Without Trace** | Abjuration | [[families/invisibility|🫥 The Invisibility Ladder]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
 | 2 | <img class="sic" data-i="Target_ProtectionFromPoison" alt=""> **Protection from Poison** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]] |
-| 2 | <img class="sic" data-i="Target_Silence" alt=""> **Silence** | Illusion | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
+| 2 | <img class="sic" data-i="Target_Silence" alt=""> **Silence** | Illusion | [[families/counters|🚫 The Cancel Desk]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
 | 2 | <img class="sic" data-i="Target_SpikeGrowth" alt=""> **Spike Growth** | Transmutation | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
-| 3 | <img class="sic" data-i="Zone_ConjureBarrage" alt=""> **Conjure Barrage** | Conjuration | 📦 [[containers|container]] | *(exclusive)* |
-| 3 | <img class="sic" data-i="Target_Daylight_Container" alt=""> **Daylight** | Evocation | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/sorcerer|Sorcerer]] |
+| 3 | <img class="sic" data-i="Zone_ConjureBarrage" alt=""> **Conjure Barrage** | Conjuration | [[families/blast|💥 The Elemental Blast Template]] | *(exclusive)* |
+| 3 | <img class="sic" data-i="Target_Daylight_Container" alt=""> **Daylight** | Evocation | [[families/counters|🚫 The Cancel Desk]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/sorcerer|Sorcerer]] |
 | 3 | <img class="sic" data-i="Zone_Fear" alt=""> **Fear** | Illusion | [[families/cc-misc|🌀 The Control Ward]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Projectile_LightningArrow" alt=""> **Lightning Arrow** | Transmutation | [[families/smites|🔨 The Smite Armoury]] | *(exclusive)* |
 | 3 | <img class="sic" data-i="Target_PlantGrowth" alt=""> **Plant Growth** | Transmutation | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
@@ -48,4 +48,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/cc-misc|The Control Ward]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/cure|The Cure Family]] · [[families/fieldcraft|The Fieldcraft Kit]] · [[families/marks|The Mark & Curse Desk]] · [[families/protection|The Protection Rack]] · [[families/provisions|The Commissary]] · [[families/smites|The Smite Armoury]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/blast|The Elemental Blast Template]] · [[families/cc-misc|The Control Ward]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/counters|The Cancel Desk]] · [[families/cure|The Cure Family]] · [[families/fieldcraft|The Fieldcraft Kit]] · [[families/invisibility|The Invisibility Ladder]] · [[families/marks|The Mark & Curse Desk]] · [[families/protection|The Protection Rack]] · [[families/provisions|The Commissary]] · [[families/smites|The Smite Armoury]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
