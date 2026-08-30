@@ -36,8 +36,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Deploy the wrapped standalone pages (see make_pages.py), not the raw repo
+          path: 'docs'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
