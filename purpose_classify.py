@@ -23,11 +23,11 @@ FAM_PURPOSE = {
     "attack-cantrips": "damage", "phantom-armory": "create", "dispel": "negation",
     "darkness-daylight": "zone", "speak-with": "info", "protection": "defboost",
     "touch-buffs": "mobility", "guidance-resistance": "offboost",
-    # BG3
-    "duplicate-skus": "defboost", "charm": "disable", "walls": "zone",
-    "surfaces": "zone", "smites": "damage", "teleports": "mobility",
+    # BG3 — current function-primary family slugs
+    "duplicate-skus": "defboost", "walls": "zone",
+    "surfaces": "zone", "melee-enhance": "damage", "travel": "mobility",
     "conjure": "create", "cleanse": "negation", "d4-riders": "offboost",
-    "ac-wardrobe": "defboost", "hp-pool-bg3": "disable",
+    "ac-wardrobe": "defboost", "cc": "disable", "fieldcraft": "utility",
     # WoW
     # WoW — current function-primary family slugs
     "tracking": "info", "conjured": "provision", "heals": "heal", "hots": "heal",

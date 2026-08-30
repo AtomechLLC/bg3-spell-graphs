@@ -1,6 +1,6 @@
 # Cleric Spell List (BG3)
 
-**111 spells** reachable through Cleric progressions · **44** in an identified family (40%)
+**111 spells** reachable through Cleric progressions · **57** in an identified family (51%)
 
 List overlap: **61%** with [[classes/bard|Bard]], **47%** with [[classes/wizard|Wizard]], **46%** with [[classes/druid|Druid]].
 
@@ -19,16 +19,16 @@ List overlap: **61%** with [[classes/bard|Bard]], **47%** with [[classes/wizard|
 | Cantrip | <img class="sic" data-i="Shout_Thaumaturgy" alt=""> **Thaumaturgy** | Transmutation | — | *(exclusive)* |
 | Cantrip | <img class="sic" data-i="Target_ThornWhip" alt=""> **Thorn Whip** | Transmutation | [[families/attack-cantrips|🪄 The Damage Cantrip Engine]] | [[classes/druid|Druid]] |
 | Cantrip | **Toll the Dead** | Necromancy | — | [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="Target_AnimalFriendship" alt=""> **Animal Friendship** | Enchantment | [[families/charm|💘 The Charm Pair]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
+| 1 | <img class="sic" data-i="Target_AnimalFriendship" alt=""> **Animal Friendship** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="Target_Bane" alt=""> **Bane** | Enchantment | [[families/bane-bless|⚖️ Bane & Bless]] | [[classes/bard|Bard]] |
 | 1 | <img class="sic" data-i="Target_Bless" alt=""> **Bless** | Enchantment | [[families/bane-bless|⚖️ Bane & Bless]] | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
 | 1 | <img class="sic" data-i="Zone_BurningHands" alt=""> **Burning Hands** | Evocation | — | [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="Target_CharmPerson" alt=""> **Charm Person** | Enchantment | [[families/charm|💘 The Charm Pair]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="Target_Command_Container" alt=""> **Command** | Enchantment | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
+| 1 | <img class="sic" data-i="Target_CharmPerson" alt=""> **Charm Person** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 1 | <img class="sic" data-i="Target_Command_Container" alt=""> **Command** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
 | 1 | <img class="sic" data-i="Target_CreateDestroyWater" alt=""> **Create or Destroy Water** | Transmutation | 📦 [[containers|container]] | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 1 | <img class="sic" data-i="Target_CureWounds" alt=""> **Cure Wounds** | Evocation | [[families/cure|❤️‍🩹 The Cure Family]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]] |
-| 1 | <img class="sic" data-i="Shout_DisguiseSelf" alt=""> **Disguise Self** | Illusion | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/ranger|Ranger]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="Shout_DivineFavor" alt=""> **Divine Favour** | Evocation | — | [[classes/paladin|Paladin]] |
+| 1 | <img class="sic" data-i="Shout_DisguiseSelf" alt=""> **Disguise Self** | Illusion | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/ranger|Ranger]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 1 | <img class="sic" data-i="Shout_DivineFavor" alt=""> **Divine Favour** | Evocation | [[families/melee-enhance|⚔️ The Whetstone]] | [[classes/paladin|Paladin]] |
 | 1 | <img class="sic" data-i="Target_FaerieFire" alt=""> **Faerie Fire** | Evocation | — | [[classes/bard|Bard]], [[classes/druid|Druid]] |
 | 1 | <img class="sic" data-i="Shout_FalseLife" alt=""> **False Life** | Necromancy | — | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Target_FogCloud" alt=""> **Fog Cloud** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/ranger|Ranger]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -39,19 +39,19 @@ List overlap: **61%** with [[classes/bard|Bard]], **47%** with [[classes/wizard|
 | 1 | <img class="sic" data-i="Projectile_RayOfSickness" alt=""> **Ray of Sickness** | Necromancy | — | [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Target_Sanctuary" alt=""> **Sanctuary** | Abjuration | — | [[classes/bard|Bard]] |
 | 1 | <img class="sic" data-i="Target_ShieldOfFaith" alt=""> **Shield of Faith** | Abjuration | [[families/ac-wardrobe|🛡️ The Armour-Class Wardrobe]] | [[classes/paladin|Paladin]] |
-| 1 | <img class="sic" data-i="Target_Sleep" alt=""> **Sleep** | Enchantment | [[families/hp-pool|🧮 The Hit-Point Pool Engine]] | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="Shout_SpeakWithAnimals" alt=""> **Speak with Animals** | Divination | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
+| 1 | <img class="sic" data-i="Target_Sleep" alt=""> **Sleep** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 1 | <img class="sic" data-i="Shout_SpeakWithAnimals" alt=""> **Speak with Animals** | Divination | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="Zone_Thunderwave" alt=""> **Thunderwave** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Shout_Aid" alt=""> **Aid** | Abjuration | — | [[classes/paladin|Paladin]] |
 | 2 | <img class="sic" data-i="Target_Barkskin" alt=""> **Barkskin** | Transmutation | [[families/ac-wardrobe|🛡️ The Armour-Class Wardrobe]] | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
-| 2 | <img class="sic" data-i="Target_Blindness" alt=""> **Blindness** | Necromancy | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="Target_Blindness" alt=""> **Blindness** | Necromancy | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_CalmEmotions" alt=""> **Calm Emotions** | Enchantment | — | [[classes/bard|Bard]] |
 | 2 | <img class="sic" data-i="Target_EnhanceAbility" alt=""> **Enhance Ability** | Transmutation | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 2 | <img class="sic" data-i="Target_FlamingSphere" alt=""> **Flaming Sphere** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Zone_GustOfWind" alt=""> **Gust of Wind** | Evocation | — | [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 2 | <img class="sic" data-i="Target_HoldPerson" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="Target_HoldPerson" alt=""> **Hold Person** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_LesserRestoration" alt=""> **Lesser Restoration** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]] |
-| 2 | <img class="sic" data-i="Target_MagicWeapon" alt=""> **Magic Weapon** | Transmutation | — | [[classes/fighter|Fighter]], [[classes/paladin|Paladin]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="Target_MagicWeapon" alt=""> **Magic Weapon** | Transmutation | [[families/melee-enhance|⚔️ The Whetstone]] | [[classes/fighter|Fighter]], [[classes/paladin|Paladin]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Shout_MirrorImage" alt=""> **Mirror Image** | Illusion | — | [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Shout_PassWithoutTrace" alt=""> **Pass Without Trace** | Abjuration | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="Shout_PrayerOfHealing" alt=""> **Prayer of Healing** | Evocation | [[families/cure|❤️‍🩹 The Cure Family]] | *(exclusive)* |
@@ -67,10 +67,10 @@ List overlap: **61%** with [[classes/bard|Bard]], **47%** with [[classes/wizard|
 | 3 | <img class="sic" data-i="Shout_BeaconOfHope" alt=""> **Beacon of Hope** | Abjuration | — | *(exclusive)* |
 | 3 | <img class="sic" data-i="Target_BestowCurse" alt=""> **Bestow Curse** | Necromancy | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_CallLightning" alt=""> **Call Lightning** | Conjuration | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
-| 3 | <img class="sic" data-i="Shout_CrusadersMantle" alt=""> **Crusader's Mantle** | Evocation | — | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
+| 3 | <img class="sic" data-i="Shout_CrusadersMantle" alt=""> **Crusader's Mantle** | Evocation | [[families/melee-enhance|⚔️ The Whetstone]] | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
 | 3 | <img class="sic" data-i="Target_Daylight_Container" alt=""> **Daylight** | Evocation | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
-| 3 | <img class="sic" data-i="Zone_Fear" alt=""> **Fear** | Illusion | — | [[classes/bard|Bard]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 3 | <img class="sic" data-i="Target_FeignDeath" alt=""> **Feign Death** | Necromancy | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="Zone_Fear" alt=""> **Fear** | Illusion | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="Target_FeignDeath" alt=""> **Feign Death** | Necromancy | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Projectile_Fireball" alt=""> **Fireball** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_GlyphOfWarding" alt=""> **Glyph of Warding** | Abjuration | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Shout_HealingWord_Mass" alt=""> **Mass Healing Word** | Evocation | [[families/cure|❤️‍🩹 The Cure Family]] | [[classes/bard|Bard]] |
@@ -79,17 +79,17 @@ List overlap: **61%** with [[classes/bard|Bard]], **47%** with [[classes/wizard|
 | 3 | <img class="sic" data-i="Target_RemoveCurse" alt=""> **Remove Curse** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/paladin|Paladin]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Teleportation_Revivify" alt=""> **Revivify** | Necromancy | — | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
 | 3 | <img class="sic" data-i="Target_SleetStorm" alt=""> **Sleet Storm** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 3 | <img class="sic" data-i="Target_Slow" alt=""> **Slow** | Transmutation | — | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 3 | <img class="sic" data-i="Target_SpeakWithDead" alt=""> **Speak with Dead** | Necromancy | — | [[classes/bard|Bard]] |
+| 3 | <img class="sic" data-i="Target_Slow" alt=""> **Slow** | Transmutation | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="Target_SpeakWithDead" alt=""> **Speak with Dead** | Necromancy | [[families/fieldcraft|🎒 The Fieldcraft Kit]] | [[classes/bard|Bard]] |
 | 3 | <img class="sic" data-i="Shout_SpiritGuardians" alt=""> **Spirit Guardians** | Conjuration | 📦 [[containers|container]] | [[classes/bard|Bard]] |
 | 3 | <img class="sic" data-i="Target_VampiricTouch" alt=""> **Vampiric Touch** | Necromancy | — | [[classes/bard|Bard]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="Target_Banishment" alt=""> **Banishment** | Abjuration | — | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="Target_Banishment" alt=""> **Banishment** | Abjuration | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="Target_Blight" alt=""> **Blight** | Necromancy | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="Target_Confusion" alt=""> **Confusion** | Enchantment | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="Target_Confusion" alt=""> **Confusion** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="Target_DeathWard" alt=""> **Death Ward** | Abjuration | — | [[classes/bard|Bard]] |
-| 4 | <img class="sic" data-i="Teleportation_DimensionDoor" alt=""> **Dimension Door** | Conjuration | [[families/teleports|🌀 The Blink Ladder]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="Target_DominateBeast" alt=""> **Dominate Beast** | Enchantment | [[families/dominate|🧠 The Dominate Pair]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
-| 4 | <img class="sic" data-i="Target_FreedomOfMovement" alt=""> **Freedom of Movement** | Abjuration | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | [[classes/bard|Bard]], [[classes/druid|Druid]] |
+| 4 | <img class="sic" data-i="Teleportation_DimensionDoor" alt=""> **Dimension Door** | Conjuration | [[families/travel|🌀 The Travel Agency]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="Target_DominateBeast" alt=""> **Dominate Beast** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
+| 4 | <img class="sic" data-i="Target_FreedomOfMovement" alt=""> **Freedom of Movement** | Abjuration | [[families/travel|🌀 The Travel Agency]] | [[classes/bard|Bard]], [[classes/druid|Druid]] |
 | 4 | <img class="sic" data-i="Target_GraspingVine" alt=""> **Grasping Vine** | Conjuration | — | [[classes/druid|Druid]] |
 | 4 | <img class="sic" data-i="Target_GuardianOfFaith" alt=""> **Guardian of Faith** | Conjuration | — | [[classes/bard|Bard]] |
 | 4 | <img class="sic" data-i="Target_IceStorm" alt=""> **Ice Storm** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -101,10 +101,10 @@ List overlap: **61%** with [[classes/bard|Bard]], **47%** with [[classes/wizard|
 | 5 | <img class="sic" data-i="Target_Contagion" alt=""> **Contagion** | Necromancy | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/druid|Druid]] |
 | 5 | <img class="sic" data-i="Shout_DestructiveWave" alt=""> **Destructive Wave** | Evocation | 📦 [[containers|container]] | *(exclusive)* |
 | 5 | <img class="sic" data-i="Shout_DispelEvilAndGood" alt=""> **Dispel Evil And Good** | Abjuration | — | *(exclusive)* |
-| 5 | <img class="sic" data-i="Target_DominatePerson" alt=""> **Dominate Person** | Enchantment | [[families/dominate|🧠 The Dominate Pair]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 5 | <img class="sic" data-i="Target_DominatePerson" alt=""> **Dominate Person** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Target_FlameStrike" alt=""> **Flame Strike** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | *(exclusive)* |
 | 5 | <img class="sic" data-i="Target_GreaterRestoration" alt=""> **Greater Restoration** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/druid|Druid]] |
-| 5 | <img class="sic" data-i="Target_HoldMonster" alt=""> **Hold Monster** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 5 | <img class="sic" data-i="Target_HoldMonster" alt=""> **Hold Monster** | Enchantment | [[families/cc|⛓️ The Crowd Control Cabinet]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Target_InsectPlague" alt=""> **Insect Plague** | Conjuration | — | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 5 | <img class="sic" data-i="Target_CureWounds_Mass" alt=""> **Mass Cure Wounds** | Evocation | [[families/cure|❤️‍🩹 The Cure Family]] | [[classes/bard|Bard]], [[classes/druid|Druid]] |
 | 5 | <img class="sic" data-i="Target_PlanarBinding" alt=""> **Planar Binding** | Abjuration | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
@@ -145,4 +145,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/bane-bless|Bane & Bless]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/cure|The Cure Family]] · [[families/d4-riders|Guidance & Resistance]] · [[families/dominate|The Dominate Pair]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/walls|The Wall Foundry]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/bane-bless|Bane & Bless]] · [[families/blast|The Elemental Blast Template]] · [[families/cc|The Crowd Control Cabinet]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/cure|The Cure Family]] · [[families/d4-riders|Guidance & Resistance]] · [[families/fieldcraft|The Fieldcraft Kit]] · [[families/melee-enhance|The Whetstone]] · [[families/surfaces|The Surface Engine]] · [[families/travel|The Travel Agency]] · [[families/walls|The Wall Foundry]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

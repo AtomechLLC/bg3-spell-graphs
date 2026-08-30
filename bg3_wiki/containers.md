@@ -2,7 +2,7 @@
 
 Larian's answer to the reskin: make it a **feature**. A container spell is one spell whose cast button opens a menu of variant child spells — **28 containers wrap 136 variant spells**, every child a separate `SpellData` entry inheriting from its parent.
 
-Where tabletop publishes Chromatic Orb as one paragraph with a damage-type clause, BG3 ships **six sibling entries** differing in one damage row. Where the SRD's [[families/smites|smites]] are seven spells, two of them here are containers *again* (melee/ranged) — reskins inside reskins.
+Where tabletop publishes Chromatic Orb as one paragraph with a damage-type clause, BG3 ships **six sibling entries** differing in one damage row. Where the SRD's smites are seven spells, two of them here — filed in [[families/melee-enhance|the Whetstone]] — are containers *again* (melee/ranged) — reskins inside reskins.
 
 | Container | Lv | Variant axis | Variants |
 |---|---|---|---|
@@ -40,4 +40,4 @@ The variant axes tell the design story: **damage type** (Chromatic Orb, Elementa
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/conjure|The Summoning Contract]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/smites|The Smite Armoury]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/cc|The Crowd Control Cabinet]] · [[families/conjure|The Summoning Contract]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/fieldcraft|The Fieldcraft Kit]] · [[families/melee-enhance|The Whetstone]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

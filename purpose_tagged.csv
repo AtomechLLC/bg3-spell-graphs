@@ -337,7 +337,7 @@ Baldur's Gate 3,Ray of Enfeeblement,degrade,rule,
 Baldur's Gate 3,Ray of Frost,damage,family,The Damage Cantrip Engine
 Baldur's Gate 3,Ray of Sickness,damage,effect,
 Baldur's Gate 3,Scorching Ray,damage,effect,
-Baldur's Gate 3,Banishing Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Banishing Smite,damage,family,The Whetstone
 Baldur's Gate 3,Witch Bolt,damage,effect,
 Baldur's Gate 3,Aid,defboost,override,
 Baldur's Gate 3,Armour of Agathys,utility,fallback,
@@ -347,17 +347,17 @@ Baldur's Gate 3,Beacon of Hope,heal,rule,
 Baldur's Gate 3,Blade Ward,defboost,rule,
 Baldur's Gate 3,Blink,mobility,override,
 Baldur's Gate 3,Blur,degrade,rule,
-Baldur's Gate 3,Crusader's Mantle,offboost,override,
+Baldur's Gate 3,Crusader's Mantle,offboost,override,The Whetstone
 Baldur's Gate 3,Destructive Wave,damage,effect,
-Baldur's Gate 3,Detect Thoughts,info,rule,
-Baldur's Gate 3,Disguise Self,stealth,rule,
+Baldur's Gate 3,Detect Thoughts,utility,family,The Fieldcraft Kit
+Baldur's Gate 3,Disguise Self,utility,family,The Fieldcraft Kit
 Baldur's Gate 3,Dispel Evil And Good,negation,rule,
-Baldur's Gate 3,Divine Favour,utility,fallback,
+Baldur's Gate 3,Divine Favour,damage,family,The Whetstone
 Baldur's Gate 3,Expeditious Retreat,mobility,rule,
 Baldur's Gate 3,False Life,utility,fallback,
-Baldur's Gate 3,Feather Fall,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Feather Fall,mobility,family,The Travel Agency
 Baldur's Gate 3,Fire Shield,damage,effect,
-Baldur's Gate 3,Flame Blade,utility,fallback,
+Baldur's Gate 3,Flame Blade,damage,family,The Whetstone
 Baldur's Gate 3,Mass Healing Word,heal,family,The Cure Family
 Baldur's Gate 3,Hellish Rebuke,damage,effect,
 Baldur's Gate 3,Heroes' Feast,create,effect,
@@ -366,36 +366,36 @@ Baldur's Gate 3,Pass Without Trace,disable,rule,
 Baldur's Gate 3,Prayer of Healing,heal,family,The Cure Family
 Baldur's Gate 3,Produce Flame,utility,fallback,
 Baldur's Gate 3,See Invisibility,stealth,rule,
-Baldur's Gate 3,Shadow Blade,create,override,
+Baldur's Gate 3,Shadow Blade,create,override,The Whetstone
 Baldur's Gate 3,Shield,defboost,family,The Duplicate SKUs
 Baldur's Gate 3,Shillelagh,offboost,override,
-Baldur's Gate 3,Speak with Animals,info,rule,
+Baldur's Gate 3,Speak with Animals,utility,family,The Fieldcraft Kit
 Baldur's Gate 3,Spirit Guardians,mobility,rule,
 Baldur's Gate 3,Thaumaturgy,utility,fallback,
 Baldur's Gate 3,Wind Walk,roleshift,rule,
-Baldur's Gate 3,Animal Friendship,disable,family,The Charm Pair
+Baldur's Gate 3,Animal Friendship,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Animate Dead,create,family,The Summoning Contract
 Baldur's Gate 3,Arcane Lock,utility,fallback,
 Baldur's Gate 3,Bane,offboost,family,Bane & Bless
-Baldur's Gate 3,Banishment,remove,override,
+Baldur's Gate 3,Banishment,remove,override,The Crowd Control Cabinet
 Baldur's Gate 3,Barkskin,defboost,family,The Armour-Class Wardrobe
 Baldur's Gate 3,Bestow Curse,damage,rule,
 Baldur's Gate 3,Evard's Black Tentacles,zone,family,The Surface Engine
 Baldur's Gate 3,Bless,offboost,family,Bane & Bless
 Baldur's Gate 3,Blight,damage,effect,
-Baldur's Gate 3,Blindness,disable,rule,
+Baldur's Gate 3,Blindness,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Booming Blade,damage,effect,
 Baldur's Gate 3,Bursting Sinew,damage,effect,
 Baldur's Gate 3,Call Lightning,damage,effect,
 Baldur's Gate 3,Calm Emotions,negation,effect,
-Baldur's Gate 3,Charm Person,disable,family,The Charm Pair
+Baldur's Gate 3,Charm Person,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Bone Chill,damage,family,The Damage Cantrip Engine
 Baldur's Gate 3,Circle of Death,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Cloud of Daggers,create,effect,
 Baldur's Gate 3,Cloudkill,zone,family,The Surface Engine
-Baldur's Gate 3,Command,disable,rule,
+Baldur's Gate 3,Command,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Compelled Duel,threat,override,
-Baldur's Gate 3,Confusion,disable,rule,
+Baldur's Gate 3,Confusion,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Conjure Elemental,create,family,The Summoning Contract
 Baldur's Gate 3,Conjure Minor Elemental,create,family,The Summoning Contract
 Baldur's Gate 3,Conjure Woodland Being,create,effect,
@@ -409,30 +409,30 @@ Baldur's Gate 3,Mass Cure Wounds,heal,family,The Cure Family
 Baldur's Gate 3,Dancing Lights,utility,override,
 Baldur's Gate 3,Darkness,defboost,family,The Duplicate SKUs
 Baldur's Gate 3,Eyes of the Dark: Darkness,defboost,family,The Duplicate SKUs
-Baldur's Gate 3,Darkvision,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Darkvision,utility,family,The Fieldcraft Kit
 Baldur's Gate 3,Daylight,create,effect,
 Baldur's Gate 3,Death Ward,defboost,rule,
 Baldur's Gate 3,Dissonant Whispers,damage,effect,
-Baldur's Gate 3,Dominate Beast,disable,family,The Dominate Pair
-Baldur's Gate 3,Dominate Person,disable,family,The Dominate Pair
-Baldur's Gate 3,Elemental Weapon,offboost,rule,
+Baldur's Gate 3,Dominate Beast,disable,family,The Crowd Control Cabinet
+Baldur's Gate 3,Dominate Person,disable,family,The Crowd Control Cabinet
+Baldur's Gate 3,Elemental Weapon,damage,family,The Whetstone
 Baldur's Gate 3,Enhance Ability,utility,fallback,
 Baldur's Gate 3,Enlarge/Reduce,damage,rule,
 Baldur's Gate 3,Entangle,zone,family,The Surface Engine
 Baldur's Gate 3,Enthrall,utility,fallback,
-Baldur's Gate 3,Eyebite,disable,rule,
+Baldur's Gate 3,Eyebite,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Faerie Fire,utility,fallback,
-Baldur's Gate 3,Feign Death,threat,rule,
+Baldur's Gate 3,Feign Death,utility,family,The Fieldcraft Kit
 Baldur's Gate 3,Find Familiar,create,family,The Summoning Contract
 Baldur's Gate 3,Flame Strike,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Flaming Sphere,create,family,The Summoning Contract
 Baldur's Gate 3,Flesh to Stone,disable,rule,
-Baldur's Gate 3,Grant Flight,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Grant Flight,mobility,family,The Travel Agency
 Baldur's Gate 3,Fog Cloud,zone,family,The Surface Engine
-Baldur's Gate 3,Freedom of Movement,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Freedom of Movement,mobility,family,The Travel Agency
 Baldur's Gate 3,Otiluke's Freezing Sphere,damage,effect,
-Baldur's Gate 3,Friends,utility,fallback,
-Baldur's Gate 3,Gaseous Form,roleshift,rule,
+Baldur's Gate 3,Friends,utility,family,The Fieldcraft Kit
+Baldur's Gate 3,Gaseous Form,mobility,family,The Travel Agency
 Baldur's Gate 3,Globe of Invulnerability,create,effect,
 Baldur's Gate 3,Glyph of Warding,utility,fallback,
 Baldur's Gate 3,Goodberry,provision,override,
@@ -448,28 +448,28 @@ Baldur's Gate 3,Healing Word,heal,family,The Cure Family
 Baldur's Gate 3,Heat Metal,damage,effect,
 Baldur's Gate 3,Heroism,utility,fallback,
 Baldur's Gate 3,Hex,damage,effect,
-Baldur's Gate 3,Tasha's Hideous Laughter,disable,rule,
-Baldur's Gate 3,Hold Monster,disable,family,The Hold Pair
-Baldur's Gate 3,Hold Person,disable,family,The Hold Pair
+Baldur's Gate 3,Tasha's Hideous Laughter,disable,family,The Crowd Control Cabinet
+Baldur's Gate 3,Hold Monster,disable,family,The Crowd Control Cabinet
+Baldur's Gate 3,Hold Person,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Hunger of Hadar,create,effect,
 Baldur's Gate 3,Hunter's Mark,damage,effect,
-Baldur's Gate 3,Hypnotic Pattern,disable,rule,
+Baldur's Gate 3,Hypnotic Pattern,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Ice Storm,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Inflict Wounds,damage,effect,
 Baldur's Gate 3,Insect Plague,create,effect,
 Baldur's Gate 3,Invisibility,stealth,family,The Invisibility Ladder
 Baldur's Gate 3,Greater Invisibility,stealth,family,The Invisibility Ladder
-Baldur's Gate 3,Otto's Irresistible Dance,offboost,rule,
-Baldur's Gate 3,Enhance Leap,mobility,family,The Touch-Buff Skeleton
-Baldur's Gate 3,Knock,disable,rule,
+Baldur's Gate 3,Otto's Irresistible Dance,disable,family,The Crowd Control Cabinet
+Baldur's Gate 3,Enhance Leap,mobility,family,The Travel Agency
+Baldur's Gate 3,Knock,utility,family,The Fieldcraft Kit
 Baldur's Gate 3,Lesser Restoration,negation,family,The Cleanse Counter
 Baldur's Gate 3,Light,utility,override,
-Baldur's Gate 3,Longstrider,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Longstrider,mobility,family,The Travel Agency
 Baldur's Gate 3,Mage Armour,defboost,family,The Armour-Class Wardrobe
 Baldur's Gate 3,Mage Hand,create,effect,
-Baldur's Gate 3,Magic Weapon,offboost,rule,
+Baldur's Gate 3,Magic Weapon,damage,family,The Whetstone
 Baldur's Gate 3,Minor Illusion,create,effect,
-Baldur's Gate 3,Misty Step,mobility,family,The Blink Ladder
+Baldur's Gate 3,Misty Step,mobility,family,The Travel Agency
 Baldur's Gate 3,Moonbeam,create,effect,
 Baldur's Gate 3,Phantasmal Force,damage,effect,
 Baldur's Gate 3,Phantasmal Killer,damage,effect,
@@ -490,18 +490,18 @@ Baldur's Gate 3,Shatter,damage,effect,
 Baldur's Gate 3,Shield of Faith,defboost,family,The Armour-Class Wardrobe
 Baldur's Gate 3,Shocking Grasp,damage,family,The Damage Cantrip Engine
 Baldur's Gate 3,Silence,disable,override,
-Baldur's Gate 3,Sleep,disable,override,The Hit-Point Pool Engine
+Baldur's Gate 3,Sleep,disable,override,The Crowd Control Cabinet
 Baldur's Gate 3,Sleet Storm,zone,family,The Surface Engine
-Baldur's Gate 3,Slow,disable,rule,
-Baldur's Gate 3,Blinding Smite,damage,family,The Smite Armoury
-Baldur's Gate 3,Branding Smite,damage,family,The Smite Armoury
-Baldur's Gate 3,Searing Smite,damage,family,The Smite Armoury
-Baldur's Gate 3,Thunderous Smite,damage,family,The Smite Armoury
-Baldur's Gate 3,Wrathful Smite,damage,family,The Smite Armoury
-Baldur's Gate 3,Speak with Dead,utility,fallback,
+Baldur's Gate 3,Slow,disable,family,The Crowd Control Cabinet
+Baldur's Gate 3,Blinding Smite,damage,family,The Whetstone
+Baldur's Gate 3,Branding Smite,damage,family,The Whetstone
+Baldur's Gate 3,Searing Smite,damage,family,The Whetstone
+Baldur's Gate 3,Thunderous Smite,damage,family,The Whetstone
+Baldur's Gate 3,Wrathful Smite,damage,family,The Whetstone
+Baldur's Gate 3,Speak with Dead,utility,family,The Fieldcraft Kit
 Baldur's Gate 3,Spike Growth,zone,family,The Surface Engine
 Baldur's Gate 3,Spiritual Weapon,create,override,The Summoning Contract
-Baldur's Gate 3,Staggering Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Staggering Smite,damage,family,The Whetstone
 Baldur's Gate 3,Stinking Cloud,zone,family,The Surface Engine
 Baldur's Gate 3,Stoneskin,defboost,rule,
 Baldur's Gate 3,Thorn Whip,damage,family,The Damage Cantrip Engine
@@ -512,7 +512,7 @@ Baldur's Gate 3,Vicious Mockery,damage,effect,
 Baldur's Gate 3,Warding Bond,defboost,rule,
 Baldur's Gate 3,Web,zone,override,The Surface Engine
 Baldur's Gate 3,Arcane Gate,create,effect,
-Baldur's Gate 3,Dimension Door,mobility,family,The Blink Ladder
+Baldur's Gate 3,Dimension Door,mobility,family,The Travel Agency
 Baldur's Gate 3,Revivify,heal,override,
 Baldur's Gate 3,Telekinesis,damage,effect,
 Baldur's Gate 3,Blade Barrier,zone,family,The Wall Foundry
@@ -521,10 +521,10 @@ Baldur's Gate 3,Wall of Ice,zone,family,The Wall Foundry
 Baldur's Gate 3,Wall of Stone,zone,family,The Wall Foundry
 Baldur's Gate 3,Wall of Thorns,zone,family,The Wall Foundry
 Baldur's Gate 3,Burning Hands,damage,effect,
-Baldur's Gate 3,Colour Spray,disable,family,The Hit-Point Pool Engine
+Baldur's Gate 3,Colour Spray,disable,family,The Crowd Control Cabinet
 Baldur's Gate 3,Cone of Cold,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Conjure Barrage,damage,effect,
-Baldur's Gate 3,Fear,disable,override,
+Baldur's Gate 3,Fear,disable,override,The Crowd Control Cabinet
 Baldur's Gate 3,Gust of Wind,negation,effect,
 Baldur's Gate 3,Lightning Bolt,damage,family,The Elemental Blast Template
 Baldur's Gate 3,Sunbeam,damage,family,The Elemental Blast Template

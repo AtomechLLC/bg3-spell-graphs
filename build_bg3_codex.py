@@ -72,18 +72,16 @@ fam("cure", "The Cure Family", CLONE, "❤️‍🩹",
     "RegainHitPoints(XdY + modifier); the same healing engine as tabletop, ported intact. Cure Wounds vs. Healing Word measures 0.93 on mechanics; the whole family stays high.",
     "Delivery only: d8 touch action, d4 ranged bonus action, and the multi-target versions of each.",
     "The SRD's cleanest parameterized line survives the adaptation unchanged — five spells, one formula."),
-fam("dominate", "The Dominate Pair", CLONE, "🧠",
-    [rid("Dominate Beast"), rid("Dominate Person")],
-    "target creature type; spell level",
-    "Wisdom save or charmed and commanded; identical control mechanics (0.96). BG3 cuts the chain at 6th-level slots, so Dominate Monster didn't make the port.",
-    "The legal target set (beast vs. humanoid) and one level of price.",
-    "Tabletop's three-rung ladder arrives as two rungs — the pricing logic (wider target = higher slot) is preserved."),
-fam("hold", "The Hold Pair", CLONE, "⛓️",
-    [rid("Hold Person"), rid("Hold Monster")],
-    "humanoid vs. any creature; level 2 vs. 5",
-    "Wisdom save or Paralysed, repeat save each turn; 0.95 on mechanics. Both upcast by adding targets — implemented, like all BG3 upcasts, as [[methodology|cloned child entries]].",
-    "The target noun and three spell levels.",
-    "Same as tabletop; BG3 even keeps the paralysis-crit synergy that makes the pair famous."),
+fam("cc", "The Crowd Control Cabinet", TEMPLATE, "⛓️",
+    [rid("Hold Person"), rid("Hold Monster"), rid("Dominate Beast"), rid("Dominate Person"),
+     rid("Charm Person"), rid("Animal Friendship"), rid("Sleep"), rid("Colour Spray"),
+     rid("Fear"), rid("Confusion"), rid("Command"), rid("Tasha's Hideous Laughter"),
+     rid("Otto's Irresistible Dance"), rid("Hypnotic Pattern"), rid("Blindness"),
+     rid("Banishment"), rid("Slow"), rid("Eyebite")],
+    "the flavor of lost agency: hold, charm, sleep, fear, dance, or exile",
+    "One purpose — deny the target its turns — in every school's colors, exactly as in WoW Classic. The holds (Hold Person/Monster, 0.95 on mechanics — creature-type gating as the price knob, upcasts as [[methodology|cloned child entries]]), the charms (Charm Person / Animal Friendship — sharing the literal `CHARMED` status in the game data, 0.96 — and the Dominate pair at 0.96), the sleeps (Sleep / Colour Spray on the hit-point-pool engine, 0.81), the panics (Fear / Confusion / Hypnotic Pattern), the humiliations (Hideous Laughter / Irresistible Dance / Command's five verbs / Eyebite's three-mode menu — both [[containers|containers]]), and the exile (Banishment). Slow is the outpatient wing.",
+    "The status applied, the legal target types, the save, and the level the same denial is priced at.",
+    "The WoW pass proved crowd control is one design department wearing every class's colors; BG3's cabinet is smaller but identically structured — target-type gating does the work that spell level does elsewhere."),
 fam("invisibility", "The Invisibility Ladder", CLONE, "🫥",
     [rid("Invisibility"), rid("Greater Invisibility")],
     "breaks-on-attack clause; duration",
@@ -102,12 +100,6 @@ fam("bane-bless", "Bane & Bless", CLONE, "⚖️",
     "Up to 3 targets, a d4 riding attack rolls and saving throws, concentration; 0.77 on mechanics.",
     "Add vs. subtract, and the Charisma save on the hostile version.",
     "The mirror clone, ported intact."),
-fam("charm", "The Charm Pair", CLONE, "💘",
-    [rid("Animal Friendship"), rid("Charm Person")],
-    "beast vs. humanoid",
-    "Wisdom save or the Charmed condition; mechanical signature similarity 0.96 — in BG3 these two are the same spell against different phyla.",
-    "The target type and the save-DC flavor.",
-    "Tabletop wrote them as different texts; BG3's condition engine reveals them as one design."),
 
 fam("walls", "The Wall Foundry", TEMPLATE, "🧱",
     [rid("Wall of Fire"), rid("Wall of Ice", 6), rid("Wall of Stone"),
@@ -131,26 +123,23 @@ fam("surfaces", "The Surface Engine", TEMPLATE, "🕸️",
     "Pick an area; the game paints a surface or cloud that applies a condition to anyone inside. Signature similarities run 0.88–0.96 across the family (Grease/Web 0.90, Entangle/Stinking Cloud 0.94).",
     "The surface type (grease, webs, vines, fog, poison, tentacles…), its condition, and whether it's flammable, freezable, or dispellable by wind.",
     "BG3's signature homogenizer. Larian rebuilt tabletop's varied area-control spells on one ground-surface system — the game's most distinctive engine, and its strongest flattening force."),
-fam("smites", "The Smite Armoury", TEMPLATE, "🔨",
+fam("melee-enhance", "The Whetstone", TEMPLATE, "⚔️",
     ["Target_Smite_Searing", "Target_Smite_Thunderous", "Target_Smite_Wrathful",
      "Target_Smite_Branding_Container", "Target_Smite_Blinding",
-     "Target_StaggeringSmite", "Projectile_Smite_Banishing_Container"],
-    "rider condition and damage type; two are melee/ranged containers",
-    "Bonus-action weapon strike + XdY typed damage + a rider condition on hit; measured 0.92–0.94 signature similarity between smites.",
-    "The rider (burning, prone, frightened, branded, blinded, staggered, banished), the element, and the level the rider is priced at. Branding and Banishing are themselves [[containers|containers]] with melee/ranged children.",
-    "Seven products from one on-hit engine — a pricing table for conditions, with the smite name as the flavor knob."),
-fam("teleports", "The Blink Ladder", TEMPLATE, "🌀",
-    [rid("Misty Step"), rid("Dimension Door")],
-    "range and passenger capacity",
-    "Teleport to a visible point; 0.93 signature similarity.",
-    "18m bonus-action self-only vs. long-range action with a passenger.",
-    "A two-rung vertical ladder selling range and cargo."),
-fam("hp-pool", "The Hit-Point Pool Engine", TEMPLATE, "🧮",
-    [rid("Sleep"), rid("Colour Spray")],
-    "unconscious vs. blinded",
-    "Roll a pool of hit points; affect creatures in ascending current-HP order until it runs out; 0.81 on mechanics.",
-    "The condition applied and the pool dice.",
-    "Tabletop's oddest shared engine survives the port intact, still exactly twice, still both at level 1."),
+     "Target_StaggeringSmite", "Projectile_Smite_Banishing_Container",
+     rid("Elemental Weapon"), rid("Magic Weapon"), rid("Divine Favour"),
+     rid("Crusader's Mantle"), rid("Flame Blade"), rid("Shadow Blade")],
+    "how the weapon hit is made bigger: smite, imbue, aura, or conjured blade",
+    "Everything that turns a weapon swing into more than a swing — WoW's melee-enhance family, found intact in BG3. The smites (0.92–0.94 pairwise) are the on-hit rider engine: bonus damage plus a condition, with Branding and Banishing as melee/ranged [[containers|containers]]. The imbues (Elemental Weapon's five-type container, Magic Weapon, Divine Favour) enchant the blade before the swing; Crusader's Mantle broadcasts the imbue to the whole party; Flame Blade and Shadow Blade conjure the enhanced weapon outright.",
+    "The delivery slot (on-hit smite, pre-buff imbue, radiating aura, conjured blade), the rider, and the element.",
+    "The same enhancement engine in three games: WoW's whetstone rack, BG3's smite-and-imbue shelf, and D&D's smite spells — one design department, three rulebooks."),
+fam("travel", "The Travel Agency", TEMPLATE, "🌀",
+    [rid("Misty Step"), rid("Dimension Door"), rid("Grant Flight"), rid("Longstrider"),
+     rid("Enhance Leap"), rid("Feather Fall"), rid("Freedom of Movement"), rid("Gaseous Form")],
+    "the mode of getting there",
+    "Movement as a product line, the WoW lesson applied: the teleports (Misty Step / Dimension Door, 0.93 on mechanics — a two-rung ladder selling range and cargo), the buff-movers ('touch a willing creature; it gains [capability]': Grant Flight, Longstrider, Enhance Leap, Feather Fall, Freedom of Movement — one sentence skeleton, five verbs), and the shape-out (Gaseous Form).",
+    "The medium (blink, fly, run, leap, fall, mist), the delivery (self vs. touch), and duration.",
+    "Function-primary beats mechanism-primary: the blink ladder and the touch-buff skeleton were two families by construction and one by purpose."),
 fam("conjure", "The Summoning Contract", TEMPLATE, "🧞",
     [rid("Conjure Elemental"), rid("Conjure Minor Elemental"), rid("Find Familiar"),
      rid("Animate Dead"), rid("Planar Ally"), rid("Spiritual Weapon"), rid("Flaming Sphere")],
@@ -174,13 +163,14 @@ fam("cleanse", "The Cleanse Counter", ENGINE, "🧼",
     "Touch a creature, remove conditions from a named list; signatures measure 0.83–0.89 — one RemoveStatus() engine with different shopping lists.",
     "The list (disease/poison vs. curses vs. everything) and the level.",
     "A vertical ladder of the same verb: pay more, cleanse more."),
-fam("touch-buffs", "The Touch-Buff Skeleton", ENGINE, "🤝",
-    [rid("Longstrider"), rid("Enhance Leap"), rid("Grant Flight"), rid("Darkvision"),
-     rid("Feather Fall"), rid("Freedom of Movement")],
-    "the movement verb granted",
-    "Touch a willing creature; apply a long-duration movement condition. Enhance Leap vs. Longstrider: 0.86 signature.",
-    "The verb (speed, jump, fly, see, fall, move freely), duration, and ritual eligibility.",
-    "The utility shelf again — note Grant Flight is Fly renamed, and Enhance Leap is Jump renamed; Larian's names drift, the skeleton doesn't."),
+fam("fieldcraft", "The Fieldcraft Kit", ENGINE, "🎒",
+    [rid("Speak with Animals"), rid("Speak with Dead"), rid("Detect Thoughts"),
+     rid("Knock"), rid("Friends"), rid("Disguise Self"), rid("Feign Death"),
+     rid("Darkvision")],
+    "which non-combat problem it solves: dialogue, minds, locks, faces, or sight",
+    "The abilities whose job is the world, not the fight — the WoW fieldcraft bucket, BG3 edition. The interrogations (Speak with Animals / Speak with Dead / Detect Thoughts — unlock a dialogue channel that doesn't normally exist), the social tools (Friends, Disguise Self's 32-costume [[containers|container]], Feign Death), and the dungeon keys (Knock, Darkvision).",
+    "The problem solved and the class stamp.",
+    "Downtime is a design space in every game studied — and BG3's version is dialogue-heavy because dialogue is BG3's world."),
 fam("d4-riders", "Guidance & Resistance", ENGINE, "🎲",
     [rid("Guidance"), rid("Resistance")],
     "checks vs. saves",
@@ -327,7 +317,7 @@ page("containers", "Container Spells", "Start", f"""# <span class="femoji">📦<
 
 Larian's answer to the reskin: make it a **feature**. A container spell is one spell whose cast button opens a menu of variant child spells — **{len(CONTAINERS)} containers wrap {N_CHILDREN} variant spells**, every child a separate `SpellData` entry inheriting from its parent.
 
-Where tabletop publishes Chromatic Orb as one paragraph with a damage-type clause, BG3 ships **six sibling entries** differing in one damage row. Where the SRD's [[families/smites|smites]] are seven spells, two of them here are containers *again* (melee/ranged) — reskins inside reskins.
+Where tabletop publishes Chromatic Orb as one paragraph with a damage-type clause, BG3 ships **six sibling entries** differing in one damage row. Where the SRD's smites are seven spells, two of them here — filed in [[families/melee-enhance|the Whetstone]] — are containers *again* (melee/ranged) — reskins inside reskins.
 
 {chr(10).join(crow)}
 
@@ -437,7 +427,35 @@ page("methodology", "Methodology", "Start", f"""# Methodology
 **Reproduce.** `bg3pak.py` reads the LSPK archives; `extract_bg3_data.py` + `bg3_dataset.py` build `bg3_spells.json`; `bg3_analyze.py` scores pairs; `build_bg3_codex.py` renders this codex. The tabletop companion codex covers the same analysis for the D&D 5e SRD.
 """)
 
-# overview
+# overview — mechanical-twin matrix (the WoW-derived measure, on signature sims)
+TWIN_T = 0.84
+TWIN = {A: {B: set() for B in CLASSES} for A in CLASSES}
+if os.path.exists("cluster_sims.json"):
+    _ids = {r["id"] for r in POP}
+    for k, v in json.load(open("cluster_sims.json")).items():
+        if v < TWIN_T:
+            continue
+        a, b = k.split("|")
+        ra, rb = BY.get(a), BY.get(b)
+        if not ra or not rb:
+            continue
+        for ca in ra["classes"]:
+            for cb in rb["classes"]:
+                TWIN[ca][cb].add(a)
+                TWIN[cb][ca].add(b)
+
+def _ncls(c):
+    return sum(1 for r in DPOP if c in r["classes"]) or 1
+
+tmat = ["| ↓ has effect-twins in → | " + " | ".join(cls_link(c) for c in CLASSES) + " |",
+        "|---|" + "---|" * len(CLASSES)]
+for a in CLASSES:
+    cells = ["—" if a == b else f"{100 * len(TWIN[a][b]) / _ncls(a):.0f}%" for b in CLASSES]
+    tmat.append(f"| {cls_link(a)} | " + " | ".join(cells) + " |")
+tinternal = sorted(((100 * len(TWIN[c][c]) / _ncls(c), c) for c in CLASSES if _ncls(c) > 1),
+                   reverse=True)
+tinternal_txt = " · ".join(f"{cls_link(c)} **{p:.0f}%**" for p, c in tinternal[:6])
+
 mat = ["| ↓ list · shared with → | " + " | ".join(cls_link(c) for c in CLASSES) + " |",
        "|---|" + "---|" * len(CLASSES)]
 for a in CLASSES:
@@ -466,6 +484,10 @@ The companion codex to the tabletop study: the same homogeneity analysis, run on
 {len(DEDUP)} distinct spells fill {slots} class-list slots ({slots/len(DEDUP):.1f} lists per spell). The most-shared spells sit on {max(share)} of 11 lists: {", ".join(top_shared[:4])}{"…" if len(top_shared) > 4 else ""}. Bard's Magical Secrets and the half-caster subclasses (Eldritch Knight, Arcane Trickster) import other classes' lists wholesale:
 
 {chr(10).join(mat)}
+
+And the deeper measure the WoW study introduced — **mechanical twins**: the share of the row class's spells with a *different* spell in the column class's list at effect-signature similarity ≥ {TWIN_T} (name overlap counts shared spells; this counts shared *designs*). Internal redundancy — each class against its own list: {tinternal_txt}.
+
+{chr(10).join(tmat)}
 
 ## Axis 2 — different spells, same design
 
