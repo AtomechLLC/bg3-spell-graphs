@@ -1,0 +1,66 @@
+similarity,spell_a,lvl_a,spell_b,lvl_b,classes_a,classes_b
+1.000,Dominate Beast,4,Dominate Monster,8,Druid/Sorcerer,Bard/Sorcerer/Warlock/Wizard
+0.966,Conjure Minor Elementals,4,Conjure Woodland Beings,4,Druid/Wizard,Druid/Ranger
+0.933,Conjure Animals,3,Conjure Woodland Beings,4,Druid/Ranger,Druid/Ranger
+0.931,Dominate Beast,4,Dominate Person,5,Druid/Sorcerer,Bard/Sorcerer/Wizard
+0.931,Dominate Monster,8,Dominate Person,5,Bard/Sorcerer/Warlock/Wizard,Bard/Sorcerer/Wizard
+0.931,Conjure Animals,3,Conjure Minor Elementals,4,Druid/Ranger,Druid/Wizard
+0.907,Guidance,0,Resistance,0,Cleric/Druid,Cleric/Druid
+0.895,Healing Word,1,Prayer of Healing,2,Bard/Cleric/Druid,Cleric
+0.895,Mass Healing Word,3,Prayer of Healing,2,Cleric,Cleric
+0.878,Cure Wounds,1,Healing Word,1,Bard/Cleric/Druid/Paladin/Ranger,Bard/Cleric/Druid
+0.857,Bane,1,Bless,1,Bard/Cleric,Cleric/Paladin
+0.847,Healing Word,1,Mass Healing Word,3,Bard/Cleric/Druid,Cleric
+0.815,Mass Suggestion,6,Suggestion,2,Bard/Sorcerer/Warlock/Wizard,Bard/Sorcerer/Warlock/Wizard
+0.814,Conjure Elemental,5,Conjure Fey,6,Druid/Wizard,Druid/Warlock
+0.772,Cure Wounds,1,Prayer of Healing,2,Bard/Cleric/Druid/Paladin/Ranger,Cleric
+0.764,Color Spray,1,Sleep,1,Sorcerer/Wizard,Bard/Sorcerer/Wizard
+0.748,Cure Wounds,1,Mass Healing Word,3,Bard/Cleric/Druid/Paladin/Ranger,Cleric
+0.743,Circle of Death,6,Flame Strike,5,Sorcerer/Warlock/Wizard,Cleric
+0.738,Healing Word,1,Mass Cure Wounds,5,Bard/Cleric/Druid,Bard/Cleric/Druid
+0.734,Conjure Celestial,7,Conjure Fey,6,Cleric,Druid/Warlock
+0.733,Flame Strike,5,Ice Storm,4,Cleric,Druid/Sorcerer/Wizard
+0.730,Circle of Death,6,Cone of Cold,5,Sorcerer/Warlock/Wizard,Sorcerer/Wizard
+0.722,Burning Hands,1,Lightning Bolt,3,Sorcerer/Wizard,Sorcerer/Wizard
+0.722,Circle of Death,6,Ice Storm,4,Sorcerer/Warlock/Wizard,Druid/Sorcerer/Wizard
+0.721,Fireball,3,Lightning Bolt,3,Sorcerer/Wizard,Sorcerer/Wizard
+0.720,Blindness/Deafness,2,Hold Person,2,Bard/Cleric/Sorcerer/Wizard,Bard/Cleric/Druid/Sorcerer/Warlock/Wizard
+0.712,Animate Dead,3,Create Undead,6,Cleric/Wizard,Cleric/Warlock/Wizard
+0.711,Major Image,3,Silent Image,1,Bard/Sorcerer/Warlock/Wizard,Bard/Sorcerer/Wizard
+0.710,Animal Shapes,8,Polymorph,4,Druid,Bard/Druid/Sorcerer/Wizard
+0.704,Mass Cure Wounds,5,Prayer of Healing,2,Bard/Cleric/Druid,Cleric
+0.694,Hold Monster,5,Hold Person,2,Bard/Sorcerer/Warlock/Wizard,Bard/Cleric/Druid/Sorcerer/Warlock/Wizard
+0.693,Circle of Death,6,Hellish Rebuke,1,Sorcerer/Warlock/Wizard,Warlock
+0.689,Cone of Cold,5,Flame Strike,5,Sorcerer/Wizard,Cleric
+0.688,Burning Hands,1,Fireball,3,Sorcerer/Wizard,Sorcerer/Wizard
+0.687,Mass Cure Wounds,5,Mass Healing Word,3,Bard/Cleric/Druid,Cleric
+0.686,Disguise Self,1,Seeming,5,Bard/Sorcerer/Wizard,Bard/Sorcerer/Wizard
+0.680,Circle of Death,6,Lightning Bolt,3,Sorcerer/Warlock/Wizard,Sorcerer/Wizard
+0.678,Cure Wounds,1,Mass Cure Wounds,5,Bard/Cleric/Druid/Paladin/Ranger,Bard/Cleric/Druid
+0.667,Poison Spray,0,Sacred Flame,0,Druid/Sorcerer/Warlock/Wizard,Cleric
+0.664,Darkness,2,Daylight,3,Sorcerer/Warlock/Wizard,Cleric/Druid/Paladin/Ranger/Sorcerer
+0.662,Cone of Cold,5,Hellish Rebuke,1,Sorcerer/Wizard,Warlock
+0.660,Fly,3,Longstrider,1,Sorcerer/Warlock/Wizard,Bard/Druid/Ranger/Wizard
+0.644,Burning Hands,1,Hellish Rebuke,1,Sorcerer/Wizard,Warlock
+0.641,Burning Hands,1,Cone of Cold,5,Sorcerer/Wizard,Sorcerer/Wizard
+0.641,Cone of Cold,5,Lightning Bolt,3,Sorcerer/Wizard,Sorcerer/Wizard
+0.639,Heal,6,Healing Word,1,Cleric/Druid,Bard/Cleric/Druid
+0.639,Locate Creature,4,Locate Object,2,Bard/Cleric/Druid/Paladin/Ranger/Wizard,Bard/Cleric/Druid/Paladin/Ranger/Wizard
+0.635,Circle of Death,6,Fireball,3,Sorcerer/Warlock/Wizard,Sorcerer/Wizard
+0.634,Flame Strike,5,Lightning Bolt,3,Cleric,Sorcerer/Wizard
+0.634,Cone of Cold,5,Ice Storm,4,Sorcerer/Wizard,Druid/Sorcerer/Wizard
+0.632,Acid Splash,0,Poison Spray,0,Sorcerer/Wizard,Druid/Sorcerer/Warlock/Wizard
+0.627,Burning Hands,1,Circle of Death,6,Sorcerer/Wizard,Sorcerer/Warlock/Wizard
+0.624,Flame Strike,5,Hellish Rebuke,1,Cleric,Warlock
+0.623,Heal,6,Prayer of Healing,2,Cleric/Druid,Cleric
+0.619,Fireball,3,Flame Strike,5,Sorcerer/Wizard,Cleric
+0.619,Detect Magic,1,Detect Poison and Disease,1,Bard/Cleric/Druid/Paladin/Ranger/Sorcerer/Wizard,Cleric/Druid/Paladin/Ranger
+0.615,Hellish Rebuke,1,Lightning Bolt,3,Warlock,Sorcerer/Wizard
+0.614,Cure Wounds,1,Inflict Wounds,1,Bard/Cleric/Druid/Paladin/Ranger,Cleric
+0.612,Cone of Cold,5,Fireball,3,Sorcerer/Wizard,Sorcerer/Wizard
+0.610,Conjure Celestial,7,Conjure Elemental,5,Cleric,Druid/Wizard
+0.609,Heal,6,Mass Healing Word,3,Cleric/Druid,Cleric
+0.609,Ice Storm,4,Lightning Bolt,3,Druid/Sorcerer/Wizard,Sorcerer/Wizard
+0.609,Cure Wounds,1,Heal,6,Bard/Cleric/Druid/Paladin/Ranger,Cleric/Druid
+0.602,Polymorph,4,True Polymorph,9,Bard/Druid/Sorcerer/Wizard,Bard/Warlock/Wizard
+0.600,Counterspell,3,Dispel Magic,3,Sorcerer/Warlock/Wizard,Bard/Cleric/Druid/Paladin/Sorcerer/Warlock/Wizard

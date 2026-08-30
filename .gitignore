@@ -1,0 +1,9 @@
+# Raw extracted game data — © Larian Studios / Wizards of the Coast.
+# Not redistributed; regenerate from an owned BG3 install (see README).
+bg3_data/
+bg3_icons/
+bg3_codex_icons/
+
+__pycache__/
+preview.html
+render_check.png

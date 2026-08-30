@@ -1,0 +1,779 @@
+class,level,spell,school,concentration,ritual
+Bard,0,Dancing Lights,Evocation,True,False
+Bard,0,Light,Evocation,False,False
+Bard,0,Mage Hand,Conjuration,False,False
+Bard,0,Mending,Transmutation,False,False
+Bard,0,Message,Transmutation,False,False
+Bard,0,Minor Illusion,Illusion,False,False
+Bard,0,Prestidigitation,Transmutation,False,False
+Bard,0,True Strike,Divination,True,False
+Bard,0,Vicious Mockery,Enchantment,False,False
+Bard,1,Animal Friendship,Enchantment,False,False
+Bard,1,Bane,Enchantment,True,False
+Bard,1,Charm Person,Enchantment,False,False
+Bard,1,Comprehend Languages,Divination,False,True
+Bard,1,Cure Wounds,Evocation,False,False
+Bard,1,Detect Magic,Divination,True,True
+Bard,1,Disguise Self,Illusion,False,False
+Bard,1,Feather Fall,Transmutation,False,False
+Bard,1,Healing Word,Evocation,False,False
+Bard,1,Heroism,Enchantment,True,False
+Bard,1,Hideous Laughter,Enchantment,True,False
+Bard,1,Identify,Divination,False,True
+Bard,1,Illusory Script,Illusion,False,True
+Bard,1,Longstrider,Transmutation,False,False
+Bard,1,Silent Image,Illusion,True,False
+Bard,1,Sleep,Enchantment,False,False
+Bard,1,Speak with Animals,Divination,False,True
+Bard,1,Thunderwave,Evocation,False,False
+Bard,1,Unseen Servant,Conjuration,False,True
+Bard,2,Animal Messenger,Enchantment,False,True
+Bard,2,Blindness/Deafness,Necromancy,False,False
+Bard,2,Calm Emotions,Enchantment,True,False
+Bard,2,Detect Thoughts,Divination,True,False
+Bard,2,Enhance Ability,Transmutation,True,False
+Bard,2,Enthrall,Enchantment,False,False
+Bard,2,Heat Metal,Transmutation,True,False
+Bard,2,Hold Person,Enchantment,True,False
+Bard,2,Invisibility,Illusion,True,False
+Bard,2,Knock,Transmutation,False,False
+Bard,2,Lesser Restoration,Abjuration,False,False
+Bard,2,Locate Animals or Plants,Divination,False,True
+Bard,2,Locate Object,Divination,True,False
+Bard,2,Magic Mouth,Illusion,False,True
+Bard,2,See Invisibility,Divination,False,False
+Bard,2,Shatter,Evocation,False,False
+Bard,2,Silence,Illusion,True,True
+Bard,2,Suggestion,Enchantment,True,False
+Bard,2,Zone of Truth,Enchantment,False,False
+Bard,3,Bestow Curse,Necromancy,True,False
+Bard,3,Clairvoyance,Divination,True,False
+Bard,3,Dispel Magic,Abjuration,False,False
+Bard,3,Fear,Illusion,True,False
+Bard,3,Glyph of Warding,Abjuration,False,False
+Bard,3,Hypnotic Pattern,Illusion,True,False
+Bard,3,Major Image,Illusion,True,False
+Bard,3,Nondetection,Abjuration,False,False
+Bard,3,Plant Growth,Transmutation,False,False
+Bard,3,Sending,Evocation,False,False
+Bard,3,Speak with Dead,Necromancy,False,False
+Bard,3,Speak with Plants,Transmutation,False,False
+Bard,3,Stinking Cloud,Conjuration,True,False
+Bard,3,Tiny Hut,Evocation,False,True
+Bard,3,Tongues,Divination,False,False
+Bard,4,Compulsion,Enchantment,True,False
+Bard,4,Confusion,Enchantment,True,False
+Bard,4,Dimension Door,Conjuration,False,False
+Bard,4,Freedom of Movement,Abjuration,False,False
+Bard,4,Greater Invisibility,Illusion,True,False
+Bard,4,Hallucinatory Terrain,Illusion,False,False
+Bard,4,Locate Creature,Divination,True,False
+Bard,4,Polymorph,Transmutation,True,False
+Bard,5,Animate Objects,Transmutation,True,False
+Bard,5,Awaken,Transmutation,False,False
+Bard,5,Dominate Person,Enchantment,True,False
+Bard,5,Dream,Illusion,False,False
+Bard,5,Geas,Enchantment,False,False
+Bard,5,Greater Restoration,Abjuration,False,False
+Bard,5,Hold Monster,Enchantment,True,False
+Bard,5,Legend Lore,Divination,False,False
+Bard,5,Mass Cure Wounds,Conjuration,False,False
+Bard,5,Mislead,Illusion,True,False
+Bard,5,Modify Memory,Enchantment,True,False
+Bard,5,Planar Binding,Abjuration,False,False
+Bard,5,Raise Dead,Necromancy,False,False
+Bard,5,Scrying,Divination,True,False
+Bard,5,Seeming,Illusion,False,False
+Bard,5,Teleportation Circle,Conjuration,False,False
+Bard,6,Eyebite,Necromancy,True,False
+Bard,6,Find the Path,Divination,True,False
+Bard,6,Guards and Wards,Abjuration,False,False
+Bard,6,Irresistible Dance,Enchantment,True,False
+Bard,6,Mass Suggestion,Enchantment,False,False
+Bard,6,Programmed Illusion,Illusion,False,False
+Bard,6,True Seeing,Divination,False,False
+Bard,7,Arcane Sword,Evocation,True,False
+Bard,7,Etherealness,Transmutation,False,False
+Bard,7,Forcecage,Evocation,False,False
+Bard,7,Magnificent Mansion,Conjuration,False,False
+Bard,7,Mirage Arcane,Illusion,False,False
+Bard,7,Project Image,Illusion,True,False
+Bard,7,Regenerate,Transmutation,False,False
+Bard,7,Resurrection,Necromancy,False,False
+Bard,7,Symbol,Abjuration,False,False
+Bard,7,Teleport,Conjuration,False,False
+Bard,8,Dominate Monster,Enchantment,True,False
+Bard,8,Feeblemind,Enchantment,False,False
+Bard,8,Glibness,Transmutation,False,False
+Bard,8,Mind Blank,Abjuration,False,False
+Bard,8,Power Word Stun,Enchantment,False,False
+Bard,9,Foresight,Divination,False,False
+Bard,9,Power Word Kill,Enchantment,False,False
+Bard,9,True Polymorph,Transmutation,True,False
+Cleric,0,Guidance,Divination,True,False
+Cleric,0,Light,Evocation,False,False
+Cleric,0,Mending,Transmutation,False,False
+Cleric,0,Resistance,Abjuration,True,False
+Cleric,0,Sacred Flame,Evocation,False,False
+Cleric,0,Spare the Dying,Necromancy,False,False
+Cleric,0,Thaumaturgy,Transmutation,False,False
+Cleric,1,Bane,Enchantment,True,False
+Cleric,1,Bless,Enchantment,True,False
+Cleric,1,Command,Enchantment,False,False
+Cleric,1,Create or Destroy Water,Transmutation,False,False
+Cleric,1,Cure Wounds,Evocation,False,False
+Cleric,1,Detect Evil and Good,Divination,True,False
+Cleric,1,Detect Magic,Divination,True,True
+Cleric,1,Detect Poison and Disease,Divination,True,True
+Cleric,1,Guiding Bolt,Evocation,False,False
+Cleric,1,Healing Word,Evocation,False,False
+Cleric,1,Inflict Wounds,Necromancy,False,False
+Cleric,1,Protection from Evil and Good,Abjuration,True,False
+Cleric,1,Purify Food and Drink,Transmutation,False,True
+Cleric,1,Sanctuary,Abjuration,False,False
+Cleric,1,Shield of Faith,Abjuration,True,False
+Cleric,2,Aid,Abjuration,False,False
+Cleric,2,Augury,Divination,False,True
+Cleric,2,Blindness/Deafness,Necromancy,False,False
+Cleric,2,Calm Emotions,Enchantment,True,False
+Cleric,2,Continual Flame,Evocation,False,False
+Cleric,2,Enhance Ability,Transmutation,True,False
+Cleric,2,Find Traps,Divination,False,False
+Cleric,2,Gentle Repose,Necromancy,False,True
+Cleric,2,Hold Person,Enchantment,True,False
+Cleric,2,Lesser Restoration,Abjuration,False,False
+Cleric,2,Locate Object,Divination,True,False
+Cleric,2,Prayer of Healing,Evocation,False,False
+Cleric,2,Protection from Poison,Abjuration,False,False
+Cleric,2,Silence,Illusion,True,True
+Cleric,2,Spiritual Weapon,Evocation,False,False
+Cleric,2,Warding Bond,Abjuration,False,False
+Cleric,2,Zone of Truth,Enchantment,False,False
+Cleric,3,Animate Dead,Necromancy,False,False
+Cleric,3,Beacon of Hope,Abjuration,True,False
+Cleric,3,Bestow Curse,Necromancy,True,False
+Cleric,3,Clairvoyance,Divination,True,False
+Cleric,3,Create Food and Water,Conjuration,False,False
+Cleric,3,Daylight,Evocation,False,False
+Cleric,3,Dispel Magic,Abjuration,False,False
+Cleric,3,Glyph of Warding,Abjuration,False,False
+Cleric,3,Magic Circle,Abjuration,False,False
+Cleric,3,Mass Healing Word,Evocation,False,False
+Cleric,3,Meld Into Stone,Transmutation,False,True
+Cleric,3,Protection From Energy,Abjuration,True,False
+Cleric,3,Remove Curse,Abjuration,False,False
+Cleric,3,Revivify,Conjuration,False,False
+Cleric,3,Sending,Evocation,False,False
+Cleric,3,Speak with Dead,Necromancy,False,False
+Cleric,3,Spirit Guardians,Conjuration,True,False
+Cleric,3,Tongues,Divination,False,False
+Cleric,3,Water Walk,Transmutation,False,True
+Cleric,4,Arcane Eye,Divination,True,False
+Cleric,4,Banishment,Abjuration,True,False
+Cleric,4,Control Water,Transmutation,True,False
+Cleric,4,Death Ward,Abjuration,False,False
+Cleric,4,Freedom of Movement,Abjuration,False,False
+Cleric,4,Guardian of Faith,Conjuration,False,False
+Cleric,4,Locate Creature,Divination,True,False
+Cleric,4,Stone Shape,Transmutation,False,False
+Cleric,5,Commune,Divination,False,True
+Cleric,5,Contagion,Necromancy,False,False
+Cleric,5,Dispel Evil and Good,Abjuration,True,False
+Cleric,5,Flame Strike,Evocation,False,False
+Cleric,5,Geas,Enchantment,False,False
+Cleric,5,Greater Restoration,Abjuration,False,False
+Cleric,5,Hallow,Evocation,False,False
+Cleric,5,Insect Plague,Conjuration,True,False
+Cleric,5,Legend Lore,Divination,False,False
+Cleric,5,Mass Cure Wounds,Conjuration,False,False
+Cleric,5,Planar Binding,Abjuration,False,False
+Cleric,5,Raise Dead,Necromancy,False,False
+Cleric,5,Scrying,Divination,True,False
+Cleric,6,Blade Barrier,Evocation,True,False
+Cleric,6,Create Undead,Necromancy,False,False
+Cleric,6,Find the Path,Divination,True,False
+Cleric,6,Forbiddance,Abjuration,False,True
+Cleric,6,Harm,Necromancy,False,False
+Cleric,6,Heal,Evocation,False,False
+Cleric,6,Heroes' Feast,Conjuration,False,False
+Cleric,6,Planar Ally,Conjuration,False,False
+Cleric,6,True Seeing,Divination,False,False
+Cleric,6,Word of Recall,Conjuration,False,False
+Cleric,7,Conjure Celestial,Conjuration,True,False
+Cleric,7,Divine Word,Evocation,False,False
+Cleric,7,Etherealness,Transmutation,False,False
+Cleric,7,Fire Storm,Evocation,False,False
+Cleric,7,Plane Shift,Conjuration,False,False
+Cleric,7,Regenerate,Transmutation,False,False
+Cleric,7,Resurrection,Necromancy,False,False
+Cleric,7,Symbol,Abjuration,False,False
+Cleric,8,Antimagic Field,Abjuration,True,False
+Cleric,8,Control Weather,Transmutation,True,False
+Cleric,8,Earthquake,Evocation,True,False
+Cleric,8,Holy Aura,Abjuration,True,False
+Cleric,9,Astral Projection,Necromancy,False,False
+Cleric,9,Gate,Conjuration,True,False
+Cleric,9,Mass Heal,Conjuration,False,False
+Cleric,9,True Resurrection,Necromancy,False,False
+Druid,0,Druidcraft,Transmutation,False,False
+Druid,0,Guidance,Divination,True,False
+Druid,0,Mending,Transmutation,False,False
+Druid,0,Poison Spray,Conjuration,False,False
+Druid,0,Produce Flame,Conjuration,False,False
+Druid,0,Resistance,Abjuration,True,False
+Druid,0,Shillelagh,Transmutation,False,False
+Druid,1,Animal Friendship,Enchantment,False,False
+Druid,1,Charm Person,Enchantment,False,False
+Druid,1,Create or Destroy Water,Transmutation,False,False
+Druid,1,Cure Wounds,Evocation,False,False
+Druid,1,Detect Magic,Divination,True,True
+Druid,1,Detect Poison and Disease,Divination,True,True
+Druid,1,Entangle,Conjuration,True,False
+Druid,1,Faerie Fire,Evocation,True,False
+Druid,1,Fog Cloud,Conjuration,True,False
+Druid,1,Goodberry,Transmutation,False,False
+Druid,1,Healing Word,Evocation,False,False
+Druid,1,Jump,Transmutation,False,False
+Druid,1,Longstrider,Transmutation,False,False
+Druid,1,Purify Food and Drink,Transmutation,False,True
+Druid,1,Speak with Animals,Divination,False,True
+Druid,1,Thunderwave,Evocation,False,False
+Druid,2,Animal Messenger,Enchantment,False,True
+Druid,2,Barkskin,Transmutation,True,False
+Druid,2,Darkvision,Transmutation,False,False
+Druid,2,Enhance Ability,Transmutation,True,False
+Druid,2,Find Traps,Divination,False,False
+Druid,2,Flame Blade,Evocation,True,False
+Druid,2,Flaming Sphere,Conjuration,True,False
+Druid,2,Gust of Wind,Evocation,True,False
+Druid,2,Heat Metal,Transmutation,True,False
+Druid,2,Hold Person,Enchantment,True,False
+Druid,2,Lesser Restoration,Abjuration,False,False
+Druid,2,Locate Animals or Plants,Divination,False,True
+Druid,2,Locate Object,Divination,True,False
+Druid,2,Moonbeam,Evocation,True,False
+Druid,2,Pass Without Trace,Abjuration,True,False
+Druid,2,Protection from Poison,Abjuration,False,False
+Druid,2,Spike Growth,Transmutation,True,False
+Druid,3,Call Lightning,Conjuration,True,False
+Druid,3,Conjure Animals,Conjuration,True,False
+Druid,3,Create Food and Water,Conjuration,False,False
+Druid,3,Daylight,Evocation,False,False
+Druid,3,Dispel Magic,Abjuration,False,False
+Druid,3,Plant Growth,Transmutation,False,False
+Druid,3,Protection From Energy,Abjuration,True,False
+Druid,3,Sleet Storm,Conjuration,True,False
+Druid,3,Speak with Plants,Transmutation,False,False
+Druid,3,Water Breathing,Transmutation,False,True
+Druid,3,Water Walk,Transmutation,False,True
+Druid,3,Wind Wall,Evocation,True,False
+Druid,4,Blight,Necromancy,False,False
+Druid,4,Confusion,Enchantment,True,False
+Druid,4,Conjure Minor Elementals,Conjuration,True,False
+Druid,4,Conjure Woodland Beings,Conjuration,True,False
+Druid,4,Control Water,Transmutation,True,False
+Druid,4,Divination,Divination,False,True
+Druid,4,Dominate Beast,Enchantment,True,False
+Druid,4,Freedom of Movement,Abjuration,False,False
+Druid,4,Giant Insect,Transmutation,True,False
+Druid,4,Hallucinatory Terrain,Illusion,False,False
+Druid,4,Ice Storm,Evocation,False,False
+Druid,4,Locate Creature,Divination,True,False
+Druid,4,Polymorph,Transmutation,True,False
+Druid,4,Stone Shape,Transmutation,False,False
+Druid,4,Stoneskin,Abjuration,True,False
+Druid,4,Wall of Fire,Evocation,True,False
+Druid,5,Antilife Shell,Abjuration,True,False
+Druid,5,Awaken,Transmutation,False,False
+Druid,5,Commune With Nature,Divination,False,True
+Druid,5,Conjure Elemental,Conjuration,True,False
+Druid,5,Contagion,Necromancy,False,False
+Druid,5,Geas,Enchantment,False,False
+Druid,5,Greater Restoration,Abjuration,False,False
+Druid,5,Insect Plague,Conjuration,True,False
+Druid,5,Mass Cure Wounds,Conjuration,False,False
+Druid,5,Planar Binding,Abjuration,False,False
+Druid,5,Reincarnate,Transmutation,False,False
+Druid,5,Scrying,Divination,True,False
+Druid,5,Tree Stride,Conjuration,True,False
+Druid,5,Wall of Stone,Evocation,True,False
+Druid,6,Conjure Fey,Conjuration,True,False
+Druid,6,Find the Path,Divination,True,False
+Druid,6,Heal,Evocation,False,False
+Druid,6,Heroes' Feast,Conjuration,False,False
+Druid,6,Move Earth,Transmutation,True,False
+Druid,6,Sunbeam,Evocation,True,False
+Druid,6,Transport via Plants,Conjuration,False,False
+Druid,6,Wall of Thorns,Conjuration,True,False
+Druid,6,Wind Walk,Transmutation,False,False
+Druid,7,Fire Storm,Evocation,False,False
+Druid,7,Mirage Arcane,Illusion,False,False
+Druid,7,Plane Shift,Conjuration,False,False
+Druid,7,Regenerate,Transmutation,False,False
+Druid,7,Reverse Gravity,Transmutation,True,False
+Druid,8,Animal Shapes,Transmutation,True,False
+Druid,8,Antipathy/Sympathy,Enchantment,False,False
+Druid,8,Control Weather,Transmutation,True,False
+Druid,8,Earthquake,Evocation,True,False
+Druid,8,Feeblemind,Enchantment,False,False
+Druid,8,Sunburst,Evocation,False,False
+Druid,9,Foresight,Divination,False,False
+Druid,9,Shapechange,Transmutation,True,False
+Druid,9,Storm of Vengeance,Conjuration,True,False
+Druid,9,True Resurrection,Necromancy,False,False
+Paladin,1,Bless,Enchantment,True,False
+Paladin,1,Command,Enchantment,False,False
+Paladin,1,Cure Wounds,Evocation,False,False
+Paladin,1,Detect Evil and Good,Divination,True,False
+Paladin,1,Detect Magic,Divination,True,True
+Paladin,1,Detect Poison and Disease,Divination,True,True
+Paladin,1,Divine Favor,Evocation,True,False
+Paladin,1,Heroism,Enchantment,True,False
+Paladin,1,Protection from Evil and Good,Abjuration,True,False
+Paladin,1,Purify Food and Drink,Transmutation,False,True
+Paladin,1,Shield of Faith,Abjuration,True,False
+Paladin,2,Aid,Abjuration,False,False
+Paladin,2,Branding Smite,Evocation,True,False
+Paladin,2,Find Steed,Conjuration,False,False
+Paladin,2,Lesser Restoration,Abjuration,False,False
+Paladin,2,Locate Object,Divination,True,False
+Paladin,2,Magic Weapon,Transmutation,True,False
+Paladin,2,Protection from Poison,Abjuration,False,False
+Paladin,2,Zone of Truth,Enchantment,False,False
+Paladin,3,Create Food and Water,Conjuration,False,False
+Paladin,3,Daylight,Evocation,False,False
+Paladin,3,Dispel Magic,Abjuration,False,False
+Paladin,3,Magic Circle,Abjuration,False,False
+Paladin,3,Remove Curse,Abjuration,False,False
+Paladin,3,Revivify,Conjuration,False,False
+Paladin,4,Banishment,Abjuration,True,False
+Paladin,4,Death Ward,Abjuration,False,False
+Paladin,4,Locate Creature,Divination,True,False
+Paladin,5,Dispel Evil and Good,Abjuration,True,False
+Paladin,5,Geas,Enchantment,False,False
+Paladin,5,Raise Dead,Necromancy,False,False
+Ranger,1,Alarm,Abjuration,False,True
+Ranger,1,Animal Friendship,Enchantment,False,False
+Ranger,1,Cure Wounds,Evocation,False,False
+Ranger,1,Detect Magic,Divination,True,True
+Ranger,1,Detect Poison and Disease,Divination,True,True
+Ranger,1,Fog Cloud,Conjuration,True,False
+Ranger,1,Goodberry,Transmutation,False,False
+Ranger,1,Hunter's Mark,Divination,True,False
+Ranger,1,Jump,Transmutation,False,False
+Ranger,1,Longstrider,Transmutation,False,False
+Ranger,1,Speak with Animals,Divination,False,True
+Ranger,2,Animal Messenger,Enchantment,False,True
+Ranger,2,Barkskin,Transmutation,True,False
+Ranger,2,Darkvision,Transmutation,False,False
+Ranger,2,Find Traps,Divination,False,False
+Ranger,2,Lesser Restoration,Abjuration,False,False
+Ranger,2,Locate Animals or Plants,Divination,False,True
+Ranger,2,Locate Object,Divination,True,False
+Ranger,2,Pass Without Trace,Abjuration,True,False
+Ranger,2,Protection from Poison,Abjuration,False,False
+Ranger,2,Silence,Illusion,True,True
+Ranger,2,Spike Growth,Transmutation,True,False
+Ranger,3,Conjure Animals,Conjuration,True,False
+Ranger,3,Daylight,Evocation,False,False
+Ranger,3,Nondetection,Abjuration,False,False
+Ranger,3,Plant Growth,Transmutation,False,False
+Ranger,3,Protection From Energy,Abjuration,True,False
+Ranger,3,Speak with Plants,Transmutation,False,False
+Ranger,3,Water Breathing,Transmutation,False,True
+Ranger,3,Water Walk,Transmutation,False,True
+Ranger,3,Wind Wall,Evocation,True,False
+Ranger,4,Conjure Woodland Beings,Conjuration,True,False
+Ranger,4,Freedom of Movement,Abjuration,False,False
+Ranger,4,Locate Creature,Divination,True,False
+Ranger,4,Stoneskin,Abjuration,True,False
+Ranger,5,Commune With Nature,Divination,False,True
+Ranger,5,Tree Stride,Conjuration,True,False
+Sorcerer,0,Acid Splash,Conjuration,False,False
+Sorcerer,0,Chill Touch,Necromancy,False,False
+Sorcerer,0,Dancing Lights,Evocation,True,False
+Sorcerer,0,Fire Bolt,Evocation,False,False
+Sorcerer,0,Light,Evocation,False,False
+Sorcerer,0,Mage Hand,Conjuration,False,False
+Sorcerer,0,Mending,Transmutation,False,False
+Sorcerer,0,Message,Transmutation,False,False
+Sorcerer,0,Minor Illusion,Illusion,False,False
+Sorcerer,0,Poison Spray,Conjuration,False,False
+Sorcerer,0,Prestidigitation,Transmutation,False,False
+Sorcerer,0,Ray of Frost,Evocation,False,False
+Sorcerer,0,Shocking Grasp,Evocation,False,False
+Sorcerer,0,True Strike,Divination,True,False
+Sorcerer,1,Burning Hands,Evocation,False,False
+Sorcerer,1,Charm Person,Enchantment,False,False
+Sorcerer,1,Color Spray,Illusion,False,False
+Sorcerer,1,Comprehend Languages,Divination,False,True
+Sorcerer,1,Detect Magic,Divination,True,True
+Sorcerer,1,Disguise Self,Illusion,False,False
+Sorcerer,1,Expeditious Retreat,Transmutation,True,False
+Sorcerer,1,False Life,Necromancy,False,False
+Sorcerer,1,Feather Fall,Transmutation,False,False
+Sorcerer,1,Fog Cloud,Conjuration,True,False
+Sorcerer,1,Jump,Transmutation,False,False
+Sorcerer,1,Mage Armor,Abjuration,False,False
+Sorcerer,1,Magic Missile,Evocation,False,False
+Sorcerer,1,Shield,Abjuration,False,False
+Sorcerer,1,Silent Image,Illusion,True,False
+Sorcerer,1,Sleep,Enchantment,False,False
+Sorcerer,1,Thunderwave,Evocation,False,False
+Sorcerer,2,Alter Self,Transmutation,True,False
+Sorcerer,2,Blindness/Deafness,Necromancy,False,False
+Sorcerer,2,Blur,Illusion,True,False
+Sorcerer,2,Darkness,Evocation,True,False
+Sorcerer,2,Darkvision,Transmutation,False,False
+Sorcerer,2,Detect Thoughts,Divination,True,False
+Sorcerer,2,Enhance Ability,Transmutation,True,False
+Sorcerer,2,Enlarge/Reduce,Transmutation,True,False
+Sorcerer,2,Gust of Wind,Evocation,True,False
+Sorcerer,2,Hold Person,Enchantment,True,False
+Sorcerer,2,Invisibility,Illusion,True,False
+Sorcerer,2,Knock,Transmutation,False,False
+Sorcerer,2,Levitate,Transmutation,True,False
+Sorcerer,2,Mirror Image,Illusion,False,False
+Sorcerer,2,Misty Step,Conjuration,False,False
+Sorcerer,2,Scorching Ray,Evocation,False,False
+Sorcerer,2,See Invisibility,Divination,False,False
+Sorcerer,2,Shatter,Evocation,False,False
+Sorcerer,2,Spider Climb,Transmutation,True,False
+Sorcerer,2,Suggestion,Enchantment,True,False
+Sorcerer,2,Web,Conjuration,True,False
+Sorcerer,3,Blink,Transmutation,False,False
+Sorcerer,3,Clairvoyance,Divination,True,False
+Sorcerer,3,Counterspell,Abjuration,False,False
+Sorcerer,3,Daylight,Evocation,False,False
+Sorcerer,3,Dispel Magic,Abjuration,False,False
+Sorcerer,3,Fear,Illusion,True,False
+Sorcerer,3,Fireball,Evocation,False,False
+Sorcerer,3,Fly,Transmutation,True,False
+Sorcerer,3,Gaseous Form,Transmutation,True,False
+Sorcerer,3,Haste,Transmutation,True,False
+Sorcerer,3,Hypnotic Pattern,Illusion,True,False
+Sorcerer,3,Lightning Bolt,Evocation,False,False
+Sorcerer,3,Major Image,Illusion,True,False
+Sorcerer,3,Protection From Energy,Abjuration,True,False
+Sorcerer,3,Sleet Storm,Conjuration,True,False
+Sorcerer,3,Slow,Transmutation,True,False
+Sorcerer,3,Stinking Cloud,Conjuration,True,False
+Sorcerer,3,Tongues,Divination,False,False
+Sorcerer,3,Water Breathing,Transmutation,False,True
+Sorcerer,3,Water Walk,Transmutation,False,True
+Sorcerer,4,Banishment,Abjuration,True,False
+Sorcerer,4,Blight,Necromancy,False,False
+Sorcerer,4,Confusion,Enchantment,True,False
+Sorcerer,4,Dimension Door,Conjuration,False,False
+Sorcerer,4,Dominate Beast,Enchantment,True,False
+Sorcerer,4,Greater Invisibility,Illusion,True,False
+Sorcerer,4,Ice Storm,Evocation,False,False
+Sorcerer,4,Polymorph,Transmutation,True,False
+Sorcerer,4,Stoneskin,Abjuration,True,False
+Sorcerer,4,Wall of Fire,Evocation,True,False
+Sorcerer,5,Animate Objects,Transmutation,True,False
+Sorcerer,5,Cloudkill,Conjuration,True,False
+Sorcerer,5,Cone of Cold,Evocation,False,False
+Sorcerer,5,Creation,Illusion,False,False
+Sorcerer,5,Dominate Person,Enchantment,True,False
+Sorcerer,5,Hold Monster,Enchantment,True,False
+Sorcerer,5,Insect Plague,Conjuration,True,False
+Sorcerer,5,Seeming,Illusion,False,False
+Sorcerer,5,Telekinesis,Transmutation,True,False
+Sorcerer,5,Teleportation Circle,Conjuration,False,False
+Sorcerer,5,Wall of Stone,Evocation,True,False
+Sorcerer,6,Chain Lightning,Evocation,False,False
+Sorcerer,6,Circle of Death,Necromancy,False,False
+Sorcerer,6,Disintegrate,Transmutation,False,False
+Sorcerer,6,Eyebite,Necromancy,True,False
+Sorcerer,6,Globe of Invulnerability,Abjuration,True,False
+Sorcerer,6,Mass Suggestion,Enchantment,False,False
+Sorcerer,6,Move Earth,Transmutation,True,False
+Sorcerer,6,Sunbeam,Evocation,True,False
+Sorcerer,6,True Seeing,Divination,False,False
+Sorcerer,7,Delayed Blast Fireball,Evocation,True,False
+Sorcerer,7,Etherealness,Transmutation,False,False
+Sorcerer,7,Finger of Death,Necromancy,False,False
+Sorcerer,7,Fire Storm,Evocation,False,False
+Sorcerer,7,Plane Shift,Conjuration,False,False
+Sorcerer,7,Prismatic Spray,Evocation,False,False
+Sorcerer,7,Reverse Gravity,Transmutation,True,False
+Sorcerer,7,Teleport,Conjuration,False,False
+Sorcerer,8,Dominate Monster,Enchantment,True,False
+Sorcerer,8,Earthquake,Evocation,True,False
+Sorcerer,8,Incendiary Cloud,Conjuration,True,False
+Sorcerer,8,Power Word Stun,Enchantment,False,False
+Sorcerer,8,Sunburst,Evocation,False,False
+Sorcerer,9,Gate,Conjuration,True,False
+Sorcerer,9,Meteor Swarm,Evocation,False,False
+Sorcerer,9,Power Word Kill,Enchantment,False,False
+Sorcerer,9,Time Stop,Transmutation,False,False
+Sorcerer,9,Wish,Conjuration,False,False
+Warlock,0,Chill Touch,Necromancy,False,False
+Warlock,0,Eldritch Blast,Evocation,False,False
+Warlock,0,Mage Hand,Conjuration,False,False
+Warlock,0,Minor Illusion,Illusion,False,False
+Warlock,0,Poison Spray,Conjuration,False,False
+Warlock,0,Prestidigitation,Transmutation,False,False
+Warlock,0,True Strike,Divination,True,False
+Warlock,1,Charm Person,Enchantment,False,False
+Warlock,1,Comprehend Languages,Divination,False,True
+Warlock,1,Expeditious Retreat,Transmutation,True,False
+Warlock,1,Hellish Rebuke,Evocation,False,False
+Warlock,1,Illusory Script,Illusion,False,True
+Warlock,1,Protection from Evil and Good,Abjuration,True,False
+Warlock,1,Unseen Servant,Conjuration,False,True
+Warlock,2,Darkness,Evocation,True,False
+Warlock,2,Enthrall,Enchantment,False,False
+Warlock,2,Hold Person,Enchantment,True,False
+Warlock,2,Invisibility,Illusion,True,False
+Warlock,2,Mirror Image,Illusion,False,False
+Warlock,2,Misty Step,Conjuration,False,False
+Warlock,2,Ray of Enfeeblement,Necromancy,True,False
+Warlock,2,Shatter,Evocation,False,False
+Warlock,2,Spider Climb,Transmutation,True,False
+Warlock,2,Suggestion,Enchantment,True,False
+Warlock,3,Counterspell,Abjuration,False,False
+Warlock,3,Dispel Magic,Abjuration,False,False
+Warlock,3,Fear,Illusion,True,False
+Warlock,3,Fly,Transmutation,True,False
+Warlock,3,Gaseous Form,Transmutation,True,False
+Warlock,3,Hypnotic Pattern,Illusion,True,False
+Warlock,3,Magic Circle,Abjuration,False,False
+Warlock,3,Major Image,Illusion,True,False
+Warlock,3,Remove Curse,Abjuration,False,False
+Warlock,3,Tongues,Divination,False,False
+Warlock,3,Vampiric Touch,Necromancy,True,False
+Warlock,4,Banishment,Abjuration,True,False
+Warlock,4,Blight,Necromancy,False,False
+Warlock,4,Dimension Door,Conjuration,False,False
+Warlock,4,Hallucinatory Terrain,Illusion,False,False
+Warlock,5,Contact Other Plane,Divination,False,True
+Warlock,5,Dream,Illusion,False,False
+Warlock,5,Hold Monster,Enchantment,True,False
+Warlock,5,Scrying,Divination,True,False
+Warlock,6,Circle of Death,Necromancy,False,False
+Warlock,6,Conjure Fey,Conjuration,True,False
+Warlock,6,Create Undead,Necromancy,False,False
+Warlock,6,Eyebite,Necromancy,True,False
+Warlock,6,Flesh to Stone,Transmutation,True,False
+Warlock,6,Mass Suggestion,Enchantment,False,False
+Warlock,6,True Seeing,Divination,False,False
+Warlock,7,Etherealness,Transmutation,False,False
+Warlock,7,Finger of Death,Necromancy,False,False
+Warlock,7,Forcecage,Evocation,False,False
+Warlock,7,Plane Shift,Conjuration,False,False
+Warlock,8,Demiplane,Conjuration,False,False
+Warlock,8,Dominate Monster,Enchantment,True,False
+Warlock,8,Feeblemind,Enchantment,False,False
+Warlock,8,Glibness,Transmutation,False,False
+Warlock,8,Power Word Stun,Enchantment,False,False
+Warlock,9,Astral Projection,Necromancy,False,False
+Warlock,9,Foresight,Divination,False,False
+Warlock,9,Imprisonment,Abjuration,False,False
+Warlock,9,Power Word Kill,Enchantment,False,False
+Warlock,9,True Polymorph,Transmutation,True,False
+Wizard,0,Acid Splash,Conjuration,False,False
+Wizard,0,Chill Touch,Necromancy,False,False
+Wizard,0,Dancing Lights,Evocation,True,False
+Wizard,0,Fire Bolt,Evocation,False,False
+Wizard,0,Light,Evocation,False,False
+Wizard,0,Mage Hand,Conjuration,False,False
+Wizard,0,Mending,Transmutation,False,False
+Wizard,0,Message,Transmutation,False,False
+Wizard,0,Minor Illusion,Illusion,False,False
+Wizard,0,Poison Spray,Conjuration,False,False
+Wizard,0,Prestidigitation,Transmutation,False,False
+Wizard,0,Ray of Frost,Evocation,False,False
+Wizard,0,Shocking Grasp,Evocation,False,False
+Wizard,0,True Strike,Divination,True,False
+Wizard,1,Alarm,Abjuration,False,True
+Wizard,1,Burning Hands,Evocation,False,False
+Wizard,1,Charm Person,Enchantment,False,False
+Wizard,1,Color Spray,Illusion,False,False
+Wizard,1,Comprehend Languages,Divination,False,True
+Wizard,1,Detect Magic,Divination,True,True
+Wizard,1,Disguise Self,Illusion,False,False
+Wizard,1,Expeditious Retreat,Transmutation,True,False
+Wizard,1,False Life,Necromancy,False,False
+Wizard,1,Feather Fall,Transmutation,False,False
+Wizard,1,Find Familiar,Conjuration,False,True
+Wizard,1,Floating Disk,Conjuration,False,True
+Wizard,1,Fog Cloud,Conjuration,True,False
+Wizard,1,Grease,Conjuration,False,False
+Wizard,1,Hideous Laughter,Enchantment,True,False
+Wizard,1,Identify,Divination,False,True
+Wizard,1,Illusory Script,Illusion,False,True
+Wizard,1,Jump,Transmutation,False,False
+Wizard,1,Longstrider,Transmutation,False,False
+Wizard,1,Mage Armor,Abjuration,False,False
+Wizard,1,Magic Missile,Evocation,False,False
+Wizard,1,Protection from Evil and Good,Abjuration,True,False
+Wizard,1,Shield,Abjuration,False,False
+Wizard,1,Silent Image,Illusion,True,False
+Wizard,1,Sleep,Enchantment,False,False
+Wizard,1,Thunderwave,Evocation,False,False
+Wizard,1,Unseen Servant,Conjuration,False,True
+Wizard,2,Acid Arrow,Evocation,False,False
+Wizard,2,Alter Self,Transmutation,True,False
+Wizard,2,Arcane Lock,Abjuration,False,False
+Wizard,2,Arcanist's Magic Aura,Illusion,False,False
+Wizard,2,Blindness/Deafness,Necromancy,False,False
+Wizard,2,Blur,Illusion,True,False
+Wizard,2,Continual Flame,Evocation,False,False
+Wizard,2,Darkness,Evocation,True,False
+Wizard,2,Darkvision,Transmutation,False,False
+Wizard,2,Detect Thoughts,Divination,True,False
+Wizard,2,Enlarge/Reduce,Transmutation,True,False
+Wizard,2,Flaming Sphere,Conjuration,True,False
+Wizard,2,Gentle Repose,Necromancy,False,True
+Wizard,2,Gust of Wind,Evocation,True,False
+Wizard,2,Hold Person,Enchantment,True,False
+Wizard,2,Invisibility,Illusion,True,False
+Wizard,2,Knock,Transmutation,False,False
+Wizard,2,Levitate,Transmutation,True,False
+Wizard,2,Locate Object,Divination,True,False
+Wizard,2,Magic Mouth,Illusion,False,True
+Wizard,2,Magic Weapon,Transmutation,True,False
+Wizard,2,Mirror Image,Illusion,False,False
+Wizard,2,Misty Step,Conjuration,False,False
+Wizard,2,Ray of Enfeeblement,Necromancy,True,False
+Wizard,2,Rope Trick,Transmutation,False,False
+Wizard,2,Scorching Ray,Evocation,False,False
+Wizard,2,See Invisibility,Divination,False,False
+Wizard,2,Shatter,Evocation,False,False
+Wizard,2,Spider Climb,Transmutation,True,False
+Wizard,2,Suggestion,Enchantment,True,False
+Wizard,2,Web,Conjuration,True,False
+Wizard,3,Animate Dead,Necromancy,False,False
+Wizard,3,Bestow Curse,Necromancy,True,False
+Wizard,3,Blink,Transmutation,False,False
+Wizard,3,Clairvoyance,Divination,True,False
+Wizard,3,Counterspell,Abjuration,False,False
+Wizard,3,Dispel Magic,Abjuration,False,False
+Wizard,3,Fear,Illusion,True,False
+Wizard,3,Fireball,Evocation,False,False
+Wizard,3,Fly,Transmutation,True,False
+Wizard,3,Gaseous Form,Transmutation,True,False
+Wizard,3,Glyph of Warding,Abjuration,False,False
+Wizard,3,Haste,Transmutation,True,False
+Wizard,3,Hypnotic Pattern,Illusion,True,False
+Wizard,3,Lightning Bolt,Evocation,False,False
+Wizard,3,Magic Circle,Abjuration,False,False
+Wizard,3,Major Image,Illusion,True,False
+Wizard,3,Nondetection,Abjuration,False,False
+Wizard,3,Phantom Steed,Illusion,False,True
+Wizard,3,Protection From Energy,Abjuration,True,False
+Wizard,3,Remove Curse,Abjuration,False,False
+Wizard,3,Sending,Evocation,False,False
+Wizard,3,Sleet Storm,Conjuration,True,False
+Wizard,3,Slow,Transmutation,True,False
+Wizard,3,Stinking Cloud,Conjuration,True,False
+Wizard,3,Tiny Hut,Evocation,False,True
+Wizard,3,Tongues,Divination,False,False
+Wizard,3,Vampiric Touch,Necromancy,True,False
+Wizard,3,Water Breathing,Transmutation,False,True
+Wizard,4,Arcane Eye,Divination,True,False
+Wizard,4,Banishment,Abjuration,True,False
+Wizard,4,Black Tentacles,Conjuration,True,False
+Wizard,4,Blight,Necromancy,False,False
+Wizard,4,Confusion,Enchantment,True,False
+Wizard,4,Conjure Minor Elementals,Conjuration,True,False
+Wizard,4,Control Water,Transmutation,True,False
+Wizard,4,Dimension Door,Conjuration,False,False
+Wizard,4,Fabricate,Transmutation,False,False
+Wizard,4,Faithful Hound,Conjuration,False,False
+Wizard,4,Fire Shield,Evocation,False,False
+Wizard,4,Greater Invisibility,Illusion,True,False
+Wizard,4,Hallucinatory Terrain,Illusion,False,False
+Wizard,4,Ice Storm,Evocation,False,False
+Wizard,4,Locate Creature,Divination,True,False
+Wizard,4,Phantasmal Killer,Illusion,True,False
+Wizard,4,Polymorph,Transmutation,True,False
+Wizard,4,Private Sanctum,Abjuration,False,False
+Wizard,4,Resilient Sphere,Evocation,True,False
+Wizard,4,Secret Chest,Conjuration,False,False
+Wizard,4,Stone Shape,Transmutation,False,False
+Wizard,4,Stoneskin,Abjuration,True,False
+Wizard,4,Wall of Fire,Evocation,True,False
+Wizard,5,Animate Objects,Transmutation,True,False
+Wizard,5,Arcane Hand,Evocation,True,False
+Wizard,5,Cloudkill,Conjuration,True,False
+Wizard,5,Cone of Cold,Evocation,False,False
+Wizard,5,Conjure Elemental,Conjuration,True,False
+Wizard,5,Contact Other Plane,Divination,False,True
+Wizard,5,Creation,Illusion,False,False
+Wizard,5,Dominate Person,Enchantment,True,False
+Wizard,5,Dream,Illusion,False,False
+Wizard,5,Geas,Enchantment,False,False
+Wizard,5,Hold Monster,Enchantment,True,False
+Wizard,5,Legend Lore,Divination,False,False
+Wizard,5,Mislead,Illusion,True,False
+Wizard,5,Modify Memory,Enchantment,True,False
+Wizard,5,Passwall,Transmutation,False,False
+Wizard,5,Planar Binding,Abjuration,False,False
+Wizard,5,Scrying,Divination,True,False
+Wizard,5,Seeming,Illusion,False,False
+Wizard,5,Telekinesis,Transmutation,True,False
+Wizard,5,Telepathic Bond,Divination,False,True
+Wizard,5,Teleportation Circle,Conjuration,False,False
+Wizard,5,Wall of Force,Evocation,True,False
+Wizard,5,Wall of Stone,Evocation,True,False
+Wizard,6,Chain Lightning,Evocation,False,False
+Wizard,6,Circle of Death,Necromancy,False,False
+Wizard,6,Contingency,Evocation,False,False
+Wizard,6,Create Undead,Necromancy,False,False
+Wizard,6,Disintegrate,Transmutation,False,False
+Wizard,6,Eyebite,Necromancy,True,False
+Wizard,6,Flesh to Stone,Transmutation,True,False
+Wizard,6,Freezing Sphere,Evocation,False,False
+Wizard,6,Globe of Invulnerability,Abjuration,True,False
+Wizard,6,Guards and Wards,Abjuration,False,False
+Wizard,6,Instant Summons,Conjuration,False,True
+Wizard,6,Irresistible Dance,Enchantment,True,False
+Wizard,6,Magic Jar,Necromancy,False,False
+Wizard,6,Mass Suggestion,Enchantment,False,False
+Wizard,6,Move Earth,Transmutation,True,False
+Wizard,6,Programmed Illusion,Illusion,False,False
+Wizard,6,Sunbeam,Evocation,True,False
+Wizard,6,True Seeing,Divination,False,False
+Wizard,6,Wall of Ice,Evocation,True,False
+Wizard,7,Arcane Sword,Evocation,True,False
+Wizard,7,Delayed Blast Fireball,Evocation,True,False
+Wizard,7,Etherealness,Transmutation,False,False
+Wizard,7,Finger of Death,Necromancy,False,False
+Wizard,7,Forcecage,Evocation,False,False
+Wizard,7,Magnificent Mansion,Conjuration,False,False
+Wizard,7,Mirage Arcane,Illusion,False,False
+Wizard,7,Plane Shift,Conjuration,False,False
+Wizard,7,Prismatic Spray,Evocation,False,False
+Wizard,7,Project Image,Illusion,True,False
+Wizard,7,Reverse Gravity,Transmutation,True,False
+Wizard,7,Sequester,Transmutation,False,False
+Wizard,7,Simulacrum,Illusion,False,False
+Wizard,7,Symbol,Abjuration,False,False
+Wizard,7,Teleport,Conjuration,False,False
+Wizard,8,Antimagic Field,Abjuration,True,False
+Wizard,8,Antipathy/Sympathy,Enchantment,False,False
+Wizard,8,Clone,Necromancy,False,False
+Wizard,8,Control Weather,Transmutation,True,False
+Wizard,8,Demiplane,Conjuration,False,False
+Wizard,8,Dominate Monster,Enchantment,True,False
+Wizard,8,Feeblemind,Enchantment,False,False
+Wizard,8,Incendiary Cloud,Conjuration,True,False
+Wizard,8,Maze,Conjuration,True,False
+Wizard,8,Mind Blank,Abjuration,False,False
+Wizard,8,Power Word Stun,Enchantment,False,False
+Wizard,8,Sunburst,Evocation,False,False
+Wizard,9,Astral Projection,Necromancy,False,False
+Wizard,9,Foresight,Divination,False,False
+Wizard,9,Gate,Conjuration,True,False
+Wizard,9,Imprisonment,Abjuration,False,False
+Wizard,9,Meteor Swarm,Evocation,False,False
+Wizard,9,Power Word Kill,Enchantment,False,False
+Wizard,9,Prismatic Wall,Abjuration,False,False
+Wizard,9,Shapechange,Transmutation,True,False
+Wizard,9,Time Stop,Transmutation,False,False
+Wizard,9,True Polymorph,Transmutation,True,False
+Wizard,9,Weird,Illusion,True,False
+Wizard,9,Wish,Conjuration,False,False
