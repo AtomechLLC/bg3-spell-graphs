@@ -6,7 +6,9 @@ import re
 PAGES = [
     ("wiki.html", "reskin-codex.html", "🧬"),
     ("bg3_codex.html", "larian-codex.html", "🦑"),
+    ("wow_codex.html", "azeroth-codex.html", "🐉"),
     ("cluster_map.html", "constellations.html", "🌌"),
+    ("purpose_atlas.html", "purpose-atlas.html", "🎯"),
 ]
 os.makedirs("docs", exist_ok=True)
 
@@ -71,8 +73,14 @@ layouts; toggle picker chips to light up overlaps.</p></a>
 <p>The homogeneity analysis on BG3's own game data: 19 template families, 28 container spells,
 duplicate SKUs, the surface engine, and the upcast clone farm.</p></a>
 <a class="card" href="reskin-codex.html"><span class="em">🧬</span><h2>The Reskin Codex</h2>
-<p>The tabletop companion: all 319 D&amp;D 5e SRD spells — 23 families of near-identical design,
+<p>The tabletop companion: all 319 D&amp;D 5e SRD spells — 24 families of near-identical design,
 per-class lists, and the cross-class overlap matrix.</p></a>
+<a class="card" href="azeroth-codex.html"><span class="em">🐉</span><h2>The Azeroth Codex</h2>
+<p>WoW Classic's 423 trainer abilities from the game's own data: 25 families, the cross-class
+copy shop, and the rank clone farm — 69% of the spellbook is the same spell again.</p></a>
+<a class="card" href="purpose-atlas.html"><span class="em">🎯</span><h2>The Purpose Atlas</h2>
+<p>What every spell is <em>for</em>: 953 abilities across all three games in one functional
+taxonomy — and the divergences that reveal each medium's design priorities.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast, shown for research

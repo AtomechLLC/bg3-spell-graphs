@@ -1,0 +1,954 @@
+game,ability,purpose,assigned_by,family
+D&D 5e SRD,Acid Arrow,defboost,rule,
+D&D 5e SRD,Acid Splash,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Aid,defboost,override,
+D&D 5e SRD,Alarm,info,override,
+D&D 5e SRD,Alter Self,roleshift,rule,
+D&D 5e SRD,Animal Friendship,disable,rule,
+D&D 5e SRD,Animal Messenger,defboost,rule,
+D&D 5e SRD,Animal Shapes,disable,family,The Polymorph Ladder
+D&D 5e SRD,Animate Dead,create,family,The Undead Workshop
+D&D 5e SRD,Animate Objects,disable,rule,
+D&D 5e SRD,Antilife Shell,zone,rule,
+D&D 5e SRD,Antimagic Field,negation,rule,
+D&D 5e SRD,Antipathy/Sympathy,utility,fallback,
+D&D 5e SRD,Arcane Eye,zone,rule,
+D&D 5e SRD,Arcane Hand,create,family,The Phantom Armory
+D&D 5e SRD,Arcane Lock,negation,rule,
+D&D 5e SRD,Arcane Sword,create,family,The Phantom Armory
+D&D 5e SRD,Arcanist's Magic Aura,negation,rule,
+D&D 5e SRD,Astral Projection,negation,rule,
+D&D 5e SRD,Augury,info,rule,
+D&D 5e SRD,Awaken,disable,rule,
+D&D 5e SRD,Bane,offboost,family,Bane & Bless
+D&D 5e SRD,Banishment,remove,override,
+D&D 5e SRD,Barkskin,defboost,rule,
+D&D 5e SRD,Beacon of Hope,heal,rule,
+D&D 5e SRD,Bestow Curse,negation,rule,
+D&D 5e SRD,Black Tentacles,disable,rule,
+D&D 5e SRD,Blade Barrier,zone,rule,
+D&D 5e SRD,Bless,offboost,family,Bane & Bless
+D&D 5e SRD,Blight,damage,rule,
+D&D 5e SRD,Blindness/Deafness,disable,rule,
+D&D 5e SRD,Blink,mobility,override,
+D&D 5e SRD,Blur,degrade,rule,
+D&D 5e SRD,Branding Smite,stealth,rule,
+D&D 5e SRD,Burning Hands,damage,family,The Elemental Blast Template
+D&D 5e SRD,Call Lightning,damage,rule,
+D&D 5e SRD,Calm Emotions,disable,rule,
+D&D 5e SRD,Chain Lightning,mobility,rule,
+D&D 5e SRD,Charm Person,disable,rule,
+D&D 5e SRD,Chill Touch,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Circle of Death,damage,family,The Elemental Blast Template
+D&D 5e SRD,Clairvoyance,create,rule,
+D&D 5e SRD,Clone,stealth,rule,
+D&D 5e SRD,Cloudkill,damage,rule,
+D&D 5e SRD,Color Spray,disable,family,The Hit-Point Pool Engine
+D&D 5e SRD,Command,disable,rule,
+D&D 5e SRD,Commune,stealth,rule,
+D&D 5e SRD,Commune With Nature,info,rule,
+D&D 5e SRD,Comprehend Languages,info,rule,
+D&D 5e SRD,Compulsion,disable,rule,
+D&D 5e SRD,Cone of Cold,damage,family,The Elemental Blast Template
+D&D 5e SRD,Confusion,utility,fallback,
+D&D 5e SRD,Conjure Animals,create,family,Conjure by Menu
+D&D 5e SRD,Conjure Celestial,create,family,Conjure a Champion
+D&D 5e SRD,Conjure Elemental,create,family,Conjure a Champion
+D&D 5e SRD,Conjure Fey,create,family,Conjure a Champion
+D&D 5e SRD,Conjure Minor Elementals,create,family,Conjure by Menu
+D&D 5e SRD,Conjure Woodland Beings,create,family,Conjure by Menu
+D&D 5e SRD,Contact Other Plane,stealth,rule,
+D&D 5e SRD,Contagion,disable,rule,
+D&D 5e SRD,Contingency,degrade,rule,
+D&D 5e SRD,Continual Flame,utility,fallback,
+D&D 5e SRD,Control Water,defboost,rule,
+D&D 5e SRD,Control Weather,utility,fallback,
+D&D 5e SRD,Counterspell,negation,override,The Dispel Engine
+D&D 5e SRD,Create Food and Water,provision,rule,
+D&D 5e SRD,Create Undead,create,family,The Undead Workshop
+D&D 5e SRD,Create or Destroy Water,provision,rule,
+D&D 5e SRD,Creation,utility,fallback,
+D&D 5e SRD,Cure Wounds,heal,family,The Cure Family
+D&D 5e SRD,Dancing Lights,utility,override,
+D&D 5e SRD,Darkness,zone,family,Darkness & Daylight
+D&D 5e SRD,Darkvision,mobility,family,The Touch-Buff Skeleton
+D&D 5e SRD,Daylight,zone,family,Darkness & Daylight
+D&D 5e SRD,Death Ward,defboost,rule,
+D&D 5e SRD,Delayed Blast Fireball,damage,rule,
+D&D 5e SRD,Demiplane,utility,fallback,
+D&D 5e SRD,Detect Evil and Good,info,family,The Detect Series
+D&D 5e SRD,Detect Magic,info,family,The Detect Series
+D&D 5e SRD,Detect Poison and Disease,info,family,The Detect Series
+D&D 5e SRD,Detect Thoughts,zone,rule,
+D&D 5e SRD,Dimension Door,mobility,rule,
+D&D 5e SRD,Disguise Self,stealth,family,The Disguise Ladder
+D&D 5e SRD,Disintegrate,heal,rule,
+D&D 5e SRD,Dispel Evil and Good,negation,rule,
+D&D 5e SRD,Dispel Magic,negation,override,The Dispel Engine
+D&D 5e SRD,Divination,info,rule,
+D&D 5e SRD,Divine Favor,offboost,rule,
+D&D 5e SRD,Divine Word,disable,rule,
+D&D 5e SRD,Dominate Beast,disable,family,The Dominate Chain
+D&D 5e SRD,Dominate Monster,disable,family,The Dominate Chain
+D&D 5e SRD,Dominate Person,disable,family,The Dominate Chain
+D&D 5e SRD,Dream,disable,rule,
+D&D 5e SRD,Druidcraft,degrade,rule,
+D&D 5e SRD,Earthquake,disable,rule,
+D&D 5e SRD,Eldritch Blast,damage,override,The Damage Cantrip Engine
+D&D 5e SRD,Enhance Ability,disable,rule,
+D&D 5e SRD,Enlarge/Reduce,damage,rule,
+D&D 5e SRD,Entangle,zone,rule,
+D&D 5e SRD,Enthrall,disable,rule,
+D&D 5e SRD,Etherealness,damage,rule,
+D&D 5e SRD,Expeditious Retreat,mobility,rule,
+D&D 5e SRD,Eyebite,disable,rule,
+D&D 5e SRD,Fabricate,roleshift,rule,
+D&D 5e SRD,Faerie Fire,stealth,rule,
+D&D 5e SRD,Faithful Hound,create,family,The Phantom Armory
+D&D 5e SRD,False Life,utility,fallback,
+D&D 5e SRD,Fear,disable,override,
+D&D 5e SRD,Feather Fall,disable,rule,
+D&D 5e SRD,Feeblemind,info,rule,
+D&D 5e SRD,Find Familiar,create,rule,
+D&D 5e SRD,Find Steed,create,rule,
+D&D 5e SRD,Find Traps,info,rule,
+D&D 5e SRD,Find the Path,create,rule,
+D&D 5e SRD,Finger of Death,damage,rule,
+D&D 5e SRD,Fire Bolt,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Fire Shield,defboost,rule,
+D&D 5e SRD,Fire Storm,damage,rule,
+D&D 5e SRD,Fireball,damage,family,The Elemental Blast Template
+D&D 5e SRD,Flame Blade,damage,rule,
+D&D 5e SRD,Flame Strike,damage,family,The Elemental Blast Template
+D&D 5e SRD,Flaming Sphere,create,family,The Phantom Armory
+D&D 5e SRD,Flesh to Stone,disable,rule,
+D&D 5e SRD,Floating Disk,utility,fallback,
+D&D 5e SRD,Fly,mobility,family,The Touch-Buff Skeleton
+D&D 5e SRD,Fog Cloud,utility,fallback,
+D&D 5e SRD,Forbiddance,negation,rule,
+D&D 5e SRD,Forcecage,negation,rule,
+D&D 5e SRD,Foresight,degrade,rule,
+D&D 5e SRD,Freedom of Movement,disable,rule,
+D&D 5e SRD,Freezing Sphere,damage,rule,
+D&D 5e SRD,Gaseous Form,disable,rule,
+D&D 5e SRD,Gate,mobility,rule,
+D&D 5e SRD,Geas,negation,rule,
+D&D 5e SRD,Gentle Repose,defboost,rule,
+D&D 5e SRD,Giant Insect,utility,fallback,
+D&D 5e SRD,Glibness,stealth,override,
+D&D 5e SRD,Globe of Invulnerability,zone,rule,
+D&D 5e SRD,Glyph of Warding,create,rule,
+D&D 5e SRD,Goodberry,provision,override,
+D&D 5e SRD,Grease,zone,rule,
+D&D 5e SRD,Greater Invisibility,stealth,family,The Invisibility Ladder
+D&D 5e SRD,Greater Restoration,disable,rule,
+D&D 5e SRD,Guardian of Faith,stealth,rule,
+D&D 5e SRD,Guards and Wards,negation,rule,
+D&D 5e SRD,Guidance,offboost,family,Guidance & Resistance
+D&D 5e SRD,Guiding Bolt,offboost,rule,
+D&D 5e SRD,Gust of Wind,defboost,rule,
+D&D 5e SRD,Hallow,zone,rule,
+D&D 5e SRD,Hallucinatory Terrain,provision,rule,
+D&D 5e SRD,Harm,damage,rule,
+D&D 5e SRD,Haste,offboost,override,
+D&D 5e SRD,Heal,heal,rule,
+D&D 5e SRD,Healing Word,heal,family,The Cure Family
+D&D 5e SRD,Heat Metal,provision,rule,
+D&D 5e SRD,Hellish Rebuke,damage,family,The Elemental Blast Template
+D&D 5e SRD,Heroes' Feast,utility,fallback,
+D&D 5e SRD,Heroism,utility,fallback,
+D&D 5e SRD,Hideous Laughter,disable,rule,
+D&D 5e SRD,Hold Monster,disable,family,The Hold Pair
+D&D 5e SRD,Hold Person,disable,family,The Hold Pair
+D&D 5e SRD,Holy Aura,disable,rule,
+D&D 5e SRD,Hunter's Mark,damage,rule,
+D&D 5e SRD,Hypnotic Pattern,disable,rule,
+D&D 5e SRD,Ice Storm,damage,family,The Elemental Blast Template
+D&D 5e SRD,Identify,info,rule,
+D&D 5e SRD,Illusory Script,negation,rule,
+D&D 5e SRD,Imprisonment,negation,rule,
+D&D 5e SRD,Incendiary Cloud,damage,rule,
+D&D 5e SRD,Inflict Wounds,damage,rule,
+D&D 5e SRD,Insect Plague,damage,rule,
+D&D 5e SRD,Instant Summons,negation,rule,
+D&D 5e SRD,Invisibility,stealth,family,The Invisibility Ladder
+D&D 5e SRD,Irresistible Dance,disable,rule,
+D&D 5e SRD,Jump,mobility,rule,
+D&D 5e SRD,Knock,disable,rule,
+D&D 5e SRD,Legend Lore,utility,fallback,
+D&D 5e SRD,Lesser Restoration,disable,rule,
+D&D 5e SRD,Levitate,mobility,rule,
+D&D 5e SRD,Light,utility,override,
+D&D 5e SRD,Lightning Bolt,damage,family,The Elemental Blast Template
+D&D 5e SRD,Locate Animals or Plants,info,family,The Locate Series
+D&D 5e SRD,Locate Creature,info,family,The Locate Series
+D&D 5e SRD,Locate Object,info,family,The Locate Series
+D&D 5e SRD,Longstrider,mobility,family,The Touch-Buff Skeleton
+D&D 5e SRD,Mage Armor,utility,fallback,
+D&D 5e SRD,Mage Hand,stealth,rule,
+D&D 5e SRD,Magic Circle,disable,rule,
+D&D 5e SRD,Magic Jar,info,rule,
+D&D 5e SRD,Magic Missile,damage,override,
+D&D 5e SRD,Magic Mouth,stealth,rule,
+D&D 5e SRD,Magic Weapon,offboost,rule,
+D&D 5e SRD,Magnificent Mansion,mobility,rule,
+D&D 5e SRD,Major Image,stealth,family,The Image Ladder
+D&D 5e SRD,Mass Cure Wounds,heal,family,The Cure Family
+D&D 5e SRD,Mass Heal,heal,rule,
+D&D 5e SRD,Mass Healing Word,heal,family,The Cure Family
+D&D 5e SRD,Mass Suggestion,disable,family,The Suggestion Pair
+D&D 5e SRD,Maze,remove,rule,
+D&D 5e SRD,Meld Into Stone,disable,rule,
+D&D 5e SRD,Mending,damage,rule,
+D&D 5e SRD,Message,zone,rule,
+D&D 5e SRD,Meteor Swarm,damage,rule,
+D&D 5e SRD,Mind Blank,disable,rule,
+D&D 5e SRD,Minor Illusion,stealth,rule,
+D&D 5e SRD,Mirage Arcane,stealth,rule,
+D&D 5e SRD,Mirror Image,stealth,rule,
+D&D 5e SRD,Mislead,disable,rule,
+D&D 5e SRD,Misty Step,mobility,rule,
+D&D 5e SRD,Modify Memory,negation,rule,
+D&D 5e SRD,Moonbeam,damage,rule,
+D&D 5e SRD,Move Earth,degrade,rule,
+D&D 5e SRD,Nondetection,stealth,rule,
+D&D 5e SRD,Pass Without Trace,disable,rule,
+D&D 5e SRD,Passwall,utility,fallback,
+D&D 5e SRD,Phantasmal Killer,disable,rule,
+D&D 5e SRD,Phantom Steed,stealth,rule,
+D&D 5e SRD,Planar Ally,create,family,Conjure a Champion
+D&D 5e SRD,Planar Binding,create,rule,
+D&D 5e SRD,Plane Shift,remove,rule,
+D&D 5e SRD,Plant Growth,utility,fallback,
+D&D 5e SRD,Poison Spray,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Polymorph,disable,override,The Polymorph Ladder
+D&D 5e SRD,Power Word Kill,utility,fallback,
+D&D 5e SRD,Power Word Stun,disable,rule,
+D&D 5e SRD,Prayer of Healing,heal,family,The Cure Family
+D&D 5e SRD,Prestidigitation,utility,override,
+D&D 5e SRD,Prismatic Spray,remove,rule,
+D&D 5e SRD,Prismatic Wall,remove,rule,
+D&D 5e SRD,Private Sanctum,zone,rule,
+D&D 5e SRD,Produce Flame,damage,rule,
+D&D 5e SRD,Programmed Illusion,stealth,rule,
+D&D 5e SRD,Project Image,disable,rule,
+D&D 5e SRD,Protection From Energy,defboost,family,The Protection Series
+D&D 5e SRD,Protection from Evil and Good,defboost,family,The Protection Series
+D&D 5e SRD,Protection from Poison,defboost,family,The Protection Series
+D&D 5e SRD,Purify Food and Drink,negation,rule,
+D&D 5e SRD,Raise Dead,heal,override,
+D&D 5e SRD,Ray of Enfeeblement,defboost,rule,
+D&D 5e SRD,Ray of Frost,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Regenerate,heal,rule,
+D&D 5e SRD,Reincarnate,heal,override,
+D&D 5e SRD,Remove Curse,negation,rule,
+D&D 5e SRD,Resilient Sphere,zone,rule,
+D&D 5e SRD,Resistance,offboost,family,Guidance & Resistance
+D&D 5e SRD,Resurrection,heal,override,
+D&D 5e SRD,Reverse Gravity,defboost,rule,
+D&D 5e SRD,Revivify,heal,override,
+D&D 5e SRD,Rope Trick,stealth,rule,
+D&D 5e SRD,Sacred Flame,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Sanctuary,defboost,rule,
+D&D 5e SRD,Scorching Ray,damage,rule,
+D&D 5e SRD,Scrying,create,rule,
+D&D 5e SRD,Secret Chest,stealth,rule,
+D&D 5e SRD,See Invisibility,stealth,rule,
+D&D 5e SRD,Seeming,stealth,family,The Disguise Ladder
+D&D 5e SRD,Sending,create,rule,
+D&D 5e SRD,Sequester,stealth,rule,
+D&D 5e SRD,Shapechange,disable,rule,
+D&D 5e SRD,Shatter,damage,rule,
+D&D 5e SRD,Shield,zone,rule,
+D&D 5e SRD,Shield of Faith,defboost,rule,
+D&D 5e SRD,Shillelagh,offboost,override,
+D&D 5e SRD,Shocking Grasp,damage,family,The Damage Cantrip Engine
+D&D 5e SRD,Silence,disable,override,
+D&D 5e SRD,Silent Image,stealth,family,The Image Ladder
+D&D 5e SRD,Simulacrum,stealth,rule,
+D&D 5e SRD,Sleep,disable,override,The Hit-Point Pool Engine
+D&D 5e SRD,Sleet Storm,disable,rule,
+D&D 5e SRD,Slow,disable,rule,
+D&D 5e SRD,Spare the Dying,heal,override,
+D&D 5e SRD,Speak with Animals,info,family,The Speak-With Series
+D&D 5e SRD,Speak with Dead,info,family,The Speak-With Series
+D&D 5e SRD,Speak with Plants,info,family,The Speak-With Series
+D&D 5e SRD,Spider Climb,mobility,family,The Touch-Buff Skeleton
+D&D 5e SRD,Spike Growth,stealth,rule,
+D&D 5e SRD,Spirit Guardians,defboost,rule,
+D&D 5e SRD,Spiritual Weapon,create,override,The Phantom Armory
+D&D 5e SRD,Stinking Cloud,utility,fallback,
+D&D 5e SRD,Stone Shape,utility,fallback,
+D&D 5e SRD,Stoneskin,defboost,rule,
+D&D 5e SRD,Storm of Vengeance,damage,rule,
+D&D 5e SRD,Suggestion,disable,family,The Suggestion Pair
+D&D 5e SRD,Sunbeam,disable,rule,
+D&D 5e SRD,Sunburst,negation,rule,
+D&D 5e SRD,Symbol,disable,rule,
+D&D 5e SRD,Telekinesis,disable,rule,
+D&D 5e SRD,Telepathic Bond,roleshift,rule,
+D&D 5e SRD,Teleport,create,rule,
+D&D 5e SRD,Teleportation Circle,mobility,rule,
+D&D 5e SRD,Thaumaturgy,utility,fallback,
+D&D 5e SRD,Thunderwave,damage,rule,
+D&D 5e SRD,Time Stop,utility,fallback,
+D&D 5e SRD,Tiny Hut,defboost,override,
+D&D 5e SRD,Tongues,utility,fallback,
+D&D 5e SRD,Transport via Plants,roleshift,rule,
+D&D 5e SRD,Tree Stride,utility,fallback,
+D&D 5e SRD,True Polymorph,disable,family,The Polymorph Ladder
+D&D 5e SRD,True Resurrection,heal,rule,
+D&D 5e SRD,True Seeing,info,rule,
+D&D 5e SRD,True Strike,utility,fallback,
+D&D 5e SRD,Unseen Servant,create,family,The Phantom Armory
+D&D 5e SRD,Vampiric Touch,heal,rule,
+D&D 5e SRD,Vicious Mockery,offboost,rule,
+D&D 5e SRD,Wall of Fire,zone,rule,
+D&D 5e SRD,Wall of Force,negation,rule,
+D&D 5e SRD,Wall of Ice,zone,rule,
+D&D 5e SRD,Wall of Stone,negation,rule,
+D&D 5e SRD,Wall of Thorns,zone,rule,
+D&D 5e SRD,Warding Bond,defboost,rule,
+D&D 5e SRD,Water Breathing,mobility,family,The Touch-Buff Skeleton
+D&D 5e SRD,Water Walk,mobility,family,The Touch-Buff Skeleton
+D&D 5e SRD,Web,zone,override,
+D&D 5e SRD,Weird,disable,rule,
+D&D 5e SRD,Wind Walk,disable,rule,
+D&D 5e SRD,Wind Wall,zone,rule,
+D&D 5e SRD,Wish,heal,rule,
+D&D 5e SRD,Word of Recall,mobility,override,
+D&D 5e SRD,Zone of Truth,utility,fallback,
+Baldur's Gate 3,Melf's Acid Arrow,damage,rule,
+Baldur's Gate 3,Acid Splash,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Chain Lightning,mobility,rule,
+Baldur's Gate 3,Chromatic Orb,zone,rule,
+Baldur's Gate 3,Disintegrate,damage,rule,
+Baldur's Gate 3,Eldritch Blast,damage,override,The Damage Cantrip Engine
+Baldur's Gate 3,Ensnaring Strike,create,rule,
+Baldur's Gate 3,Fire Bolt,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Fireball,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Guiding Bolt,offboost,rule,
+Baldur's Gate 3,Hail of Thorns,damage,rule,
+Baldur's Gate 3,Ice Knife,damage,rule,
+Baldur's Gate 3,Lightning Arrow,defboost,rule,
+Baldur's Gate 3,Magic Missile,damage,override,
+Baldur's Gate 3,Poison Spray,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Ray of Enfeeblement,degrade,rule,
+Baldur's Gate 3,Ray of Frost,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Ray of Sickness,damage,rule,
+Baldur's Gate 3,Scorching Ray,damage,rule,
+Baldur's Gate 3,Banishing Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Witch Bolt,damage,rule,
+Baldur's Gate 3,Aid,defboost,override,
+Baldur's Gate 3,Armour of Agathys,utility,fallback,
+Baldur's Gate 3,Arms of Hadar,damage,rule,
+Baldur's Gate 3,Warden of Vitality,heal,rule,
+Baldur's Gate 3,Beacon of Hope,heal,rule,
+Baldur's Gate 3,Blade Ward,defboost,rule,
+Baldur's Gate 3,Blink,mobility,override,
+Baldur's Gate 3,Blur,degrade,rule,
+Baldur's Gate 3,Crusader's Mantle,offboost,override,
+Baldur's Gate 3,Destructive Wave,disable,rule,
+Baldur's Gate 3,Detect Thoughts,info,rule,
+Baldur's Gate 3,Disguise Self,stealth,rule,
+Baldur's Gate 3,Dispel Evil And Good,negation,rule,
+Baldur's Gate 3,Divine Favour,utility,fallback,
+Baldur's Gate 3,Expeditious Retreat,mobility,rule,
+Baldur's Gate 3,False Life,utility,fallback,
+Baldur's Gate 3,Feather Fall,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Fire Shield,defboost,rule,
+Baldur's Gate 3,Flame Blade,utility,fallback,
+Baldur's Gate 3,Mass Healing Word,heal,family,The Cure Family
+Baldur's Gate 3,Hellish Rebuke,offboost,rule,
+Baldur's Gate 3,Heroes' Feast,utility,fallback,
+Baldur's Gate 3,Mirror Image,stealth,rule,
+Baldur's Gate 3,Pass Without Trace,disable,rule,
+Baldur's Gate 3,Prayer of Healing,heal,family,The Cure Family
+Baldur's Gate 3,Produce Flame,utility,fallback,
+Baldur's Gate 3,See Invisibility,stealth,rule,
+Baldur's Gate 3,Shadow Blade,create,override,
+Baldur's Gate 3,Shield,defboost,family,The Duplicate SKUs
+Baldur's Gate 3,Shillelagh,offboost,override,
+Baldur's Gate 3,Speak with Animals,info,rule,
+Baldur's Gate 3,Spirit Guardians,mobility,rule,
+Baldur's Gate 3,Thaumaturgy,utility,fallback,
+Baldur's Gate 3,Wind Walk,roleshift,rule,
+Baldur's Gate 3,Animal Friendship,disable,family,The Charm Pair
+Baldur's Gate 3,Animate Dead,create,family,The Summoning Contract
+Baldur's Gate 3,Arcane Lock,utility,fallback,
+Baldur's Gate 3,Bane,offboost,family,Bane & Bless
+Baldur's Gate 3,Banishment,remove,override,
+Baldur's Gate 3,Barkskin,defboost,family,The Armour-Class Wardrobe
+Baldur's Gate 3,Bestow Curse,damage,rule,
+Baldur's Gate 3,Evard's Black Tentacles,zone,family,The Surface Engine
+Baldur's Gate 3,Bless,offboost,family,Bane & Bless
+Baldur's Gate 3,Blight,damage,rule,
+Baldur's Gate 3,Blindness,disable,rule,
+Baldur's Gate 3,Booming Blade,damage,rule,
+Baldur's Gate 3,Bursting Sinew,damage,rule,
+Baldur's Gate 3,Call Lightning,damage,rule,
+Baldur's Gate 3,Calm Emotions,disable,rule,
+Baldur's Gate 3,Charm Person,disable,family,The Charm Pair
+Baldur's Gate 3,Bone Chill,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Circle of Death,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Cloud of Daggers,damage,rule,
+Baldur's Gate 3,Cloudkill,zone,family,The Surface Engine
+Baldur's Gate 3,Command,disable,rule,
+Baldur's Gate 3,Compelled Duel,threat,override,
+Baldur's Gate 3,Confusion,disable,rule,
+Baldur's Gate 3,Conjure Elemental,create,family,The Summoning Contract
+Baldur's Gate 3,Conjure Minor Elemental,create,family,The Summoning Contract
+Baldur's Gate 3,Conjure Woodland Being,zone,rule,
+Baldur's Gate 3,Contagion,utility,fallback,
+Baldur's Gate 3,Counterspell,negation,override,
+Baldur's Gate 3,Create or Destroy Water,utility,fallback,
+Baldur's Gate 3,Create Undead,create,rule,
+Baldur's Gate 3,Crown of Madness,utility,fallback,
+Baldur's Gate 3,Cure Wounds,heal,family,The Cure Family
+Baldur's Gate 3,Mass Cure Wounds,heal,family,The Cure Family
+Baldur's Gate 3,Dancing Lights,utility,override,
+Baldur's Gate 3,Darkness,defboost,family,The Duplicate SKUs
+Baldur's Gate 3,Eyes of the Dark: Darkness,defboost,family,The Duplicate SKUs
+Baldur's Gate 3,Darkvision,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Daylight,negation,rule,
+Baldur's Gate 3,Death Ward,defboost,rule,
+Baldur's Gate 3,Dissonant Whispers,disable,rule,
+Baldur's Gate 3,Dominate Beast,disable,family,The Dominate Pair
+Baldur's Gate 3,Dominate Person,disable,family,The Dominate Pair
+Baldur's Gate 3,Elemental Weapon,offboost,rule,
+Baldur's Gate 3,Enhance Ability,utility,fallback,
+Baldur's Gate 3,Enlarge/Reduce,damage,rule,
+Baldur's Gate 3,Entangle,zone,family,The Surface Engine
+Baldur's Gate 3,Enthrall,utility,fallback,
+Baldur's Gate 3,Eyebite,disable,rule,
+Baldur's Gate 3,Faerie Fire,utility,fallback,
+Baldur's Gate 3,Feign Death,threat,rule,
+Baldur's Gate 3,Find Familiar,create,family,The Summoning Contract
+Baldur's Gate 3,Flame Strike,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Flaming Sphere,create,family,The Summoning Contract
+Baldur's Gate 3,Flesh to Stone,disable,rule,
+Baldur's Gate 3,Grant Flight,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Fog Cloud,zone,family,The Surface Engine
+Baldur's Gate 3,Freedom of Movement,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Otiluke's Freezing Sphere,damage,rule,
+Baldur's Gate 3,Friends,utility,fallback,
+Baldur's Gate 3,Gaseous Form,roleshift,rule,
+Baldur's Gate 3,Globe of Invulnerability,zone,rule,
+Baldur's Gate 3,Glyph of Warding,utility,fallback,
+Baldur's Gate 3,Goodberry,provision,override,
+Baldur's Gate 3,Grasping Vine,create,rule,
+Baldur's Gate 3,Grease,zone,family,The Surface Engine
+Baldur's Gate 3,Greater Restoration,negation,family,The Cleanse Counter
+Baldur's Gate 3,Guardian of Faith,damage,rule,
+Baldur's Gate 3,Guidance,offboost,family,Guidance & Resistance
+Baldur's Gate 3,Harm,damage,rule,
+Baldur's Gate 3,Haste,offboost,override,
+Baldur's Gate 3,Heal,heal,rule,
+Baldur's Gate 3,Healing Word,heal,family,The Cure Family
+Baldur's Gate 3,Heat Metal,degrade,rule,
+Baldur's Gate 3,Heroism,utility,fallback,
+Baldur's Gate 3,Hex,disable,rule,
+Baldur's Gate 3,Tasha's Hideous Laughter,disable,rule,
+Baldur's Gate 3,Hold Monster,disable,family,The Hold Pair
+Baldur's Gate 3,Hold Person,disable,family,The Hold Pair
+Baldur's Gate 3,Hunger of Hadar,disable,rule,
+Baldur's Gate 3,Hunter's Mark,damage,rule,
+Baldur's Gate 3,Hypnotic Pattern,disable,rule,
+Baldur's Gate 3,Ice Storm,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Inflict Wounds,damage,rule,
+Baldur's Gate 3,Insect Plague,damage,rule,
+Baldur's Gate 3,Invisibility,stealth,family,The Invisibility Ladder
+Baldur's Gate 3,Greater Invisibility,stealth,family,The Invisibility Ladder
+Baldur's Gate 3,Otto's Irresistible Dance,offboost,rule,
+Baldur's Gate 3,Enhance Leap,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Knock,disable,rule,
+Baldur's Gate 3,Lesser Restoration,negation,family,The Cleanse Counter
+Baldur's Gate 3,Light,utility,override,
+Baldur's Gate 3,Longstrider,mobility,family,The Touch-Buff Skeleton
+Baldur's Gate 3,Mage Armour,defboost,family,The Armour-Class Wardrobe
+Baldur's Gate 3,Mage Hand,create,rule,
+Baldur's Gate 3,Magic Weapon,offboost,rule,
+Baldur's Gate 3,Minor Illusion,stealth,rule,
+Baldur's Gate 3,Misty Step,mobility,family,The Blink Ladder
+Baldur's Gate 3,Moonbeam,damage,rule,
+Baldur's Gate 3,Phantasmal Force,damage,rule,
+Baldur's Gate 3,Phantasmal Killer,disable,rule,
+Baldur's Gate 3,Planar Ally,create,family,The Summoning Contract
+Baldur's Gate 3,Planar Binding,utility,fallback,
+Baldur's Gate 3,Plant Growth,zone,family,The Surface Engine
+Baldur's Gate 3,Polymorph,disable,override,
+Baldur's Gate 3,Protection from Energy,defboost,rule,
+Baldur's Gate 3,Protection from Evil and Good,defboost,rule,
+Baldur's Gate 3,Protection from Poison,negation,family,The Cleanse Counter
+Baldur's Gate 3,Remove Curse,negation,family,The Cleanse Counter
+Baldur's Gate 3,Otiluke's Resilient Sphere,damage,rule,
+Baldur's Gate 3,Resistance,offboost,family,Guidance & Resistance
+Baldur's Gate 3,Sacred Flame,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Sanctuary,damage,rule,
+Baldur's Gate 3,Seeming,stealth,rule,
+Baldur's Gate 3,Shatter,damage,rule,
+Baldur's Gate 3,Shield of Faith,defboost,family,The Armour-Class Wardrobe
+Baldur's Gate 3,Shocking Grasp,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Silence,disable,override,
+Baldur's Gate 3,Sleep,disable,override,The Hit-Point Pool Engine
+Baldur's Gate 3,Sleet Storm,zone,family,The Surface Engine
+Baldur's Gate 3,Slow,disable,rule,
+Baldur's Gate 3,Blinding Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Branding Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Searing Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Thunderous Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Wrathful Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Speak with Dead,utility,fallback,
+Baldur's Gate 3,Spike Growth,zone,family,The Surface Engine
+Baldur's Gate 3,Spiritual Weapon,create,override,The Summoning Contract
+Baldur's Gate 3,Staggering Smite,damage,family,The Smite Armoury
+Baldur's Gate 3,Stinking Cloud,zone,family,The Surface Engine
+Baldur's Gate 3,Stoneskin,defboost,rule,
+Baldur's Gate 3,Thorn Whip,damage,family,The Damage Cantrip Engine
+Baldur's Gate 3,Toll the Dead,damage,rule,
+Baldur's Gate 3,True Strike,offboost,rule,
+Baldur's Gate 3,Vampiric Touch,heal,rule,
+Baldur's Gate 3,Vicious Mockery,offboost,rule,
+Baldur's Gate 3,Warding Bond,defboost,rule,
+Baldur's Gate 3,Web,zone,override,The Surface Engine
+Baldur's Gate 3,Arcane Gate,mobility,rule,
+Baldur's Gate 3,Dimension Door,mobility,family,The Blink Ladder
+Baldur's Gate 3,Revivify,heal,override,
+Baldur's Gate 3,Telekinesis,disable,rule,
+Baldur's Gate 3,Blade Barrier,zone,family,The Wall Foundry
+Baldur's Gate 3,Wall of Fire,zone,family,The Wall Foundry
+Baldur's Gate 3,Wall of Ice,zone,family,The Wall Foundry
+Baldur's Gate 3,Wall of Stone,zone,family,The Wall Foundry
+Baldur's Gate 3,Wall of Thorns,zone,family,The Wall Foundry
+Baldur's Gate 3,Burning Hands,damage,rule,
+Baldur's Gate 3,Colour Spray,disable,family,The Hit-Point Pool Engine
+Baldur's Gate 3,Cone of Cold,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Conjure Barrage,damage,rule,
+Baldur's Gate 3,Fear,disable,override,
+Baldur's Gate 3,Gust of Wind,create,rule,
+Baldur's Gate 3,Lightning Bolt,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Sunbeam,damage,family,The Elemental Blast Template
+Baldur's Gate 3,Thunderwave,damage,family,The Elemental Blast Template
+WoW Classic,Mangle,heal,rule,
+WoW Classic,Bear Form,roleshift,override,
+WoW Classic,Growl,threat,override,The Druid Costume Shop
+WoW Classic,Teleport: Moonglade,mobility,rule,
+WoW Classic,Enrage,roleshift,rule,
+WoW Classic,Cure Poison,negation,family,The Cleanse Counter
+WoW Classic,Aquatic Form,mobility,override,
+WoW Classic,Aquatic Form (Passive),roleshift,rule,
+WoW Classic,Cat Form,roleshift,override,
+WoW Classic,Remove Curse,negation,family,The Cleanse Counter
+WoW Classic,Abolish Poison,negation,family,The Cleanse Counter
+WoW Classic,Challenging Roar,threat,override,The Druid Costume Shop
+WoW Classic,Travel Form,mobility,override,
+WoW Classic,Track Humanoids,info,family,The Tracking Dial
+WoW Classic,Dire Bear Form,roleshift,override,
+WoW Classic,Feline Grace,damage,rule,
+WoW Classic,Moonkin Form,disable,rule,
+WoW Classic,Barkskin,disable,rule,
+WoW Classic,Bash,disable,rule,
+WoW Classic,Dash,mobility,rule,
+WoW Classic,Cower,threat,override,The Druid Costume Shop
+WoW Classic,Demoralizing Roar,utility,fallback,
+WoW Classic,Faerie Fire,stealth,rule,
+WoW Classic,Faerie Fire (Feral),stealth,rule,
+WoW Classic,Rake,defboost,rule,
+WoW Classic,Shred,damage,family,The Druid Costume Shop
+WoW Classic,Soothe Animal,degrade,rule,
+WoW Classic,Swipe,damage,rule,
+WoW Classic,Thorns,damage,rule,
+WoW Classic,Wrath,damage,family,The Bolt Engine
+WoW Classic,Frenzied Regeneration,heal,override,
+WoW Classic,Pounce,disable,rule,
+WoW Classic,Claw,defboost,rule,
+WoW Classic,Entangling Roots,negation,rule,
+WoW Classic,Hibernate,disable,rule,
+WoW Classic,Maul,offboost,rule,
+WoW Classic,Moonfire,damage,family,The Affliction Engine
+WoW Classic,Nature's Grasp,zone,rule,
+WoW Classic,Ravage,damage,family,The Druid Costume Shop
+WoW Classic,Ferocious Bite,damage,rule,
+WoW Classic,Gift of the Wild,offboost,family,The Greater Ladder
+WoW Classic,Healing Touch,heal,family,"One Heal, Nine Names"
+WoW Classic,Hurricane,damage,rule,
+WoW Classic,Insect Swarm,damage,rule,
+WoW Classic,Mark of the Wild,offboost,family,The Greater Ladder
+WoW Classic,Prowl,damage,family,The Druid Costume Shop
+WoW Classic,Rebirth,heal,override,The Resurrection Union
+WoW Classic,Regrowth,heal,rule,
+WoW Classic,Rejuvenation,heal,rule,
+WoW Classic,Rip,damage,rule,
+WoW Classic,Starfire,damage,family,The Bolt Engine
+WoW Classic,Tiger's Fury,offboost,rule,
+WoW Classic,Tranquility,utility,fallback,
+WoW Classic,Auto Shot,damage,override,
+WoW Classic,Cobra Reflexes,damage,rule,
+WoW Classic,Track Beasts,info,family,The Tracking Dial
+WoW Classic,Aspect of the Monkey,roleshift,family,The Aspect Dial
+WoW Classic,Concussive Shot,disable,rule,
+WoW Classic,Beast Training,utility,fallback,
+WoW Classic,Call Pet,create,rule,
+WoW Classic,Dismiss Pet,utility,fallback,
+WoW Classic,Feed Pet,utility,fallback,
+WoW Classic,Revive Pet,heal,rule,
+WoW Classic,Tame Beast,utility,fallback,
+WoW Classic,Track Humanoids,info,family,The Tracking Dial
+WoW Classic,Eagle Eye,info,rule,
+WoW Classic,Eyes of the Beast,utility,fallback,
+WoW Classic,Track Undead,info,family,The Tracking Dial
+WoW Classic,Aspect of the Cheetah,roleshift,family,The Aspect Dial
+WoW Classic,Beast Lore,info,rule,
+WoW Classic,Track Hidden,info,family,The Tracking Dial
+WoW Classic,Rapid Fire,utility,fallback,
+WoW Classic,Track Elementals,info,family,The Tracking Dial
+WoW Classic,Frost Trap,disable,rule,
+WoW Classic,Aspect of the Beast,roleshift,family,The Aspect Dial
+WoW Classic,Feign Death,threat,rule,
+WoW Classic,Flare,stealth,rule,
+WoW Classic,Track Demons,info,family,The Tracking Dial
+WoW Classic,Aspect of the Pack,roleshift,family,The Aspect Dial
+WoW Classic,Track Giants,info,family,The Tracking Dial
+WoW Classic,Scare Beast,disable,family,The Fear Franchise
+WoW Classic,Disengage,utility,fallback,
+WoW Classic,Prowl,damage,family,The Druid Costume Shop
+WoW Classic,Track Dragonkin,info,family,The Tracking Dial
+WoW Classic,Scorpid Sting,degrade,family,The Sting Clip
+WoW Classic,Counterattack,disable,rule,
+WoW Classic,Explosive Trap,roleshift,rule,
+WoW Classic,Aspect of the Wild,roleshift,family,The Aspect Dial
+WoW Classic,Immolation Trap,roleshift,rule,
+WoW Classic,Raptor Strike,damage,rule,
+WoW Classic,Scorpid Poison,damage,rule,
+WoW Classic,Viper Sting,degrade,family,The Sting Clip
+WoW Classic,Hunter's Mark,stealth,rule,
+WoW Classic,Mongoose Bite,damage,rule,
+WoW Classic,Volley,damage,rule,
+WoW Classic,Arcane Shot,damage,rule,
+WoW Classic,Aspect of the Hawk,roleshift,family,The Aspect Dial
+WoW Classic,Black Arrow,disable,rule,
+WoW Classic,Distracting Shot,utility,fallback,
+WoW Classic,Freezing Trap,roleshift,rule,
+WoW Classic,Lightning Breath,damage,rule,
+WoW Classic,Mend Pet,heal,rule,
+WoW Classic,Multi-Shot,damage,rule,
+WoW Classic,Serpent Sting,damage,family,The Affliction Engine
+WoW Classic,Tranquilizing Shot,utility,fallback,
+WoW Classic,Wing Clip,mobility,rule,
+WoW Classic,Wyvern Sting,disable,rule,
+WoW Classic,Ice Block,disable,rule,
+WoW Classic,Chilled,utility,fallback,
+WoW Classic,Slow Fall,mobility,override,
+WoW Classic,Detect Magic,info,rule,
+WoW Classic,Remove Lesser Curse,negation,family,The Cleanse Counter
+WoW Classic,Blink,mobility,override,
+WoW Classic,Frost Armor,defboost,family,The Protection Rack
+WoW Classic,Teleport: Ironforge,mobility,family,The Hearth Network
+WoW Classic,Teleport: Orgrimmar,mobility,family,The Hearth Network
+WoW Classic,Teleport: Stormwind,mobility,family,The Hearth Network
+WoW Classic,Teleport: Undercity,mobility,family,The Hearth Network
+WoW Classic,Counterspell,negation,override,
+WoW Classic,Conjure Mana Agate,provision,family,The Conjured Commissary
+WoW Classic,Teleport: Darnassus,mobility,family,The Hearth Network
+WoW Classic,Teleport: Thunder Bluff,mobility,family,The Hearth Network
+WoW Classic,Conjure Mana Jade,provision,family,The Conjured Commissary
+WoW Classic,Combustion,damage,rule,
+WoW Classic,Portal: Ironforge,mobility,family,The Hearth Network
+WoW Classic,Portal: Orgrimmar,mobility,family,The Hearth Network
+WoW Classic,Portal: Stormwind,mobility,family,The Hearth Network
+WoW Classic,Portal: Undercity,mobility,family,The Hearth Network
+WoW Classic,Conjure Mana Citrine,provision,family,The Conjured Commissary
+WoW Classic,Portal: Darnassus,mobility,family,The Hearth Network
+WoW Classic,Portal: Thunder Bluff,mobility,family,The Hearth Network
+WoW Classic,Amplify Magic,defboost,family,Amplify & Dampen
+WoW Classic,Arcane Explosion,damage,rule,
+WoW Classic,Fire Blast,damage,rule,
+WoW Classic,Frost Nova,negation,rule,
+WoW Classic,Arcane Brilliance,offboost,family,The Greater Ladder
+WoW Classic,Arcane Intellect,offboost,family,The Greater Ladder
+WoW Classic,Arcane Missiles,damage,rule,
+WoW Classic,Flamestrike,damage,rule,
+WoW Classic,Cone of Cold,disable,rule,
+WoW Classic,Conjure Mana Ruby,provision,family,The Conjured Commissary
+WoW Classic,Ice Barrier,negation,rule,
+WoW Classic,Mage Armor,defboost,family,The Protection Rack
+WoW Classic,Scorch,damage,rule,
+WoW Classic,Blast Wave,defboost,rule,
+WoW Classic,Blizzard,damage,rule,
+WoW Classic,Conjure Food,provision,family,The Conjured Commissary
+WoW Classic,Conjure Water,provision,family,The Conjured Commissary
+WoW Classic,Dampen Magic,defboost,family,Amplify & Dampen
+WoW Classic,Fire Ward,defboost,family,The Protection Rack
+WoW Classic,Fireball,damage,family,The Bolt Engine
+WoW Classic,Frost Ward,defboost,family,The Protection Rack
+WoW Classic,Frostbolt,damage,family,The Bolt Engine
+WoW Classic,Ice Armor,defboost,family,The Protection Rack
+WoW Classic,Mana Shield,defboost,rule,
+WoW Classic,Polymorph,disable,override,The Polymorph Barn
+WoW Classic,Polymorph: Cow,disable,family,The Polymorph Barn
+WoW Classic,Pyroblast,damage,family,The Bolt Engine
+WoW Classic,Judgement,damage,override,
+WoW Classic,Purify,negation,family,The Cleanse Counter
+WoW Classic,Righteous Fury,utility,fallback,
+WoW Classic,Blessing of Freedom,offboost,family,The Blessing Rack
+WoW Classic,Divine Protection,disable,rule,
+WoW Classic,Blessing of Kings,offboost,family,The Blessing Rack
+WoW Classic,Repentance,disable,rule,
+WoW Classic,Sense Undead,info,family,The Tracking Dial
+WoW Classic,Concentration Aura,defboost,family,The Aura Carousel
+WoW Classic,Seal of Justice,offboost,family,The Seal Press
+WoW Classic,Blessing of Salvation,threat,override,The Blessing Rack
+WoW Classic,Divine Intervention,defboost,rule,
+WoW Classic,Sanctity Aura,defboost,family,The Aura Carousel
+WoW Classic,Blessing of Protection,disable,rule,
+WoW Classic,Summon Warhorse,create,family,The Stable & The Circle
+WoW Classic,Cleanse,negation,family,The Cleanse Counter
+WoW Classic,Divine Shield,degrade,rule,
+WoW Classic,Lay on Hands,heal,override,
+WoW Classic,Seal of the Crusader,offboost,family,The Seal Press
+WoW Classic,Shadow Resistance Aura,defboost,family,The Aura Carousel
+WoW Classic,Turn Undead,remove,override,
+WoW Classic,Blessing of Sacrifice,offboost,family,The Blessing Rack
+WoW Classic,Hammer of Justice,disable,rule,
+WoW Classic,Frost Resistance Aura,defboost,family,The Aura Carousel
+WoW Classic,Retribution Aura,defboost,family,The Aura Carousel
+WoW Classic,Flash of Light,heal,family,"One Heal, Nine Names"
+WoW Classic,Seal of Righteousness,offboost,family,The Seal Press
+WoW Classic,Seal of Wisdom,offboost,family,The Seal Press
+WoW Classic,Blessing of Light,defboost,override,The Blessing Rack
+WoW Classic,Blessing of Might,offboost,family,The Blessing Rack
+WoW Classic,Blessing of Wisdom,offboost,family,The Blessing Rack
+WoW Classic,Consecration,damage,rule,
+WoW Classic,Devotion Aura,defboost,family,The Aura Carousel
+WoW Classic,Exorcism,damage,override,
+WoW Classic,Fire Resistance Aura,defboost,family,The Aura Carousel
+WoW Classic,Greater Blessing of Kings,utility,fallback,
+WoW Classic,Greater Blessing of Light,defboost,override,
+WoW Classic,Greater Blessing of Might,utility,fallback,
+WoW Classic,Greater Blessing of Salvation,threat,override,
+WoW Classic,Greater Blessing of Sanctuary,degrade,rule,
+WoW Classic,Greater Blessing of Wisdom,utility,fallback,
+WoW Classic,Hammer of Wrath,damage,rule,
+WoW Classic,Holy Light,heal,family,"One Heal, Nine Names"
+WoW Classic,Holy Wrath,damage,rule,
+WoW Classic,Redemption,heal,override,The Resurrection Union
+WoW Classic,Seal of Light,offboost,family,The Seal Press
+WoW Classic,Summon Charger,create,family,The Stable & The Circle
+WoW Classic,Vampiric Embrace,damage,rule,
+WoW Classic,Lesser Heal,heal,family,"One Heal, Nine Names"
+WoW Classic,Cure Disease,negation,family,The Cleanse Counter
+WoW Classic,Fear Ward,disable,rule,
+WoW Classic,Abolish Disease,negation,family,The Cleanse Counter
+WoW Classic,Heal,heal,family,"One Heal, Nine Names"
+WoW Classic,Levitate,disable,rule,
+WoW Classic,Dispel Magic,negation,override,The Cleanse Counter
+WoW Classic,Power Infusion,damage,rule,
+WoW Classic,Mind Vision,info,override,
+WoW Classic,Mind Soothe,degrade,rule,
+WoW Classic,Smite,damage,family,The Bolt Engine
+WoW Classic,Flash Heal,heal,family,"One Heal, Nine Names"
+WoW Classic,Mana Burn,damage,rule,
+WoW Classic,Prayer of Shadow Protection,offboost,family,The Greater Ladder
+WoW Classic,Psychic Scream,disable,family,The Fear Franchise
+WoW Classic,Shadow Protection,offboost,family,The Greater Ladder
+WoW Classic,Desperate Prayer,heal,rule,
+WoW Classic,Mind Blast,damage,family,The Bolt Engine
+WoW Classic,Mind Control,disable,override,
+WoW Classic,Resurrection,heal,override,The Resurrection Union
+WoW Classic,Shadow Word: Pain,damage,family,The Affliction Engine
+WoW Classic,Starshards,damage,rule,
+WoW Classic,Devouring Plague,heal,rule,
+WoW Classic,Divine Spirit,offboost,family,The Greater Ladder
+WoW Classic,Elune's Grace,damage,rule,
+WoW Classic,Fade,threat,override,
+WoW Classic,Feedback,damage,rule,
+WoW Classic,Greater Heal,heal,family,"One Heal, Nine Names"
+WoW Classic,Hex of Weakness,disable,rule,
+WoW Classic,Holy Fire,damage,family,The Bolt Engine
+WoW Classic,Holy Nova,heal,rule,
+WoW Classic,Inner Fire,defboost,family,The Protection Rack
+WoW Classic,Lightwell,utility,fallback,
+WoW Classic,Mind Flay,disable,rule,
+WoW Classic,Power Word: Fortitude,offboost,family,The Greater Ladder
+WoW Classic,Power Word: Shield,defboost,override,The Protection Rack
+WoW Classic,Prayer of Fortitude,offboost,family,The Greater Ladder
+WoW Classic,Prayer of Healing,heal,rule,
+WoW Classic,Prayer of Spirit,offboost,family,The Greater Ladder
+WoW Classic,Renew,heal,rule,
+WoW Classic,Shackle Undead,damage,rule,
+WoW Classic,Shadowguard,damage,rule,
+WoW Classic,Touch of Weakness,damage,rule,
+WoW Classic,Pick Lock,utility,fallback,
+WoW Classic,Pick Pocket,utility,fallback,
+WoW Classic,Evasion,defboost,override,
+WoW Classic,Poisons,utility,fallback,
+WoW Classic,Distract,stealth,rule,
+WoW Classic,Detect Traps,info,rule,
+WoW Classic,Mind-numbing Poison,degrade,family,The Numbered Vials
+WoW Classic,Cheap Shot,disable,rule,
+WoW Classic,Disarm Trap,utility,fallback,
+WoW Classic,Blind,disable,rule,
+WoW Classic,Mind-numbing Poison II,degrade,family,The Numbered Vials
+WoW Classic,Safe Fall,damage,rule,
+WoW Classic,Slice and Dice,utility,fallback,
+WoW Classic,Vanish,stealth,rule,
+WoW Classic,Sap,heal,rule,
+WoW Classic,Kidney Shot,disable,rule,
+WoW Classic,Mind-numbing Poison III,degrade,family,The Numbered Vials
+WoW Classic,Garrote,damage,family,The Affliction Engine
+WoW Classic,Sinister Strike,defboost,rule,
+WoW Classic,Expose Armor,degrade,rule,
+WoW Classic,Ambush,damage,family,The Druid Costume Shop
+WoW Classic,Hemorrhage,defboost,rule,
+WoW Classic,Kick,negation,family,The Interrupt Union
+WoW Classic,Sprint,mobility,rule,
+WoW Classic,Backstab,damage,family,The Druid Costume Shop
+WoW Classic,Eviscerate,damage,rule,
+WoW Classic,Feint,threat,override,The Druid Costume Shop
+WoW Classic,Gouge,heal,rule,
+WoW Classic,Rupture,damage,family,The Affliction Engine
+WoW Classic,Stealth,damage,family,The Druid Costume Shop
+WoW Classic,Earthbind Totem,create,family,The Totem Foundry
+WoW Classic,Cure Poison,negation,family,The Cleanse Counter
+WoW Classic,Tremor Totem,create,family,The Totem Foundry
+WoW Classic,Ghost Wolf,mobility,override,
+WoW Classic,Cure Disease,negation,family,The Cleanse Counter
+WoW Classic,Poison Cleansing Totem,create,family,The Totem Foundry
+WoW Classic,Water Breathing,utility,fallback,
+WoW Classic,Far Sight,info,rule,
+WoW Classic,Water Walking,mobility,rule,
+WoW Classic,Astral Recall,mobility,override,
+WoW Classic,Grounding Totem,create,family,The Totem Foundry
+WoW Classic,Reincarnation,heal,rule,
+WoW Classic,Purge,negation,override,
+WoW Classic,Sentry Totem,create,rule,
+WoW Classic,Disease Cleansing Totem,create,family,The Totem Foundry
+WoW Classic,Fire Nova Totem,create,family,The Totem Foundry
+WoW Classic,Windfury Totem,create,family,The Totem Foundry
+WoW Classic,Chain Heal,heal,rule,
+WoW Classic,Frost Resistance Totem,create,family,The Totem Foundry
+WoW Classic,Rockbiter Weapon,offboost,override,
+WoW Classic,Stoneskin Totem,create,family,The Totem Foundry
+WoW Classic,Chain Lightning,mobility,rule,
+WoW Classic,Flametongue Weapon,offboost,override,
+WoW Classic,Lightning Bolt,damage,family,The Bolt Engine
+WoW Classic,Lightning Shield,defboost,rule,
+WoW Classic,Magma Totem,create,family,The Totem Foundry
+WoW Classic,Mana Spring Totem,create,family,The Totem Foundry
+WoW Classic,Windwall Totem,create,family,The Totem Foundry
+WoW Classic,Fire Resistance Totem,create,family,The Totem Foundry
+WoW Classic,Flametongue Totem,create,family,The Totem Foundry
+WoW Classic,Frost Shock,damage,family,The Shock Battery
+WoW Classic,Frostbrand Weapon,offboost,override,
+WoW Classic,Mana Tide Totem,create,family,The Totem Foundry
+WoW Classic,Stoneclaw Totem,create,family,The Totem Foundry
+WoW Classic,Ancestral Spirit,heal,override,The Resurrection Union
+WoW Classic,Earth Shock,negation,family,The Interrupt Union
+WoW Classic,Flame Shock,damage,family,The Shock Battery
+WoW Classic,Grace of Air Totem,create,family,The Totem Foundry
+WoW Classic,Healing Stream Totem,create,family,The Totem Foundry
+WoW Classic,Healing Wave,heal,family,"One Heal, Nine Names"
+WoW Classic,Lesser Healing Wave,heal,family,"One Heal, Nine Names"
+WoW Classic,Nature Resistance Totem,create,family,The Totem Foundry
+WoW Classic,Searing Totem,create,family,The Totem Foundry
+WoW Classic,Strength of Earth Totem,create,family,The Totem Foundry
+WoW Classic,Windfury Weapon,offboost,override,
+WoW Classic,Summon Imp,create,family,The Stable & The Circle
+WoW Classic,Create Healthstone (Minor),provision,family,The Conjured Commissary
+WoW Classic,Demon Skin,defboost,family,The Protection Rack
+WoW Classic,Summon Voidwalker,create,family,The Stable & The Circle
+WoW Classic,Unending Breath,utility,fallback,
+WoW Classic,Create Soulstone (Minor),provision,family,The Conjured Commissary
+WoW Classic,Ritual of Summoning,mobility,override,The Stable & The Circle
+WoW Classic,Summon Incubus,create,rule,
+WoW Classic,Summon Succubus,create,family,The Stable & The Circle
+WoW Classic,Create Healthstone (Lesser),provision,family,The Conjured Commissary
+WoW Classic,Eye of Kilrogg,info,override,The Stable & The Circle
+WoW Classic,Sense Demons,info,family,The Tracking Dial
+WoW Classic,Detect Lesser Invisibility,stealth,rule,
+WoW Classic,Create Firestone (Lesser),provision,family,The Conjured Commissary
+WoW Classic,Create Soulstone (Lesser),provision,family,The Conjured Commissary
+WoW Classic,Summon Felhunter,create,family,The Stable & The Circle
+WoW Classic,Create Healthstone,provision,family,The Conjured Commissary
+WoW Classic,Create Firestone,provision,family,The Conjured Commissary
+WoW Classic,Create Spellstone,provision,family,The Conjured Commissary
+WoW Classic,Curse of Idiocy,degrade,rule,
+WoW Classic,Detect Invisibility,stealth,rule,
+WoW Classic,Create Soulstone,provision,family,The Conjured Commissary
+WoW Classic,Summon Felsteed,create,family,The Stable & The Circle
+WoW Classic,Create Firestone (Greater),provision,family,The Conjured Commissary
+WoW Classic,Create Healthstone (Greater),provision,family,The Conjured Commissary
+WoW Classic,Banish,remove,rule,
+WoW Classic,Create Spellstone (Greater),provision,family,The Conjured Commissary
+WoW Classic,Create Soulstone (Greater),provision,family,The Conjured Commissary
+WoW Classic,Curse of Tongues,degrade,family,The Curse Catalogue
+WoW Classic,Detect Greater Invisibility,stealth,rule,
+WoW Classic,Inferno,create,family,The Stable & The Circle
+WoW Classic,Curse of Weakness,degrade,family,The Curse Catalogue
+WoW Classic,Drain Soul,damage,rule,
+WoW Classic,Drain Life,utility,fallback,
+WoW Classic,Drain Mana,utility,fallback,
+WoW Classic,Hellfire,damage,rule,
+WoW Classic,Howl of Terror,disable,family,The Fear Franchise
+WoW Classic,Create Firestone (Major),provision,family,The Conjured Commissary
+WoW Classic,Curse of Recklessness,degrade,family,The Curse Catalogue
+WoW Classic,Curse of Shadow,degrade,family,The Curse Catalogue
+WoW Classic,Fear,disable,override,The Fear Franchise
+WoW Classic,Life Tap,provision,override,
+WoW Classic,Shadowburn,damage,rule,
+WoW Classic,Soul Fire,damage,rule,
+WoW Classic,Create Healthstone (Major),provision,family,The Conjured Commissary
+WoW Classic,Curse of Agony,degrade,family,The Curse Catalogue
+WoW Classic,Death Coil,damage,rule,
+WoW Classic,Rain of Fire,damage,rule,
+WoW Classic,Searing Pain,damage,rule,
+WoW Classic,Siphon Life,damage,override,
+WoW Classic,Subjugate Demon,disable,rule,
+WoW Classic,Conflagrate,damage,rule,
+WoW Classic,Corruption,damage,family,The Affliction Engine
+WoW Classic,Create Soulstone (Major),provision,family,The Conjured Commissary
+WoW Classic,Create Spellstone (Major),provision,family,The Conjured Commissary
+WoW Classic,Curse of Doom,degrade,family,The Curse Catalogue
+WoW Classic,Curse of the Elements,degrade,family,The Curse Catalogue
+WoW Classic,Dark Pact,provision,override,
+WoW Classic,Demon Armor,defboost,family,The Protection Rack
+WoW Classic,Health Funnel,heal,override,
+WoW Classic,Immolate,damage,family,The Affliction Engine
+WoW Classic,Ritual of Doom,create,family,The Stable & The Circle
+WoW Classic,Shadow Bolt,damage,family,The Bolt Engine
+WoW Classic,Shadow Ward,defboost,family,The Protection Rack
+WoW Classic,Summon Dreadsteed,create,family,The Stable & The Circle
+WoW Classic,Battle Stance,roleshift,override,
+WoW Classic,Bloodrage,utility,fallback,
+WoW Classic,Defensive Stance,roleshift,override,
+WoW Classic,Taunt,threat,override,The Druid Costume Shop
+WoW Classic,Shield Block,defboost,rule,
+WoW Classic,Disarm,disable,override,
+WoW Classic,Retaliation,utility,fallback,
+WoW Classic,Intimidating Shout,disable,family,The Fear Franchise
+WoW Classic,Challenging Shout,threat,override,The Druid Costume Shop
+WoW Classic,Shield Wall,defboost,rule,
+WoW Classic,Berserker Stance,roleshift,override,
+WoW Classic,Berserker Rage,disable,rule,
+WoW Classic,Whirlwind,damage,rule,
+WoW Classic,Charge,disable,rule,
+WoW Classic,Recklessness,disable,rule,
+WoW Classic,Intercept,disable,rule,
+WoW Classic,Shield Bash,negation,family,The Interrupt Union
+WoW Classic,Demoralizing Shout,degrade,override,
+WoW Classic,Hamstring,disable,rule,
+WoW Classic,Slam,damage,rule,
+WoW Classic,Execute,damage,rule,
+WoW Classic,Mocking Blow,threat,override,
+WoW Classic,Pummel,negation,family,The Interrupt Union
+WoW Classic,Sunder Armor,degrade,override,
+WoW Classic,Thunder Clap,damage,rule,
+WoW Classic,Battle Shout,utility,fallback,
+WoW Classic,Bloodthirst,damage,rule,
+WoW Classic,Cleave,damage,rule,
+WoW Classic,Heroic Strike,damage,rule,
+WoW Classic,Mortal Strike,damage,rule,
+WoW Classic,Overpower,damage,rule,
+WoW Classic,Rend,damage,family,The Affliction Engine
+WoW Classic,Revenge,damage,rule,
+WoW Classic,Shield Slam,negation,rule,
