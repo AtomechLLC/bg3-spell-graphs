@@ -59,17 +59,109 @@ RULES = [
     ("damage",   r"damage\b|DealDamage|deals? \d|d\d+ (fire|cold|frost|shadow|nature|holy|arcane|force|necrotic|radiant|thunder|lightning|acid|poison|psychic|slashing|piercing|bludgeoning)"),
 ]
 
-def classify(name, desc, fam_slug, overrides):
+def classify(name, desc, fam_slug, overrides, effect_p=None):
+    """Order: override > curated family > mechanical effect data > tooltip keywords."""
     key = name.lower()
     if key in overrides:
         return overrides[key], "override"
     if fam_slug and fam_slug in FAM_PURPOSE:
         return FAM_PURPOSE[fam_slug], "family"
+    if effect_p:
+        return effect_p, "effect"
     text = (name + " " + desc).lower()
     for purpose, pat in RULES:
         if re.search(pat, text):
             return purpose, "rule"
     return "utility", "fallback"
+
+
+# ---------------------------------------------------- effect-data classifiers
+# WoW: SpellEffect.db2 — effect types and aura codes are the game's mechanics.
+WOW_EFFECT = {1: "damage", 2: "damage", 5: "mobility", 8: "drain", 9: "drain", 10: "heal",
+              62: "drain",
+              17: "damage", 18: "heal", 24: "provision", 28: "create", 30: "provision",
+              31: "damage", 33: "utility", 38: "negation", 50: "create", 56: "create",
+              58: "damage", 67: "heal", 68: "negation", 75: "threat", 94: "heal",
+              112: "create", 113: "heal", 121: "damage"}
+WOW_AURA = {3: "damage", 5: "disable", 7: "disable", 8: "heal", 10: "threat",
+            11: "threat", 12: "disable", 15: "defboost", 16: "stealth", 18: "stealth",
+            19: "info", 20: "heal", 24: "provision", 25: "disable", 26: "disable",
+            27: "disable", 31: "mobility", 32: "mobility", 33: "disable",
+            34: "defboost", 36: "roleshift", 39: "defboost", 40: "defboost",
+            44: "info", 45: "info", 47: "defboost", 49: "defboost", 53: "damage",
+            56: "disable", 69: "defboost", 78: "mobility", 85: "provision",
+            99: "offboost"}
+WOW_AURA_SIGNED = {9, 13, 22, 29, 79}   # buff if positive, degradation if negative
+WOW_PRECEDENCE = ["create", "roleshift", "threat", "heal", "mobility", "disable",
+                  "negation", "stealth", "info", "drain", "provision", "damage",
+                  "degrade", "offboost", "defboost", "utility"]
+
+# WoW-view remap: the D&D map applied to WoW, with WoW-major purposes broken out
+# (resource warfare, companion upkeep) and near-empty D&D purposes culled
+# (zone -> nearest fit; Banish / Turn Undead play as disables there).
+WOW_OVERRIDES = {
+    "mana burn": "drain", "drain life": "drain", "drain mana": "drain",
+    "drain soul": "drain", "life tap": "drain", "viper sting": "drain",
+    "siphon life": "drain", "cannibalize": "drain",
+    "call pet": "companion", "tame beast": "companion", "revive pet": "companion",
+    "dismiss pet": "companion", "mend pet": "companion", "feed pet": "companion",
+    "beast training": "companion", "eyes of the beast": "companion",
+    "beast lore": "companion", "health funnel": "companion",
+    "banish": "disable", "turn undead": "disable", "nature's grasp": "disable",
+}
+
+
+def load_wow_effects():
+    eff = defaultdict(list)
+    with open("wow_SpellEffect.csv", encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            try:
+                eff[int(row["SpellID"])].append(
+                    (int(row["Effect"] or 0), int(row["EffectAura"] or 0),
+                     float(row["EffectBasePoints"] or 0)))
+            except ValueError:
+                continue
+    return eff
+
+
+def wow_effect_purpose(spell_ids, eff_table):
+    found = set()
+    for sid in spell_ids:
+        for effect, aura, bp in eff_table.get(sid, []):
+            if effect == 6:   # APPLY_AURA — read the aura code
+                if aura in WOW_AURA_SIGNED:
+                    found.add("degrade" if bp < 0 else
+                              ("defboost" if aura == 22 else "offboost"))
+                elif aura in WOW_AURA:
+                    found.add(WOW_AURA[aura])
+            elif effect in WOW_EFFECT:
+                found.add(WOW_EFFECT[effect])
+    for p in WOW_PRECEDENCE:
+        if p in found:
+            return p
+    return None
+
+
+# BG3: the stat functors in SpellSuccess/SpellProperties are the mechanics.
+BG3_FUNCTORS = [("create", r"\bSummon\("), ("mobility", r"Teleport\w*\("),
+                ("negation", r"RemoveStatus\(|RemoveAura"), ("heal", r"RegainHitPoints\(|Resurrect"),
+                ("damage", r"DealDamage\("), ("zone", r"CreateSurface\(|SurfaceChange\(")]
+
+
+def bg3_effect_purpose(success, props, tooltip):
+    t = " ".join([success or "", props or "", tooltip or ""])
+    for p, pat in BG3_FUNCTORS:
+        if re.search(pat, t):
+            return p
+    return None
+
+
+def srd_effect_purpose(s):
+    if s.get("damage"):
+        return "damage"
+    if s.get("heal_at_slot_level"):
+        return "heal"
+    return None
 
 OVERRIDES = {
     # cross-game judgment calls
@@ -105,6 +197,7 @@ OVERRIDES = {
     "crusader's mantle": "offboost", "sunder armor": "degrade",
     "demoralizing shout": "degrade", "tiny hut": "defboost",
     "ghost wolf": "mobility", "travel form": "mobility", "aquatic form": "mobility",
+    "stealth": "stealth", "prowl": "stealth",
     "mind control": "disable", "auto shot": "damage", "disarm": "disable",
     "aid": "defboost", "haste": "offboost", "blessing of light": "defboost",
     "greater blessing of light": "defboost",
@@ -138,7 +231,8 @@ SRD_TITLE_TO_KEY = {
 for s in srd:
     fam_title = fam_of_srd.get(s["name"].lower(), "")
     fam_key = SRD_TITLE_TO_KEY.get(fam_title, "")
-    p, how = classify(s["name"], A.spell_text(s), fam_key, OVERRIDES)
+    p, how = classify(s["name"], A.spell_text(s), fam_key, OVERRIDES,
+                      effect_p=srd_effect_purpose(s))
     rows.append(dict(game="D&D 5e SRD", name=s["name"], purpose=p, how=how,
                      family=fam_title))
 
@@ -154,7 +248,9 @@ for r in C.DPOP:
     slug = fm["slug"] if fm else ""
     slug = {"hp-pool": "hp-pool-bg3"}.get(slug, slug) if slug == "hp-pool" else slug
     desc = r["desc"] + " " + r["tooltip_damage"] + " " + r["spell_success"]
-    p, how = classify(r["name"], desc, slug, OVERRIDES)
+    p, how = classify(r["name"], desc, slug, OVERRIDES,
+                      effect_p=bg3_effect_purpose(r["spell_success"], r["properties"],
+                                                  r["tooltip_damage"]))
     rows.append(dict(game="Baldur's Gate 3", name=r["name"], purpose=p, how=how,
                      family=fm["title"] if fm else ""))
 
@@ -166,11 +262,14 @@ WOW_FAM_OF = {}
 for f in bw.F:
     for m in f["members"]:
         WOW_FAM_OF[m] = f
+WEFF = load_wow_effects()
+WOW_ALL_OVERRIDES = {**OVERRIDES, **WOW_OVERRIDES}
 for r in wow:
     fm = WOW_FAM_OF.get(r["id"])
     slug = fm["slug"] if fm else ""
     slug = {"protection": "protection-wow", "polymorph": "polymorph-wow"}.get(slug, slug)
-    p, how = classify(r["name"], r["desc"], slug, OVERRIDES)
+    p, how = classify(r["name"], r["desc"], slug, WOW_ALL_OVERRIDES,
+                      effect_p=wow_effect_purpose(r["all_ids"], WEFF))
     rows.append(dict(game="WoW Classic", name=r["name"], purpose=p, how=how,
                      family=fm["title"] if fm else ""))
 

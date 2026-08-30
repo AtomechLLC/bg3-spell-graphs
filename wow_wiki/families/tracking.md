@@ -1,6 +1,6 @@
 # <span class="femoji">🐾</span> The Tracking Dial
 
-<span class="tier tier-clone">Verbatim clone</span> · 11 abilities · masked-tooltip similarity 0.56–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 11 abilities · mechanical similarity 0.51–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -8,10 +8,10 @@
 | <img class="sic" data-i="track-beasts" alt=""> **Track Beasts** | Hunter | 1 | Physical | 1 | Shows the location of all nearby beasts on the minimap.  Only one form of tracking can be active at a time. |
 | <img class="sic" data-i="track-humanoids" alt=""> **Track Humanoids** | Hunter | 10 | Physical | 1 | Shows the location of all nearby humanoids on the minimap.  Only one form of tracking can be active at a time. |
 | <img class="sic" data-i="track-undead" alt=""> **Track Undead** | Hunter | 18 | Physical | 1 | Shows the location of all nearby undead on the minimap.  Only one form of tracking can be active at a time. |
-| **Track Hidden** | Hunter | 24 | Physical | 1 | Increases stealth detection and shows hidden units within detection range on the minimap.  Only one form of tr |
-| **Track Elementals** | Hunter | 26 | Physical | 1 | Shows the location of all nearby elementals on the minimap.  Only one form of tracking can be active at a time |
+| <img class="sic" data-i="track-hidden" alt=""> **Track Hidden** | Hunter | 24 | Physical | 1 | Increases stealth detection and shows hidden units within detection range on the minimap.  Only one form of tr |
+| <img class="sic" data-i="track-elementals" alt=""> **Track Elementals** | Hunter | 26 | Physical | 1 | Shows the location of all nearby elementals on the minimap.  Only one form of tracking can be active at a time |
 | <img class="sic" data-i="track-demons" alt=""> **Track Demons** | Hunter | 32 | Physical | 1 | Shows the location of all nearby demons on the minimap.  Only one form of tracking can be active at a time. |
-| **Track Giants** | Hunter | 40 | Physical | 1 | Shows the location of all nearby giants on the minimap.  Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="track-giants" alt=""> **Track Giants** | Hunter | 40 | Physical | 1 | Shows the location of all nearby giants on the minimap.  Only one form of tracking can be active at a time. |
 | <img class="sic" data-i="track-dragonkin" alt=""> **Track Dragonkin** | Hunter | 50 | Physical | 1 | Shows the location of all nearby dragonkin on the minimap.  Only one form of tracking can be active at a time. |
 | <img class="sic" data-i="sense-undead" alt=""> **Sense Undead** | Paladin | 20 | Holy | 1 | Shows the location of all nearby undead on the minimap until cancelled.   Only one type of tracking can be use |
 | <img class="sic" data-i="sense-demons" alt=""> **Sense Demons** | Warlock | 24 | Shadow | 1 | Shows the location of all nearby demons on the minimap until cancelled.  Only one type of tracking can be used |

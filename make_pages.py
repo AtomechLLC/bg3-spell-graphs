@@ -8,6 +8,7 @@ PAGES = [
     ("bg3_codex.html", "larian-codex.html", "🦑"),
     ("wow_codex.html", "azeroth-codex.html", "🐉"),
     ("cluster_map.html", "constellations.html", "🌌"),
+    ("wow_map.html", "azeroth-constellations.html", "🌠"),
     ("purpose_atlas.html", "purpose-atlas.html", "🎯"),
 ]
 os.makedirs("docs", exist_ok=True)
@@ -69,6 +70,9 @@ footer a{{color:#D4AF5E;text-decoration:none}}
 <a class="card" href="constellations.html"><span class="em">🌌</span><h2>Spell Constellations</h2>
 <p>Interactive cluster map of all 213 BG3 class spells — switch between family, class, and school
 layouts; toggle picker chips to light up overlaps.</p></a>
+<a class="card" href="azeroth-constellations.html"><span class="em">🌠</span><h2>Azeroth Constellations</h2>
+<p>The WoW twin of the cluster map: 423 classic abilities in four layouts — family, class, school,
+and the WoW-remapped purpose taxonomy — with the same overlap pickers.</p></a>
 <a class="card" href="larian-codex.html"><span class="em">🦑</span><h2>The Larian Codex</h2>
 <p>The homogeneity analysis on BG3's own game data: 19 template families, 28 container spells,
 duplicate SKUs, the surface engine, and the upcast clone farm.</p></a>

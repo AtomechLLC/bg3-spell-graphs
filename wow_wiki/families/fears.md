@@ -1,6 +1,6 @@
 # <span class="femoji">😱</span> The Fear Franchise
 
-<span class="tier tier-template">Shared template</span> · 5 abilities · masked-tooltip similarity 0.20–0.83
+<span class="tier tier-template">Shared template</span> · 5 abilities · mechanical similarity 0.42–0.87
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

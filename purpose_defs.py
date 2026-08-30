@@ -19,6 +19,8 @@ PURPOSES = [
     ("stealth",    "Deception & stealth", False, "not being seen, or being seen wrongly: invisibility, illusion, disguise"),
     ("provision",  "Provisioning",        False, "manufacture resources for later: food, gems, stones, scrolls"),
     ("threat",     "Threat control",      False, "edit who enemies attack: taunts, feints, aggro dumps"),
+    ("drain",      "Resource warfare",    False, "attack or convert the resource system itself: mana burns, drains, life taps"),
+    ("companion",  "Companion upkeep",    False, "manage a persistent companion: call, tame, feed, mend, revive"),
     ("roleshift",  "Role shift",          False, "swap your whole kit: forms, stances, exclusive modes"),
     ("utility",    "Utility & world",     False, "everything that touches the world, not the fight"),
 ]
@@ -27,13 +29,14 @@ PEMOJI = {"damage": "💥", "offboost": "⚔️", "defboost": "🛡️", "negati
           "create": "🧞", "remove": "🕳️", "disable": "⛓️", "degrade": "🩸",
           "heal": "❤️‍🩹", "mobility": "🌀", "zone": "🕸️", "info": "👁️",
           "stealth": "🎭", "provision": "🧺", "threat": "😡", "roleshift": "🐻",
-          "utility": "🔧"}
+          "drain": "🧛", "companion": "🐕", "utility": "🔧"}
 PSHORT = {"damage": "DAMAGE", "offboost": "OFF BOOST", "defboost": "DEF BOOST",
           "negation": "NEGATION", "create": "CREATE", "remove": "REMOVE",
           "disable": "DISABLE", "degrade": "DEGRADE", "heal": "HEALING",
           "mobility": "MOBILITY", "zone": "ZONE", "info": "INFO",
           "stealth": "STEALTH", "provision": "PROVISION", "threat": "THREAT",
-          "roleshift": "ROLESHIFT", "utility": "UTILITY"}
+          "roleshift": "ROLESHIFT", "drain": "DRAIN", "companion": "COMPANION",
+          "utility": "UTILITY"}
 
 
 def load_purposes(game):

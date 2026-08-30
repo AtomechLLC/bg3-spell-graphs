@@ -1,11 +1,11 @@
 # <span class="femoji">🐑</span> The Polymorph Barn
 
-<span class="tier tier-clone">Verbatim clone</span> · 2 abilities · masked-tooltip similarity 0.96
+<span class="tier tier-clone">Verbatim clone</span> · 2 abilities · mechanical similarity 0.98
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | <img class="sic" data-i="polymorph" alt=""> **Polymorph** | Mage | 60 | Arcane | 5 | Transforms the enemy into a sheep, forcing it to wander around for up to X.  While wandering, the sheep cannot |
-| **Polymorph: Cow** | Mage | 60 | Arcane | 1 | Transforms the enemy into a cow, forcing it to wander around for up to X.  While wandering, the cow cannot att |
+| <img class="sic" data-i="polymorph-cow" alt=""> **Polymorph: Cow** | Mage | 60 | Arcane | 1 | Transforms the enemy into a cow, forcing it to wander around for up to X.  While wandering, the cow cannot att |
 
 **Shared skeleton.** 'Transforms the enemy into a X, forcing it to wander around for up to Y sec.' The variants are literal reskins of the base spell (0.9+), obtained as rare drops — the reskin as a *collectible*.
 

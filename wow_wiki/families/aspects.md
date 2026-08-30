@@ -1,10 +1,10 @@
 # <span class="femoji">🦅</span> The Aspect Dial
 
-<span class="tier tier-template">Shared template</span> · 6 abilities · masked-tooltip similarity 0.54–0.83
+<span class="tier tier-template">Shared template</span> · 6 abilities · mechanical similarity 0.50–0.82
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Aspect of the Monkey** | Hunter | 4 | Nature | 1 | The hunter takes on the aspects of a monkey, increasing chance to dodge by X%.  Only one Aspect can be active  |
+| <img class="sic" data-i="aspect-of-the-monkey" alt=""> **Aspect of the Monkey** | Hunter | 4 | Nature | 1 | The hunter takes on the aspects of a monkey, increasing chance to dodge by X%.  Only one Aspect can be active  |
 | <img class="sic" data-i="aspect-of-the-cheetah" alt=""> **Aspect of the Cheetah** | Hunter | 20 | Nature | 1 | The hunter takes on the aspects of a cheetah, increasing movement speed by X%.  If the hunter takes damage, X: |
 | <img class="sic" data-i="aspect-of-the-beast" alt=""> **Aspect of the Beast** | Hunter | 30 | Nature | 1 | The hunter takes on the aspects of a beast, becoming untrackable.  Only one Aspect can be active at a time. |
 | <img class="sic" data-i="aspect-of-the-pack" alt=""> **Aspect of the Pack** | Hunter | 40 | Nature | 1 | The hunter and group members within X yards take on the aspects of a pack of cheetahs, increasing movement spe |
@@ -13,11 +13,11 @@
 
 **Shared skeleton.** 'The hunter takes on the aspect of X, gaining Y. Only one Aspect can be active at a time.' Monkey/Hawk measure 0.82.
 
-**What varies.** The animal skin and the stat it carries; Pack/Wild are the group-cast versions — the [[families/group-ladder|Greater ladder]] inside the dial.
+**What varies.** The animal skin and the stat it carries; Pack/Wild are the group-cast versions — the group-cast axis of the [[families/status-boosts|status-boost rack]] inside the dial.
 
-**Design read.** Same modal engine as the [[families/auras|Paladin auras]], reskinned zoologically.
+**Design read.** Same modal engine as the [[families/status-boosts|Paladin auras]], reskinned zoologically.
 
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/hunter|Hunter]] · [[families/auras|The Aura Carousel]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/hunter|Hunter]] · [[families/status-boosts|The Status Boost Rack]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

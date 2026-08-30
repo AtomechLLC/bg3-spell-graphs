@@ -1,6 +1,6 @@
 # <span class="femoji">✝️</span> The Seal Press
 
-<span class="tier tier-template">Shared template</span> · 5 abilities · masked-tooltip similarity 0.47–0.87
+<span class="tier tier-template">Shared template</span> · 5 abilities · mechanical similarity 0.64–0.95
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

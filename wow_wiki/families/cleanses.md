@@ -1,6 +1,6 @@
 # <span class="femoji">🧼</span> The Cleanse Counter
 
-<span class="tier tier-clone">Verbatim clone</span> · 11 abilities · masked-tooltip similarity 0.09–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 11 abilities · mechanical similarity 0.32–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

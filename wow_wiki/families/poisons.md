@@ -1,6 +1,6 @@
 # <span class="femoji">🧪</span> The Numbered Vials
 
-<span class="tier tier-clone">Verbatim clone</span> · 3 abilities · masked-tooltip similarity 1.00–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 3 abilities · mechanical similarity 1.00–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

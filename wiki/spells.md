@@ -27,7 +27,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | Cantrip | **Spare the Dying** | Necromancy | — |  | ❤️‍🩹 Healing & revival | [[classes/cleric|Cleric]] |
 | Cantrip | <img class="sic" data-i="thaumaturgy" alt=""> **Thaumaturgy** | Transmutation | — |  | 🔧 Utility & world | [[classes/cleric|Cleric]] |
 | Cantrip | <img class="sic" data-i="true-strike" alt=""> **True Strike** | Divination | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| Cantrip | <img class="sic" data-i="vicious-mockery" alt=""> **Vicious Mockery** | Enchantment | — |  | ⚔️ Offense boost | [[classes/bard|Bard]] |
+| Cantrip | <img class="sic" data-i="vicious-mockery" alt=""> **Vicious Mockery** | Enchantment | — |  | 💥 Damage | [[classes/bard|Bard]] |
 | 1 | **Alarm** | Abjuration | — |  | 👁️ Information | [[classes/ranger|Ranger]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="animal-friendship" alt=""> **Animal Friendship** | Enchantment | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="bane" alt=""> **Bane** | Enchantment | [[families/bane-bless|⚖️ Bane & Bless]] | <span class="tier tier-clone">Verbatim clone</span> | ⚔️ Offense boost | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
@@ -43,18 +43,18 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 1 | **Detect Magic** | Divination | [[families/detect|👁️ The Detect Series]] | <span class="tier tier-template">Shared template</span> | 👁️ Information | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | **Detect Poison and Disease** | Divination | [[families/detect|👁️ The Detect Series]] | <span class="tier tier-template">Shared template</span> | 👁️ Information | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="disguise-self" alt=""> **Disguise Self** | Illusion | [[families/disguise-seeming|🎭 The Disguise Ladder]] | <span class="tier tier-template">Shared template</span> | 🎭 Deception & stealth | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="divine-favor" alt=""> **Divine Favor** | Evocation | — |  | ⚔️ Offense boost | [[classes/paladin|Paladin]] |
+| 1 | <img class="sic" data-i="divine-favor" alt=""> **Divine Favor** | Evocation | — |  | 💥 Damage | [[classes/paladin|Paladin]] |
 | 1 | <img class="sic" data-i="entangle" alt=""> **Entangle** | Conjuration | — |  | 🕸️ Zone control | [[classes/druid|Druid]] |
 | 1 | <img class="sic" data-i="expeditious-retreat" alt=""> **Expeditious Retreat** | Transmutation | — |  | 🌀 Mobility | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="faerie-fire" alt=""> **Faerie Fire** | Evocation | — |  | 🎭 Deception & stealth | [[classes/druid|Druid]] |
-| 1 | <img class="sic" data-i="false-life" alt=""> **False Life** | Necromancy | — |  | 🔧 Utility & world | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 1 | <img class="sic" data-i="false-life" alt=""> **False Life** | Necromancy | — |  | ❤️‍🩹 Healing & revival | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="feather-fall" alt=""> **Feather Fall** | Transmutation | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="find-familiar" alt=""> **Find Familiar** | Conjuration | — |  | 🧞 Creating entities | [[classes/wizard|Wizard]] |
 | 1 | **Floating Disk** | Conjuration | — |  | 🔧 Utility & world | [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="fog-cloud" alt=""> **Fog Cloud** | Conjuration | — |  | 🔧 Utility & world | [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="goodberry" alt=""> **Goodberry** | Transmutation | — |  | 🧺 Provisioning | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="grease" alt=""> **Grease** | Conjuration | — |  | 🕸️ Zone control | [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="guiding-bolt" alt=""> **Guiding Bolt** | Evocation | — |  | ⚔️ Offense boost | [[classes/cleric|Cleric]] |
+| 1 | <img class="sic" data-i="guiding-bolt" alt=""> **Guiding Bolt** | Evocation | — |  | 💥 Damage | [[classes/cleric|Cleric]] |
 | 1 | <img class="sic" data-i="healing-word" alt=""> **Healing Word** | Evocation | [[families/cure|❤️‍🩹 The Cure Family]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
 | 1 | <img class="sic" data-i="hellish-rebuke" alt=""> **Hellish Rebuke** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | <span class="tier tier-template">Shared template</span> | 💥 Damage | [[classes/warlock|Warlock]] |
 | 1 | <img class="sic" data-i="heroism" alt=""> **Heroism** | Enchantment | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
@@ -77,7 +77,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 1 | <img class="sic" data-i="speak-with-animals" alt=""> **Speak with Animals** | Divination | [[families/speak-with|🗣️ The Speak-With Series]] | <span class="tier tier-engine">Shared engine</span> | 👁️ Information | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="thunderwave" alt=""> **Thunderwave** | Evocation | — |  | 💥 Damage | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | **Unseen Servant** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | 🧞 Creating entities | [[classes/bard|Bard]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 2 | <img class="sic" data-i="acid-arrow" alt=""> **Acid Arrow** | Evocation | — |  | 🛡️ Defense boost | [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="acid-arrow" alt=""> **Acid Arrow** | Evocation | — |  | 💥 Damage | [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="aid" alt=""> **Aid** | Abjuration | — |  | 🛡️ Defense boost | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]] |
 | 2 | **Alter Self** | Transmutation | — |  | 🐻 Role shift | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | **Animal Messenger** | Enchantment | — |  | 🛡️ Defense boost | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
@@ -87,7 +87,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 2 | <img class="sic" data-i="barkskin" alt=""> **Barkskin** | Transmutation | — |  | 🛡️ Defense boost | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="blindness-deafness" alt=""> **Blindness/Deafness** | Necromancy | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="blur" alt=""> **Blur** | Illusion | — |  | 🩸 Degradation | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 2 | <img class="sic" data-i="branding-smite" alt=""> **Branding Smite** | Evocation | — |  | 🎭 Deception & stealth | [[classes/paladin|Paladin]] |
+| 2 | <img class="sic" data-i="branding-smite" alt=""> **Branding Smite** | Evocation | — |  | 💥 Damage | [[classes/paladin|Paladin]] |
 | 2 | <img class="sic" data-i="calm-emotions" alt=""> **Calm Emotions** | Enchantment | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
 | 2 | **Continual Flame** | Evocation | — |  | 🔧 Utility & world | [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="darkness" alt=""> **Darkness** | Evocation | [[families/darkness-daylight|🌗 Darkness & Daylight]] | <span class="tier tier-engine">Shared engine</span> | 🕸️ Zone control | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
@@ -102,7 +102,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | 🧞 Creating entities | [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 2 | **Gentle Repose** | Necromancy | — |  | 🛡️ Defense boost | [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="gust-of-wind" alt=""> **Gust of Wind** | Evocation | — |  | 🛡️ Defense boost | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 2 | <img class="sic" data-i="heat-metal" alt=""> **Heat Metal** | Transmutation | — |  | 🧺 Provisioning | [[classes/bard|Bard]], [[classes/druid|Druid]] |
+| 2 | <img class="sic" data-i="heat-metal" alt=""> **Heat Metal** | Transmutation | — |  | 💥 Damage | [[classes/bard|Bard]], [[classes/druid|Druid]] |
 | 2 | <img class="sic" data-i="hold-person" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | <span class="tier tier-clone">Verbatim clone</span> | ⛓️ Disables | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="invisibility" alt=""> **Invisibility** | Illusion | [[families/invisibility|🫥 The Invisibility Ladder]] | <span class="tier tier-template">Shared template</span> | 🎭 Deception & stealth | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="knock" alt=""> **Knock** | Transmutation | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -169,41 +169,41 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 3 | <img class="sic" data-i="stinking-cloud" alt=""> **Stinking Cloud** | Conjuration | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 3 | **Tiny Hut** | Evocation | — |  | 🛡️ Defense boost | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 3 | **Tongues** | Divination | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 3 | <img class="sic" data-i="vampiric-touch" alt=""> **Vampiric Touch** | Necromancy | — |  | ❤️‍🩹 Healing & revival | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="vampiric-touch" alt=""> **Vampiric Touch** | Necromancy | — |  | 💥 Damage | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 3 | **Water Breathing** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | <span class="tier tier-engine">Shared engine</span> | 🌀 Mobility | [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 3 | **Water Walk** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | <span class="tier tier-engine">Shared engine</span> | 🌀 Mobility | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
-| 3 | **Wind Wall** | Evocation | — |  | 🕸️ Zone control | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
+| 3 | **Wind Wall** | Evocation | — |  | 💥 Damage | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 4 | <img class="sic" data-i="arcane-eye" alt=""> **Arcane Eye** | Divination | — |  | 🕸️ Zone control | [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="banishment" alt=""> **Banishment** | Abjuration | — |  | 🕳️ Removing entities | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="black-tentacles" alt=""> **Black Tentacles** | Conjuration | — |  | ⛓️ Disables | [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="black-tentacles" alt=""> **Black Tentacles** | Conjuration | — |  | 💥 Damage | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="blight" alt=""> **Blight** | Necromancy | — |  | 💥 Damage | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 4 | **Compulsion** | Enchantment | — |  | ⛓️ Disables | [[classes/bard|Bard]] |
 | 4 | <img class="sic" data-i="confusion" alt=""> **Confusion** | Enchantment | — |  | 🔧 Utility & world | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="conjure-minor-elementals" alt=""> **Conjure Minor Elementals** | Conjuration | [[families/conjure-table|🐾 Conjure by Menu]] | <span class="tier tier-clone">Verbatim clone</span> | 🧞 Creating entities | [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="conjure-woodland-beings" alt=""> **Conjure Woodland Beings** | Conjuration | [[families/conjure-table|🐾 Conjure by Menu]] | <span class="tier tier-clone">Verbatim clone</span> | 🧞 Creating entities | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
-| 4 | **Control Water** | Transmutation | — |  | 🛡️ Defense boost | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
+| 4 | **Control Water** | Transmutation | — |  | 💥 Damage | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="death-ward" alt=""> **Death Ward** | Abjuration | — |  | 🛡️ Defense boost | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]] |
-| 4 | <img class="sic" data-i="dimension-door" alt=""> **Dimension Door** | Conjuration | — |  | 🌀 Mobility | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="dimension-door" alt=""> **Dimension Door** | Conjuration | — |  | 💥 Damage | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 4 | **Divination** | Divination | — |  | 👁️ Information | [[classes/druid|Druid]] |
 | 4 | <img class="sic" data-i="dominate-beast" alt=""> **Dominate Beast** | Enchantment | [[families/dominate|🧠 The Dominate Chain]] | <span class="tier tier-clone">Verbatim clone</span> | ⛓️ Disables | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 4 | **Fabricate** | Transmutation | — |  | 🐻 Role shift | [[classes/wizard|Wizard]] |
 | 4 | **Faithful Hound** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | 🧞 Creating entities | [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="fire-shield" alt=""> **Fire Shield** | Evocation | — |  | 🛡️ Defense boost | [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="fire-shield" alt=""> **Fire Shield** | Evocation | — |  | 💥 Damage | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="freedom-of-movement" alt=""> **Freedom of Movement** | Abjuration | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 4 | <img class="sic" data-i="giant-insect" alt=""> **Giant Insect** | Transmutation | — |  | 🔧 Utility & world | [[classes/druid|Druid]] |
 | 4 | <img class="sic" data-i="greater-invisibility" alt=""> **Greater Invisibility** | Illusion | [[families/invisibility|🫥 The Invisibility Ladder]] | <span class="tier tier-template">Shared template</span> | 🎭 Deception & stealth | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="guardian-of-faith" alt=""> **Guardian of Faith** | Conjuration | — |  | 🎭 Deception & stealth | [[classes/cleric|Cleric]] |
+| 4 | <img class="sic" data-i="guardian-of-faith" alt=""> **Guardian of Faith** | Conjuration | — |  | 💥 Damage | [[classes/cleric|Cleric]] |
 | 4 | **Hallucinatory Terrain** | Illusion | — |  | 🧺 Provisioning | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="ice-storm" alt=""> **Ice Storm** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | <span class="tier tier-template">Shared template</span> | 💥 Damage | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 4 | **Locate Creature** | Divination | [[families/locate|🧭 The Locate Series]] | <span class="tier tier-template">Shared template</span> | 👁️ Information | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="phantasmal-killer" alt=""> **Phantasmal Killer** | Illusion | — |  | ⛓️ Disables | [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="phantasmal-killer" alt=""> **Phantasmal Killer** | Illusion | — |  | 💥 Damage | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="polymorph" alt=""> **Polymorph** | Transmutation | [[families/polymorph|🐸 The Polymorph Ladder]] | <span class="tier tier-template">Shared template</span> | ⛓️ Disables | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 4 | **Private Sanctum** | Abjuration | — |  | 🕸️ Zone control | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="resilient-sphere" alt=""> **Resilient Sphere** | Evocation | — |  | 🕸️ Zone control | [[classes/wizard|Wizard]] |
 | 4 | **Secret Chest** | Conjuration | — |  | 🎭 Deception & stealth | [[classes/wizard|Wizard]] |
 | 4 | **Stone Shape** | Transmutation | — |  | 🔧 Utility & world | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="stoneskin" alt=""> **Stoneskin** | Abjuration | — |  | 🛡️ Defense boost | [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="wall-of-fire" alt=""> **Wall of Fire** | Evocation | — |  | 🕸️ Zone control | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="wall-of-fire" alt=""> **Wall of Fire** | Evocation | — |  | 💥 Damage | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | **Animate Objects** | Transmutation | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | **Antilife Shell** | Abjuration | — |  | 🕸️ Zone control | [[classes/druid|Druid]] |
 | 5 | **Arcane Hand** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | 🧞 Creating entities | [[classes/wizard|Wizard]] |
@@ -218,7 +218,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 5 | **Creation** | Illusion | — |  | 🔧 Utility & world | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="dispel-evil-and-good" alt=""> **Dispel Evil and Good** | Abjuration | — |  | 🧯 Negation | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]] |
 | 5 | <img class="sic" data-i="dominate-person" alt=""> **Dominate Person** | Enchantment | [[families/dominate|🧠 The Dominate Chain]] | <span class="tier tier-clone">Verbatim clone</span> | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 5 | **Dream** | Illusion | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 5 | **Dream** | Illusion | — |  | 💥 Damage | [[classes/bard|Bard]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="flame-strike" alt=""> **Flame Strike** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | <span class="tier tier-template">Shared template</span> | 💥 Damage | [[classes/cleric|Cleric]] |
 | 5 | **Geas** | Enchantment | — |  | 🧯 Negation | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="greater-restoration" alt=""> **Greater Restoration** | Abjuration | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
@@ -241,13 +241,13 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 5 | **Tree Stride** | Conjuration | — |  | 🔧 Utility & world | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 5 | **Wall of Force** | Evocation | — |  | 🧯 Negation | [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="wall-of-stone" alt=""> **Wall of Stone** | Evocation | — |  | 🧯 Negation | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 6 | <img class="sic" data-i="blade-barrier" alt=""> **Blade Barrier** | Evocation | — |  | 🕸️ Zone control | [[classes/cleric|Cleric]] |
-| 6 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Evocation | — |  | 🌀 Mobility | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 6 | <img class="sic" data-i="blade-barrier" alt=""> **Blade Barrier** | Evocation | — |  | 💥 Damage | [[classes/cleric|Cleric]] |
+| 6 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Evocation | — |  | 💥 Damage | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 6 | <img class="sic" data-i="circle-of-death" alt=""> **Circle of Death** | Necromancy | [[families/blast|💥 The Elemental Blast Template]] | <span class="tier tier-template">Shared template</span> | 💥 Damage | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 6 | **Conjure Fey** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities | [[classes/druid|Druid]], [[classes/warlock|Warlock]] |
 | 6 | **Contingency** | Evocation | — |  | 🩸 Degradation | [[classes/wizard|Wizard]] |
 | 6 | <img class="sic" data-i="create-undead" alt=""> **Create Undead** | Necromancy | [[families/undead|💀 The Undead Workshop]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities | [[classes/cleric|Cleric]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 6 | <img class="sic" data-i="disintegrate" alt=""> **Disintegrate** | Transmutation | — |  | ❤️‍🩹 Healing & revival | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 6 | <img class="sic" data-i="disintegrate" alt=""> **Disintegrate** | Transmutation | — |  | 💥 Damage | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 6 | <img class="sic" data-i="eyebite" alt=""> **Eyebite** | Necromancy | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 6 | **Find the Path** | Divination | — |  | 🧞 Creating entities | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
 | 6 | <img class="sic" data-i="flesh-to-stone" alt=""> **Flesh to Stone** | Transmutation | — |  | ⛓️ Disables | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
@@ -265,11 +265,11 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 6 | **Move Earth** | Transmutation | — |  | 🩸 Degradation | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 6 | <img class="sic" data-i="planar-ally" alt=""> **Planar Ally** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities | [[classes/cleric|Cleric]] |
 | 6 | **Programmed Illusion** | Illusion | — |  | 🎭 Deception & stealth | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
-| 6 | <img class="sic" data-i="sunbeam" alt=""> **Sunbeam** | Evocation | — |  | ⛓️ Disables | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 6 | <img class="sic" data-i="sunbeam" alt=""> **Sunbeam** | Evocation | — |  | 💥 Damage | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 6 | **Transport via Plants** | Conjuration | — |  | 🐻 Role shift | [[classes/druid|Druid]] |
 | 6 | <img class="sic" data-i="true-seeing" alt=""> **True Seeing** | Divination | — |  | 👁️ Information | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 6 | <img class="sic" data-i="wall-of-ice" alt=""> **Wall of Ice** | Evocation | — |  | 🕸️ Zone control | [[classes/wizard|Wizard]] |
-| 6 | <img class="sic" data-i="wall-of-thorns" alt=""> **Wall of Thorns** | Conjuration | — |  | 🕸️ Zone control | [[classes/druid|Druid]] |
+| 6 | <img class="sic" data-i="wall-of-ice" alt=""> **Wall of Ice** | Evocation | — |  | 💥 Damage | [[classes/wizard|Wizard]] |
+| 6 | <img class="sic" data-i="wall-of-thorns" alt=""> **Wall of Thorns** | Conjuration | — |  | 💥 Damage | [[classes/druid|Druid]] |
 | 6 | <img class="sic" data-i="wind-walk" alt=""> **Wind Walk** | Transmutation | — |  | ⛓️ Disables | [[classes/druid|Druid]] |
 | 6 | **Word of Recall** | Conjuration | — |  | 🌀 Mobility | [[classes/cleric|Cleric]] |
 | 7 | **Arcane Sword** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | 🧞 Creating entities | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
@@ -283,7 +283,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 7 | **Magnificent Mansion** | Conjuration | — |  | 🌀 Mobility | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 7 | **Mirage Arcane** | Illusion | — |  | 🎭 Deception & stealth | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 7 | **Plane Shift** | Conjuration | — |  | 🕳️ Removing entities | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 7 | **Prismatic Spray** | Evocation | — |  | 🕳️ Removing entities | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 7 | **Prismatic Spray** | Evocation | — |  | 💥 Damage | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 7 | **Project Image** | Illusion | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 7 | **Regenerate** | Transmutation | — |  | ❤️‍🩹 Healing & revival | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
 | 7 | **Resurrection** | Necromancy | — |  | ❤️‍🩹 Healing & revival | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
@@ -300,14 +300,14 @@ Every one of the **319 SRD spells**, flat, with its family tag — **80 spells c
 | 8 | **Demiplane** | Conjuration | — |  | 🔧 Utility & world | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 8 | **Dominate Monster** | Enchantment | [[families/dominate|🧠 The Dominate Chain]] | <span class="tier tier-clone">Verbatim clone</span> | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 8 | **Earthquake** | Evocation | — |  | ⛓️ Disables | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
-| 8 | **Feeblemind** | Enchantment | — |  | 👁️ Information | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 8 | **Feeblemind** | Enchantment | — |  | 💥 Damage | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 8 | **Glibness** | Transmutation | — |  | 🎭 Deception & stealth | [[classes/bard|Bard]], [[classes/warlock|Warlock]] |
 | 8 | **Holy Aura** | Abjuration | — |  | ⛓️ Disables | [[classes/cleric|Cleric]] |
 | 8 | **Incendiary Cloud** | Conjuration | — |  | 💥 Damage | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 8 | **Maze** | Conjuration | — |  | 🕳️ Removing entities | [[classes/wizard|Wizard]] |
 | 8 | **Mind Blank** | Abjuration | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 8 | **Power Word Stun** | Enchantment | — |  | ⛓️ Disables | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 8 | **Sunburst** | Evocation | — |  | 🧯 Negation | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
+| 8 | **Sunburst** | Evocation | — |  | 💥 Damage | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 9 | **Astral Projection** | Necromancy | — |  | 🧯 Negation | [[classes/cleric|Cleric]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 9 | **Foresight** | Divination | — |  | 🩸 Degradation | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 9 | **Gate** | Conjuration | — |  | 🌀 Mobility | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |

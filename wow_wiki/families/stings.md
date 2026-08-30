@@ -1,6 +1,6 @@
 # <span class="femoji">🦂</span> The Sting Clip
 
-<span class="tier tier-clone">Verbatim clone</span> · 3 abilities · masked-tooltip similarity 0.81–0.89
+<span class="tier tier-clone">Verbatim clone</span> · 3 abilities · mechanical similarity 0.61–0.86
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

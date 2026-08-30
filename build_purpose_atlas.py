@@ -16,11 +16,7 @@ for r in rows:
     mat[r["purpose"]][r["game"]].append(r["ability"])
     tot[r["game"]] += 1
 
-PEMOJI = {"damage": "💥", "offboost": "⚔️", "defboost": "🛡️", "negation": "🧯",
-          "create": "🧞", "remove": "🕳️", "disable": "⛓️", "degrade": "🩸",
-          "heal": "❤️‍🩹", "mobility": "🌀", "zone": "🕸️", "info": "👁️",
-          "stealth": "🎭", "provision": "🧺", "threat": "😡", "roleshift": "🐻",
-          "utility": "🔧"}
+from purpose_defs import PEMOJI
 
 maxpct = max(100 * len(mat[p][g]) / tot[g] for p, *_ in PURPOSES for g in GAMES)
 
@@ -138,6 +134,16 @@ seven requested, ten more that the data itself argues for.</p>
 
 <h2>Ten more the data argues for</h2>
 {bar_rows(False)}
+
+<h2>The WoW remap</h2>
+<p>Applying the D&amp;D-derived map to WoW Classic and letting the ability data push back produced
+two <strong>new major purposes</strong> and two <strong>culls</strong>. New: 🧛 <em>Resource
+warfare</em> — mana burns, drains, and life taps that attack the resource system itself, a WoW
+pillar with no real tabletop analog — and 🐕 <em>Companion upkeep</em>, the pet-lifecycle verbs
+(call, tame, feed, mend, revive) that manage a summon rather than create one. Culled from the
+WoW view: 🕸️ zone control and 🕳️ removing entities, each nearly empty there — Banish and Turn
+Undead are re-read as what they play as in an MMO: disables. Classification for WoW leans on
+<code>SpellEffect</code> mechanics (effect types and aura codes) rather than tooltip language.</p>
 
 <h2>What the divergences say</h2>
 <ul>

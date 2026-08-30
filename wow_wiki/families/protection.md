@@ -1,6 +1,6 @@
 # <span class="femoji">🧿</span> The Protection Rack
 
-<span class="tier tier-template">Shared template</span> · 10 abilities · masked-tooltip similarity 0.00–1.00
+<span class="tier tier-template">Shared template</span> · 10 abilities · mechanical similarity 0.19–0.95
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

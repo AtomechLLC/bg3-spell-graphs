@@ -36,17 +36,56 @@ def mask(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
-def main():
-    recs = json.load(open("wow_spells.json", encoding="utf-8"))
+# ------------------------------------------------- mechanical effect signature
+def load_effect_sigs():
+    """SpellID -> effect-signature tokens from SpellEffect.db2 (mechanics, not prose)."""
+    import csv as _csv
+    from collections import defaultdict
+    rows = defaultdict(list)
+    with open("wow_SpellEffect.csv", encoding="utf-8-sig", newline="") as f:
+        for row in _csv.DictReader(f):
+            try:
+                sid = int(row["SpellID"])
+            except ValueError:
+                continue
+            rows[sid].append((int(row["EffectIndex"] or 0),
+                              int(row["Effect"] or 0), int(row["EffectAura"] or 0),
+                              int(row["EffectMechanic"] or 0),
+                              1 if float(row["EffectBasePoints"] or 0) >= 0 else -1,
+                              int(row["ImplicitTarget_0"] or 0)))
+    sigs = {}
+    for sid, es in rows.items():
+        toks = []
+        for _, eff, aura, mech, sign, tgt in sorted(es):
+            toks += [f"E{eff}", f"A{aura}", f"M{mech}", f"S{sign}", f"T{tgt}"]
+        sigs[sid] = toks
+    return sigs
+
+
+def prep(recs):
+    sigs = load_effect_sigs()
     for r in recs:
         r["_m"] = mask(r["desc"]).split()
+        r["_sig"] = (sigs.get(r["id"]) or sigs.get(r["all_ids"][0]) or []) + \
+                    ["SCH" + (r["school"] or "")]
+    return recs
+
+
+def pair_score(a, b):
+    """0.6 x effect-signature similarity + 0.4 x masked-tooltip similarity."""
+    sr = SequenceMatcher(None, a["_sig"], b["_sig"], autojunk=False).ratio()
+    dr = SequenceMatcher(None, a["_m"], b["_m"], autojunk=False).ratio() \
+        if a["_m"] and b["_m"] else 0.0
+    return 0.6 * sr + 0.4 * dr, sr, dr
+
+
+def main():
+    recs = json.load(open("wow_spells.json", encoding="utf-8"))
+    prep(recs)
 
     pairs = []
     for a, b in combinations(recs, 2):
-        la, lb = len(a["_m"]), len(b["_m"])
-        if min(la, lb) == 0 or min(la, lb) / max(la, lb) < 0.5:
-            continue
-        s = SequenceMatcher(None, a["_m"], b["_m"], autojunk=False).ratio()
+        s, sr, dr = pair_score(a, b)
         if s >= 0.60:
             pairs.append((s, a, b))
     pairs.sort(reverse=True, key=lambda p: p[0])

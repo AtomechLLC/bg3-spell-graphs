@@ -1,10 +1,10 @@
 # <span class="femoji">🏹</span> The Bolt Engine
 
-<span class="tier tier-engine">Shared engine</span> · 10 abilities · masked-tooltip similarity 0.08–1.00
+<span class="tier tier-engine">Shared engine</span> · 10 abilities · mechanical similarity 0.33–0.92
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| **Wrath** | Druid | 54 | Nature | 8 | Causes X Nature damage to the target. |
+| <img class="sic" data-i="wrath" alt=""> **Wrath** | Druid | 54 | Nature | 8 | Causes X Nature damage to the target. |
 | <img class="sic" data-i="starfire" alt=""> **Starfire** | Druid | 60 | Arcane | 7 | Causes X Arcane damage to the target. |
 | <img class="sic" data-i="fireball" alt=""> **Fireball** | Mage | 60 | Fire | 12 | Hurls a fiery ball that causes X Fire damage and an additional X Fire damage over X. |
 | <img class="sic" data-i="frostbolt" alt=""> **Frostbolt** | Mage | 60 | Frost | 11 | Launches a bolt of frost at the enemy, causing X to X  Frost damage and slowing movement speed by X% for X. |

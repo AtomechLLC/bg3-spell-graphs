@@ -1,6 +1,6 @@
 # <span class="femoji">🩸</span> The Affliction Engine
 
-<span class="tier tier-engine">Shared engine</span> · 8 abilities · masked-tooltip similarity 0.08–1.00
+<span class="tier tier-engine">Shared engine</span> · 8 abilities · mechanical similarity 0.36–0.84
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -10,7 +10,7 @@
 | <img class="sic" data-i="garrote" alt=""> **Garrote** | Rogue | 54 | Physical | 6 | Garrote the enemy, causing X damage over X, increased by your Attack Power.  Must be stealthed and behind the  |
 | <img class="sic" data-i="rupture" alt=""> **Rupture** | Rogue | 60 | Physical | 6 | Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:
   |
-| **Corruption** | Warlock | 60 | Shadow | 7 | Corrupts the target, causing X Shadow damage over X. |
+| <img class="sic" data-i="corruption" alt=""> **Corruption** | Warlock | 60 | Shadow | 7 | Corrupts the target, causing X Shadow damage over X. |
 | <img class="sic" data-i="immolate" alt=""> **Immolate** | Warlock | 60 | Fire | 8 | Burns the enemy for X Fire damage and then an additional X Fire damage over X. |
 | <img class="sic" data-i="rend" alt=""> **Rend** | Warrior | 60 | Physical | 7 | Wounds the target causing them to bleed for X damage over X. |
 

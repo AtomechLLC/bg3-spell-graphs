@@ -1,6 +1,6 @@
 # <span class="femoji">💎</span> The Conjured Commissary
 
-<span class="tier tier-clone">Verbatim clone</span> · 23 abilities · masked-tooltip similarity 0.33–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 18 abilities · mechanical similarity 0.56–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -23,36 +23,31 @@ Conjured ite |
 | <img class="sic" data-i="create-healthstone-minor" alt=""> **Create Healthstone (Minor)** | Warlock | 10 | Shadow | 1 | Creates a Minor Healthstone that can be used to instantly restore X health.
 
 Conjured items disappear if log |
-| <img class="sic" data-i="create-soulstone-minor" alt=""> **Create Soulstone (Minor)** | Warlock | 18 | Shadow | 1 | Creates a Minor Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while th |
 | <img class="sic" data-i="create-healthstone-lesser" alt=""> **Create Healthstone (Lesser)** | Warlock | 22 | Shadow | 1 | Creates a Lesser Healthstone that can be used to instantly restore X health.
 
 Conjured items disappear if lo |
 | <img class="sic" data-i="create-firestone-lesser" alt=""> **Create Firestone (Lesser)** | Warlock | 28 | Fire | 1 | Creates a Lesser Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapo |
-| <img class="sic" data-i="create-soulstone-lesser" alt=""> **Create Soulstone (Lesser)** | Warlock | 30 | Shadow | 1 | Creates a Lesser Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while t |
 | <img class="sic" data-i="create-healthstone" alt=""> **Create Healthstone** | Warlock | 34 | Shadow | 1 | Creates a Healthstone that can be used to instantly restore X health.
 
 Conjured items disappear if logged ou |
 | <img class="sic" data-i="create-firestone" alt=""> **Create Firestone** | Warlock | 36 | Fire | 1 | Creates a Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapon with  |
 | <img class="sic" data-i="create-spellstone" alt=""> **Create Spellstone** | Warlock | 36 | Shadow | 1 | Creates a Spellstone for the caster.  When equipped and used, the Spellstone removes all magic effects from th |
-| <img class="sic" data-i="create-soulstone" alt=""> **Create Soulstone** | Warlock | 40 | Shadow | 1 | Creates a Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their so |
 | <img class="sic" data-i="create-firestone-greater" alt=""> **Create Firestone (Greater)** | Warlock | 46 | Fire | 1 | Creates a Greater Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weap |
 | <img class="sic" data-i="create-healthstone-greater" alt=""> **Create Healthstone (Greater)** | Warlock | 46 | Shadow | 1 | Creates a Greater Healthstone that can be used to instantly restore X health.
 
 Conjured items disappear if l |
 | <img class="sic" data-i="create-spellstone-greater" alt=""> **Create Spellstone (Greater)** | Warlock | 48 | Shadow | 1 | Creates a Greater Spellstone for the caster.  When equipped and used, the Greater Spellstone removes all magic |
-| <img class="sic" data-i="create-soulstone-greater" alt=""> **Create Soulstone (Greater)** | Warlock | 50 | Shadow | 1 | Creates a Greater Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while  |
 | <img class="sic" data-i="create-firestone-major" alt=""> **Create Firestone (Major)** | Warlock | 56 | Fire | 1 | Creates a Major Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapon |
 | <img class="sic" data-i="create-healthstone-major" alt=""> **Create Healthstone (Major)** | Warlock | 58 | Shadow | 1 | Creates a Major Healthstone that can be used to instantly restore X health.
 
 Conjured items disappear if log |
-| <img class="sic" data-i="create-soulstone-major" alt=""> **Create Soulstone (Major)** | Warlock | 60 | Shadow | 1 | Creates a Major Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while th |
 | <img class="sic" data-i="create-spellstone-major" alt=""> **Create Spellstone (Major)** | Warlock | 60 | Shadow | 1 | Creates a Major Spellstone for the caster.  When equipped and used, the Major Spellstone removes all magic eff |
 
 **Shared skeleton.** 'Creates/Conjures an X that can be used to Y.' The Mage's mana gems and the Warlock's Healthstones measure ≥ 0.85 against each other — the same vending-machine engine across two classes, with the tier ladder written into the item name instead of a rank number.
 
 **What varies.** The item, its potency tier, and which class's flavor it wears (gems vs. stones).
 
-**Design read.** Classic's most honest reskin: the parenthetical '(Greater)' is a rank label promoted into the spell name — 23 spellbook lines from one template.
+**Design read.** Classic's most honest reskin: the parenthetical '(Greater)' is a rank label promoted into the spell name — a shelf of spellbook lines from one template. (The Soulstones share this vending chassis but their *purpose* is revival, so they file under [[families/rez|the Resurrection Union]].)
 
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 

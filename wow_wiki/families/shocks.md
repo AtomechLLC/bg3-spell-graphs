@@ -1,6 +1,6 @@
 # <span class="femoji">⚡</span> The Shock Battery
 
-<span class="tier tier-clone">Verbatim clone</span> · 3 abilities · masked-tooltip similarity 0.34–0.58
+<span class="tier tier-clone">Verbatim clone</span> · 3 abilities · mechanical similarity 0.42–0.46
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

@@ -7,14 +7,14 @@ Shared ability names: **0%** with [[classes/warlock|Warlock]], **0%** with [[cla
 | Lv | Ability | School | Ranks | Family |
 |---|---|---|---|---|
 | 1 | <img class="sic" data-i="battle-stance" alt=""> **Battle Stance** | Physical | 1 | — |
-| 10 | **Bloodrage** | Physical | 1 | — |
+| 10 | <img class="sic" data-i="bloodrage" alt=""> **Bloodrage** | Physical | 1 | — |
 | 10 | <img class="sic" data-i="defensive-stance" alt=""> **Defensive Stance** | Physical | 1 | — |
 | 10 | <img class="sic" data-i="taunt" alt=""> **Taunt** | Physical | 1 | [[families/cat-is-rogue|🐱 The Druid Costume Shop]] |
 | 16 | <img class="sic" data-i="shield-block" alt=""> **Shield Block** | Physical | 1 | — |
 | 18 | <img class="sic" data-i="disarm" alt=""> **Disarm** | Physical | 1 | — |
 | 20 | <img class="sic" data-i="retaliation" alt=""> **Retaliation** | Physical | 1 | — |
 | 22 | <img class="sic" data-i="intimidating-shout" alt=""> **Intimidating Shout** | Physical | 1 | [[families/fears|😱 The Fear Franchise]] |
-| 26 | **Challenging Shout** | Physical | 1 | [[families/cat-is-rogue|🐱 The Druid Costume Shop]] |
+| 26 | <img class="sic" data-i="challenging-shout" alt=""> **Challenging Shout** | Physical | 1 | [[families/cat-is-rogue|🐱 The Druid Costume Shop]] |
 | 28 | <img class="sic" data-i="shield-wall" alt=""> **Shield Wall** | Physical | 1 | — |
 | 30 | <img class="sic" data-i="berserker-stance" alt=""> **Berserker Stance** | Physical | 1 | — |
 | 32 | <img class="sic" data-i="berserker-rage" alt=""> **Berserker Rage** | Physical | 1 | — |

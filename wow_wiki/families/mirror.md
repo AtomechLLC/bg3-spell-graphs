@@ -1,6 +1,6 @@
 # <span class="femoji">🪞</span> Amplify & Dampen
 
-<span class="tier tier-clone">Verbatim clone</span> · 2 abilities · masked-tooltip similarity 0.91
+<span class="tier tier-clone">Verbatim clone</span> · 2 abilities · mechanical similarity 0.86
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

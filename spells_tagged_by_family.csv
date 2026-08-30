@@ -22,7 +22,7 @@ Shocking Grasp,0,Evocation,The Damage Cantrip Engine,🪄,Shared engine,Damage,S
 Spare the Dying,0,Necromancy,,,,Healing & revival,Cleric,
 Thaumaturgy,0,Transmutation,,,,Utility & world,Cleric,yes
 True Strike,0,Divination,,,,Utility & world,Bard/Sorcerer/Warlock/Wizard,yes
-Vicious Mockery,0,Enchantment,,,,Offense boost,Bard,yes
+Vicious Mockery,0,Enchantment,,,,Damage,Bard,yes
 Alarm,1,Abjuration,,,,Information,Ranger/Wizard,
 Animal Friendship,1,Enchantment,,,,Disables,Bard/Druid/Ranger,yes
 Bane,1,Enchantment,Bane & Bless,⚖️,Verbatim clone,Offense boost,Bard/Cleric,yes
@@ -38,18 +38,18 @@ Detect Evil and Good,1,Divination,The Detect Series,👁️,Shared template,Info
 Detect Magic,1,Divination,The Detect Series,👁️,Shared template,Information,Bard/Cleric/Druid/Paladin/Ranger/Sorcerer/Wizard,
 Detect Poison and Disease,1,Divination,The Detect Series,👁️,Shared template,Information,Cleric/Druid/Paladin/Ranger,
 Disguise Self,1,Illusion,The Disguise Ladder,🎭,Shared template,Deception & stealth,Bard/Sorcerer/Wizard,yes
-Divine Favor,1,Evocation,,,,Offense boost,Paladin,yes
+Divine Favor,1,Evocation,,,,Damage,Paladin,yes
 Entangle,1,Conjuration,,,,Zone control,Druid,yes
 Expeditious Retreat,1,Transmutation,,,,Mobility,Sorcerer/Warlock/Wizard,yes
 Faerie Fire,1,Evocation,,,,Deception & stealth,Druid,yes
-False Life,1,Necromancy,,,,Utility & world,Sorcerer/Wizard,yes
+False Life,1,Necromancy,,,,Healing & revival,Sorcerer/Wizard,yes
 Feather Fall,1,Transmutation,,,,Disables,Bard/Sorcerer/Wizard,yes
 Find Familiar,1,Conjuration,,,,Creating entities,Wizard,yes
 Floating Disk,1,Conjuration,,,,Utility & world,Wizard,
 Fog Cloud,1,Conjuration,,,,Utility & world,Druid/Ranger/Sorcerer/Wizard,yes
 Goodberry,1,Transmutation,,,,Provisioning,Druid/Ranger,yes
 Grease,1,Conjuration,,,,Zone control,Wizard,yes
-Guiding Bolt,1,Evocation,,,,Offense boost,Cleric,yes
+Guiding Bolt,1,Evocation,,,,Damage,Cleric,yes
 Healing Word,1,Evocation,The Cure Family,❤️‍🩹,Verbatim clone,Healing & revival,Bard/Cleric/Druid,yes
 Hellish Rebuke,1,Evocation,The Elemental Blast Template,💥,Shared template,Damage,Warlock,yes
 Heroism,1,Enchantment,,,,Utility & world,Bard/Paladin,yes
@@ -72,7 +72,7 @@ Sleep,1,Enchantment,The Hit-Point Pool Engine,🧮,Shared template,Disables,Bard
 Speak with Animals,1,Divination,The Speak-With Series,🗣️,Shared engine,Information,Bard/Druid/Ranger,yes
 Thunderwave,1,Evocation,,,,Damage,Bard/Druid/Sorcerer/Wizard,yes
 Unseen Servant,1,Conjuration,The Phantom Armory,⚔️,Shared engine,Creating entities,Bard/Warlock/Wizard,
-Acid Arrow,2,Evocation,,,,Defense boost,Wizard,yes
+Acid Arrow,2,Evocation,,,,Damage,Wizard,yes
 Aid,2,Abjuration,,,,Defense boost,Cleric/Paladin,yes
 Alter Self,2,Transmutation,,,,Role shift,Sorcerer/Wizard,
 Animal Messenger,2,Enchantment,,,,Defense boost,Bard/Druid/Ranger,
@@ -82,7 +82,7 @@ Augury,2,Divination,,,,Information,Cleric,
 Barkskin,2,Transmutation,,,,Defense boost,Druid/Ranger,yes
 Blindness/Deafness,2,Necromancy,,,,Disables,Bard/Cleric/Sorcerer/Wizard,yes
 Blur,2,Illusion,,,,Degradation,Sorcerer/Wizard,yes
-Branding Smite,2,Evocation,,,,Deception & stealth,Paladin,yes
+Branding Smite,2,Evocation,,,,Damage,Paladin,yes
 Calm Emotions,2,Enchantment,,,,Disables,Bard/Cleric,yes
 Continual Flame,2,Evocation,,,,Utility & world,Cleric/Wizard,
 Darkness,2,Evocation,Darkness & Daylight,🌗,Shared engine,Zone control,Sorcerer/Warlock/Wizard,yes
@@ -97,7 +97,7 @@ Flame Blade,2,Evocation,,,,Damage,Druid,yes
 Flaming Sphere,2,Conjuration,The Phantom Armory,⚔️,Shared engine,Creating entities,Druid/Wizard,yes
 Gentle Repose,2,Necromancy,,,,Defense boost,Cleric/Wizard,
 Gust of Wind,2,Evocation,,,,Defense boost,Druid/Sorcerer/Wizard,yes
-Heat Metal,2,Transmutation,,,,Provisioning,Bard/Druid,yes
+Heat Metal,2,Transmutation,,,,Damage,Bard/Druid,yes
 Hold Person,2,Enchantment,The Hold Pair,⛓️,Verbatim clone,Disables,Bard/Cleric/Druid/Sorcerer/Warlock/Wizard,yes
 Invisibility,2,Illusion,The Invisibility Ladder,🫥,Shared template,Deception & stealth,Bard/Sorcerer/Warlock/Wizard,yes
 Knock,2,Transmutation,,,,Disables,Bard/Sorcerer/Wizard,yes
@@ -164,41 +164,41 @@ Spirit Guardians,3,Conjuration,,,,Defense boost,Cleric,yes
 Stinking Cloud,3,Conjuration,,,,Utility & world,Bard/Sorcerer/Wizard,yes
 Tiny Hut,3,Evocation,,,,Defense boost,Bard/Wizard,
 Tongues,3,Divination,,,,Utility & world,Bard/Cleric/Sorcerer/Warlock/Wizard,
-Vampiric Touch,3,Necromancy,,,,Healing & revival,Warlock/Wizard,yes
+Vampiric Touch,3,Necromancy,,,,Damage,Warlock/Wizard,yes
 Water Breathing,3,Transmutation,The Touch-Buff Skeleton,🤝,Shared engine,Mobility,Druid/Ranger/Sorcerer/Wizard,
 Water Walk,3,Transmutation,The Touch-Buff Skeleton,🤝,Shared engine,Mobility,Cleric/Druid/Ranger/Sorcerer,
-Wind Wall,3,Evocation,,,,Zone control,Druid/Ranger,
+Wind Wall,3,Evocation,,,,Damage,Druid/Ranger,
 Arcane Eye,4,Divination,,,,Zone control,Cleric/Wizard,yes
 Banishment,4,Abjuration,,,,Removing entities,Cleric/Paladin/Sorcerer/Warlock/Wizard,yes
-Black Tentacles,4,Conjuration,,,,Disables,Wizard,yes
+Black Tentacles,4,Conjuration,,,,Damage,Wizard,yes
 Blight,4,Necromancy,,,,Damage,Druid/Sorcerer/Warlock/Wizard,yes
 Compulsion,4,Enchantment,,,,Disables,Bard,
 Confusion,4,Enchantment,,,,Utility & world,Bard/Druid/Sorcerer/Wizard,yes
 Conjure Minor Elementals,4,Conjuration,Conjure by Menu,🐾,Verbatim clone,Creating entities,Druid/Wizard,yes
 Conjure Woodland Beings,4,Conjuration,Conjure by Menu,🐾,Verbatim clone,Creating entities,Druid/Ranger,yes
-Control Water,4,Transmutation,,,,Defense boost,Cleric/Druid/Wizard,
+Control Water,4,Transmutation,,,,Damage,Cleric/Druid/Wizard,
 Death Ward,4,Abjuration,,,,Defense boost,Cleric/Paladin,yes
-Dimension Door,4,Conjuration,,,,Mobility,Bard/Sorcerer/Warlock/Wizard,yes
+Dimension Door,4,Conjuration,,,,Damage,Bard/Sorcerer/Warlock/Wizard,yes
 Divination,4,Divination,,,,Information,Druid,
 Dominate Beast,4,Enchantment,The Dominate Chain,🧠,Verbatim clone,Disables,Druid/Sorcerer,yes
 Fabricate,4,Transmutation,,,,Role shift,Wizard,
 Faithful Hound,4,Conjuration,The Phantom Armory,⚔️,Shared engine,Creating entities,Wizard,
-Fire Shield,4,Evocation,,,,Defense boost,Wizard,yes
+Fire Shield,4,Evocation,,,,Damage,Wizard,yes
 Freedom of Movement,4,Abjuration,,,,Disables,Bard/Cleric/Druid/Ranger,yes
 Giant Insect,4,Transmutation,,,,Utility & world,Druid,yes
 Greater Invisibility,4,Illusion,The Invisibility Ladder,🫥,Shared template,Deception & stealth,Bard/Sorcerer/Wizard,yes
-Guardian of Faith,4,Conjuration,,,,Deception & stealth,Cleric,yes
+Guardian of Faith,4,Conjuration,,,,Damage,Cleric,yes
 Hallucinatory Terrain,4,Illusion,,,,Provisioning,Bard/Druid/Warlock/Wizard,
 Ice Storm,4,Evocation,The Elemental Blast Template,💥,Shared template,Damage,Druid/Sorcerer/Wizard,yes
 Locate Creature,4,Divination,The Locate Series,🧭,Shared template,Information,Bard/Cleric/Druid/Paladin/Ranger/Wizard,
-Phantasmal Killer,4,Illusion,,,,Disables,Wizard,yes
+Phantasmal Killer,4,Illusion,,,,Damage,Wizard,yes
 Polymorph,4,Transmutation,The Polymorph Ladder,🐸,Shared template,Disables,Bard/Druid/Sorcerer/Wizard,yes
 Private Sanctum,4,Abjuration,,,,Zone control,Wizard,
 Resilient Sphere,4,Evocation,,,,Zone control,Wizard,yes
 Secret Chest,4,Conjuration,,,,Deception & stealth,Wizard,
 Stone Shape,4,Transmutation,,,,Utility & world,Cleric/Druid/Wizard,
 Stoneskin,4,Abjuration,,,,Defense boost,Druid/Ranger/Sorcerer/Wizard,yes
-Wall of Fire,4,Evocation,,,,Zone control,Druid/Sorcerer/Wizard,yes
+Wall of Fire,4,Evocation,,,,Damage,Druid/Sorcerer/Wizard,yes
 Animate Objects,5,Transmutation,,,,Disables,Bard/Sorcerer/Wizard,
 Antilife Shell,5,Abjuration,,,,Zone control,Druid,
 Arcane Hand,5,Evocation,The Phantom Armory,⚔️,Shared engine,Creating entities,Wizard,
@@ -213,7 +213,7 @@ Contagion,5,Necromancy,,,,Disables,Cleric/Druid,yes
 Creation,5,Illusion,,,,Utility & world,Sorcerer/Wizard,
 Dispel Evil and Good,5,Abjuration,,,,Negation,Cleric/Paladin,yes
 Dominate Person,5,Enchantment,The Dominate Chain,🧠,Verbatim clone,Disables,Bard/Sorcerer/Wizard,yes
-Dream,5,Illusion,,,,Disables,Bard/Warlock/Wizard,
+Dream,5,Illusion,,,,Damage,Bard/Warlock/Wizard,
 Flame Strike,5,Evocation,The Elemental Blast Template,💥,Shared template,Damage,Cleric,yes
 Geas,5,Enchantment,,,,Negation,Bard/Cleric/Druid/Paladin/Wizard,
 Greater Restoration,5,Abjuration,,,,Disables,Bard/Cleric/Druid,yes
@@ -236,13 +236,13 @@ Teleportation Circle,5,Conjuration,,,,Mobility,Bard/Sorcerer/Wizard,
 Tree Stride,5,Conjuration,,,,Utility & world,Druid/Ranger,
 Wall of Force,5,Evocation,,,,Negation,Wizard,
 Wall of Stone,5,Evocation,,,,Negation,Druid/Sorcerer/Wizard,yes
-Blade Barrier,6,Evocation,,,,Zone control,Cleric,yes
-Chain Lightning,6,Evocation,,,,Mobility,Sorcerer/Wizard,yes
+Blade Barrier,6,Evocation,,,,Damage,Cleric,yes
+Chain Lightning,6,Evocation,,,,Damage,Sorcerer/Wizard,yes
 Circle of Death,6,Necromancy,The Elemental Blast Template,💥,Shared template,Damage,Sorcerer/Warlock/Wizard,yes
 Conjure Fey,6,Conjuration,Conjure a Champion,🧞,Shared template,Creating entities,Druid/Warlock,
 Contingency,6,Evocation,,,,Degradation,Wizard,
 Create Undead,6,Necromancy,The Undead Workshop,💀,Shared template,Creating entities,Cleric/Warlock/Wizard,yes
-Disintegrate,6,Transmutation,,,,Healing & revival,Sorcerer/Wizard,yes
+Disintegrate,6,Transmutation,,,,Damage,Sorcerer/Wizard,yes
 Eyebite,6,Necromancy,,,,Disables,Bard/Sorcerer/Warlock/Wizard,yes
 Find the Path,6,Divination,,,,Creating entities,Bard/Cleric/Druid,
 Flesh to Stone,6,Transmutation,,,,Disables,Warlock/Wizard,yes
@@ -260,11 +260,11 @@ Mass Suggestion,6,Enchantment,The Suggestion Pair,💬,Shared template,Disables,
 Move Earth,6,Transmutation,,,,Degradation,Druid/Sorcerer/Wizard,
 Planar Ally,6,Conjuration,Conjure a Champion,🧞,Shared template,Creating entities,Cleric,yes
 Programmed Illusion,6,Illusion,,,,Deception & stealth,Bard/Wizard,
-Sunbeam,6,Evocation,,,,Disables,Druid/Sorcerer/Wizard,yes
+Sunbeam,6,Evocation,,,,Damage,Druid/Sorcerer/Wizard,yes
 Transport via Plants,6,Conjuration,,,,Role shift,Druid,
 True Seeing,6,Divination,,,,Information,Bard/Cleric/Sorcerer/Warlock/Wizard,yes
-Wall of Ice,6,Evocation,,,,Zone control,Wizard,yes
-Wall of Thorns,6,Conjuration,,,,Zone control,Druid,yes
+Wall of Ice,6,Evocation,,,,Damage,Wizard,yes
+Wall of Thorns,6,Conjuration,,,,Damage,Druid,yes
 Wind Walk,6,Transmutation,,,,Disables,Druid,yes
 Word of Recall,6,Conjuration,,,,Mobility,Cleric,
 Arcane Sword,7,Evocation,The Phantom Armory,⚔️,Shared engine,Creating entities,Bard/Wizard,
@@ -278,7 +278,7 @@ Forcecage,7,Evocation,,,,Negation,Bard/Warlock/Wizard,
 Magnificent Mansion,7,Conjuration,,,,Mobility,Bard/Wizard,
 Mirage Arcane,7,Illusion,,,,Deception & stealth,Bard/Druid/Wizard,
 Plane Shift,7,Conjuration,,,,Removing entities,Cleric/Druid/Sorcerer/Warlock/Wizard,
-Prismatic Spray,7,Evocation,,,,Removing entities,Sorcerer/Wizard,
+Prismatic Spray,7,Evocation,,,,Damage,Sorcerer/Wizard,
 Project Image,7,Illusion,,,,Disables,Bard/Wizard,
 Regenerate,7,Transmutation,,,,Healing & revival,Bard/Cleric/Druid,
 Resurrection,7,Necromancy,,,,Healing & revival,Bard/Cleric,
@@ -295,14 +295,14 @@ Control Weather,8,Transmutation,,,,Utility & world,Cleric/Druid/Wizard,
 Demiplane,8,Conjuration,,,,Utility & world,Warlock/Wizard,
 Dominate Monster,8,Enchantment,The Dominate Chain,🧠,Verbatim clone,Disables,Bard/Sorcerer/Warlock/Wizard,
 Earthquake,8,Evocation,,,,Disables,Cleric/Druid/Sorcerer,
-Feeblemind,8,Enchantment,,,,Information,Bard/Druid/Warlock/Wizard,
+Feeblemind,8,Enchantment,,,,Damage,Bard/Druid/Warlock/Wizard,
 Glibness,8,Transmutation,,,,Deception & stealth,Bard/Warlock,
 Holy Aura,8,Abjuration,,,,Disables,Cleric,
 Incendiary Cloud,8,Conjuration,,,,Damage,Sorcerer/Wizard,
 Maze,8,Conjuration,,,,Removing entities,Wizard,
 Mind Blank,8,Abjuration,,,,Disables,Bard/Wizard,
 Power Word Stun,8,Enchantment,,,,Disables,Bard/Sorcerer/Warlock/Wizard,
-Sunburst,8,Evocation,,,,Negation,Druid/Sorcerer/Wizard,
+Sunburst,8,Evocation,,,,Damage,Druid/Sorcerer/Wizard,
 Astral Projection,9,Necromancy,,,,Negation,Cleric/Warlock/Wizard,
 Foresight,9,Divination,,,,Degradation,Bard/Druid/Warlock/Wizard,
 Gate,9,Conjuration,,,,Mobility,Cleric/Sorcerer/Wizard,

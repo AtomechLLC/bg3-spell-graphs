@@ -12,11 +12,10 @@ from itertools import combinations
 
 from PIL import Image
 
-from wow_analyze import mask
+from wow_analyze import mask, prep, pair_score
 
 RECS = json.load(open("wow_spells.json", encoding="utf-8"))
-for r in RECS:
-    r["_m"] = mask(r["desc"]).split()
+prep(RECS)
 BYID = {r["id"]: r for r in RECS}
 ICON_MAP = json.load(open("wow_icon_map.json", encoding="utf-8")) if os.path.exists("wow_icon_map.json") else {}
 
@@ -29,7 +28,8 @@ def by_name(name):
     return [r for r in RECS if r["name"] == name]
 
 def sim(a, b):
-    return SequenceMatcher(None, BYID[a]["_m"], BYID[b]["_m"], autojunk=False).ratio()
+    """Blended mechanical similarity: 0.6 x SpellEffect signature + 0.4 x masked tooltip."""
+    return pair_score(BYID[a], BYID[b])[0]
 
 # ---------------------------------------------------------------- families
 CLONE, TEMPLATE, ENGINE = "clone", "template", "engine"
@@ -60,21 +60,19 @@ fam("teleports", "The Hearth Network", CLONE, "🌀",
      "Portal: Darnassus", "Portal: Orgrimmar", "Portal: Undercity", "Portal: Thunder Bluff"],
     "the destination city; self vs. group",
     "'Teleports the caster to X' / 'Creates a portal, teleporting group members that use it to X.' Twelve spellbook entries from two sentence templates and six city names.",
-    "The city, and the self/group tier — the same single-vs-group axis as the [[families/group-ladder|Greater ladder]].",
+    "The city, and the self/group tier — the same single-vs-group axis as the [[families/status-boosts|status-boost rack]].",
     "A 6×2 product matrix shipped as twelve spells. The faction split even hides half the matrix from each player."),
 fam("conjured", "The Conjured Commissary", CLONE, "💎",
     ["Conjure Mana Agate", "Conjure Mana Jade", "Conjure Mana Citrine", "Conjure Mana Ruby",
      "Create Healthstone (Minor)", "Create Healthstone (Lesser)", "Create Healthstone",
      "Create Healthstone (Greater)", "Create Healthstone (Major)",
-     "Create Soulstone (Minor)", "Create Soulstone (Lesser)", "Create Soulstone",
-     "Create Soulstone (Greater)", "Create Soulstone (Major)",
      "Create Firestone (Lesser)", "Create Firestone", "Create Firestone (Greater)",
      "Create Firestone (Major)", "Create Spellstone", "Create Spellstone (Greater)",
      "Create Spellstone (Major)", "Conjure Food", "Conjure Water"],
     "the item conjured; the tier in parentheses",
     "'Creates/Conjures an X that can be used to Y.' The Mage's mana gems and the Warlock's Healthstones measure ≥ 0.85 against each other — the same vending-machine engine across two classes, with the tier ladder written into the item name instead of a rank number.",
     "The item, its potency tier, and which class's flavor it wears (gems vs. stones).",
-    "Classic's most honest reskin: the parenthetical '(Greater)' is a rank label promoted into the spell name — 23 spellbook lines from one template."),
+    "Classic's most honest reskin: the parenthetical '(Greater)' is a rank label promoted into the spell name — a shelf of spellbook lines from one template. (The Soulstones share this vending chassis but their *purpose* is revival, so they file under [[families/rez|the Resurrection Union]].)"),
 fam("heals", "One Heal, Nine Names", CLONE, "❤️‍🩹",
     ["Lesser Heal", "Heal", "Greater Heal", "Flash Heal", "Healing Touch",
      "Healing Wave", "Lesser Healing Wave", "Holy Light", "Flash of Light"],
@@ -82,35 +80,25 @@ fam("heals", "One Heal, Nine Names", CLONE, "❤️‍🩹",
     "'Heal your target for X.' Four healing classes, nine spells, one design: Flash Heal / Flash of Light / Lesser Healing Wave are the fast-expensive skin, Greater Heal / Holy Light / Healing Wave the slow-efficient skin, all measuring 0.85+ against their cross-class twins.",
     "The class stamp, cast time, and coefficient — plus the Priest's vertical Lesser→Heal→Greater ladder sold as three separate spells *before* ranks multiply them.",
     "The definitive cross-class clone: every healer bought the same spell in a different box. Homogeneity in classic WoW runs across classes more than within them."),
-fam("group-ladder", "The Greater Ladder", TEMPLATE, "🙌",
+fam("status-boosts", "The Status Boost Rack", TEMPLATE, "🙌",
     ["Arcane Intellect", "Arcane Brilliance", "Power Word: Fortitude", "Prayer of Fortitude",
      "Divine Spirit", "Prayer of Spirit", "Shadow Protection", "Prayer of Shadow Protection",
-     "Mark of the Wild", "Gift of the Wild"],
-    "single target vs. whole party; reagent cost",
-    "Stat buff on one target → the same buff on the party, renamed (Brilliance / Prayer of / Gift of) and given a reagent cost. Every pair measures ≥ 0.7 masked.",
-    "The delivery (single vs. group), the name prefix, and a reagent.",
-    "WoW's version of D&D's 'Mass' prefix — same design slot, same doubling, different naming convention per class."),
-fam("blessings", "The Blessing Rack", TEMPLATE, "⚖️",
-    ["Blessing of Might", "Blessing of Wisdom", "Blessing of Kings", "Blessing of Salvation",
-     "Blessing of Light", "Blessing of Freedom", "Blessing of Sacrifice"],
-    "the stat blessed",
-    "'Places a Blessing on the target, increasing/granting X for 5 min.' The Might/Wisdom/Kings trio measures 0.83–0.91. Each also ships a 'Greater' party twin — the [[families/group-ladder|Greater ladder]] applied to a whole rack at once.",
-    "The blessed quantity (attack power, mana regen, all stats, threat, armor…).",
-    "One buff chassis, eight paint jobs, and the entire rack duplicated again for the Greater versions — the Paladin's spellbook is a warehouse of one design."),
-fam("auras", "The Aura Carousel", TEMPLATE, "🛡️",
-    ["Devotion Aura", "Retribution Aura", "Concentration Aura", "Sanctity Aura",
+     "Mark of the Wild", "Gift of the Wild",
+     "Blessing of Might", "Blessing of Wisdom", "Blessing of Kings", "Blessing of Salvation",
+     "Blessing of Light", "Blessing of Freedom", "Blessing of Sacrifice",
+     "Devotion Aura", "Retribution Aura", "Concentration Aura", "Sanctity Aura",
      "Shadow Resistance Aura", "Frost Resistance Aura", "Fire Resistance Aura"],
-    "the passive granted to the party",
-    "'Gives X to all party members within 30 yards.' The three resistance auras are word-identical but for the school (0.9+); the rest swap the granted stat.",
-    "The aura payload; one is active at a time — a modal dial like the Hunter's [[families/aspects|Aspects]].",
-    "The 'exclusive modal buff' engine — one slot, N interchangeable fillings — appears in four classes wearing four names: Auras, Aspects, Stances, Presences-to-be."),
+    "the stat granted, and the delivery: touch, blessing slot, or radius",
+    "One design — 'grant a friendly target a persistent stat modifier' — delivered through three chassis. The buff-and-prayer pairs (Arcane Intellect→Brilliance, Fortitude→Prayer of Fortitude, Mark→Gift) double every buff into a party version with a reagent cost. The Blessing rack sells the same chassis seven times (Might/Wisdom/Kings measure 0.83–0.91), each with a 'Greater' twin. The Aura carousel broadcasts it in a 30-yard radius, one at a time — the resistance trio is word-identical but for the school (0.9+).",
+    "The stat (intellect, stamina, spirit, attack power, resistances…), the delivery mechanism (cast buff / blessing slot / radiating aura), single vs. group, and the reagent.",
+    "The whole ally-buff economy of classic is one status-boost design: 24 spellbook entries, three delivery skins, four classes. The modal one-at-a-time dial reappears zoologically as the Hunter's [[families/aspects|Aspects]]."),
 fam("aspects", "The Aspect Dial", TEMPLATE, "🦅",
     ["Aspect of the Monkey", "Aspect of the Hawk", "Aspect of the Cheetah",
      "Aspect of the Beast", "Aspect of the Pack", "Aspect of the Wild"],
     "the animal and its bonus",
     "'The hunter takes on the aspect of X, gaining Y. Only one Aspect can be active at a time.' Monkey/Hawk measure 0.82.",
-    "The animal skin and the stat it carries; Pack/Wild are the group-cast versions — the [[families/group-ladder|Greater ladder]] inside the dial.",
-    "Same modal engine as the [[families/auras|Paladin auras]], reskinned zoologically."),
+    "The animal skin and the stat it carries; Pack/Wild are the group-cast versions — the group-cast axis of the [[families/status-boosts|status-boost rack]] inside the dial.",
+    "Same modal engine as the [[families/status-boosts|Paladin auras]], reskinned zoologically."),
 fam("stings", "The Sting Clip", CLONE, "🦂",
     ["Serpent Sting", "Scorpid Sting", "Viper Sting"],
     "the payload injected",
@@ -140,7 +128,7 @@ fam("curses", "The Curse Catalogue", TEMPLATE, "💀",
     "the affliction applied",
     "'Curses the target with X for Y.' Elements/Shadow are the same spell with the school swapped (0.85); only one Curse per Warlock per target — the debuff version of the modal engine.",
     "The affliction (DoT, stat down, school vulnerability, slow…).",
-    "The [[families/auras|one-active-slot]] engine pointed at enemies."),
+    "The [[families/status-boosts|one-active-slot]] engine pointed at enemies."),
 fam("protection", "The Protection Rack", TEMPLATE, "🧿",
     ["Frost Armor", "Ice Armor", "Mage Armor", "Demon Skin", "Demon Armor",
      "Inner Fire", "Fire Ward", "Frost Ward", "Shadow Ward", "Power Word: Shield"],
@@ -162,20 +150,23 @@ fam("dots", "The Affliction Engine", ENGINE, "🩸",
     "'Causes X damage over Y sec.' Moonfire/Immolate measure 0.82 — a druid spell and a warlock spell that are the same design with different star signs. The physical bleeds (Rend/Garrote/Rupture) run the same engine on weapon damage.",
     "School, tick rate, and whether an upfront hit rides along.",
     "One damage-over-time chassis serving six classes."),
-fam("summons", "The Stable & The Circle", TEMPLATE, "😈",
+fam("summons", "The Menagerie", TEMPLATE, "😈",
     ["Summon Imp", "Summon Voidwalker", "Summon Succubus", "Summon Felhunter",
      "Summon Warhorse", "Summon Charger", "Summon Felsteed", "Summon Dreadsteed",
-     "Eye of Kilrogg", "Ritual of Summoning", "Inferno", "Ritual of Doom"],
-    "who — or what — answers the call",
-    "'Summons an X under the command of the caster.' The four demons are one contract with four signatories (0.85+); the mounts are the same ladder twice — Paladin and Warlock each get a level-40 horse and a level-60 upgrade, reskinned holy/fel. The engine keeps stretching: Eye of Kilrogg conjures a scouting entity, Ritual of Summoning conjures a *player*, and Inferno / Ritual of Doom conjure one-shot greater demons.",
-    "The summoned entity (demon, steed, eye, party member, infernal), its permanence, and the ritual cost.",
-    "Even the class-defining fantasy (the Warlock's demons) is a menu on one summoning engine — BG3's container spells, twenty years early, and the same contract covers scouting eyes and taxi rituals."),
+     "Eye of Kilrogg", "Ritual of Summoning", "Inferno", "Ritual of Doom",
+     "Call Pet", "Tame Beast", "Revive Pet", "Dismiss Pet", "Eyes of the Beast"],
+    "who — or what — answers the call, and which class holds the leash",
+    "'Summons an X under the command of the caster' — every class's companion runs the same contract. The Warlock's four demons are one contract with four signatories (0.85+); the Hunter's stable is the same system with a taming step (Tame Beast / Call Pet / Dismiss Pet / Revive Pet mirror the demon workflow verb for verb); the mounts are the same ladder twice, holy and fel; and the engine stretches to scouting eyes (Eye of Kilrogg, Eyes of the Beast), player-summoning taxi rituals, and one-shot infernals.",
+    "The summoned entity (demon, beast, steed, eye, party member, infernal), its permanence, the acquisition step, and the ritual cost. (The pets' own abilities — Spell Lock, Devour Magic — are taught to the pet, outside the trainer-book population studied here.)",
+    "Cross-class summoning is one engine wearing class-flavored leashes — BG3's container spells, twenty years early."),
 fam("rez", "The Resurrection Union", CLONE, "⚰️",
-    ["Resurrection", "Redemption", "Ancestral Spirit", "Rebirth"],
-    "the class label and the cooldown",
-    "'Returns the spirit to the body, restoring a dead target to life with X health and mana.' Four classes, four names, one sentence (0.85+ pairwise; Rebirth adds 'usable in combat').",
-    "The name and Rebirth's combat clause.",
-    "The clearest evidence that class kits were filled from a shared parts bin: death care is a franchise."),
+    ["Resurrection", "Redemption", "Ancestral Spirit", "Rebirth",
+     "Create Soulstone (Minor)", "Create Soulstone (Lesser)", "Create Soulstone",
+     "Create Soulstone (Greater)", "Create Soulstone (Major)"],
+    "the class label, the cooldown, and whether the rez is cast or carried",
+    "'Returns the spirit to the body, restoring a dead target to life with X health and mana.' Four classes, four names, one sentence (0.85+ pairwise; Rebirth adds 'usable in combat') — plus the Warlock's five Soulstone tiers: the same resurrection pre-paid into an item, cast before death instead of after.",
+    "The name, Rebirth's combat clause, and the delivery — direct cast vs. the Soulstone's stored charge (with its tier ladder written into the item name).",
+    "The clearest evidence that class kits were filled from a shared parts bin: death care is a franchise, and the Warlock's branch sells it as a prepaid card."),
 fam("cat-is-rogue", "The Druid Costume Shop", CLONE, "🐱",
     ["Stealth", "Prowl", "Ambush", "Ravage", "Backstab", "Shred", "Cower", "Feint",
      "Taunt", "Growl", "Challenging Shout", "Challenging Roar"],
@@ -184,11 +175,11 @@ fam("cat-is-rogue", "The Druid Costume Shop", CLONE, "🐱",
     "The animal performing it and small coefficient nudges.",
     "The whole Feral druid is a licensed reskin of two other classes — homogeneity as a class design *strategy*, and it worked."),
 fam("interrupts", "The Interrupt Union", CLONE, "✋",
-    ["Kick", "Pummel", "Shield Bash", "Earth Shock"],
-    "the limb or element used",
-    "'Deals X damage and interrupts the spell being cast, preventing that school for Y sec.' Kick/Pummel/Shield Bash are word-for-word siblings; Earth Shock measures 0.72 against them from another class's book.",
-    "The animation and the resource paying for it.",
-    "Like [[families/rez|resurrection]], a cross-class utility franchise — every melee got the same button with a different glove."),
+    ["Kick", "Pummel", "Shield Bash", "Earth Shock", "Counterspell"],
+    "the limb, element, or arcana used",
+    "'Interrupts the spell being cast, preventing that school of magic for Y sec.' Kick/Pummel/Shield Bash are word-for-word siblings; Earth Shock measures 0.72 against them from another class's book; Counterspell is the same lockout without the damage rider. (The Felhunter's Spell Lock runs the identical design as a pet ability, outside this trainer-book population.)",
+    "The animation, the resource paying for it, and whether a damage rider comes along.",
+    "Like [[families/rez|resurrection]], a cross-class utility franchise — every class got the same button with a different glove."),
 fam("fears", "The Fear Franchise", TEMPLATE, "😱",
     ["Fear", "Psychic Scream", "Intimidating Shout", "Scare Beast", "Howl of Terror"],
     "targets, count, and radius",
@@ -271,7 +262,7 @@ for f in F:
                     f"{r['rank_count']} | {d} |")
     md = f"""# <span class="femoji">{f['icon']}</span> {f['title']}
 
-<span class="tier tier-{f['tier']}">{TIER_LABEL[f['tier']]}</span> · {len(mem)} abilities · masked-tooltip similarity {simtxt}
+<span class="tier tier-{f['tier']}">{TIER_LABEL[f['tier']]}</span> · {len(mem)} abilities · mechanical similarity {simtxt}
 
 {chr(10).join(rows)}
 
@@ -359,7 +350,7 @@ page("methodology", "Methodology", "Start", f"""# Methodology
 
 **The rank clone farm.** {n_rank_entries - N} of those entries ({100*(n_rank_entries-N)/n_rank_entries:.0f}%) are rank duplicates — the same spell re-taught with bigger numbers. Classic's ranks are BG3's upcast clones and D&D's spell-level laddering taken to their logical extreme: two-thirds of the classic spellbook is the same spell again.
 
-**Similarity.** Classic tooltips are already macro-parameterized in the data (`$s1`, `$d`, `${{formulas}}`) — Blizzard's own template variables. Masking replaces those macros plus schools, elements, creature types, cities, and stat names with tokens; token-level sequence similarity over the masked tooltips then measures how much *sentence* is shared. Highest rank per ability is analyzed; ranks collapse first.
+**Similarity.** Blended mechanical score: 0.6 × the *effect signature* (each ability's `SpellEffect` rows — effect types, aura codes, mechanics, base-point sign, implicit targets — the game's actual machinery) + 0.4 × the masked tooltip (macros `$s1`/`$d`/`${{formulas}}`, schools, elements, creature types, cities, and stat names replaced with tokens). Two abilities that stun, drain, or buff through the same aura code measure as siblings even when their tooltips are written differently. Highest rank per ability is analyzed; ranks collapse first.
 
 **Icons.** Fetched from [warcraft.wiki.gg](https://warcraft.wiki.gg) (the community wiki), by reading each ability page's infobox `icon=` parameter through the MediaWiki API — batched and throttled. Icons © Blizzard Entertainment, shown for research reference.
 
@@ -393,7 +384,7 @@ Unlike D&D (where classes share one spell list) or BG3 (where lists overlap), cl
 
 ## Axis 2 — one chassis, many payloads
 
-Classic's signature template shape is the **payload rack**: [[families/totems|21 totems]], [[families/blessings|8 blessings]] (×2 with Greaters), [[families/curses|8 curses]], [[families/tracking|10 tracking dials]], [[families/teleports|a 6×2 teleport matrix]], [[families/conjured|23 conjured consumables]], [[families/seals|6 seals]], [[families/poisons|5 poisons]], [[families/aspects|6 aspects]]. **{n_fam} of {N} abilities ({100*n_fam/N:.0f}%) sit in {len(F)} families.**
+Classic's signature template shape is the **payload rack**: [[families/totems|21 totems]], [[families/status-boosts|24 status boosts]] (blessings, prayers, and auras), [[families/curses|8 curses]], [[families/tracking|10 tracking dials]], [[families/teleports|a 6×2 teleport matrix]], [[families/conjured|23 conjured consumables]], [[families/seals|6 seals]], [[families/poisons|5 poisons]], [[families/aspects|6 aspects]]. **{n_fam} of {N} abilities ({100*n_fam/N:.0f}%) sit in {len(F)} families.**
 
 ## Browse
 
