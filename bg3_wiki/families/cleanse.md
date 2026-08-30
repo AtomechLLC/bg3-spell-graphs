@@ -1,6 +1,6 @@
 # <span class="femoji">🧼</span> The Cleanse Counter
 
-<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.66–0.89</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Paladin, Ranger, Warlock, Wizard</span></span>
+<span class="tier tier-engine">Shared engine</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.66–0.89</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Paladin, Ranger, Warlock, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

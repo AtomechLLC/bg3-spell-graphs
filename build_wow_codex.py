@@ -372,17 +372,17 @@ for f in F:
     for r in mem:
         d = re.sub(r"\$\{[^}]*\}", "X", r["desc"])
         d = re.sub(r"\$\w+", "X", d)
-        d = d.replace("|", "/")[:110]
+        d = " ".join(d.replace("|", "/").split())[:110]
         rows.append(f"| {sp_name(r)} | {'/'.join(r['classes'])} | {r['level']} | {r['school']} | "
                     f"{r['rank_count']} | {d} |")
     fam_cls = sorted({c for r in mem for c in r["classes"]})
     md = f"""# <span class="femoji">{f['icon']}</span> {f['title']}
 
-<span class="plate"><span class="tier tier-{f['tier']}">{TIER_LABEL[f['tier']]}</span>\
+<span class="tier tier-{f['tier']}">{TIER_LABEL[f['tier']]}</span>\
 <span class="pv"><b>{len(mem)}</b> abilities</span>\
 <span class="pv">similarity <b>{simtxt}</b></span>\
 <span class="pv"><b>{len(fam_cls)}</b> classes</span>\
-<span class="pv pvc">{', '.join(fam_cls) or '—'}</span></span>
+<span class="pv pvc">{', '.join(fam_cls) or '—'}</span>
 
 {chr(10).join(rows)}
 
@@ -852,11 +852,11 @@ tbody tr:hover td{background:color-mix(in srgb,var(--accent) 10%,transparent)}
 .sic{background:var(--panel);border:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
 .crumb a{color:inherit}
 .crumb a:hover{color:var(--accent-ink)}
-.plate{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:2px 0 18px;
+p:has(> .pv){display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:2px 0 18px;
   padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);
   font:400 12px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted)}
-.plate .pv b{color:var(--ink);font-weight:500}
-.plate .pvc{flex-basis:100%;font-size:11px}
+.pv b{color:var(--ink);font-weight:500}
+.pvc{flex-basis:100%;font-size:11px}
 .pn{display:flex;justify-content:space-between;gap:14px;margin:30px 0 0;padding-top:14px;
   border-top:1px solid var(--line);font-size:14px}
 .pn a{max-width:48%}

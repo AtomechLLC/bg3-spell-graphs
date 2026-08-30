@@ -1,6 +1,6 @@
 # <span class="femoji">⚔️</span> The Imbue Shelf
 
-<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>7</b> spells</span><span class="pv">similarity <b>0.51–0.78</b></span><span class="pv"><b>9</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Rogue, Sorcerer, Warlock, Wizard</span></span>
+<span class="tier tier-template">Shared template</span><span class="pv"><b>7</b> spells</span><span class="pv">similarity <b>0.51–0.78</b></span><span class="pv"><b>9</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Rogue, Sorcerer, Warlock, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

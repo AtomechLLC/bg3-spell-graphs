@@ -1,14 +1,14 @@
 # <span class="femoji">✋</span> The Interrupt Union
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>5</b> abilities</span><span class="pv">similarity <b>0.38–0.85</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Mage, Rogue, Shaman, Warrior</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>5</b> abilities</span><span class="pv">similarity <b>0.38–0.85</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Mage, Rogue, Shaman, Warrior</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| <img class="sic" data-i="counterspell" alt=""> **Counterspell** | Mage | 24 | Arcane | 1 | Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for X.  Generat |
-| <img class="sic" data-i="kick" alt=""> **Kick** | Rogue | 58 | Physical | 4 | A quick kick that injures a single foe for X damage.  It also interrupts spellcasting and prevents any spell i |
-| <img class="sic" data-i="earth-shock" alt=""> **Earth Shock** | Shaman | 60 | Nature | 7 | Instantly shocks the target with concussive force, causing X Nature damage.  It also interrupts spellcasting a |
-| <img class="sic" data-i="shield-bash" alt=""> **Shield Bash** | Warrior | 52 | Physical | 3 | Bashes the target with your shield for X damage.  It also interrupts spellcasting and prevents any spell in th |
-| <img class="sic" data-i="pummel" alt=""> **Pummel** | Warrior | 58 | Physical | 2 | Pummel the target for X damage.  It also interrupts spellcasting and prevents any spell in that school from be |
+| <img class="sic" data-i="counterspell" alt=""> **Counterspell** | Mage | 24 | Arcane | 1 | Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for X. Generate |
+| <img class="sic" data-i="kick" alt=""> **Kick** | Rogue | 58 | Physical | 4 | A quick kick that injures a single foe for X damage. It also interrupts spellcasting and prevents any spell in |
+| <img class="sic" data-i="earth-shock" alt=""> **Earth Shock** | Shaman | 60 | Nature | 7 | Instantly shocks the target with concussive force, causing X Nature damage. It also interrupts spellcasting an |
+| <img class="sic" data-i="shield-bash" alt=""> **Shield Bash** | Warrior | 52 | Physical | 3 | Bashes the target with your shield for X damage. It also interrupts spellcasting and prevents any spell in tha |
+| <img class="sic" data-i="pummel" alt=""> **Pummel** | Warrior | 58 | Physical | 2 | Pummel the target for X damage. It also interrupts spellcasting and prevents any spell in that school from bei |
 
 **Shared skeleton.** 'Interrupts the spell being cast, preventing that school of magic for Y sec.' Kick/Pummel/Shield Bash are word-for-word siblings; Earth Shock is the same lockout wearing an elemental coat (0.72 against the melee versions — the famous shock trio dissolves by function: Flame Shock to [[families/dots|the Affliction Engine]], Frost Shock to [[families/snares|the Slow Lane]]); Counterspell is the lockout without the damage rider. (The Felhunter's Spell Lock runs the identical design as a pet ability, outside this trainer-book population.)
 

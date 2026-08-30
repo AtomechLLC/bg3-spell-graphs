@@ -1,6 +1,6 @@
 # <span class="femoji">💥</span> The Area Barrage
 
-<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>17</b> abilities</span><span class="pv">similarity <b>0.13–0.75</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Shaman, Warlock, Warrior</span></span>
+<span class="tier tier-template">Shared template</span><span class="pv"><b>17</b> abilities</span><span class="pv">similarity <b>0.13–0.75</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Shaman, Warlock, Warrior</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -9,13 +9,13 @@
 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Hunter | 60 | Physical | 5 | Fires several missiles, hitting X targets for an additional X damage. |
 | <img class="sic" data-i="arcane-explosion" alt=""> **Arcane Explosion** | Mage | 54 | Arcane | 6 | Causes an explosion of arcane magic around the caster, causing X Arcane damage to all targets within X yards. |
 | <img class="sic" data-i="flamestrike" alt=""> **Flamestrike** | Mage | 56 | Fire | 6 | Calls down a pillar of fire, burning all enemies within the area for X Fire damage and an additional X Fire da |
-| <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Mage | 58 | Frost | 5 | Targets in a cone in front of the caster take X to X  Frost damage and are slowed by X% for X. |
+| <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Mage | 58 | Frost | 5 | Targets in a cone in front of the caster take X to X Frost damage and are slowed by X% for X. |
 | <img class="sic" data-i="blast-wave" alt=""> **Blast Wave** | Mage | 60 | Fire | 5 | A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for X Fire dama |
 | <img class="sic" data-i="blizzard" alt=""> **Blizzard** | Mage | 60 | Frost | 6 | Ice shards pelt the target area doing X Frost damage over X. |
 | <img class="sic" data-i="consecration" alt=""> **Consecration** | Paladin | 60 | Holy | 5 | Consecrates the land beneath Paladin, doing X Holy damage over X to enemies who enter the area. |
 | <img class="sic" data-i="holy-wrath" alt=""> **Holy Wrath** | Paladin | 60 | Holy | 2 | Sends bolts of holy power in all directions, causing X Holy damage to all Undead and Demon targets within X yd |
 | <img class="sic" data-i="holy-nova" alt=""> **Holy Nova** | Priest | 60 | Holy | 6 | Causes an explosion of holy light around the caster, causing X Holy damage to all enemy targets within X yards |
-| <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Shaman | 56 | Nature | 4 | Hurls a lightning bolt at the enemy, dealing X Nature damage and then jumping to additional nearby enemies.  E |
+| <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Shaman | 56 | Nature | 4 | Hurls a lightning bolt at the enemy, dealing X Nature damage and then jumping to additional nearby enemies. Ea |
 | <img class="sic" data-i="hellfire" alt=""> **Hellfire** | Warlock | 54 | Fire | 3 | Ignites the area surrounding the caster, causing X Fire damage to X:herself; and X Fire damage to all nearby e |
 | <img class="sic" data-i="rain-of-fire" alt=""> **Rain of Fire** | Warlock | 58 | Fire | 4 | Calls down a fiery rain to burn enemies in the area of effect for X Fire damage over X. |
 | <img class="sic" data-i="whirlwind" alt=""> **Whirlwind** | Warrior | 36 | Physical | 1 | In a whirlwind of steel you attack up to X enemies within X yards, causing weapon damage to each enemy. |

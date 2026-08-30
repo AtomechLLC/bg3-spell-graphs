@@ -1,15 +1,15 @@
 # <span class="femoji">🎒</span> The Fieldcraft Kit
 
-<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>8</b> abilities</span><span class="pv">similarity <b>0.10–0.90</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Priest, Rogue, Shaman, Warlock</span></span>
+<span class="tier tier-engine">Shared engine</span><span class="pv"><b>8</b> abilities</span><span class="pv">similarity <b>0.10–0.90</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Priest, Rogue, Shaman, Warlock</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| <img class="sic" data-i="soothe-animal" alt=""> **Soothe Animal** | Druid | 54 | Nature | 3 | Soothes the target beast, reducing the range at which it will attack you by X yards.  Only affects Beast targe |
-| <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Priest | 52 | Shadow | 3 | Soothes the target, reducing the range at which it will attack you by X yards.  Only affects Humanoid targets  |
+| <img class="sic" data-i="soothe-animal" alt=""> **Soothe Animal** | Druid | 54 | Nature | 3 | Soothes the target beast, reducing the range at which it will attack you by X yards. Only affects Beast target |
+| <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Priest | 52 | Shadow | 3 | Soothes the target, reducing the range at which it will attack you by X yards. Only affects Humanoid targets l |
 | <img class="sic" data-i="pick-lock" alt=""> **Pick Lock** | Rogue | 1 | Physical | 1 | Allows opening of locked chests and doors. |
 | <img class="sic" data-i="pick-pocket" alt=""> **Pick Pocket** | Rogue | 4 | Physical | 1 | Pick the target's pocket. |
 | <img class="sic" data-i="poisons" alt=""> **Poisons** | Rogue | 20 | Physical | 1 | You can create and mix poisons, with both found and storebought ingredients. |
-| <img class="sic" data-i="disarm-trap" alt=""> **Disarm Trap** | Rogue | 30 | Physical | 1 | Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off. |
+| <img class="sic" data-i="disarm-trap" alt=""> **Disarm Trap** | Rogue | 30 | Physical | 1 | Sneak up on the trap in order to disarm it. Don't get too close or the trap will go off. |
 | <img class="sic" data-i="water-breathing" alt=""> **Water Breathing** | Shaman | 22 | Nature | 1 | Allows the target to breathe underwater for X. |
 | <img class="sic" data-i="unending-breath" alt=""> **Unending Breath** | Warlock | 16 | Shadow | 1 | Allows the target to breathe underwater for X. |
 

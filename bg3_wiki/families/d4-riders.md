@@ -1,6 +1,6 @@
 # <span class="femoji">🎲</span> Guidance & Resistance
 
-<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.89</b></span><span class="pv"><b>2</b> classes</span><span class="pv pvc">Cleric, Druid</span></span>
+<span class="tier tier-engine">Shared engine</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.89</b></span><span class="pv"><b>2</b> classes</span><span class="pv pvc">Cleric, Druid</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

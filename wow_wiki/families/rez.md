@@ -1,19 +1,19 @@
 # <span class="femoji">⚰️</span> The Resurrection Union
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>10</b> abilities</span><span class="pv">similarity <b>0.34–1.00</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Paladin, Priest, Shaman, Warlock</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>10</b> abilities</span><span class="pv">similarity <b>0.34–1.00</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Paladin, Priest, Shaman, Warlock</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | <img class="sic" data-i="rebirth" alt=""> **Rebirth** | Druid | 60 | Nature | 5 | Returns the spirit to the body, restoring a dead target to life with X health and X mana. |
-| <img class="sic" data-i="redemption" alt=""> **Redemption** | Paladin | 60 | Holy | 5 | Brings a dead player back to life with X health and X mana.  Cannot be cast when in combat. |
-| <img class="sic" data-i="resurrection" alt=""> **Resurrection** | Priest | 58 | Holy | 5 | Brings a dead player back to life with X health and X mana.  Cannot be cast when in combat. |
+| <img class="sic" data-i="redemption" alt=""> **Redemption** | Paladin | 60 | Holy | 5 | Brings a dead player back to life with X health and X mana. Cannot be cast when in combat. |
+| <img class="sic" data-i="resurrection" alt=""> **Resurrection** | Priest | 58 | Holy | 5 | Brings a dead player back to life with X health and X mana. Cannot be cast when in combat. |
 | <img class="sic" data-i="reincarnation" alt=""> **Reincarnation** | Shaman | 30 | Nature | 1 | Allows you to resurrect yourself upon death with X% health and mana. |
-| <img class="sic" data-i="ancestral-spirit" alt=""> **Ancestral Spirit** | Shaman | 60 | Nature | 5 | Returns the spirit to the body, restoring a dead target to life with X health and X mana.  Cannot be cast when |
-| <img class="sic" data-i="create-soulstone-minor" alt=""> **Create Soulstone (Minor)** | Warlock | 18 | Shadow | 1 | Creates a Minor Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while th |
-| <img class="sic" data-i="create-soulstone-lesser" alt=""> **Create Soulstone (Lesser)** | Warlock | 30 | Shadow | 1 | Creates a Lesser Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while t |
-| <img class="sic" data-i="create-soulstone" alt=""> **Create Soulstone** | Warlock | 40 | Shadow | 1 | Creates a Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their so |
-| <img class="sic" data-i="create-soulstone-greater" alt=""> **Create Soulstone (Greater)** | Warlock | 50 | Shadow | 1 | Creates a Greater Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while  |
-| <img class="sic" data-i="create-soulstone-major" alt=""> **Create Soulstone (Major)** | Warlock | 60 | Shadow | 1 | Creates a Major Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while th |
+| <img class="sic" data-i="ancestral-spirit" alt=""> **Ancestral Spirit** | Shaman | 60 | Nature | 5 | Returns the spirit to the body, restoring a dead target to life with X health and X mana. Cannot be cast when  |
+| <img class="sic" data-i="create-soulstone-minor" alt=""> **Create Soulstone (Minor)** | Warlock | 18 | Shadow | 1 | Creates a Minor Soulstone. The Soulstone can be used to store one target's soul. If the target dies while thei |
+| <img class="sic" data-i="create-soulstone-lesser" alt=""> **Create Soulstone (Lesser)** | Warlock | 30 | Shadow | 1 | Creates a Lesser Soulstone. The Soulstone can be used to store one target's soul. If the target dies while the |
+| <img class="sic" data-i="create-soulstone" alt=""> **Create Soulstone** | Warlock | 40 | Shadow | 1 | Creates a Soulstone. The Soulstone can be used to store one target's soul. If the target dies while their soul |
+| <img class="sic" data-i="create-soulstone-greater" alt=""> **Create Soulstone (Greater)** | Warlock | 50 | Shadow | 1 | Creates a Greater Soulstone. The Soulstone can be used to store one target's soul. If the target dies while th |
+| <img class="sic" data-i="create-soulstone-major" alt=""> **Create Soulstone (Major)** | Warlock | 60 | Shadow | 1 | Creates a Major Soulstone. The Soulstone can be used to store one target's soul. If the target dies while thei |
 
 **Shared skeleton.** 'Returns the spirit to the body, restoring a dead target to life with X health and mana.' Four classes, four names, one sentence (0.85+ pairwise; Rebirth adds 'usable in combat') — plus the Warlock's five Soulstone tiers: the same resurrection pre-paid into an item, cast before death instead of after.
 

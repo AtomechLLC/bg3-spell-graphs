@@ -1,6 +1,6 @@
 # <span class="femoji">🛡️</span> The Protection Rack
 
-<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>14</b> spells</span><span class="pv">similarity <b>0.62–0.90</b></span><span class="pv"><b>10</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
+<span class="tier tier-template">Shared template</span><span class="pv"><b>14</b> spells</span><span class="pv">similarity <b>0.62–0.90</b></span><span class="pv"><b>10</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

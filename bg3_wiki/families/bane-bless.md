@@ -1,6 +1,6 @@
 # <span class="femoji">⚖️</span> Bane & Bless
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.77</b></span><span class="pv"><b>3</b> classes</span><span class="pv pvc">Bard, Cleric, Paladin</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.77</b></span><span class="pv"><b>3</b> classes</span><span class="pv pvc">Bard, Cleric, Paladin</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

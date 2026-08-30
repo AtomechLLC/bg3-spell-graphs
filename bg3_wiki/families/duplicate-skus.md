@@ -1,6 +1,6 @@
 # <span class="femoji">🛍️</span> The Duplicate SKUs
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.69–1.00</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Bard, Fighter, Paladin, Rogue, Sorcerer, Warlock, Wizard</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.69–1.00</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Bard, Fighter, Paladin, Rogue, Sorcerer, Warlock, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

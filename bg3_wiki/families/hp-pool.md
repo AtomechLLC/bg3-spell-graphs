@@ -1,6 +1,6 @@
 # <span class="femoji">🧮</span> The Hit-Point Pool Engine
 
-<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.81</b></span><span class="pv"><b>6</b> classes</span><span class="pv pvc">Bard, Cleric, Fighter, Rogue, Sorcerer, Wizard</span></span>
+<span class="tier tier-template">Shared template</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.81</b></span><span class="pv"><b>6</b> classes</span><span class="pv pvc">Bard, Cleric, Fighter, Rogue, Sorcerer, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

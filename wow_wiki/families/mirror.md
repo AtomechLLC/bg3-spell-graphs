@@ -1,6 +1,6 @@
 # <span class="femoji">🪞</span> Amplify & Dampen
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> abilities</span><span class="pv">similarity <b>0.86</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Mage</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> abilities</span><span class="pv">similarity <b>0.86</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Mage</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

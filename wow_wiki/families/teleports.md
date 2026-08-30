@@ -1,6 +1,6 @@
 # <span class="femoji">🌀</span> The Hearth Network
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>12</b> abilities</span><span class="pv">similarity <b>0.34–1.00</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Mage</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>12</b> abilities</span><span class="pv">similarity <b>0.34–1.00</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Mage</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

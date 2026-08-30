@@ -1,6 +1,6 @@
 # <span class="femoji">🕸️</span> The Surface Engine
 
-<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>10</b> spells</span><span class="pv">similarity <b>0.72–0.94</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Ranger, Rogue, Sorcerer, Wizard</span></span>
+<span class="tier tier-template">Shared template</span><span class="pv"><b>10</b> spells</span><span class="pv">similarity <b>0.72–0.94</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Ranger, Rogue, Sorcerer, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

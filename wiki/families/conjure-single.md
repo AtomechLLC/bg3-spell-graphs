@@ -1,6 +1,6 @@
 # <span class="femoji">🧞</span> Conjure a Champion
 
-<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>4</b> spells</span><span class="pv">similarity <b>0.08–0.81</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Cleric, Druid, Warlock, Wizard</span></span>
+<span class="tier tier-template">Shared template</span><span class="pv"><b>4</b> spells</span><span class="pv">similarity <b>0.08–0.81</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Cleric, Druid, Warlock, Wizard</span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

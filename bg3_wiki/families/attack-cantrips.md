@@ -1,6 +1,6 @@
 # <span class="femoji">🪄</span> The Damage Cantrip Engine
 
-<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>12</b> spells</span><span class="pv">similarity <b>0.38–0.95</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Rogue, Sorcerer, Warlock, Wizard</span></span>
+<span class="tier tier-engine">Shared engine</span><span class="pv"><b>12</b> spells</span><span class="pv">similarity <b>0.38–0.95</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Rogue, Sorcerer, Warlock, Wizard</span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

@@ -1,27 +1,27 @@
 # <span class="femoji">🐾</span> The Surveillance Suite
 
-<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>21</b> abilities</span><span class="pv">similarity <b>0.09–1.00</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock</span></span>
+<span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>21</b> abilities</span><span class="pv">similarity <b>0.09–1.00</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock</span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
-| <img class="sic" data-i="track-humanoids" alt=""> **Track Humanoids** | Druid | 32 | Physical | 1 | Shows the location of all nearby humanoids on the minimap.  Only one type of thing can be tracked at a time. |
-| <img class="sic" data-i="track-beasts" alt=""> **Track Beasts** | Hunter | 1 | Physical | 1 | Shows the location of all nearby beasts on the minimap.  Only one form of tracking can be active at a time. |
-| <img class="sic" data-i="track-humanoids" alt=""> **Track Humanoids** | Hunter | 10 | Physical | 1 | Shows the location of all nearby humanoids on the minimap.  Only one form of tracking can be active at a time. |
-| <img class="sic" data-i="eagle-eye" alt=""> **Eagle Eye** | Hunter | 14 | Arcane | 1 | Zooms in the hunter's vision.  Only usable outdoors.  Lasts X. |
-| <img class="sic" data-i="track-undead" alt=""> **Track Undead** | Hunter | 18 | Physical | 1 | Shows the location of all nearby undead on the minimap.  Only one form of tracking can be active at a time. |
-| <img class="sic" data-i="track-hidden" alt=""> **Track Hidden** | Hunter | 24 | Physical | 1 | Increases stealth detection and shows hidden units within detection range on the minimap.  Only one form of tr |
-| <img class="sic" data-i="track-elementals" alt=""> **Track Elementals** | Hunter | 26 | Physical | 1 | Shows the location of all nearby elementals on the minimap.  Only one form of tracking can be active at a time |
+| <img class="sic" data-i="track-humanoids" alt=""> **Track Humanoids** | Druid | 32 | Physical | 1 | Shows the location of all nearby humanoids on the minimap. Only one type of thing can be tracked at a time. |
+| <img class="sic" data-i="track-beasts" alt=""> **Track Beasts** | Hunter | 1 | Physical | 1 | Shows the location of all nearby beasts on the minimap. Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="track-humanoids" alt=""> **Track Humanoids** | Hunter | 10 | Physical | 1 | Shows the location of all nearby humanoids on the minimap. Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="eagle-eye" alt=""> **Eagle Eye** | Hunter | 14 | Arcane | 1 | Zooms in the hunter's vision. Only usable outdoors. Lasts X. |
+| <img class="sic" data-i="track-undead" alt=""> **Track Undead** | Hunter | 18 | Physical | 1 | Shows the location of all nearby undead on the minimap. Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="track-hidden" alt=""> **Track Hidden** | Hunter | 24 | Physical | 1 | Increases stealth detection and shows hidden units within detection range on the minimap. Only one form of tra |
+| <img class="sic" data-i="track-elementals" alt=""> **Track Elementals** | Hunter | 26 | Physical | 1 | Shows the location of all nearby elementals on the minimap. Only one form of tracking can be active at a time. |
 | <img class="sic" data-i="flare" alt=""> **Flare** | Hunter | 32 | Arcane | 1 | Exposes all hidden and invisible enemies within X yards of the targeted area for X. |
-| <img class="sic" data-i="track-demons" alt=""> **Track Demons** | Hunter | 32 | Physical | 1 | Shows the location of all nearby demons on the minimap.  Only one form of tracking can be active at a time. |
-| <img class="sic" data-i="track-giants" alt=""> **Track Giants** | Hunter | 40 | Physical | 1 | Shows the location of all nearby giants on the minimap.  Only one form of tracking can be active at a time. |
-| <img class="sic" data-i="track-dragonkin" alt=""> **Track Dragonkin** | Hunter | 50 | Physical | 1 | Shows the location of all nearby dragonkin on the minimap.  Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="track-demons" alt=""> **Track Demons** | Hunter | 32 | Physical | 1 | Shows the location of all nearby demons on the minimap. Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="track-giants" alt=""> **Track Giants** | Hunter | 40 | Physical | 1 | Shows the location of all nearby giants on the minimap. Only one form of tracking can be active at a time. |
+| <img class="sic" data-i="track-dragonkin" alt=""> **Track Dragonkin** | Hunter | 50 | Physical | 1 | Shows the location of all nearby dragonkin on the minimap. Only one form of tracking can be active at a time. |
 | <img class="sic" data-i="detect-magic" alt=""> **Detect Magic** | Mage | 16 | Arcane | 1 | Detects beneficial magic effects on the target for X. |
-| <img class="sic" data-i="sense-undead" alt=""> **Sense Undead** | Paladin | 20 | Holy | 1 | Shows the location of all nearby undead on the minimap until cancelled.   Only one type of tracking can be use |
-| <img class="sic" data-i="mind-vision" alt=""> **Mind Vision** | Priest | 44 | Shadow | 2 | Allows the caster to see through the target's eyes for X.  Will not work if the target is in another instance  |
+| <img class="sic" data-i="sense-undead" alt=""> **Sense Undead** | Paladin | 20 | Holy | 1 | Shows the location of all nearby undead on the minimap until cancelled. Only one type of tracking can be used  |
+| <img class="sic" data-i="mind-vision" alt=""> **Mind Vision** | Priest | 44 | Shadow | 2 | Allows the caster to see through the target's eyes for X. Will not work if the target is in another instance o |
 | <img class="sic" data-i="detect-traps" alt=""> **Detect Traps** | Rogue | 24 | Physical | 1 | Greatly increased chance to detect traps. |
-| <img class="sic" data-i="far-sight" alt=""> **Far Sight** | Shaman | 26 | Nature | 1 | Changes the caster's viewpoint to the targeted location.  Lasts X.  Only useable outdoors. |
+| <img class="sic" data-i="far-sight" alt=""> **Far Sight** | Shaman | 26 | Nature | 1 | Changes the caster's viewpoint to the targeted location. Lasts X. Only useable outdoors. |
 | <img class="sic" data-i="sentry-totem" alt=""> **Sentry Totem** | Shaman | 34 | Nature | 1 | Summons an immobile Sentry Totem with X health at your feet for X that allows vision of nearby area and warns  |
-| <img class="sic" data-i="sense-demons" alt=""> **Sense Demons** | Warlock | 24 | Shadow | 1 | Shows the location of all nearby demons on the minimap until cancelled.  Only one type of tracking can be used |
+| <img class="sic" data-i="sense-demons" alt=""> **Sense Demons** | Warlock | 24 | Shadow | 1 | Shows the location of all nearby demons on the minimap until cancelled. Only one type of tracking can be used  |
 | <img class="sic" data-i="detect-lesser-invisibility" alt=""> **Detect Lesser Invisibility** | Warlock | 26 | Shadow | 1 | Allows the friendly target to detect lesser invisibility for X. |
 | <img class="sic" data-i="detect-invisibility" alt=""> **Detect Invisibility** | Warlock | 38 | Shadow | 1 | Allows the friendly target to detect invisibility for X. |
 | <img class="sic" data-i="detect-greater-invisibility" alt=""> **Detect Greater Invisibility** | Warlock | 50 | Shadow | 1 | Allows the friendly target to detect greater invisibility for X. |

@@ -1,6 +1,6 @@
 # <span class="femoji">⚔️</span> The Phantom Armory
 
-<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>6</b> spells</span><span class="pv">similarity <b>0.12–0.38</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Warlock, Wizard</span></span>
+<span class="tier tier-engine">Shared engine</span><span class="pv"><b>6</b> spells</span><span class="pv">similarity <b>0.12–0.38</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Warlock, Wizard</span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|
