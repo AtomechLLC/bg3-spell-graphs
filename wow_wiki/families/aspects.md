@@ -1,0 +1,23 @@
+# <span class="femoji">🦅</span> The Aspect Dial
+
+<span class="tier tier-template">Shared template</span> · 6 abilities · masked-tooltip similarity 0.54–0.83
+
+| Ability | Class | Level | School | Ranks | Tooltip |
+|---|---|---|---|---|---|
+| **Aspect of the Monkey** | Hunter | 4 | Nature | 1 | The hunter takes on the aspects of a monkey, increasing chance to dodge by X%.  Only one Aspect can be active  |
+| **Aspect of the Cheetah** | Hunter | 20 | Nature | 1 | The hunter takes on the aspects of a cheetah, increasing movement speed by X%.  If the hunter takes damage, X: |
+| **Aspect of the Beast** | Hunter | 30 | Nature | 1 | The hunter takes on the aspects of a beast, becoming untrackable.  Only one Aspect can be active at a time. |
+| **Aspect of the Pack** | Hunter | 40 | Nature | 1 | The hunter and group members within X yards take on the aspects of a pack of cheetahs, increasing movement spe |
+| **Aspect of the Wild** | Hunter | 56 | Nature | 2 | The hunter and group members within X yards take on the aspect of the wild, increasing Nature resistance by X. |
+| **Aspect of the Hawk** | Hunter | 60 | Nature | 7 | The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by X.  Only one Aspect can be active |
+
+**Shared skeleton.** 'The hunter takes on the aspect of X, gaining Y. Only one Aspect can be active at a time.' Monkey/Hawk measure 0.82.
+
+**What varies.** The animal skin and the stat it carries; Pack/Wild are the group-cast versions — the [[families/group-ladder|Greater ladder]] inside the dial.
+
+**Design read.** Same modal engine as the [[families/auras|Paladin auras]], reskinned zoologically.
+
+Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
+
+---
+*Linked from: [[classes/hunter|Hunter]] · [[families/auras|The Aura Carousel]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

@@ -1,6 +1,6 @@
 # Druid Spell List
 
-**106 spells** in the SRD · **17** exclusive to Druid (16%) · **31** belong to an identified [[findings|template family]] (29%)
+**106 spells** in the SRD · **17** exclusive to Druid (16%) · **32** belong to an identified [[findings|template family]] (30%)
 
 List overlap: **42%** shared with [[classes/wizard|Wizard]], **38%** shared with [[classes/cleric|Cleric]], **33%** shared with [[classes/bard|Bard]].
 
@@ -35,7 +35,7 @@ List overlap: **42%** shared with [[classes/wizard|Wizard]], **38%** shared with
 | 2 | <img class="sic" data-i="enhance-ability" alt=""> **Enhance Ability** | Transmutation | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]] |
 | 2 | **Find Traps** | Divination | — | [[classes/cleric|Cleric]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="flame-blade" alt=""> **Flame Blade** | Evocation | — | *(exclusive)* |
-| 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | — | [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="gust-of-wind" alt=""> **Gust of Wind** | Evocation | — | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="heat-metal" alt=""> **Heat Metal** | Transmutation | — | [[classes/bard|Bard]] |
 | 2 | <img class="sic" data-i="hold-person" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
@@ -116,4 +116,4 @@ List overlap: **42%** shared with [[classes/wizard|Wizard]], **38%** shared with
 Back to [[overview|Overview]] · compare on [[findings|The Identical-Spell List]].
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/conjure-table|Conjure by Menu]] · [[families/cure|The Cure Family]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/detect|The Detect Series]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/guidance-resistance|Guidance & Resistance]] · [[families/hold|The Hold Pair]] · [[families/locate|The Locate Series]] · [[families/polymorph|The Polymorph Ladder]] · [[families/protection|The Protection Series]] · [[families/speak-with|The Speak-With Series]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/conjure-table|Conjure by Menu]] · [[families/cure|The Cure Family]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/detect|The Detect Series]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/guidance-resistance|Guidance & Resistance]] · [[families/hold|The Hold Pair]] · [[families/locate|The Locate Series]] · [[families/phantom-armory|The Phantom Armory]] · [[families/polymorph|The Polymorph Ladder]] · [[families/protection|The Protection Series]] · [[families/speak-with|The Speak-With Series]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

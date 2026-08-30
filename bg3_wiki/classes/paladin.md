@@ -1,6 +1,6 @@
 # Paladin Spell List (BG3)
 
-**29 spells** reachable through Paladin progressions · **12** in an identified family (41%)
+**29 spells** reachable through Paladin progressions · **13** in an identified family (45%)
 
 List overlap: **59%** with [[classes/cleric|Cleric]], **55%** with [[classes/bard|Bard]], **28%** with [[classes/warlock|Warlock]].
 
@@ -26,7 +26,7 @@ List overlap: **59%** with [[classes/cleric|Cleric]], **55%** with [[classes/bar
 | 2 | <img class="sic" data-i="Target_LesserRestoration" alt=""> **Lesser Restoration** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="Target_MagicWeapon" alt=""> **Magic Weapon** | Transmutation | — | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_ProtectionFromPoison" alt=""> **Protection from Poison** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
-| 3 | <img class="sic" data-i="Target_AnimateDead" alt=""> **Animate Dead** | Necromancy | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="Target_AnimateDead" alt=""> **Animate Dead** | Necromancy | [[families/conjure|🧞 The Summoning Contract]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_BestowCurse" alt=""> **Bestow Curse** | Necromancy | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_Smite_Blinding" alt=""> **Blinding Smite** | Evocation | [[families/smites|🔨 The Smite Armoury]] | *(exclusive)* |
 | 3 | <img class="sic" data-i="Shout_CrusadersMantle" alt=""> **Crusader's Mantle** | Evocation | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
@@ -56,4 +56,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/bane-bless|Bane & Bless]] · [[families/cleanse|The Cleanse Counter]] · [[families/cure|The Cure Family]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/smites|The Smite Armoury]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/bane-bless|Bane & Bless]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/cure|The Cure Family]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/smites|The Smite Armoury]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

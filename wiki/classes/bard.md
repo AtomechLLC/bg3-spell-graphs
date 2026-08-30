@@ -1,6 +1,6 @@
 # Bard Spell List
 
-**111 spells** in the SRD · **2** exclusive to Bard (2%) · **28** belong to an identified [[findings|template family]] (25%)
+**111 spells** in the SRD · **2** exclusive to Bard (2%) · **30** belong to an identified [[findings|template family]] (27%)
 
 List overlap: **74%** shared with [[classes/wizard|Wizard]], **44%** shared with [[classes/sorcerer|Sorcerer]], **32%** shared with [[classes/cleric|Cleric]].
 
@@ -33,7 +33,7 @@ List overlap: **74%** shared with [[classes/wizard|Wizard]], **44%** shared with
 | 1 | <img class="sic" data-i="sleep" alt=""> **Sleep** | Enchantment | [[families/hp-pool|🧮 The Hit-Point Pool Engine]] | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="speak-with-animals" alt=""> **Speak with Animals** | Divination | [[families/speak-with|🗣️ The Speak-With Series]] | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="thunderwave" alt=""> **Thunderwave** | Evocation | — | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | **Unseen Servant** | Conjuration | — | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 1 | **Unseen Servant** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | **Animal Messenger** | Enchantment | — | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="blindness-deafness" alt=""> **Blindness/Deafness** | Necromancy | — | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="calm-emotions" alt=""> **Calm Emotions** | Enchantment | — | [[classes/cleric|Cleric]] |
@@ -99,7 +99,7 @@ List overlap: **74%** shared with [[classes/wizard|Wizard]], **44%** shared with
 | 6 | **Mass Suggestion** | Enchantment | [[families/suggestion|💬 The Suggestion Pair]] | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 6 | **Programmed Illusion** | Illusion | — | [[classes/wizard|Wizard]] |
 | 6 | <img class="sic" data-i="true-seeing" alt=""> **True Seeing** | Divination | — | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 7 | **Arcane Sword** | Evocation | — | [[classes/wizard|Wizard]] |
+| 7 | **Arcane Sword** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/wizard|Wizard]] |
 | 7 | **Etherealness** | Transmutation | — | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 7 | **Forcecage** | Evocation | — | [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 7 | **Magnificent Mansion** | Conjuration | — | [[classes/wizard|Wizard]] |
@@ -121,4 +121,4 @@ List overlap: **74%** shared with [[classes/wizard|Wizard]], **44%** shared with
 Back to [[overview|Overview]] · compare on [[findings|The Identical-Spell List]].
 
 ---
-*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/bane-bless|Bane & Bless]] · [[families/cure|The Cure Family]] · [[families/detect|The Detect Series]] · [[families/disguise-seeming|The Disguise Ladder]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/image|The Image Ladder]] · [[families/invisibility|The Invisibility Ladder]] · [[families/locate|The Locate Series]] · [[families/polymorph|The Polymorph Ladder]] · [[families/speak-with|The Speak-With Series]] · [[families/suggestion|The Suggestion Pair]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/bane-bless|Bane & Bless]] · [[families/cure|The Cure Family]] · [[families/detect|The Detect Series]] · [[families/disguise-seeming|The Disguise Ladder]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/image|The Image Ladder]] · [[families/invisibility|The Invisibility Ladder]] · [[families/locate|The Locate Series]] · [[families/phantom-armory|The Phantom Armory]] · [[families/polymorph|The Polymorph Ladder]] · [[families/speak-with|The Speak-With Series]] · [[families/suggestion|The Suggestion Pair]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

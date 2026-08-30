@@ -1,0 +1,7747 @@
+[
+ {
+  "id": 22570,
+  "name": "Mangle",
+  "rank": "Rank 1",
+  "desc": "Finishing move that causes damage, disorients the opponent, and turns off your attack.  Any damage caused will revive the target.  Causes more damage and lasts longer per combo point:\r\n   1 point  : 7-11 damage and 2 seconds\r\n   2 points: 13-19 damage and 3 seconds\r\n   3 points: 19-24 damage and 4 seconds\r\n   4 points: 25-30 damage and 5 seconds\r\n   5 points: 31-37 damage and 6 seconds",
+  "school": "Physical",
+  "level": 6,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   22570
+  ]
+ },
+ {
+  "id": 5487,
+  "name": "Bear Form",
+  "rank": "Shapeshift",
+  "desc": "Shapeshift into a bear, increasing melee attack power by $1178s3, armor contribution from items by $1178s1%, and health by $1178s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5487
+  ]
+ },
+ {
+  "id": 6795,
+  "name": "Growl",
+  "rank": "",
+  "desc": "Taunts the target to attack you, but has no effect if the target is already attacking you.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6795
+  ]
+ },
+ {
+  "id": 18960,
+  "name": "Teleport: Moonglade",
+  "rank": "",
+  "desc": "Teleports the caster to the Moonglade.",
+  "school": "Arcane",
+  "level": 10,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   18960
+  ]
+ },
+ {
+  "id": 5229,
+  "name": "Enrage",
+  "rank": "",
+  "desc": "$?a436895[Instantly generates ${$m2/10} Rage and another ][Generates ]$m1 rage over $d$?p456328[][, but  reduces base armor by 27% in Bear Form and 16% in Dire Bear Form].  The druid is considered in combat  for the duration.",
+  "school": "Physical",
+  "level": 12,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5229
+  ]
+ },
+ {
+  "id": 8946,
+  "name": "Cure Poison",
+  "rank": "",
+  "desc": "Cures $s1 poison $leffect:effects; on the target.",
+  "school": "Nature",
+  "level": 14,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   8946
+  ]
+ },
+ {
+  "id": 1066,
+  "name": "Aquatic Form",
+  "rank": "Shapeshift",
+  "desc": "Shapeshift into aquatic form, increasing swim speed by $5421s1% and allowing the druid to breathe underwater.  Also protects the caster from Polymorph effects.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+  "school": "Physical",
+  "level": 16,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1066
+  ]
+ },
+ {
+  "id": 5421,
+  "name": "Aquatic Form (Passive)",
+  "rank": "Passive",
+  "desc": "Increases swimming speed by $s1% and allow's the druid to breathe underwater.",
+  "school": "Nature",
+  "level": 16,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5421
+  ]
+ },
+ {
+  "id": 768,
+  "name": "Cat Form",
+  "rank": "Shapeshift",
+  "desc": "Shapeshift into cat form, increasing melee attack power by $3025s1 plus Agility.  Also protects the caster from Polymorph effects and allows the use of various cat abilities.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+  "school": "Physical",
+  "level": 20,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   768
+  ]
+ },
+ {
+  "id": 2782,
+  "name": "Remove Curse",
+  "rank": "",
+  "desc": "Dispels $s1 Curse from a friendly target.",
+  "school": "Arcane",
+  "level": 24,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2782
+  ]
+ },
+ {
+  "id": 2893,
+  "name": "Abolish Poison",
+  "rank": "",
+  "desc": "Attempts to cure $s2 poison effect on the target, and $3137s1 more poison effect every $t1 seconds for $d.",
+  "school": "Nature",
+  "level": 26,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2893
+  ]
+ },
+ {
+  "id": 5209,
+  "name": "Challenging Roar",
+  "rank": "",
+  "desc": "Forces all nearby enemies to focus attacks on you for $d.",
+  "school": "Physical",
+  "level": 28,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5209
+  ]
+ },
+ {
+  "id": 783,
+  "name": "Travel Form",
+  "rank": "Shapeshift",
+  "desc": "Transforms the druid into a travel form, increasing movement speed by $5419s1%.  Also protects the caster from Polymorph effects.  Only useable outdoors.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+  "school": "Physical",
+  "level": 30,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   783
+  ]
+ },
+ {
+  "id": 5225,
+  "name": "Track Humanoids",
+  "rank": "",
+  "desc": "Shows the location of all nearby humanoids on the minimap.  Only one type of thing can be tracked at a time.",
+  "school": "Physical",
+  "level": 32,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5225
+  ]
+ },
+ {
+  "id": 9634,
+  "name": "Dire Bear Form",
+  "rank": "Shapeshift",
+  "desc": "Shapeshift into a dire bear, increasing melee attack power by $9635s3, armor contribution from items by $9635s1%, and health by $9635s2.  Also protects the caster from Polymorph effects and allows the use of various bear abilities.\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+  "school": "Physical",
+  "level": 40,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   9634
+  ]
+ },
+ {
+  "id": 20719,
+  "name": "Feline Grace",
+  "rank": "Passive",
+  "desc": "Reduces damage from falling.",
+  "school": "Physical",
+  "level": 40,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20719
+  ]
+ },
+ {
+  "id": 24858,
+  "name": "Moonkin Form",
+  "rank": "Shapeshift",
+  "desc": "Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by $24905s1%$?s436895[, Moonfire costs $443359s2% less mana and deals $443359s3% more damage over time, your periodic damage spells can deal critical periodic damage, you gain ${$PL*3} spell damage,][] and all party members within $24907a1 yards have their spell critical chance increased by $24907s1%.  $?s436895[The Moonkin cannot cast healing spells while shapeshifted.][The Moonkin can only cast Balance spells while shapeshifted.]$?s436895[ Reduces all threat from Arcane and Nature spells by $s4% while in this form.][]\r\n\r\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
+  "school": "Physical",
+  "level": 40,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   24858
+  ]
+ },
+ {
+  "id": 22812,
+  "name": "Barkskin",
+  "rank": "",
+  "desc": "The druid's skin becomes as tough as bark.  Physical damage taken is reduced by $22839s2%.  While protected, damaging attacks will not cause spellcasting delays but non-instant spells take $/1000;s3 sec longer to cast and melee combat is slowed by $22839s1%.  Lasts $d.",
+  "school": "Nature",
+  "level": 44,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   22812
+  ]
+ },
+ {
+  "id": 8983,
+  "name": "Bash",
+  "rank": "Rank 3",
+  "desc": "Stuns the target for $d.",
+  "school": "Physical",
+  "level": 46,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   5211,
+   6798,
+   8983
+  ]
+ },
+ {
+  "id": 9821,
+  "name": "Dash",
+  "rank": "Rank 2",
+  "desc": "Increases movement speed by $s1% for $d.  Does not break prowling.",
+  "school": "Physical",
+  "level": 46,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   1850,
+   9821
+  ]
+ },
+ {
+  "id": 9892,
+  "name": "Cower",
+  "rank": "Rank 3",
+  "desc": "Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you.",
+  "school": "Physical",
+  "level": 52,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   8998,
+   9000,
+   9892
+  ]
+ },
+ {
+  "id": 9898,
+  "name": "Demoralizing Roar",
+  "rank": "Rank 5",
+  "desc": "The druid roars, decreasing nearby enemies' melee attack power by $s1.  Lasts $d.",
+  "school": "Physical",
+  "level": 52,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   99,
+   1735,
+   9490,
+   9747,
+   9898
+  ]
+ },
+ {
+  "id": 9907,
+  "name": "Faerie Fire",
+  "rank": "Rank 4",
+  "desc": "Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   770,
+   778,
+   9749,
+   9907
+  ]
+ },
+ {
+  "id": 17392,
+  "name": "Faerie Fire (Feral)",
+  "rank": "Rank 4",
+  "desc": "Decrease the armor of the target by $s1 for $d.  While affected, the target cannot stealth or turn invisible.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   16857,
+   17390,
+   17391,
+   17392
+  ]
+ },
+ {
+  "id": 9904,
+  "name": "Rake",
+  "rank": "Rank 4",
+  "desc": "Rake the target for $s1 damage and an additional $o2 damage over $d.  Awards $s3 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1822,
+   1823,
+   1824,
+   9904
+  ]
+ },
+ {
+  "id": 9830,
+  "name": "Shred",
+  "rank": "Rank 5",
+  "desc": "Shred the target, causing $s2% damage plus 180 to the target.  Must be behind the target.  Awards $s3 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   5221,
+   6800,
+   8992,
+   9829,
+   9830
+  ]
+ },
+ {
+  "id": 9901,
+  "name": "Soothe Animal",
+  "rank": "Rank 3",
+  "desc": "Soothes the target beast, reducing the range at which it will attack you by $s1 yards.  Only affects Beast targets level 70 or lower.  Lasts $d.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2908,
+   8955,
+   9901
+  ]
+ },
+ {
+  "id": 9908,
+  "name": "Swipe",
+  "rank": "Rank 5",
+  "desc": "Swipe $x1 nearby enemies, inflicting $s1 damage.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   769,
+   779,
+   780,
+   9754,
+   9908
+  ]
+ },
+ {
+  "id": 9910,
+  "name": "Thorns",
+  "rank": "Rank 6",
+  "desc": "Thorns sprout from the friendly target causing $s1 Nature damage to attackers when hit.  Lasts $d.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   467,
+   782,
+   1075,
+   8914,
+   9756,
+   9910
+  ]
+ },
+ {
+  "id": 9912,
+  "name": "Wrath",
+  "rank": "Rank 8",
+  "desc": "Causes $s1 Nature damage to the target.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   5176,
+   5177,
+   5178,
+   5179,
+   5180,
+   6780,
+   8905,
+   9912
+  ]
+ },
+ {
+  "id": 22896,
+  "name": "Frenzied Regeneration",
+  "rank": "Rank 3",
+  "desc": "Converts up to 10 rage per second into health for $d.  Each point of rage is converted into $s1 health.",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   22842,
+   22895,
+   22896
+  ]
+ },
+ {
+  "id": 9827,
+  "name": "Pounce",
+  "rank": "Rank 3",
+  "desc": "Pounce, stunning the target for $d and causing $9826o1 damage over $9826d.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   9005,
+   9823,
+   9827
+  ]
+ },
+ {
+  "id": 9850,
+  "name": "Claw",
+  "rank": "Rank 5",
+  "desc": "Claw the enemy, causing $s1 additional damage.  Awards $s2 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   1082,
+   3029,
+   5201,
+   9849,
+   9850
+  ]
+ },
+ {
+  "id": 9853,
+  "name": "Entangling Roots",
+  "rank": "Rank 6",
+  "desc": "Roots the target in place and causes $o2 Nature damage over $d.  Damage caused may interrupt the effect.  Only useable outdoors.",
+  "school": "Nature",
+  "level": 58,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   339,
+   1062,
+   5195,
+   5196,
+   9852,
+   9853
+  ]
+ },
+ {
+  "id": 18658,
+  "name": "Hibernate",
+  "rank": "Rank 3",
+  "desc": "Forces the enemy target to sleep for up to $d.  Any damage will awaken the target.  Only one target can be forced to hibernate at a time.  Only works on Beasts and Dragonkin.",
+  "school": "Nature",
+  "level": 58,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2637,
+   18657,
+   18658
+  ]
+ },
+ {
+  "id": 9881,
+  "name": "Maul",
+  "rank": "Rank 7",
+  "desc": "Increases the druid's next attack by $s1 damage.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   6807,
+   6808,
+   6809,
+   8972,
+   9745,
+   9880,
+   9881
+  ]
+ },
+ {
+  "id": 9835,
+  "name": "Moonfire",
+  "rank": "Rank 10",
+  "desc": "Burns the enemy for $s2 Arcane damage and then an additional $o1 Arcane damage over $d.",
+  "school": "Arcane",
+  "level": 58,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 10,
+  "all_ids": [
+   8921,
+   8924,
+   8925,
+   8926,
+   8927,
+   8928,
+   8929,
+   9833,
+   9834,
+   9835
+  ]
+ },
+ {
+  "id": 17329,
+  "name": "Nature's Grasp",
+  "rank": "Rank 6",
+  "desc": "While active, any time an enemy strikes the caster they have a $h% chance to become afflicted by Entangling Roots (Rank 6).  Only useable outdoors.  $n charge.  Lasts $d.",
+  "school": "Nature",
+  "level": 58,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   16689,
+   16810,
+   16811,
+   16812,
+   16813,
+   17329
+  ]
+ },
+ {
+  "id": 9867,
+  "name": "Ravage",
+  "rank": "Rank 4",
+  "desc": "Ravage the target, causing $s2% damage plus 343 to the target.  Must be prowling and behind the target.  Awards $s3 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   6785,
+   6787,
+   9866,
+   9867
+  ]
+ },
+ {
+  "id": 31018,
+  "name": "Ferocious Bite",
+  "rank": "Rank 5",
+  "desc": "Finishing move that causes damage per combo point and converts each extra point of energy into $f1 additional damage.  Damage is increased by your Attack Power.\r\n   1 point  : 199-259 damage\r\n   2 points: 346-406 damage\r\n   3 points: 493-553 damage\r\n   4 points: 640-700 damage\r\n   5 points: 787-847 damage",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   22568,
+   22827,
+   22828,
+   22829,
+   31018
+  ]
+ },
+ {
+  "id": 21850,
+  "name": "Gift of the Wild",
+  "rank": "Rank 2",
+  "desc": "Gives the Gift of the Wild to the target's party, increasing armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   21849,
+   21850
+  ]
+ },
+ {
+  "id": 25297,
+  "name": "Healing Touch",
+  "rank": "Rank 11",
+  "desc": "Heals a friendly target for $s1.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 11,
+  "all_ids": [
+   5185,
+   5186,
+   5187,
+   5188,
+   5189,
+   6778,
+   8903,
+   9758,
+   9888,
+   9889,
+   25297
+  ]
+ },
+ {
+  "id": 17402,
+  "name": "Hurricane",
+  "rank": "Rank 3",
+  "desc": "Creates a violent storm in the target area causing $s1 Nature damage to enemies every $t1 sec, and increasing the time between attacks by $s2%.  Lasts $d.  Druid must channel to maintain the spell.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   16914,
+   17401,
+   17402
+  ]
+ },
+ {
+  "id": 24977,
+  "name": "Insect Swarm",
+  "rank": "Rank 5",
+  "desc": "The enemy target is swarmed by insects, decreasing their chance to hit by $s2% and causing $o1 Nature damage over $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   5570,
+   24974,
+   24975,
+   24976,
+   24977
+  ]
+ },
+ {
+  "id": 9885,
+  "name": "Mark of the Wild",
+  "rank": "Rank 7",
+  "desc": "Increases the friendly target's armor by $s1, all attributes by $s2 and all resistances by $s3 for $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   1126,
+   5232,
+   5234,
+   6756,
+   8907,
+   9884,
+   9885
+  ]
+ },
+ {
+  "id": 9913,
+  "name": "Prowl",
+  "rank": "Rank 3",
+  "desc": "Allows the Druid to prowl around, but reduces your movement speed by $s2%.  Lasts until cancelled.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   5215,
+   6783,
+   9913
+  ]
+ },
+ {
+  "id": 20748,
+  "name": "Rebirth",
+  "rank": "Rank 5",
+  "desc": "Returns the spirit to the body, restoring a dead target to life with $s1 health and $q mana.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   20484,
+   20739,
+   20742,
+   20747,
+   20748
+  ]
+ },
+ {
+  "id": 9858,
+  "name": "Regrowth",
+  "rank": "Rank 9",
+  "desc": "Heals a friendly target for $s1 and another $o2 over $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   8936,
+   8938,
+   8939,
+   8940,
+   8941,
+   9750,
+   9856,
+   9857,
+   9858
+  ]
+ },
+ {
+  "id": 25299,
+  "name": "Rejuvenation",
+  "rank": "Rank 11",
+  "desc": "Heals the target for $o1 over $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 11,
+  "all_ids": [
+   774,
+   1058,
+   1430,
+   2090,
+   2091,
+   3627,
+   8910,
+   9839,
+   9840,
+   9841,
+   25299
+  ]
+ },
+ {
+  "id": 9896,
+  "name": "Rip",
+  "rank": "Rank 6",
+  "desc": "Finishing move that causes damage over time.  Damage increases per combo point and by your Attack Power:\r\n   1 point  : ${$<ticks>*$<mult>*($m1+$b1)} damage over $d.\r\n   2 points: ${$<ticks>*$<mult>*($m1+2*$b1)} damage over $d.\r\n   3 points: ${$<ticks>*$<mult>*($m1+3*$b1)} damage over $d.\r\n   4 points: ${$<ticks>*$<mult>*($m1+4*$b1)} damage over $d.\r\n   5 points: ${$<ticks>*$<mult>*($m1+5*$b1)} damage over $d.\r\n",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   1079,
+   9492,
+   9493,
+   9752,
+   9894,
+   9896
+  ]
+ },
+ {
+  "id": 25298,
+  "name": "Starfire",
+  "rank": "Rank 7",
+  "desc": "Causes $s1 Arcane damage to the target.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Balance",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   2912,
+   8949,
+   8950,
+   8951,
+   9875,
+   9876,
+   25298
+  ]
+ },
+ {
+  "id": 9846,
+  "name": "Tiger's Fury",
+  "rank": "Rank 4",
+  "desc": "Increases damage done by $s1 for $d.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Feral Combat",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   5217,
+   6793,
+   9845,
+   9846
+  ]
+ },
+ {
+  "id": 9863,
+  "name": "Tranquility",
+  "rank": "Rank 4",
+  "desc": "Regenerates all nearby group members for $?$p456322[${$m1*2}][$s1] every $t1 seconds for $d.  Druid must channel to maintain the spell.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Druid"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   740,
+   8918,
+   9862,
+   9863
+  ]
+ },
+ {
+  "id": 75,
+  "name": "Auto Shot",
+  "rank": "",
+  "desc": "Automatically shoots the target until cancelled.",
+  "school": "Physical",
+  "level": 1,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   75
+  ]
+ },
+ {
+  "id": 25077,
+  "name": "Cobra Reflexes",
+  "rank": "Rank 1",
+  "desc": "Increases attack speed by $25076s1%, but decreases damage.",
+  "school": "Physical",
+  "level": 1,
+  "skillline": "Beast Training",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   25077
+  ]
+ },
+ {
+  "id": 1494,
+  "name": "Track Beasts",
+  "rank": "",
+  "desc": "Shows the location of all nearby beasts on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 1,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1494
+  ]
+ },
+ {
+  "id": 13163,
+  "name": "Aspect of the Monkey",
+  "rank": "",
+  "desc": "The hunter takes on the aspects of a monkey, increasing chance to dodge by $s1%.  Only one Aspect can be active at a time.",
+  "school": "Nature",
+  "level": 4,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   13163
+  ]
+ },
+ {
+  "id": 5116,
+  "name": "Concussive Shot",
+  "rank": "",
+  "desc": "Dazes the target, slowing movement speed by $s1% for $d.",
+  "school": "Arcane",
+  "level": 8,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5116
+  ]
+ },
+ {
+  "id": 5149,
+  "name": "Beast Training",
+  "rank": "",
+  "desc": "Lets the Hunter train his pet with various abilities that he has learned.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Beast Training",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5149
+  ]
+ },
+ {
+  "id": 883,
+  "name": "Call Pet",
+  "rank": "",
+  "desc": "Summons your pet to you.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   883
+  ]
+ },
+ {
+  "id": 2641,
+  "name": "Dismiss Pet",
+  "rank": "",
+  "desc": "Dismiss your pet.  Dismissing your pet will reduce its happiness by $/1000;s1.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2641
+  ]
+ },
+ {
+  "id": 6991,
+  "name": "Feed Pet",
+  "rank": "",
+  "desc": "Feed your pet the selected item.  Feeding your pet increases happiness.  Using food close to the pet's level will have a better result.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6991
+  ]
+ },
+ {
+  "id": 982,
+  "name": "Revive Pet",
+  "rank": "",
+  "desc": "Revive your pet, returning it to life with $s1% of its health.",
+  "school": "Nature",
+  "level": 10,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   982
+  ]
+ },
+ {
+  "id": 1515,
+  "name": "Tame Beast",
+  "rank": "",
+  "desc": "Begins taming a beast to be your companion.  Your armor is reduced by $s3% while you focus on taming the beast for $d.  If you lose the beast's attention for any reason, the taming process will fail.  Once tamed, the beast will be very unhappy and disloyal.  Try feeding the pet immediately to make it happy.",
+  "school": "Nature",
+  "level": 10,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1515
+  ]
+ },
+ {
+  "id": 19883,
+  "name": "Track Humanoids",
+  "rank": "",
+  "desc": "Shows the location of all nearby humanoids on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19883
+  ]
+ },
+ {
+  "id": 6197,
+  "name": "Eagle Eye",
+  "rank": "",
+  "desc": "Zooms in the hunter's vision.  Only usable outdoors.  Lasts $d.",
+  "school": "Arcane",
+  "level": 14,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6197
+  ]
+ },
+ {
+  "id": 1002,
+  "name": "Eyes of the Beast",
+  "rank": "",
+  "desc": "Take direct control of your pet and see through its eyes for $d.",
+  "school": "Nature",
+  "level": 14,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1002
+  ]
+ },
+ {
+  "id": 19884,
+  "name": "Track Undead",
+  "rank": "",
+  "desc": "Shows the location of all nearby undead on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 18,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19884
+  ]
+ },
+ {
+  "id": 5118,
+  "name": "Aspect of the Cheetah",
+  "rank": "",
+  "desc": "The hunter takes on the aspects of a cheetah, increasing movement speed by $s1%.  If the hunter takes damage, $ghe:she; will be dazed for $15571d.  Only one Aspect can be active at a time.",
+  "school": "Nature",
+  "level": 20,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5118
+  ]
+ },
+ {
+  "id": 1462,
+  "name": "Beast Lore",
+  "rank": "",
+  "desc": "Gather information about the target beast.  The tooltip will display damage, health, armor, any special resistances, and diet.",
+  "school": "Nature",
+  "level": 24,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1462
+  ]
+ },
+ {
+  "id": 19885,
+  "name": "Track Hidden",
+  "rank": "",
+  "desc": "Increases stealth detection and shows hidden units within detection range on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 24,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19885
+  ]
+ },
+ {
+  "id": 3045,
+  "name": "Rapid Fire",
+  "rank": "",
+  "desc": "Increases ranged attack speed by $s1% $?a415817[and melee attack speed by $s2%][] for $d.",
+  "school": "Arcane",
+  "level": 26,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3045
+  ]
+ },
+ {
+  "id": 19880,
+  "name": "Track Elementals",
+  "rank": "",
+  "desc": "Shows the location of all nearby elementals on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 26,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19880
+  ]
+ },
+ {
+  "id": 13809,
+  "name": "Frost Trap",
+  "rank": "",
+  "desc": "Place a frost trap that creates an ice slick around itself for $13810d when the first enemy approaches it.  All enemies within $13810a1 yards will be slowed by $14207s1% while in the area of effect.  Trap will exist for $d.  Traps can only be placed when out of combat.  Only one trap can be active at a time.",
+  "school": "Frost",
+  "level": 28,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   13809
+  ]
+ },
+ {
+  "id": 13161,
+  "name": "Aspect of the Beast",
+  "rank": "",
+  "desc": "The hunter takes on the aspects of a beast, becoming untrackable.  Only one Aspect can be active at a time.",
+  "school": "Nature",
+  "level": 30,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   13161
+  ]
+ },
+ {
+  "id": 5384,
+  "name": "Feign Death",
+  "rank": "",
+  "desc": "Feign death which may trick enemies into ignoring you.  Lasts up to $d.",
+  "school": "Physical",
+  "level": 30,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5384
+  ]
+ },
+ {
+  "id": 1543,
+  "name": "Flare",
+  "rank": "",
+  "desc": "Exposes all hidden and invisible enemies within $a1 yards of the targeted area for $d.",
+  "school": "Arcane",
+  "level": 32,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1543
+  ]
+ },
+ {
+  "id": 19878,
+  "name": "Track Demons",
+  "rank": "",
+  "desc": "Shows the location of all nearby demons on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 32,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19878
+  ]
+ },
+ {
+  "id": 13159,
+  "name": "Aspect of the Pack",
+  "rank": "",
+  "desc": "The hunter and group members within $a1 yards take on the aspects of a pack of cheetahs, increasing movement speed by $s1%.  If a pack member takes damage, they will be dazed for $15571d.  Only one Aspect can be active at a time.",
+  "school": "Nature",
+  "level": 40,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   13159
+  ]
+ },
+ {
+  "id": 19882,
+  "name": "Track Giants",
+  "rank": "",
+  "desc": "Shows the location of all nearby giants on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 40,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19882
+  ]
+ },
+ {
+  "id": 14327,
+  "name": "Scare Beast",
+  "rank": "Rank 3",
+  "desc": "Scares a beast, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only one beast can be feared at a time.",
+  "school": "Nature",
+  "level": 46,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1513,
+   14326,
+   14327
+  ]
+ },
+ {
+  "id": 14273,
+  "name": "Disengage",
+  "rank": "Rank 3",
+  "desc": "Attempts to disengage from the target, reducing threat.  More effective than Disengage (Rank 2).  Character exits combat mode.",
+  "school": "Physical",
+  "level": 48,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   781,
+   14272,
+   14273
+  ]
+ },
+ {
+  "id": 24455,
+  "name": "Prowl",
+  "rank": "Rank 3",
+  "desc": "Puts your pet in stealth mode, but slows its movement to $24453s2% of normal. The first attack from stealth receives a $24453s3% bonus to damage.  Lasts until cancelled.",
+  "school": "Physical",
+  "level": 50,
+  "skillline": "Beast Training",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   24451,
+   24454,
+   24455
+  ]
+ },
+ {
+  "id": 19879,
+  "name": "Track Dragonkin",
+  "rank": "",
+  "desc": "Shows the location of all nearby dragonkin on the minimap.  Only one form of tracking can be active at a time.",
+  "school": "Physical",
+  "level": 50,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19879
+  ]
+ },
+ {
+  "id": 14277,
+  "name": "Scorpid Sting",
+  "rank": "Rank 4",
+  "desc": "Stings the target, reducing Strength and Agility by $s1 for $d.  Only one Sting per Hunter can be active on any one target.",
+  "school": "Nature",
+  "level": 52,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   3043,
+   14275,
+   14276,
+   14277
+  ]
+ },
+ {
+  "id": 20910,
+  "name": "Counterattack",
+  "rank": "Rank 3",
+  "desc": "A strike that becomes active after parrying an opponent's attack.  This attack deals $s1 damage and immobilizes the target for $d.  Counterattack cannot be blocked, dodged, or parried.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   19306,
+   20909,
+   20910
+  ]
+ },
+ {
+  "id": 14317,
+  "name": "Explosive Trap",
+  "rank": "Rank 3",
+  "desc": "Place a fire trap that explodes when an enemy approaches, causing $14315s1 Fire damage and $14315o2 additional Fire damage over $14315d to all within $14315a1 yards.  Trap will exist for $d.  Traps can only be placed when out of combat.  Only one trap can be active at a time.",
+  "school": "Fire",
+  "level": 54,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   13813,
+   14316,
+   14317
+  ]
+ },
+ {
+  "id": 20190,
+  "name": "Aspect of the Wild",
+  "rank": "Rank 2",
+  "desc": "The hunter and group members within $a1 yards take on the aspect of the wild, increasing Nature resistance by $s1.  Only one Aspect can be active at a time.",
+  "school": "Nature",
+  "level": 56,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   20043,
+   20190
+  ]
+ },
+ {
+  "id": 14305,
+  "name": "Immolation Trap",
+  "rank": "Rank 5",
+  "desc": "Place a fire trap that will burn the first enemy to approach for $14301o1 Fire damage over $14301d.  Trap will exist for $d.  Traps can only be placed when out of combat.  Only one trap can be active at a time.",
+  "school": "Fire",
+  "level": 56,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   13795,
+   14302,
+   14303,
+   14304,
+   14305
+  ]
+ },
+ {
+  "id": 14266,
+  "name": "Raptor Strike",
+  "rank": "Rank 8",
+  "desc": "A strong attack that increases melee damage by $s1.",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   2973,
+   14260,
+   14261,
+   14262,
+   14263,
+   14264,
+   14265,
+   14266
+  ]
+ },
+ {
+  "id": 24589,
+  "name": "Scorpid Poison",
+  "rank": "Rank 4",
+  "desc": "Inflicts $24587o2 Nature damage over $24587d. Effect can stack up to 5 times on a single target.",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Beast Training",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   24584,
+   24588,
+   24589,
+   24641
+  ]
+ },
+ {
+  "id": 14280,
+  "name": "Viper Sting",
+  "rank": "Rank 3",
+  "desc": "Stings the target, draining $o1 mana over $d.  Only one Sting per Hunter can be active on any one target.",
+  "school": "Nature",
+  "level": 56,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   3034,
+   14279,
+   14280
+  ]
+ },
+ {
+  "id": 14325,
+  "name": "Hunter's Mark",
+  "rank": "Rank 4",
+  "desc": "Places the Hunter's Mark on the target, increasing the Ranged Attack Power of all attackers against that target by $s2.  In addition, the target of this ability can always be seen by the hunter whether it stealths or turns invisible.  The target also appears on the mini-map.  Lasts for $d.",
+  "school": "Arcane",
+  "level": 58,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1130,
+   14323,
+   14324,
+   14325
+  ]
+ },
+ {
+  "id": 14271,
+  "name": "Mongoose Bite",
+  "rank": "Rank 4",
+  "desc": "Counterattack the enemy for $s1 damage.  Can only be performed after you dodge.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1495,
+   14269,
+   14270,
+   14271
+  ]
+ },
+ {
+  "id": 14295,
+  "name": "Volley",
+  "rank": "Rank 3",
+  "desc": "Continuously fires a volley of ammo at the target area, causing $s1 Arcane damage to enemy targets within $a1 yards every second for $d.",
+  "school": "Arcane",
+  "level": 58,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1510,
+   14294,
+   14295
+  ]
+ },
+ {
+  "id": 14287,
+  "name": "Arcane Shot",
+  "rank": "Rank 8",
+  "desc": "An instant shot that causes $s1 Arcane damage.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   3044,
+   14281,
+   14282,
+   14283,
+   14284,
+   14285,
+   14286,
+   14287
+  ]
+ },
+ {
+  "id": 25296,
+  "name": "Aspect of the Hawk",
+  "rank": "Rank 7",
+  "desc": "The hunter takes on the aspects of a hawk, increasing Ranged Attack Power by $s1.  Only one Aspect can be active at a time.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   13165,
+   14318,
+   14319,
+   14320,
+   14321,
+   14322,
+   25296
+  ]
+ },
+ {
+  "id": 14296,
+  "name": "Black Arrow",
+  "rank": "Rank 2",
+  "desc": "Fires a Black Arrow into the target, slowing the target's movement speed by $s1%, causing $o2 Shadow damage and draining $o3 mana over $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   3674,
+   14296
+  ]
+ },
+ {
+  "id": 15632,
+  "name": "Distracting Shot",
+  "rank": "Rank 6",
+  "desc": "Distract the target, causing threat.  More effective than Distracting Shot (Rank 5).",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   14274,
+   15629,
+   15630,
+   15631,
+   15632,
+   20736
+  ]
+ },
+ {
+  "id": 14311,
+  "name": "Freezing Trap",
+  "rank": "Rank 3",
+  "desc": "Place a frost trap that freezes the first enemy that approaches, preventing all action for up to $14309d.  Any damage caused will break the ice.  Trap will exist for $d.  Traps can only be placed when out of combat.  Only one trap can be active at a time.",
+  "school": "Frost",
+  "level": 60,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1499,
+   14310,
+   14311
+  ]
+ },
+ {
+  "id": 25017,
+  "name": "Lightning Breath",
+  "rank": "Rank 6",
+  "desc": "Breathes lightning, instantly dealing $25012s1 Nature damage to a single target.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Beast Training",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   24845,
+   25013,
+   25014,
+   25015,
+   25016,
+   25017
+  ]
+ },
+ {
+  "id": 13544,
+  "name": "Mend Pet",
+  "rank": "Rank 7",
+  "desc": "Heals your pet $s1 health every second while you focus.  Lasts $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   136,
+   3111,
+   3661,
+   3662,
+   13542,
+   13543,
+   13544
+  ]
+ },
+ {
+  "id": 25294,
+  "name": "Multi-Shot",
+  "rank": "Rank 5",
+  "desc": "Fires several missiles, hitting $x1 targets for an additional $s1 damage.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   2643,
+   14288,
+   14289,
+   14290,
+   25294
+  ]
+ },
+ {
+  "id": 25295,
+  "name": "Serpent Sting",
+  "rank": "Rank 9",
+  "desc": "Stings the target, causing $o1 Nature damage over $d.  Only one Sting per Hunter can be active on any one target.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Marksmanship",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   1978,
+   13549,
+   13550,
+   13551,
+   13552,
+   13553,
+   13554,
+   13555,
+   25295
+  ]
+ },
+ {
+  "id": 19801,
+  "name": "Tranquilizing Shot",
+  "rank": "",
+  "desc": "Attempts to remove $s1 Frenzy effect from an enemy creature.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Beast Mastery",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19801
+  ]
+ },
+ {
+  "id": 14268,
+  "name": "Wing Clip",
+  "rank": "Rank 3",
+  "desc": "Inflicts $s2 damage and reduces the enemy target's movement speed by $s1% for $d.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2974,
+   14267,
+   14268
+  ]
+ },
+ {
+  "id": 24133,
+  "name": "Wyvern Sting",
+  "rank": "Rank 3",
+  "desc": "A stinging shot that puts the target to sleep for $d.  Any damage will cancel the effect.  When the target wakes up, the Sting causes $24135o1 Nature damage over $24135d.  Only usable out of combat.  Only one Sting per Hunter can be active on the target at a time.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Survival",
+  "classes": [
+   "Hunter"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   19386,
+   24131,
+   24132,
+   24133
+  ]
+ },
+ {
+  "id": 11958,
+  "name": "Ice Block",
+  "rank": "",
+  "desc": "You become encased in a block of ice, protecting you from all physical attacks and spells for $d, but during that time you cannot attack, move or cast spells.",
+  "school": "Frost",
+  "level": 4,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11958
+  ]
+ },
+ {
+  "id": 12486,
+  "name": "Chilled",
+  "rank": "Rank 3",
+  "desc": "Chills the target for $d.",
+  "school": "Frost",
+  "level": 10,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   12484,
+   12485,
+   12486
+  ]
+ },
+ {
+  "id": 130,
+  "name": "Slow Fall",
+  "rank": "",
+  "desc": "Slows falling speed for $d.",
+  "school": "Arcane",
+  "level": 12,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   130
+  ]
+ },
+ {
+  "id": 2855,
+  "name": "Detect Magic",
+  "rank": "",
+  "desc": "Detects beneficial magic effects on the target for $d.",
+  "school": "Arcane",
+  "level": 16,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2855
+  ]
+ },
+ {
+  "id": 475,
+  "name": "Remove Lesser Curse",
+  "rank": "",
+  "desc": "Removes $m1 Curse from a friendly target.",
+  "school": "Arcane",
+  "level": 18,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   475
+  ]
+ },
+ {
+  "id": 1953,
+  "name": "Blink",
+  "rank": "",
+  "desc": "Teleports the caster 20 yards forward, unless something is in the way.  Also frees the caster from stuns and bonds.",
+  "school": "Arcane",
+  "level": 20,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1953
+  ]
+ },
+ {
+  "id": 7301,
+  "name": "Frost Armor",
+  "rank": "Rank 3",
+  "desc": "Increases Armor by $s1.  If an enemy strikes the caster, they may have their movement slowed by $6136s1% and the time between their attacks increased by $6136s2% for $6136d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.",
+  "school": "Frost",
+  "level": 20,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   168,
+   7300,
+   7301
+  ]
+ },
+ {
+  "id": 3562,
+  "name": "Teleport: Ironforge",
+  "rank": "",
+  "desc": "Teleports the caster to Ironforge.",
+  "school": "Arcane",
+  "level": 20,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3562
+  ]
+ },
+ {
+  "id": 3567,
+  "name": "Teleport: Orgrimmar",
+  "rank": "",
+  "desc": "Teleports the caster to Orgrimmar.",
+  "school": "Arcane",
+  "level": 20,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3567
+  ]
+ },
+ {
+  "id": 3561,
+  "name": "Teleport: Stormwind",
+  "rank": "",
+  "desc": "Teleports the caster to Stormwind.",
+  "school": "Arcane",
+  "level": 20,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3561
+  ]
+ },
+ {
+  "id": 3563,
+  "name": "Teleport: Undercity",
+  "rank": "",
+  "desc": "Teleports the caster to Undercity.",
+  "school": "Arcane",
+  "level": 20,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3563
+  ]
+ },
+ {
+  "id": 2139,
+  "name": "Counterspell",
+  "rank": "",
+  "desc": "Counters the enemy's spellcast, preventing any spell from that school of magic from being cast for $d.  Generates a high amount of threat.",
+  "school": "Arcane",
+  "level": 24,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2139
+  ]
+ },
+ {
+  "id": 759,
+  "name": "Conjure Mana Agate",
+  "rank": "",
+  "desc": "Conjures a mana agate that can be used to instantly restore $5405s1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Arcane",
+  "level": 28,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   759
+  ]
+ },
+ {
+  "id": 3565,
+  "name": "Teleport: Darnassus",
+  "rank": "",
+  "desc": "Teleports the caster to Darnassus.",
+  "school": "Arcane",
+  "level": 30,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3565
+  ]
+ },
+ {
+  "id": 3566,
+  "name": "Teleport: Thunder Bluff",
+  "rank": "",
+  "desc": "Teleports the caster to Thunder Bluff.",
+  "school": "Arcane",
+  "level": 30,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3566
+  ]
+ },
+ {
+  "id": 3552,
+  "name": "Conjure Mana Jade",
+  "rank": "",
+  "desc": "Conjures a mana jade that can be used to instantly restore $10052s1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Arcane",
+  "level": 38,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   3552
+  ]
+ },
+ {
+  "id": 11129,
+  "name": "Combustion",
+  "rank": "",
+  "desc": "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by $28682s1%.  This effect lasts until you have caused $n critical strikes with Fire spells.",
+  "school": "Fire",
+  "level": 40,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11129
+  ]
+ },
+ {
+  "id": 11416,
+  "name": "Portal: Ironforge",
+  "rank": "",
+  "desc": "Creates a portal, teleporting group members that use it to Ironforge.",
+  "school": "Arcane",
+  "level": 40,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11416
+  ]
+ },
+ {
+  "id": 11417,
+  "name": "Portal: Orgrimmar",
+  "rank": "",
+  "desc": "Creates a portal, teleporting group members that use it to Orgrimmar.",
+  "school": "Arcane",
+  "level": 40,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11417
+  ]
+ },
+ {
+  "id": 10059,
+  "name": "Portal: Stormwind",
+  "rank": "",
+  "desc": "Creates a portal, teleporting group members that use it to Stormwind.",
+  "school": "Arcane",
+  "level": 40,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   10059
+  ]
+ },
+ {
+  "id": 11418,
+  "name": "Portal: Undercity",
+  "rank": "",
+  "desc": "Creates a portal, teleporting group members that use it to Undercity.",
+  "school": "Arcane",
+  "level": 40,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11418
+  ]
+ },
+ {
+  "id": 10053,
+  "name": "Conjure Mana Citrine",
+  "rank": "",
+  "desc": "Conjures a mana citrine that can be used to instantly restore $10057s1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Arcane",
+  "level": 48,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   10053
+  ]
+ },
+ {
+  "id": 11419,
+  "name": "Portal: Darnassus",
+  "rank": "",
+  "desc": "Creates a portal, teleporting group members that use it to Darnassus.",
+  "school": "Arcane",
+  "level": 50,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11419
+  ]
+ },
+ {
+  "id": 11420,
+  "name": "Portal: Thunder Bluff",
+  "rank": "",
+  "desc": "Creates a portal, teleporting group members that use it to Thunder Bluff.",
+  "school": "Arcane",
+  "level": 50,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11420
+  ]
+ },
+ {
+  "id": 10170,
+  "name": "Amplify Magic",
+  "rank": "Rank 4",
+  "desc": "Amplifies magic used against the targeted party member, increasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.",
+  "school": "Arcane",
+  "level": 54,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1008,
+   8455,
+   10169,
+   10170
+  ]
+ },
+ {
+  "id": 10202,
+  "name": "Arcane Explosion",
+  "rank": "Rank 6",
+  "desc": "Causes an explosion of arcane magic around the caster, causing $s1 Arcane damage to all targets within $a1 yards.",
+  "school": "Arcane",
+  "level": 54,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   1449,
+   8437,
+   8438,
+   8439,
+   10201,
+   10202
+  ]
+ },
+ {
+  "id": 10199,
+  "name": "Fire Blast",
+  "rank": "Rank 7",
+  "desc": "Blasts the enemy for $s1 Fire damage.",
+  "school": "Fire",
+  "level": 54,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   2136,
+   2137,
+   2138,
+   8412,
+   8413,
+   10197,
+   10199
+  ]
+ },
+ {
+  "id": 10230,
+  "name": "Frost Nova",
+  "rank": "Rank 4",
+  "desc": "Blasts enemies near the caster for ${$m1*$<frostdamage>} to ${$M1*$<frostdamage>} Frost damage and freezes them in place for up to $d.  Damage caused may interrupt the effect.",
+  "school": "Frost",
+  "level": 54,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   122,
+   865,
+   6131,
+   10230
+  ]
+ },
+ {
+  "id": 23028,
+  "name": "Arcane Brilliance",
+  "rank": "Rank 1",
+  "desc": "Infuses the target's party with brilliance, increasing their Intellect by $s1 for $d.",
+  "school": "Arcane",
+  "level": 56,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   23028
+  ]
+ },
+ {
+  "id": 10157,
+  "name": "Arcane Intellect",
+  "rank": "Rank 5",
+  "desc": "Increases the target's Intellect by $s1 for $d.",
+  "school": "Arcane",
+  "level": 56,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   1459,
+   1460,
+   1461,
+   10156,
+   10157
+  ]
+ },
+ {
+  "id": 25345,
+  "name": "Arcane Missiles",
+  "rank": "Rank 8",
+  "desc": "Launches Arcane Missiles at the enemy, causing $25346s1 Arcane damage each second for $d.",
+  "school": "Arcane",
+  "level": 56,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   5143,
+   5144,
+   5145,
+   8416,
+   8417,
+   10211,
+   10212,
+   25345
+  ]
+ },
+ {
+  "id": 10216,
+  "name": "Flamestrike",
+  "rank": "Rank 6",
+  "desc": "Calls down a pillar of fire, burning all enemies within the area for $s1 Fire damage and an additional $o2 Fire damage over $d.",
+  "school": "Fire",
+  "level": 56,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   2120,
+   2121,
+   8422,
+   8423,
+   10215,
+   10216
+  ]
+ },
+ {
+  "id": 10161,
+  "name": "Cone of Cold",
+  "rank": "Rank 5",
+  "desc": "Targets in a cone in front of the caster take ${$m2*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and are slowed by $s1% for $d.",
+  "school": "Frost",
+  "level": 58,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   120,
+   8492,
+   10159,
+   10160,
+   10161
+  ]
+ },
+ {
+  "id": 10054,
+  "name": "Conjure Mana Ruby",
+  "rank": "",
+  "desc": "Conjures a mana ruby that can be used to instantly restore $10058s1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Arcane",
+  "level": 58,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   10054
+  ]
+ },
+ {
+  "id": 13033,
+  "name": "Ice Barrier",
+  "rank": "Rank 4",
+  "desc": "Instantly shields you, absorbing $s1 damage.  Lasts $d.  While the shield holds, spells will not be interrupted.\r\n",
+  "school": "Frost",
+  "level": 58,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   11426,
+   13031,
+   13032,
+   13033
+  ]
+ },
+ {
+  "id": 22783,
+  "name": "Mage Armor",
+  "rank": "Rank 3",
+  "desc": "Increases your resistance to all magic by $s1 and allows $s2% of your mana regeneration to continue while casting.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.",
+  "school": "Arcane",
+  "level": 58,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   6117,
+   22782,
+   22783
+  ]
+ },
+ {
+  "id": 10207,
+  "name": "Scorch",
+  "rank": "Rank 7",
+  "desc": "Scorch the enemy for $s1 Fire damage.",
+  "school": "Fire",
+  "level": 58,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   2948,
+   8444,
+   8445,
+   8446,
+   10205,
+   10206,
+   10207
+  ]
+ },
+ {
+  "id": 13021,
+  "name": "Blast Wave",
+  "rank": "Rank 5",
+  "desc": "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for $s1 Fire damage, and dazing them for $d.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   11113,
+   13018,
+   13019,
+   13020,
+   13021
+  ]
+ },
+ {
+  "id": 10187,
+  "name": "Blizzard",
+  "rank": "Rank 6",
+  "desc": "Ice shards pelt the target area doing ${$m1*$d*$<frostdamage>} Frost damage over $d.",
+  "school": "Frost",
+  "level": 60,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   10,
+   6141,
+   8427,
+   10185,
+   10186,
+   10187
+  ]
+ },
+ {
+  "id": 28612,
+  "name": "Conjure Food",
+  "rank": "Rank 7",
+  "desc": "Conjures $s1 $lcinnamon roll:cinnamon rolls;, providing the mage and $ghis:her; allies with something to eat.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   587,
+   597,
+   990,
+   6129,
+   10144,
+   10145,
+   28612
+  ]
+ },
+ {
+  "id": 10140,
+  "name": "Conjure Water",
+  "rank": "Rank 7",
+  "desc": "Conjures $?s442543[${$max(20,$m1)}][$s1] $lbottle:bottles; of crystal water, providing the mage and $ghis:her; allies with something to drink.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   5504,
+   5505,
+   5506,
+   6127,
+   10138,
+   10139,
+   10140
+  ]
+ },
+ {
+  "id": 10174,
+  "name": "Dampen Magic",
+  "rank": "Rank 5",
+  "desc": "Dampens magic used against the targeted party member, decreasing damage taken from spells by up to $s1 and healing spells by up to $s2.  Lasts $d.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   604,
+   8450,
+   8451,
+   10173,
+   10174
+  ]
+ },
+ {
+  "id": 10225,
+  "name": "Fire Ward",
+  "rank": "Rank 5",
+  "desc": "Absorbs $s1 Fire damage.  Lasts $d.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   543,
+   8457,
+   8458,
+   10223,
+   10225
+  ]
+ },
+ {
+  "id": 25306,
+  "name": "Fireball",
+  "rank": "Rank 12",
+  "desc": "Hurls a fiery ball that causes $s1 Fire damage and an additional $o2 Fire damage over $d.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 12,
+  "all_ids": [
+   133,
+   143,
+   145,
+   3140,
+   8400,
+   8401,
+   8402,
+   10148,
+   10149,
+   10150,
+   10151,
+   25306
+  ]
+ },
+ {
+  "id": 28609,
+  "name": "Frost Ward",
+  "rank": "Rank 5",
+  "desc": "Absorbs $s1 Frost damage.  Lasts $d.",
+  "school": "Frost",
+  "level": 60,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   6143,
+   8461,
+   8462,
+   10177,
+   28609
+  ]
+ },
+ {
+  "id": 25304,
+  "name": "Frostbolt",
+  "rank": "Rank 11",
+  "desc": "Launches a bolt of frost at the enemy, causing ${$m2$*$<frostdamage>} to ${$M2*$<frostdamage>}  Frost damage and slowing movement speed by $s1% for $d.",
+  "school": "Frost",
+  "level": 60,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 11,
+  "all_ids": [
+   116,
+   205,
+   837,
+   7322,
+   8406,
+   8407,
+   8408,
+   10179,
+   10180,
+   10181,
+   25304
+  ]
+ },
+ {
+  "id": 10220,
+  "name": "Ice Armor",
+  "rank": "Rank 4",
+  "desc": "Increases Armor by $s1 and frost resistance by $s3.   If an enemy strikes the caster, they may have their movement slowed by $7321s1% and the time between their attacks increased by $7321s2% for $7321d.  Only one type of Armor spell can be active on the Mage at any time.  Lasts $d.",
+  "school": "Frost",
+  "level": 60,
+  "skillline": "Frost",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   7302,
+   7320,
+   10219,
+   10220
+  ]
+ },
+ {
+  "id": 10193,
+  "name": "Mana Shield",
+  "rank": "Rank 6",
+  "desc": "Absorbs $s1 physical damage, draining mana instead.  Drains $e mana per damage absorbed.  Lasts $d.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   1463,
+   8494,
+   8495,
+   10191,
+   10192,
+   10193
+  ]
+ },
+ {
+  "id": 12826,
+  "name": "Polymorph",
+  "rank": "Rank 4",
+  "desc": "Transforms the enemy into a sheep, forcing it to wander around for up to $d.  While wandering, the sheep cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   118,
+   12824,
+   12825,
+   12826,
+   28271,
+   28272
+  ]
+ },
+ {
+  "id": 28270,
+  "name": "Polymorph: Cow",
+  "rank": "",
+  "desc": "Transforms the enemy into a cow, forcing it to wander around for up to $d.  While wandering, the cow cannot attack or cast spells but will regenerate very quickly.  Any damage will transform the target back into its normal form.  Only one target can be polymorphed at a time.  Only works on Beasts, Humanoids and Critters.",
+  "school": "Arcane",
+  "level": 60,
+  "skillline": "Arcane",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   28270
+  ]
+ },
+ {
+  "id": 18809,
+  "name": "Pyroblast",
+  "rank": "Rank 8",
+  "desc": "Hurls an immense fiery boulder that causes $s1 Fire damage and an additional $o2 Fire damage over $d.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Fire",
+  "classes": [
+   "Mage"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   11366,
+   12505,
+   12522,
+   12523,
+   12524,
+   12525,
+   12526,
+   18809
+  ]
+ },
+ {
+  "id": 20271,
+  "name": "Judgement",
+  "rank": "",
+  "desc": "Unleashes the energy of a Seal spell upon an enemy.  Refer to individual Seals for Judgement effect.",
+  "school": "Holy",
+  "level": 4,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20271
+  ]
+ },
+ {
+  "id": 1152,
+  "name": "Purify",
+  "rank": "",
+  "desc": "Purifies the friendly target, removing $s1 disease effect and $s2 poison effect.",
+  "school": "Holy",
+  "level": 8,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1152
+  ]
+ },
+ {
+  "id": 25780,
+  "name": "Righteous Fury",
+  "rank": "",
+  "desc": "Increases the threat generated by your Holy attacks by $s1%.  Lasts $d.",
+  "school": "Holy",
+  "level": 16,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   25780
+  ]
+ },
+ {
+  "id": 1044,
+  "name": "Blessing of Freedom",
+  "rank": "",
+  "desc": "Places a Blessing on the friendly target, granting immunity to movement impairing effects for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 18,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1044
+  ]
+ },
+ {
+  "id": 5573,
+  "name": "Divine Protection",
+  "rank": "Rank 2",
+  "desc": "You are protected from all physical attacks and spells for $d, but during that time you cannot attack or use physical abilities yourself.  Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for $25771d.",
+  "school": "Holy",
+  "level": 18,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   498,
+   5573
+  ]
+ },
+ {
+  "id": 20217,
+  "name": "Blessing of Kings",
+  "rank": "",
+  "desc": "Places a Blessing on the friendly target, increasing total stats by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 20,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20217
+  ]
+ },
+ {
+  "id": 20066,
+  "name": "Repentance",
+  "rank": "",
+  "desc": "Puts the enemy target in a state of meditation, incapacitating them for up to $d.  Any damage caused will awaken the target.  Only works against Humanoids.",
+  "school": "Holy",
+  "level": 20,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20066
+  ]
+ },
+ {
+  "id": 5502,
+  "name": "Sense Undead",
+  "rank": "",
+  "desc": "Shows the location of all nearby undead on the minimap until cancelled.   Only one type of tracking can be used at a time.",
+  "school": "Holy",
+  "level": 20,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5502
+  ]
+ },
+ {
+  "id": 19746,
+  "name": "Concentration Aura",
+  "rank": "",
+  "desc": "Gives a $s1% chance of ignoring spell interruption when damaged to all party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 22,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19746
+  ]
+ },
+ {
+  "id": 20164,
+  "name": "Seal of Justice",
+  "rank": "",
+  "desc": "Fills the Paladin with the spirit of justice for $d, giving each melee attack a chance to stun for $20170d.  Only one Seal can be active on the Paladin at any one time.\r\n\r\nUnleashing this Seal's energy will judge an enemy for $20184d, preventing them from fleeing.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.",
+  "school": "Holy",
+  "level": 22,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20164
+  ]
+ },
+ {
+  "id": 1038,
+  "name": "Blessing of Salvation",
+  "rank": "",
+  "desc": "Places a Blessing on the party member, reducing the amount of all threat generated by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 26,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1038
+  ]
+ },
+ {
+  "id": 19752,
+  "name": "Divine Intervention",
+  "rank": "",
+  "desc": "The paladin sacrifices $ghimself:herself; to remove the targeted party member from harms way.  Enemies will stop attacking the protected party member, who will be immune to all harmful attacks but cannot take any action for $19753d.",
+  "school": "Holy",
+  "level": 30,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   19752
+  ]
+ },
+ {
+  "id": 20218,
+  "name": "Sanctity Aura",
+  "rank": "",
+  "desc": "Increases Holy damage done by party members within $a1 yards by $s1%.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 30,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20218
+  ]
+ },
+ {
+  "id": 10278,
+  "name": "Blessing of Protection",
+  "rank": "Rank 3",
+  "desc": "A targeted party member is protected from all physical attacks for $d, but during that time they cannot attack or use physical abilities.  Players may only have one Blessing on them per Paladin at any one time.  Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for $25771d.",
+  "school": "Holy",
+  "level": 38,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1022,
+   5599,
+   10278
+  ]
+ },
+ {
+  "id": 13819,
+  "name": "Summon Warhorse",
+  "rank": "Summon",
+  "desc": "Summons a warhorse, which serves as a mount.  Speed is increased by $s2%.",
+  "school": "Holy",
+  "level": 40,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   13819
+  ]
+ },
+ {
+  "id": 4987,
+  "name": "Cleanse",
+  "rank": "",
+  "desc": "Cleanses a friendly target, removing $s1 poison effect, $s2 disease effect, and $s3 magic effect.",
+  "school": "Holy",
+  "level": 42,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   4987
+  ]
+ },
+ {
+  "id": 1020,
+  "name": "Divine Shield",
+  "rank": "Rank 2",
+  "desc": "Protects the paladin from all damage and spells for $d, but $?s462814[reduces all damage you deal by 50%][increases the time between your attacks by $s2%].  Once protected, the target cannot be made invulnerable by Divine Shield, Divine Protection or Blessing of Protection again for $25771d.",
+  "school": "Holy",
+  "level": 50,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   642,
+   1020
+  ]
+ },
+ {
+  "id": 10310,
+  "name": "Lay on Hands",
+  "rank": "Rank 3",
+  "desc": "Heals a friendly target for an amount equal to the Paladin's maximum health and restores $s2 of their mana.  Drains all of the Paladin's remaining mana when used.",
+  "school": "Holy",
+  "level": 50,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   633,
+   2800,
+   10310
+  ]
+ },
+ {
+  "id": 20308,
+  "name": "Seal of the Crusader",
+  "rank": "Rank 6",
+  "desc": "Fills the Paladin with the spirit of a crusader for $d, granting $s1 melee attack power.  The Paladin also attacks $s2% faster, but deals less damage with each attack.  Only one Seal can be active on the Paladin at any one time.\r\n\r\nUnleashing this Seal's energy will judge an enemy for $20303d, increasing Holy damage taken by up to $20303s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.",
+  "school": "Holy",
+  "level": 52,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   20162,
+   20305,
+   20306,
+   20307,
+   20308,
+   21082
+  ]
+ },
+ {
+  "id": 19896,
+  "name": "Shadow Resistance Aura",
+  "rank": "Rank 3",
+  "desc": "Gives $s1 additional Shadow resistance to all party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 52,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   19876,
+   19895,
+   19896
+  ]
+ },
+ {
+  "id": 10326,
+  "name": "Turn Undead",
+  "rank": "Rank 3",
+  "desc": "The targeted undead enemy will be compelled to flee for up to $d.  Damage caused may interrupt the effect.  Only one target can be turned at a time.",
+  "school": "Nature",
+  "level": 52,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2878,
+   5627,
+   10326
+  ]
+ },
+ {
+  "id": 20729,
+  "name": "Blessing of Sacrifice",
+  "rank": "Rank 2",
+  "desc": "Places a Blessing on the party member, transfering $s1 damage taken per hit to the caster.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 54,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   6940,
+   20729
+  ]
+ },
+ {
+  "id": 10308,
+  "name": "Hammer of Justice",
+  "rank": "Rank 4",
+  "desc": "Stuns the target for $d.",
+  "school": "Holy",
+  "level": 54,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   853,
+   5588,
+   5589,
+   10308
+  ]
+ },
+ {
+  "id": 19898,
+  "name": "Frost Resistance Aura",
+  "rank": "Rank 3",
+  "desc": "Gives $s1 additional Frost resistance to all party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 56,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   19888,
+   19897,
+   19898
+  ]
+ },
+ {
+  "id": 10301,
+  "name": "Retribution Aura",
+  "rank": "Rank 5",
+  "desc": "Causes $s1 Holy damage to any creature that strikes a party member within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 56,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   7294,
+   10298,
+   10299,
+   10300,
+   10301
+  ]
+ },
+ {
+  "id": 19943,
+  "name": "Flash of Light",
+  "rank": "Rank 6",
+  "desc": "Heals a friendly target for $s1.",
+  "school": "Holy",
+  "level": 58,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   19750,
+   19939,
+   19940,
+   19941,
+   19942,
+   19943,
+   19993
+  ]
+ },
+ {
+  "id": 20293,
+  "name": "Seal of Righteousness",
+  "rank": "Rank 8",
+  "desc": "Fills the Paladin with holy spirit for $d, granting each melee attack an additional $/87;20286s3 to $/25;20286s3 Holy damage.  Slower weapons cause more Holy damage per swing.  Only one Seal can be active on the Paladin at any one time.\r\n\r\nUnleashing this Seal's energy will cause $20286s1 Holy damage to an enemy.",
+  "school": "Holy",
+  "level": 58,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   20154,
+   20287,
+   20288,
+   20289,
+   20290,
+   20291,
+   20292,
+   20293,
+   21084
+  ]
+ },
+ {
+  "id": 20357,
+  "name": "Seal of Wisdom",
+  "rank": "Rank 3",
+  "desc": "Fills the Paladin with divine wisdom for $d, giving each melee attack a chance to restore $20351s1 of the Paladin's mana.  Only one Seal can be active on the Paladin at any one time.\r\n\r\nUnleashing this Seal's energy will judge an enemy for $20355d, granting attacks and spells used against the judged enemy a chance to restore $20353s1 mana to the attacker.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.",
+  "school": "Holy",
+  "level": 58,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   20166,
+   20356,
+   20357
+  ]
+ },
+ {
+  "id": 19979,
+  "name": "Blessing of Light",
+  "rank": "Rank 3",
+  "desc": "Places a Blessing on the friendly target, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   19977,
+   19978,
+   19979
+  ]
+ },
+ {
+  "id": 25291,
+  "name": "Blessing of Might",
+  "rank": "Rank 7",
+  "desc": "Places a Blessing on the friendly target, increasing melee attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   19740,
+   19834,
+   19835,
+   19836,
+   19837,
+   19838,
+   25291
+  ]
+ },
+ {
+  "id": 25290,
+  "name": "Blessing of Wisdom",
+  "rank": "Rank 6",
+  "desc": "Places a Blessing on the friendly target, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   19742,
+   19850,
+   19852,
+   19853,
+   19854,
+   25290
+  ]
+ },
+ {
+  "id": 20924,
+  "name": "Consecration",
+  "rank": "Rank 5",
+  "desc": "Consecrates the land beneath Paladin, doing $o1 Holy damage over $d to enemies who enter the area.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   20116,
+   20922,
+   20923,
+   20924,
+   26573
+  ]
+ },
+ {
+  "id": 10293,
+  "name": "Devotion Aura",
+  "rank": "Rank 7",
+  "desc": "Gives $s1 additional armor to party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   465,
+   643,
+   1032,
+   10290,
+   10291,
+   10292,
+   10293
+  ]
+ },
+ {
+  "id": 10314,
+  "name": "Exorcism",
+  "rank": "Rank 6",
+  "desc": "Causes $s1 Holy damage to an Undead or Demon target.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   879,
+   5614,
+   5615,
+   10312,
+   10313,
+   10314
+  ]
+ },
+ {
+  "id": 19900,
+  "name": "Fire Resistance Aura",
+  "rank": "Rank 3",
+  "desc": "Gives $s1 additional Fire resistance to all party members within $a1 yards.  Players may only have one Aura on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   19891,
+   19899,
+   19900
+  ]
+ },
+ {
+  "id": 25898,
+  "name": "Greater Blessing of Kings",
+  "rank": "",
+  "desc": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Kings, increasing total stats by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   25898
+  ]
+ },
+ {
+  "id": 25890,
+  "name": "Greater Blessing of Light",
+  "rank": "Rank 1",
+  "desc": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light, increasing the effects of Holy Light spells used on the target by up to $s1 and the effect Flash of Light spells used on the target by up to $s2.  Lasts $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   25890
+  ]
+ },
+ {
+  "id": 25916,
+  "name": "Greater Blessing of Might",
+  "rank": "Rank 2",
+  "desc": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might, increasing melee attack power by $s1 for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Retribution",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   25782,
+   25916
+  ]
+ },
+ {
+  "id": 25895,
+  "name": "Greater Blessing of Salvation",
+  "rank": "",
+  "desc": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Salvation, reducing the amount of all threat generated by $s1% for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   25895
+  ]
+ },
+ {
+  "id": 25899,
+  "name": "Greater Blessing of Sanctuary",
+  "rank": "Rank 1",
+  "desc": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Sanctuary, reducing damage dealt from all sources by up to $s1 for $d.  In addition, when the target blocks a melee attack the attacker will take $s2 Holy damage.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   25899
+  ]
+ },
+ {
+  "id": 25918,
+  "name": "Greater Blessing of Wisdom",
+  "rank": "Rank 2",
+  "desc": "Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdom, restoring $s1 mana every $t1 seconds for $d.  Players may only have one Blessing on them per Paladin at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   25894,
+   25918
+  ]
+ },
+ {
+  "id": 24239,
+  "name": "Hammer of Wrath",
+  "rank": "Rank 3",
+  "desc": "Hurls a hammer that strikes an enemy for $s1 Holy damage.  Only usable on enemies that have 20% or less health.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   24239,
+   24274,
+   24275
+  ]
+ },
+ {
+  "id": 25292,
+  "name": "Holy Light",
+  "rank": "Rank 9",
+  "desc": "Heals a friendly target for $s1.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   635,
+   639,
+   647,
+   1026,
+   3472,
+   10328,
+   10329,
+   19968,
+   19980,
+   19981,
+   19982,
+   25292
+  ]
+ },
+ {
+  "id": 10318,
+  "name": "Holy Wrath",
+  "rank": "Rank 2",
+  "desc": "Sends bolts of holy power in all directions, causing $s1 Holy damage to all Undead and Demon targets within $a1 yds.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   2812,
+   10318
+  ]
+ },
+ {
+  "id": 20773,
+  "name": "Redemption",
+  "rank": "Rank 5",
+  "desc": "Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   7328,
+   10322,
+   10324,
+   20772,
+   20773
+  ]
+ },
+ {
+  "id": 20349,
+  "name": "Seal of Light",
+  "rank": "Rank 4",
+  "desc": "Fills the Paladin with divine light for $d, giving each melee attack a chance to heal the Paladin for $20340s1.  Only one Seal can be active on the Paladin at any one time.\r\n\r\nUnleashing this Seal's energy will judge an enemy for $20346d, granting melee attacks made against the judged enemy a chance of healing the attacker for $20343s1.  Your melee strikes will refresh the spell's duration.  Only one Judgement per Paladin can be active at any one time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   20165,
+   20347,
+   20348,
+   20349
+  ]
+ },
+ {
+  "id": 23214,
+  "name": "Summon Charger",
+  "rank": "Summon",
+  "desc": "Summons a Charger, which serves as a mount.  Speed is increased by $s2%.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Paladin"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   23214
+  ]
+ },
+ {
+  "id": 15286,
+  "name": "Vampiric Embrace",
+  "rank": "",
+  "desc": "Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d$?a440247[. You take $440247s8% more healing from this effect][].",
+  "school": "Shadow",
+  "level": 1,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   15286
+  ]
+ },
+ {
+  "id": 2053,
+  "name": "Lesser Heal",
+  "rank": "Rank 3",
+  "desc": "Heal your target for $s1.",
+  "school": "Holy",
+  "level": 10,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2050,
+   2052,
+   2053
+  ]
+ },
+ {
+  "id": 528,
+  "name": "Cure Disease",
+  "rank": "",
+  "desc": "Removes $s1 $ldisease:diseases; from the friendly target.",
+  "school": "Holy",
+  "level": 14,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   528
+  ]
+ },
+ {
+  "id": 6346,
+  "name": "Fear Ward",
+  "rank": "",
+  "desc": "Wards the friendly target against Fear.  The next Fear effect used against the target will fail, using up the ward.  Lasts $d.",
+  "school": "Holy",
+  "level": 20,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6346
+  ]
+ },
+ {
+  "id": 552,
+  "name": "Abolish Disease",
+  "rank": "",
+  "desc": "Attempts to cure $s2 disease effect on the target, and $10872s1 more disease effect every $t1 seconds for $d.",
+  "school": "Holy",
+  "level": 32,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   552
+  ]
+ },
+ {
+  "id": 6064,
+  "name": "Heal",
+  "rank": "Rank 4",
+  "desc": "Heal your target for $s1.",
+  "school": "Holy",
+  "level": 34,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   2054,
+   2055,
+   6063,
+   6064
+  ]
+ },
+ {
+  "id": 1706,
+  "name": "Levitate",
+  "rank": "",
+  "desc": "Allows the caster to levitate, floating a few feet above the ground.  While levitating, you will fall at a reduced speed and travel over water-like surfaces.  Any damage will cancel the effect.  Lasts $d.",
+  "school": "Holy",
+  "level": 34,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1706
+  ]
+ },
+ {
+  "id": 988,
+  "name": "Dispel Magic",
+  "rank": "Rank 2",
+  "desc": "Dispels magic on the target, removing $s1 harmful $lspell:spells; from a friend or $s1 beneficial $lspell:spells; from an enemy.",
+  "school": "Holy",
+  "level": 36,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   527,
+   988
+  ]
+ },
+ {
+  "id": 10060,
+  "name": "Power Infusion",
+  "rank": "",
+  "desc": "Infuses the target with power, increasing their spell damage and healing by $s2%.  Lasts $d.",
+  "school": "Holy",
+  "level": 40,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   10060
+  ]
+ },
+ {
+  "id": 10909,
+  "name": "Mind Vision",
+  "rank": "Rank 2",
+  "desc": "Allows the caster to see through the target's eyes for $d.  Will not work if the target is in another instance or on another continent.",
+  "school": "Shadow",
+  "level": 44,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   2096,
+   10909
+  ]
+ },
+ {
+  "id": 10953,
+  "name": "Mind Soothe",
+  "rank": "Rank 3",
+  "desc": "Soothes the target, reducing the range at which it will attack you by $s1 yards.  Only affects Humanoid targets level $v or lower.  Lasts $d.",
+  "school": "Shadow",
+  "level": 52,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   453,
+   8192,
+   10953
+  ]
+ },
+ {
+  "id": 10934,
+  "name": "Smite",
+  "rank": "Rank 8",
+  "desc": "Smite an enemy for $s1 Holy damage.",
+  "school": "Holy",
+  "level": 54,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   585,
+   591,
+   598,
+   984,
+   1004,
+   6060,
+   10933,
+   10934
+  ]
+ },
+ {
+  "id": 10917,
+  "name": "Flash Heal",
+  "rank": "Rank 7",
+  "desc": "Heals a friendly target for $s1.",
+  "school": "Holy",
+  "level": 56,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   2061,
+   9472,
+   9473,
+   9474,
+   10915,
+   10916,
+   10917
+  ]
+ },
+ {
+  "id": 10876,
+  "name": "Mana Burn",
+  "rank": "Rank 5",
+  "desc": "Drains $s1 mana from a target. For each mana drained in this way, the target takes 0.5 Shadow damage.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   8129,
+   8131,
+   10874,
+   10875,
+   10876
+  ]
+ },
+ {
+  "id": 27683,
+  "name": "Prayer of Shadow Protection",
+  "rank": "Rank 1",
+  "desc": "Power infuses the target's party, increasing their Shadow resistance by $s1 for $d.",
+  "school": "Holy",
+  "level": 56,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   27683
+  ]
+ },
+ {
+  "id": 10890,
+  "name": "Psychic Scream",
+  "rank": "Rank 4",
+  "desc": "The caster lets out a psychic scream, causing $i enemies within $a1 yards to flee for $d.  Damage caused may interrupt the effect.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   8122,
+   8124,
+   10888,
+   10890
+  ]
+ },
+ {
+  "id": 10958,
+  "name": "Shadow Protection",
+  "rank": "Rank 3",
+  "desc": "Increases the target's resistance to Shadow spells by $s1 for $d.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   976,
+   10957,
+   10958
+  ]
+ },
+ {
+  "id": 19243,
+  "name": "Desperate Prayer",
+  "rank": "Rank 7",
+  "desc": "Instantly heals the caster for $s1.",
+  "school": "Holy",
+  "level": 58,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   13908,
+   19236,
+   19238,
+   19240,
+   19241,
+   19242,
+   19243
+  ]
+ },
+ {
+  "id": 10947,
+  "name": "Mind Blast",
+  "rank": "Rank 9",
+  "desc": "Blasts the target for $s1 Shadow damage, but causes a high amount of threat.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   8092,
+   8102,
+   8103,
+   8104,
+   8105,
+   8106,
+   10945,
+   10946,
+   10947
+  ]
+ },
+ {
+  "id": 10912,
+  "name": "Mind Control",
+  "rank": "Rank 3",
+  "desc": "Controls a humanoid mind up to level $s1, but increases the time between attacks by $s3%.  Lasts up to $d.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   605,
+   10911,
+   10912
+  ]
+ },
+ {
+  "id": 20770,
+  "name": "Resurrection",
+  "rank": "Rank 5",
+  "desc": "Brings a dead player back to life with $s1 health and $q1 mana.  Cannot be cast when in combat.",
+  "school": "Holy",
+  "level": 58,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   2006,
+   2010,
+   10880,
+   10881,
+   20770
+  ]
+ },
+ {
+  "id": 10894,
+  "name": "Shadow Word: Pain",
+  "rank": "Rank 8",
+  "desc": "A word of darkness that causes $o1 Shadow damage over $d.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   589,
+   594,
+   970,
+   992,
+   2767,
+   10892,
+   10893,
+   10894
+  ]
+ },
+ {
+  "id": 19305,
+  "name": "Starshards",
+  "rank": "Rank 7",
+  "desc": "Rains starshards down on the enemy target's head, causing $o1 Arcane damage over $d.",
+  "school": "Arcane",
+  "level": 58,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   10797,
+   19296,
+   19299,
+   19302,
+   19303,
+   19304,
+   19305
+  ]
+ },
+ {
+  "id": 19280,
+  "name": "Devouring Plague",
+  "rank": "Rank 6",
+  "desc": "Afflicts the target with a disease that causes $o1 Shadow damage over $d.  Damage caused by the Devouring Plague heals the caster.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   2944,
+   19276,
+   19277,
+   19278,
+   19279,
+   19280
+  ]
+ },
+ {
+  "id": 27841,
+  "name": "Divine Spirit",
+  "rank": "Rank 4",
+  "desc": "Holy power infuses the target, increasing their Spirit by $s1 for $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   14752,
+   14818,
+   14819,
+   27841
+  ]
+ },
+ {
+  "id": 19293,
+  "name": "Elune's Grace",
+  "rank": "Rank 5",
+  "desc": "Reduces ranged damage taken by $s1 and increases chance to dodge by $s2% for $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   2651,
+   19289,
+   19291,
+   19292,
+   19293
+  ]
+ },
+ {
+  "id": 10942,
+  "name": "Fade",
+  "rank": "Rank 6",
+  "desc": "Fade out, discouraging enemies from attacking you for $d.  More effective than Fade (rank 5).",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   586,
+   9578,
+   9579,
+   9592,
+   10941,
+   10942
+  ]
+ },
+ {
+  "id": 19275,
+  "name": "Feedback",
+  "rank": "Rank 5",
+  "desc": "The priest becomes surrounded with anti-magic energy.  Any successful spell cast against the priest will burn $19270s1 of the attacker's Mana, causing 1 Shadow damage for each point of Mana burned.  Lasts $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   13896,
+   19271,
+   19273,
+   19274,
+   19275
+  ]
+ },
+ {
+  "id": 25314,
+  "name": "Greater Heal",
+  "rank": "Rank 5",
+  "desc": "A slow casting spell that heals a single target for $s1.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   2060,
+   10963,
+   10964,
+   10965,
+   25314
+  ]
+ },
+ {
+  "id": 19285,
+  "name": "Hex of Weakness",
+  "rank": "Rank 6",
+  "desc": "Weakens the target enemy, reducing damage caused by $s1 and reducing the effectiveness of any healing by $s2%.  Lasts $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   9035,
+   19281,
+   19282,
+   19283,
+   19284,
+   19285
+  ]
+ },
+ {
+  "id": 15261,
+  "name": "Holy Fire",
+  "rank": "Rank 8",
+  "desc": "Consumes the enemy in holy flames that cause $s1 Holy damage and an additional $o2 Holy damage over $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   14914,
+   15261,
+   15262,
+   15263,
+   15264,
+   15265,
+   15266,
+   15267
+  ]
+ },
+ {
+  "id": 27801,
+  "name": "Holy Nova",
+  "rank": "Rank 6",
+  "desc": "Causes an explosion of holy light around the caster, causing $s1 Holy damage to all enemy targets within $a1 yards and healing all party members within $27805a1 yards for $27805s1.  These effects cause no threat.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   15237,
+   15430,
+   15431,
+   27799,
+   27800,
+   27801
+  ]
+ },
+ {
+  "id": 10952,
+  "name": "Inner Fire",
+  "rank": "Rank 6",
+  "desc": "A burst of Holy energy fills the caster, increasing armor by $s1.  Each melee or ranged damage hit against the priest will remove one charge.  Lasts $d or until $n charges are used.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   588,
+   602,
+   1006,
+   7128,
+   10951,
+   10952
+  ]
+ },
+ {
+  "id": 27871,
+  "name": "Lightwell",
+  "rank": "Rank 3",
+  "desc": "Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore $27874o1 health over $27874d.  Being attacked cancels the effect.  Lightwell lasts for $d or 5 charges.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   724,
+   27870,
+   27871
+  ]
+ },
+ {
+  "id": 18807,
+  "name": "Mind Flay",
+  "rank": "Rank 6",
+  "desc": "Assault the target's mind with Shadow energy, causing $o1 Shadow damage over $d$?A1226557[.][ and slowing their movement speed by $s2%.]",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   15407,
+   17311,
+   17312,
+   17313,
+   17314,
+   18807
+  ]
+ },
+ {
+  "id": 10938,
+  "name": "Power Word: Fortitude",
+  "rank": "Rank 6",
+  "desc": "Power infuses the target, increasing their Stamina by $s1 for $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   1243,
+   1244,
+   1245,
+   2791,
+   10937,
+   10938
+  ]
+ },
+ {
+  "id": 10901,
+  "name": "Power Word: Shield",
+  "rank": "Rank 10",
+  "desc": "Draws on the soul of the party member to shield them, absorbing $s1 damage.  Lasts $d.  While the shield holds, spellcasting will not be interrupted by damage.  Once shielded, the target cannot be shielded again for $6788d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 10,
+  "all_ids": [
+   17,
+   592,
+   600,
+   3747,
+   6065,
+   6066,
+   10898,
+   10899,
+   10900,
+   10901
+  ]
+ },
+ {
+  "id": 21564,
+  "name": "Prayer of Fortitude",
+  "rank": "Rank 2",
+  "desc": "Power infuses the target's party, increasing their Stamina by $s1 for $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   21562,
+   21564
+  ]
+ },
+ {
+  "id": 25316,
+  "name": "Prayer of Healing",
+  "rank": "Rank 5",
+  "desc": "A powerful prayer heals party members within $a1 yards for $s1.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   596,
+   996,
+   10960,
+   10961,
+   25316
+  ]
+ },
+ {
+  "id": 27681,
+  "name": "Prayer of Spirit",
+  "rank": "Rank 1",
+  "desc": "Power infuses the target's party, increasing their Spirit by $s1 for $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   27681
+  ]
+ },
+ {
+  "id": 25315,
+  "name": "Renew",
+  "rank": "Rank 10",
+  "desc": "Heals the target of $o1 damage over $d.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Holy",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 10,
+  "all_ids": [
+   139,
+   6074,
+   6075,
+   6076,
+   6077,
+   6078,
+   10927,
+   10928,
+   10929,
+   25315
+  ]
+ },
+ {
+  "id": 10955,
+  "name": "Shackle Undead",
+  "rank": "Rank 3",
+  "desc": "Shackles the target undead enemy for up to $d.  The shackled unit is unable to move, attack or cast spells.  Any damage caused will release the target.  Only one target can be shackled at a time.",
+  "school": "Holy",
+  "level": 60,
+  "skillline": "Discipline",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   9484,
+   9485,
+   10955
+  ]
+ },
+ {
+  "id": 19312,
+  "name": "Shadowguard",
+  "rank": "Rank 6",
+  "desc": "The caster is surrounded by shadows.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $28382s1 Shadow damage.  Attackers can only be damaged once every few seconds.  This damage causes no threat.  $n charges.  Lasts $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   18137,
+   19308,
+   19309,
+   19310,
+   19311,
+   19312,
+   28377,
+   28378,
+   28379,
+   28380,
+   28381,
+   28382
+  ]
+ },
+ {
+  "id": 19266,
+  "name": "Touch of Weakness",
+  "rank": "Rank 6",
+  "desc": "The next melee attack on the caster will cause $19254s1 Shadow damage and reduce the damage caused by the attacker by $19254s2 for $19254d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Shadow Magic",
+  "classes": [
+   "Priest"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   2652,
+   19261,
+   19262,
+   19264,
+   19265,
+   19266
+  ]
+ },
+ {
+  "id": 1804,
+  "name": "Pick Lock",
+  "rank": "",
+  "desc": "Allows opening of locked chests and doors.",
+  "school": "Physical",
+  "level": 1,
+  "skillline": "Lockpicking",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1804
+  ]
+ },
+ {
+  "id": 921,
+  "name": "Pick Pocket",
+  "rank": "",
+  "desc": "Pick the target's pocket.",
+  "school": "Physical",
+  "level": 4,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   921
+  ]
+ },
+ {
+  "id": 5277,
+  "name": "Evasion",
+  "rank": "",
+  "desc": "The rogue's dodge chance will increase by $s1% for $d.",
+  "school": "Physical",
+  "level": 8,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5277
+  ]
+ },
+ {
+  "id": 2842,
+  "name": "Poisons",
+  "rank": "",
+  "desc": "You can create and mix poisons, with both found and storebought ingredients.",
+  "school": "Physical",
+  "level": 20,
+  "skillline": "Poisons",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2842
+  ]
+ },
+ {
+  "id": 1725,
+  "name": "Distract",
+  "rank": "",
+  "desc": "Throws a distraction, attracting the attention of all nearby monsters for $s1 seconds.  Does not break stealth.",
+  "school": "Physical",
+  "level": 22,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1725
+  ]
+ },
+ {
+  "id": 2836,
+  "name": "Detect Traps",
+  "rank": "Passive",
+  "desc": "Greatly increased chance to detect traps.",
+  "school": "Physical",
+  "level": 24,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2836
+  ]
+ },
+ {
+  "id": 5763,
+  "name": "Mind-numbing Poison",
+  "rank": "Rank 1",
+  "desc": "Coats a weapon with poison that lasts for 30 minutes.\r\nEach strike has a 20% chance of poisoning the enemy, increasing their casting time by $5760s1% for $5760d.  50 charges.",
+  "school": "Physical",
+  "level": 24,
+  "skillline": "Poisons",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5763
+  ]
+ },
+ {
+  "id": 1833,
+  "name": "Cheap Shot",
+  "rank": "",
+  "desc": "Stuns the target for $d.  Must be stealthed.  Awards $s2 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 26,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1833
+  ]
+ },
+ {
+  "id": 1842,
+  "name": "Disarm Trap",
+  "rank": "",
+  "desc": "Sneak up on the trap in order to disarm it.  Don't get too close or the trap will go off.",
+  "school": "Physical",
+  "level": 30,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1842
+  ]
+ },
+ {
+  "id": 2094,
+  "name": "Blind",
+  "rank": "",
+  "desc": "Blinds the target, causing it to wander disoriented for up to $d.  Any damage caused will remove the effect.",
+  "school": "Nature",
+  "level": 34,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2094
+  ]
+ },
+ {
+  "id": 8694,
+  "name": "Mind-numbing Poison II",
+  "rank": "Rank 2",
+  "desc": "Coats a weapon with poison that lasts for 30 minutes.\r\nEach strike has a 20% chance of poisoning the enemy, increasing their casting time by $8692s1% for $8692d.  75 charges.",
+  "school": "Physical",
+  "level": 38,
+  "skillline": "Poisons",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   8694
+  ]
+ },
+ {
+  "id": 1860,
+  "name": "Safe Fall",
+  "rank": "Passive",
+  "desc": "Reduces damage from falling.",
+  "school": "Physical",
+  "level": 40,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1860
+  ]
+ },
+ {
+  "id": 6774,
+  "name": "Slice and Dice",
+  "rank": "Rank 2",
+  "desc": "Finishing move that increases melee attack speed by $s2%.  Lasts longer per combo point:\r\n   1 point  : 9 seconds\r\n   2 points: 12 seconds\r\n   3 points: 15 seconds\r\n   4 points: 18 seconds\r\n   5 points: 21 seconds",
+  "school": "Physical",
+  "level": 42,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   5171,
+   6774
+  ]
+ },
+ {
+  "id": 1857,
+  "name": "Vanish",
+  "rank": "Rank 2",
+  "desc": "Allows the rogue to vanish from sight, entering an improved stealth mode for $11329d.  Also breaks movement impairing effects.  More effective than Vanish (Rank 1).",
+  "school": "Physical",
+  "level": 42,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   1856,
+   1857
+  ]
+ },
+ {
+  "id": 11297,
+  "name": "Sap",
+  "rank": "Rank 3",
+  "desc": "Incapacitates the target for up to $d.  Must be stealthed.  Only works on Humanoids that are not in combat.    Any damage caused will revive the target.  Only 1 target may be sapped at a time.",
+  "school": "Physical",
+  "level": 48,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2070,
+   6770,
+   11297
+  ]
+ },
+ {
+  "id": 8643,
+  "name": "Kidney Shot",
+  "rank": "Rank 2",
+  "desc": "Finishing move that stuns the target.  Lasts longer per combo point:\r\n   1 point  : 2 seconds\r\n   2 points: 3 seconds\r\n   3 points: 4 seconds\r\n   4 points: 5 seconds\r\n   5 points: 6 seconds",
+  "school": "Physical",
+  "level": 50,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   408,
+   8643
+  ]
+ },
+ {
+  "id": 11400,
+  "name": "Mind-numbing Poison III",
+  "rank": "Rank 3",
+  "desc": "Coats a weapon with poison that lasts for 30 minutes.\r\nEach strike has a 20% chance of poisoning the enemy, increasing their casting time by $11398s1% for $11398d.  100 charges.",
+  "school": "Physical",
+  "level": 52,
+  "skillline": "Poisons",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11400
+  ]
+ },
+ {
+  "id": 11290,
+  "name": "Garrote",
+  "rank": "Rank 6",
+  "desc": "Garrote the enemy, causing $o1 damage over $d, increased by your Attack Power.  Must be stealthed and behind the target.  Awards $s2 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   703,
+   8631,
+   8632,
+   8633,
+   11289,
+   11290
+  ]
+ },
+ {
+  "id": 11294,
+  "name": "Sinister Strike",
+  "rank": "Rank 8",
+  "desc": "An instant strike that causes $s1 damage in addition to your normal weapon damage.  Awards $s2 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   1752,
+   1757,
+   1758,
+   1759,
+   1760,
+   8621,
+   11293,
+   11294
+  ]
+ },
+ {
+  "id": 11198,
+  "name": "Expose Armor",
+  "rank": "Rank 5",
+  "desc": "Finishing move that exposes the target for $d, reducing armor per combo point:\r\n   1 point  : 340 armor\r\n   2 points: 680 armor\r\n   3 points: 1020 armor\r\n   4 points: 1360 armor\r\n   5 points: 1700 armor",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   8647,
+   8649,
+   8650,
+   11197,
+   11198
+  ]
+ },
+ {
+  "id": 11269,
+  "name": "Ambush",
+  "rank": "Rank 6",
+  "desc": "Ambush the target, causing $s2% weapon damage plus 290 to the target.  Must be stealthed and behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   8676,
+   8724,
+   8725,
+   11267,
+   11268,
+   11269
+  ]
+ },
+ {
+  "id": 17348,
+  "name": "Hemorrhage",
+  "rank": "Rank 3",
+  "desc": "An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to $s3.  Lasts $n charges or $d.  Awards $s2 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   16511,
+   17347,
+   17348
+  ]
+ },
+ {
+  "id": 1769,
+  "name": "Kick",
+  "rank": "Rank 4",
+  "desc": "A quick kick that injures a single foe for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1766,
+   1767,
+   1768,
+   1769
+  ]
+ },
+ {
+  "id": 11305,
+  "name": "Sprint",
+  "rank": "Rank 3",
+  "desc": "Increases the rogue's movement speed by $s1% for $d.  Does not break stealth.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   2983,
+   8696,
+   11305
+  ]
+ },
+ {
+  "id": 25300,
+  "name": "Backstab",
+  "rank": "Rank 9",
+  "desc": "Backstab the target, causing $s2% weapon damage plus 225 to the target.  Must be behind the target.  Requires a dagger in the main hand.  Awards $s3 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   53,
+   2589,
+   2590,
+   2591,
+   8721,
+   11279,
+   11280,
+   11281,
+   25300
+  ]
+ },
+ {
+  "id": 31016,
+  "name": "Eviscerate",
+  "rank": "Rank 9",
+  "desc": "Finishing move that causes damage per combo point, increased by Attack Power:\r\n   1 point  : 224-332 damage\r\n   2 points: 394-502 damage\r\n   3 points: 564-672 damage\r\n   4 points: 734-842 damage\r\n   5 points: 904-1012 damage",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   2098,
+   6760,
+   6761,
+   6762,
+   8623,
+   8624,
+   11299,
+   11300,
+   31016
+  ]
+ },
+ {
+  "id": 25302,
+  "name": "Feint",
+  "rank": "Rank 5",
+  "desc": "Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely to attack you.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   1966,
+   6768,
+   8637,
+   11303,
+   25302
+  ]
+ },
+ {
+  "id": 11286,
+  "name": "Gouge",
+  "rank": "Rank 5",
+  "desc": "Causes $s1 damage, incapacitating the opponent for $d, and turns off your attack.  Target must be facing you.  Any damage caused will revive the target.  Awards $s2 combo $lpoint:points;.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Combat",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   1776,
+   1777,
+   8629,
+   11285,
+   11286
+  ]
+ },
+ {
+  "id": 11275,
+  "name": "Rupture",
+  "rank": "Rank 6",
+  "desc": "Finishing move that causes damage over time, increased by your Attack Power.  Lasts longer per combo point:\r\n   1 point  : 272 damage over 8 secs\r\n   2 points: 380 damage over 10 secs\r\n   3 points: 504 damage over 12 secs\r\n   4 points: 644 damage over 14 secs\r\n   5 points: 800 damage over 16 secs",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Assassination",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   1943,
+   8639,
+   8640,
+   11273,
+   11274,
+   11275
+  ]
+ },
+ {
+  "id": 1787,
+  "name": "Stealth",
+  "rank": "Rank 4",
+  "desc": "Allows the rogue to sneak around, but reduces your speed by $s3%.  Lasts until cancelled.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Subtlety",
+  "classes": [
+   "Rogue"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1784,
+   1785,
+   1786,
+   1787
+  ]
+ },
+ {
+  "id": 2484,
+  "name": "Earthbind Totem",
+  "rank": "",
+  "desc": "Summons an Earthbind Totem with $s1 health at the feet of the caster for $d that slows the movement speed of enemies within $3600a1 yards.",
+  "school": "Nature",
+  "level": 6,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2484
+  ]
+ },
+ {
+  "id": 526,
+  "name": "Cure Poison",
+  "rank": "",
+  "desc": "Cures $s1 poison $leffect:effects; on the target.",
+  "school": "Nature",
+  "level": 16,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   526
+  ]
+ },
+ {
+  "id": 8143,
+  "name": "Tremor Totem",
+  "rank": "",
+  "desc": "Summons a Tremor Totem with $s1 health at the feet of the caster that shakes the ground around it, removing Fear, Charm and Sleep effects from party members within $8146a1 yards.  Lasts $d.",
+  "school": "Nature",
+  "level": 18,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   8143
+  ]
+ },
+ {
+  "id": 2645,
+  "name": "Ghost Wolf",
+  "rank": "",
+  "desc": "Turns the Shaman into a Ghost Wolf, increasing speed by $s2%.  Only useable outdoors.",
+  "school": "Nature",
+  "level": 20,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2645
+  ]
+ },
+ {
+  "id": 2870,
+  "name": "Cure Disease",
+  "rank": "",
+  "desc": "Cures $s1 $ldisease:diseases; on the target.",
+  "school": "Nature",
+  "level": 22,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2870
+  ]
+ },
+ {
+  "id": 8166,
+  "name": "Poison Cleansing Totem",
+  "rank": "",
+  "desc": "Summons a Poison Cleansing Totem with $s1 health at the feet of the caster that attempts to remove 1 poison effect from party members within $8168a1 yards every $8167t1 seconds.  Lasts $d.",
+  "school": "Nature",
+  "level": 22,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   8166
+  ]
+ },
+ {
+  "id": 131,
+  "name": "Water Breathing",
+  "rank": "",
+  "desc": "Allows the target to breathe underwater for $d.",
+  "school": "Nature",
+  "level": 22,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   131
+  ]
+ },
+ {
+  "id": 6196,
+  "name": "Far Sight",
+  "rank": "",
+  "desc": "Changes the caster's viewpoint to the targeted location.  Lasts $d.  Only useable outdoors.",
+  "school": "Nature",
+  "level": 26,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6196
+  ]
+ },
+ {
+  "id": 546,
+  "name": "Water Walking",
+  "rank": "",
+  "desc": "Allows the friendly target to walk across water for $d.  Any damage will cancel the effect.",
+  "school": "Nature",
+  "level": 28,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   546
+  ]
+ },
+ {
+  "id": 556,
+  "name": "Astral Recall",
+  "rank": "",
+  "desc": "Yanks the caster through the twisting nether back to $z.  Speak to an Innkeeper in a different place to change your home location.",
+  "school": "Nature",
+  "level": 30,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   556
+  ]
+ },
+ {
+  "id": 8177,
+  "name": "Grounding Totem",
+  "rank": "",
+  "desc": "Summons a Grounding Totem with $s1 health at the feet of the caster that will redirect one harmful spell cast on a nearby party member to itself every $8179t1 seconds.  Will not redirect area of effect spells.  Lasts $d.",
+  "school": "Nature",
+  "level": 30,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   8177
+  ]
+ },
+ {
+  "id": 20608,
+  "name": "Reincarnation",
+  "rank": "Passive",
+  "desc": "Allows you to resurrect yourself upon death with $21169s1% health and mana.",
+  "school": "Nature",
+  "level": 30,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20608
+  ]
+ },
+ {
+  "id": 8012,
+  "name": "Purge",
+  "rank": "Rank 2",
+  "desc": "Purges the enemy target, removing $m1 beneficial magic $leffect:effects;.",
+  "school": "Nature",
+  "level": 32,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   370,
+   8012
+  ]
+ },
+ {
+  "id": 6495,
+  "name": "Sentry Totem",
+  "rank": "",
+  "desc": "Summons an immobile Sentry Totem with $s1 health at your feet for $d that allows vision of nearby area and warns of enemies that attack it.  Right-Click on buff to switch back and forth between totem sight and shaman sight.",
+  "school": "Nature",
+  "level": 34,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6495
+  ]
+ },
+ {
+  "id": 8170,
+  "name": "Disease Cleansing Totem",
+  "rank": "",
+  "desc": "Summons a Disease Cleansing Totem with $s1 health at the feet of the caster that attempts to remove 1 disease effect from party members within $8171a1 yards every $8172t1 seconds.  Lasts $d.",
+  "school": "Nature",
+  "level": 38,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   8170
+  ]
+ },
+ {
+  "id": 11315,
+  "name": "Fire Nova Totem",
+  "rank": "Rank 5",
+  "desc": "Summons a Fire Nova Totem that has $s1 health and lasts $d.  Unless it is destroyed within $11311t1 sec., the totem inflicts $11307s1 fire damage to enemies within $11307a1 yd.",
+  "school": "Fire",
+  "level": 52,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   1535,
+   8498,
+   8499,
+   11314,
+   11315
+  ]
+ },
+ {
+  "id": 10614,
+  "name": "Windfury Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Windfury Totem with $s1 health at the feet of the caster.  The totem enchants all party members main-hand weapons with wind, if they are within $10611a1 yards.  Each hit has a 20% chance of granting the attacker $10610s2 extra $lattack:attacks; with ${$10610m1*$<mult>} extra melee attack power.  Lasts $d.",
+  "school": "Nature",
+  "level": 52,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   8512,
+   10613,
+   10614
+  ]
+ },
+ {
+  "id": 10623,
+  "name": "Chain Heal",
+  "rank": "Rank 3",
+  "desc": "Heals the friendly target for $s1, then jumps to heal additional nearby targets.  If cast on a party member, the heal will only jump to other party members.  Each jump is $?a415096[65%][50%] as effective as the previous target.  Heals $x1 total targets.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1064,
+   10622,
+   10623
+  ]
+ },
+ {
+  "id": 10479,
+  "name": "Frost Resistance Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Frost Resistance Totem with $s1 health at the feet of the caster for $d.  The totem increases party members' frost resistance by $10477s1, if within $10477a1 yards.",
+  "school": "Fire",
+  "level": 54,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   8181,
+   10478,
+   10479
+  ]
+ },
+ {
+  "id": 16316,
+  "name": "Rockbiter Weapon",
+  "rank": "Rank 7",
+  "desc": "Imbue the Shaman's weapon, increasing melee attack power by $16313s1 and allowing melee attacks to cause additional threat when using that weapon.  Lasts for 5 minutes.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   8017,
+   8018,
+   8019,
+   10399,
+   16314,
+   16315,
+   16316
+  ]
+ },
+ {
+  "id": 10408,
+  "name": "Stoneskin Totem",
+  "rank": "Rank 6",
+  "desc": "Summons a Stoneskin Totem with $s1 health at the feet of the caster.  The totem protects party members within $10405a1 yards, reducing melee damage taken by $10405s1.  Lasts $d.",
+  "school": "Nature",
+  "level": 54,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   8071,
+   8154,
+   8155,
+   10406,
+   10407,
+   10408
+  ]
+ },
+ {
+  "id": 10605,
+  "name": "Chain Lightning",
+  "rank": "Rank 4",
+  "desc": "Hurls a lightning bolt at the enemy, dealing $s1 Nature damage and then jumping to additional nearby enemies.  Each jump reduces the damage by $?a415096[20%][30%].  Affects $x1 total targets.",
+  "school": "Nature",
+  "level": 56,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   421,
+   930,
+   2860,
+   10605
+  ]
+ },
+ {
+  "id": 16342,
+  "name": "Flametongue Weapon",
+  "rank": "Rank 6",
+  "desc": "Imbue the Shaman's weapon with fire.  Each hit causes $/77;16344m1 to $/25;16344M1 additional Fire damage, based on the speed of the weapon.  Slower weapons cause more fire damage per swing.  Lasts for 5 minutes.",
+  "school": "Fire",
+  "level": 56,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   8024,
+   8027,
+   8030,
+   16339,
+   16341,
+   16342
+  ]
+ },
+ {
+  "id": 15208,
+  "name": "Lightning Bolt",
+  "rank": "Rank 10",
+  "desc": "Casts a bolt of lightning at the target for $s1 Nature damage.",
+  "school": "Nature",
+  "level": 56,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 10,
+  "all_ids": [
+   403,
+   529,
+   548,
+   915,
+   943,
+   6041,
+   10391,
+   10392,
+   15207,
+   15208
+  ]
+ },
+ {
+  "id": 10432,
+  "name": "Lightning Shield",
+  "rank": "Rank 7",
+  "desc": "The caster is surrounded by $n balls of lightning.  When a spell, melee or ranged attack hits the caster, the attacker will be struck for $26363s1 Nature damage.  This expends one lightning ball.  Only one ball will fire every few seconds.  Lasts $d.",
+  "school": "Nature",
+  "level": 56,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   324,
+   325,
+   905,
+   945,
+   8134,
+   10431,
+   10432
+  ]
+ },
+ {
+  "id": 10587,
+  "name": "Magma Totem",
+  "rank": "Rank 4",
+  "desc": "Summons a Magma Totem with $s1 health at the feet of the caster for $d that causes $10581s1 Fire damage to creatures within $10581a1 yards every $10584t1 seconds.",
+  "school": "Fire",
+  "level": 56,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   8190,
+   10585,
+   10586,
+   10587
+  ]
+ },
+ {
+  "id": 10497,
+  "name": "Mana Spring Totem",
+  "rank": "Rank 4",
+  "desc": "Summons a Mana Spring Totem with $s1 health at the feet of the caster for $d that restores $10494s1 mana every $10494t1 seconds to group members within $10494a1 yards.",
+  "school": "Frost",
+  "level": 56,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   5675,
+   10495,
+   10496,
+   10497
+  ]
+ },
+ {
+  "id": 15112,
+  "name": "Windwall Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Windwall Totem with $s1 health at the feet of the caster.  The totem protects party members within $15110a1 yards, reducing ranged damage taken by $15110s1.  Lasts $d.",
+  "school": "Nature",
+  "level": 56,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   15107,
+   15111,
+   15112
+  ]
+ },
+ {
+  "id": 10538,
+  "name": "Fire Resistance Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Fire Resistance Totem with $s1 health at the feet of the caster for $d that increases the fire resistance of party members within $10535a1 yards by $10535s1.",
+  "school": "Frost",
+  "level": 58,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   8184,
+   10537,
+   10538
+  ]
+ },
+ {
+  "id": 16387,
+  "name": "Flametongue Totem",
+  "rank": "Rank 4",
+  "desc": "Summons a Flametongue Totem with $s1 health at the feet of the caster.  The totem enchants all party members' main-hand weapons with fire if they are within $15036a1 yards.  Each hit causes ${$16389m1/77*$<mult>}.1 to ${$16389M1/25*$<mult>}.1 additional Fire damage, based on the speed of the weapon.  Slower weapons cause more fire damage per swing.  Lasts $d.",
+  "school": "Fire",
+  "level": 58,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   8227,
+   8249,
+   10526,
+   16387
+  ]
+ },
+ {
+  "id": 10473,
+  "name": "Frost Shock",
+  "rank": "Rank 4",
+  "desc": "Instantly shocks the target with frost, causing $s2 Frost damage and slowing movement speed by $s1%.  Lasts $d.",
+  "school": "Frost",
+  "level": 58,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   8056,
+   8058,
+   10472,
+   10473
+  ]
+ },
+ {
+  "id": 16356,
+  "name": "Frostbrand Weapon",
+  "rank": "Rank 5",
+  "desc": "Imbue the Shaman's weapon with frost.  Each hit has a chance of causing $16353s2 additional Frost damage and slowing the target's movement speed by $16353s1% for $16353d.  Lasts for 5 minutes.",
+  "school": "Frost",
+  "level": 58,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   8033,
+   8038,
+   10456,
+   16355,
+   16356
+  ]
+ },
+ {
+  "id": 17359,
+  "name": "Mana Tide Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Mana Tide Totem with $s1 health at the feet of the caster for ${$d-1} sec that restores $17360s1 mana every $17360t1 seconds to group members within $17360a1 yards.",
+  "school": "Frost",
+  "level": 58,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   16190,
+   17354,
+   17359
+  ]
+ },
+ {
+  "id": 10428,
+  "name": "Stoneclaw Totem",
+  "rank": "Rank 6",
+  "desc": "Summons a Stoneclaw Totem with $s1 health at the feet of the caster for $d that taunts creatures within $10424a1 yards to attack it.",
+  "school": "Nature",
+  "level": 58,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   5730,
+   6390,
+   6391,
+   6392,
+   10427,
+   10428
+  ]
+ },
+ {
+  "id": 20777,
+  "name": "Ancestral Spirit",
+  "rank": "Rank 5",
+  "desc": "Returns the spirit to the body, restoring a dead target to life with $s1 health and $q1 mana.  Cannot be cast when in combat.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   2008,
+   20609,
+   20610,
+   20776,
+   20777
+  ]
+ },
+ {
+  "id": 10414,
+  "name": "Earth Shock",
+  "rank": "Rank 7",
+  "desc": "Instantly shocks the target with concussive force, causing $s1 Nature damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.  Causes a high amount of threat.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   8042,
+   8044,
+   8045,
+   8046,
+   10412,
+   10413,
+   10414
+  ]
+ },
+ {
+  "id": 29228,
+  "name": "Flame Shock",
+  "rank": "Rank 6",
+  "desc": "Instantly sears the target with fire, causing $s1 Fire damage immediately and $o2 Fire damage over $d.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   8050,
+   8052,
+   8053,
+   10447,
+   10448,
+   29228
+  ]
+ },
+ {
+  "id": 25359,
+  "name": "Grace of Air Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Grace of Air Totem with $s1 health at the feet of the caster.  The totem increases the agility of party members within $25360a1 yards by $25360s1.  Lasts $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   8835,
+   10627,
+   25359
+  ]
+ },
+ {
+  "id": 10463,
+  "name": "Healing Stream Totem",
+  "rank": "Rank 5",
+  "desc": "Summons a Healing Stream Totem with $s1 health at the feet of the caster for $d that heals group members within $10461a1 yards for $10461s1 every $10461t1 seconds.",
+  "school": "Frost",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   5394,
+   6375,
+   6377,
+   10462,
+   10463
+  ]
+ },
+ {
+  "id": 25357,
+  "name": "Healing Wave",
+  "rank": "Rank 10",
+  "desc": "Heals a friendly target for $s1.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 10,
+  "all_ids": [
+   331,
+   332,
+   547,
+   913,
+   939,
+   959,
+   8005,
+   10395,
+   10396,
+   25357
+  ]
+ },
+ {
+  "id": 10468,
+  "name": "Lesser Healing Wave",
+  "rank": "Rank 6",
+  "desc": "Heals a friendly target for $s1.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Restoration",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   8004,
+   8008,
+   8010,
+   10466,
+   10467,
+   10468
+  ]
+ },
+ {
+  "id": 10601,
+  "name": "Nature Resistance Totem",
+  "rank": "Rank 3",
+  "desc": "Summons a Nature Resistance Totem with $s1 health at the feet of the caster for $d that increases the nature resistance of party members within $10599a1 yards by $10599s1.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   10595,
+   10600,
+   10601
+  ]
+ },
+ {
+  "id": 10438,
+  "name": "Searing Totem",
+  "rank": "Rank 6",
+  "desc": "Summons a Searing Totem with $s1 health at your feet for $d that repeatedly attacks an enemy within $10436r yards for $10436s1 Fire damage.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Elemental Combat",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   3599,
+   6363,
+   6364,
+   6365,
+   10437,
+   10438
+  ]
+ },
+ {
+  "id": 25361,
+  "name": "Strength of Earth Totem",
+  "rank": "Rank 5",
+  "desc": "Summons a Strength of Earth Totem with $s1 health at the feet of the caster.  The totem increases the strength of party members within $25362a1 yards by $25362s1.  Lasts $d.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   8075,
+   8160,
+   8161,
+   10442,
+   25361
+  ]
+ },
+ {
+  "id": 16362,
+  "name": "Windfury Weapon",
+  "rank": "Rank 4",
+  "desc": "Imbue the Shaman's weapon with wind.  Each hit has a 20% chance of granting you $16361s2 extra $lattack:attacks; with $16361s1 extra melee attack power.  Lasts for 5 minutes.",
+  "school": "Nature",
+  "level": 60,
+  "skillline": "Enhancement",
+  "classes": [
+   "Shaman"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   8232,
+   8235,
+   10486,
+   16362
+  ]
+ },
+ {
+  "id": 688,
+  "name": "Summon Imp",
+  "rank": "Summon",
+  "desc": "Summons an Imp under the command of the Warlock.",
+  "school": "Shadow",
+  "level": 1,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   688
+  ]
+ },
+ {
+  "id": 6201,
+  "name": "Create Healthstone (Minor)",
+  "rank": "",
+  "desc": "Creates a Minor Healthstone that can be used to instantly restore $6262s1 health.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 10,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6201
+  ]
+ },
+ {
+  "id": 696,
+  "name": "Demon Skin",
+  "rank": "Rank 2",
+  "desc": "Protects the caster, increasing armor by $m1 and restores $s2 Health per 5 sec. for $d.",
+  "school": "Shadow",
+  "level": 10,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   687,
+   696
+  ]
+ },
+ {
+  "id": 697,
+  "name": "Summon Voidwalker",
+  "rank": "Summon",
+  "desc": "Summons a Voidwalker under the command of the Warlock.",
+  "school": "Shadow",
+  "level": 10,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   697
+  ]
+ },
+ {
+  "id": 5697,
+  "name": "Unending Breath",
+  "rank": "",
+  "desc": "Allows the target to breathe underwater for $d.",
+  "school": "Shadow",
+  "level": 16,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5697
+  ]
+ },
+ {
+  "id": 693,
+  "name": "Create Soulstone (Minor)",
+  "rank": "",
+  "desc": "Creates a Minor Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $3026s1 health and $3026q1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 18,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   693
+  ]
+ },
+ {
+  "id": 698,
+  "name": "Ritual of Summoning",
+  "rank": "",
+  "desc": "Begins a ritual that summons the targeted group member.  Requires the caster and 2 additional party members to complete the ritual.  In order to participate, all players must be out of combat and right-click the portal and not move until the ritual is complete.",
+  "school": "Shadow",
+  "level": 20,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   698
+  ]
+ },
+ {
+  "id": 713,
+  "name": "Summon Incubus",
+  "rank": "Summon",
+  "desc": "Summons an Incubus under the command of the Warlock.",
+  "school": "Shadow",
+  "level": 20,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   713
+  ]
+ },
+ {
+  "id": 712,
+  "name": "Summon Succubus",
+  "rank": "Summon",
+  "desc": "Summons a Succubus under the command of the Warlock.",
+  "school": "Shadow",
+  "level": 20,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   712
+  ]
+ },
+ {
+  "id": 6202,
+  "name": "Create Healthstone (Lesser)",
+  "rank": "",
+  "desc": "Creates a Lesser Healthstone that can be used to instantly restore $6263s1 health.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 22,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6202
+  ]
+ },
+ {
+  "id": 126,
+  "name": "Eye of Kilrogg",
+  "rank": "Summon",
+  "desc": "Summons an Eye of Kilrogg and binds your vision to it.  The eye moves quickly but is very fragile.",
+  "school": "Shadow",
+  "level": 22,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   126
+  ]
+ },
+ {
+  "id": 5500,
+  "name": "Sense Demons",
+  "rank": "",
+  "desc": "Shows the location of all nearby demons on the minimap until cancelled.  Only one type of tracking can be used at a time.",
+  "school": "Shadow",
+  "level": 24,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5500
+  ]
+ },
+ {
+  "id": 132,
+  "name": "Detect Lesser Invisibility",
+  "rank": "",
+  "desc": "Allows the friendly target to detect lesser invisibility for $d.",
+  "school": "Shadow",
+  "level": 26,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   132
+  ]
+ },
+ {
+  "id": 6366,
+  "name": "Create Firestone (Lesser)",
+  "rank": "",
+  "desc": "Creates a Lesser Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal $17809s1 additional Fire damage.  In addition, equipping the Lesser Firestone increases the damage done by fire spells by $23480s1.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Fire",
+  "level": 28,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   6366
+  ]
+ },
+ {
+  "id": 20752,
+  "name": "Create Soulstone (Lesser)",
+  "rank": "",
+  "desc": "Creates a Lesser Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20758s1 health and $20758q1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 30,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20752
+  ]
+ },
+ {
+  "id": 691,
+  "name": "Summon Felhunter",
+  "rank": "Summon",
+  "desc": "Summons a Felhunter under the command of the Warlock.",
+  "school": "Shadow",
+  "level": 30,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   691
+  ]
+ },
+ {
+  "id": 5699,
+  "name": "Create Healthstone",
+  "rank": "",
+  "desc": "Creates a Healthstone that can be used to instantly restore $5720s1 health.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 34,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5699
+  ]
+ },
+ {
+  "id": 17951,
+  "name": "Create Firestone",
+  "rank": "",
+  "desc": "Creates a Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal $17933s1 additional Fire damage.  In addition, equipping the Firestone increases the damage done by fire spells by $23481s1.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Fire",
+  "level": 36,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   17951
+  ]
+ },
+ {
+  "id": 2362,
+  "name": "Create Spellstone",
+  "rank": "",
+  "desc": "Creates a Spellstone for the caster.  When equipped and used, the Spellstone removes all magic effects from the caster and will absorb $128s2 magic damage for $128d.  In addition, equipping the Spellstone improves your chance to get a critical strike with spells by $18384s1%.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 36,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2362
+  ]
+ },
+ {
+  "id": 1010,
+  "name": "Curse of Idiocy",
+  "rank": "Rank 1",
+  "desc": "Curse the target with idiocy, reducing Intellect and Spirit by $s1 every $t3 seconds until each is reduced by a total of $*15;s1.  Only one Curse per Warlock can be active on any one target.",
+  "school": "Shadow",
+  "level": 38,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1010
+  ]
+ },
+ {
+  "id": 2970,
+  "name": "Detect Invisibility",
+  "rank": "",
+  "desc": "Allows the friendly target to detect invisibility for $d.",
+  "school": "Shadow",
+  "level": 38,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2970
+  ]
+ },
+ {
+  "id": 20755,
+  "name": "Create Soulstone",
+  "rank": "",
+  "desc": "Creates a Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20759s1 health and $20759q1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 40,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20755
+  ]
+ },
+ {
+  "id": 5784,
+  "name": "Summon Felsteed",
+  "rank": "Summon",
+  "desc": "Summons a Felsteed, which serves as a mount for the caster.  Speed is increased by $s2%.",
+  "school": "Shadow",
+  "level": 40,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5784
+  ]
+ },
+ {
+  "id": 17952,
+  "name": "Create Firestone (Greater)",
+  "rank": "",
+  "desc": "Creates a Greater Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal $17934s1 additional Fire damage.  In addition, equipping the Greater Firestone increases the damage done by fire spells by $23482s1.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Fire",
+  "level": 46,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   17952
+  ]
+ },
+ {
+  "id": 11729,
+  "name": "Create Healthstone (Greater)",
+  "rank": "",
+  "desc": "Creates a Greater Healthstone that can be used to instantly restore $5723s1 health.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 46,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11729
+  ]
+ },
+ {
+  "id": 18647,
+  "name": "Banish",
+  "rank": "Rank 2",
+  "desc": "Banishes the enemy target, preventing all action but making it invulnerable for up to $d.  Only one target can be banished at a time.  Only works on Demons and Elementals.",
+  "school": "Shadow",
+  "level": 48,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   710,
+   18647
+  ]
+ },
+ {
+  "id": 17727,
+  "name": "Create Spellstone (Greater)",
+  "rank": "",
+  "desc": "Creates a Greater Spellstone for the caster.  When equipped and used, the Greater Spellstone removes all magic effects from the caster and will absorb $17729s2 magic damage for $17729d.  In addition, equipping the Greater Spellstone improves your chance to get a critical strike with spells by $18384s1%.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 48,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   17727
+  ]
+ },
+ {
+  "id": 20756,
+  "name": "Create Soulstone (Greater)",
+  "rank": "",
+  "desc": "Creates a Greater Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20760s1 health and $20760q1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 50,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20756
+  ]
+ },
+ {
+  "id": 11719,
+  "name": "Curse of Tongues",
+  "rank": "Rank 2",
+  "desc": "Forces the target to speak in Demonic, slowing the casting time of all spells by $s1%.  Only one Curse per Warlock can be active on any one target.  Lasts $d.",
+  "school": "Shadow",
+  "level": 50,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   1714,
+   11719
+  ]
+ },
+ {
+  "id": 11743,
+  "name": "Detect Greater Invisibility",
+  "rank": "",
+  "desc": "Allows the friendly target to detect greater invisibility for $d.",
+  "school": "Shadow",
+  "level": 50,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11743
+  ]
+ },
+ {
+  "id": 1122,
+  "name": "Inferno",
+  "rank": "Summon",
+  "desc": "Summons a meteor from the Twisting Nether, causing $22699s1 Fire damage and stunning all enemy targets in the area for $20310d.  An Infernal rises from the crater, under the command of the caster for $20882d.  Once control is lost, the Infernal must be Subjugated to maintain control.  Can only be used outdoors.",
+  "school": "Shadow",
+  "level": 50,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1122
+  ]
+ },
+ {
+  "id": 11708,
+  "name": "Curse of Weakness",
+  "rank": "Rank 6",
+  "desc": "Damage caused by the target is reduced by $s1 for $d.  Only one Curse per Warlock can be active on any one target.",
+  "school": "Shadow",
+  "level": 52,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   702,
+   1108,
+   6205,
+   7646,
+   11707,
+   11708
+  ]
+ },
+ {
+  "id": 11675,
+  "name": "Drain Soul",
+  "rank": "Rank 4",
+  "desc": "Drains the soul of the target, causing $o2 Shadow damage over $d.  If the target dies while being drained, and yields experience or honor, the caster gains a Soul Shard.  Soul Shards are required for other spells.",
+  "school": "Shadow",
+  "level": 52,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1120,
+   8288,
+   8289,
+   11675
+  ]
+ },
+ {
+  "id": 11700,
+  "name": "Drain Life",
+  "rank": "Rank 6",
+  "desc": "Transfers $s1 health every second from the target to the caster.  Lasts $d.",
+  "school": "Shadow",
+  "level": 54,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   689,
+   699,
+   709,
+   7651,
+   11699,
+   11700
+  ]
+ },
+ {
+  "id": 11704,
+  "name": "Drain Mana",
+  "rank": "Rank 4",
+  "desc": "Transfers $s1 Mana every $t1 sec from the target to the caster.  Lasts $d.",
+  "school": "Shadow",
+  "level": 54,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   5138,
+   6226,
+   11703,
+   11704
+  ]
+ },
+ {
+  "id": 11684,
+  "name": "Hellfire",
+  "rank": "Rank 3",
+  "desc": "Ignites the area surrounding the caster, causing $s2 Fire damage to $ghimself:herself; and $11682s1 Fire damage to all nearby enemies every $t2 sec.  Lasts $d.",
+  "school": "Fire",
+  "level": 54,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1949,
+   11683,
+   11684
+  ]
+ },
+ {
+  "id": 17928,
+  "name": "Howl of Terror",
+  "rank": "Rank 2",
+  "desc": "Howl, causing $i enemies within $a1 yds to flee in terror for $d.  Damage caused may interrupt the effect.",
+  "school": "Shadow",
+  "level": 54,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   5484,
+   17928
+  ]
+ },
+ {
+  "id": 17953,
+  "name": "Create Firestone (Major)",
+  "rank": "",
+  "desc": "Creates a Major Firestone which can be equipped in the off hand.  When equipped, enchants the main hand weapon with fire, granting each attack a chance to deal $17935s1 additional Fire damage.  In addition, equipping the Major Firestone increases the damage done by fire spells by $23483s1.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Fire",
+  "level": 56,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   17953
+  ]
+ },
+ {
+  "id": 11717,
+  "name": "Curse of Recklessness",
+  "rank": "Rank 4",
+  "desc": "Curses the target with recklessness, increasing melee attack power by $s1 but reducing armor by $s2 for $d.  Cursed enemies will not flee and will ignore Fear and Horror effects.  Only one Curse per Warlock can be active on any one target.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   704,
+   7658,
+   7659,
+   11717
+  ]
+ },
+ {
+  "id": 17937,
+  "name": "Curse of Shadow",
+  "rank": "Rank 2",
+  "desc": "Curses the target for $d, reducing Shadow and Arcane resistances by $s1 and increasing Shadow and Arcane damage taken by $s2%.  Only one Curse per Warlock can be active on any one target.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   17862,
+   17937
+  ]
+ },
+ {
+  "id": 6215,
+  "name": "Fear",
+  "rank": "Rank 3",
+  "desc": "Strikes fear in the enemy, causing it to run in fear for up to $d.  Damage caused may interrupt the effect.  Only 1 target can be feared at a time.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   5782,
+   6213,
+   6215
+  ]
+ },
+ {
+  "id": 11689,
+  "name": "Life Tap",
+  "rank": "Rank 6",
+  "desc": "Converts $s1 health into $s1 mana$?s435395[ for you and your Demon pet][]",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   1454,
+   1455,
+   1456,
+   11687,
+   11688,
+   11689
+  ]
+ },
+ {
+  "id": 18871,
+  "name": "Shadowburn",
+  "rank": "Rank 6",
+  "desc": "Instantly blasts the target for $s2 Shadow damage.  If the target dies within $d of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.",
+  "school": "Shadow",
+  "level": 56,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   17877,
+   18867,
+   18868,
+   18869,
+   18870,
+   18871
+  ]
+ },
+ {
+  "id": 17924,
+  "name": "Soul Fire",
+  "rank": "Rank 2",
+  "desc": "Burn the enemy's soul, causing $s1 Fire damage.",
+  "school": "Fire",
+  "level": 56,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   6353,
+   17924
+  ]
+ },
+ {
+  "id": 11730,
+  "name": "Create Healthstone (Major)",
+  "rank": "",
+  "desc": "Creates a Major Healthstone that can be used to instantly restore $11732s1 health.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   11730
+  ]
+ },
+ {
+  "id": 11713,
+  "name": "Curse of Agony",
+  "rank": "Rank 6",
+  "desc": "Curses the target with agony, causing $o1 Shadow damage over $d.  This damage is dealt slowly at first, and builds up as the Curse reaches its full duration.  Only one Curse per Warlock can be active on any one target.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   980,
+   6217,
+   11711,
+   11712,
+   11713
+  ]
+ },
+ {
+  "id": 17926,
+  "name": "Death Coil",
+  "rank": "Rank 3",
+  "desc": "Causes the enemy target to run in horror for $d and causes $s1 Shadow damage.  The caster gains 100% of the damage caused in health.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   6789,
+   17925,
+   17926
+  ]
+ },
+ {
+  "id": 11678,
+  "name": "Rain of Fire",
+  "rank": "Rank 4",
+  "desc": "Calls down a fiery rain to burn enemies in the area of effect for $o1 Fire damage over $d.",
+  "school": "Fire",
+  "level": 58,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   5740,
+   6219,
+   11677,
+   11678
+  ]
+ },
+ {
+  "id": 17923,
+  "name": "Searing Pain",
+  "rank": "Rank 6",
+  "desc": "Inflict searing pain on the enemy target, causing $s1 Fire damage.  Causes a high amount of threat.",
+  "school": "Fire",
+  "level": 58,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   5676,
+   17919,
+   17920,
+   17921,
+   17922,
+   17923
+  ]
+ },
+ {
+  "id": 18881,
+  "name": "Siphon Life",
+  "rank": "Rank 4",
+  "desc": "Transfers $s1 health from the target to the caster every $t1 sec.  Lasts $d.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   18265,
+   18879,
+   18880,
+   18881
+  ]
+ },
+ {
+  "id": 11726,
+  "name": "Subjugate Demon",
+  "rank": "Rank 3",
+  "desc": "Subjugates the target demon, up to level $m1, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by $s2% and its casting speed is slowed by $s3%.  Lasts up to $d.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.",
+  "school": "Shadow",
+  "level": 58,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1098,
+   11725,
+   11726
+  ]
+ },
+ {
+  "id": 18932,
+  "name": "Conflagrate",
+  "rank": "Rank 4",
+  "desc": "Ignites a target that is already afflicted by Immolate, dealing $s1 Fire damage and consuming the Immolate spell.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   17962,
+   18930,
+   18931,
+   18932
+  ]
+ },
+ {
+  "id": 25311,
+  "name": "Corruption",
+  "rank": "Rank 7",
+  "desc": "Corrupts the target, causing $o1 Shadow damage over $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   172,
+   6222,
+   6223,
+   7648,
+   11671,
+   11672,
+   25311
+  ]
+ },
+ {
+  "id": 20757,
+  "name": "Create Soulstone (Major)",
+  "rank": "",
+  "desc": "Creates a Major Soulstone.  The Soulstone can be used to store one target's soul.  If the target dies while their soul is stored, they will be able to resurrect with $20761s1 health and $20761q1 mana.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20757
+  ]
+ },
+ {
+  "id": 17728,
+  "name": "Create Spellstone (Major)",
+  "rank": "",
+  "desc": "Creates a Major Spellstone for the caster.  When equipped and used, the Major Spellstone removes all magic effects from the caster and will absorb $17730s2 magic damage for $17730d.  In addition, equipping the Major Spellstone improves your chance to get a critical strike with spells by $18384s1%.\r\n\r\nConjured items disappear if logged out for more than 15 minutes.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   17728
+  ]
+ },
+ {
+  "id": 603,
+  "name": "Curse of Doom",
+  "rank": "",
+  "desc": "Curses the target with impending doom, causing $s1 Shadow damage after $d.  If the target dies from this damage, there is a chance that a Doomguard will be summoned.  Cannot be cast on players.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   603
+  ]
+ },
+ {
+  "id": 11722,
+  "name": "Curse of the Elements",
+  "rank": "Rank 3",
+  "desc": "Curses the target for $d, reducing Fire and Frost resistances by $s1 and increasing Fire and Frost damage taken by $s2%.  Only one Curse per Warlock can be active on any one target.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1490,
+   11721,
+   11722
+  ]
+ },
+ {
+  "id": 18938,
+  "name": "Dark Pact",
+  "rank": "Rank 3",
+  "desc": "Drains $s1 of your pet's Mana, returning 100% to you.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Affliction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   18220,
+   18937,
+   18938
+  ]
+ },
+ {
+  "id": 11735,
+  "name": "Demon Armor",
+  "rank": "Rank 5",
+  "desc": "Protects the caster, increasing armor by $s1, Shadow resistance by $s2 and restores $s3 health every 5 sec. for $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   706,
+   1086,
+   11733,
+   11734,
+   11735
+  ]
+ },
+ {
+  "id": 11695,
+  "name": "Health Funnel",
+  "rank": "Rank 7",
+  "desc": "Gives $s1 health to the caster's pet every second for $d as long as the caster channels.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   755,
+   3698,
+   3699,
+   3700,
+   11693,
+   11694,
+   11695
+  ]
+ },
+ {
+  "id": 25309,
+  "name": "Immolate",
+  "rank": "Rank 8",
+  "desc": "Burns the enemy for ${$m2*$<mult>} Fire damage and then an additional $o1 Fire damage over $d.",
+  "school": "Fire",
+  "level": 60,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 8,
+  "all_ids": [
+   348,
+   707,
+   1094,
+   2941,
+   11665,
+   11667,
+   11668,
+   25309
+  ]
+ },
+ {
+  "id": 18540,
+  "name": "Ritual of Doom",
+  "rank": "",
+  "desc": "Begins a ritual that sacrifices a random participant to summon a doomguard.  The doomguard must be immediately subjugated or it will attack the ritual participants.  Requires the caster and 4 additional party members to complete the ritual.  In order to participate, all players must right-click the portal and not move until the ritual is complete.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   18540
+  ]
+ },
+ {
+  "id": 25307,
+  "name": "Shadow Bolt",
+  "rank": "Rank 10",
+  "desc": "Sends a shadowy bolt at the enemy, causing $s1 Shadow damage.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Destruction",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 10,
+  "all_ids": [
+   686,
+   695,
+   705,
+   1088,
+   1106,
+   7641,
+   11659,
+   11660,
+   11661,
+   25307
+  ]
+ },
+ {
+  "id": 28610,
+  "name": "Shadow Ward",
+  "rank": "Rank 4",
+  "desc": "Absorbs $s1 shadow damage.  Lasts $d.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   6229,
+   11739,
+   11740,
+   28610
+  ]
+ },
+ {
+  "id": 23161,
+  "name": "Summon Dreadsteed",
+  "rank": "Summon",
+  "desc": "Summons a Dreadsteed, which serves as a mount for the caster.  Speed is increased by $s2%.",
+  "school": "Shadow",
+  "level": 60,
+  "skillline": "Demonology",
+  "classes": [
+   "Warlock"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   23161
+  ]
+ },
+ {
+  "id": 2457,
+  "name": "Battle Stance",
+  "rank": "",
+  "desc": "A balanced combat stance.",
+  "school": "Physical",
+  "level": 1,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2457
+  ]
+ },
+ {
+  "id": 2687,
+  "name": "Bloodrage",
+  "rank": "",
+  "desc": "Generates $/10;s1 rage at the cost of health, and then generates an additional $/10;29131o1 rage over $29131d.  The warrior is considered in combat for the duration.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2687
+  ]
+ },
+ {
+  "id": 71,
+  "name": "Defensive Stance",
+  "rank": "",
+  "desc": "A defensive combat stance.  Decreases damage taken by $7376s1% and damage caused by $7376s2%.  Increases threat generated.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   71
+  ]
+ },
+ {
+  "id": 355,
+  "name": "Taunt",
+  "rank": "",
+  "desc": "Taunts the target to attack you, but has no effect if the target is already attacking you.",
+  "school": "Physical",
+  "level": 10,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   355
+  ]
+ },
+ {
+  "id": 2565,
+  "name": "Shield Block",
+  "rank": "",
+  "desc": "Increases chance to block by $s1% for $d, but will only block $n $lattack:attacks;.",
+  "school": "Physical",
+  "level": 16,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2565
+  ]
+ },
+ {
+  "id": 676,
+  "name": "Disarm",
+  "rank": "",
+  "desc": "Disarm the enemy's weapon for $d.",
+  "school": "Physical",
+  "level": 18,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   676
+  ]
+ },
+ {
+  "id": 20230,
+  "name": "Retaliation",
+  "rank": "",
+  "desc": "Instantly counterattack any enemy that strikes you in melee for $d.  Melee attacks made from behind cannot be counterattacked.  A maximum of $n attacks will cause retaliation.",
+  "school": "Physical",
+  "level": 20,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   20230
+  ]
+ },
+ {
+  "id": 5246,
+  "name": "Intimidating Shout",
+  "rank": "",
+  "desc": "The warrior shouts, causing the targeted enemy to cower in fear.  Up to $i total nearby enemies will flee in fear.  Lasts $d.",
+  "school": "Physical",
+  "level": 22,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   5246
+  ]
+ },
+ {
+  "id": 1161,
+  "name": "Challenging Shout",
+  "rank": "",
+  "desc": "Forces all nearby enemies to focus attacks on you for $d.",
+  "school": "Physical",
+  "level": 26,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1161
+  ]
+ },
+ {
+  "id": 871,
+  "name": "Shield Wall",
+  "rank": "",
+  "desc": "Reduces the damage taken from melee attacks, ranged attacks and spells by $s1% for $d.",
+  "school": "Physical",
+  "level": 28,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   871
+  ]
+ },
+ {
+  "id": 2458,
+  "name": "Berserker Stance",
+  "rank": "",
+  "desc": "An aggressive stance.  Critical hit chance is increased by $7381s1% and all damage taken is increased by $7381s2%.",
+  "school": "Physical",
+  "level": 30,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   2458
+  ]
+ },
+ {
+  "id": 18499,
+  "name": "Berserker Rage",
+  "rank": "",
+  "desc": "The warrior enters a berserker rage, becoming immune to Fear and Incapacitate effects and generating extra rage when taking damage.  Lasts $d.",
+  "school": "Physical",
+  "level": 32,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   18499
+  ]
+ },
+ {
+  "id": 1680,
+  "name": "Whirlwind",
+  "rank": "",
+  "desc": "In a whirlwind of steel you attack up to $i enemies within $a1 yards, causing weapon damage to each enemy.",
+  "school": "Physical",
+  "level": 36,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1680
+  ]
+ },
+ {
+  "id": 11578,
+  "name": "Charge",
+  "rank": "Rank 3",
+  "desc": "Charge an enemy, generate $/10;s2 rage, and stun it for $7922d.  Cannot be used in combat.",
+  "school": "Physical",
+  "level": 46,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   100,
+   6178,
+   11578
+  ]
+ },
+ {
+  "id": 1719,
+  "name": "Recklessness",
+  "rank": "",
+  "desc": "$?s446658[The warrior will gain $s1% increased critical strike chance][The warrior will cause critical hits with most attacks] and will be immune to Fear effects for the next $d$?a1219543[][, but all damage taken is increased by $s2%].",
+  "school": "Physical",
+  "level": 50,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 1,
+  "all_ids": [
+   1719
+  ]
+ },
+ {
+  "id": 20617,
+  "name": "Intercept",
+  "rank": "Rank 3",
+  "desc": "Charge an enemy, causing $20615s2 damage and stunning it for $20615d.",
+  "school": "Physical",
+  "level": 52,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   20252,
+   20616,
+   20617
+  ]
+ },
+ {
+  "id": 1672,
+  "name": "Shield Bash",
+  "rank": "Rank 3",
+  "desc": "Bashes the target with your shield for $s2 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.",
+  "school": "Physical",
+  "level": 52,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   72,
+   1671,
+   1672
+  ]
+ },
+ {
+  "id": 11556,
+  "name": "Demoralizing Shout",
+  "rank": "Rank 5",
+  "desc": "Reduces the melee attack power of all enemies within $a1 yards by $s1 for $d.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   1160,
+   6190,
+   11554,
+   11555,
+   11556
+  ]
+ },
+ {
+  "id": 7373,
+  "name": "Hamstring",
+  "rank": "Rank 3",
+  "desc": "Maims the enemy, causing $s1 damage and slowing the enemy's movement by $s2% for $d.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 3,
+  "all_ids": [
+   1715,
+   7372,
+   7373
+  ]
+ },
+ {
+  "id": 11605,
+  "name": "Slam",
+  "rank": "Rank 4",
+  "desc": "Slams the opponent, causing weapon damage plus $s1.",
+  "school": "Physical",
+  "level": 54,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   1464,
+   8820,
+   11604,
+   11605
+  ]
+ },
+ {
+  "id": 20662,
+  "name": "Execute",
+  "rank": "Rank 5",
+  "desc": "Attempt to finish off a wounded foe, causing $s1 damage and converting each extra point of rage into $*10;F1 additional damage.  Only usable on enemies that have 20% or less health.",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   5308,
+   20658,
+   20660,
+   20661,
+   20662
+  ]
+ },
+ {
+  "id": 20560,
+  "name": "Mocking Blow",
+  "rank": "Rank 5",
+  "desc": "A mocking attack that causes $s1 damage, a moderate amount of threat and forces the target to focus attacks on you for $d.",
+  "school": "Physical",
+  "level": 56,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   694,
+   7400,
+   7402,
+   20559,
+   20560
+  ]
+ },
+ {
+  "id": 6554,
+  "name": "Pummel",
+  "rank": "Rank 2",
+  "desc": "Pummel the target for $s1 damage.  It also interrupts spellcasting and prevents any spell in that school from being cast for $d.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 2,
+  "all_ids": [
+   6552,
+   6554
+  ]
+ },
+ {
+  "id": 11597,
+  "name": "Sunder Armor",
+  "rank": "Rank 5",
+  "desc": "Sunders the target's armor, reducing it by $s1 per Sunder Armor and causes a high amount of threat.  Can be applied up to 5 times.  Lasts $d.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   7386,
+   7405,
+   8380,
+   11596,
+   11597
+  ]
+ },
+ {
+  "id": 11581,
+  "name": "Thunder Clap",
+  "rank": "Rank 6",
+  "desc": "Blasts nearby enemies with thunder increasing the time between their attacks by $s2% for $d and doing $s1 damage to them.  Will affect up to $i targets.",
+  "school": "Physical",
+  "level": 58,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   6343,
+   8198,
+   8204,
+   8205,
+   11580,
+   11581
+  ]
+ },
+ {
+  "id": 25289,
+  "name": "Battle Shout",
+  "rank": "Rank 7",
+  "desc": "The warrior shouts, increasing the melee attack power of all party members within $a1 yards by $s1.  Lasts $d.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   5242,
+   6192,
+   6673,
+   11549,
+   11550,
+   11551,
+   25289
+  ]
+ },
+ {
+  "id": 23894,
+  "name": "Bloodthirst",
+  "rank": "Rank 4",
+  "desc": "Instantly attack the target causing damage equal to $s1% of your attack power.  In addition, the next $23888n successful melee attacks will restore $23891s1 health.  This effect lasts $23888d.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   23881,
+   23892,
+   23893,
+   23894
+  ]
+ },
+ {
+  "id": 20569,
+  "name": "Cleave",
+  "rank": "Rank 5",
+  "desc": "A sweeping attack that does your weapon damage plus $s1 to the target and his nearest ally.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Fury",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 5,
+  "all_ids": [
+   845,
+   7369,
+   11608,
+   11609,
+   20569
+  ]
+ },
+ {
+  "id": 25286,
+  "name": "Heroic Strike",
+  "rank": "Rank 9",
+  "desc": "A strong attack that increases melee damage by $s1 and causes a high amount of threat.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 9,
+  "all_ids": [
+   78,
+   284,
+   285,
+   1608,
+   11564,
+   11565,
+   11566,
+   11567,
+   25286
+  ]
+ },
+ {
+  "id": 21553,
+  "name": "Mortal Strike",
+  "rank": "Rank 4",
+  "desc": "A vicious strike that deals weapon damage plus $s2 and wounds the target, reducing the effectiveness of any healing by $s1% for $d.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   12294,
+   21551,
+   21552,
+   21553
+  ]
+ },
+ {
+  "id": 11585,
+  "name": "Overpower",
+  "rank": "Rank 4",
+  "desc": "Instantly overpower the enemy, causing weapon damage plus $s1.  Only useable after the target dodges.  The Overpower cannot be blocked, dodged or parried.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   7384,
+   7887,
+   11584,
+   11585
+  ]
+ },
+ {
+  "id": 11574,
+  "name": "Rend",
+  "rank": "Rank 7",
+  "desc": "Wounds the target causing them to bleed for $o1 damage over $d.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Arms",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 7,
+  "all_ids": [
+   772,
+   6546,
+   6547,
+   6548,
+   11572,
+   11573,
+   11574
+  ]
+ },
+ {
+  "id": 25288,
+  "name": "Revenge",
+  "rank": "Rank 6",
+  "desc": "Instantly counterattack an enemy for $s1 damage and a high amount of threat.   Revenge must follow a block, dodge or parry.",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 6,
+  "all_ids": [
+   6572,
+   6574,
+   7379,
+   11600,
+   11601,
+   25288
+  ]
+ },
+ {
+  "id": 23925,
+  "name": "Shield Slam",
+  "rank": "Rank 4",
+  "desc": "Slam the target with your shield, causing $s2 damage, modified by $?s446658[twice ][]your shield block value, and has a 50% chance of dispelling $s1 magic effect on the target.  Also causes a high amount of threat.$?s446658[\r\n\r\nHitting a target with Shield Slam also grants you $460171s1 Attack Power for each point of your defense skill beyond ${$PL*5}. Lasts $460171d.][]",
+  "school": "Physical",
+  "level": 60,
+  "skillline": "Protection",
+  "classes": [
+   "Warrior"
+  ],
+  "rank_count": 4,
+  "all_ids": [
+   23922,
+   23923,
+   23924,
+   23925
+  ]
+ }
+]

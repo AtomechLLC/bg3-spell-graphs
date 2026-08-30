@@ -1,6 +1,6 @@
 # Wizard Spell List
 
-**204 spells** in the SRD · **31** exclusive to Wizard (15%) · **45** belong to an identified [[findings|template family]] (22%)
+**204 spells** in the SRD · **31** exclusive to Wizard (15%) · **50** belong to an identified [[findings|template family]] (25%)
 
 List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared with [[classes/bard|Bard]], **29%** shared with [[classes/warlock|Warlock]].
 
@@ -46,7 +46,7 @@ List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared 
 | 1 | **Silent Image** | Illusion | [[families/image|🖼️ The Image Ladder]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]] |
 | 1 | <img class="sic" data-i="sleep" alt=""> **Sleep** | Enchantment | [[families/hp-pool|🧮 The Hit-Point Pool Engine]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]] |
 | 1 | <img class="sic" data-i="thunderwave" alt=""> **Thunderwave** | Evocation | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
-| 1 | **Unseen Servant** | Conjuration | — | [[classes/bard|Bard]], [[classes/warlock|Warlock]] |
+| 1 | **Unseen Servant** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/bard|Bard]], [[classes/warlock|Warlock]] |
 | 2 | <img class="sic" data-i="acid-arrow" alt=""> **Acid Arrow** | Evocation | — | *(exclusive)* |
 | 2 | **Alter Self** | Transmutation | — | [[classes/sorcerer|Sorcerer]] |
 | 2 | <img class="sic" data-i="arcane-lock" alt=""> **Arcane Lock** | Abjuration | — | *(exclusive)* |
@@ -58,7 +58,7 @@ List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared 
 | 2 | <img class="sic" data-i="darkvision" alt=""> **Darkvision** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
 | 2 | <img class="sic" data-i="detect-thoughts" alt=""> **Detect Thoughts** | Divination | — | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]] |
 | 2 | <img class="sic" data-i="enlarge-reduce" alt=""> **Enlarge/Reduce** | Transmutation | — | [[classes/sorcerer|Sorcerer]] |
-| 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | — | [[classes/druid|Druid]] |
+| 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/druid|Druid]] |
 | 2 | **Gentle Repose** | Necromancy | — | [[classes/cleric|Cleric]] |
 | 2 | <img class="sic" data-i="gust-of-wind" alt=""> **Gust of Wind** | Evocation | — | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 2 | <img class="sic" data-i="hold-person" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
@@ -115,7 +115,7 @@ List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared 
 | 4 | **Control Water** | Transmutation | — | [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
 | 4 | <img class="sic" data-i="dimension-door" alt=""> **Dimension Door** | Conjuration | — | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
 | 4 | **Fabricate** | Transmutation | — | *(exclusive)* |
-| 4 | **Faithful Hound** | Conjuration | — | *(exclusive)* |
+| 4 | **Faithful Hound** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | *(exclusive)* |
 | 4 | <img class="sic" data-i="fire-shield" alt=""> **Fire Shield** | Evocation | — | *(exclusive)* |
 | 4 | <img class="sic" data-i="greater-invisibility" alt=""> **Greater Invisibility** | Illusion | [[families/invisibility|🫥 The Invisibility Ladder]] | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]] |
 | 4 | **Hallucinatory Terrain** | Illusion | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/warlock|Warlock]] |
@@ -130,7 +130,7 @@ List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared 
 | 4 | <img class="sic" data-i="stoneskin" alt=""> **Stoneskin** | Abjuration | — | [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
 | 4 | <img class="sic" data-i="wall-of-fire" alt=""> **Wall of Fire** | Evocation | — | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 5 | **Animate Objects** | Transmutation | — | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]] |
-| 5 | **Arcane Hand** | Evocation | — | *(exclusive)* |
+| 5 | **Arcane Hand** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | *(exclusive)* |
 | 5 | <img class="sic" data-i="cloudkill" alt=""> **Cloudkill** | Conjuration | — | [[classes/sorcerer|Sorcerer]] |
 | 5 | <img class="sic" data-i="cone-of-cold" alt=""> **Cone of Cold** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | [[classes/sorcerer|Sorcerer]] |
 | 5 | <img class="sic" data-i="conjure-elemental" alt=""> **Conjure Elemental** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | [[classes/druid|Druid]] |
@@ -171,7 +171,7 @@ List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared 
 | 6 | <img class="sic" data-i="sunbeam" alt=""> **Sunbeam** | Evocation | — | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 6 | <img class="sic" data-i="true-seeing" alt=""> **True Seeing** | Divination | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
 | 6 | <img class="sic" data-i="wall-of-ice" alt=""> **Wall of Ice** | Evocation | — | *(exclusive)* |
-| 7 | **Arcane Sword** | Evocation | — | [[classes/bard|Bard]] |
+| 7 | **Arcane Sword** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/bard|Bard]] |
 | 7 | **Delayed Blast Fireball** | Evocation | — | [[classes/sorcerer|Sorcerer]] |
 | 7 | **Etherealness** | Transmutation | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
 | 7 | **Finger of Death** | Necromancy | — | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
@@ -214,4 +214,4 @@ List overlap: **55%** shared with [[classes/sorcerer|Sorcerer]], **40%** shared 
 Back to [[overview|Overview]] · compare on [[findings|The Identical-Spell List]].
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/conjure-table|Conjure by Menu]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/detect|The Detect Series]] · [[families/disguise-seeming|The Disguise Ladder]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/image|The Image Ladder]] · [[families/invisibility|The Invisibility Ladder]] · [[families/locate|The Locate Series]] · [[families/polymorph|The Polymorph Ladder]] · [[families/protection|The Protection Series]] · [[families/suggestion|The Suggestion Pair]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/undead|The Undead Workshop]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/conjure-table|Conjure by Menu]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/detect|The Detect Series]] · [[families/disguise-seeming|The Disguise Ladder]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/image|The Image Ladder]] · [[families/invisibility|The Invisibility Ladder]] · [[families/locate|The Locate Series]] · [[families/phantom-armory|The Phantom Armory]] · [[families/polymorph|The Polymorph Ladder]] · [[families/protection|The Protection Series]] · [[families/suggestion|The Suggestion Pair]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/undead|The Undead Workshop]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

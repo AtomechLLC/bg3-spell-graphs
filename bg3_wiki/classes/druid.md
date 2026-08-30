@@ -1,6 +1,6 @@
 # Druid Spell List (BG3)
 
-**68 spells** reachable through Druid progressions · **34** in an identified family (50%)
+**68 spells** reachable through Druid progressions · **36** in an identified family (53%)
 
 List overlap: **75%** with [[classes/cleric|Cleric]], **59%** with [[classes/bard|Bard]], **46%** with [[classes/wizard|Wizard]].
 
@@ -33,7 +33,7 @@ List overlap: **75%** with [[classes/cleric|Cleric]], **59%** with [[classes/bar
 | 2 | <img class="sic" data-i="Shout_DetectThoughts" alt=""> **Detect Thoughts** | Divination | — | [[classes/bard|Bard]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_EnhanceAbility" alt=""> **Enhance Ability** | Transmutation | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]] |
 | 2 | <img class="sic" data-i="Shout_FlameBlade" alt=""> **Flame Blade** | Evocation | — | *(exclusive)* |
-| 2 | <img class="sic" data-i="Target_FlamingSphere" alt=""> **Flaming Sphere** | Conjuration | — | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="Target_FlamingSphere" alt=""> **Flaming Sphere** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Zone_GustOfWind" alt=""> **Gust of Wind** | Evocation | — | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_HeatMetal" alt=""> **Heat Metal** | Transmutation | — | [[classes/bard|Bard]] |
 | 2 | <img class="sic" data-i="Target_HoldPerson" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
@@ -42,7 +42,7 @@ List overlap: **75%** with [[classes/cleric|Cleric]], **59%** with [[classes/bar
 | 2 | <img class="sic" data-i="Shout_PassWithoutTrace" alt=""> **Pass Without Trace** | Abjuration | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="Target_ProtectionFromPoison" alt=""> **Protection from Poison** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="Target_SpikeGrowth" alt=""> **Spike Growth** | Transmutation | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/ranger|Ranger]] |
-| 3 | <img class="sic" data-i="Target_AnimateDead" alt=""> **Animate Dead** | Necromancy | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="Target_AnimateDead" alt=""> **Animate Dead** | Necromancy | [[families/conjure|🧞 The Summoning Contract]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_CallLightning" alt=""> **Call Lightning** | Conjuration | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]] |
 | 3 | <img class="sic" data-i="Target_Daylight_Container" alt=""> **Daylight** | Evocation | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]], [[classes/sorcerer|Sorcerer]] |
 | 3 | <img class="sic" data-i="Target_FeignDeath" alt=""> **Feign Death** | Necromancy | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
@@ -52,7 +52,7 @@ List overlap: **75%** with [[classes/cleric|Cleric]], **59%** with [[classes/bar
 | 3 | <img class="sic" data-i="Target_SleetStorm" alt=""> **Sleet Storm** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="Target_Blight" alt=""> **Blight** | Necromancy | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="Target_Confusion" alt=""> **Confusion** | Enchantment | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 4 | <img class="sic" data-i="Target_ConjureElementals_Minor_Container" alt=""> **Conjure Minor Elemental** | Conjuration | [[families/conjure|🧞 The Conjure Pair]] | [[classes/wizard|Wizard]] |
+| 4 | <img class="sic" data-i="Target_ConjureElementals_Minor_Container" alt=""> **Conjure Minor Elemental** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="Target_ConjureWoodlandBeings" alt=""> **Conjure Woodland Being** | Conjuration | — | *(exclusive)* |
 | 4 | <img class="sic" data-i="Target_DominateBeast" alt=""> **Dominate Beast** | Enchantment | [[families/dominate|🧠 The Dominate Pair]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]] |
 | 4 | <img class="sic" data-i="Target_FreedomOfMovement" alt=""> **Freedom of Movement** | Abjuration | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
@@ -62,7 +62,7 @@ List overlap: **75%** with [[classes/cleric|Cleric]], **59%** with [[classes/bar
 | 4 | <img class="sic" data-i="Target_Stoneskin" alt=""> **Stoneskin** | Abjuration | — | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="Wall_WallOfFire" alt=""> **Wall of Fire** | Evocation | [[families/walls|🧱 The Wall Foundry]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Target_Cloudkill" alt=""> **Cloudkill** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 5 | <img class="sic" data-i="Target_ConjureElemental_Container" alt=""> **Conjure Elemental** | Conjuration | [[families/conjure|🧞 The Conjure Pair]] | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
+| 5 | <img class="sic" data-i="Target_ConjureElemental_Container" alt=""> **Conjure Elemental** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Target_Contagion" alt=""> **Contagion** | Necromancy | 📦 [[containers|container]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
 | 5 | <img class="sic" data-i="Target_GreaterRestoration" alt=""> **Greater Restoration** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]] |
 | 5 | <img class="sic" data-i="Target_InsectPlague" alt=""> **Insect Plague** | Conjuration | — | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]] |
@@ -90,4 +90,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Conjure Pair]] · [[families/cure|The Cure Family]] · [[families/d4-riders|Guidance & Resistance]] · [[families/dominate|The Dominate Pair]] · [[families/hold|The Hold Pair]] · [[families/surfaces|The Surface Engine]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/walls|The Wall Foundry]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/cure|The Cure Family]] · [[families/d4-riders|Guidance & Resistance]] · [[families/dominate|The Dominate Pair]] · [[families/hold|The Hold Pair]] · [[families/surfaces|The Surface Engine]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/walls|The Wall Foundry]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

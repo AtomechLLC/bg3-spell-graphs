@@ -47,7 +47,7 @@ Expeditious Retreat,1,Transmutation,Shout,,,,Fighter/Rogue/Sorcerer/Warlock/Wiza
 Faerie Fire,1,Evocation,Target,,,,Bard/Cleric/Druid
 False Life,1,Necromancy,Shout,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Wizard
 Feather Fall,1,Transmutation,Shout,The Touch-Buff Skeleton,Shared engine,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Find Familiar,1,Conjuration,Target,,,6,Fighter/Rogue/Wizard
+Find Familiar,1,Conjuration,Target,The Summoning Contract,Shared template,6,Fighter/Rogue/Wizard
 Fog Cloud,1,Conjuration,Target,The Surface Engine,Shared template,,Cleric/Druid/Fighter/Ranger/Rogue/Sorcerer/Wizard
 Goodberry,1,Transmutation,Target,,,,Druid/Ranger
 Grease,1,Conjuration,Target,The Surface Engine,Shared template,,Fighter/Rogue/Wizard
@@ -93,7 +93,7 @@ Enlarge/Reduce,2,Transmutation,Target,,,2,Fighter/Rogue/Sorcerer/Wizard
 Enthrall,2,Enchantment,Target,,,,Bard/Warlock
 Eyes of the Dark: Darkness,2,Evocation,Target,The Duplicate SKUs,Verbatim clone,,Sorcerer
 Flame Blade,2,Evocation,Shout,,,,Druid
-Flaming Sphere,2,Conjuration,Target,,,,Cleric/Druid/Fighter/Rogue/Wizard
+Flaming Sphere,2,Conjuration,Target,The Summoning Contract,Shared template,,Cleric/Druid/Fighter/Rogue/Wizard
 Gust of Wind,2,Evocation,Zone,,,,Cleric/Druid/Fighter/Rogue/Sorcerer/Wizard
 Heat Metal,2,Transmutation,Target,,,,Bard/Druid
 Hold Person,2,Enchantment,Target,The Hold Pair,Verbatim clone,,Bard/Cleric/Druid/Fighter/Rogue/Sorcerer/Warlock/Wizard
@@ -116,10 +116,10 @@ Shadow Blade,2,Illusion,Shout,,,,Fighter/Rogue/Sorcerer/Warlock/Wizard
 Shatter,2,Evocation,Target,,,,Bard/Cleric/Fighter/Rogue/Sorcerer/Warlock/Wizard
 Silence,2,Illusion,Target,,,,Bard/Cleric/Ranger
 Spike Growth,2,Transmutation,Target,The Surface Engine,Shared template,,Bard/Cleric/Druid/Ranger
-Spiritual Weapon,2,Evocation,Target,,,6,Bard/Cleric
+Spiritual Weapon,2,Evocation,Target,The Summoning Contract,Shared template,6,Bard/Cleric
 Warding Bond,2,Abjuration,Target,,,,Cleric
 Web,2,Conjuration,Target,The Surface Engine,Shared template,,Bard/Fighter/Rogue/Sorcerer/Wizard
-Animate Dead,3,Necromancy,Target,,,2,Bard/Cleric/Druid/Paladin/Wizard
+Animate Dead,3,Necromancy,Target,The Summoning Contract,Shared template,2,Bard/Cleric/Druid/Paladin/Wizard
 Beacon of Hope,3,Abjuration,Shout,,,,Cleric
 Bestow Curse,3,Necromancy,Target,,,9,Bard/Cleric/Paladin/Wizard
 Blinding Smite,3,Evocation,Target,The Smite Armoury,Shared template,,Paladin
@@ -156,7 +156,7 @@ Warden of Vitality,3,Evocation,Shout,,,,Bard/Paladin
 Banishment,4,Abjuration,Target,,,,Bard/Cleric/Sorcerer/Warlock/Wizard
 Blight,4,Necromancy,Target,,,,Bard/Cleric/Druid/Sorcerer/Warlock/Wizard
 Confusion,4,Enchantment,Target,,,,Bard/Cleric/Druid/Sorcerer/Wizard
-Conjure Minor Elemental,4,Conjuration,Target,The Conjure Pair,Shared template,3,Druid/Wizard
+Conjure Minor Elemental,4,Conjuration,Target,The Summoning Contract,Shared template,3,Druid/Wizard
 Conjure Woodland Being,4,Conjuration,Target,,,,Druid
 Death Ward,4,Abjuration,Target,,,,Bard/Cleric
 Dimension Door,4,Conjuration,Teleportation,The Blink Ladder,Shared template,,Bard/Cleric/Sorcerer/Warlock/Wizard
@@ -177,7 +177,7 @@ Wall of Fire,4,Evocation,Wall,The Wall Foundry,Shared template,,Bard/Cleric/Drui
 Banishing Smite,5,Abjuration,Projectile,The Smite Armoury,Shared template,2,Bard/Warlock
 Cloudkill,5,Conjuration,Target,The Surface Engine,Shared template,,Cleric/Druid/Sorcerer/Wizard
 Cone of Cold,5,Evocation,Zone,The Elemental Blast Template,Shared template,,Bard/Sorcerer/Warlock/Wizard
-Conjure Elemental,5,Conjuration,Target,The Conjure Pair,Shared template,4,Bard/Druid/Wizard
+Conjure Elemental,5,Conjuration,Target,The Summoning Contract,Shared template,4,Bard/Druid/Wizard
 Contagion,5,Necromancy,Target,,,6,Bard/Cleric/Druid
 Destructive Wave,5,Evocation,Shout,,,2,Cleric
 Dispel Evil And Good,5,Abjuration,Shout,,,,Cleric
@@ -205,7 +205,7 @@ Heal,6,Evocation,Target,,,,Cleric/Druid
 Heroes' Feast,6,Conjuration,Shout,,,,Cleric/Druid
 Otiluke's Freezing Sphere,6,Evocation,Target,,,2,Wizard
 Otto's Irresistible Dance,6,Enchantment,Target,,,,Bard/Wizard
-Planar Ally,6,Conjuration,Target,,,3,Cleric
+Planar Ally,6,Conjuration,Target,The Summoning Contract,Shared template,3,Cleric
 Sunbeam,6,Evocation,Zone,The Elemental Blast Template,Shared template,,Druid/Sorcerer/Wizard
 Wall of Ice,6,Evocation,Wall,The Wall Foundry,Shared template,,Wizard
 Wall of Thorns,6,Conjuration,Wall,The Wall Foundry,Shared template,,Druid

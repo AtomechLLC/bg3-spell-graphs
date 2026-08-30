@@ -22,7 +22,7 @@ The companion codex to the tabletop study: the same homogeneity analysis, run on
 
 ## Axis 2 — different spells, same design
 
-**78 of 211 spells sit in 19 template families** — see [[findings|The Identical-Spell List]]. Beyond the tabletop-inherited families, BG3 adds four homogenizers of its own:
+**83 of 211 spells sit in 19 template families** — see [[findings|The Identical-Spell List]]. Beyond the tabletop-inherited families, BG3 adds four homogenizers of its own:
 
 - **[[containers|Container spells]]** — 28 spells whose cast button opens a menu of 136 variant children. The reskin as a shipped feature.
 - **[[families/duplicate-skus|Duplicate SKUs]]** — Shield exists three times in the data, once per class that learns it. Similarity: 1.000.

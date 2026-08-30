@@ -71,7 +71,7 @@ Silent Image,1,Illusion,The Image Ladder,🖼️,Shared template,Bard/Sorcerer/W
 Sleep,1,Enchantment,The Hit-Point Pool Engine,🧮,Shared template,Bard/Sorcerer/Wizard,yes
 Speak with Animals,1,Divination,The Speak-With Series,🗣️,Shared engine,Bard/Druid/Ranger,yes
 Thunderwave,1,Evocation,,,,Bard/Druid/Sorcerer/Wizard,yes
-Unseen Servant,1,Conjuration,,,,Bard/Warlock/Wizard,
+Unseen Servant,1,Conjuration,The Phantom Armory,⚔️,Shared engine,Bard/Warlock/Wizard,
 Acid Arrow,2,Evocation,,,,Wizard,yes
 Aid,2,Abjuration,,,,Cleric/Paladin,yes
 Alter Self,2,Transmutation,,,,Sorcerer/Wizard,
@@ -94,7 +94,7 @@ Enthrall,2,Enchantment,,,,Bard/Warlock,yes
 Find Steed,2,Conjuration,,,,Paladin,
 Find Traps,2,Divination,,,,Cleric/Druid/Ranger,
 Flame Blade,2,Evocation,,,,Druid,yes
-Flaming Sphere,2,Conjuration,,,,Druid/Wizard,yes
+Flaming Sphere,2,Conjuration,The Phantom Armory,⚔️,Shared engine,Druid/Wizard,yes
 Gentle Repose,2,Necromancy,,,,Cleric/Wizard,
 Gust of Wind,2,Evocation,,,,Druid/Sorcerer/Wizard,yes
 Heat Metal,2,Transmutation,,,,Bard/Druid,yes
@@ -121,7 +121,7 @@ Shatter,2,Evocation,,,,Bard/Sorcerer/Warlock/Wizard,yes
 Silence,2,Illusion,,,,Bard/Cleric/Ranger,yes
 Spider Climb,2,Transmutation,The Touch-Buff Skeleton,🤝,Shared engine,Sorcerer/Warlock/Wizard,
 Spike Growth,2,Transmutation,,,,Druid/Ranger,yes
-Spiritual Weapon,2,Evocation,,,,Cleric,yes
+Spiritual Weapon,2,Evocation,The Phantom Armory,⚔️,Shared engine,Cleric,yes
 Suggestion,2,Enchantment,The Suggestion Pair,💬,Shared template,Bard/Sorcerer/Warlock/Wizard,
 Warding Bond,2,Abjuration,,,,Cleric,yes
 Web,2,Conjuration,,,,Sorcerer/Wizard,yes
@@ -182,7 +182,7 @@ Dimension Door,4,Conjuration,,,,Bard/Sorcerer/Warlock/Wizard,yes
 Divination,4,Divination,,,,Druid,
 Dominate Beast,4,Enchantment,The Dominate Chain,🧠,Verbatim clone,Druid/Sorcerer,yes
 Fabricate,4,Transmutation,,,,Wizard,
-Faithful Hound,4,Conjuration,,,,Wizard,
+Faithful Hound,4,Conjuration,The Phantom Armory,⚔️,Shared engine,Wizard,
 Fire Shield,4,Evocation,,,,Wizard,yes
 Freedom of Movement,4,Abjuration,,,,Bard/Cleric/Druid/Ranger,yes
 Giant Insect,4,Transmutation,,,,Druid,yes
@@ -201,7 +201,7 @@ Stoneskin,4,Abjuration,,,,Druid/Ranger/Sorcerer/Wizard,yes
 Wall of Fire,4,Evocation,,,,Druid/Sorcerer/Wizard,yes
 Animate Objects,5,Transmutation,,,,Bard/Sorcerer/Wizard,
 Antilife Shell,5,Abjuration,,,,Druid,
-Arcane Hand,5,Evocation,,,,Wizard,
+Arcane Hand,5,Evocation,The Phantom Armory,⚔️,Shared engine,Wizard,
 Awaken,5,Transmutation,,,,Bard/Druid,
 Cloudkill,5,Conjuration,,,,Sorcerer/Wizard,yes
 Commune,5,Divination,,,,Cleric,
@@ -267,7 +267,7 @@ Wall of Ice,6,Evocation,,,,Wizard,yes
 Wall of Thorns,6,Conjuration,,,,Druid,yes
 Wind Walk,6,Transmutation,,,,Druid,yes
 Word of Recall,6,Conjuration,,,,Cleric,
-Arcane Sword,7,Evocation,,,,Bard/Wizard,
+Arcane Sword,7,Evocation,The Phantom Armory,⚔️,Shared engine,Bard/Wizard,
 Conjure Celestial,7,Conjuration,Conjure a Champion,🧞,Shared template,Cleric,
 Delayed Blast Fireball,7,Evocation,,,,Sorcerer/Wizard,
 Divine Word,7,Evocation,,,,Cleric,

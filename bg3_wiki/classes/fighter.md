@@ -1,6 +1,6 @@
 # Fighter Spell List (BG3)
 
-**64 spells** reachable through Fighter progressions · **23** in an identified family (36%)
+**64 spells** reachable through Fighter progressions · **25** in an identified family (39%)
 
 List overlap: **100%** with [[classes/wizard|Wizard]], **100%** with [[classes/rogue|Rogue]], **83%** with [[classes/sorcerer|Sorcerer]].
 
@@ -31,7 +31,7 @@ List overlap: **100%** with [[classes/wizard|Wizard]], **100%** with [[classes/r
 | 1 | <img class="sic" data-i="Shout_ExpeditiousRetreat" alt=""> **Expeditious Retreat** | Transmutation | — | [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Shout_FalseLife" alt=""> **False Life** | Necromancy | — | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Shout_FeatherFall" alt=""> **Feather Fall** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | [[classes/bard|Bard]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | <img class="sic" data-i="Target_FindFamiliar" alt=""> **Find Familiar** | Conjuration | 📦 [[containers|container]] | [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
+| 1 | <img class="sic" data-i="Target_FindFamiliar" alt=""> **Find Familiar** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Target_FogCloud" alt=""> **Fog Cloud** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Target_Grease" alt=""> **Grease** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="Projectile_IceKnife" alt=""> **Ice Knife** | Conjuration | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -54,7 +54,7 @@ List overlap: **100%** with [[classes/wizard|Wizard]], **100%** with [[classes/r
 | 2 | <img class="sic" data-i="Target_Darkvision" alt=""> **Darkvision** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Shout_DetectThoughts" alt=""> **Detect Thoughts** | Divination | — | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_EnlargeReduce" alt=""> **Enlarge/Reduce** | Transmutation | 📦 [[containers|container]] | [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 2 | <img class="sic" data-i="Target_FlamingSphere" alt=""> **Flaming Sphere** | Conjuration | — | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="Target_FlamingSphere" alt=""> **Flaming Sphere** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/rogue|Rogue]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Zone_GustOfWind" alt=""> **Gust of Wind** | Evocation | — | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_HoldPerson" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_Invisibility" alt=""> **Invisibility** | Illusion | [[families/invisibility|🫥 The Invisibility Ladder]] | [[classes/bard|Bard]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
@@ -84,4 +84,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/invisibility|The Invisibility Ladder]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/ac-wardrobe|The Armour-Class Wardrobe]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/conjure|The Summoning Contract]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/invisibility|The Invisibility Ladder]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

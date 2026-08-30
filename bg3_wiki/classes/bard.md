@@ -1,6 +1,6 @@
 # Bard Spell List (BG3)
 
-**122 spells** reachable through Bard progressions · **47** in an identified family (39%)
+**122 spells** reachable through Bard progressions · **49** in an identified family (40%)
 
 List overlap: **61%** with [[classes/wizard|Wizard]], **56%** with [[classes/cleric|Cleric]], **52%** with [[classes/sorcerer|Sorcerer]].
 
@@ -73,9 +73,9 @@ List overlap: **61%** with [[classes/wizard|Wizard]], **56%** with [[classes/cle
 | 2 | <img class="sic" data-i="Target_Shatter" alt=""> **Shatter** | Evocation | — | [[classes/cleric|Cleric]], [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="Target_Silence" alt=""> **Silence** | Illusion | — | [[classes/cleric|Cleric]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="Target_SpikeGrowth" alt=""> **Spike Growth** | Transmutation | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
-| 2 | <img class="sic" data-i="Target_SpiritualWeapon" alt=""> **Spiritual Weapon** | Evocation | 📦 [[containers|container]] | [[classes/cleric|Cleric]] |
+| 2 | <img class="sic" data-i="Target_SpiritualWeapon" alt=""> **Spiritual Weapon** | Evocation | [[families/conjure|🧞 The Summoning Contract]] | [[classes/cleric|Cleric]] |
 | 2 | <img class="sic" data-i="Target_Web" alt=""> **Web** | Conjuration | [[families/surfaces|🕸️ The Surface Engine]] | [[classes/fighter|Fighter]], [[classes/rogue|Rogue]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 3 | <img class="sic" data-i="Target_AnimateDead" alt=""> **Animate Dead** | Necromancy | 📦 [[containers|container]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
+| 3 | <img class="sic" data-i="Target_AnimateDead" alt=""> **Animate Dead** | Necromancy | [[families/conjure|🧞 The Summoning Contract]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_BestowCurse" alt=""> **Bestow Curse** | Necromancy | 📦 [[containers|container]] | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
 | 3 | <img class="sic" data-i="Target_CallLightning" alt=""> **Call Lightning** | Conjuration | — | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 3 | <img class="sic" data-i="Target_Counterspell" alt=""> **Counterspell** | Abjuration | — | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
@@ -117,7 +117,7 @@ List overlap: **61%** with [[classes/wizard|Wizard]], **56%** with [[classes/cle
 | 4 | <img class="sic" data-i="Wall_WallOfFire" alt=""> **Wall of Fire** | Evocation | [[families/walls|🧱 The Wall Foundry]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Projectile_Smite_Banishing_Container" alt=""> **Banishing Smite** | Abjuration | [[families/smites|🔨 The Smite Armoury]] | [[classes/warlock|Warlock]] |
 | 5 | <img class="sic" data-i="Zone_ConeOfCold" alt=""> **Cone of Cold** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
-| 5 | <img class="sic" data-i="Target_ConjureElemental_Container" alt=""> **Conjure Elemental** | Conjuration | [[families/conjure|🧞 The Conjure Pair]] | [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
+| 5 | <img class="sic" data-i="Target_ConjureElemental_Container" alt=""> **Conjure Elemental** | Conjuration | [[families/conjure|🧞 The Summoning Contract]] | [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Target_Contagion" alt=""> **Contagion** | Necromancy | 📦 [[containers|container]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
 | 5 | <img class="sic" data-i="Target_DominatePerson" alt=""> **Dominate Person** | Enchantment | [[families/dominate|🧠 The Dominate Pair]] | [[classes/cleric|Cleric]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | <img class="sic" data-i="Target_GreaterRestoration" alt=""> **Greater Restoration** | Abjuration | [[families/cleanse|🧼 The Cleanse Counter]] | [[classes/cleric|Cleric]], [[classes/druid|Druid]] |
@@ -141,4 +141,4 @@ Abilities implemented in the same `SpellData` system but flagged as non-spells (
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 
 ---
-*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/bane-bless|Bane & Bless]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Conjure Pair]] · [[families/cure|The Cure Family]] · [[families/dominate|The Dominate Pair]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/invisibility|The Invisibility Ladder]] · [[families/smites|The Smite Armoury]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/walls|The Wall Foundry]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/bane-bless|Bane & Bless]] · [[families/blast|The Elemental Blast Template]] · [[families/charm|The Charm Pair]] · [[families/cleanse|The Cleanse Counter]] · [[families/conjure|The Summoning Contract]] · [[families/cure|The Cure Family]] · [[families/dominate|The Dominate Pair]] · [[families/duplicate-skus|The Duplicate SKUs]] · [[families/hold|The Hold Pair]] · [[families/hp-pool|The Hit-Point Pool Engine]] · [[families/invisibility|The Invisibility Ladder]] · [[families/smites|The Smite Armoury]] · [[families/surfaces|The Surface Engine]] · [[families/teleports|The Blink Ladder]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/walls|The Wall Foundry]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

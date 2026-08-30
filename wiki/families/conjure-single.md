@@ -17,4 +17,4 @@
 See the full ranked list on [[findings|The Identical-Spell List]], or how scores were computed in [[methodology|Methodology]].
 
 ---
-*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/phantom-armory|The Phantom Armory]] · [[findings|The Identical-Spell List]] · [[spells|All Spells, Tagged]]*

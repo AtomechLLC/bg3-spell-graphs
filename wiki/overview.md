@@ -30,7 +30,7 @@ Read column-wise, the matrix shows the four "parent" lists (Wizard, Cleric, Drui
 
 ## Axis 2 — different spells, same design
 
-Even *within* a list, many spells are one design published several times. **73 spells (23%) fall into 23 template families** — from word-for-word clones ([[families/guidance-resistance|Guidance & Resistance]], [[families/dominate|the Dominate chain]]) through parameterized templates ([[families/blast|Fireball / Lightning Bolt]], [[families/cure|the Cure family]]) to shared engines ([[families/attack-cantrips|the damage-cantrip pricing table]], [[families/dispel|Dispel / Counterspell]]).
+Even *within* a list, many spells are one design published several times. **79 spells (25%) fall into 24 template families** — from word-for-word clones ([[families/guidance-resistance|Guidance & Resistance]], [[families/dominate|the Dominate chain]]) through parameterized templates ([[families/blast|Fireball / Lightning Bolt]], [[families/cure|the Cure family]]) to shared engines ([[families/attack-cantrips|the damage-cantrip pricing table]], [[families/dispel|Dispel / Counterspell]]).
 
 The full tiered list, with what differs in each family, is on [[findings|The Identical-Spell List]].
 

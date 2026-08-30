@@ -1,0 +1,424 @@
+ability,classes,level,school,ranks,family,tier
+Auto Shot,Hunter,1,Physical,1,,
+Battle Stance,Warrior,1,Physical,1,,
+Cobra Reflexes,Hunter,1,Physical,1,,
+Pick Lock,Rogue,1,Physical,1,,
+Summon Imp,Warlock,1,Shadow,1,The Stable & The Circle,Shared template
+Track Beasts,Hunter,1,Physical,1,The Tracking Dial,Verbatim clone
+Vampiric Embrace,Priest,1,Shadow,1,,
+Aspect of the Monkey,Hunter,4,Nature,1,The Aspect Dial,Shared template
+Ice Block,Mage,4,Frost,1,,
+Judgement,Paladin,4,Holy,1,,
+Pick Pocket,Rogue,4,Physical,1,,
+Earthbind Totem,Shaman,6,Nature,1,The Totem Foundry,Shared template
+Mangle,Druid,6,Physical,1,,
+Concussive Shot,Hunter,8,Arcane,1,,
+Evasion,Rogue,8,Physical,1,,
+Purify,Paladin,8,Holy,1,The Cleanse Counter,Verbatim clone
+Bear Form,Druid,10,Physical,1,,
+Beast Training,Hunter,10,Physical,1,,
+Bloodrage,Warrior,10,Physical,1,,
+Call Pet,Hunter,10,Physical,1,,
+Chilled,Mage,10,Frost,3,,
+Create Healthstone (Minor),Warlock,10,Shadow,1,The Conjured Commissary,Verbatim clone
+Defensive Stance,Warrior,10,Physical,1,,
+Demon Skin,Warlock,10,Shadow,2,The Protection Rack,Shared template
+Dismiss Pet,Hunter,10,Physical,1,,
+Feed Pet,Hunter,10,Physical,1,,
+Growl,Druid,10,Physical,1,The Druid Costume Shop,Verbatim clone
+Lesser Heal,Priest,10,Holy,3,"One Heal, Nine Names",Verbatim clone
+Revive Pet,Hunter,10,Nature,1,,
+Summon Voidwalker,Warlock,10,Shadow,1,The Stable & The Circle,Shared template
+Tame Beast,Hunter,10,Nature,1,,
+Taunt,Warrior,10,Physical,1,The Druid Costume Shop,Verbatim clone
+Teleport: Moonglade,Druid,10,Arcane,1,,
+Track Humanoids,Hunter,10,Physical,1,The Tracking Dial,Verbatim clone
+Enrage,Druid,12,Physical,1,,
+Slow Fall,Mage,12,Arcane,1,,
+Cure Disease,Priest,14,Holy,1,The Cleanse Counter,Verbatim clone
+Cure Poison,Druid,14,Nature,1,The Cleanse Counter,Verbatim clone
+Eagle Eye,Hunter,14,Arcane,1,,
+Eyes of the Beast,Hunter,14,Nature,1,,
+Aquatic Form,Druid,16,Physical,1,,
+Aquatic Form (Passive),Druid,16,Nature,1,,
+Cure Poison,Shaman,16,Nature,1,The Cleanse Counter,Verbatim clone
+Detect Magic,Mage,16,Arcane,1,,
+Righteous Fury,Paladin,16,Holy,1,,
+Shield Block,Warrior,16,Physical,1,,
+Unending Breath,Warlock,16,Shadow,1,,
+Blessing of Freedom,Paladin,18,Holy,1,The Blessing Rack,Shared template
+Create Soulstone (Minor),Warlock,18,Shadow,1,The Conjured Commissary,Verbatim clone
+Disarm,Warrior,18,Physical,1,,
+Divine Protection,Paladin,18,Holy,2,,
+Remove Lesser Curse,Mage,18,Arcane,1,The Cleanse Counter,Verbatim clone
+Track Undead,Hunter,18,Physical,1,The Tracking Dial,Verbatim clone
+Tremor Totem,Shaman,18,Nature,1,The Totem Foundry,Shared template
+Aspect of the Cheetah,Hunter,20,Nature,1,The Aspect Dial,Shared template
+Blessing of Kings,Paladin,20,Holy,1,The Blessing Rack,Shared template
+Blink,Mage,20,Arcane,1,,
+Cat Form,Druid,20,Physical,1,,
+Fear Ward,Priest,20,Holy,1,,
+Frost Armor,Mage,20,Frost,3,The Protection Rack,Shared template
+Ghost Wolf,Shaman,20,Nature,1,,
+Poisons,Rogue,20,Physical,1,,
+Repentance,Paladin,20,Holy,1,,
+Retaliation,Warrior,20,Physical,1,,
+Ritual of Summoning,Warlock,20,Shadow,1,,
+Sense Undead,Paladin,20,Holy,1,The Tracking Dial,Verbatim clone
+Summon Incubus,Warlock,20,Shadow,1,,
+Summon Succubus,Warlock,20,Shadow,1,The Stable & The Circle,Shared template
+Teleport: Ironforge,Mage,20,Arcane,1,The Hearth Network,Verbatim clone
+Teleport: Orgrimmar,Mage,20,Arcane,1,The Hearth Network,Verbatim clone
+Teleport: Stormwind,Mage,20,Arcane,1,The Hearth Network,Verbatim clone
+Teleport: Undercity,Mage,20,Arcane,1,The Hearth Network,Verbatim clone
+Concentration Aura,Paladin,22,Holy,1,The Aura Carousel,Shared template
+Create Healthstone (Lesser),Warlock,22,Shadow,1,The Conjured Commissary,Verbatim clone
+Cure Disease,Shaman,22,Nature,1,The Cleanse Counter,Verbatim clone
+Distract,Rogue,22,Physical,1,,
+Eye of Kilrogg,Warlock,22,Shadow,1,,
+Intimidating Shout,Warrior,22,Physical,1,The Fear Franchise,Shared template
+Poison Cleansing Totem,Shaman,22,Nature,1,The Totem Foundry,Shared template
+Seal of Justice,Paladin,22,Holy,1,The Seal Press,Shared template
+Water Breathing,Shaman,22,Nature,1,,
+Beast Lore,Hunter,24,Nature,1,,
+Counterspell,Mage,24,Arcane,1,,
+Detect Traps,Rogue,24,Physical,1,,
+Mind-numbing Poison,Rogue,24,Physical,1,The Numbered Vials,Verbatim clone
+Remove Curse,Druid,24,Arcane,1,The Cleanse Counter,Verbatim clone
+Sense Demons,Warlock,24,Shadow,1,The Tracking Dial,Verbatim clone
+Track Hidden,Hunter,24,Physical,1,The Tracking Dial,Verbatim clone
+Abolish Poison,Druid,26,Nature,1,The Cleanse Counter,Verbatim clone
+Blessing of Salvation,Paladin,26,Holy,1,The Blessing Rack,Shared template
+Challenging Shout,Warrior,26,Physical,1,The Druid Costume Shop,Verbatim clone
+Cheap Shot,Rogue,26,Physical,1,,
+Detect Lesser Invisibility,Warlock,26,Shadow,1,,
+Far Sight,Shaman,26,Nature,1,,
+Rapid Fire,Hunter,26,Arcane,1,,
+Track Elementals,Hunter,26,Physical,1,The Tracking Dial,Verbatim clone
+Challenging Roar,Druid,28,Physical,1,The Druid Costume Shop,Verbatim clone
+Conjure Mana Agate,Mage,28,Arcane,1,The Conjured Commissary,Verbatim clone
+Create Firestone (Lesser),Warlock,28,Fire,1,The Conjured Commissary,Verbatim clone
+Frost Trap,Hunter,28,Frost,1,,
+Shield Wall,Warrior,28,Physical,1,,
+Water Walking,Shaman,28,Nature,1,,
+Aspect of the Beast,Hunter,30,Nature,1,The Aspect Dial,Shared template
+Astral Recall,Shaman,30,Nature,1,,
+Berserker Stance,Warrior,30,Physical,1,,
+Create Soulstone (Lesser),Warlock,30,Shadow,1,The Conjured Commissary,Verbatim clone
+Disarm Trap,Rogue,30,Physical,1,,
+Divine Intervention,Paladin,30,Holy,1,,
+Feign Death,Hunter,30,Physical,1,,
+Grounding Totem,Shaman,30,Nature,1,The Totem Foundry,Shared template
+Reincarnation,Shaman,30,Nature,1,,
+Sanctity Aura,Paladin,30,Holy,1,The Aura Carousel,Shared template
+Summon Felhunter,Warlock,30,Shadow,1,The Stable & The Circle,Shared template
+Teleport: Darnassus,Mage,30,Arcane,1,The Hearth Network,Verbatim clone
+Teleport: Thunder Bluff,Mage,30,Arcane,1,The Hearth Network,Verbatim clone
+Travel Form,Druid,30,Physical,1,,
+Abolish Disease,Priest,32,Holy,1,The Cleanse Counter,Verbatim clone
+Berserker Rage,Warrior,32,Physical,1,,
+Flare,Hunter,32,Arcane,1,,
+Purge,Shaman,32,Nature,2,,
+Track Demons,Hunter,32,Physical,1,The Tracking Dial,Verbatim clone
+Track Humanoids,Druid,32,Physical,1,The Tracking Dial,Verbatim clone
+Blind,Rogue,34,Nature,1,,
+Create Healthstone,Warlock,34,Shadow,1,The Conjured Commissary,Verbatim clone
+Heal,Priest,34,Holy,4,"One Heal, Nine Names",Verbatim clone
+Levitate,Priest,34,Holy,1,,
+Sentry Totem,Shaman,34,Nature,1,,
+Create Firestone,Warlock,36,Fire,1,The Conjured Commissary,Verbatim clone
+Create Spellstone,Warlock,36,Shadow,1,The Conjured Commissary,Verbatim clone
+Dispel Magic,Priest,36,Holy,2,The Cleanse Counter,Verbatim clone
+Whirlwind,Warrior,36,Physical,1,,
+Blessing of Protection,Paladin,38,Holy,3,,
+Conjure Mana Jade,Mage,38,Arcane,1,The Conjured Commissary,Verbatim clone
+Curse of Idiocy,Warlock,38,Shadow,1,,
+Detect Invisibility,Warlock,38,Shadow,1,,
+Disease Cleansing Totem,Shaman,38,Nature,1,The Totem Foundry,Shared template
+Mind-numbing Poison II,Rogue,38,Physical,1,The Numbered Vials,Verbatim clone
+Aspect of the Pack,Hunter,40,Nature,1,The Aspect Dial,Shared template
+Combustion,Mage,40,Fire,1,,
+Create Soulstone,Warlock,40,Shadow,1,The Conjured Commissary,Verbatim clone
+Dire Bear Form,Druid,40,Physical,1,,
+Feline Grace,Druid,40,Physical,1,,
+Moonkin Form,Druid,40,Physical,1,,
+Portal: Ironforge,Mage,40,Arcane,1,The Hearth Network,Verbatim clone
+Portal: Orgrimmar,Mage,40,Arcane,1,The Hearth Network,Verbatim clone
+Portal: Stormwind,Mage,40,Arcane,1,The Hearth Network,Verbatim clone
+Portal: Undercity,Mage,40,Arcane,1,The Hearth Network,Verbatim clone
+Power Infusion,Priest,40,Holy,1,,
+Safe Fall,Rogue,40,Physical,1,,
+Summon Felsteed,Warlock,40,Shadow,1,The Stable & The Circle,Shared template
+Summon Warhorse,Paladin,40,Holy,1,The Stable & The Circle,Shared template
+Track Giants,Hunter,40,Physical,1,The Tracking Dial,Verbatim clone
+Cleanse,Paladin,42,Holy,1,The Cleanse Counter,Verbatim clone
+Slice and Dice,Rogue,42,Physical,2,,
+Vanish,Rogue,42,Physical,2,,
+Barkskin,Druid,44,Nature,1,,
+Mind Vision,Priest,44,Shadow,2,,
+Bash,Druid,46,Physical,3,,
+Charge,Warrior,46,Physical,3,,
+Create Firestone (Greater),Warlock,46,Fire,1,The Conjured Commissary,Verbatim clone
+Create Healthstone (Greater),Warlock,46,Shadow,1,The Conjured Commissary,Verbatim clone
+Dash,Druid,46,Physical,2,,
+Scare Beast,Hunter,46,Nature,3,The Fear Franchise,Shared template
+Banish,Warlock,48,Shadow,2,,
+Conjure Mana Citrine,Mage,48,Arcane,1,The Conjured Commissary,Verbatim clone
+Create Spellstone (Greater),Warlock,48,Shadow,1,The Conjured Commissary,Verbatim clone
+Disengage,Hunter,48,Physical,3,,
+Sap,Rogue,48,Physical,3,,
+Create Soulstone (Greater),Warlock,50,Shadow,1,The Conjured Commissary,Verbatim clone
+Curse of Tongues,Warlock,50,Shadow,2,The Curse Catalogue,Shared template
+Detect Greater Invisibility,Warlock,50,Shadow,1,,
+Divine Shield,Paladin,50,Holy,2,,
+Inferno,Warlock,50,Shadow,1,,
+Kidney Shot,Rogue,50,Physical,2,,
+Lay on Hands,Paladin,50,Holy,3,,
+Portal: Darnassus,Mage,50,Arcane,1,The Hearth Network,Verbatim clone
+Portal: Thunder Bluff,Mage,50,Arcane,1,The Hearth Network,Verbatim clone
+Prowl,Hunter,50,Physical,3,The Druid Costume Shop,Verbatim clone
+Recklessness,Warrior,50,Physical,1,,
+Track Dragonkin,Hunter,50,Physical,1,The Tracking Dial,Verbatim clone
+Cower,Druid,52,Physical,3,The Druid Costume Shop,Verbatim clone
+Curse of Weakness,Warlock,52,Shadow,6,The Curse Catalogue,Shared template
+Demoralizing Roar,Druid,52,Physical,5,,
+Drain Soul,Warlock,52,Shadow,4,,
+Fire Nova Totem,Shaman,52,Fire,5,The Totem Foundry,Shared template
+Intercept,Warrior,52,Physical,3,,
+Mind Soothe,Priest,52,Shadow,3,,
+Mind-numbing Poison III,Rogue,52,Physical,1,The Numbered Vials,Verbatim clone
+Scorpid Sting,Hunter,52,Nature,4,The Sting Clip,Verbatim clone
+Seal of the Crusader,Paladin,52,Holy,6,The Seal Press,Shared template
+Shadow Resistance Aura,Paladin,52,Holy,3,The Aura Carousel,Shared template
+Shield Bash,Warrior,52,Physical,3,The Interrupt Union,Verbatim clone
+Turn Undead,Paladin,52,Nature,3,,
+Windfury Totem,Shaman,52,Nature,3,The Totem Foundry,Shared template
+Amplify Magic,Mage,54,Arcane,4,Amplify & Dampen,Verbatim clone
+Arcane Explosion,Mage,54,Arcane,6,,
+Blessing of Sacrifice,Paladin,54,Holy,2,The Blessing Rack,Shared template
+Chain Heal,Shaman,54,Nature,3,,
+Counterattack,Hunter,54,Physical,3,,
+Demoralizing Shout,Warrior,54,Physical,5,,
+Drain Life,Warlock,54,Shadow,6,,
+Drain Mana,Warlock,54,Shadow,4,,
+Explosive Trap,Hunter,54,Fire,3,,
+Faerie Fire,Druid,54,Nature,4,,
+Faerie Fire (Feral),Druid,54,Nature,4,,
+Fire Blast,Mage,54,Fire,7,,
+Frost Nova,Mage,54,Frost,4,,
+Frost Resistance Totem,Shaman,54,Fire,3,The Totem Foundry,Shared template
+Garrote,Rogue,54,Physical,6,The Affliction Engine,Shared engine
+Hammer of Justice,Paladin,54,Holy,4,,
+Hamstring,Warrior,54,Physical,3,,
+Hellfire,Warlock,54,Fire,3,,
+Howl of Terror,Warlock,54,Shadow,2,The Fear Franchise,Shared template
+Rake,Druid,54,Physical,4,,
+Rockbiter Weapon,Shaman,54,Nature,7,,
+Shred,Druid,54,Physical,5,The Druid Costume Shop,Verbatim clone
+Sinister Strike,Rogue,54,Physical,8,,
+Slam,Warrior,54,Physical,4,,
+Smite,Priest,54,Holy,8,The Bolt Engine,Shared engine
+Soothe Animal,Druid,54,Nature,3,,
+Stoneskin Totem,Shaman,54,Nature,6,The Totem Foundry,Shared template
+Swipe,Druid,54,Physical,5,,
+Thorns,Druid,54,Nature,6,,
+Wrath,Druid,54,Nature,8,The Bolt Engine,Shared engine
+Arcane Brilliance,Mage,56,Arcane,1,The Greater Ladder,Shared template
+Arcane Intellect,Mage,56,Arcane,5,The Greater Ladder,Shared template
+Arcane Missiles,Mage,56,Arcane,8,,
+Aspect of the Wild,Hunter,56,Nature,2,The Aspect Dial,Shared template
+Chain Lightning,Shaman,56,Nature,4,,
+Create Firestone (Major),Warlock,56,Fire,1,The Conjured Commissary,Verbatim clone
+Curse of Recklessness,Warlock,56,Shadow,4,The Curse Catalogue,Shared template
+Curse of Shadow,Warlock,56,Shadow,2,The Curse Catalogue,Shared template
+Execute,Warrior,56,Physical,5,,
+Expose Armor,Rogue,56,Physical,5,,
+Fear,Warlock,56,Shadow,3,The Fear Franchise,Shared template
+Flamestrike,Mage,56,Fire,6,,
+Flametongue Weapon,Shaman,56,Fire,6,,
+Flash Heal,Priest,56,Holy,7,"One Heal, Nine Names",Verbatim clone
+Frenzied Regeneration,Druid,56,Physical,3,,
+Frost Resistance Aura,Paladin,56,Holy,3,The Aura Carousel,Shared template
+Immolation Trap,Hunter,56,Fire,5,,
+Life Tap,Warlock,56,Shadow,6,,
+Lightning Bolt,Shaman,56,Nature,10,The Bolt Engine,Shared engine
+Lightning Shield,Shaman,56,Nature,7,,
+Magma Totem,Shaman,56,Fire,4,The Totem Foundry,Shared template
+Mana Burn,Priest,56,Shadow,5,,
+Mana Spring Totem,Shaman,56,Frost,4,The Totem Foundry,Shared template
+Mocking Blow,Warrior,56,Physical,5,,
+Pounce,Druid,56,Physical,3,,
+Prayer of Shadow Protection,Priest,56,Holy,1,The Greater Ladder,Shared template
+Psychic Scream,Priest,56,Shadow,4,The Fear Franchise,Shared template
+Raptor Strike,Hunter,56,Physical,8,,
+Retribution Aura,Paladin,56,Holy,5,The Aura Carousel,Shared template
+Scorpid Poison,Hunter,56,Physical,4,,
+Shadow Protection,Priest,56,Shadow,3,The Greater Ladder,Shared template
+Shadowburn,Warlock,56,Shadow,6,,
+Soul Fire,Warlock,56,Fire,2,,
+Viper Sting,Hunter,56,Nature,3,The Sting Clip,Verbatim clone
+Windwall Totem,Shaman,56,Nature,3,The Totem Foundry,Shared template
+Ambush,Rogue,58,Physical,6,The Druid Costume Shop,Verbatim clone
+Claw,Druid,58,Physical,5,,
+Cone of Cold,Mage,58,Frost,5,,
+Conjure Mana Ruby,Mage,58,Arcane,1,The Conjured Commissary,Verbatim clone
+Create Healthstone (Major),Warlock,58,Shadow,1,The Conjured Commissary,Verbatim clone
+Curse of Agony,Warlock,58,Shadow,5,The Curse Catalogue,Shared template
+Death Coil,Warlock,58,Shadow,3,,
+Desperate Prayer,Priest,58,Holy,7,,
+Entangling Roots,Druid,58,Nature,6,,
+Fire Resistance Totem,Shaman,58,Frost,3,The Totem Foundry,Shared template
+Flametongue Totem,Shaman,58,Fire,4,The Totem Foundry,Shared template
+Flash of Light,Paladin,58,Holy,7,"One Heal, Nine Names",Verbatim clone
+Frost Shock,Shaman,58,Frost,4,The Shock Battery,Verbatim clone
+Frostbrand Weapon,Shaman,58,Frost,5,,
+Hemorrhage,Rogue,58,Physical,3,,
+Hibernate,Druid,58,Nature,3,,
+Hunter's Mark,Hunter,58,Arcane,4,,
+Ice Barrier,Mage,58,Frost,4,,
+Kick,Rogue,58,Physical,4,The Interrupt Union,Verbatim clone
+Mage Armor,Mage,58,Arcane,3,The Protection Rack,Shared template
+Mana Tide Totem,Shaman,58,Frost,3,The Totem Foundry,Shared template
+Maul,Druid,58,Physical,7,,
+Mind Blast,Priest,58,Shadow,9,The Bolt Engine,Shared engine
+Mind Control,Priest,58,Shadow,3,,
+Mongoose Bite,Hunter,58,Physical,4,,
+Moonfire,Druid,58,Arcane,10,The Affliction Engine,Shared engine
+Nature's Grasp,Druid,58,Nature,6,,
+Pummel,Warrior,58,Physical,2,The Interrupt Union,Verbatim clone
+Rain of Fire,Warlock,58,Fire,4,,
+Ravage,Druid,58,Physical,4,The Druid Costume Shop,Verbatim clone
+Resurrection,Priest,58,Holy,5,The Resurrection Union,Verbatim clone
+Scorch,Mage,58,Fire,7,,
+Seal of Righteousness,Paladin,58,Holy,8,The Seal Press,Shared template
+Seal of Wisdom,Paladin,58,Holy,3,The Seal Press,Shared template
+Searing Pain,Warlock,58,Fire,6,,
+Shadow Word: Pain,Priest,58,Shadow,8,The Affliction Engine,Shared engine
+Siphon Life,Warlock,58,Shadow,4,,
+Sprint,Rogue,58,Physical,3,,
+Starshards,Priest,58,Arcane,7,,
+Stoneclaw Totem,Shaman,58,Nature,6,The Totem Foundry,Shared template
+Subjugate Demon,Warlock,58,Shadow,3,,
+Sunder Armor,Warrior,58,Physical,5,,
+Thunder Clap,Warrior,58,Physical,6,,
+Volley,Hunter,58,Arcane,3,,
+Ancestral Spirit,Shaman,60,Nature,5,The Resurrection Union,Verbatim clone
+Arcane Shot,Hunter,60,Arcane,8,,
+Aspect of the Hawk,Hunter,60,Nature,7,The Aspect Dial,Shared template
+Backstab,Rogue,60,Physical,9,The Druid Costume Shop,Verbatim clone
+Battle Shout,Warrior,60,Physical,7,,
+Black Arrow,Hunter,60,Shadow,2,,
+Blast Wave,Mage,60,Fire,5,,
+Blessing of Light,Paladin,60,Holy,3,The Blessing Rack,Shared template
+Blessing of Might,Paladin,60,Holy,7,The Blessing Rack,Shared template
+Blessing of Wisdom,Paladin,60,Holy,6,The Blessing Rack,Shared template
+Blizzard,Mage,60,Frost,6,,
+Bloodthirst,Warrior,60,Physical,4,,
+Cleave,Warrior,60,Physical,5,,
+Conflagrate,Warlock,60,Fire,4,,
+Conjure Food,Mage,60,Arcane,7,The Conjured Commissary,Verbatim clone
+Conjure Water,Mage,60,Arcane,7,The Conjured Commissary,Verbatim clone
+Consecration,Paladin,60,Holy,5,,
+Corruption,Warlock,60,Shadow,7,The Affliction Engine,Shared engine
+Create Soulstone (Major),Warlock,60,Shadow,1,The Conjured Commissary,Verbatim clone
+Create Spellstone (Major),Warlock,60,Shadow,1,The Conjured Commissary,Verbatim clone
+Curse of Doom,Warlock,60,Shadow,1,The Curse Catalogue,Shared template
+Curse of the Elements,Warlock,60,Shadow,3,The Curse Catalogue,Shared template
+Dampen Magic,Mage,60,Arcane,5,Amplify & Dampen,Verbatim clone
+Dark Pact,Warlock,60,Shadow,3,,
+Demon Armor,Warlock,60,Shadow,5,The Protection Rack,Shared template
+Devotion Aura,Paladin,60,Holy,7,The Aura Carousel,Shared template
+Devouring Plague,Priest,60,Shadow,6,,
+Distracting Shot,Hunter,60,Arcane,6,,
+Divine Spirit,Priest,60,Holy,4,The Greater Ladder,Shared template
+Earth Shock,Shaman,60,Nature,7,The Interrupt Union,Verbatim clone
+Elune's Grace,Priest,60,Holy,5,,
+Eviscerate,Rogue,60,Physical,9,,
+Exorcism,Paladin,60,Holy,6,,
+Fade,Priest,60,Shadow,6,,
+Feedback,Priest,60,Shadow,5,,
+Feint,Rogue,60,Physical,5,The Druid Costume Shop,Verbatim clone
+Ferocious Bite,Druid,60,Physical,5,,
+Fire Resistance Aura,Paladin,60,Holy,3,The Aura Carousel,Shared template
+Fire Ward,Mage,60,Fire,5,The Protection Rack,Shared template
+Fireball,Mage,60,Fire,12,The Bolt Engine,Shared engine
+Flame Shock,Shaman,60,Fire,6,The Shock Battery,Verbatim clone
+Freezing Trap,Hunter,60,Frost,3,,
+Frost Ward,Mage,60,Frost,5,The Protection Rack,Shared template
+Frostbolt,Mage,60,Frost,11,The Bolt Engine,Shared engine
+Gift of the Wild,Druid,60,Nature,2,The Greater Ladder,Shared template
+Gouge,Rogue,60,Physical,5,,
+Grace of Air Totem,Shaman,60,Nature,3,The Totem Foundry,Shared template
+Greater Blessing of Kings,Paladin,60,Holy,1,,
+Greater Blessing of Light,Paladin,60,Holy,1,,
+Greater Blessing of Might,Paladin,60,Holy,2,,
+Greater Blessing of Salvation,Paladin,60,Holy,1,,
+Greater Blessing of Sanctuary,Paladin,60,Holy,1,,
+Greater Blessing of Wisdom,Paladin,60,Holy,2,,
+Greater Heal,Priest,60,Holy,5,"One Heal, Nine Names",Verbatim clone
+Hammer of Wrath,Paladin,60,Holy,3,,
+Healing Stream Totem,Shaman,60,Frost,5,The Totem Foundry,Shared template
+Healing Touch,Druid,60,Nature,11,"One Heal, Nine Names",Verbatim clone
+Healing Wave,Shaman,60,Nature,10,"One Heal, Nine Names",Verbatim clone
+Health Funnel,Warlock,60,Shadow,7,,
+Heroic Strike,Warrior,60,Physical,9,,
+Hex of Weakness,Priest,60,Shadow,6,,
+Holy Fire,Priest,60,Holy,8,The Bolt Engine,Shared engine
+Holy Light,Paladin,60,Holy,9,"One Heal, Nine Names",Verbatim clone
+Holy Nova,Priest,60,Holy,6,,
+Holy Wrath,Paladin,60,Holy,2,,
+Hurricane,Druid,60,Nature,3,,
+Ice Armor,Mage,60,Frost,4,The Protection Rack,Shared template
+Immolate,Warlock,60,Fire,8,The Affliction Engine,Shared engine
+Inner Fire,Priest,60,Holy,6,The Protection Rack,Shared template
+Insect Swarm,Druid,60,Nature,5,,
+Lesser Healing Wave,Shaman,60,Nature,6,"One Heal, Nine Names",Verbatim clone
+Lightning Breath,Hunter,60,Physical,6,,
+Lightwell,Priest,60,Holy,3,,
+Mana Shield,Mage,60,Arcane,6,,
+Mark of the Wild,Druid,60,Nature,7,The Greater Ladder,Shared template
+Mend Pet,Hunter,60,Nature,7,,
+Mind Flay,Priest,60,Shadow,6,,
+Mortal Strike,Warrior,60,Physical,4,,
+Multi-Shot,Hunter,60,Physical,5,,
+Nature Resistance Totem,Shaman,60,Nature,3,The Totem Foundry,Shared template
+Overpower,Warrior,60,Physical,4,,
+Polymorph,Mage,60,Arcane,5,The Polymorph Barn,Verbatim clone
+Polymorph: Cow,Mage,60,Arcane,1,The Polymorph Barn,Verbatim clone
+Power Word: Fortitude,Priest,60,Holy,6,The Greater Ladder,Shared template
+Power Word: Shield,Priest,60,Holy,10,The Protection Rack,Shared template
+Prayer of Fortitude,Priest,60,Holy,2,The Greater Ladder,Shared template
+Prayer of Healing,Priest,60,Holy,5,,
+Prayer of Spirit,Priest,60,Holy,1,The Greater Ladder,Shared template
+Prowl,Druid,60,Physical,3,The Druid Costume Shop,Verbatim clone
+Pyroblast,Mage,60,Fire,8,The Bolt Engine,Shared engine
+Rebirth,Druid,60,Nature,5,The Resurrection Union,Verbatim clone
+Redemption,Paladin,60,Holy,5,The Resurrection Union,Verbatim clone
+Regrowth,Druid,60,Nature,9,,
+Rejuvenation,Druid,60,Nature,11,,
+Rend,Warrior,60,Physical,7,The Affliction Engine,Shared engine
+Renew,Priest,60,Holy,10,,
+Revenge,Warrior,60,Physical,6,,
+Rip,Druid,60,Physical,6,,
+Ritual of Doom,Warlock,60,Shadow,1,,
+Rupture,Rogue,60,Physical,6,The Affliction Engine,Shared engine
+Seal of Light,Paladin,60,Holy,4,The Seal Press,Shared template
+Searing Totem,Shaman,60,Fire,6,The Totem Foundry,Shared template
+Serpent Sting,Hunter,60,Nature,9,The Affliction Engine,Shared engine
+Shackle Undead,Priest,60,Holy,3,,
+Shadow Bolt,Warlock,60,Shadow,10,The Bolt Engine,Shared engine
+Shadow Ward,Warlock,60,Shadow,4,The Protection Rack,Shared template
+Shadowguard,Priest,60,Shadow,6,,
+Shield Slam,Warrior,60,Physical,4,,
+Starfire,Druid,60,Arcane,7,The Bolt Engine,Shared engine
+Stealth,Rogue,60,Physical,4,The Druid Costume Shop,Verbatim clone
+Strength of Earth Totem,Shaman,60,Nature,5,The Totem Foundry,Shared template
+Summon Charger,Paladin,60,Holy,1,The Stable & The Circle,Shared template
+Summon Dreadsteed,Warlock,60,Shadow,1,The Stable & The Circle,Shared template
+Tiger's Fury,Druid,60,Physical,4,,
+Touch of Weakness,Priest,60,Shadow,6,,
+Tranquility,Druid,60,Nature,4,,
+Tranquilizing Shot,Hunter,60,Nature,1,,
+Windfury Weapon,Shaman,60,Nature,4,,
+Wing Clip,Hunter,60,Physical,3,,
+Wyvern Sting,Hunter,60,Nature,3,,

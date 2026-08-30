@@ -1,6 +1,6 @@
 # Cleric Spell List
 
-**105 spells** in the SRD · **27** exclusive to Cleric (26%) · **27** belong to an identified [[findings|template family]] (26%)
+**105 spells** in the SRD · **27** exclusive to Cleric (26%) · **28** belong to an identified [[findings|template family]] (27%)
 
 List overlap: **38%** shared with [[classes/druid|Druid]], **35%** shared with [[classes/wizard|Wizard]], **34%** shared with [[classes/bard|Bard]].
 
@@ -42,7 +42,7 @@ List overlap: **38%** shared with [[classes/druid|Druid]], **35%** shared with [
 | 2 | <img class="sic" data-i="prayer-of-healing" alt=""> **Prayer of Healing** | Evocation | [[families/cure|❤️‍🩹 The Cure Family]] | *(exclusive)* |
 | 2 | <img class="sic" data-i="protection-from-poison" alt=""> **Protection from Poison** | Abjuration | [[families/protection|🛡️ The Protection Series]] | [[classes/druid|Druid]], [[classes/paladin|Paladin]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="silence" alt=""> **Silence** | Illusion | — | [[classes/bard|Bard]], [[classes/ranger|Ranger]] |
-| 2 | <img class="sic" data-i="spiritual-weapon" alt=""> **Spiritual Weapon** | Evocation | — | *(exclusive)* |
+| 2 | <img class="sic" data-i="spiritual-weapon" alt=""> **Spiritual Weapon** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | *(exclusive)* |
 | 2 | <img class="sic" data-i="warding-bond" alt=""> **Warding Bond** | Abjuration | — | *(exclusive)* |
 | 2 | **Zone of Truth** | Enchantment | — | [[classes/bard|Bard]], [[classes/paladin|Paladin]] |
 | 3 | <img class="sic" data-i="animate-dead" alt=""> **Animate Dead** | Necromancy | [[families/undead|💀 The Undead Workshop]] | [[classes/wizard|Wizard]] |
@@ -115,4 +115,4 @@ List overlap: **38%** shared with [[classes/druid|Druid]], **35%** shared with [
 Back to [[overview|Overview]] · compare on [[findings|The Identical-Spell List]].
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/bane-bless|Bane & Bless]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/cure|The Cure Family]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/detect|The Detect Series]] · [[families/dispel|The Dispel Engine]] · [[families/guidance-resistance|Guidance & Resistance]] · [[families/hold|The Hold Pair]] · [[families/locate|The Locate Series]] · [[families/protection|The Protection Series]] · [[families/speak-with|The Speak-With Series]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/undead|The Undead Workshop]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/bane-bless|Bane & Bless]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/cure|The Cure Family]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/detect|The Detect Series]] · [[families/dispel|The Dispel Engine]] · [[families/guidance-resistance|Guidance & Resistance]] · [[families/hold|The Hold Pair]] · [[families/locate|The Locate Series]] · [[families/phantom-armory|The Phantom Armory]] · [[families/protection|The Protection Series]] · [[families/speak-with|The Speak-With Series]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/undead|The Undead Workshop]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

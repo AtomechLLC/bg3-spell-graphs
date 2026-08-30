@@ -1,6 +1,6 @@
 # Warlock Spell List
 
-**64 spells** in the SRD · **2** exclusive to Warlock (3%) · **21** belong to an identified [[findings|template family]] (33%)
+**64 spells** in the SRD · **2** exclusive to Warlock (3%) · **22** belong to an identified [[findings|template family]] (34%)
 
 List overlap: **92%** shared with [[classes/wizard|Wizard]], **61%** shared with [[classes/sorcerer|Sorcerer]], **55%** shared with [[classes/bard|Bard]].
 
@@ -19,7 +19,7 @@ List overlap: **92%** shared with [[classes/wizard|Wizard]], **61%** shared with
 | 1 | <img class="sic" data-i="hellish-rebuke" alt=""> **Hellish Rebuke** | Evocation | [[families/blast|💥 The Elemental Blast Template]] | *(exclusive)* |
 | 1 | **Illusory Script** | Illusion | — | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="protection-from-evil-and-good" alt=""> **Protection from Evil and Good** | Abjuration | [[families/protection|🛡️ The Protection Series]] | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]], [[classes/wizard|Wizard]] |
-| 1 | **Unseen Servant** | Conjuration | — | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
+| 1 | **Unseen Servant** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="darkness" alt=""> **Darkness** | Evocation | [[families/darkness-daylight|🌗 Darkness & Daylight]] | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="enthrall" alt=""> **Enthrall** | Enchantment | — | [[classes/bard|Bard]] |
 | 2 | <img class="sic" data-i="hold-person" alt=""> **Hold Person** | Enchantment | [[families/hold|⛓️ The Hold Pair]] | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -74,4 +74,4 @@ List overlap: **92%** shared with [[classes/wizard|Wizard]], **61%** shared with
 Back to [[overview|Overview]] · compare on [[findings|The Identical-Spell List]].
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/sorcerer|Sorcerer]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/hold|The Hold Pair]] · [[families/image|The Image Ladder]] · [[families/invisibility|The Invisibility Ladder]] · [[families/polymorph|The Polymorph Ladder]] · [[families/protection|The Protection Series]] · [[families/suggestion|The Suggestion Pair]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/undead|The Undead Workshop]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/paladin|Paladin]] · [[classes/sorcerer|Sorcerer]] · [[classes/wizard|Wizard]] · [[families/attack-cantrips|The Damage Cantrip Engine]] · [[families/blast|The Elemental Blast Template]] · [[families/conjure-single|Conjure a Champion]] · [[families/darkness-daylight|Darkness & Daylight]] · [[families/dispel|The Dispel Engine]] · [[families/dominate|The Dominate Chain]] · [[families/hold|The Hold Pair]] · [[families/image|The Image Ladder]] · [[families/invisibility|The Invisibility Ladder]] · [[families/phantom-armory|The Phantom Armory]] · [[families/polymorph|The Polymorph Ladder]] · [[families/protection|The Protection Series]] · [[families/suggestion|The Suggestion Pair]] · [[families/touch-buffs|The Touch-Buff Skeleton]] · [[families/undead|The Undead Workshop]] · [[missiles|Missile Spells]] · [[overview|Overview]] · [[spells|All Spells, Tagged]]*

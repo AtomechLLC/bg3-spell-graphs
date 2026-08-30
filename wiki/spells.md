@@ -1,6 +1,6 @@
 # All Spells, Tagged by Family
 
-Every one of the **319 SRD spells**, flat, with its family tag — **73 spells carry a tag** (23%), the rest are mechanically singular designs (marked —). Tiers are defined on [[findings|The Identical-Spell List]]; family pages hold the member stat tables and design reads.
+Every one of the **319 SRD spells**, flat, with its family tag — **79 spells carry a tag** (25%), the rest are mechanically singular designs (marked —). Tiers are defined on [[findings|The Identical-Spell List]]; family pages hold the member stat tables and design reads.
 
 | Lv | Spell | School | Family | Tier | Classes |
 |---|---|---|---|---|---|
@@ -76,7 +76,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **73 spells c
 | 1 | <img class="sic" data-i="sleep" alt=""> **Sleep** | Enchantment | [[families/hp-pool|🧮 The Hit-Point Pool Engine]] | <span class="tier tier-template">Shared template</span> | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 1 | <img class="sic" data-i="speak-with-animals" alt=""> **Speak with Animals** | Divination | [[families/speak-with|🗣️ The Speak-With Series]] | <span class="tier tier-engine">Shared engine</span> | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 1 | <img class="sic" data-i="thunderwave" alt=""> **Thunderwave** | Evocation | — |  | [[classes/bard|Bard]], [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
-| 1 | **Unseen Servant** | Conjuration | — |  | [[classes/bard|Bard]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
+| 1 | **Unseen Servant** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | [[classes/bard|Bard]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="acid-arrow" alt=""> **Acid Arrow** | Evocation | — |  | [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="aid" alt=""> **Aid** | Abjuration | — |  | [[classes/cleric|Cleric]], [[classes/paladin|Paladin]] |
 | 2 | **Alter Self** | Transmutation | — |  | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -99,7 +99,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **73 spells c
 | 2 | **Find Steed** | Conjuration | — |  | [[classes/paladin|Paladin]] |
 | 2 | **Find Traps** | Divination | — |  | [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 2 | <img class="sic" data-i="flame-blade" alt=""> **Flame Blade** | Evocation | — |  | [[classes/druid|Druid]] |
-| 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | — |  | [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
+| 2 | <img class="sic" data-i="flaming-sphere" alt=""> **Flaming Sphere** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | [[classes/druid|Druid]], [[classes/wizard|Wizard]] |
 | 2 | **Gentle Repose** | Necromancy | — |  | [[classes/cleric|Cleric]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="gust-of-wind" alt=""> **Gust of Wind** | Evocation | — |  | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="heat-metal" alt=""> **Heat Metal** | Transmutation | — |  | [[classes/bard|Bard]], [[classes/druid|Druid]] |
@@ -126,7 +126,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **73 spells c
 | 2 | <img class="sic" data-i="silence" alt=""> **Silence** | Illusion | — |  | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/ranger|Ranger]] |
 | 2 | **Spider Climb** | Transmutation | [[families/touch-buffs|🤝 The Touch-Buff Skeleton]] | <span class="tier tier-engine">Shared engine</span> | [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="spike-growth" alt=""> **Spike Growth** | Transmutation | — |  | [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
-| 2 | <img class="sic" data-i="spiritual-weapon" alt=""> **Spiritual Weapon** | Evocation | — |  | [[classes/cleric|Cleric]] |
+| 2 | <img class="sic" data-i="spiritual-weapon" alt=""> **Spiritual Weapon** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | [[classes/cleric|Cleric]] |
 | 2 | **Suggestion** | Enchantment | [[families/suggestion|💬 The Suggestion Pair]] | <span class="tier tier-template">Shared template</span> | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/warlock|Warlock]], [[classes/wizard|Wizard]] |
 | 2 | <img class="sic" data-i="warding-bond" alt=""> **Warding Bond** | Abjuration | — |  | [[classes/cleric|Cleric]] |
 | 2 | <img class="sic" data-i="web" alt=""> **Web** | Conjuration | — |  | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
@@ -187,7 +187,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **73 spells c
 | 4 | **Divination** | Divination | — |  | [[classes/druid|Druid]] |
 | 4 | <img class="sic" data-i="dominate-beast" alt=""> **Dominate Beast** | Enchantment | [[families/dominate|🧠 The Dominate Chain]] | <span class="tier tier-clone">Verbatim clone</span> | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]] |
 | 4 | **Fabricate** | Transmutation | — |  | [[classes/wizard|Wizard]] |
-| 4 | **Faithful Hound** | Conjuration | — |  | [[classes/wizard|Wizard]] |
+| 4 | **Faithful Hound** | Conjuration | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="fire-shield" alt=""> **Fire Shield** | Evocation | — |  | [[classes/wizard|Wizard]] |
 | 4 | <img class="sic" data-i="freedom-of-movement" alt=""> **Freedom of Movement** | Abjuration | — |  | [[classes/bard|Bard]], [[classes/cleric|Cleric]], [[classes/druid|Druid]], [[classes/ranger|Ranger]] |
 | 4 | <img class="sic" data-i="giant-insect" alt=""> **Giant Insect** | Transmutation | — |  | [[classes/druid|Druid]] |
@@ -206,7 +206,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **73 spells c
 | 4 | <img class="sic" data-i="wall-of-fire" alt=""> **Wall of Fire** | Evocation | — |  | [[classes/druid|Druid]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | **Animate Objects** | Transmutation | — |  | [[classes/bard|Bard]], [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | **Antilife Shell** | Abjuration | — |  | [[classes/druid|Druid]] |
-| 5 | **Arcane Hand** | Evocation | — |  | [[classes/wizard|Wizard]] |
+| 5 | **Arcane Hand** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | [[classes/wizard|Wizard]] |
 | 5 | **Awaken** | Transmutation | — |  | [[classes/bard|Bard]], [[classes/druid|Druid]] |
 | 5 | <img class="sic" data-i="cloudkill" alt=""> **Cloudkill** | Conjuration | — |  | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 5 | **Commune** | Divination | — |  | [[classes/cleric|Cleric]] |
@@ -272,7 +272,7 @@ Every one of the **319 SRD spells**, flat, with its family tag — **73 spells c
 | 6 | <img class="sic" data-i="wall-of-thorns" alt=""> **Wall of Thorns** | Conjuration | — |  | [[classes/druid|Druid]] |
 | 6 | <img class="sic" data-i="wind-walk" alt=""> **Wind Walk** | Transmutation | — |  | [[classes/druid|Druid]] |
 | 6 | **Word of Recall** | Conjuration | — |  | [[classes/cleric|Cleric]] |
-| 7 | **Arcane Sword** | Evocation | — |  | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
+| 7 | **Arcane Sword** | Evocation | [[families/phantom-armory|⚔️ The Phantom Armory]] | <span class="tier tier-engine">Shared engine</span> | [[classes/bard|Bard]], [[classes/wizard|Wizard]] |
 | 7 | **Conjure Celestial** | Conjuration | [[families/conjure-single|🧞 Conjure a Champion]] | <span class="tier tier-template">Shared template</span> | [[classes/cleric|Cleric]] |
 | 7 | **Delayed Blast Fireball** | Evocation | — |  | [[classes/sorcerer|Sorcerer]], [[classes/wizard|Wizard]] |
 | 7 | **Divine Word** | Evocation | — |  | [[classes/cleric|Cleric]] |

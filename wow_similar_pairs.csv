@@ -1,0 +1,511 @@
+sim,a,cls_a,b,cls_b
+1.000,Growl,Druid,Taunt,Warrior
+1.000,Cure Poison,Druid,Cure Poison,Shaman
+1.000,Challenging Roar,Druid,Challenging Shout,Warrior
+1.000,Feline Grace,Druid,Safe Fall,Rogue
+1.000,Bash,Druid,Hammer of Justice,Paladin
+1.000,Faerie Fire,Druid,Faerie Fire (Feral),Druid
+1.000,Soothe Animal,Druid,Mind Soothe,Priest
+1.000,Wrath,Druid,Starfire,Druid
+1.000,Moonfire,Druid,Immolate,Warlock
+1.000,Healing Touch,Druid,Flash of Light,Paladin
+1.000,Healing Touch,Druid,Holy Light,Paladin
+1.000,Healing Touch,Druid,Flash Heal,Priest
+1.000,Healing Touch,Druid,Healing Wave,Shaman
+1.000,Healing Touch,Druid,Lesser Healing Wave,Shaman
+1.000,Track Beasts,Hunter,Track Humanoids,Hunter
+1.000,Track Beasts,Hunter,Track Undead,Hunter
+1.000,Track Beasts,Hunter,Track Elementals,Hunter
+1.000,Track Beasts,Hunter,Track Demons,Hunter
+1.000,Track Beasts,Hunter,Track Giants,Hunter
+1.000,Track Beasts,Hunter,Track Dragonkin,Hunter
+1.000,Track Humanoids,Hunter,Track Undead,Hunter
+1.000,Track Humanoids,Hunter,Track Elementals,Hunter
+1.000,Track Humanoids,Hunter,Track Demons,Hunter
+1.000,Track Humanoids,Hunter,Track Giants,Hunter
+1.000,Track Humanoids,Hunter,Track Dragonkin,Hunter
+1.000,Track Undead,Hunter,Track Elementals,Hunter
+1.000,Track Undead,Hunter,Track Demons,Hunter
+1.000,Track Undead,Hunter,Track Giants,Hunter
+1.000,Track Undead,Hunter,Track Dragonkin,Hunter
+1.000,Track Elementals,Hunter,Track Demons,Hunter
+1.000,Track Elementals,Hunter,Track Giants,Hunter
+1.000,Track Elementals,Hunter,Track Dragonkin,Hunter
+1.000,Track Demons,Hunter,Track Giants,Hunter
+1.000,Track Demons,Hunter,Track Dragonkin,Hunter
+1.000,Track Giants,Hunter,Track Dragonkin,Hunter
+1.000,Teleport: Ironforge,Mage,Teleport: Orgrimmar,Mage
+1.000,Teleport: Ironforge,Mage,Teleport: Stormwind,Mage
+1.000,Teleport: Ironforge,Mage,Teleport: Undercity,Mage
+1.000,Teleport: Ironforge,Mage,Teleport: Darnassus,Mage
+1.000,Teleport: Ironforge,Mage,Teleport: Thunder Bluff,Mage
+1.000,Teleport: Orgrimmar,Mage,Teleport: Stormwind,Mage
+1.000,Teleport: Orgrimmar,Mage,Teleport: Undercity,Mage
+1.000,Teleport: Orgrimmar,Mage,Teleport: Darnassus,Mage
+1.000,Teleport: Orgrimmar,Mage,Teleport: Thunder Bluff,Mage
+1.000,Teleport: Stormwind,Mage,Teleport: Undercity,Mage
+1.000,Teleport: Stormwind,Mage,Teleport: Darnassus,Mage
+1.000,Teleport: Stormwind,Mage,Teleport: Thunder Bluff,Mage
+1.000,Teleport: Undercity,Mage,Teleport: Darnassus,Mage
+1.000,Teleport: Undercity,Mage,Teleport: Thunder Bluff,Mage
+1.000,Conjure Mana Agate,Mage,Conjure Mana Jade,Mage
+1.000,Conjure Mana Agate,Mage,Conjure Mana Citrine,Mage
+1.000,Conjure Mana Agate,Mage,Conjure Mana Ruby,Mage
+1.000,Teleport: Darnassus,Mage,Teleport: Thunder Bluff,Mage
+1.000,Conjure Mana Jade,Mage,Conjure Mana Citrine,Mage
+1.000,Conjure Mana Jade,Mage,Conjure Mana Ruby,Mage
+1.000,Portal: Ironforge,Mage,Portal: Orgrimmar,Mage
+1.000,Portal: Ironforge,Mage,Portal: Stormwind,Mage
+1.000,Portal: Ironforge,Mage,Portal: Undercity,Mage
+1.000,Portal: Ironforge,Mage,Portal: Darnassus,Mage
+1.000,Portal: Ironforge,Mage,Portal: Thunder Bluff,Mage
+1.000,Portal: Orgrimmar,Mage,Portal: Stormwind,Mage
+1.000,Portal: Orgrimmar,Mage,Portal: Undercity,Mage
+1.000,Portal: Orgrimmar,Mage,Portal: Darnassus,Mage
+1.000,Portal: Orgrimmar,Mage,Portal: Thunder Bluff,Mage
+1.000,Portal: Stormwind,Mage,Portal: Undercity,Mage
+1.000,Portal: Stormwind,Mage,Portal: Darnassus,Mage
+1.000,Portal: Stormwind,Mage,Portal: Thunder Bluff,Mage
+1.000,Portal: Undercity,Mage,Portal: Darnassus,Mage
+1.000,Portal: Undercity,Mage,Portal: Thunder Bluff,Mage
+1.000,Conjure Mana Citrine,Mage,Conjure Mana Ruby,Mage
+1.000,Portal: Darnassus,Mage,Portal: Thunder Bluff,Mage
+1.000,Fire Ward,Mage,Frost Ward,Mage
+1.000,Fire Ward,Mage,Shadow Ward,Warlock
+1.000,Frost Ward,Mage,Shadow Ward,Warlock
+1.000,Sense Undead,Paladin,Sense Demons,Warlock
+1.000,Shadow Resistance Aura,Paladin,Frost Resistance Aura,Paladin
+1.000,Shadow Resistance Aura,Paladin,Fire Resistance Aura,Paladin
+1.000,Frost Resistance Aura,Paladin,Fire Resistance Aura,Paladin
+1.000,Flash of Light,Paladin,Holy Light,Paladin
+1.000,Flash of Light,Paladin,Flash Heal,Priest
+1.000,Flash of Light,Paladin,Healing Wave,Shaman
+1.000,Flash of Light,Paladin,Lesser Healing Wave,Shaman
+1.000,Holy Light,Paladin,Flash Heal,Priest
+1.000,Holy Light,Paladin,Healing Wave,Shaman
+1.000,Holy Light,Paladin,Lesser Healing Wave,Shaman
+1.000,Redemption,Paladin,Resurrection,Priest
+1.000,Lesser Heal,Priest,Heal,Priest
+1.000,Flash Heal,Priest,Healing Wave,Shaman
+1.000,Flash Heal,Priest,Lesser Healing Wave,Shaman
+1.000,Divine Spirit,Priest,Power Word: Fortitude,Priest
+1.000,Prayer of Fortitude,Priest,Prayer of Spirit,Priest
+1.000,Mind-numbing Poison,Rogue,Mind-numbing Poison II,Rogue
+1.000,Mind-numbing Poison,Rogue,Mind-numbing Poison III,Rogue
+1.000,Mind-numbing Poison II,Rogue,Mind-numbing Poison III,Rogue
+1.000,Water Breathing,Shaman,Unending Breath,Warlock
+1.000,Fire Resistance Totem,Shaman,Nature Resistance Totem,Shaman
+1.000,Healing Wave,Shaman,Lesser Healing Wave,Shaman
+1.000,Summon Voidwalker,Warlock,Summon Succubus,Warlock
+1.000,Summon Voidwalker,Warlock,Summon Felhunter,Warlock
+1.000,Summon Succubus,Warlock,Summon Felhunter,Warlock
+1.000,Curse of Shadow,Warlock,Curse of the Elements,Warlock
+0.989,Bear Form,Druid,Dire Bear Form,Druid
+0.989,Create Soulstone (Minor),Warlock,Create Soulstone,Warlock
+0.989,Create Soulstone (Lesser),Warlock,Create Soulstone,Warlock
+0.989,Create Soulstone,Warlock,Create Soulstone (Greater),Warlock
+0.989,Create Soulstone,Warlock,Create Soulstone (Major),Warlock
+0.980,Create Firestone (Lesser),Warlock,Create Firestone,Warlock
+0.980,Create Firestone,Warlock,Create Firestone (Greater),Warlock
+0.980,Create Firestone,Warlock,Create Firestone (Major),Warlock
+0.977,Create Soulstone (Minor),Warlock,Create Soulstone (Lesser),Warlock
+0.977,Create Soulstone (Minor),Warlock,Create Soulstone (Greater),Warlock
+0.977,Create Soulstone (Minor),Warlock,Create Soulstone (Major),Warlock
+0.977,Create Soulstone (Lesser),Warlock,Create Soulstone (Greater),Warlock
+0.977,Create Soulstone (Lesser),Warlock,Create Soulstone (Major),Warlock
+0.977,Create Soulstone (Greater),Warlock,Create Soulstone (Major),Warlock
+0.977,Create Healthstone (Minor),Warlock,Create Healthstone,Warlock
+0.977,Create Healthstone (Lesser),Warlock,Create Healthstone,Warlock
+0.977,Create Healthstone,Warlock,Create Healthstone (Greater),Warlock
+0.977,Create Healthstone,Warlock,Create Healthstone (Major),Warlock
+0.971,Create Spellstone,Warlock,Create Spellstone (Greater),Warlock
+0.971,Create Spellstone,Warlock,Create Spellstone (Major),Warlock
+0.965,Frost Armor,Mage,Ice Armor,Mage
+0.962,Polymorph,Mage,Polymorph: Cow,Mage
+0.962,Create Firestone (Lesser),Warlock,Create Firestone (Greater),Warlock
+0.962,Create Firestone (Lesser),Warlock,Create Firestone (Major),Warlock
+0.962,Create Firestone (Greater),Warlock,Create Firestone (Major),Warlock
+0.955,Create Healthstone (Minor),Warlock,Create Healthstone (Lesser),Warlock
+0.955,Create Healthstone (Minor),Warlock,Create Healthstone (Greater),Warlock
+0.955,Create Healthstone (Minor),Warlock,Create Healthstone (Major),Warlock
+0.955,Create Healthstone (Lesser),Warlock,Create Healthstone (Greater),Warlock
+0.955,Create Healthstone (Lesser),Warlock,Create Healthstone (Major),Warlock
+0.955,Create Healthstone (Greater),Warlock,Create Healthstone (Major),Warlock
+0.952,Prayer of Shadow Protection,Priest,Prayer of Fortitude,Priest
+0.952,Prayer of Shadow Protection,Priest,Prayer of Spirit,Priest
+0.944,Create Spellstone (Greater),Warlock,Create Spellstone (Major),Warlock
+0.941,Summon Imp,Warlock,Summon Incubus,Warlock
+0.941,Detect Lesser Invisibility,Warlock,Detect Invisibility,Warlock
+0.941,Detect Invisibility,Warlock,Detect Greater Invisibility,Warlock
+0.939,Mana Spring Totem,Shaman,Mana Tide Totem,Shaman
+0.939,Grace of Air Totem,Shaman,Strength of Earth Totem,Shaman
+0.933,Shadow Resistance Aura,Paladin,Devotion Aura,Paladin
+0.933,Frost Resistance Aura,Paladin,Devotion Aura,Paladin
+0.933,Devotion Aura,Paladin,Fire Resistance Aura,Paladin
+0.933,Summon Felsteed,Warlock,Summon Dreadsteed,Warlock
+0.926,Poison Cleansing Totem,Shaman,Disease Cleansing Totem,Shaman
+0.923,Ambush,Rogue,Backstab,Rogue
+0.920,Stoneskin Totem,Shaman,Windwall Totem,Shaman
+0.917,Summon Warhorse,Paladin,Summon Charger,Paladin
+0.914,Greater Blessing of Kings,Paladin,Greater Blessing of Might,Paladin
+0.913,Amplify Magic,Mage,Dampen Magic,Mage
+0.906,Blessing of Kings,Paladin,Blessing of Might,Paladin
+0.889,Shred,Druid,Ravage,Druid
+0.889,Viper Sting,Hunter,Serpent Sting,Hunter
+0.889,Divine Spirit,Priest,Prayer of Fortitude,Priest
+0.889,Divine Spirit,Priest,Prayer of Spirit,Priest
+0.889,Power Word: Fortitude,Priest,Prayer of Fortitude,Priest
+0.889,Power Word: Fortitude,Priest,Prayer of Spirit,Priest
+0.889,Detect Lesser Invisibility,Warlock,Detect Greater Invisibility,Warlock
+0.884,Shield Bash,Warrior,Pummel,Warrior
+0.878,Cower,Druid,Feint,Rogue
+0.875,Greater Blessing of Kings,Paladin,Greater Blessing of Wisdom,Paladin
+0.875,Summon Imp,Warlock,Summon Voidwalker,Warlock
+0.875,Summon Imp,Warlock,Summon Succubus,Warlock
+0.875,Summon Imp,Warlock,Summon Felhunter,Warlock
+0.873,Seal of Wisdom,Paladin,Seal of Light,Paladin
+0.867,Abolish Poison,Druid,Abolish Disease,Priest
+0.864,Greater Blessing of Might,Paladin,Greater Blessing of Wisdom,Paladin
+0.857,Track Humanoids,Druid,Sense Undead,Paladin
+0.857,Track Humanoids,Druid,Sense Demons,Warlock
+0.857,Track Beasts,Hunter,Sense Undead,Paladin
+0.857,Track Beasts,Hunter,Sense Demons,Warlock
+0.857,Track Humanoids,Hunter,Sense Undead,Paladin
+0.857,Track Humanoids,Hunter,Sense Demons,Warlock
+0.857,Track Undead,Hunter,Sense Undead,Paladin
+0.857,Track Undead,Hunter,Sense Demons,Warlock
+0.857,Track Elementals,Hunter,Sense Undead,Paladin
+0.857,Track Elementals,Hunter,Sense Demons,Warlock
+0.857,Track Demons,Hunter,Sense Undead,Paladin
+0.857,Track Demons,Hunter,Sense Demons,Warlock
+0.857,Track Giants,Hunter,Sense Undead,Paladin
+0.857,Track Giants,Hunter,Sense Demons,Warlock
+0.857,Track Dragonkin,Hunter,Sense Undead,Paladin
+0.857,Track Dragonkin,Hunter,Sense Demons,Warlock
+0.857,Conjure Mana Agate,Mage,Create Healthstone,Warlock
+0.857,Conjure Mana Jade,Mage,Create Healthstone,Warlock
+0.857,Conjure Mana Citrine,Mage,Create Healthstone,Warlock
+0.857,Arcane Brilliance,Mage,Prayer of Fortitude,Priest
+0.857,Arcane Brilliance,Mage,Prayer of Spirit,Priest
+0.857,Conjure Mana Ruby,Mage,Create Healthstone,Warlock
+0.857,Greater Blessing of Kings,Paladin,Greater Blessing of Salvation,Paladin
+0.850,Track Humanoids,Druid,Track Beasts,Hunter
+0.850,Track Humanoids,Druid,Track Humanoids,Hunter
+0.850,Track Humanoids,Druid,Track Undead,Hunter
+0.850,Track Humanoids,Druid,Track Elementals,Hunter
+0.850,Track Humanoids,Druid,Track Demons,Hunter
+0.850,Track Humanoids,Druid,Track Giants,Hunter
+0.850,Track Humanoids,Druid,Track Dragonkin,Hunter
+0.847,Greater Blessing of Might,Paladin,Greater Blessing of Salvation,Paladin
+0.846,Blessing of Kings,Paladin,Blessing of Wisdom,Paladin
+0.846,Demon Skin,Warlock,Demon Armor,Warlock
+0.842,Prayer of Shadow Protection,Priest,Divine Spirit,Priest
+0.842,Prayer of Shadow Protection,Priest,Power Word: Fortitude,Priest
+0.837,Conjure Mana Agate,Mage,Create Healthstone (Minor),Warlock
+0.837,Conjure Mana Agate,Mage,Create Healthstone (Lesser),Warlock
+0.837,Conjure Mana Agate,Mage,Create Healthstone (Greater),Warlock
+0.837,Conjure Mana Agate,Mage,Create Healthstone (Major),Warlock
+0.837,Conjure Mana Jade,Mage,Create Healthstone (Minor),Warlock
+0.837,Conjure Mana Jade,Mage,Create Healthstone (Lesser),Warlock
+0.837,Conjure Mana Jade,Mage,Create Healthstone (Greater),Warlock
+0.837,Conjure Mana Jade,Mage,Create Healthstone (Major),Warlock
+0.837,Conjure Mana Citrine,Mage,Create Healthstone (Minor),Warlock
+0.837,Conjure Mana Citrine,Mage,Create Healthstone (Lesser),Warlock
+0.837,Conjure Mana Citrine,Mage,Create Healthstone (Greater),Warlock
+0.837,Conjure Mana Citrine,Mage,Create Healthstone (Major),Warlock
+0.837,Conjure Mana Ruby,Mage,Create Healthstone (Minor),Warlock
+0.837,Conjure Mana Ruby,Mage,Create Healthstone (Lesser),Warlock
+0.837,Conjure Mana Ruby,Mage,Create Healthstone (Greater),Warlock
+0.837,Conjure Mana Ruby,Mage,Create Healthstone (Major),Warlock
+0.833,Remove Curse,Druid,Remove Lesser Curse,Mage
+0.833,Rebirth,Druid,Ancestral Spirit,Shaman
+0.833,Greater Blessing of Salvation,Paladin,Greater Blessing of Wisdom,Paladin
+0.830,Scare Beast,Hunter,Fear,Warlock
+0.830,Blessing of Might,Paladin,Blessing of Wisdom,Paladin
+0.828,Prowl,Druid,Stealth,Rogue
+0.826,Aspect of the Monkey,Hunter,Aspect of the Hawk,Hunter
+0.824,Summon Voidwalker,Warlock,Summon Incubus,Warlock
+0.824,Summon Incubus,Warlock,Summon Succubus,Warlock
+0.824,Summon Incubus,Warlock,Summon Felhunter,Warlock
+0.819,Bear Form,Druid,Cat Form,Druid
+0.818,Arcane Brilliance,Mage,Prayer of Shadow Protection,Priest
+0.818,Slice and Dice,Rogue,Kidney Shot,Rogue
+0.818,Drain Life,Warlock,Drain Mana,Warlock
+0.818,Drain Life,Warlock,Siphon Life,Warlock
+0.815,Blessing of Freedom,Paladin,Blessing of Kings,Paladin
+0.815,Blessing of Freedom,Paladin,Blessing of Wisdom,Paladin
+0.815,Summon Warhorse,Paladin,Summon Felsteed,Warlock
+0.815,Summon Warhorse,Paladin,Summon Dreadsteed,Warlock
+0.815,Summon Charger,Paladin,Summon Felsteed,Warlock
+0.815,Summon Charger,Paladin,Summon Dreadsteed,Warlock
+0.811,Scorpid Sting,Hunter,Viper Sting,Hunter
+0.811,Scorpid Sting,Hunter,Serpent Sting,Hunter
+0.810,Cat Form,Druid,Dire Bear Form,Druid
+0.810,Aspect of the Monkey,Hunter,Aspect of the Beast,Hunter
+0.810,Aspect of the Beast,Hunter,Aspect of the Hawk,Hunter
+0.809,Fire Resistance Totem,Shaman,Strength of Earth Totem,Shaman
+0.809,Nature Resistance Totem,Shaman,Strength of Earth Totem,Shaman
+0.808,Concentration Aura,Paladin,Shadow Resistance Aura,Paladin
+0.808,Concentration Aura,Paladin,Frost Resistance Aura,Paladin
+0.808,Concentration Aura,Paladin,Fire Resistance Aura,Paladin
+0.803,Seal of Justice,Paladin,Seal of Light,Paladin
+0.800,Teleport: Moonglade,Druid,Teleport: Ironforge,Mage
+0.800,Teleport: Moonglade,Druid,Teleport: Orgrimmar,Mage
+0.800,Teleport: Moonglade,Druid,Teleport: Stormwind,Mage
+0.800,Teleport: Moonglade,Druid,Teleport: Undercity,Mage
+0.800,Teleport: Moonglade,Druid,Teleport: Darnassus,Mage
+0.800,Teleport: Moonglade,Druid,Teleport: Thunder Bluff,Mage
+0.800,Fire Blast,Mage,Scorch,Mage
+0.800,Arcane Intellect,Mage,Shadow Protection,Priest
+0.800,Conjure Food,Mage,Conjure Water,Mage
+0.800,Fireball,Mage,Pyroblast,Mage
+0.800,Blessing of Freedom,Paladin,Blessing of Might,Paladin
+0.800,Sanctity Aura,Paladin,Devotion Aura,Paladin
+0.792,Fire Resistance Totem,Shaman,Grace of Air Totem,Shaman
+0.792,Grace of Air Totem,Shaman,Nature Resistance Totem,Shaman
+0.785,Immolation Trap,Hunter,Freezing Trap,Hunter
+0.784,Concentration Aura,Paladin,Devotion Aura,Paladin
+0.783,Sanctity Aura,Paladin,Shadow Resistance Aura,Paladin
+0.783,Sanctity Aura,Paladin,Frost Resistance Aura,Paladin
+0.783,Sanctity Aura,Paladin,Fire Resistance Aura,Paladin
+0.783,Frost Resistance Totem,Shaman,Fire Resistance Totem,Shaman
+0.783,Frost Resistance Totem,Shaman,Nature Resistance Totem,Shaman
+0.778,Rip,Druid,Eviscerate,Rogue
+0.776,Stoneskin Totem,Shaman,Strength of Earth Totem,Shaman
+0.776,Windwall Totem,Shaman,Strength of Earth Totem,Shaman
+0.772,Ferocious Bite,Druid,Eviscerate,Rogue
+0.769,Healing Touch,Druid,Regrowth,Druid
+0.769,Regrowth,Druid,Flash of Light,Paladin
+0.769,Regrowth,Druid,Holy Light,Paladin
+0.769,Regrowth,Druid,Flash Heal,Priest
+0.769,Regrowth,Druid,Healing Wave,Shaman
+0.769,Regrowth,Druid,Lesser Healing Wave,Shaman
+0.768,Blessing of Light,Paladin,Greater Blessing of Light,Paladin
+0.767,Seal of Justice,Paladin,Seal of Wisdom,Paladin
+0.766,Frost Resistance Totem,Shaman,Strength of Earth Totem,Shaman
+0.763,Explosive Trap,Hunter,Immolation Trap,Hunter
+0.762,Dash,Druid,Sprint,Rogue
+0.762,Shred,Druid,Backstab,Rogue
+0.760,Stoneskin Totem,Shaman,Grace of Air Totem,Shaman
+0.760,Windwall Totem,Shaman,Grace of Air Totem,Shaman
+0.757,Seal of Justice,Paladin,Seal of the Crusader,Paladin
+0.756,Kick,Rogue,Pummel,Warrior
+0.756,Magma Totem,Shaman,Healing Stream Totem,Shaman
+0.754,Rip,Druid,Rupture,Rogue
+0.750,Bash,Druid,Chilled,Mage
+0.750,Aspect of the Cheetah,Hunter,Aspect of the Pack,Hunter
+0.750,Chilled,Mage,Hammer of Justice,Paladin
+0.750,Blessing of Kings,Paladin,Blessing of Salvation,Paladin
+0.750,Retribution Aura,Paladin,Devotion Aura,Paladin
+0.750,Frost Resistance Totem,Shaman,Grace of Air Totem,Shaman
+0.744,Magma Totem,Shaman,Stoneclaw Totem,Shaman
+0.739,Ravage,Druid,Ambush,Rogue
+0.737,Pounce,Druid,Ravage,Druid
+0.737,Arcane Brilliance,Mage,Divine Spirit,Priest
+0.737,Arcane Brilliance,Mage,Power Word: Fortitude,Priest
+0.737,Blessing of Salvation,Paladin,Blessing of Might,Paladin
+0.737,Redemption,Paladin,Ancestral Spirit,Shaman
+0.737,Resurrection,Priest,Ancestral Spirit,Shaman
+0.735,Sanctity Aura,Paladin,Retribution Aura,Paladin
+0.735,Shadow Resistance Aura,Paladin,Retribution Aura,Paladin
+0.735,Frost Resistance Aura,Paladin,Retribution Aura,Paladin
+0.735,Retribution Aura,Paladin,Fire Resistance Aura,Paladin
+0.733,Blessing of Salvation,Paladin,Blessing of Sacrifice,Paladin
+0.727,Cure Poison,Druid,Cure Disease,Shaman
+0.727,Shred,Druid,Ambush,Rogue
+0.727,Wrath,Druid,Exorcism,Paladin
+0.727,Ravage,Druid,Backstab,Rogue
+0.727,Rejuvenation,Druid,Renew,Priest
+0.727,Starfire,Druid,Exorcism,Paladin
+0.727,Greater Blessing of Kings,Paladin,Greater Blessing of Sanctuary,Paladin
+0.727,Cure Poison,Shaman,Cure Disease,Shaman
+0.727,Drain Mana,Warlock,Siphon Life,Warlock
+0.725,Aquatic Form,Druid,Travel Form,Druid
+0.723,Mana Spring Totem,Shaman,Healing Stream Totem,Shaman
+0.720,Greater Blessing of Might,Paladin,Greater Blessing of Sanctuary,Paladin
+0.720,Shadowguard,Priest,Lightning Shield,Shaman
+0.720,Earth Shock,Shaman,Pummel,Warrior
+0.717,Divine Protection,Paladin,Blessing of Protection,Paladin
+0.717,Earth Shock,Shaman,Shield Bash,Warrior
+0.714,Blessing of Salvation,Paladin,Blessing of Wisdom,Paladin
+0.711,Earthbind Totem,Shaman,Fire Resistance Totem,Shaman
+0.711,Earthbind Totem,Shaman,Nature Resistance Totem,Shaman
+0.708,Kick,Rogue,Shield Bash,Warrior
+0.708,Frost Resistance Totem,Shaman,Stoneskin Totem,Shaman
+0.708,Frost Resistance Totem,Shaman,Windwall Totem,Shaman
+0.708,Stoneskin Totem,Shaman,Fire Resistance Totem,Shaman
+0.708,Stoneskin Totem,Shaman,Nature Resistance Totem,Shaman
+0.708,Windwall Totem,Shaman,Fire Resistance Totem,Shaman
+0.708,Windwall Totem,Shaman,Nature Resistance Totem,Shaman
+0.708,Mana Tide Totem,Shaman,Healing Stream Totem,Shaman
+0.707,Greater Blessing of Sanctuary,Paladin,Greater Blessing of Wisdom,Paladin
+0.707,Ritual of Summoning,Warlock,Ritual of Doom,Warlock
+0.704,Turn Undead,Paladin,Fear,Warlock
+0.703,Gift of the Wild,Druid,Mark of the Wild,Druid
+0.700,Scorpid Sting,Hunter,Curse of Weakness,Warlock
+0.699,Greater Blessing of Kings,Paladin,Greater Blessing of Light,Paladin
+0.699,Greater Blessing of Salvation,Paladin,Greater Blessing of Sanctuary,Paladin
+0.698,Track Beasts,Hunter,Track Hidden,Hunter
+0.698,Track Humanoids,Hunter,Track Hidden,Hunter
+0.698,Track Undead,Hunter,Track Hidden,Hunter
+0.698,Track Hidden,Hunter,Track Elementals,Hunter
+0.698,Track Hidden,Hunter,Track Demons,Hunter
+0.698,Track Hidden,Hunter,Track Giants,Hunter
+0.698,Track Hidden,Hunter,Track Dragonkin,Hunter
+0.697,Seal of the Crusader,Paladin,Seal of Light,Paladin
+0.696,Moonfire,Druid,Holy Fire,Priest
+0.696,Raptor Strike,Hunter,Heroic Strike,Warrior
+0.696,Holy Fire,Priest,Immolate,Warlock
+0.696,Magma Totem,Shaman,Mana Spring Totem,Shaman
+0.696,Fire Resistance Totem,Shaman,Healing Stream Totem,Shaman
+0.696,Healing Stream Totem,Shaman,Nature Resistance Totem,Shaman
+0.694,Poison Cleansing Totem,Shaman,Magma Totem,Shaman
+0.694,Disease Cleansing Totem,Shaman,Magma Totem,Shaman
+0.692,Concentration Aura,Paladin,Sanctity Aura,Paladin
+0.692,Seal of the Crusader,Paladin,Seal of Wisdom,Paladin
+0.692,Greater Blessing of Light,Paladin,Greater Blessing of Might,Paladin
+0.692,Greater Blessing of Light,Paladin,Greater Blessing of Salvation,Paladin
+0.691,Aspect of the Monkey,Hunter,Aspect of the Cheetah,Hunter
+0.691,Aspect of the Cheetah,Hunter,Aspect of the Hawk,Hunter
+0.690,Blessing of Freedom,Paladin,Blessing of Salvation,Paladin
+0.690,Blessing of Freedom,Paladin,Blessing of Sacrifice,Paladin
+0.688,Frost Trap,Hunter,Explosive Trap,Hunter
+0.688,Frost Trap,Hunter,Freezing Trap,Hunter
+0.687,Ferocious Bite,Druid,Rip,Druid
+0.685,Aquatic Form,Druid,Cat Form,Druid
+0.682,Explosive Trap,Hunter,Freezing Trap,Hunter
+0.682,Fire Resistance Totem,Shaman,Stoneclaw Totem,Shaman
+0.682,Stoneclaw Totem,Shaman,Healing Stream Totem,Shaman
+0.682,Stoneclaw Totem,Shaman,Nature Resistance Totem,Shaman
+0.681,Magma Totem,Shaman,Mana Tide Totem,Shaman
+0.681,Mana Spring Totem,Shaman,Fire Resistance Totem,Shaman
+0.681,Mana Spring Totem,Shaman,Nature Resistance Totem,Shaman
+0.680,Poison Cleansing Totem,Shaman,Healing Stream Totem,Shaman
+0.680,Disease Cleansing Totem,Shaman,Healing Stream Totem,Shaman
+0.679,Blessing of Kings,Paladin,Blessing of Sacrifice,Paladin
+0.679,Blessing of Sacrifice,Paladin,Blessing of Wisdom,Paladin
+0.667,Cat Form,Druid,Travel Form,Druid
+0.667,Bash,Druid,Rejuvenation,Druid
+0.667,Rake,Druid,Moonfire,Druid
+0.667,Rake,Druid,Immolate,Warlock
+0.667,Shred,Druid,Pounce,Druid
+0.667,Rejuvenation,Druid,Chilled,Mage
+0.667,Rejuvenation,Druid,Hammer of Justice,Paladin
+0.667,Aspect of the Cheetah,Hunter,Aspect of the Beast,Hunter
+0.667,Frost Trap,Hunter,Immolation Trap,Hunter
+0.667,Aspect of the Pack,Hunter,Aspect of the Wild,Hunter
+0.667,Scare Beast,Hunter,Turn Undead,Paladin
+0.667,Scorpid Sting,Hunter,Curse of Shadow,Warlock
+0.667,Scorpid Sting,Hunter,Curse of the Elements,Warlock
+0.667,Remove Lesser Curse,Mage,Cure Disease,Priest
+0.667,Blessing of Sacrifice,Paladin,Blessing of Might,Paladin
+0.667,Psychic Scream,Priest,Howl of Terror,Warlock
+0.667,Mind Blast,Priest,Searing Pain,Warlock
+0.667,Mind Flay,Priest,Frost Shock,Shaman
+0.667,Renew,Priest,Corruption,Warlock
+0.667,Water Breathing,Shaman,Detect Invisibility,Warlock
+0.667,Windfury Totem,Shaman,Flametongue Totem,Shaman
+0.667,Magma Totem,Shaman,Fire Resistance Totem,Shaman
+0.667,Magma Totem,Shaman,Nature Resistance Totem,Shaman
+0.667,Mana Spring Totem,Shaman,Stoneclaw Totem,Shaman
+0.667,Fire Resistance Totem,Shaman,Mana Tide Totem,Shaman
+0.667,Mana Tide Totem,Shaman,Nature Resistance Totem,Shaman
+0.667,Unending Breath,Warlock,Detect Invisibility,Warlock
+0.660,Greater Blessing of Light,Paladin,Greater Blessing of Wisdom,Paladin
+0.655,Concentration Aura,Paladin,Retribution Aura,Paladin
+0.654,Curse of Idiocy,Warlock,Curse of Weakness,Warlock
+0.653,Aspect of the Monkey,Hunter,Aspect of the Wild,Hunter
+0.653,Aspect of the Wild,Hunter,Aspect of the Hawk,Hunter
+0.652,Frost Resistance Totem,Shaman,Healing Stream Totem,Shaman
+0.652,Mana Tide Totem,Shaman,Stoneclaw Totem,Shaman
+0.651,Earthbind Totem,Shaman,Stoneclaw Totem,Shaman
+0.650,Pounce,Druid,Garrote,Rogue
+0.649,Blessing of Salvation,Paladin,Greater Blessing of Salvation,Paladin
+0.643,Demoralizing Shout,Warrior,Battle Shout,Warrior
+0.642,Tremor Totem,Shaman,Fire Resistance Totem,Shaman
+0.642,Tremor Totem,Shaman,Nature Resistance Totem,Shaman
+0.640,Wing Clip,Hunter,Hamstring,Warrior
+0.640,Poison Cleansing Totem,Shaman,Fire Resistance Totem,Shaman
+0.640,Poison Cleansing Totem,Shaman,Nature Resistance Totem,Shaman
+0.640,Disease Cleansing Totem,Shaman,Fire Resistance Totem,Shaman
+0.640,Disease Cleansing Totem,Shaman,Nature Resistance Totem,Shaman
+0.639,Greater Blessing of Light,Paladin,Greater Blessing of Sanctuary,Paladin
+0.638,Frost Resistance Totem,Shaman,Mana Spring Totem,Shaman
+0.638,Curse of Weakness,Warlock,Curse of Shadow,Warlock
+0.638,Curse of Weakness,Warlock,Curse of the Elements,Warlock
+0.636,Arcane Explosion,Mage,Holy Nova,Priest
+0.636,Purify,Paladin,Cleanse,Paladin
+0.636,Earthbind Totem,Shaman,Magma Totem,Shaman
+0.636,Frost Resistance Totem,Shaman,Stoneclaw Totem,Shaman
+0.634,Divine Protection,Paladin,Divine Shield,Paladin
+0.632,Hibernate,Druid,Banish,Warlock
+0.632,Tremor Totem,Shaman,Poison Cleansing Totem,Shaman
+0.632,Tremor Totem,Shaman,Disease Cleansing Totem,Shaman
+0.632,Curse of Idiocy,Warlock,Curse of Shadow,Warlock
+0.632,Curse of Idiocy,Warlock,Curse of the Elements,Warlock
+0.630,Tremor Totem,Shaman,Strength of Earth Totem,Shaman
+0.627,Poison Cleansing Totem,Shaman,Mana Spring Totem,Shaman
+0.627,Poison Cleansing Totem,Shaman,Strength of Earth Totem,Shaman
+0.627,Disease Cleansing Totem,Shaman,Mana Spring Totem,Shaman
+0.627,Disease Cleansing Totem,Shaman,Strength of Earth Totem,Shaman
+0.625,Bear Form,Druid,Aquatic Form,Druid
+0.625,Arcane Intellect,Mage,Prayer of Fortitude,Priest
+0.625,Arcane Intellect,Mage,Prayer of Spirit,Priest
+0.625,Water Breathing,Shaman,Detect Lesser Invisibility,Warlock
+0.625,Water Breathing,Shaman,Detect Greater Invisibility,Warlock
+0.625,Frost Resistance Totem,Shaman,Mana Tide Totem,Shaman
+0.625,Unending Breath,Warlock,Detect Lesser Invisibility,Warlock
+0.625,Unending Breath,Warlock,Detect Greater Invisibility,Warlock
+0.625,Corruption,Warlock,Rend,Warrior
+0.622,Aspect of the Beast,Hunter,Aspect of the Wild,Hunter
+0.622,Earthbind Totem,Shaman,Frost Resistance Totem,Shaman
+0.622,Earthbind Totem,Shaman,Healing Stream Totem,Shaman
+0.622,Frost Resistance Totem,Shaman,Magma Totem,Shaman
+0.621,Frostbolt,Mage,Hamstring,Warrior
+0.621,Drain Soul,Warlock,Shadowburn,Warlock
+0.618,Tremor Totem,Shaman,Stoneskin Totem,Shaman
+0.618,Tremor Totem,Shaman,Windwall Totem,Shaman
+0.618,Tremor Totem,Shaman,Grace of Air Totem,Shaman
+0.618,Blessing of Might,Paladin,Greater Blessing of Might,Paladin
+0.617,Aquatic Form,Druid,Dire Bear Form,Druid
+0.615,Regrowth,Druid,Rejuvenation,Druid
+0.615,Viper Sting,Hunter,Curse of Weakness,Warlock
+0.615,Serpent Sting,Hunter,Curse of Weakness,Warlock
+0.615,Poison Cleansing Totem,Shaman,Stoneskin Totem,Shaman
+0.615,Poison Cleansing Totem,Shaman,Windwall Totem,Shaman
+0.615,Poison Cleansing Totem,Shaman,Mana Tide Totem,Shaman
+0.615,Poison Cleansing Totem,Shaman,Grace of Air Totem,Shaman
+0.615,Disease Cleansing Totem,Shaman,Stoneskin Totem,Shaman
+0.615,Disease Cleansing Totem,Shaman,Windwall Totem,Shaman
+0.615,Disease Cleansing Totem,Shaman,Mana Tide Totem,Shaman
+0.615,Disease Cleansing Totem,Shaman,Grace of Air Totem,Shaman
+0.613,Blessing of Kings,Paladin,Blessing of Light,Paladin
+0.612,Curse of Tongues,Warlock,Curse of Weakness,Warlock
+0.610,Eviscerate,Rogue,Rupture,Rogue
+0.609,Earthbind Totem,Shaman,Mana Spring Totem,Shaman
+0.609,Earthbind Totem,Shaman,Strength of Earth Totem,Shaman
+0.608,Bear Form,Druid,Travel Form,Druid
+0.606,Blessing of Kings,Paladin,Greater Blessing of Kings,Paladin
+0.606,Blessing of Wisdom,Paladin,Greater Blessing of Wisdom,Paladin
+0.605,Blessing of Light,Paladin,Blessing of Might,Paladin
+0.605,Kidney Shot,Rogue,Expose Armor,Rogue
+0.604,Tremor Totem,Shaman,Frost Resistance Totem,Shaman
+0.600,Travel Form,Druid,Dire Bear Form,Druid
+0.600,Bash,Druid,Arcane Intellect,Mage
+0.600,Ravage,Druid,Garrote,Rogue
+0.600,Healing Touch,Druid,Rejuvenation,Druid
+0.600,Rejuvenation,Druid,Flash of Light,Paladin
+0.600,Rejuvenation,Druid,Holy Light,Paladin
+0.600,Rejuvenation,Druid,Flash Heal,Priest
+0.600,Rejuvenation,Druid,Desperate Prayer,Priest
+0.600,Rejuvenation,Druid,Healing Wave,Shaman
+0.600,Rejuvenation,Druid,Lesser Healing Wave,Shaman
+0.600,Concussive Shot,Hunter,Wing Clip,Hunter
+0.600,Scorpid Sting,Hunter,Curse of Idiocy,Warlock
+0.600,Chilled,Mage,Arcane Intellect,Mage
+0.600,Fire Blast,Mage,Smite,Priest
+0.600,Arcane Intellect,Mage,Hammer of Justice,Paladin
+0.600,Scorch,Mage,Smite,Priest
+0.600,Prayer of Shadow Protection,Priest,Shadow Protection,Priest
+0.600,Poison Cleansing Totem,Shaman,Frost Resistance Totem,Shaman
+0.600,Disease Cleansing Totem,Shaman,Frost Resistance Totem,Shaman

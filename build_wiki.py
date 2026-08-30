@@ -150,6 +150,14 @@ FAMILIES = [
   shared="Transform a creature into a new form; the target takes the form's hit points; dropping to 0 in the new form reverts it to its own hit points; gear melds or drops. Animal Shapes vs. Polymorph masks to 0.710.",
   varies="Polymorph is beast-forms only; True Polymorph adds creature-to-creature and object conversions and can become permanent; Animal Shapes is the whole-party broadcast version.",
   read="One transformation rulebook shared by three spells; the ladder sells scope (what forms) and persistence (how long) rather than bigger dice."),
+ dict(slug="phantom-armory", title="The Phantom Armory", tier=ENGINE,
+  members=["spiritual-weapon", "arcane-sword", "arcane-hand", "flaming-sphere",
+           "faithful-hound", "unseen-servant"],
+  differs="what is conjured and how it attacks",
+  shared="Conjure a persistent magical object or force that acts on its own slot in your action economy: created at a point in range, it attacks or acts when it appears and can be moved and reused as a bonus action or action each turn. Spiritual Weapon and Arcane Sword are the tight pair — both 'create a weapon, strike on cast, bonus/action to move it and strike again.'",
+  varies="The conjured thing (floating weapon, sword of force, giant hand, rolling fire sphere, watchdog, invisible butler), its damage or utility, and its duration.",
+  read="The third shelf of the conjuration aisle: [[families/conjure-table|units by menu]], [[families/conjure-single|single champions]], and here the objects and weapons — the summoning contract applied to things instead of creatures.",
+ ),
  dict(slug="attack-cantrips", title="The Damage Cantrip Engine", tier=ENGINE,
   members=["fire-bolt", "ray-of-frost", "chill-touch", "shocking-grasp", "eldritch-blast", "acid-splash", "poison-spray", "sacred-flame"],
   differs="damage type, die size, attack vs. save, minor rider",
@@ -194,7 +202,7 @@ ICONS = {
     "suggestion": "💬", "conjure-single": "🧞", "image": "🖼️",
     "hp-pool": "🧮", "undead": "💀", "locate": "🧭", "detect": "👁️",
     "invisibility": "🫥", "disguise-seeming": "🎭", "polymorph": "🐸",
-    "attack-cantrips": "🪄", "dispel": "🧯", "darkness-daylight": "🌗",
+    "attack-cantrips": "🪄", "phantom-armory": "⚔️", "dispel": "🧯", "darkness-daylight": "🌗",
     "speak-with": "🗣️", "protection": "🛡️", "touch-buffs": "🤝",
 }
 for f in FAMILIES:
