@@ -1,6 +1,6 @@
 # The Identical-Spell List
 
-Which WoW Classic abilities are mostly the same ability. Of **423 distinct trainer-taught class abilities**, **229 (54%) fall into 28 families** — by far the highest of the three games studied, because classic WoW reskins along an axis the others barely use: **across classes**.
+Which WoW Classic abilities are mostly the same ability. Of **423 distinct trainer-taught class abilities**, **270 (64%) fall into 35 families** — by far the highest of the three games studied, because classic WoW reskins along an axis the others barely use: **across classes**.
 
 - <span class="tier tier-clone">Verbatim clone</span> — same sentence, one noun swapped (often into a different class's book).
 - <span class="tier tier-template">Shared template</span> — one chassis, many payloads (totems, blessings, curses).
@@ -8,8 +8,8 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 
 | Family | Tier | Size | Peak sim | What actually differs |
 |---|---|---|---|---|
+| [[families/cat-is-rogue|🐱 The Druid Costume Shop]] | <span class="tier tier-clone">Verbatim clone</span> | 19 abilities · 4 classes | 1.00 | which body performs it |
 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 18 abilities · 2 classes | 1.00 | the item conjured; the tier in parentheses |
-| [[families/cat-is-rogue|🐱 The Druid Costume Shop]] | <span class="tier tier-clone">Verbatim clone</span> | 15 abilities · 4 classes | 1.00 | which body performs it |
 | [[families/teleports|🌀 The Hearth Network]] | <span class="tier tier-clone">Verbatim clone</span> | 12 abilities · 1 classes | 1.00 | the destination city; self vs. group |
 | [[families/cleanses|🧼 The Cleanse Counter]] | <span class="tier tier-clone">Verbatim clone</span> | 12 abilities · 5 classes | 1.00 | the debuff type removed — Cure Poison ships in two class books verbatim |
 | [[families/tracking|🐾 The Tracking Dial]] | <span class="tier tier-clone">Verbatim clone</span> | 11 abilities · 4 classes | 1.00 | the creature type on the minimap |
@@ -17,24 +17,31 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 | [[families/rez|⚰️ The Resurrection Union]] | <span class="tier tier-clone">Verbatim clone</span> | 9 abilities · 5 classes | 1.00 | the class label, the cooldown, and whether the rez is cast or carried |
 | [[families/interrupts|✋ The Interrupt Union]] | <span class="tier tier-clone">Verbatim clone</span> | 5 abilities · 4 classes | 0.85 | the limb, element, or arcana used |
 | [[families/hots|⏳ The Mending Clock]] | <span class="tier tier-clone">Verbatim clone</span> | 4 abilities · 2 classes | 0.79 | class stamp, tick budget, and delivery |
+| [[families/stuns|💫 The Stun Union]] | <span class="tier tier-clone">Verbatim clone</span> | 4 abilities · 3 classes | 0.90 | the limb, hammer, or ambush delivering it |
+| [[families/detect-invis|🔦 The Invisibility Arms Race]] | <span class="tier tier-clone">Verbatim clone</span> | 3 abilities · 1 classes | 0.98 | the tier of invisibility pierced |
+| [[families/sleepers|😴 The Sleepers]] | <span class="tier tier-clone">Verbatim clone</span> | 3 abilities · 3 classes | 0.78 | the lullaby's delivery and legal targets |
+| [[families/static-shell|🌩️ The Static Shell]] | <span class="tier tier-clone">Verbatim clone</span> | 3 abilities · 3 classes | 0.79 | the school of the retaliation |
 | [[families/stings|🦂 The Sting Clip]] | <span class="tier tier-clone">Verbatim clone</span> | 3 abilities · 1 classes | 0.86 | the payload injected |
 | [[families/shocks|⚡ The Shock Battery]] | <span class="tier tier-clone">Verbatim clone</span> | 3 abilities · 1 classes | 0.46 | element and rider |
 | [[families/poisons|🧪 The Numbered Vials]] | <span class="tier tier-clone">Verbatim clone</span> | 3 abilities · 1 classes | 1.00 | the roman numeral |
+| [[families/breath|🫧 The Deep Breath Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 2 classes | 0.90 | nothing but the class selling it |
 | [[families/gap-closers|🏃 The Gap Closers]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.64 | which stance sells it, and stun vs. daze |
 | [[families/soothe|🕊️ The Soothe Pair]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 2 classes | 0.90 | humanoid vs. beast |
 | [[families/mirror|🪞 Amplify & Dampen]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.86 | the sign |
 | [[families/polymorph|🐑 The Polymorph Barn]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.98 | the barnyard animal |
-| [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 24 abilities · 4 classes | 1.00 | the stat granted, and the delivery: touch, blessing slot, or radius |
+| [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 30 abilities · 4 classes | 1.00 | the stat granted, and the delivery: touch, blessing slot, or radius |
 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 21 abilities · 1 classes | 0.98 | the payload planted in the ground |
-| [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 17 abilities · 3 classes | 1.00 | who — or what — answers the call, and which class holds the leash |
+| [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 18 abilities · 3 classes | 1.00 | who — or what — answers the call, and which class holds the leash |
 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 10 abilities · 3 classes | 0.95 | how the damage is refused: armor, absorb, or school ward |
 | [[families/curses|💀 The Curse Catalogue]] | <span class="tier tier-template">Shared template</span> | 7 abilities · 1 classes | 1.00 | the affliction applied |
 | [[families/aspects|🦅 The Aspect Dial]] | <span class="tier tier-template">Shared template</span> | 6 abilities · 1 classes | 0.82 | the animal and its bonus |
-| [[families/fears|😱 The Fear Franchise]] | <span class="tier tier-template">Shared template</span> | 5 abilities · 4 classes | 0.87 | targets, count, and radius |
+| [[families/forms|🐻 The Form Rack]] | <span class="tier tier-template">Shared template</span> | 6 abilities · 1 classes | 1.00 | the body worn |
+| [[families/fears|😱 The Fear Franchise]] | <span class="tier tier-template">Shared template</span> | 6 abilities · 5 classes | 0.87 | targets, count, and radius |
 | [[families/seals|✝️ The Seal Press]] | <span class="tier tier-template">Shared template</span> | 5 abilities · 1 classes | 0.95 | the on-hit payload |
 | [[families/traps|🪤 The Trap Line]] | <span class="tier tier-template">Shared template</span> | 4 abilities · 1 classes | 0.91 | the payload buried in the ground |
-| [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 10 abilities · 5 classes | 0.92 | school, speed, and rider |
+| [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 13 abilities · 5 classes | 0.92 | school, speed, and rider |
 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | 8 abilities · 6 classes | 0.84 | school, duration, and delivery |
+| [[families/siphons|🧛 The Siphon Set]] | <span class="tier tier-engine">Shared engine</span> | 5 abilities · 2 classes | 0.93 | what is drained, and in which direction |
 | [[families/shards|🔮 The Shard Economy]] | <span class="tier tier-engine">Shared engine</span> | 2 abilities · 1 classes | 0.65 | channel vs. burst delivery |
 
 ## Top measured pairs
@@ -65,4 +72,4 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 Scores are the blended mechanical similarity — 0.6 × `SpellEffect` signature (effect types, aura codes, targets) + 0.4 × masked tooltip ([[methodology|method]]) — so two abilities that act through the same machinery measure as twins even when their tooltips read differently.
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/shaman|Shaman]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[families/aspects|The Aspect Dial]] · [[families/bolts|The Bolt Engine]] · [[families/cat-is-rogue|The Druid Costume Shop]] · [[families/cleanses|The Cleanse Counter]] · [[families/conjured|The Conjured Commissary]] · [[families/curses|The Curse Catalogue]] · [[families/dots|The Affliction Engine]] · [[families/fears|The Fear Franchise]] · [[families/gap-closers|The Gap Closers]] · [[families/heals|One Heal, Nine Names]] · [[families/hots|The Mending Clock]] · [[families/interrupts|The Interrupt Union]] · [[families/mirror|Amplify & Dampen]] · [[families/poisons|The Numbered Vials]] · [[families/polymorph|The Polymorph Barn]] · [[families/protection|The Protection Rack]] · [[families/rez|The Resurrection Union]] · [[families/seals|The Seal Press]] · [[families/shards|The Shard Economy]] · [[families/shocks|The Shock Battery]] · [[families/soothe|The Soothe Pair]] · [[families/status-boosts|The Status Boost Rack]] · [[families/stings|The Sting Clip]] · [[families/summons|The Menagerie]] · [[families/teleports|The Hearth Network]] · [[families/totems|The Totem Foundry]] · [[families/tracking|The Tracking Dial]] · [[families/traps|The Trap Line]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/shaman|Shaman]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[families/aspects|The Aspect Dial]] · [[families/bolts|The Bolt Engine]] · [[families/breath|The Deep Breath Pair]] · [[families/cat-is-rogue|The Druid Costume Shop]] · [[families/cleanses|The Cleanse Counter]] · [[families/conjured|The Conjured Commissary]] · [[families/curses|The Curse Catalogue]] · [[families/detect-invis|The Invisibility Arms Race]] · [[families/dots|The Affliction Engine]] · [[families/fears|The Fear Franchise]] · [[families/forms|The Form Rack]] · [[families/gap-closers|The Gap Closers]] · [[families/heals|One Heal, Nine Names]] · [[families/hots|The Mending Clock]] · [[families/interrupts|The Interrupt Union]] · [[families/mirror|Amplify & Dampen]] · [[families/poisons|The Numbered Vials]] · [[families/polymorph|The Polymorph Barn]] · [[families/protection|The Protection Rack]] · [[families/rez|The Resurrection Union]] · [[families/seals|The Seal Press]] · [[families/shards|The Shard Economy]] · [[families/shocks|The Shock Battery]] · [[families/siphons|The Siphon Set]] · [[families/sleepers|The Sleepers]] · [[families/soothe|The Soothe Pair]] · [[families/static-shell|The Static Shell]] · [[families/status-boosts|The Status Boost Rack]] · [[families/stings|The Sting Clip]] · [[families/stuns|The Stun Union]] · [[families/summons|The Menagerie]] · [[families/teleports|The Hearth Network]] · [[families/totems|The Totem Foundry]] · [[families/tracking|The Tracking Dial]] · [[families/traps|The Trap Line]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

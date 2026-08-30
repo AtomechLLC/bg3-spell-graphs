@@ -1,6 +1,6 @@
 # Paladin Spellbook (Classic)
 
-**47 abilities** (137 spellbook entries counting ranks — 66% of the book is rank copies) · **27** in an identified family (57%)
+**47 abilities** (137 spellbook entries counting ranks — 66% of the book is rank copies) · **35** in an identified family (74%)
 
 Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/warlock|Warlock]], **9%** with [[classes/priest|Priest]], **9%** with [[classes/druid|Druid]] — and **49%** twinned inside its own book.
 
@@ -26,9 +26,9 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/warlock|War
 | 50 | <img class="sic" data-i="lay-on-hands" alt=""> **Lay on Hands** | Holy | 3 | — |
 | 52 | <img class="sic" data-i="seal-of-the-crusader" alt=""> **Seal of the Crusader** | Holy | 6 | [[families/seals|✝️ The Seal Press]] |
 | 52 | <img class="sic" data-i="shadow-resistance-aura" alt=""> **Shadow Resistance Aura** | Holy | 3 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 52 | <img class="sic" data-i="turn-undead" alt=""> **Turn Undead** | Nature | 3 | — |
+| 52 | <img class="sic" data-i="turn-undead" alt=""> **Turn Undead** | Nature | 3 | [[families/fears|😱 The Fear Franchise]] |
 | 54 | <img class="sic" data-i="blessing-of-sacrifice" alt=""> **Blessing of Sacrifice** | Holy | 2 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 54 | <img class="sic" data-i="hammer-of-justice" alt=""> **Hammer of Justice** | Holy | 4 | — |
+| 54 | <img class="sic" data-i="hammer-of-justice" alt=""> **Hammer of Justice** | Holy | 4 | [[families/stuns|💫 The Stun Union]] |
 | 56 | <img class="sic" data-i="frost-resistance-aura" alt=""> **Frost Resistance Aura** | Holy | 3 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 56 | <img class="sic" data-i="retribution-aura" alt=""> **Retribution Aura** | Holy | 5 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 58 | <img class="sic" data-i="flash-of-light" alt=""> **Flash of Light** | Holy | 7 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
@@ -41,12 +41,12 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/warlock|War
 | 60 | <img class="sic" data-i="devotion-aura" alt=""> **Devotion Aura** | Holy | 7 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="exorcism" alt=""> **Exorcism** | Holy | 6 | — |
 | 60 | <img class="sic" data-i="fire-resistance-aura" alt=""> **Fire Resistance Aura** | Holy | 3 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 60 | <img class="sic" data-i="greater-blessing-of-kings" alt=""> **Greater Blessing of Kings** | Holy | 1 | — |
-| 60 | <img class="sic" data-i="greater-blessing-of-light" alt=""> **Greater Blessing of Light** | Holy | 1 | — |
-| 60 | <img class="sic" data-i="greater-blessing-of-might" alt=""> **Greater Blessing of Might** | Holy | 2 | — |
-| 60 | <img class="sic" data-i="greater-blessing-of-salvation" alt=""> **Greater Blessing of Salvation** | Holy | 1 | — |
-| 60 | <img class="sic" data-i="greater-blessing-of-sanctuary" alt=""> **Greater Blessing of Sanctuary** | Holy | 1 | — |
-| 60 | <img class="sic" data-i="greater-blessing-of-wisdom" alt=""> **Greater Blessing of Wisdom** | Holy | 2 | — |
+| 60 | <img class="sic" data-i="greater-blessing-of-kings" alt=""> **Greater Blessing of Kings** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
+| 60 | <img class="sic" data-i="greater-blessing-of-light" alt=""> **Greater Blessing of Light** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
+| 60 | <img class="sic" data-i="greater-blessing-of-might" alt=""> **Greater Blessing of Might** | Holy | 2 | [[families/status-boosts|🙌 The Status Boost Rack]] |
+| 60 | <img class="sic" data-i="greater-blessing-of-salvation" alt=""> **Greater Blessing of Salvation** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
+| 60 | <img class="sic" data-i="greater-blessing-of-sanctuary" alt=""> **Greater Blessing of Sanctuary** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
+| 60 | <img class="sic" data-i="greater-blessing-of-wisdom" alt=""> **Greater Blessing of Wisdom** | Holy | 2 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="hammer-of-wrath" alt=""> **Hammer of Wrath** | Holy | 3 | — |
 | 60 | <img class="sic" data-i="holy-light" alt=""> **Holy Light** | Holy | 9 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
 | 60 | <img class="sic" data-i="holy-wrath" alt=""> **Holy Wrath** | Holy | 2 | — |

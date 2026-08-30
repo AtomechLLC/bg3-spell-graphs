@@ -1,6 +1,6 @@
 # Mage Spellbook (Classic)
 
-**51 abilities** (176 spellbook entries counting ranks — 71% of the book is rank copies) · **34** in an identified family (67%)
+**51 abilities** (176 spellbook entries counting ranks — 71% of the book is rank copies) · **36** in an identified family (71%)
 
 Mechanical twins (effect similarity ≥ 0.75): **10%** with [[classes/priest|Priest]], **8%** with [[classes/warlock|Warlock]], **2%** with [[classes/shaman|Shaman]] — and **59%** twinned inside its own book.
 
@@ -32,7 +32,7 @@ Mechanical twins (effect similarity ≥ 0.75): **10%** with [[classes/priest|Pri
 | 50 | <img class="sic" data-i="portal-thunder-bluff" alt=""> **Portal: Thunder Bluff** | Arcane | 1 | [[families/teleports|🌀 The Hearth Network]] |
 | 54 | <img class="sic" data-i="amplify-magic" alt=""> **Amplify Magic** | Arcane | 4 | [[families/mirror|🪞 Amplify & Dampen]] |
 | 54 | <img class="sic" data-i="arcane-explosion" alt=""> **Arcane Explosion** | Arcane | 6 | — |
-| 54 | <img class="sic" data-i="fire-blast" alt=""> **Fire Blast** | Fire | 7 | — |
+| 54 | <img class="sic" data-i="fire-blast" alt=""> **Fire Blast** | Fire | 7 | [[families/bolts|🏹 The Bolt Engine]] |
 | 54 | <img class="sic" data-i="frost-nova" alt=""> **Frost Nova** | Frost | 4 | — |
 | 56 | <img class="sic" data-i="arcane-brilliance" alt=""> **Arcane Brilliance** | Arcane | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 56 | <img class="sic" data-i="arcane-intellect" alt=""> **Arcane Intellect** | Arcane | 5 | [[families/status-boosts|🙌 The Status Boost Rack]] |
@@ -42,7 +42,7 @@ Mechanical twins (effect similarity ≥ 0.75): **10%** with [[classes/priest|Pri
 | 58 | <img class="sic" data-i="conjure-mana-ruby" alt=""> **Conjure Mana Ruby** | Arcane | 1 | [[families/conjured|💎 The Conjured Commissary]] |
 | 58 | <img class="sic" data-i="ice-barrier" alt=""> **Ice Barrier** | Frost | 4 | — |
 | 58 | <img class="sic" data-i="mage-armor" alt=""> **Mage Armor** | Arcane | 3 | [[families/protection|🧿 The Protection Rack]] |
-| 58 | <img class="sic" data-i="scorch" alt=""> **Scorch** | Fire | 7 | — |
+| 58 | <img class="sic" data-i="scorch" alt=""> **Scorch** | Fire | 7 | [[families/bolts|🏹 The Bolt Engine]] |
 | 60 | <img class="sic" data-i="blast-wave" alt=""> **Blast Wave** | Fire | 5 | — |
 | 60 | <img class="sic" data-i="blizzard" alt=""> **Blizzard** | Frost | 6 | — |
 | 60 | <img class="sic" data-i="conjure-food" alt=""> **Conjure Food** | Arcane | 7 | [[families/conjured|💎 The Conjured Commissary]] |

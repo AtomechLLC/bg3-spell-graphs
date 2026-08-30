@@ -1,6 +1,6 @@
 # Shaman Spellbook (Classic)
 
-**45 abilities** (166 spellbook entries counting ranks — 73% of the book is rank copies) · **31** in an identified family (69%)
+**45 abilities** (166 spellbook entries counting ranks — 73% of the book is rank copies) · **33** in an identified family (73%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Druid]], **9%** with [[classes/priest|Priest]], **4%** with [[classes/paladin|Paladin]] — and **58%** twinned inside its own book.
 
@@ -12,7 +12,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Drui
 | 20 | <img class="sic" data-i="ghost-wolf" alt=""> **Ghost Wolf** | Nature | 1 | — |
 | 22 | <img class="sic" data-i="cure-disease" alt=""> **Cure Disease** | Nature | 1 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 22 | <img class="sic" data-i="poison-cleansing-totem" alt=""> **Poison Cleansing Totem** | Nature | 1 | [[families/totems|🗿 The Totem Foundry]] |
-| 22 | <img class="sic" data-i="water-breathing" alt=""> **Water Breathing** | Nature | 1 | — |
+| 22 | <img class="sic" data-i="water-breathing" alt=""> **Water Breathing** | Nature | 1 | [[families/breath|🫧 The Deep Breath Pair]] |
 | 26 | <img class="sic" data-i="far-sight" alt=""> **Far Sight** | Nature | 1 | — |
 | 28 | <img class="sic" data-i="water-walking" alt=""> **Water Walking** | Nature | 1 | — |
 | 30 | <img class="sic" data-i="astral-recall" alt=""> **Astral Recall** | Nature | 1 | — |
@@ -30,7 +30,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/druid|Drui
 | 56 | <img class="sic" data-i="chain-lightning" alt=""> **Chain Lightning** | Nature | 4 | — |
 | 56 | <img class="sic" data-i="flametongue-weapon" alt=""> **Flametongue Weapon** | Fire | 6 | — |
 | 56 | <img class="sic" data-i="lightning-bolt" alt=""> **Lightning Bolt** | Nature | 10 | [[families/bolts|🏹 The Bolt Engine]] |
-| 56 | <img class="sic" data-i="lightning-shield" alt=""> **Lightning Shield** | Nature | 7 | — |
+| 56 | <img class="sic" data-i="lightning-shield" alt=""> **Lightning Shield** | Nature | 7 | [[families/static-shell|🌩️ The Static Shell]] |
 | 56 | <img class="sic" data-i="magma-totem" alt=""> **Magma Totem** | Fire | 4 | [[families/totems|🗿 The Totem Foundry]] |
 | 56 | <img class="sic" data-i="mana-spring-totem" alt=""> **Mana Spring Totem** | Frost | 4 | [[families/totems|🗿 The Totem Foundry]] |
 | 56 | <img class="sic" data-i="windwall-totem" alt=""> **Windwall Totem** | Nature | 3 | [[families/totems|🗿 The Totem Foundry]] |

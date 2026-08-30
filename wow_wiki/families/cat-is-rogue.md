@@ -1,19 +1,23 @@
 # <span class="femoji">🐱</span> The Druid Costume Shop
 
-<span class="tier tier-clone">Verbatim clone</span> · 15 abilities · mechanical similarity 0.13–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 19 abilities · mechanical similarity 0.07–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | <img class="sic" data-i="growl" alt=""> **Growl** | Druid | 10 | Physical | 1 | Taunts the target to attack you, but has no effect if the target is already attacking you. |
 | <img class="sic" data-i="challenging-roar" alt=""> **Challenging Roar** | Druid | 28 | Physical | 1 | Forces all nearby enemies to focus attacks on you for X. |
 | <img class="sic" data-i="feline-grace" alt=""> **Feline Grace** | Druid | 40 | Physical | 1 | Reduces damage from falling. |
+| <img class="sic" data-i="dash" alt=""> **Dash** | Druid | 46 | Physical | 2 | Increases movement speed by X% for X.  Does not break prowling. |
 | <img class="sic" data-i="cower" alt=""> **Cower** | Druid | 52 | Physical | 3 | Cower, causing no damage but lowering your threat a large amount, making the enemy less likely to attack you. |
+| <img class="sic" data-i="faerie-fire" alt=""> **Faerie Fire** | Druid | 54 | Nature | 4 | Decrease the armor of the target by X for X.  While affected, the target cannot stealth or turn invisible. |
+| <img class="sic" data-i="faerie-fire-feral" alt=""> **Faerie Fire (Feral)** | Druid | 54 | Nature | 4 | Decrease the armor of the target by X for X.  While affected, the target cannot stealth or turn invisible. |
 | <img class="sic" data-i="shred" alt=""> **Shred** | Druid | 54 | Physical | 5 | Shred the target, causing X% damage plus 180 to the target.  Must be behind the target.  Awards X combo X:poin |
 | <img class="sic" data-i="ravage" alt=""> **Ravage** | Druid | 58 | Physical | 4 | Ravage the target, causing X% damage plus 343 to the target.  Must be prowling and behind the target.  Awards  |
 | <img class="sic" data-i="prowl" alt=""> **Prowl** | Druid | 60 | Physical | 3 | Allows the Druid to prowl around, but reduces your movement speed by X%.  Lasts until cancelled. |
 | <img class="sic" data-i="prowl" alt=""> **Prowl** | Hunter | 50 | Physical | 3 | Puts your pet in stealth mode, but slows its movement to X% of normal. The first attack from stealth receives  |
 | <img class="sic" data-i="safe-fall" alt=""> **Safe Fall** | Rogue | 40 | Physical | 1 | Reduces damage from falling. |
 | <img class="sic" data-i="ambush" alt=""> **Ambush** | Rogue | 58 | Physical | 6 | Ambush the target, causing X% weapon damage plus 290 to the target.  Must be stealthed and behind the target.  |
+| <img class="sic" data-i="sprint" alt=""> **Sprint** | Rogue | 58 | Physical | 3 | Increases the rogue's movement speed by X% for X.  Does not break stealth. |
 | <img class="sic" data-i="backstab" alt=""> **Backstab** | Rogue | 60 | Physical | 9 | Backstab the target, causing X% weapon damage plus 225 to the target.  Must be behind the target.  Requires a  |
 | <img class="sic" data-i="feint" alt=""> **Feint** | Rogue | 60 | Physical | 5 | Performs a feint, causing no damage but lowering your threat by a large amount, making the enemy less likely t |
 | <img class="sic" data-i="stealth" alt=""> **Stealth** | Rogue | 60 | Physical | 4 | Allows the rogue to sneak around, but reduces your speed by X%.  Lasts until cancelled. |
@@ -29,4 +33,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/rogue|Rogue]] · [[classes/warrior|Warrior]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/rogue|Rogue]] · [[classes/warrior|Warrior]] · [[families/forms|The Form Rack]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

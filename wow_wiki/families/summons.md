@@ -1,6 +1,6 @@
 # <span class="femoji">😈</span> The Menagerie
 
-<span class="tier tier-template">Shared template</span> · 17 abilities · mechanical similarity 0.14–1.00
+<span class="tier tier-template">Shared template</span> · 18 abilities · mechanical similarity 0.14–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -14,6 +14,7 @@
 | <img class="sic" data-i="summon-imp" alt=""> **Summon Imp** | Warlock | 1 | Shadow | 1 | Summons an Imp under the command of the Warlock. |
 | <img class="sic" data-i="summon-voidwalker" alt=""> **Summon Voidwalker** | Warlock | 10 | Shadow | 1 | Summons a Voidwalker under the command of the Warlock. |
 | <img class="sic" data-i="ritual-of-summoning" alt=""> **Ritual of Summoning** | Warlock | 20 | Shadow | 1 | Begins a ritual that summons the targeted group member.  Requires the caster and 2 additional party members to |
+| <img class="sic" data-i="summon-incubus" alt=""> **Summon Incubus** | Warlock | 20 | Shadow | 1 | Summons an Incubus under the command of the Warlock. |
 | <img class="sic" data-i="summon-succubus" alt=""> **Summon Succubus** | Warlock | 20 | Shadow | 1 | Summons a Succubus under the command of the Warlock. |
 | <img class="sic" data-i="eye-of-kilrogg" alt=""> **Eye of Kilrogg** | Warlock | 22 | Shadow | 1 | Summons an Eye of Kilrogg and binds your vision to it.  The eye moves quickly but is very fragile. |
 | <img class="sic" data-i="summon-felhunter" alt=""> **Summon Felhunter** | Warlock | 30 | Shadow | 1 | Summons a Felhunter under the command of the Warlock. |

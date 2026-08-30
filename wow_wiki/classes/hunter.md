@@ -1,6 +1,6 @@
 # Hunter Spellbook (Classic)
 
-**54 abilities** (140 spellbook entries counting ranks — 61% of the book is rank copies) · **28** in an identified family (52%)
+**54 abilities** (140 spellbook entries counting ranks — 61% of the book is rank copies) · **29** in an identified family (54%)
 
 Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Warlock]], **13%** with [[classes/druid|Druid]], **4%** with [[classes/paladin|Paladin]] — and **31%** twinned inside its own book.
 
@@ -59,7 +59,7 @@ Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Wa
 | 60 | <img class="sic" data-i="serpent-sting" alt=""> **Serpent Sting** | Nature | 9 | [[families/dots|🩸 The Affliction Engine]] |
 | 60 | <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Nature | 1 | — |
 | 60 | <img class="sic" data-i="wing-clip" alt=""> **Wing Clip** | Physical | 3 | — |
-| 60 | <img class="sic" data-i="wyvern-sting" alt=""> **Wyvern Sting** | Nature | 3 | — |
+| 60 | <img class="sic" data-i="wyvern-sting" alt=""> **Wyvern Sting** | Nature | 3 | [[families/sleepers|😴 The Sleepers]] |
 
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 

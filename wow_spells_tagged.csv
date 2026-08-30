@@ -15,7 +15,7 @@ Mangle,Druid,6,Physical,1,,,Disables
 Concussive Shot,Hunter,8,Arcane,1,,,Disables
 Evasion,Rogue,8,Physical,1,,,Defense boost
 Purify,Paladin,8,Holy,1,The Cleanse Counter,Verbatim clone,Negation
-Bear Form,Druid,10,Physical,1,,,Role shift
+Bear Form,Druid,10,Physical,1,The Form Rack,Shared template,Role shift
 Beast Training,Hunter,10,Physical,1,,,Companion upkeep
 Bloodrage,Warrior,10,Physical,1,,,Provisioning
 Call Pet,Hunter,10,Physical,1,The Menagerie,Shared template,Companion upkeep
@@ -39,13 +39,13 @@ Cure Disease,Priest,14,Holy,1,The Cleanse Counter,Verbatim clone,Negation
 Cure Poison,Druid,14,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Eagle Eye,Hunter,14,Arcane,1,,,Information
 Eyes of the Beast,Hunter,14,Nature,1,The Menagerie,Shared template,Companion upkeep
-Aquatic Form,Druid,16,Physical,1,,,Mobility
+Aquatic Form,Druid,16,Physical,1,The Form Rack,Shared template,Mobility
 Aquatic Form (Passive),Druid,16,Nature,1,,,Role shift
 Cure Poison,Shaman,16,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Detect Magic,Mage,16,Arcane,1,,,Information
 Righteous Fury,Paladin,16,Holy,1,,,Threat control
 Shield Block,Warrior,16,Physical,1,,,Defense boost
-Unending Breath,Warlock,16,Shadow,1,,,Utility & world
+Unending Breath,Warlock,16,Shadow,1,The Deep Breath Pair,Verbatim clone,Utility & world
 Blessing of Freedom,Paladin,18,Holy,1,The Status Boost Rack,Shared template,Utility & world
 Create Soulstone (Minor),Warlock,18,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Disarm,Warrior,18,Physical,1,,,Disables
@@ -56,7 +56,7 @@ Tremor Totem,Shaman,18,Nature,1,The Totem Foundry,Shared template,Creating entit
 Aspect of the Cheetah,Hunter,20,Nature,1,The Aspect Dial,Shared template,Role shift
 Blessing of Kings,Paladin,20,Holy,1,The Status Boost Rack,Shared template,Utility & world
 Blink,Mage,20,Arcane,1,,,Mobility
-Cat Form,Druid,20,Physical,1,,,Role shift
+Cat Form,Druid,20,Physical,1,The Form Rack,Shared template,Role shift
 Fear Ward,Priest,20,Holy,1,,,Disables
 Frost Armor,Mage,20,Frost,3,The Protection Rack,Shared template,Defense boost
 Ghost Wolf,Shaman,20,Nature,1,,,Mobility
@@ -65,7 +65,7 @@ Repentance,Paladin,20,Holy,1,,,Disables
 Retaliation,Warrior,20,Physical,1,,,Utility & world
 Ritual of Summoning,Warlock,20,Shadow,1,The Menagerie,Shared template,Mobility
 Sense Undead,Paladin,20,Holy,1,The Tracking Dial,Verbatim clone,Information
-Summon Incubus,Warlock,20,Shadow,1,,,Creating entities
+Summon Incubus,Warlock,20,Shadow,1,The Menagerie,Shared template,Creating entities
 Summon Succubus,Warlock,20,Shadow,1,The Menagerie,Shared template,Creating entities
 Teleport: Ironforge,Mage,20,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Teleport: Orgrimmar,Mage,20,Arcane,1,The Hearth Network,Verbatim clone,Mobility
@@ -79,7 +79,7 @@ Eye of Kilrogg,Warlock,22,Shadow,1,The Menagerie,Shared template,Information
 Intimidating Shout,Warrior,22,Physical,1,The Fear Franchise,Shared template,Disables
 Poison Cleansing Totem,Shaman,22,Nature,1,The Totem Foundry,Shared template,Creating entities
 Seal of Justice,Paladin,22,Holy,1,The Seal Press,Shared template,Offense boost
-Water Breathing,Shaman,22,Nature,1,,,Utility & world
+Water Breathing,Shaman,22,Nature,1,The Deep Breath Pair,Verbatim clone,Utility & world
 Beast Lore,Hunter,24,Nature,1,,,Companion upkeep
 Counterspell,Mage,24,Arcane,1,The Interrupt Union,Verbatim clone,Negation
 Detect Traps,Rogue,24,Physical,1,,,Information
@@ -90,8 +90,8 @@ Track Hidden,Hunter,24,Physical,1,The Tracking Dial,Verbatim clone,Information
 Abolish Poison,Druid,26,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Blessing of Salvation,Paladin,26,Holy,1,The Status Boost Rack,Shared template,Threat control
 Challenging Shout,Warrior,26,Physical,1,The Druid Costume Shop,Verbatim clone,Threat control
-Cheap Shot,Rogue,26,Physical,1,,,Disables
-Detect Lesser Invisibility,Warlock,26,Shadow,1,,,Information
+Cheap Shot,Rogue,26,Physical,1,The Stun Union,Verbatim clone,Disables
+Detect Lesser Invisibility,Warlock,26,Shadow,1,The Invisibility Arms Race,Verbatim clone,Information
 Far Sight,Shaman,26,Nature,1,,,Information
 Rapid Fire,Hunter,26,Arcane,1,,,Utility & world
 Track Elementals,Hunter,26,Physical,1,The Tracking Dial,Verbatim clone,Information
@@ -114,7 +114,7 @@ Sanctity Aura,Paladin,30,Holy,1,The Status Boost Rack,Shared template,Damage
 Summon Felhunter,Warlock,30,Shadow,1,The Menagerie,Shared template,Creating entities
 Teleport: Darnassus,Mage,30,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Teleport: Thunder Bluff,Mage,30,Arcane,1,The Hearth Network,Verbatim clone,Mobility
-Travel Form,Druid,30,Physical,1,,,Mobility
+Travel Form,Druid,30,Physical,1,The Form Rack,Shared template,Mobility
 Abolish Disease,Priest,32,Holy,1,The Cleanse Counter,Verbatim clone,Negation
 Berserker Rage,Warrior,32,Physical,1,,,Disables
 Flare,Hunter,32,Arcane,1,,,Deception & stealth
@@ -133,15 +133,15 @@ Whirlwind,Warrior,36,Physical,1,,,Damage
 Blessing of Protection,Paladin,38,Holy,3,,,Disables
 Conjure Mana Jade,Mage,38,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
 Curse of Idiocy,Warlock,38,Shadow,1,,,Degradation
-Detect Invisibility,Warlock,38,Shadow,1,,,Information
+Detect Invisibility,Warlock,38,Shadow,1,The Invisibility Arms Race,Verbatim clone,Information
 Disease Cleansing Totem,Shaman,38,Nature,1,The Totem Foundry,Shared template,Creating entities
 Mind-numbing Poison II,Rogue,38,Physical,1,The Numbered Vials,Verbatim clone,Degradation
 Aspect of the Pack,Hunter,40,Nature,1,The Aspect Dial,Shared template,Role shift
 Combustion,Mage,40,Fire,1,,,Damage
 Create Soulstone,Warlock,40,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
-Dire Bear Form,Druid,40,Physical,1,,,Role shift
+Dire Bear Form,Druid,40,Physical,1,The Form Rack,Shared template,Role shift
 Feline Grace,Druid,40,Physical,1,The Druid Costume Shop,Verbatim clone,Damage
-Moonkin Form,Druid,40,Physical,1,,,Role shift
+Moonkin Form,Druid,40,Physical,1,The Form Rack,Shared template,Role shift
 Portal: Ironforge,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Orgrimmar,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Stormwind,Mage,40,Arcane,1,The Hearth Network,Verbatim clone,Mobility
@@ -156,23 +156,23 @@ Slice and Dice,Rogue,42,Physical,2,,,Utility & world
 Vanish,Rogue,42,Physical,2,,,Deception & stealth
 Barkskin,Druid,44,Nature,1,,,Disables
 Mind Vision,Priest,44,Shadow,2,,,Information
-Bash,Druid,46,Physical,3,,,Disables
+Bash,Druid,46,Physical,3,The Stun Union,Verbatim clone,Disables
 Charge,Warrior,46,Physical,3,The Gap Closers,Verbatim clone,Provisioning
 Create Firestone (Greater),Warlock,46,Fire,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Healthstone (Greater),Warlock,46,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
-Dash,Druid,46,Physical,2,,,Mobility
+Dash,Druid,46,Physical,2,The Druid Costume Shop,Verbatim clone,Mobility
 Scare Beast,Hunter,46,Nature,3,The Fear Franchise,Shared template,Disables
 Banish,Warlock,48,Shadow,2,,,Disables
 Conjure Mana Citrine,Mage,48,Arcane,1,The Conjured Commissary,Verbatim clone,Provisioning
 Create Spellstone (Greater),Warlock,48,Shadow,1,The Conjured Commissary,Verbatim clone,Provisioning
 Disengage,Hunter,48,Physical,3,,,Utility & world
-Sap,Rogue,48,Physical,3,,,Disables
+Sap,Rogue,48,Physical,3,The Sleepers,Verbatim clone,Disables
 Create Soulstone (Greater),Warlock,50,Shadow,1,The Resurrection Union,Verbatim clone,Healing & revival
 Curse of Tongues,Warlock,50,Shadow,2,The Curse Catalogue,Shared template,Degradation
-Detect Greater Invisibility,Warlock,50,Shadow,1,,,Information
+Detect Greater Invisibility,Warlock,50,Shadow,1,The Invisibility Arms Race,Verbatim clone,Information
 Divine Shield,Paladin,50,Holy,2,,,Degradation
 Inferno,Warlock,50,Shadow,1,The Menagerie,Shared template,Creating entities
-Kidney Shot,Rogue,50,Physical,2,,,Disables
+Kidney Shot,Rogue,50,Physical,2,The Stun Union,Verbatim clone,Disables
 Lay on Hands,Paladin,50,Holy,3,,,Healing & revival
 Portal: Darnassus,Mage,50,Arcane,1,The Hearth Network,Verbatim clone,Mobility
 Portal: Thunder Bluff,Mage,50,Arcane,1,The Hearth Network,Verbatim clone,Mobility
@@ -191,7 +191,7 @@ Scorpid Sting,Hunter,52,Nature,4,The Sting Clip,Verbatim clone,Degradation
 Seal of the Crusader,Paladin,52,Holy,6,The Seal Press,Shared template,Offense boost
 Shadow Resistance Aura,Paladin,52,Holy,3,The Status Boost Rack,Shared template,Defense boost
 Shield Bash,Warrior,52,Physical,3,The Interrupt Union,Verbatim clone,Negation
-Turn Undead,Paladin,52,Nature,3,,,Disables
+Turn Undead,Paladin,52,Nature,3,The Fear Franchise,Shared template,Disables
 Windfury Totem,Shaman,52,Nature,3,The Totem Foundry,Shared template,Creating entities
 Amplify Magic,Mage,54,Arcane,4,Amplify & Dampen,Verbatim clone,Defense boost
 Arcane Explosion,Mage,54,Arcane,6,,,Damage
@@ -199,16 +199,16 @@ Blessing of Sacrifice,Paladin,54,Holy,2,The Status Boost Rack,Shared template,Da
 Chain Heal,Shaman,54,Nature,3,,,Healing & revival
 Counterattack,Hunter,54,Physical,3,,,Disables
 Demoralizing Shout,Warrior,54,Physical,5,,,Degradation
-Drain Life,Warlock,54,Shadow,6,,,Resource warfare
-Drain Mana,Warlock,54,Shadow,4,,,Resource warfare
+Drain Life,Warlock,54,Shadow,6,The Siphon Set,Shared engine,Resource warfare
+Drain Mana,Warlock,54,Shadow,4,The Siphon Set,Shared engine,Resource warfare
 Explosive Trap,Hunter,54,Fire,3,The Trap Line,Shared template,Role shift
-Faerie Fire,Druid,54,Nature,4,,,Degradation
-Faerie Fire (Feral),Druid,54,Nature,4,,,Degradation
-Fire Blast,Mage,54,Fire,7,,,Damage
+Faerie Fire,Druid,54,Nature,4,The Druid Costume Shop,Verbatim clone,Degradation
+Faerie Fire (Feral),Druid,54,Nature,4,The Druid Costume Shop,Verbatim clone,Degradation
+Fire Blast,Mage,54,Fire,7,The Bolt Engine,Shared engine,Damage
 Frost Nova,Mage,54,Frost,4,,,Disables
 Frost Resistance Totem,Shaman,54,Fire,3,The Totem Foundry,Shared template,Creating entities
 Garrote,Rogue,54,Physical,6,The Affliction Engine,Shared engine,Damage
-Hammer of Justice,Paladin,54,Holy,4,,,Disables
+Hammer of Justice,Paladin,54,Holy,4,The Stun Union,Verbatim clone,Disables
 Hamstring,Warrior,54,Physical,3,,,Disables
 Hellfire,Warlock,54,Fire,3,,,Damage
 Howl of Terror,Warlock,54,Shadow,2,The Fear Franchise,Shared template,Disables
@@ -221,7 +221,7 @@ Smite,Priest,54,Holy,8,The Bolt Engine,Shared engine,Damage
 Soothe Animal,Druid,54,Nature,3,The Soothe Pair,Verbatim clone,Degradation
 Stoneskin Totem,Shaman,54,Nature,6,The Totem Foundry,Shared template,Creating entities
 Swipe,Druid,54,Physical,5,,,Damage
-Thorns,Druid,54,Nature,6,,,Defense boost
+Thorns,Druid,54,Nature,6,The Static Shell,Verbatim clone,Defense boost
 Wrath,Druid,54,Nature,8,The Bolt Engine,Shared engine,Damage
 Arcane Brilliance,Mage,56,Arcane,1,The Status Boost Rack,Shared template,Offense boost
 Arcane Intellect,Mage,56,Arcane,5,The Status Boost Rack,Shared template,Offense boost
@@ -240,11 +240,11 @@ Flash Heal,Priest,56,Holy,7,"One Heal, Nine Names",Verbatim clone,Healing & revi
 Frenzied Regeneration,Druid,56,Physical,3,,,Healing & revival
 Frost Resistance Aura,Paladin,56,Holy,3,The Status Boost Rack,Shared template,Defense boost
 Immolation Trap,Hunter,56,Fire,5,The Trap Line,Shared template,Role shift
-Life Tap,Warlock,56,Shadow,6,,,Resource warfare
+Life Tap,Warlock,56,Shadow,6,The Siphon Set,Shared engine,Resource warfare
 Lightning Bolt,Shaman,56,Nature,10,The Bolt Engine,Shared engine,Damage
-Lightning Shield,Shaman,56,Nature,7,,,Defense boost
+Lightning Shield,Shaman,56,Nature,7,The Static Shell,Verbatim clone,Defense boost
 Magma Totem,Shaman,56,Fire,4,The Totem Foundry,Shared template,Creating entities
-Mana Burn,Priest,56,Shadow,5,,,Resource warfare
+Mana Burn,Priest,56,Shadow,5,The Siphon Set,Shared engine,Resource warfare
 Mana Spring Totem,Shaman,56,Frost,4,The Totem Foundry,Shared template,Creating entities
 Mocking Blow,Warrior,56,Physical,5,,,Threat control
 Pounce,Druid,56,Physical,3,,,Disables
@@ -255,7 +255,7 @@ Retribution Aura,Paladin,56,Holy,5,The Status Boost Rack,Shared template,Damage
 Scorpid Poison,Hunter,56,Physical,4,,,Damage
 Shadow Protection,Priest,56,Shadow,3,The Status Boost Rack,Shared template,Defense boost
 Shadowburn,Warlock,56,Shadow,6,The Shard Economy,Shared engine,Damage
-Soul Fire,Warlock,56,Fire,2,,,Damage
+Soul Fire,Warlock,56,Fire,2,The Bolt Engine,Shared engine,Damage
 Viper Sting,Hunter,56,Nature,3,The Sting Clip,Verbatim clone,Resource warfare
 Windwall Totem,Shaman,56,Nature,3,The Totem Foundry,Shared template,Creating entities
 Ambush,Rogue,58,Physical,6,The Druid Costume Shop,Verbatim clone,Damage
@@ -273,7 +273,7 @@ Flash of Light,Paladin,58,Holy,7,"One Heal, Nine Names",Verbatim clone,Healing &
 Frost Shock,Shaman,58,Frost,4,The Shock Battery,Verbatim clone,Damage
 Frostbrand Weapon,Shaman,58,Frost,5,,,Offense boost
 Hemorrhage,Rogue,58,Physical,3,,,Damage
-Hibernate,Druid,58,Nature,3,,,Disables
+Hibernate,Druid,58,Nature,3,The Sleepers,Verbatim clone,Disables
 Hunter's Mark,Hunter,58,Arcane,4,,,Deception & stealth
 Ice Barrier,Mage,58,Frost,4,,,Defense boost
 Kick,Rogue,58,Physical,4,The Interrupt Union,Verbatim clone,Negation
@@ -289,13 +289,13 @@ Pummel,Warrior,58,Physical,2,The Interrupt Union,Verbatim clone,Negation
 Rain of Fire,Warlock,58,Fire,4,,,Damage
 Ravage,Druid,58,Physical,4,The Druid Costume Shop,Verbatim clone,Damage
 Resurrection,Priest,58,Holy,5,The Resurrection Union,Verbatim clone,Healing & revival
-Scorch,Mage,58,Fire,7,,,Damage
+Scorch,Mage,58,Fire,7,The Bolt Engine,Shared engine,Damage
 Seal of Righteousness,Paladin,58,Holy,8,The Seal Press,Shared template,Offense boost
 Seal of Wisdom,Paladin,58,Holy,3,The Seal Press,Shared template,Offense boost
 Searing Pain,Warlock,58,Fire,6,,,Damage
 Shadow Word: Pain,Priest,58,Shadow,8,The Affliction Engine,Shared engine,Damage
-Siphon Life,Warlock,58,Shadow,4,,,Resource warfare
-Sprint,Rogue,58,Physical,3,,,Mobility
+Siphon Life,Warlock,58,Shadow,4,The Siphon Set,Shared engine,Resource warfare
+Sprint,Rogue,58,Physical,3,The Druid Costume Shop,Verbatim clone,Mobility
 Starshards,Priest,58,Arcane,7,,,Damage
 Stoneclaw Totem,Shaman,58,Nature,6,The Totem Foundry,Shared template,Creating entities
 Subjugate Demon,Warlock,58,Shadow,3,,,Disables
@@ -349,12 +349,12 @@ Frostbolt,Mage,60,Frost,11,The Bolt Engine,Shared engine,Damage
 Gift of the Wild,Druid,60,Nature,2,The Status Boost Rack,Shared template,Offense boost
 Gouge,Rogue,60,Physical,5,,,Disables
 Grace of Air Totem,Shaman,60,Nature,3,The Totem Foundry,Shared template,Creating entities
-Greater Blessing of Kings,Paladin,60,Holy,1,,,Utility & world
-Greater Blessing of Light,Paladin,60,Holy,1,,,Defense boost
-Greater Blessing of Might,Paladin,60,Holy,2,,,Offense boost
-Greater Blessing of Salvation,Paladin,60,Holy,1,,,Threat control
-Greater Blessing of Sanctuary,Paladin,60,Holy,1,,,Degradation
-Greater Blessing of Wisdom,Paladin,60,Holy,2,,,Provisioning
+Greater Blessing of Kings,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Utility & world
+Greater Blessing of Light,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Defense boost
+Greater Blessing of Might,Paladin,60,Holy,2,The Status Boost Rack,Shared template,Offense boost
+Greater Blessing of Salvation,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Threat control
+Greater Blessing of Sanctuary,Paladin,60,Holy,1,The Status Boost Rack,Shared template,Degradation
+Greater Blessing of Wisdom,Paladin,60,Holy,2,The Status Boost Rack,Shared template,Provisioning
 Greater Heal,Priest,60,Holy,5,"One Heal, Nine Names",Verbatim clone,Healing & revival
 Hammer of Wrath,Paladin,60,Holy,3,,,Damage
 Healing Stream Totem,Shaman,60,Frost,5,The Totem Foundry,Shared template,Creating entities
@@ -408,7 +408,7 @@ Serpent Sting,Hunter,60,Nature,9,The Affliction Engine,Shared engine,Damage
 Shackle Undead,Priest,60,Holy,3,,,Disables
 Shadow Bolt,Warlock,60,Shadow,10,The Bolt Engine,Shared engine,Damage
 Shadow Ward,Warlock,60,Shadow,4,The Protection Rack,Shared template,Defense boost
-Shadowguard,Priest,60,Shadow,6,,,Damage
+Shadowguard,Priest,60,Shadow,6,The Static Shell,Verbatim clone,Damage
 Shield Slam,Warrior,60,Physical,4,,,Negation
 Starfire,Druid,60,Arcane,7,The Bolt Engine,Shared engine,Damage
 Stealth,Rogue,60,Physical,4,The Druid Costume Shop,Verbatim clone,Deception & stealth
@@ -421,4 +421,4 @@ Tranquility,Druid,60,Nature,4,The Mending Clock,Verbatim clone,Utility & world
 Tranquilizing Shot,Hunter,60,Nature,1,,,Negation
 Windfury Weapon,Shaman,60,Nature,4,,,Offense boost
 Wing Clip,Hunter,60,Physical,3,,,Disables
-Wyvern Sting,Hunter,60,Nature,3,,,Disables
+Wyvern Sting,Hunter,60,Nature,3,The Sleepers,Verbatim clone,Disables

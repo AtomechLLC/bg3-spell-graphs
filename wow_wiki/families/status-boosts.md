@@ -1,6 +1,6 @@
 # <span class="femoji">🙌</span> The Status Boost Rack
 
-<span class="tier tier-template">Shared template</span> · 24 abilities · mechanical similarity 0.11–1.00
+<span class="tier tier-template">Shared template</span> · 30 abilities · mechanical similarity 0.11–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -22,6 +22,12 @@
 | <img class="sic" data-i="blessing-of-wisdom" alt=""> **Blessing of Wisdom** | Paladin | 60 | Holy | 6 | Places a Blessing on the friendly target, restoring X mana every X seconds for X.  Players may only have one B |
 | <img class="sic" data-i="devotion-aura" alt=""> **Devotion Aura** | Paladin | 60 | Holy | 7 | Gives X additional armor to party members within X yards.  Players may only have one Aura on them per Paladin  |
 | <img class="sic" data-i="fire-resistance-aura" alt=""> **Fire Resistance Aura** | Paladin | 60 | Holy | 3 | Gives X additional Fire resistance to all party members within X yards.  Players may only have one Aura on the |
+| <img class="sic" data-i="greater-blessing-of-kings" alt=""> **Greater Blessing of Kings** | Paladin | 60 | Holy | 1 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Kings |
+| <img class="sic" data-i="greater-blessing-of-light" alt=""> **Greater Blessing of Light** | Paladin | 60 | Holy | 1 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Light |
+| <img class="sic" data-i="greater-blessing-of-might" alt=""> **Greater Blessing of Might** | Paladin | 60 | Holy | 2 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Might |
+| <img class="sic" data-i="greater-blessing-of-salvation" alt=""> **Greater Blessing of Salvation** | Paladin | 60 | Holy | 1 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Salva |
+| <img class="sic" data-i="greater-blessing-of-sanctuary" alt=""> **Greater Blessing of Sanctuary** | Paladin | 60 | Holy | 1 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Sanct |
+| <img class="sic" data-i="greater-blessing-of-wisdom" alt=""> **Greater Blessing of Wisdom** | Paladin | 60 | Holy | 2 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdo |
 | <img class="sic" data-i="prayer-of-shadow-protection" alt=""> **Prayer of Shadow Protection** | Priest | 56 | Holy | 1 | Power infuses the target's party, increasing their Shadow resistance by X for X. |
 | <img class="sic" data-i="shadow-protection" alt=""> **Shadow Protection** | Priest | 56 | Shadow | 3 | Increases the target's resistance to Shadow spells by X for X. |
 | <img class="sic" data-i="divine-spirit" alt=""> **Divine Spirit** | Priest | 60 | Holy | 4 | Holy power infuses the target, increasing their Spirit by X for X. |

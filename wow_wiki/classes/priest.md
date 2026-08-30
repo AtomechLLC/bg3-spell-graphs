@@ -1,6 +1,6 @@
 # Priest Spellbook (Classic)
 
-**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **23** in an identified family (52%)
+**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **25** in an identified family (57%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]], **9%** with [[classes/druid|Druid]], **7%** with [[classes/shaman|Shaman]] — and **20%** twinned inside its own book.
 
@@ -19,7 +19,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Shadow | 3 | [[families/soothe|🕊️ The Soothe Pair]] |
 | 54 | <img class="sic" data-i="smite" alt=""> **Smite** | Holy | 8 | [[families/bolts|🏹 The Bolt Engine]] |
 | 56 | <img class="sic" data-i="flash-heal" alt=""> **Flash Heal** | Holy | 7 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
-| 56 | <img class="sic" data-i="mana-burn" alt=""> **Mana Burn** | Shadow | 5 | — |
+| 56 | <img class="sic" data-i="mana-burn" alt=""> **Mana Burn** | Shadow | 5 | [[families/siphons|🧛 The Siphon Set]] |
 | 56 | <img class="sic" data-i="prayer-of-shadow-protection" alt=""> **Prayer of Shadow Protection** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 56 | <img class="sic" data-i="psychic-scream" alt=""> **Psychic Scream** | Shadow | 4 | [[families/fears|😱 The Fear Franchise]] |
 | 56 | <img class="sic" data-i="shadow-protection" alt=""> **Shadow Protection** | Shadow | 3 | [[families/status-boosts|🙌 The Status Boost Rack]] |
@@ -48,7 +48,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 60 | <img class="sic" data-i="prayer-of-spirit" alt=""> **Prayer of Spirit** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="renew" alt=""> **Renew** | Holy | 10 | [[families/hots|⏳ The Mending Clock]] |
 | 60 | <img class="sic" data-i="shackle-undead" alt=""> **Shackle Undead** | Holy | 3 | — |
-| 60 | <img class="sic" data-i="shadowguard" alt=""> **Shadowguard** | Shadow | 6 | — |
+| 60 | <img class="sic" data-i="shadowguard" alt=""> **Shadowguard** | Shadow | 6 | [[families/static-shell|🌩️ The Static Shell]] |
 | 60 | <img class="sic" data-i="touch-of-weakness" alt=""> **Touch of Weakness** | Shadow | 6 | — |
 
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]

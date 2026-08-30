@@ -19,4 +19,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/mage|Mage]] · [[classes/rogue|Rogue]] · [[classes/shaman|Shaman]] · [[classes/warrior|Warrior]] · [[families/shocks|The Shock Battery]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/mage|Mage]] · [[classes/rogue|Rogue]] · [[classes/shaman|Shaman]] · [[classes/warrior|Warrior]] · [[families/shocks|The Shock Battery]] · [[families/stuns|The Stun Union]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
