@@ -1,6 +1,6 @@
 # <span class="femoji">⛓️</span> The Crowd Control Cabinet
 
-<span class="tier tier-template">Shared template</span> · 24 abilities · mechanical similarity 0.14–0.98
+<span class="tier tier-template">Shared template</span> · 26 abilities · mechanical similarity 0.14–0.98
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -8,6 +8,7 @@
 | <img class="sic" data-i="pounce" alt=""> **Pounce** | Druid | 56 | Physical | 3 | Pounce, stunning the target for X and causing X damage over X.  Must be prowling and behind the target.  Award |
 | <img class="sic" data-i="hibernate" alt=""> **Hibernate** | Druid | 58 | Nature | 3 | Forces the enemy target to sleep for up to X.  Any damage will awaken the target.  Only one target can be forc |
 | <img class="sic" data-i="scare-beast" alt=""> **Scare Beast** | Hunter | 46 | Nature | 3 | Scares a beast, causing it to run in fear for up to X.  Damage caused may interrupt the effect.  Only one beas |
+| <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Hunter | 60 | Nature | 1 | Attempts to remove X Frenzy effect from an enemy creature. |
 | <img class="sic" data-i="wyvern-sting" alt=""> **Wyvern Sting** | Hunter | 60 | Nature | 3 | A stinging shot that puts the target to sleep for X.  Any damage will cancel the effect.  When the target wake |
 | <img class="sic" data-i="polymorph" alt=""> **Polymorph** | Mage | 60 | Arcane | 5 | Transforms the enemy into a sheep, forcing it to wander around for up to X.  While wandering, the sheep cannot |
 | <img class="sic" data-i="polymorph-cow" alt=""> **Polymorph: Cow** | Mage | 60 | Arcane | 1 | Transforms the enemy into a cow, forcing it to wander around for up to X.  While wandering, the cow cannot att |
@@ -29,6 +30,7 @@
 | <img class="sic" data-i="fear" alt=""> **Fear** | Warlock | 56 | Shadow | 3 | Strikes fear in the enemy, causing it to run in fear for up to X.  Damage caused may interrupt the effect.  On |
 | <img class="sic" data-i="death-coil" alt=""> **Death Coil** | Warlock | 58 | Shadow | 3 | Causes the enemy target to run in horror for X and causes X Shadow damage.  The caster gains 100% of the damag |
 | <img class="sic" data-i="subjugate-demon" alt=""> **Subjugate Demon** | Warlock | 58 | Shadow | 3 | Subjugates the target demon, up to level X, forcing it to do your bidding.  While subjugated, the time between |
+| <img class="sic" data-i="disarm" alt=""> **Disarm** | Warrior | 18 | Physical | 1 | Disarm the enemy's weapon for X. |
 | <img class="sic" data-i="intimidating-shout" alt=""> **Intimidating Shout** | Warrior | 22 | Physical | 1 | The warrior shouts, causing the targeted enemy to cower in fear.  Up to X total nearby enemies will flee in fe |
 
 **Shared skeleton.** One purpose — deny the target its turns — implemented through a handful of aura codes and dressed in every class's colors. The fears (Fear / Psychic Scream / Intimidating Shout / Scare Beast / Howl of Terror / Turn Undead) all apply `Mod Fear`; the sleeps (Hibernate / Wyvern Sting / Sap / Gouge / Blind) and stuns (Bash / Hammer of Justice / Cheap Shot / Kidney Shot / Pounce) run the same `Stun`-shaped incapacitates, with Bash/Hammer of Justice measuring ≥ 0.78 as a cross-class pair; the charms (Mind Control / Subjugate Demon) share `Mod Charm`; and the exiles (Banish / Shackle Undead / Repentance / Polymorph) are the same removal-without-damage parameterized by creature type.

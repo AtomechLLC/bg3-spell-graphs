@@ -1,6 +1,6 @@
 # Priest Spellbook (Classic)
 
-**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **41** in an identified family (93%)
+**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **44** in an identified family (100%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]], **9%** with [[classes/druid|Druid]], **7%** with [[classes/shaman|Shaman]] — and **20%** twinned inside its own book.
 
@@ -9,12 +9,12 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 1 | <img class="sic" data-i="vampiric-embrace" alt=""> **Vampiric Embrace** | Shadow | 1 | [[families/siphons|🧛 The Siphon Set]] |
 | 10 | <img class="sic" data-i="lesser-heal" alt=""> **Lesser Heal** | Holy | 3 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
 | 14 | <img class="sic" data-i="cure-disease" alt=""> **Cure Disease** | Holy | 1 | [[families/cleanses|🧼 The Cleanse Counter]] |
-| 20 | <img class="sic" data-i="fear-ward" alt=""> **Fear Ward** | Holy | 1 | — |
+| 20 | <img class="sic" data-i="fear-ward" alt=""> **Fear Ward** | Holy | 1 | [[families/protection|🧿 The Protection Rack]] |
 | 32 | <img class="sic" data-i="abolish-disease" alt=""> **Abolish Disease** | Holy | 1 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 34 | <img class="sic" data-i="heal" alt=""> **Heal** | Holy | 4 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
 | 34 | <img class="sic" data-i="levitate" alt=""> **Levitate** | Holy | 1 | [[families/travel|🌀 The Travel Agency]] |
 | 36 | <img class="sic" data-i="dispel-magic" alt=""> **Dispel Magic** | Holy | 2 | [[families/cleanses|🧼 The Cleanse Counter]] |
-| 40 | <img class="sic" data-i="power-infusion" alt=""> **Power Infusion** | Holy | 1 | — |
+| 40 | <img class="sic" data-i="power-infusion" alt=""> **Power Infusion** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 44 | <img class="sic" data-i="mind-vision" alt=""> **Mind Vision** | Shadow | 2 | [[families/tracking|🐾 The Surveillance Suite]] |
 | 52 | <img class="sic" data-i="mind-soothe" alt=""> **Mind Soothe** | Shadow | 3 | [[families/soothe|🕊️ The Soothe Pair]] |
 | 54 | <img class="sic" data-i="smite" alt=""> **Smite** | Holy | 8 | [[families/bolts|🏹 The Bolt Engine]] |
@@ -31,7 +31,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 58 | <img class="sic" data-i="starshards" alt=""> **Starshards** | Arcane | 7 | [[families/dots|🩸 The Affliction Engine]] |
 | 60 | <img class="sic" data-i="devouring-plague" alt=""> **Devouring Plague** | Shadow | 6 | [[families/dots|🩸 The Affliction Engine]] |
 | 60 | <img class="sic" data-i="divine-spirit" alt=""> **Divine Spirit** | Holy | 4 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 60 | <img class="sic" data-i="elune-s-grace" alt=""> **Elune's Grace** | Holy | 5 | — |
+| 60 | <img class="sic" data-i="elune-s-grace" alt=""> **Elune's Grace** | Holy | 5 | [[families/protection|🧿 The Protection Rack]] |
 | 60 | <img class="sic" data-i="fade" alt=""> **Fade** | Shadow | 6 | [[families/threat|😡 The Aggro Ledger]] |
 | 60 | <img class="sic" data-i="feedback" alt=""> **Feedback** | Shadow | 5 | [[families/siphons|🧛 The Siphon Set]] |
 | 60 | <img class="sic" data-i="greater-heal" alt=""> **Greater Heal** | Holy | 5 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |

@@ -1,6 +1,6 @@
 # Warlock Spellbook (Classic)
 
-**65 abilities** (165 spellbook entries counting ranks — 61% of the book is rank copies) · **64** in an identified family (98%)
+**65 abilities** (165 spellbook entries counting ranks — 61% of the book is rank copies) · **65** in an identified family (100%)
 
 Mechanical twins (effect similarity ≥ 0.75): **6%** with [[classes/paladin|Paladin]], **3%** with [[classes/priest|Priest]], **3%** with [[classes/mage|Mage]] — and **58%** twinned inside its own book.
 
@@ -65,7 +65,7 @@ Mechanical twins (effect similarity ≥ 0.75): **6%** with [[classes/paladin|Pal
 | 60 | <img class="sic" data-i="curse-of-the-elements" alt=""> **Curse of the Elements** | Shadow | 3 | [[families/curses|💀 The Debuff Bureau]] |
 | 60 | <img class="sic" data-i="dark-pact" alt=""> **Dark Pact** | Shadow | 3 | [[families/siphons|🧛 The Siphon Set]] |
 | 60 | <img class="sic" data-i="demon-armor" alt=""> **Demon Armor** | Shadow | 5 | [[families/protection|🧿 The Protection Rack]] |
-| 60 | <img class="sic" data-i="health-funnel" alt=""> **Health Funnel** | Shadow | 7 | — |
+| 60 | <img class="sic" data-i="health-funnel" alt=""> **Health Funnel** | Shadow | 7 | [[families/hots|⏳ The Mending Clock]] |
 | 60 | <img class="sic" data-i="immolate" alt=""> **Immolate** | Fire | 8 | [[families/dots|🩸 The Affliction Engine]] |
 | 60 | <img class="sic" data-i="ritual-of-doom" alt=""> **Ritual of Doom** | Shadow | 1 | [[families/summons|😈 The Menagerie]] |
 | 60 | <img class="sic" data-i="shadow-bolt" alt=""> **Shadow Bolt** | Shadow | 10 | [[families/bolts|🏹 The Bolt Engine]] |

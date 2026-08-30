@@ -1,6 +1,6 @@
 # Paladin Spellbook (Classic)
 
-**47 abilities** (137 spellbook entries counting ranks — 66% of the book is rank copies) · **43** in an identified family (91%)
+**47 abilities** (137 spellbook entries counting ranks — 66% of the book is rank copies) · **47** in an identified family (100%)
 
 Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/warlock|Warlock]], **9%** with [[classes/priest|Priest]], **9%** with [[classes/druid|Druid]] — and **49%** twinned inside its own book.
 
@@ -10,19 +10,19 @@ Mechanical twins (effect similarity ≥ 0.75): **9%** with [[classes/warlock|War
 | 8 | <img class="sic" data-i="purify" alt=""> **Purify** | Holy | 1 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 16 | <img class="sic" data-i="righteous-fury" alt=""> **Righteous Fury** | Holy | 1 | [[families/threat|😡 The Aggro Ledger]] |
 | 18 | <img class="sic" data-i="blessing-of-freedom" alt=""> **Blessing of Freedom** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 18 | <img class="sic" data-i="divine-protection" alt=""> **Divine Protection** | Holy | 2 | — |
+| 18 | <img class="sic" data-i="divine-protection" alt=""> **Divine Protection** | Holy | 2 | [[families/protection|🧿 The Protection Rack]] |
 | 20 | <img class="sic" data-i="blessing-of-kings" alt=""> **Blessing of Kings** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 20 | <img class="sic" data-i="repentance" alt=""> **Repentance** | Holy | 1 | [[families/cc|⛓️ The Crowd Control Cabinet]] |
 | 20 | <img class="sic" data-i="sense-undead" alt=""> **Sense Undead** | Holy | 1 | [[families/tracking|🐾 The Surveillance Suite]] |
 | 22 | <img class="sic" data-i="concentration-aura" alt=""> **Concentration Aura** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 22 | <img class="sic" data-i="seal-of-justice" alt=""> **Seal of Justice** | Holy | 1 | [[families/seals|✝️ The Seal Press]] |
 | 26 | <img class="sic" data-i="blessing-of-salvation" alt=""> **Blessing of Salvation** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 30 | <img class="sic" data-i="divine-intervention" alt=""> **Divine Intervention** | Holy | 1 | — |
+| 30 | <img class="sic" data-i="divine-intervention" alt=""> **Divine Intervention** | Holy | 1 | [[families/protection|🧿 The Protection Rack]] |
 | 30 | <img class="sic" data-i="sanctity-aura" alt=""> **Sanctity Aura** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 38 | <img class="sic" data-i="blessing-of-protection" alt=""> **Blessing of Protection** | Holy | 3 | — |
+| 38 | <img class="sic" data-i="blessing-of-protection" alt=""> **Blessing of Protection** | Holy | 3 | [[families/protection|🧿 The Protection Rack]] |
 | 40 | <img class="sic" data-i="summon-warhorse" alt=""> **Summon Warhorse** | Holy | 1 | [[families/summons|😈 The Menagerie]] |
 | 42 | <img class="sic" data-i="cleanse" alt=""> **Cleanse** | Holy | 1 | [[families/cleanses|🧼 The Cleanse Counter]] |
-| 50 | <img class="sic" data-i="divine-shield" alt=""> **Divine Shield** | Holy | 2 | — |
+| 50 | <img class="sic" data-i="divine-shield" alt=""> **Divine Shield** | Holy | 2 | [[families/protection|🧿 The Protection Rack]] |
 | 50 | <img class="sic" data-i="lay-on-hands" alt=""> **Lay on Hands** | Holy | 3 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] |
 | 52 | <img class="sic" data-i="seal-of-the-crusader" alt=""> **Seal of the Crusader** | Holy | 6 | [[families/seals|✝️ The Seal Press]] |
 | 52 | <img class="sic" data-i="shadow-resistance-aura" alt=""> **Shadow Resistance Aura** | Holy | 3 | [[families/status-boosts|🙌 The Status Boost Rack]] |

@@ -1,11 +1,13 @@
 # <span class="femoji">🙌</span> The Status Boost Rack
 
-<span class="tier tier-template">Shared template</span> · 31 abilities · mechanical similarity 0.11–1.00
+<span class="tier tier-template">Shared template</span> · 35 abilities · mechanical similarity 0.11–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | <img class="sic" data-i="gift-of-the-wild" alt=""> **Gift of the Wild** | Druid | 60 | Nature | 2 | Gives the Gift of the Wild to the target's party, increasing armor by X, all attributes by X and all resistanc |
 | <img class="sic" data-i="mark-of-the-wild" alt=""> **Mark of the Wild** | Druid | 60 | Nature | 7 | Increases the friendly target's armor by X, all attributes by X and all resistances by X for X. |
+| <img class="sic" data-i="rapid-fire" alt=""> **Rapid Fire** | Hunter | 26 | Arcane | 1 | Increases ranged attack speed by X% $?a415817[and melee attack speed by X%][] for X. |
+| <img class="sic" data-i="combustion" alt=""> **Combustion** | Mage | 40 | Fire | 1 | When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance  |
 | <img class="sic" data-i="arcane-brilliance" alt=""> **Arcane Brilliance** | Mage | 56 | Arcane | 1 | Infuses the target's party with brilliance, increasing their Intellect by X for X. |
 | <img class="sic" data-i="arcane-intellect" alt=""> **Arcane Intellect** | Mage | 56 | Arcane | 5 | Increases the target's Intellect by X for X. |
 | <img class="sic" data-i="blessing-of-freedom" alt=""> **Blessing of Freedom** | Paladin | 18 | Holy | 1 | Places a Blessing on the friendly target, granting immunity to movement impairing effects for X.  Players may  |
@@ -28,12 +30,14 @@
 | <img class="sic" data-i="greater-blessing-of-salvation" alt=""> **Greater Blessing of Salvation** | Paladin | 60 | Holy | 1 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Salva |
 | <img class="sic" data-i="greater-blessing-of-sanctuary" alt=""> **Greater Blessing of Sanctuary** | Paladin | 60 | Holy | 1 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Sanct |
 | <img class="sic" data-i="greater-blessing-of-wisdom" alt=""> **Greater Blessing of Wisdom** | Paladin | 60 | Holy | 2 | Gives all members of the raid or group that share the same class with the target the Greater Blessing of Wisdo |
+| <img class="sic" data-i="power-infusion" alt=""> **Power Infusion** | Priest | 40 | Holy | 1 | Infuses the target with power, increasing their spell damage and healing by X%.  Lasts X. |
 | <img class="sic" data-i="prayer-of-shadow-protection" alt=""> **Prayer of Shadow Protection** | Priest | 56 | Holy | 1 | Power infuses the target's party, increasing their Shadow resistance by X for X. |
 | <img class="sic" data-i="shadow-protection" alt=""> **Shadow Protection** | Priest | 56 | Shadow | 3 | Increases the target's resistance to Shadow spells by X for X. |
 | <img class="sic" data-i="divine-spirit" alt=""> **Divine Spirit** | Priest | 60 | Holy | 4 | Holy power infuses the target, increasing their Spirit by X for X. |
 | <img class="sic" data-i="power-word-fortitude" alt=""> **Power Word: Fortitude** | Priest | 60 | Holy | 6 | Power infuses the target, increasing their Stamina by X for X. |
 | <img class="sic" data-i="prayer-of-fortitude" alt=""> **Prayer of Fortitude** | Priest | 60 | Holy | 2 | Power infuses the target's party, increasing their Stamina by X for X. |
 | <img class="sic" data-i="prayer-of-spirit" alt=""> **Prayer of Spirit** | Priest | 60 | Holy | 1 | Power infuses the target's party, increasing their Spirit by X for X. |
+| <img class="sic" data-i="recklessness" alt=""> **Recklessness** | Warrior | 50 | Physical | 1 | $?s446658[The warrior will gain X% increased critical strike chance][The warrior will cause critical hits with |
 | <img class="sic" data-i="battle-shout" alt=""> **Battle Shout** | Warrior | 60 | Physical | 7 | The warrior shouts, increasing the melee attack power of all party members within X yards by X.  Lasts X. |
 
 **Shared skeleton.** One design — 'grant a friendly target a persistent stat modifier' — delivered through three chassis. The buff-and-prayer pairs (Arcane Intellect→Brilliance, Fortitude→Prayer of Fortitude, Mark→Gift) double every buff into a party version with a reagent cost. The Blessing rack sells the same chassis seven times (Might/Wisdom/Kings measure 0.83–0.91), each with a 'Greater' twin. The Aura carousel broadcasts it in a 30-yard radius, one at a time — the resistance trio is word-identical but for the school (0.9+).
@@ -45,4 +49,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/warrior|Warrior]] · [[families/aspects|The Aspect Dial]] · [[families/curses|The Debuff Bureau]] · [[families/teleports|The Hearth Network]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/warrior|Warrior]] · [[families/aspects|The Aspect Dial]] · [[families/curses|The Debuff Bureau]] · [[families/teleports|The Hearth Network]] · [[findings|The Identical-Spell List]] · [[overview|Overview]] · [[spells|All Abilities, Tagged]]*

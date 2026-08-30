@@ -1,6 +1,6 @@
 # <span class="femoji">🧼</span> The Cleanse Counter
 
-<span class="tier tier-clone">Verbatim clone</span> · 12 abilities · mechanical similarity 0.32–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 13 abilities · mechanical similarity 0.28–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -16,6 +16,7 @@
 | <img class="sic" data-i="cure-poison" alt=""> **Cure Poison** | Shaman | 16 | Nature | 1 | Cures X poison X:effects; on the target. |
 | <img class="sic" data-i="cure-disease" alt=""> **Cure Disease** | Shaman | 22 | Nature | 1 | Cures X X:diseases; on the target. |
 | <img class="sic" data-i="purge" alt=""> **Purge** | Shaman | 32 | Nature | 2 | Purges the enemy target, removing X beneficial magic X:effects;. |
+| <img class="sic" data-i="shield-slam" alt=""> **Shield Slam** | Warrior | 60 | Physical | 4 | Slam the target with your shield, causing X damage, modified by $?s446658[twice ][]your shield block value, an |
 
 **Shared skeleton.** 'Cures/Removes X from the friendly target.' Cure Poison appears in both the Druid and Shaman books as the *same spell* — name, text, and all (the WoW equivalent of BG3's duplicate Shield SKUs). Abolish adds a re-tick; Purify/Cleanse bundle two types.
 
@@ -26,4 +27,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/shaman|Shaman]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/shaman|Shaman]] · [[classes/warrior|Warrior]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*

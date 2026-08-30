@@ -1,6 +1,6 @@
 # <span class="femoji">⚔️</span> The Whetstone & The Strike
 
-<span class="tier tier-template">Shared template</span> · 28 abilities · mechanical similarity 0.18–0.97
+<span class="tier tier-template">Shared template</span> · 32 abilities · mechanical similarity 0.18–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -12,11 +12,18 @@
 | <img class="sic" data-i="ravage" alt=""> **Ravage** | Druid | 58 | Physical | 4 | Ravage the target, causing X% damage plus 343 to the target.  Must be prowling and behind the target.  Awards  |
 | <img class="sic" data-i="ferocious-bite" alt=""> **Ferocious Bite** | Druid | 60 | Physical | 5 | Finishing move that causes damage per combo point and converts each extra point of energy into X additional da |
 | <img class="sic" data-i="tiger-s-fury" alt=""> **Tiger's Fury** | Druid | 60 | Physical | 4 | Increases damage done by X for X. |
+| <img class="sic" data-i="auto-shot" alt=""> **Auto Shot** | Hunter | 1 | Physical | 1 | Automatically shoots the target until cancelled. |
 | <img class="sic" data-i="counterattack" alt=""> **Counterattack** | Hunter | 54 | Physical | 3 | A strike that becomes active after parrying an opponent's attack.  This attack deals X damage and immobilizes  |
 | <img class="sic" data-i="raptor-strike" alt=""> **Raptor Strike** | Hunter | 56 | Physical | 8 | A strong attack that increases melee damage by X. |
 | <img class="sic" data-i="mongoose-bite" alt=""> **Mongoose Bite** | Hunter | 58 | Physical | 4 | Counterattack the enemy for X damage.  Can only be performed after you dodge. |
+| <img class="sic" data-i="mind-numbing-poison" alt=""> **Mind-numbing Poison** | Rogue | 24 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 20% chance of poisoning the enemy, in |
+| <img class="sic" data-i="mind-numbing-poison-ii" alt=""> **Mind-numbing Poison II** | Rogue | 38 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 20% chance of poisoning the enemy, in |
 | <img class="sic" data-i="slice-and-dice" alt=""> **Slice and Dice** | Rogue | 42 | Physical | 2 | Finishing move that increases melee attack speed by X%.  Lasts longer per combo point:
    1 point  : 9 second |
+| <img class="sic" data-i="mind-numbing-poison-iii" alt=""> **Mind-numbing Poison III** | Rogue | 52 | Physical | 1 | Coats a weapon with poison that lasts for 30 minutes.
+Each strike has a 20% chance of poisoning the enemy, in |
 | <img class="sic" data-i="sinister-strike" alt=""> **Sinister Strike** | Rogue | 54 | Physical | 8 | An instant strike that causes X damage in addition to your normal weapon damage.  Awards X combo X:points;. |
 | <img class="sic" data-i="ambush" alt=""> **Ambush** | Rogue | 58 | Physical | 6 | Ambush the target, causing X% weapon damage plus 290 to the target.  Must be stealthed and behind the target.  |
 | <img class="sic" data-i="hemorrhage" alt=""> **Hemorrhage** | Rogue | 58 | Physical | 3 | An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damag |
@@ -36,7 +43,7 @@
 | <img class="sic" data-i="overpower" alt=""> **Overpower** | Warrior | 60 | Physical | 4 | Instantly overpower the enemy, causing weapon damage plus X.  Only useable after the target dodges.  The Overp |
 | <img class="sic" data-i="revenge" alt=""> **Revenge** | Warrior | 60 | Physical | 6 | Instantly counterattack an enemy for X damage and a high amount of threat.   Revenge must follow a block, dodg |
 
-**Shared skeleton.** Everything that turns a weapon swing into more than a swing. The imbues (Rockbiter / Flametongue / Frostbrand / Windfury) are one `Enchant Item (temporary)` rack with four payloads; the strikes (Mortal Strike / Heroic Strike / Slam / Cleave / Raptor Strike / Sinister Strike…) all run `Weapon Damage` / `Normalized Weapon Dmg` effects; the stealth-openers photocopy across classes (Ambush→Ravage, Backstab→Shred measure 0.8–0.95); and the finishers (Eviscerate / Ferocious Bite) spend the same combo currency.
+**Shared skeleton.** Everything that turns a weapon swing into more than a swing. The imbues (Rockbiter / Flametongue / Frostbrand / Windfury, plus the Rogue's poison coatings — Mind-numbing I–III, rank numbers promoted into spell names) are one `Enchant Item (temporary)` rack; the strikes (Mortal Strike / Heroic Strike / Slam / Cleave / Raptor Strike / Sinister Strike…) all run `Weapon Damage` / `Normalized Weapon Dmg` effects; the stealth-openers photocopy across classes (Ambush→Ravage, Backstab→Shred measure 0.8–0.95); and the finishers (Eviscerate / Ferocious Bite) spend the same combo currency.
 
 **What varies.** The delivery slot (imbue, next-swing, opener, finisher), the class, the resource, and the rider.
 

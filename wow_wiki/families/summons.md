@@ -1,14 +1,20 @@
 # <span class="femoji">😈</span> The Menagerie
 
-<span class="tier tier-template">Shared template</span> · 19 abilities · mechanical similarity 0.14–1.00
+<span class="tier tier-template">Shared template</span> · 25 abilities · mechanical similarity 0.07–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
+| <img class="sic" data-i="cobra-reflexes" alt=""> **Cobra Reflexes** | Hunter | 1 | Physical | 1 | Increases attack speed by X%, but decreases damage. |
+| <img class="sic" data-i="beast-training" alt=""> **Beast Training** | Hunter | 10 | Physical | 1 | Lets the Hunter train his pet with various abilities that he has learned. |
 | <img class="sic" data-i="call-pet" alt=""> **Call Pet** | Hunter | 10 | Physical | 1 | Summons your pet to you. |
 | <img class="sic" data-i="dismiss-pet" alt=""> **Dismiss Pet** | Hunter | 10 | Physical | 1 | Dismiss your pet.  Dismissing your pet will reduce its happiness by $/1000;s1. |
+| <img class="sic" data-i="feed-pet" alt=""> **Feed Pet** | Hunter | 10 | Physical | 1 | Feed your pet the selected item.  Feeding your pet increases happiness.  Using food close to the pet's level w |
 | <img class="sic" data-i="revive-pet" alt=""> **Revive Pet** | Hunter | 10 | Nature | 1 | Revive your pet, returning it to life with X% of its health. |
 | <img class="sic" data-i="tame-beast" alt=""> **Tame Beast** | Hunter | 10 | Nature | 1 | Begins taming a beast to be your companion.  Your armor is reduced by X% while you focus on taming the beast f |
 | <img class="sic" data-i="eyes-of-the-beast" alt=""> **Eyes of the Beast** | Hunter | 14 | Nature | 1 | Take direct control of your pet and see through its eyes for X. |
+| <img class="sic" data-i="beast-lore" alt=""> **Beast Lore** | Hunter | 24 | Nature | 1 | Gather information about the target beast.  The tooltip will display damage, health, armor, any special resist |
+| <img class="sic" data-i="scorpid-poison" alt=""> **Scorpid Poison** | Hunter | 56 | Physical | 4 | Inflicts X Nature damage over X. Effect can stack up to 5 times on a single target. |
+| <img class="sic" data-i="lightning-breath" alt=""> **Lightning Breath** | Hunter | 60 | Physical | 6 | Breathes lightning, instantly dealing X Nature damage to a single target. |
 | <img class="sic" data-i="summon-warhorse" alt=""> **Summon Warhorse** | Paladin | 40 | Holy | 1 | Summons a warhorse, which serves as a mount.  Speed is increased by X%. |
 | <img class="sic" data-i="summon-charger" alt=""> **Summon Charger** | Paladin | 60 | Holy | 1 | Summons a Charger, which serves as a mount.  Speed is increased by X%. |
 | <img class="sic" data-i="lightwell" alt=""> **Lightwell** | Priest | 60 | Holy | 3 | Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore X  |

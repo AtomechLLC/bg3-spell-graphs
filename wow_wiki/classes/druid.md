@@ -1,6 +1,6 @@
 # Druid Spellbook (Classic)
 
-**53 abilities** (199 spellbook entries counting ranks — 73% of the book is rank copies) · **52** in an identified family (98%)
+**53 abilities** (199 spellbook entries counting ranks — 73% of the book is rank copies) · **53** in an identified family (100%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/rogue|Rogue]], **8%** with [[classes/priest|Priest]], **8%** with [[classes/paladin|Paladin]] — and **25%** twinned inside its own book.
 
@@ -23,7 +23,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/rogue|Rogu
 | 40 | <img class="sic" data-i="dire-bear-form" alt=""> **Dire Bear Form** | Physical | 1 | [[families/forms|🐻 The Form Rack]] |
 | 40 | <img class="sic" data-i="feline-grace" alt=""> **Feline Grace** | Physical | 1 | [[families/travel|🌀 The Travel Agency]] |
 | 40 | <img class="sic" data-i="moonkin-form" alt=""> **Moonkin Form** | Physical | 1 | [[families/forms|🐻 The Form Rack]] |
-| 44 | <img class="sic" data-i="barkskin" alt=""> **Barkskin** | Nature | 1 | — |
+| 44 | <img class="sic" data-i="barkskin" alt=""> **Barkskin** | Nature | 1 | [[families/protection|🧿 The Protection Rack]] |
 | 46 | <img class="sic" data-i="bash" alt=""> **Bash** | Physical | 3 | [[families/cc|⛓️ The Crowd Control Cabinet]] |
 | 46 | <img class="sic" data-i="dash" alt=""> **Dash** | Physical | 2 | [[families/travel|🌀 The Travel Agency]] |
 | 52 | <img class="sic" data-i="cower" alt=""> **Cower** | Physical | 3 | [[families/threat|😡 The Aggro Ledger]] |
