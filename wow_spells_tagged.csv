@@ -418,7 +418,7 @@ Summon Dreadsteed,Warlock,60,Shadow,1,The Menagerie,Shared template,Creating ent
 Tiger's Fury,Druid,60,Physical,4,The Whetstone & The Strike,Shared template,Offense boost
 Touch of Weakness,Priest,60,Shadow,6,The Debuff Bureau,Shared template,Damage
 Tranquility,Druid,60,Nature,4,The Mending Clock,Verbatim clone,Utility & world
-Tranquilizing Shot,Hunter,60,Nature,1,The Crowd Control Cabinet,Shared template,Negation
+Tranquilizing Shot,Hunter,60,Nature,1,The Cleanse Counter,Verbatim clone,Negation
 Windfury Weapon,Shaman,60,Nature,4,The Whetstone & The Strike,Shared template,Offense boost
 Wing Clip,Hunter,60,Physical,3,The Slow Lane,Shared template,Disables
 Wyvern Sting,Hunter,60,Nature,3,The Crowd Control Cabinet,Shared template,Disables

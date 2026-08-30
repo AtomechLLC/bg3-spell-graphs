@@ -10,8 +10,8 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 |---|---|---|---|---|
 | [[families/tracking|🐾 The Surveillance Suite]] | <span class="tier tier-clone">Verbatim clone</span> | 21 abilities · 8 classes | 1.00 | what is revealed, and through which lens |
 | [[families/conjured|💎 The Conjured Commissary]] | <span class="tier tier-clone">Verbatim clone</span> | 18 abilities · 2 classes | 1.00 | the item conjured; the tier in parentheses |
+| [[families/cleanses|🧼 The Cleanse Counter]] | <span class="tier tier-clone">Verbatim clone</span> | 14 abilities · 7 classes | 1.00 | the debuff type removed — Cure Poison ships in two class books verbatim |
 | [[families/heals|❤️‍🩹 One Heal, Nine Names]] | <span class="tier tier-clone">Verbatim clone</span> | 13 abilities · 4 classes | 1.00 | class flavor, cast speed, and efficiency knobs |
-| [[families/cleanses|🧼 The Cleanse Counter]] | <span class="tier tier-clone">Verbatim clone</span> | 13 abilities · 6 classes | 1.00 | the debuff type removed — Cure Poison ships in two class books verbatim |
 | [[families/teleports|🌀 The Hearth Network]] | <span class="tier tier-clone">Verbatim clone</span> | 12 abilities · 1 classes | 1.00 | the destination city; self vs. group |
 | [[families/threat|😡 The Aggro Ledger]] | <span class="tier tier-clone">Verbatim clone</span> | 12 abilities · 6 classes | 1.00 | the sign of the threat edit, and who performs it |
 | [[families/travel|🌀 The Travel Agency]] | <span class="tier tier-clone">Verbatim clone</span> | 12 abilities · 5 classes | 1.00 | the mode of getting there (or of not dying on arrival) |
@@ -26,7 +26,7 @@ Which WoW Classic abilities are mostly the same ability. Of **423 distinct train
 | [[families/mirror|🪞 Amplify & Dampen]] | <span class="tier tier-clone">Verbatim clone</span> | 2 abilities · 1 classes | 0.86 | the sign |
 | [[families/status-boosts|🙌 The Status Boost Rack]] | <span class="tier tier-template">Shared template</span> | 35 abilities · 6 classes | 1.00 | the stat granted, and the delivery: touch, blessing slot, or radius |
 | [[families/melee-enhance|⚔️ The Whetstone & The Strike]] | <span class="tier tier-template">Shared template</span> | 32 abilities · 5 classes | 1.00 | how the weapon hit is made bigger: imbue, on-next-swing, opener, or finisher |
-| [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | 26 abilities · 8 classes | 0.98 | the flavor of lost agency: flee, sleep, stun, sheep, charm, or exile |
+| [[families/cc|⛓️ The Crowd Control Cabinet]] | <span class="tier tier-template">Shared template</span> | 25 abilities · 8 classes | 0.98 | the flavor of lost agency: flee, sleep, stun, sheep, charm, or exile |
 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 25 abilities · 4 classes | 1.00 | who — or what — answers the call, and which class holds the leash |
 | [[families/protection|🧿 The Protection Rack]] | <span class="tier tier-template">Shared template</span> | 24 abilities · 7 classes | 0.95 | how the damage is refused: armor, absorb, ward, dodge, or a wall of no |
 | [[families/totems|🗿 The Totem Foundry]] | <span class="tier tier-template">Shared template</span> | 21 abilities · 1 classes | 0.98 | the payload planted in the ground |

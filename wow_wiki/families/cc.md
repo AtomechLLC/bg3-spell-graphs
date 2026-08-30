@@ -1,6 +1,6 @@
 # <span class="femoji">⛓️</span> The Crowd Control Cabinet
 
-<span class="tier tier-template">Shared template</span> · 26 abilities · mechanical similarity 0.14–0.98
+<span class="tier tier-template">Shared template</span> · 25 abilities · mechanical similarity 0.14–0.98
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
@@ -8,7 +8,6 @@
 | <img class="sic" data-i="pounce" alt=""> **Pounce** | Druid | 56 | Physical | 3 | Pounce, stunning the target for X and causing X damage over X.  Must be prowling and behind the target.  Award |
 | <img class="sic" data-i="hibernate" alt=""> **Hibernate** | Druid | 58 | Nature | 3 | Forces the enemy target to sleep for up to X.  Any damage will awaken the target.  Only one target can be forc |
 | <img class="sic" data-i="scare-beast" alt=""> **Scare Beast** | Hunter | 46 | Nature | 3 | Scares a beast, causing it to run in fear for up to X.  Damage caused may interrupt the effect.  Only one beas |
-| <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Hunter | 60 | Nature | 1 | Attempts to remove X Frenzy effect from an enemy creature. |
 | <img class="sic" data-i="wyvern-sting" alt=""> **Wyvern Sting** | Hunter | 60 | Nature | 3 | A stinging shot that puts the target to sleep for X.  Any damage will cancel the effect.  When the target wake |
 | <img class="sic" data-i="polymorph" alt=""> **Polymorph** | Mage | 60 | Arcane | 5 | Transforms the enemy into a sheep, forcing it to wander around for up to X.  While wandering, the sheep cannot |
 | <img class="sic" data-i="polymorph-cow" alt=""> **Polymorph: Cow** | Mage | 60 | Arcane | 1 | Transforms the enemy into a cow, forcing it to wander around for up to X.  While wandering, the cow cannot att |

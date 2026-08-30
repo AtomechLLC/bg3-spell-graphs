@@ -1,12 +1,13 @@
 # <span class="femoji">🧼</span> The Cleanse Counter
 
-<span class="tier tier-clone">Verbatim clone</span> · 13 abilities · mechanical similarity 0.28–1.00
+<span class="tier tier-clone">Verbatim clone</span> · 14 abilities · mechanical similarity 0.26–1.00
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
 | <img class="sic" data-i="cure-poison" alt=""> **Cure Poison** | Druid | 14 | Nature | 1 | Cures X poison X:effects; on the target. |
 | <img class="sic" data-i="remove-curse" alt=""> **Remove Curse** | Druid | 24 | Arcane | 1 | Dispels X Curse from a friendly target. |
 | <img class="sic" data-i="abolish-poison" alt=""> **Abolish Poison** | Druid | 26 | Nature | 1 | Attempts to cure X poison effect on the target, and X more poison effect every X seconds for X. |
+| <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Hunter | 60 | Nature | 1 | Attempts to remove X Frenzy effect from an enemy creature. |
 | <img class="sic" data-i="remove-lesser-curse" alt=""> **Remove Lesser Curse** | Mage | 18 | Arcane | 1 | Removes X Curse from a friendly target. |
 | <img class="sic" data-i="purify" alt=""> **Purify** | Paladin | 8 | Holy | 1 | Purifies the friendly target, removing X disease effect and X poison effect. |
 | <img class="sic" data-i="cleanse" alt=""> **Cleanse** | Paladin | 42 | Holy | 1 | Cleanses a friendly target, removing X poison effect, X disease effect, and X magic effect. |
@@ -27,4 +28,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/shaman|Shaman]] · [[classes/warrior|Warrior]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/mage|Mage]] · [[classes/paladin|Paladin]] · [[classes/priest|Priest]] · [[classes/shaman|Shaman]] · [[classes/warrior|Warrior]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*

@@ -57,7 +57,7 @@ Mechanical twins (effect similarity ≥ 0.75): **13%** with [[classes/warlock|Wa
 | 60 | <img class="sic" data-i="mend-pet" alt=""> **Mend Pet** | Nature | 7 | [[families/hots|⏳ The Mending Clock]] |
 | 60 | <img class="sic" data-i="multi-shot" alt=""> **Multi-Shot** | Physical | 5 | [[families/aoe-damage|💥 The Area Barrage]] |
 | 60 | <img class="sic" data-i="serpent-sting" alt=""> **Serpent Sting** | Nature | 9 | [[families/dots|🩸 The Affliction Engine]] |
-| 60 | <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Nature | 1 | [[families/cc|⛓️ The Crowd Control Cabinet]] |
+| 60 | <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Nature | 1 | [[families/cleanses|🧼 The Cleanse Counter]] |
 | 60 | <img class="sic" data-i="wing-clip" alt=""> **Wing Clip** | Physical | 3 | [[families/snares|🥶 The Slow Lane]] |
 | 60 | <img class="sic" data-i="wyvern-sting" alt=""> **Wyvern Sting** | Nature | 3 | [[families/cc|⛓️ The Crowd Control Cabinet]] |
 
