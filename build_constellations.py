@@ -371,7 +371,9 @@ body{{margin:0;background:#101016;color:#E8E6EF;font:400 14px/1.5 "IBM Plex Mono
   min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:22px 18px 30px}}
 header{{width:100%;max-width:1500px;display:flex;flex-direction:column;gap:10px;margin-bottom:12px}}
 .topline{{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}}
-.topline .seg{{margin-left:auto}}
+.segrow{{margin-left:auto;display:flex;align-items:center;gap:10px}}
+#copybtn.ok{{border-color:#5fbf83;color:#7fdfa3}}
+#copybtn.err{{border-color:#e58a9b;color:#e58a9b}}
 h1{{font:600 22px Cinzel,Georgia,serif;color:#E3C377;margin:0;letter-spacing:.04em}}
 .sub{{color:#A7A4B3;font-size:11.5px}}
 .seg{{display:flex;border:1px solid #3a3647;border-radius:7px;overflow:hidden}}
@@ -426,10 +428,13 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
 <header>
   <div class="topline">
     <div><h1>Spell Constellations</h1><div class="sub" id="sub"></div></div>
-    <div class="seg" role="tablist">
-      <button data-v="fam" role="tab">BY FAMILY</button>
-      <button data-v="cls" role="tab">BY CLASS</button>
-      <button data-v="sch" role="tab">BY SCHOOL</button>
+    <div class="segrow">
+      <div class="seg" role="tablist">
+        <button data-v="fam" role="tab">BY FAMILY</button>
+        <button data-v="cls" role="tab">BY CLASS</button>
+        <button data-v="sch" role="tab">BY SCHOOL</button>
+      </div>
+      <button id="copybtn" class="pchip" title="Copy the current view (with active filters) as a PNG image">⧉ copy image</button>
     </div>
   </div>
   <div class="legend" id="leg"></div>
@@ -580,6 +585,53 @@ document.querySelectorAll('text.anchor').forEach(a => {{
     svg.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
   }});
 }});
+// ---- copy the active view as a PNG image -----------------------------
+async function exportPNG() {{
+  const live = document.querySelector('.view.on svg');
+  const clone = live.cloneNode(true);
+  if (live.classList.contains('filtered')) {{     // bake CSS filter state into attributes
+    clone.querySelectorAll('.n').forEach(n =>
+      n.setAttribute('opacity', n.classList.contains('lit') ? '1' : '0.10'));
+    clone.querySelectorAll('line.e').forEach(l => {{
+      if (l.classList.contains('lit2')) {{
+        l.setAttribute('stroke', '#E3C377');
+        l.setAttribute('stroke-opacity', '0.65');
+      }} else {{
+        l.setAttribute('opacity', '0.05');
+      }}
+    }});
+    clone.querySelectorAll('.fmark').forEach(t => t.setAttribute('opacity', '0.3'));
+  }}
+  const xml = new XMLSerializer().serializeToString(clone);
+  const url = URL.createObjectURL(new Blob([xml], {{type: 'image/svg+xml'}}));
+  const img = new Image();
+  await new Promise((res, rej) => {{ img.onload = res; img.onerror = rej; img.src = url; }});
+  const c = document.createElement('canvas');
+  c.width = 3000; c.height = 1960;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#101016';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.drawImage(img, 0, 0, c.width, c.height);
+  URL.revokeObjectURL(url);
+  return new Promise(res => c.toBlob(res, 'image/png'));
+}}
+const copybtn = document.getElementById('copybtn');
+function flashCopy(cls, text) {{
+  copybtn.classList.add(cls);
+  copybtn.textContent = text;
+  setTimeout(() => {{ copybtn.classList.remove(cls); copybtn.textContent = '⧉ copy image'; }}, 2200);
+}}
+copybtn.addEventListener('click', async () => {{
+  copybtn.textContent = '… rendering';
+  try {{
+    const blob = await exportPNG();
+    await navigator.clipboard.write([new ClipboardItem({{'image/png': blob}})]);
+    flashCopy('ok', '✓ copied');
+  }} catch (e) {{
+    flashCopy('err', '✕ blocked');
+  }}
+}});
+
 // hover a family mark -> highlight its members
 document.querySelectorAll('.fmark').forEach(a => {{
   const svg = a.closest('svg');
