@@ -23,4 +23,4 @@
 Full list: [[findings|The Identical-Spell List]] · scoring: [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*
+*Linked from: [[classes/druid|Druid]] · [[classes/hunter|Hunter]] · [[classes/priest|Priest]] · [[classes/rogue|Rogue]] · [[classes/warlock|Warlock]] · [[classes/warrior|Warrior]] · [[families/hots|The Mending Clock]] · [[findings|The Identical-Spell List]] · [[spells|All Abilities, Tagged]]*

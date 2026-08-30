@@ -399,10 +399,10 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 60 | <img class="sic" data-i="pyroblast" alt=""> **Pyroblast** | Mage | Fire | 8 | [[families/bolts|🏹 The Bolt Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
 | 60 | <img class="sic" data-i="rebirth" alt=""> **Rebirth** | Druid | Nature | 5 | [[families/rez|⚰️ The Resurrection Union]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
 | 60 | <img class="sic" data-i="redemption" alt=""> **Redemption** | Paladin | Holy | 5 | [[families/rez|⚰️ The Resurrection Union]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
-| 60 | <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Druid | Nature | 9 | — |  | ❤️‍🩹 Healing & revival |
-| 60 | <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Druid | Nature | 11 | — |  | ❤️‍🩹 Healing & revival |
+| 60 | <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Druid | Nature | 9 | [[families/hots|⏳ The Mending Clock]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
+| 60 | <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Druid | Nature | 11 | [[families/hots|⏳ The Mending Clock]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
 | 60 | <img class="sic" data-i="rend" alt=""> **Rend** | Warrior | Physical | 7 | [[families/dots|🩸 The Affliction Engine]] | <span class="tier tier-engine">Shared engine</span> | 💥 Damage |
-| 60 | <img class="sic" data-i="renew" alt=""> **Renew** | Priest | Holy | 10 | — |  | ❤️‍🩹 Healing & revival |
+| 60 | <img class="sic" data-i="renew" alt=""> **Renew** | Priest | Holy | 10 | [[families/hots|⏳ The Mending Clock]] | <span class="tier tier-clone">Verbatim clone</span> | ❤️‍🩹 Healing & revival |
 | 60 | <img class="sic" data-i="revenge" alt=""> **Revenge** | Warrior | Physical | 6 | — |  | 💥 Damage |
 | 60 | <img class="sic" data-i="rip" alt=""> **Rip** | Druid | Physical | 6 | — |  | 💥 Damage |
 | 60 | <img class="sic" data-i="ritual-of-doom" alt=""> **Ritual of Doom** | Warlock | Shadow | 1 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
@@ -422,7 +422,7 @@ All **423 distinct trainer abilities** across the nine classes, with family tags
 | 60 | <img class="sic" data-i="summon-dreadsteed" alt=""> **Summon Dreadsteed** | Warlock | Shadow | 1 | [[families/summons|😈 The Menagerie]] | <span class="tier tier-template">Shared template</span> | 🧞 Creating entities |
 | 60 | <img class="sic" data-i="tiger-s-fury" alt=""> **Tiger's Fury** | Druid | Physical | 4 | — |  | ⚔️ Offense boost |
 | 60 | <img class="sic" data-i="touch-of-weakness" alt=""> **Touch of Weakness** | Priest | Shadow | 6 | — |  | 💥 Damage |
-| 60 | <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Druid | Nature | 4 | — |  | 🔧 Utility & world |
+| 60 | <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Druid | Nature | 4 | [[families/hots|⏳ The Mending Clock]] | <span class="tier tier-clone">Verbatim clone</span> | 🔧 Utility & world |
 | 60 | <img class="sic" data-i="tranquilizing-shot" alt=""> **Tranquilizing Shot** | Hunter | Nature | 1 | — |  | 🧯 Negation |
 | 60 | <img class="sic" data-i="windfury-weapon" alt=""> **Windfury Weapon** | Shaman | Nature | 4 | — |  | ⚔️ Offense boost |
 | 60 | <img class="sic" data-i="wing-clip" alt=""> **Wing Clip** | Hunter | Physical | 3 | — |  | ⛓️ Disables |

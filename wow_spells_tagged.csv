@@ -394,10 +394,10 @@ Prowl,Druid,60,Physical,3,The Druid Costume Shop,Verbatim clone,Deception & stea
 Pyroblast,Mage,60,Fire,8,The Bolt Engine,Shared engine,Damage
 Rebirth,Druid,60,Nature,5,The Resurrection Union,Verbatim clone,Healing & revival
 Redemption,Paladin,60,Holy,5,The Resurrection Union,Verbatim clone,Healing & revival
-Regrowth,Druid,60,Nature,9,,,Healing & revival
-Rejuvenation,Druid,60,Nature,11,,,Healing & revival
+Regrowth,Druid,60,Nature,9,The Mending Clock,Verbatim clone,Healing & revival
+Rejuvenation,Druid,60,Nature,11,The Mending Clock,Verbatim clone,Healing & revival
 Rend,Warrior,60,Physical,7,The Affliction Engine,Shared engine,Damage
-Renew,Priest,60,Holy,10,,,Healing & revival
+Renew,Priest,60,Holy,10,The Mending Clock,Verbatim clone,Healing & revival
 Revenge,Warrior,60,Physical,6,,,Damage
 Rip,Druid,60,Physical,6,,,Damage
 Ritual of Doom,Warlock,60,Shadow,1,The Menagerie,Shared template,Creating entities
@@ -417,7 +417,7 @@ Summon Charger,Paladin,60,Holy,1,The Menagerie,Shared template,Creating entities
 Summon Dreadsteed,Warlock,60,Shadow,1,The Menagerie,Shared template,Creating entities
 Tiger's Fury,Druid,60,Physical,4,,,Offense boost
 Touch of Weakness,Priest,60,Shadow,6,,,Damage
-Tranquility,Druid,60,Nature,4,,,Utility & world
+Tranquility,Druid,60,Nature,4,The Mending Clock,Verbatim clone,Utility & world
 Tranquilizing Shot,Hunter,60,Nature,1,,,Negation
 Windfury Weapon,Shaman,60,Nature,4,,,Offense boost
 Wing Clip,Hunter,60,Physical,3,,,Disables

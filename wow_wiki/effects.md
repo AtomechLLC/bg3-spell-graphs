@@ -28,7 +28,9 @@ reproduced exactly after normalization; the rest differ only in wowhead's added 
 | **Damage over time** | 21 | 5% |
 | **Weapon strike** | 17 | 4% |
 | **Direct spell damage** | 30 | 7% |
-| **Healing** | 18 | 4% |
+| **Heal + regeneration** | 1 | 0% |
+| **Heal over time** | 5 | 1% |
+| **Direct healing** | 12 | 3% |
 | **Absorb & shields** | 8 | 2% |
 | **Resource manipulation** | 8 | 2% |
 | **Stat & combat mods** | 53 | 13% |
@@ -91,6 +93,18 @@ reproduced exactly after normalization; the rest differ only in wowhead's added 
 | <img class="sic" data-i="siphon-life" alt=""> **Siphon Life** | Warlock | Apply Aura: Periodic Leech | Damage over time |
 | <img class="sic" data-i="starshards" alt=""> **Starshards** | Priest | Apply Aura: Periodic Damage | Damage over time |
 | <img class="sic" data-i="volley" alt=""> **Volley** | Hunter | Apply Aura: Periodic Damage | Damage over time |
+| <img class="sic" data-i="chain-heal" alt=""> **Chain Heal** | Shaman | Heal | Direct healing |
+| <img class="sic" data-i="desperate-prayer" alt=""> **Desperate Prayer** | Priest | Heal | Direct healing |
+| <img class="sic" data-i="flash-heal" alt=""> **Flash Heal** | Priest | Heal | Direct healing |
+| <img class="sic" data-i="greater-heal" alt=""> **Greater Heal** | Priest | Heal | Direct healing |
+| <img class="sic" data-i="heal" alt=""> **Heal** | Priest | Heal | Direct healing |
+| <img class="sic" data-i="healing-touch" alt=""> **Healing Touch** | Druid | Heal | Direct healing |
+| <img class="sic" data-i="healing-wave" alt=""> **Healing Wave** | Shaman | Heal | Direct healing |
+| <img class="sic" data-i="lay-on-hands" alt=""> **Lay on Hands** | Paladin | Heal Max Health + Give Power | Direct healing |
+| <img class="sic" data-i="lesser-heal" alt=""> **Lesser Heal** | Priest | Heal | Direct healing |
+| <img class="sic" data-i="lesser-healing-wave" alt=""> **Lesser Healing Wave** | Shaman | Heal | Direct healing |
+| <img class="sic" data-i="prayer-of-healing" alt=""> **Prayer of Healing** | Priest | Heal | Direct healing |
+| <img class="sic" data-i="seal-of-light" alt=""> **Seal of Light** | Paladin | Apply Aura: Proc Trigger Spell + → Heal + Apply Aura: Dummy | Direct healing |
 | <img class="sic" data-i="arcane-explosion" alt=""> **Arcane Explosion** | Mage | School Damage (Arcane) | Direct spell damage |
 | <img class="sic" data-i="arcane-missiles" alt=""> **Arcane Missiles** | Mage | Apply Aura: Periodically trigger spell + → School Damage (Arcane) + Apply Aura: Dummy | Direct spell damage |
 | <img class="sic" data-i="arcane-shot" alt=""> **Arcane Shot** | Hunter | School Damage (Arcane) | Direct spell damage |
@@ -170,24 +184,12 @@ Pounce Bleed + Add Combo Points | Hard control |
 | <img class="sic" data-i="subjugate-demon" alt=""> **Subjugate Demon** | Warlock | Apply Aura: Mod Charm + Apply Aura: Mod Haste + Apply Aura: Mod Casting Speed | Hard control |
 | <img class="sic" data-i="turn-undead" alt=""> **Turn Undead** | Paladin | Apply Aura: Mod Fear + Apply Aura: Mod Increase Speed | Hard control |
 | <img class="sic" data-i="wyvern-sting" alt=""> **Wyvern Sting** | Hunter | Apply Aura: Stun | Hard control |
-| <img class="sic" data-i="chain-heal" alt=""> **Chain Heal** | Shaman | Heal | Healing |
-| <img class="sic" data-i="desperate-prayer" alt=""> **Desperate Prayer** | Priest | Heal | Healing |
-| <img class="sic" data-i="flash-heal" alt=""> **Flash Heal** | Priest | Heal | Healing |
-| <img class="sic" data-i="greater-heal" alt=""> **Greater Heal** | Priest | Heal | Healing |
-| <img class="sic" data-i="heal" alt=""> **Heal** | Priest | Heal | Healing |
-| <img class="sic" data-i="healing-touch" alt=""> **Healing Touch** | Druid | Heal | Healing |
-| <img class="sic" data-i="healing-wave" alt=""> **Healing Wave** | Shaman | Heal | Healing |
-| <img class="sic" data-i="health-funnel" alt=""> **Health Funnel** | Warlock | Apply Aura: Periodic Heal + Apply Aura: Mod Health Regen % | Healing |
-| <img class="sic" data-i="lay-on-hands" alt=""> **Lay on Hands** | Paladin | Heal Max Health + Give Power | Healing |
-| <img class="sic" data-i="lesser-heal" alt=""> **Lesser Heal** | Priest | Heal | Healing |
-| <img class="sic" data-i="lesser-healing-wave" alt=""> **Lesser Healing Wave** | Shaman | Heal | Healing |
-| <img class="sic" data-i="mend-pet" alt=""> **Mend Pet** | Hunter | Apply Aura: Periodic Heal | Healing |
-| <img class="sic" data-i="prayer-of-healing" alt=""> **Prayer of Healing** | Priest | Heal | Healing |
-| <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Druid | Heal + Apply Aura: Periodic Heal | Healing |
-| <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Druid | Apply Aura: Periodic Heal | Healing |
-| <img class="sic" data-i="renew" alt=""> **Renew** | Priest | Apply Aura: Periodic Heal | Healing |
-| <img class="sic" data-i="seal-of-light" alt=""> **Seal of Light** | Paladin | Apply Aura: Proc Trigger Spell + → Heal + Apply Aura: Dummy | Healing |
-| <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Druid | Apply Area Aura: Periodic Heal | Healing |
+| <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Druid | Heal + Apply Aura: Periodic Heal | Heal + regeneration |
+| <img class="sic" data-i="health-funnel" alt=""> **Health Funnel** | Warlock | Apply Aura: Periodic Heal + Apply Aura: Mod Health Regen % | Heal over time |
+| <img class="sic" data-i="mend-pet" alt=""> **Mend Pet** | Hunter | Apply Aura: Periodic Heal | Heal over time |
+| <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Druid | Apply Aura: Periodic Heal | Heal over time |
+| <img class="sic" data-i="renew" alt=""> **Renew** | Priest | Apply Aura: Periodic Heal | Heal over time |
+| <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Druid | Apply Area Aura: Periodic Heal | Heal over time |
 | <img class="sic" data-i="berserker-rage" alt=""> **Berserker Rage** | Warrior | Apply Aura: Immunity - Mechanic + Apply Aura: Immunity - Mechanic | Immunity |
 | <img class="sic" data-i="blessing-of-freedom" alt=""> **Blessing of Freedom** | Paladin | Apply Aura: Immunity - Mechanic + Apply Aura: Immunity - Mechanic | Immunity |
 | <img class="sic" data-i="blink" alt=""> **Blink** | Mage | Blink + Apply Aura: Immunity - Mechanic (Stunned) + Apply Aura: Immunity - Mechanic (Rooted) | Immunity |

@@ -47,7 +47,7 @@ Bloodrage,Warrior,Give Power + Trigger Spell + → Apply Aura: Periodically give
 Bloodthirst,Warrior,School Damage (Physical),Direct spell damage
 Call Pet,Hunter,Summon Pet (0) + Script Effect,Summoning
 Cat Form,Druid,Apply Aura: Shapeshift (Cat Form) + Apply Aura: Immunity - Mechanic (Polymorphed) + Apply Aura: Periodically trigger spell,Shapeshift
-Chain Heal,Shaman,Heal,Healing
+Chain Heal,Shaman,Heal,Direct healing
 Chain Lightning,Shaman,School Damage (Nature),Direct spell damage
 Challenging Roar,Druid,Apply Aura: Taunt,Threat manipulation
 Challenging Shout,Warrior,Apply Aura: Taunt,Threat manipulation
@@ -114,7 +114,7 @@ Demon Armor,Warlock,Apply Aura: Mod Resistance (Physical) + Apply Aura: Mod Resi
 Demon Skin,Warlock,Apply Aura: Mod Resistance (Physical) + Apply Aura: Regen Health - Works in Combat,Stat & combat mods
 Demoralizing Roar,Druid,Apply Aura: Mod Attack Power,Stat & combat mods
 Demoralizing Shout,Warrior,Apply Aura: Mod Attack Power,Stat & combat mods
-Desperate Prayer,Priest,Heal,Healing
+Desperate Prayer,Priest,Heal,Direct healing
 Detect Greater Invisibility,Warlock,Apply Aura: Mod Invisibility Detection,Concealment
 Detect Invisibility,Warlock,Apply Aura: Mod Invisibility Detection,Concealment
 Detect Lesser Invisibility,Warlock,Apply Aura: Mod Invisibility Detection,Concealment
@@ -177,7 +177,7 @@ Flamestrike,Mage,School Damage (Fire) + Apply Aura: Periodic Damage,Damage + aff
 Flametongue Totem,Shaman,Summon,Summoning
 Flametongue Weapon,Shaman,Enchant Item (temporary),Item creation
 Flare,Hunter,Persistent Area Aura: Immunity - Debuffs Only (5) + Persistent Area Aura: Immunity - Debuffs Only (6),Immunity
-Flash Heal,Priest,Heal,Healing
+Flash Heal,Priest,Heal,Direct healing
 Flash of Light,Paladin,Script Effect,Other / utility
 Freezing Trap,Hunter,Summon Trap,Summoning
 Frenzied Regeneration,Druid,Apply Aura: Periodically trigger spell,Other / utility
@@ -201,17 +201,17 @@ Greater Blessing of Might,Paladin,Apply Aura: Mod Attack Power,Stat & combat mod
 Greater Blessing of Salvation,Paladin,Apply Aura: Mod Threat,Threat manipulation
 Greater Blessing of Sanctuary,Paladin,Apply Aura: Mod Damage Taken + Apply Aura: Proc Trigger Damage,Stat & combat mods
 Greater Blessing of Wisdom,Paladin,Apply Aura: Periodically give power,Other / utility
-Greater Heal,Priest,Heal,Healing
+Greater Heal,Priest,Heal,Direct healing
 Grounding Totem,Shaman,Summon,Summoning
 Growl,Druid,Taunt + Apply Aura: Taunt,Threat manipulation
 Hammer of Justice,Paladin,Apply Aura: Stun,Hard control
 Hammer of Wrath,Paladin,School Damage (Holy),Direct spell damage
 Hamstring,Warrior,School Damage (Physical) + Apply Aura: Mod Decrease Speed,Root & snare
-Heal,Priest,Heal,Healing
+Heal,Priest,Heal,Direct healing
 Healing Stream Totem,Shaman,Summon,Summoning
-Healing Touch,Druid,Heal,Healing
-Healing Wave,Shaman,Heal,Healing
-Health Funnel,Warlock,Apply Aura: Periodic Heal + Apply Aura: Mod Health Regen %,Healing
+Healing Touch,Druid,Heal,Direct healing
+Healing Wave,Shaman,Heal,Direct healing
+Health Funnel,Warlock,Apply Aura: Periodic Heal + Apply Aura: Mod Health Regen %,Heal over time
 Hellfire,Warlock,Apply Aura: Periodically trigger spell + → School Damage (Fire) + Apply Aura: Periodic Damage + Apply Aura: Immunity - Mechanic,Damage + affliction
 Hemorrhage,Rogue,Weapon Damage (noschool) + Add Combo Points + Apply Aura: Mod Damage Taken,Weapon strike
 Heroic Strike,Warrior,Weapon Damage (noschool),Weapon strike
@@ -238,9 +238,9 @@ Intimidating Shout,Warrior,Trigger Spell + → Apply Aura: Stun + Apply Aura: Mo
 Judgement,Paladin,Script Effect,Other / utility
 Kick,Rogue,School Damage (Physical) + Interrupt Cast,Interrupt / lockout
 Kidney Shot,Rogue,Apply Aura: Stun + Dummy + Apply Aura: Mod Damage % Taken,Hard control
-Lay on Hands,Paladin,Heal Max Health + Give Power,Healing
-Lesser Heal,Priest,Heal,Healing
-Lesser Healing Wave,Shaman,Heal,Healing
+Lay on Hands,Paladin,Heal Max Health + Give Power,Direct healing
+Lesser Heal,Priest,Heal,Direct healing
+Lesser Healing Wave,Shaman,Heal,Direct healing
 Levitate,Priest,Apply Aura: Feather Fall + Apply Aura: Hover + Apply Aura: Water Walk,Movement
 Life Tap,Warlock,Dummy,Other / utility
 Lightning Bolt,Shaman,School Damage (Nature),Direct spell damage
@@ -256,7 +256,7 @@ Mana Tide Totem,Shaman,Summon,Summoning
 Mangle,Druid,School Damage (Physical) + Apply Aura: Stun,Hard control
 Mark of the Wild,Druid,Apply Aura: Mod Resistance (Physical) + Apply Aura: Mod Stat (All) + Apply Aura: Mod Resistance - Flat - Does not Stack (126),Stat & combat mods
 Maul,Druid,Weapon Damage,Weapon strike
-Mend Pet,Hunter,Apply Aura: Periodic Heal,Healing
+Mend Pet,Hunter,Apply Aura: Periodic Heal,Heal over time
 Mind Blast,Priest,School Damage (Shadow),Direct spell damage
 Mind Control,Priest,Apply Aura: Mod Possess + Apply Aura: Dummy + Apply Aura: Mod Haste,Hard control
 Mind Flay,Priest,Apply Aura: Periodic Damage + Apply Aura: Mod Decrease Speed,Root & snare
@@ -293,7 +293,7 @@ Power Infusion,Priest,Apply Aura: Mod Healing Power - % (All) + Apply Aura: Mod 
 Power Word: Fortitude,Priest,Apply Aura: Mod Stat (Stamina),Stat & combat mods
 Power Word: Shield,Priest,Apply Aura: School Absorb,Absorb & shields
 Prayer of Fortitude,Priest,Apply Aura: Mod Stat (Stamina),Stat & combat mods
-Prayer of Healing,Priest,Heal,Healing
+Prayer of Healing,Priest,Heal,Direct healing
 Prayer of Shadow Protection,Priest,Apply Aura: Mod Resistance - Flat - Does not Stack,Stat & combat mods
 Prayer of Spirit,Priest,Apply Aura: Mod Stat (Spirit),Stat & combat mods
 Prowl,Druid,Apply Aura: Stealth + Apply Aura: Decrease Run Speed %,Concealment
@@ -311,13 +311,13 @@ Ravage,Druid,Deal Weapon Damage + Weapon Damage - % + Add Combo Points,Weapon st
 Rebirth,Druid,Resurrect,Resurrection
 Recklessness,Warrior,Apply Aura: Mod Crit % + Apply Aura: Mod Damage % Taken + Apply Aura: Immunity - Mechanic,Stat & combat mods
 Redemption,Paladin,Resurrect,Resurrection
-Regrowth,Druid,Heal + Apply Aura: Periodic Heal,Healing
+Regrowth,Druid,Heal + Apply Aura: Periodic Heal,Heal + regeneration
 Reincarnation,Shaman,Apply Aura: Dummy,Other / utility
-Rejuvenation,Druid,Apply Aura: Periodic Heal,Healing
+Rejuvenation,Druid,Apply Aura: Periodic Heal,Heal over time
 Remove Curse,Druid,Dispel,Dispel / cleanse
 Remove Lesser Curse,Mage,Dispel,Dispel / cleanse
 Rend,Warrior,Apply Aura: Periodic Damage,Damage over time
-Renew,Priest,Apply Aura: Periodic Heal,Healing
+Renew,Priest,Apply Aura: Periodic Heal,Heal over time
 Repentance,Paladin,Apply Aura: Stun,Hard control
 Resurrection,Priest,Resurrect,Resurrection
 Retaliation,Warrior,Apply Aura: Dummy,Other / utility
@@ -338,7 +338,7 @@ Scorch,Mage,School Damage (Fire),Direct spell damage
 Scorpid Poison,Hunter,Learn Spell,Other / utility
 Scorpid Sting,Hunter,Apply Aura: Mod Stat (Strength) + Apply Aura: Mod Stat (Agility),Stat & combat mods
 Seal of Justice,Paladin,Apply Aura: Proc Trigger Spell + → Apply Aura: Stun + Apply Aura: Dummy,Hard control
-Seal of Light,Paladin,Apply Aura: Proc Trigger Spell + → Heal + Apply Aura: Dummy,Healing
+Seal of Light,Paladin,Apply Aura: Proc Trigger Spell + → Heal + Apply Aura: Dummy,Direct healing
 Seal of Righteousness,Paladin,Apply Aura: Dummy + Apply Aura: Dummy,Other / utility
 Seal of Wisdom,Paladin,Apply Aura: Proc Trigger Spell + → Give Power + Apply Aura: Dummy,Resource manipulation
 Seal of the Crusader,Paladin,Apply Aura: Mod Attack Power + Apply Aura: Mod Attack Speed + Apply Aura: Dummy,Stat & combat mods
@@ -411,7 +411,7 @@ Track Hidden,Hunter,Apply Aura: Track Hidden + Apply Aura: Stealth Detection,Con
 Track Humanoids,Druid,Apply Aura: Track Creatures,Perception
 Track Humanoids,Hunter,Apply Aura: Track Creatures,Perception
 Track Undead,Hunter,Apply Aura: Track Creatures,Perception
-Tranquility,Druid,Apply Area Aura: Periodic Heal,Healing
+Tranquility,Druid,Apply Area Aura: Periodic Heal,Heal over time
 Tranquilizing Shot,Hunter,Dispel,Dispel / cleanse
 Travel Form,Druid,Apply Aura: Shapeshift (Travel Form) + Apply Aura: Immunity - Mechanic (Polymorphed),Shapeshift
 Tremor Totem,Shaman,Summon,Summoning

@@ -1,6 +1,6 @@
 # Druid Spellbook (Classic)
 
-**53 abilities** (199 spellbook entries counting ranks — 73% of the book is rank copies) · **19** in an identified family (36%)
+**53 abilities** (199 spellbook entries counting ranks — 73% of the book is rank copies) · **22** in an identified family (42%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/rogue|Rogue]], **8%** with [[classes/priest|Priest]], **8%** with [[classes/paladin|Paladin]] — and **25%** twinned inside its own book.
 
@@ -53,12 +53,12 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/rogue|Rogu
 | 60 | <img class="sic" data-i="mark-of-the-wild" alt=""> **Mark of the Wild** | Nature | 7 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="prowl" alt=""> **Prowl** | Physical | 3 | [[families/cat-is-rogue|🐱 The Druid Costume Shop]] |
 | 60 | <img class="sic" data-i="rebirth" alt=""> **Rebirth** | Nature | 5 | [[families/rez|⚰️ The Resurrection Union]] |
-| 60 | <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Nature | 9 | — |
-| 60 | <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Nature | 11 | — |
+| 60 | <img class="sic" data-i="regrowth" alt=""> **Regrowth** | Nature | 9 | [[families/hots|⏳ The Mending Clock]] |
+| 60 | <img class="sic" data-i="rejuvenation" alt=""> **Rejuvenation** | Nature | 11 | [[families/hots|⏳ The Mending Clock]] |
 | 60 | <img class="sic" data-i="rip" alt=""> **Rip** | Physical | 6 | — |
 | 60 | <img class="sic" data-i="starfire" alt=""> **Starfire** | Arcane | 7 | [[families/bolts|🏹 The Bolt Engine]] |
 | 60 | <img class="sic" data-i="tiger-s-fury" alt=""> **Tiger's Fury** | Physical | 4 | — |
-| 60 | <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Nature | 4 | — |
+| 60 | <img class="sic" data-i="tranquility" alt=""> **Tranquility** | Nature | 4 | [[families/hots|⏳ The Mending Clock]] |
 
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 

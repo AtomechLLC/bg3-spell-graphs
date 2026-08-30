@@ -73,6 +73,12 @@ fam("conjured", "The Conjured Commissary", CLONE, "💎",
     "'Creates/Conjures an X that can be used to Y.' The Mage's mana gems and the Warlock's Healthstones measure ≥ 0.85 against each other — the same vending-machine engine across two classes, with the tier ladder written into the item name instead of a rank number.",
     "The item, its potency tier, and which class's flavor it wears (gems vs. stones).",
     "Classic's most honest reskin: the parenthetical '(Greater)' is a rank label promoted into the spell name — a shelf of spellbook lines from one template. (The Soulstones share this vending chassis but their *purpose* is revival, so they file under [[families/rez|the Resurrection Union]].)"),
+fam("hots", "The Mending Clock", CLONE, "⏳",
+    ["Renew", "Rejuvenation", "Regrowth", "Tranquility"],
+    "class stamp, tick budget, and delivery",
+    "Healing on a timer: all four run the `Periodic Heal` aura (id 8). Renew and Rejuvenation are the cross-class twins — the Priest's and Druid's versions of the identical tick engine; Regrowth bolts a direct heal onto the front, Tranquility channels it into the whole party.",
+    "The class stamp, the tick size and duration, and the delivery (single, front-loaded, or channeled group).",
+    "The heal-over-time engine is [[families/dots|the affliction engine]] with the sign flipped — same clock, opposite payload, and the same cross-class twinning (Renew/Rejuvenation mirror SW:Pain/Corruption)."),
 fam("heals", "One Heal, Nine Names", CLONE, "❤️‍🩹",
     ["Lesser Heal", "Heal", "Greater Heal", "Flash Heal", "Healing Touch",
      "Healing Wave", "Lesser Healing Wave", "Holy Light", "Flash of Light"],
@@ -402,7 +408,9 @@ EFFECT_PROFILES = [
     ("Damage over time",      r"Periodic (Damage|Leech)"),
     ("Weapon strike",         r"Weapon (Damage|Dmg)|Normalized|Extra Attacks|Combo Points"),
     ("Direct spell damage",   r"School Damage|Health Leech|Instakill|Environmental Damage"),
-    ("Healing",               r"\bHeal\b|Periodic Heal|Heal Max Health|Obs Mod Health|Health Regen"),
+    ("Heal + regeneration",   None),   # direct + periodic heal, resolved in code
+    ("Heal over time",        r"Periodic Heal|Obs Mod Health|Periodic Health Funnel|Health Regen"),
+    ("Direct healing",        r"\bHeal\b|Heal Max Health"),
     ("Absorb & shields",      r"School Absorb|Mana Shield|Damage Shield"),
     ("Resource manipulation", r"Energize|Give Power|Power (Drain|Burn|Funnel)|Mana Leech|Obs Mod Power|Power Regen"),
     ("Stat & combat mods",    r"Mod Stat|Attack Power|Mod Damage|Mod Resistance|Mod (Spell )?(Crit|Hit)|Mod Attack Speed|Mod Casting Speed|Mod (Parry|Dodge|Block)|Mod Healing|Mod Skill|Flat Modifier|Pct Modifier|Mod Scale"),
@@ -415,9 +423,15 @@ def effect_profile(labels):
     joined = " | ".join(labels)
     direct = re.search(r"School Damage|Weapon (Damage|Dmg)|Normalized|Health Leech", joined)
     periodic = re.search(r"Periodic (Damage|Leech)", joined)
+    direct_heal = re.search(r"(?<!Periodic )\bHeal\b|Heal Max Health", joined)
+    periodic_heal = re.search(r"Periodic Heal|Obs Mod Health", joined)
     for name, pat in EFFECT_PROFILES:
         if name == "Damage + affliction":
             if direct and periodic:
+                return name
+            continue
+        if name == "Heal + regeneration":
+            if direct_heal and periodic_heal:
                 return name
             continue
         if pat and re.search(pat, joined):

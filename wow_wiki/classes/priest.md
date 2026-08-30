@@ -1,6 +1,6 @@
 # Priest Spellbook (Classic)
 
-**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **22** in an identified family (50%)
+**44 abilities** (202 spellbook entries counting ranks — 78% of the book is rank copies) · **23** in an identified family (52%)
 
 Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]], **9%** with [[classes/druid|Druid]], **7%** with [[classes/shaman|Shaman]] — and **20%** twinned inside its own book.
 
@@ -46,7 +46,7 @@ Mechanical twins (effect similarity ≥ 0.75): **11%** with [[classes/mage|Mage]
 | 60 | <img class="sic" data-i="prayer-of-fortitude" alt=""> **Prayer of Fortitude** | Holy | 2 | [[families/status-boosts|🙌 The Status Boost Rack]] |
 | 60 | <img class="sic" data-i="prayer-of-healing" alt=""> **Prayer of Healing** | Holy | 5 | — |
 | 60 | <img class="sic" data-i="prayer-of-spirit" alt=""> **Prayer of Spirit** | Holy | 1 | [[families/status-boosts|🙌 The Status Boost Rack]] |
-| 60 | <img class="sic" data-i="renew" alt=""> **Renew** | Holy | 10 | — |
+| 60 | <img class="sic" data-i="renew" alt=""> **Renew** | Holy | 10 | [[families/hots|⏳ The Mending Clock]] |
 | 60 | <img class="sic" data-i="shackle-undead" alt=""> **Shackle Undead** | Holy | 3 | — |
 | 60 | <img class="sic" data-i="shadowguard" alt=""> **Shadowguard** | Shadow | 6 | — |
 | 60 | <img class="sic" data-i="touch-of-weakness" alt=""> **Touch of Weakness** | Shadow | 6 | — |
