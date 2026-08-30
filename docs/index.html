@@ -52,6 +52,9 @@ a.card:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
 .card .meta{font:400 11px "IBM Plex Mono",monospace;color:var(--ac);letter-spacing:.06em;
   margin-bottom:10px;font-variant-numeric:tabular-nums}
 .card p{margin:0;font-size:14px;line-height:1.55;color:var(--muted)}
+#resume{display:none;margin:-38px 0 44px;font:400 12px "IBM Plex Mono",monospace;color:var(--muted)}
+#resume a{color:var(--gold-ink);text-decoration:none}
+#resume a:hover{text-decoration:underline}
 footer{margin-top:16px;color:#8a879a;font-size:12px;max-width:760px;text-align:center;line-height:1.75}
 footer a{color:var(--gold)}
 footer a:hover{color:var(--gold-ink)}
@@ -70,6 +73,7 @@ D&amp;D 5e, Baldur's Gate&nbsp;3, and WoW Classic, measured on their own data</d
   <div class="stat"><b>86</b><span>families</span></div>
   <div class="stat"><b>19</b><span>purposes</span></div>
 </div>
+<div id="resume"></div>
 <div class="slabel">The codices</div>
 <div class="cards">
 <a class="card" href="reskin-codex.html" style="--ac:var(--srd);--face:Spectral">
@@ -110,5 +114,18 @@ divergences that reveal each medium's design priorities.</p></a>
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data
 © Blizzard Entertainment — shown for research reference.
 Pipeline and sources: <a href="https://github.com/AtomechLLC/bg3-spell-graphs">github.com/AtomechLLC/bg3-spell-graphs</a></footer>
+<script>
+try {
+  const l = JSON.parse(localStorage.getItem('sg_last') || 'null');
+  if (l && l.u && l.u.indexOf('index') !== 0) {
+    const d = document.getElementById('resume');
+    const a = document.createElement('a');
+    a.href = encodeURI(l.u);
+    a.textContent = l.t;
+    d.append('continue where you left off: ', a);
+    d.style.display = 'block';
+  }
+} catch (e) {}
+</script>
 </body>
 </html>

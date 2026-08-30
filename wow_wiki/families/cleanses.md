@@ -1,6 +1,6 @@
 # <span class="femoji">🧼</span> The Cleanse Counter
 
-<span class="tier tier-clone">Verbatim clone</span> · 14 abilities · mechanical similarity 0.26–1.00
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>14</b> abilities</span><span class="pv">similarity <b>0.26–1.00</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Shaman, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # <span class="femoji">🙌</span> The Status Boost Rack
 
-<span class="tier tier-template">Shared template</span> · 35 abilities · mechanical similarity 0.11–1.00
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>35</b> abilities</span><span class="pv">similarity <b>0.11–1.00</b></span><span class="pv"><b>6</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

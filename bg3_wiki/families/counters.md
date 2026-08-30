@@ -1,6 +1,6 @@
 # <span class="femoji">🚫</span> The Cancel Desk
 
-<span class="tier tier-template">Shared template</span> · 5 spells · mechanical similarity 0.69–0.78
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.69–0.78</b></span><span class="pv"><b>10</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

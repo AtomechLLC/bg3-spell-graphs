@@ -1,6 +1,6 @@
 # <span class="femoji">🫥</span> The Invisibility Ladder
 
-<span class="tier tier-clone">Verbatim clone</span> · 3 spells · mechanical similarity 0.68–0.92
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.68–0.92</b></span><span class="pv"><b>9</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

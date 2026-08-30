@@ -1,6 +1,6 @@
 # <span class="femoji">🌩️</span> The Static Shell
 
-<span class="tier tier-clone">Verbatim clone</span> · 4 abilities · mechanical similarity 0.22–0.79
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>4</b> abilities</span><span class="pv">similarity <b>0.22–0.79</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Druid, Priest, Shaman, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

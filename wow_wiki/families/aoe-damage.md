@@ -1,6 +1,6 @@
 # <span class="femoji">💥</span> The Area Barrage
 
-<span class="tier tier-template">Shared template</span> · 17 abilities · mechanical similarity 0.13–0.75
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>17</b> abilities</span><span class="pv">similarity <b>0.13–0.75</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Shaman, Warlock, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

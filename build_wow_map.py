@@ -249,13 +249,17 @@ def uni_attrs(r):
             "fs": fm["slug"] if fm else "", "tier": fm["tier"] if fm else "",
             "pur": pur_of(r)}
 
+TIER_DASH = {TIER_COLOR["template"]: "7 3", TIER_COLOR["engine"]: "2.5 2.5"}
+
 def node_svg(r, p, col, extra):
     x, y = p
     iid = icon_key(r)
     data = " ".join(f'data-{a}="{v}"' for a, v in extra.items())
     nm = r["name"].replace('"', "&quot;")
     g = [f'<g class="n" data-name="{nm}" {data}>']
-    g.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="15" fill="{SURFACE}" stroke="{col}" stroke-width="2.4"/>')
+    dash = TIER_DASH.get(col, "")
+    g.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="15" fill="{SURFACE}" stroke="{col}" stroke-width="2.4"'
+             + (f' stroke-dasharray="{dash}"' if dash else "") + '/>')
     if iid:
         g.append(f'<image class="sic" data-i="{iid}" x="{x - 11.5:.0f}" y="{y - 11.5:.0f}" '
                  f'width="23" height="23" clip-path="inset(0 round 4px)"/>')
@@ -357,7 +361,7 @@ pick_tier = "".join(
     for t, lab in [("clone", "clones"), ("template", "templates"), ("engine", "engines")])
 pick_fam = "".join(
     f'<button class="pchip pfam" data-g="fam" data-val="{f["slug"]}" title="{f["title"]}" '
-    f'aria-label="{f["title"]}">{f["icon"]}</button>' for f in FAMS)
+    f'aria-label="{f["title"]}">{f["icon"]}<span class="pl">{f["title"].removeprefix("The ").lower()}</span></button>' for f in FAMS)
 pick_pur = "".join(
     f'<button class="pchip" data-g="pur" data-val="{p}" title="{PLABEL[p]}">'
     f'<span class="femoji">{PEMOJI[p]}</span>{PSHORT[p].lower()}</button>' for p in PURS)
@@ -427,18 +431,28 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
 h1{{letter-spacing:.06em}}
 footer{{line-height:1.8}}
 ::selection{{background:#D4AF5E44}}
+.pchip .pl{{font:500 10px "IBM Plex Mono",monospace;letter-spacing:.04em}}
+.pfam{{font-size:14px;padding:2px 9px 2px 6px;gap:4px;font-family:inherit}}
+#tip.pinned{{pointer-events:auto;border-color:#D4AF5E}}
+#tip a{{color:#E3C377;display:inline-block;margin-top:4px;font-size:11.5px}}
+#helpov{{position:fixed;inset:0;background:#000A;display:none;z-index:20;align-items:center;justify-content:center;padding:20px}}
+#helpov.on{{display:flex}}
+#helpov .card{{background:#1B1822;border:1px solid #3a3647;border-radius:12px;padding:20px 26px;max-width:430px;font-size:12.5px;line-height:2.1}}
+#helpov b{{color:#E3C377;display:block;margin-bottom:4px}}
+#helpov kbd{{border:1px solid #3a3647;border-bottom-width:2px;border-radius:4px;padding:0 6px;font:500 11px "IBM Plex Mono",monospace;background:#211E2B}}
 </style>
 <header>
   <div class="topline">
     <div><h1>Azeroth Constellations</h1><div class="sub" id="sub"></div></div>
     <div class="segrow">
-      <div class="seg" role="tablist">
-        <button data-v="fam" role="tab">BY FAMILY</button>
-        <button data-v="cls" role="tab">BY CLASS</button>
-        <button data-v="sch" role="tab">BY SCHOOL</button>
-        <button data-v="pur" role="tab">BY PURPOSE</button>
+      <div class="seg">
+        <button data-v="fam">BY FAMILY</button>
+        <button data-v="cls">BY CLASS</button>
+        <button data-v="sch">BY SCHOOL</button>
+        <button data-v="pur">BY PURPOSE</button>
       </div>
       <button id="copybtn" class="pchip" title="Copy the current view as a PNG image">⧉ copy image</button>
+      <button id="helpbtn" class="pchip" title="Keyboard shortcuts">?</button>
     </div>
   </div>
   <div class="legend" id="leg"></div>
@@ -457,12 +471,21 @@ footer{{line-height:1.8}}
   <div class="bgroup"><span class="blabel">Families</span>{pick_tier}{pick_fam}</div>
   <div class="bgroup"><span class="blabel">Purposes</span>{pick_pur}</div>
   <div class="bgroup"><span class="blabel"></span>
-    <button class="pchip" id="clear">✕ clear</button><span id="fcount"></span></div>
+    <button class="pchip" id="clear">✕ clear</button><span id="fcount" aria-live="polite"></span></div>
 </div>
-<footer>⌨ ←/→ cycles the active layout's groups · ↑/↓ or 1–4 switches layouts · esc clears ·
+<footer>⌨ press ? for all shortcuts · ←/→ cycles the active layout's groups · ↑/↓ or 1–4 switches layouts · esc clears ·
 WoW Classic Era · {len(RECS)} trainer abilities · lines (family view) connect blended mechanics ≥ 0.88 ·
 hover any ability, class, school, or family mark · icons via warcraft.wiki.gg © Blizzard Entertainment ·
 sibling of the Baldur's Gate 3 Spell Constellations</footer>
+<div id="helpov" role="dialog" aria-label="Keyboard shortcuts"><div class="card">
+<b>Keyboard &amp; mouse</b>
+<kbd>&larr;</kbd> <kbd>&rarr;</kbd> cycle the active layout's groups<br>
+<kbd>&uarr;</kbd> <kbd>&darr;</kbd> or <kbd>1</kbd>&ndash;<kbd>4</kbd> switch layouts<br>
+<kbd>esc</kbd> close &middot; unpin &middot; clear filters<br>
+<kbd>?</kbd> this overlay<br>
+click a ability to pin its card; click again to release<br>
+<kbd>ctrl</kbd>+scroll zooms &middot; drag pans when zoomed &middot; double-click resets
+</div></div>
 <script>
 const ICONS = {json.dumps(ICON_URIS)};
 const SUBS = {{fam: "{len(RECS)} abilities · similar tooltips attract",
@@ -474,10 +497,12 @@ document.querySelectorAll('image.sic').forEach(el => {{
   const d = ICONS[el.dataset.i];
   if (d) el.setAttribute('href', d); else el.remove();
 }});
+const FAMTITLE = {json.dumps({f["slug"]: f["title"] for f in FAMS})};
+const PURSHORT = {json.dumps({p: PSHORT[p] for p in PURS})};
 const tip = document.getElementById('tip'), wrap = document.querySelector('.wrap');
 function show(v) {{
   document.querySelectorAll('.view').forEach(x => x.classList.toggle('on', x.dataset.v === v));
-  document.querySelectorAll('.seg button').forEach(b => b.classList.toggle('on', b.dataset.v === v));
+  document.querySelectorAll('.seg button').forEach(b => {{ b.classList.toggle('on', b.dataset.v === v); b.setAttribute('aria-pressed', b.dataset.v === v ? 'true' : 'false'); }});
   document.getElementById('sub').textContent = SUBS[v];
   document.getElementById('leg').innerHTML = LEGS[v];
   try {{ localStorage.setItem('wow-constellation-view', v); }} catch (e) {{}}
@@ -499,8 +524,17 @@ function matches(n) {{
 }}
 function updateCount() {{
   const el = document.getElementById('fcount');
-  if (!anySel()) {{ el.textContent = ''; return; }}
-  el.textContent = document.querySelector('.view.on svg').querySelectorAll('.n.lit').length + ' abilities lit';
+  if (!anySel()) {{ el.textContent = ''; saveState(); return; }}
+  const act = document.querySelector('.view.on svg');
+  const litN = act.querySelectorAll('.n.lit').length;
+  const parts = [];
+  if (state.cls.size) parts.push([...state.cls].join(' \u2229 '));
+  if (state.sch.size) parts.push([...state.sch].join(' + '));
+  const tf = [...state.tier].concat([...state.fam].map(s => FAMTITLE[s] || s));
+  if (tf.length) parts.push(tf.join(' + '));
+  if (state.pur.size) parts.push([...state.pur].map(p => PURSHORT[p] || p).join(' + '));
+  el.textContent = litN + ' abilities lit' + (parts.length ? ' \u2014 ' + parts.join(' \u00b7 ') : '');
+  saveState();
 }}
 function applyFilter() {{
   const any = anySel();
@@ -532,6 +566,17 @@ document.getElementById('clear').addEventListener('click', () => {{
   document.querySelectorAll('.pchip.on').forEach(b => b.classList.remove('on'));
   applyFilter();
 }});
+function saveState() {{
+  try {{ localStorage.setItem('wow-constellation-filters', JSON.stringify({{cls: [...state.cls], sch: [...state.sch], tier: [...state.tier], fam: [...state.fam], pur: [...state.pur]}})); }} catch (e) {{}}
+}}
+try {{
+  const fs = JSON.parse(localStorage.getItem('wow-constellation-filters') || '{{}}');
+  for (const g of ['cls', 'sch', 'tier', 'fam', 'pur']) (fs[g] || []).forEach(v => state[g].add(v));
+  document.querySelectorAll('.pchip[data-g]').forEach(b => {{
+    if (state[b.dataset.g].has(b.dataset.val)) b.classList.add('on');
+  }});
+  if (Object.values(state).some(s => s.size)) applyFilter();
+}} catch (e) {{}}
 let v0 = 'fam';
 try {{ v0 = localStorage.getItem('wow-constellation-view') || 'fam'; }} catch (e) {{}}
 if (!['fam','cls','sch','pur'].includes(v0)) v0 = 'fam';
@@ -563,10 +608,37 @@ document.addEventListener('keydown', e => {{
     e.preventDefault();
   }}
   else if (e.key >= '1' && e.key <= '4') show(VIEWS[+e.key - 1]);
-  else if (e.key === 'Escape') document.getElementById('clear').click();
+  else if (e.key === 'Escape') {{
+    const ov = document.getElementById('helpov');
+    if (ov.classList.contains('on')) ov.classList.remove('on');
+    else if (pinned) unpin();
+    else document.getElementById('clear').click();
+  }}
+  else if (e.key === '?') document.getElementById('helpov').classList.toggle('on');
+}});
+let pinned = null, suppressClick = false;
+function tipLink(n) {{
+  if (!n.dataset.fs || location.hostname.indexOf('claude') !== -1) return '';
+  return '<br><a href="azeroth-codex.html#/families/' + n.dataset.fs + '">open family page \u2192</a>';
+}}
+function fillTip(n, withLink) {{
+  tip.innerHTML = '<b>' + n.dataset.name + '</b><span>' + (n.dataset.sub || '') + '</span>' + (withLink ? tipLink(n) : '');
+}}
+function unpin() {{ pinned = null; tip.classList.remove('pinned'); tip.style.display = 'none'; }}
+document.addEventListener('click', e => {{
+  if (pinned && !e.target.closest('.n') && !e.target.closest('#tip')) unpin();
 }});
 document.querySelectorAll('.n').forEach(n => {{
   const svg = n.closest('svg');
+  n.addEventListener('click', e => {{
+    if (suppressClick) return;
+    e.stopPropagation();
+    if (pinned === n) {{ unpin(); return; }}
+    pinned = n;
+    fillTip(n, true);
+    tip.classList.add('pinned');
+    tip.style.display = 'block';
+  }});
   n.addEventListener('mouseenter', () => {{
     svg.classList.add('hov');
     n.classList.add('hl');
@@ -580,10 +652,11 @@ document.querySelectorAll('.n').forEach(n => {{
         }}
       }});
     }}
-    tip.innerHTML = '<b>' + n.dataset.name + '</b><span>' + (n.dataset.sub || '') + '</span>';
+    if (!pinned) fillTip(n, false);
     tip.style.display = 'block';
   }});
   n.addEventListener('mousemove', e => {{
+    if (pinned) return;
     const r = wrap.getBoundingClientRect();
     tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 310) + 'px';
     tip.style.top = (e.clientY - r.top + 14) + 'px';
@@ -591,7 +664,7 @@ document.querySelectorAll('.n').forEach(n => {{
   n.addEventListener('mouseleave', () => {{
     svg.classList.remove('hov');
     svg.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
-    tip.style.display = 'none';
+    if (pinned) {{ fillTip(pinned, true); }} else {{ tip.style.display = 'none'; }}
   }});
 }});
 document.querySelectorAll('text.anchor').forEach(a => {{
@@ -661,6 +734,56 @@ copybtn.addEventListener('click', async () => {{
     copybtn.classList.add('err'); copybtn.textContent = '✕ blocked';
   }}
   setTimeout(() => {{ copybtn.classList.remove('ok', 'err'); copybtn.textContent = '⧉ copy image'; }}, 2200);
+}});
+
+document.getElementById('helpbtn').addEventListener('click', () =>
+  document.getElementById('helpov').classList.toggle('on'));
+document.getElementById('helpov').addEventListener('click', e => {{
+  if (e.target.id === 'helpov') e.target.classList.remove('on');
+}});
+document.querySelectorAll('.view svg').forEach(svg => {{
+  const vb0 = svg.getAttribute('viewBox').split(' ').map(Number);
+  const base = {{x: vb0[0], y: vb0[1], w: vb0[2], h: vb0[3]}};
+  const st = {{x: base.x, y: base.y, w: base.w, h: base.h}};
+  const apply = () => svg.setAttribute('viewBox', st.x + ' ' + st.y + ' ' + st.w + ' ' + st.h);
+  svg.addEventListener('wheel', e => {{
+    if (!e.ctrlKey && !e.metaKey) return;
+    e.preventDefault();
+    const f = e.deltaY < 0 ? 0.85 : 1 / 0.85;
+    const nw = Math.min(base.w, Math.max(base.w / 8, st.w * f));
+    const sc = nw / st.w;
+    const r = svg.getBoundingClientRect();
+    const mx = st.x + (e.clientX - r.left) / r.width * st.w;
+    const my = st.y + (e.clientY - r.top) / r.height * st.h;
+    st.x = mx - (mx - st.x) * sc;
+    st.y = my - (my - st.y) * sc;
+    st.w = nw; st.h = nw * base.h / base.w;
+    st.x = Math.min(Math.max(st.x, base.x), base.x + base.w - st.w);
+    st.y = Math.min(Math.max(st.y, base.y), base.y + base.h - st.h);
+    svg.style.cursor = st.w < base.w ? 'grab' : '';
+    apply();
+  }}, {{passive: false}});
+  let drag = null;
+  svg.addEventListener('pointerdown', e => {{
+    if (st.w >= base.w) return;
+    drag = {{px: e.clientX, py: e.clientY, x: st.x, y: st.y, moved: false}};
+  }});
+  svg.addEventListener('pointermove', e => {{
+    if (!drag) return;
+    const r = svg.getBoundingClientRect();
+    if (Math.abs(e.clientX - drag.px) + Math.abs(e.clientY - drag.py) > 4) drag.moved = true;
+    st.x = Math.min(Math.max(drag.x - (e.clientX - drag.px) / r.width * st.w, base.x), base.x + base.w - st.w);
+    st.y = Math.min(Math.max(drag.y - (e.clientY - drag.py) / r.height * st.h, base.y), base.y + base.h - st.h);
+    apply();
+  }});
+  ['pointerup', 'pointerleave'].forEach(ev => svg.addEventListener(ev, () => {{
+    if (drag && drag.moved) {{ suppressClick = true; setTimeout(() => {{ suppressClick = false; }}, 60); }}
+    drag = null;
+  }}));
+  svg.addEventListener('dblclick', () => {{
+    st.x = base.x; st.y = base.y; st.w = base.w; st.h = base.h;
+    svg.style.cursor = ''; apply();
+  }});
 }});
 </script>
 """

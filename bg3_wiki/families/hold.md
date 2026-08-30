@@ -1,6 +1,6 @@
 # <span class="femoji">⛓️</span> The Hold Pair
 
-<span class="tier tier-clone">Verbatim clone</span> · 2 spells · mechanical similarity 0.95
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.95</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

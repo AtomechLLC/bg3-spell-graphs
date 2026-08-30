@@ -1,6 +1,6 @@
 # <span class="femoji">🗿</span> The Totem Foundry
 
-<span class="tier tier-template">Shared template</span> · 21 abilities · mechanical similarity 0.47–0.98
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>21</b> abilities</span><span class="pv">similarity <b>0.47–0.98</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Shaman</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

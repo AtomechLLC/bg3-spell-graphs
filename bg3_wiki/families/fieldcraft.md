@@ -1,6 +1,6 @@
 # <span class="femoji">🎒</span> The Fieldcraft Kit
 
-<span class="tier tier-engine">Shared engine</span> · 15 spells · mechanical similarity 0.44–0.89
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>15</b> spells</span><span class="pv">similarity <b>0.44–0.89</b></span><span class="pv"><b>9</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

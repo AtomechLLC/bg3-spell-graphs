@@ -1,6 +1,6 @@
 # <span class="femoji">😈</span> The Menagerie
 
-<span class="tier tier-template">Shared template</span> · 25 abilities · mechanical similarity 0.07–1.00
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>25</b> abilities</span><span class="pv">similarity <b>0.07–1.00</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Hunter, Paladin, Priest, Warlock</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # <span class="femoji">🥶</span> The Slow Lane
 
-<span class="tier tier-template">Shared template</span> · 8 abilities · mechanical similarity 0.19–0.71
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>8</b> abilities</span><span class="pv">similarity <b>0.19–0.71</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Shaman, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

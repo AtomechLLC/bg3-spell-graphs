@@ -1,6 +1,6 @@
 # <span class="femoji">🪃</span> The Shove Aisle
 
-<span class="tier tier-template">Shared template</span> · 3 spells · mechanical similarity 0.19–0.57
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.19–0.57</b></span><span class="pv"><b>6</b> classes</span><span class="pv pvc">Cleric, Druid, Fighter, Rogue, Sorcerer, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

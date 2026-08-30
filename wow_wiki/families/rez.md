@@ -1,6 +1,6 @@
 # <span class="femoji">⚰️</span> The Resurrection Union
 
-<span class="tier tier-clone">Verbatim clone</span> · 10 abilities · mechanical similarity 0.34–1.00
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>10</b> abilities</span><span class="pv">similarity <b>0.34–1.00</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Paladin, Priest, Shaman, Warlock</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

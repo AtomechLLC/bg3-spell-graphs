@@ -1,6 +1,6 @@
 # <span class="femoji">✝️</span> The Seal Press
 
-<span class="tier tier-template">Shared template</span> · 6 abilities · mechanical similarity 0.18–0.95
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>6</b> abilities</span><span class="pv">similarity <b>0.18–0.95</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Paladin</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

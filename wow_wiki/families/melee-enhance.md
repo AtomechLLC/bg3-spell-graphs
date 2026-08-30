@@ -1,6 +1,6 @@
 # <span class="femoji">⚔️</span> The Whetstone & The Strike
 
-<span class="tier tier-template">Shared template</span> · 32 abilities · mechanical similarity 0.18–1.00
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>32</b> abilities</span><span class="pv">similarity <b>0.18–1.00</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Hunter, Rogue, Shaman, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

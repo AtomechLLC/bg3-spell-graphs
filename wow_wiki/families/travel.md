@@ -1,6 +1,6 @@
 # <span class="femoji">🌀</span> The Travel Agency
 
-<span class="tier tier-clone">Verbatim clone</span> · 12 abilities · mechanical similarity 0.16–1.00
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>12</b> abilities</span><span class="pv">similarity <b>0.16–1.00</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Mage, Priest, Rogue, Shaman</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

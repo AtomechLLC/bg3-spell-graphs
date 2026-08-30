@@ -1,6 +1,6 @@
 # <span class="femoji">🎭</span> The Vanishing Act
 
-<span class="tier tier-clone">Verbatim clone</span> · 5 abilities · mechanical similarity 0.21–0.82
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>5</b> abilities</span><span class="pv">similarity <b>0.21–0.82</b></span><span class="pv"><b>3</b> classes</span><span class="pv pvc">Druid, Hunter, Rogue</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

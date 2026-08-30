@@ -1,6 +1,6 @@
 # <span class="femoji">🐾</span> The Surveillance Suite
 
-<span class="tier tier-clone">Verbatim clone</span> · 21 abilities · mechanical similarity 0.09–1.00
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>21</b> abilities</span><span class="pv">similarity <b>0.09–1.00</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Rogue, Shaman, Warlock</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

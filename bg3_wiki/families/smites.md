@@ -1,6 +1,6 @@
 # <span class="femoji">🔨</span> The Smite Armoury
 
-<span class="tier tier-template">Shared template</span> · 11 spells · mechanical similarity 0.32–0.94
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>11</b> spells</span><span class="pv">similarity <b>0.32–0.94</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Fighter, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

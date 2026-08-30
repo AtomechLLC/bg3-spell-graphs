@@ -1,6 +1,6 @@
 # <span class="femoji">🌀</span> The Blink Ladder
 
-<span class="tier tier-template">Shared template</span> · 3 spells · mechanical similarity 0.83–0.93
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.83–0.93</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Fighter, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

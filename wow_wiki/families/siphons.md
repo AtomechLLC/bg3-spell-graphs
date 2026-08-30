@@ -1,6 +1,6 @@
 # <span class="femoji">🧛</span> The Siphon Set
 
-<span class="tier tier-engine">Shared engine</span> · 10 abilities · mechanical similarity 0.13–0.93
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>10</b> abilities</span><span class="pv">similarity <b>0.13–0.93</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Druid, Priest, Warlock, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # <span class="femoji">🦅</span> The Aspect Dial
 
-<span class="tier tier-template">Shared template</span> · 6 abilities · mechanical similarity 0.50–0.82
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>6</b> abilities</span><span class="pv">similarity <b>0.50–0.82</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Hunter</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

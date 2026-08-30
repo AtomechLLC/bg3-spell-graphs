@@ -1,6 +1,6 @@
 # <span class="femoji">🗣️</span> The Speak-With Series
 
-<span class="tier tier-engine">Shared engine</span> · 3 spells · masked-text similarity 0.11–0.18
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.11–0.18</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Ranger</span></span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

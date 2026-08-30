@@ -1,6 +1,6 @@
 # <span class="femoji">💥</span> The Elemental Blast Template
 
-<span class="tier tier-template">Shared template</span> · 15 spells · mechanical similarity 0.64–0.96
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>15</b> spells</span><span class="pv">similarity <b>0.64–0.96</b></span><span class="pv"><b>9</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

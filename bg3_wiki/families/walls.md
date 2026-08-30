@@ -1,6 +1,6 @@
 # <span class="femoji">🧱</span> The Wall Foundry
 
-<span class="tier tier-template">Shared template</span> · 5 spells · mechanical similarity 0.84–0.97
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.84–0.97</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Sorcerer, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

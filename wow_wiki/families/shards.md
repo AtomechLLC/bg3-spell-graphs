@@ -1,6 +1,6 @@
 # <span class="femoji">🔮</span> The Shard Economy
 
-<span class="tier tier-engine">Shared engine</span> · 2 abilities · mechanical similarity 0.65
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>2</b> abilities</span><span class="pv">similarity <b>0.65</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Warlock</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

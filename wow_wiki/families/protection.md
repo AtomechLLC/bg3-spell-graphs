@@ -1,6 +1,6 @@
 # <span class="femoji">🧿</span> The Protection Rack
 
-<span class="tier tier-template">Shared template</span> · 24 abilities · mechanical similarity 0.13–0.95
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>24</b> abilities</span><span class="pv">similarity <b>0.13–0.95</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Druid, Mage, Paladin, Priest, Rogue, Warlock, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

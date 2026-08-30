@@ -1,6 +1,6 @@
 # <span class="femoji">🏃</span> The Gap Closers
 
-<span class="tier tier-clone">Verbatim clone</span> · 2 abilities · mechanical similarity 0.64
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> abilities</span><span class="pv">similarity <b>0.64</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

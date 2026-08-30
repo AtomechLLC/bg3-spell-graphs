@@ -1,6 +1,6 @@
 # <span class="femoji">🧭</span> The Locate Series
 
-<span class="tier tier-template">Shared template</span> · 3 spells · masked-text similarity 0.15–0.63
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.15–0.63</b></span><span class="pv"><b>6</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Paladin, Ranger, Wizard</span></span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

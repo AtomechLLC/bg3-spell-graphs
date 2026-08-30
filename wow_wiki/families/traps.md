@@ -1,6 +1,6 @@
 # <span class="femoji">🪤</span> The Trap Line
 
-<span class="tier tier-template">Shared template</span> · 4 abilities · mechanical similarity 0.77–0.91
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>4</b> abilities</span><span class="pv">similarity <b>0.77–0.91</b></span><span class="pv"><b>1</b> classes</span><span class="pv pvc">Hunter</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

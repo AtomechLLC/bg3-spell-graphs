@@ -1,6 +1,6 @@
 # <span class="femoji">❤️‍🩹</span> The Cure Family
 
-<span class="tier tier-clone">Verbatim clone</span> · 5 spells · masked-text similarity 0.68–0.90
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>5</b> spells</span><span class="pv">similarity <b>0.68–0.90</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Paladin, Ranger</span></span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

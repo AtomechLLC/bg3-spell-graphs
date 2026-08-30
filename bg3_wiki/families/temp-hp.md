@@ -1,6 +1,6 @@
 # <span class="femoji">🩹</span> The Temp-HP Ledger
 
-<span class="tier tier-engine">Shared engine</span> · 4 spells · mechanical similarity 0.76–0.85
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>4</b> spells</span><span class="pv">similarity <b>0.76–0.85</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Fighter, Paladin, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

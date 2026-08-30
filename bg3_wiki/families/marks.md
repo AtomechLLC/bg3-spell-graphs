@@ -1,6 +1,6 @@
 # <span class="femoji">🏷️</span> The Mark & Curse Desk
 
-<span class="tier tier-template">Shared template</span> · 8 spells · mechanical similarity 0.29–0.87
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>8</b> spells</span><span class="pv">similarity <b>0.29–0.87</b></span><span class="pv"><b>10</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Ranger, Rogue, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # <span class="femoji">⛓️</span> The Crowd Control Cabinet
 
-<span class="tier tier-template">Shared template</span> · 25 abilities · mechanical similarity 0.14–0.98
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>25</b> abilities</span><span class="pv">similarity <b>0.14–0.98</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Rogue, Warlock, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

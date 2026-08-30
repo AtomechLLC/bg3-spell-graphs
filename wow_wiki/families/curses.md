@@ -1,6 +1,6 @@
 # <span class="femoji">💀</span> The Debuff Bureau
 
-<span class="tier tier-template">Shared template</span> · 17 abilities · mechanical similarity 0.20–1.00
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>17</b> abilities</span><span class="pv">similarity <b>0.20–1.00</b></span><span class="pv"><b>6</b> classes</span><span class="pv pvc">Druid, Hunter, Priest, Rogue, Warlock, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

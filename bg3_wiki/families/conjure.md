@@ -1,6 +1,6 @@
 # <span class="femoji">🧞</span> The Summoning Contract
 
-<span class="tier tier-template">Shared template</span> · 10 spells · mechanical similarity 0.45–0.97
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>10</b> spells</span><span class="pv">similarity <b>0.45–0.97</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Bard, Cleric, Druid, Fighter, Paladin, Rogue, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

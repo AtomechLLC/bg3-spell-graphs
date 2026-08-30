@@ -1,0 +1,20 @@
+{
+ "D&D 5e SRD": {
+  "n": 319,
+  "twin": 4.4,
+  "rel": 6.3,
+  "measure": "masked spell text"
+ },
+ "Baldur's Gate 3": {
+  "n": 211,
+  "twin": 65.4,
+  "rel": 93.4,
+  "measure": "stat-field signature"
+ },
+ "WoW Classic": {
+  "n": 423,
+  "twin": 37.4,
+  "rel": 53.4,
+  "measure": "SpellEffect blend"
+ }
+}

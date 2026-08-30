@@ -1,10 +1,14 @@
 """Build the cross-game purpose taxonomy report -> purpose_atlas.html."""
 import csv
 import html as H
+import json
 import os
 from collections import defaultdict
 
 from purpose_defs import PURPOSES
+
+HOM = json.load(open("homogeneity.json", encoding="utf-8"))
+COMP = json.load(open("class_comp.json", encoding="utf-8"))
 
 GAMES = ["D&D 5e SRD", "Baldur's Gate 3", "WoW Classic"]
 GKEY = {"D&D 5e SRD": "srd", "Baldur's Gate 3": "bg3", "WoW Classic": "wow"}
@@ -22,22 +26,64 @@ maxpct = max(100 * len(mat[p][g]) / tot[g] for p, *_ in PURPOSES for g in GAMES)
 
 def bar_rows(user_flag):
     out = []
-    for pk, label, user, defn in PURPOSES:
+    for idx, (pk, label, user, defn) in enumerate(PURPOSES):
         if user != user_flag:
             continue
         cells = []
+        pcts = {}
         for g in GAMES:
             n = len(mat[pk][g])
             pct = 100 * n / tot[g]
+            pcts[GKEY[g]] = pct
             w = 100 * pct / maxpct
             cells.append(
-                f'<div class="brow"><span class="bar {GKEY[g]}" style="width:{w:.1f}%"></span>'
+                f'<div class="brow {GKEY[g]}"><span class="bar {GKEY[g]}" style="width:{w:.1f}%"></span>'
                 f'<span class="bval">{pct:.1f}% <em>({n})</em></span></div>')
-        out.append(f'''<div class="prow">
+        out.append(f'''<div class="prow" data-idx="{idx}" data-srd="{pcts['srd']:.1f}" \
+data-bg3="{pcts['bg3']:.1f}" data-wow="{pcts['wow']:.1f}">
 <div class="plabel"><span class="femoji">{PEMOJI[pk]}</span> <strong>{label}</strong>
 <span class="pdef">{defn}</span></div>
 <div class="pbars">{''.join(cells)}</div></div>''')
     return "\n".join(out)
+
+PKEYS = [p[0] for p in PURPOSES]
+PLBL = {p[0]: p[1] for p in PURPOSES}
+
+def hom_tiles():
+    tiles = []
+    for g in GAMES:
+        h = HOM[g]
+        tiles.append(f'''<div class="htile {GKEY[g]}">
+<div class="hbig">{h['twin']}%</div>
+<div class="hlab">{H.escape(g)}</div>
+<div class="hsub">{h['rel']}% within 0.75 · n={h['n']}<br>measure: {h['measure']}</div></div>''')
+    return "".join(tiles)
+
+def comp_table(g):
+    comp = COMP[g]
+    gk = GKEY[g]
+    classes = sorted(comp, key=lambda c: -sum(comp[c].values()))
+    head = "".join(f'<th class="ph" title="{PLBL[p]}"><span class="femoji">{PEMOJI[p]}</span></th>'
+                   for p in PKEYS)
+    mx = max(100 * v / sum(comp[c].values()) for c in classes for v in comp[c].values())
+    rws = []
+    for c in classes:
+        tot_c = sum(comp[c].values())
+        cells = []
+        for p in PKEYS:
+            n = comp[c].get(p, 0)
+            if n:
+                pct = 100 * n / tot_c
+                a = 0.10 + 0.90 * pct / mx
+                lab = f"{pct:.0f}" if pct >= 8 else ""
+                cells.append(f'<td class="hm {gk}" style="--a:{a:.2f}" '
+                             f'title="{H.escape(c)} — {PLBL[p]}: {n} of {tot_c} ({pct:.0f}%)">{lab}</td>')
+            else:
+                cells.append('<td class="hm"></td>')
+        rws.append(f'<tr><th class="cl">{H.escape(c)} <span class="cn">{tot_c}</span></th>'
+                   f'{"".join(cells)}</tr>')
+    return (f'<h3><span class="gdot" style="background:var(--{gk})"></span>{H.escape(g)}</h3>'
+            f'<div class="tw"><table class="hmt"><tr><th></th>{head}</tr>{"".join(rws)}</table></div>')
 
 def detail_sections():
     out = []
@@ -119,6 +165,44 @@ h2{{text-wrap:balance}}
 a{{color:var(--accent)}}
 a:focus-visible,summary:focus-visible{{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}}
 @media (prefers-reduced-motion: reduce){{.prow{{transition:none}}}}
+h3{{font:600 16px Spectral,Georgia,serif;margin:24px 0 8px}}
+.gdot{{width:11px;height:11px;border-radius:3px;display:inline-block;vertical-align:-1px;margin-right:7px}}
+.htiles{{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0 8px}}
+.htile{{border:1px solid var(--line);border-radius:10px;padding:16px 18px;background:var(--panel)}}
+.htile.srd{{border-top:3px solid var(--srd)}}
+.htile.bg3{{border-top:3px solid var(--bg3)}}
+.htile.wow{{border-top:3px solid var(--wow)}}
+.hbig{{font:600 36px/1 Spectral,Georgia,serif;font-variant-numeric:tabular-nums;margin-bottom:6px}}
+.hlab{{font-size:14.5px;margin-bottom:4px}}
+.hsub{{font:400 11px/1.6 "IBM Plex Mono",monospace;color:var(--muted)}}
+.legend button{{all:unset;cursor:pointer;display:inline-flex;align-items:center;
+  font:inherit;color:inherit;padding:2px 6px;border-radius:5px}}
+.legend button:hover{{background:color-mix(in srgb,var(--accent) 8%,transparent)}}
+.legend button:focus-visible{{outline:2px solid var(--accent);outline-offset:1px}}
+.legend button[aria-pressed="false"]{{opacity:.38;text-decoration:line-through}}
+body.hide-srd .brow.srd,body.hide-srd .chip.srd{{display:none}}
+body.hide-bg3 .brow.bg3,body.hide-bg3 .chip.bg3{{display:none}}
+body.hide-wow .brow.wow,body.hide-wow .chip.wow{{display:none}}
+.sortbar{{display:flex;gap:6px;align-items:center;margin:8px 0 4px;flex-wrap:wrap;
+  font:400 11.5px "IBM Plex Mono",monospace;color:var(--muted)}}
+.sortbar button{{all:unset;cursor:pointer;font:500 11px "IBM Plex Mono",monospace;color:var(--muted);
+  border:1px solid var(--line);border-radius:999px;padding:3px 11px}}
+.sortbar button:hover{{border-color:var(--accent)}}
+.sortbar button.on{{color:var(--accent);border-color:var(--accent);
+  background:color-mix(in srgb,var(--accent) 10%,transparent)}}
+.sortbar button:focus-visible{{outline:2px solid var(--accent);outline-offset:1px}}
+.tw{{overflow-x:auto;border:1px solid var(--line);border-radius:8px;margin:6px 0 16px}}
+.hmt{{border-collapse:collapse;font:400 10.5px "IBM Plex Mono",monospace;
+  font-variant-numeric:tabular-nums;width:100%}}
+.hmt th{{padding:5px 4px;font-weight:500;color:var(--muted)}}
+.hmt th.ph{{font-size:13px;text-align:center;min-width:27px}}
+.hmt th.cl{{text-align:left;white-space:nowrap;padding:3px 10px 3px 8px;font-size:11.5px;color:var(--ink)}}
+.hmt .cn{{color:var(--muted);margin-left:4px;font-size:10px}}
+.hmt td.hm{{width:27px;height:23px;text-align:center;border:1px solid var(--bg);border-radius:3px;
+  color:var(--ink)}}
+.hmt td.hm.srd{{background:color-mix(in srgb,var(--srd) calc(var(--a)*62%),transparent)}}
+.hmt td.hm.bg3{{background:color-mix(in srgb,var(--bg3) calc(var(--a)*62%),transparent)}}
+.hmt td.hm.wow{{background:color-mix(in srgb,var(--wow) calc(var(--a)*62%),transparent)}}
 </style>
 <main>
 <h1>The Purpose Atlas</h1>
@@ -131,18 +215,38 @@ a:focus-visible,summary:focus-visible{{outline:2px solid var(--accent);outline-o
 seven requested, twelve more that the data itself argues for (including two the WoW remap
 proposed: resource warfare and companion upkeep).</p>
 
-<div class="legend">
-<span><span class="dot" style="background:var(--srd)"></span>D&amp;D 5e SRD</span>
-<span><span class="dot" style="background:var(--bg3)"></span>Baldur's Gate 3</span>
-<span><span class="dot" style="background:var(--wow)"></span>WoW Classic</span>
-<span>share of each game's kit</span>
+<h2>The homogeneity index</h2>
+<p>One number per game: the share of the kit whose <strong>nearest neighbour scores ≥ 0.85</strong>
+on that game's own mechanical-similarity measure — abilities that have at least one near-twin
+somewhere in the same game.</p>
+<div class="htiles">{hom_tiles()}</div>
+<p class="pdef" style="display:block;max-width:70ch">Caveat: each game is measured on its own
+instrument. The SRD's masked-text ratio is far stricter than the stat-signature measures — text
+must match, not just mechanics — so read the SRD tile as a floor, not a peer. The BG3 and WoW
+numbers are directly comparable in spirit: both score decoded effect data.</p>
+
+<div class="legend" role="group" aria-label="Toggle games">
+<button data-g="srd" aria-pressed="true"><span class="dot" style="background:var(--srd)"></span>D&amp;D 5e SRD</button>
+<button data-g="bg3" aria-pressed="true"><span class="dot" style="background:var(--bg3)"></span>Baldur's Gate 3</button>
+<button data-g="wow" aria-pressed="true"><span class="dot" style="background:var(--wow)"></span>WoW Classic</button>
+<span>share of each game's kit · click a game to hide it</span>
+</div>
+<div class="sortbar" role="group" aria-label="Sort purposes">sort:
+<button data-k="idx" class="on">default</button>
+<button data-k="srd">by SRD</button>
+<button data-k="bg3">by BG3</button>
+<button data-k="wow">by WoW</button>
 </div>
 
 <h2>The seven requested purposes</h2>
+<div class="psec">
 {bar_rows(True)}
+</div>
 
 <h2>Ten more the data argues for</h2>
+<div class="psec">
 {bar_rows(False)}
+</div>
 
 <h2>The WoW remap</h2>
 <p>Applying the D&amp;D-derived map to WoW Classic and letting the ability data push back produced
@@ -176,6 +280,14 @@ stones, food, water) because consumables are its economy; BG3 cut nearly all of 
 camp supplies made it redundant.</li>
 </ul>
 
+<h2>What is a class made of?</h2>
+<p>Class composition profiles: each row is a class, each column a purpose, cell shading is the
+purpose's share of that class's kit (numbers shown at ≥ 8%; hover any cell for exact counts).
+Multi-list spells count once per class that owns them; classes sort by kit size.</p>
+{comp_table("D&D 5e SRD")}
+{comp_table("Baldur's Gate 3")}
+{comp_table("WoW Classic")}
+
 <h2>Every ability, by purpose</h2>
 {detail_sections()}
 
@@ -187,6 +299,23 @@ override, {sum(1 for r in rows if r['assigned_by']=='fallback')} fallback). Full
 the Larian Codex (BG3), the Azeroth Codex (WoW Classic), and Spell Constellations.
 Game content © Wizards of the Coast / Larian Studios / Blizzard Entertainment; research reference.</footer>
 </main>
+<script>
+document.querySelectorAll('.legend button[data-g]').forEach(b => b.addEventListener('click', () => {{
+  const g = b.dataset.g;
+  document.body.classList.toggle('hide-' + g);
+  b.setAttribute('aria-pressed', document.body.classList.contains('hide-' + g) ? 'false' : 'true');
+}}));
+document.querySelectorAll('.sortbar button').forEach(b => b.addEventListener('click', () => {{
+  document.querySelectorAll('.sortbar button').forEach(x => x.classList.toggle('on', x === b));
+  const k = b.dataset.k;
+  document.querySelectorAll('.psec').forEach(sec => {{
+    [...sec.querySelectorAll('.prow')]
+      .sort((a, c) => k === 'idx' ? (+a.dataset.idx - +c.dataset.idx)
+                                  : (+c.dataset[k] - +a.dataset[k]))
+      .forEach(r => sec.appendChild(r));
+  }});
+}}));
+</script>
 """
 with open("purpose_atlas.html", "w", encoding="utf-8") as f:
     f.write(HTML)

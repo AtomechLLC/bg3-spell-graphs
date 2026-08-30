@@ -385,9 +385,14 @@ for f in F:
         rows.append(f"| {sp_name(r)}{kids} | {lvl(r)} | {r['school']} | {r['stype']} | "
                     f"{fmt_cost(r['use_costs'])} | {fmt_damage(r)} | {fmt_save(r)} | "
                     f"{', '.join(cls_link(c) for c in r['classes'])} |")
+    fam_cls = sorted({c for r in mem for c in r["classes"]})
     md = f"""# <span class="femoji">{f['icon']}</span> {f['title']}
 
-<span class="tier tier-{f['tier']}">{TIER_LABEL[f['tier']]}</span> · {len(mem)} spells · mechanical similarity {simtxt}
+<span class="plate"><span class="tier tier-{f['tier']}">{TIER_LABEL[f['tier']]}</span>\
+<span class="pv"><b>{len(mem)}</b> spells</span>\
+<span class="pv">similarity <b>{simtxt}</b></span>\
+<span class="pv"><b>{len(fam_cls)}</b> classes</span>\
+<span class="pv pvc">{', '.join(fam_cls) or '—'}</span></span>
 
 {chr(10).join(rows)}
 
@@ -837,6 +842,33 @@ tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--ink) 3%,transpare
 tbody tr:hover td{background:color-mix(in srgb,var(--accent) 10%,transparent)}
 .tier{border:1px solid color-mix(in srgb,currentColor 30%,transparent)}
 .sic{background:var(--panel);border:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.crumb a{color:inherit}
+.crumb a:hover{color:var(--accent-ink)}
+.plate{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:2px 0 18px;
+  padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);
+  font:400 12px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted)}
+.plate .pv b{color:var(--ink);font-weight:500}
+.plate .pvc{flex-basis:100%;font-size:11px}
+.pn{display:flex;justify-content:space-between;gap:14px;margin:30px 0 0;padding-top:14px;
+  border-top:1px solid var(--line);font-size:14px}
+.pn a{max-width:48%}
+.backlinks{margin:26px 0 0;padding-top:12px;border-top:1px dashed var(--line);
+  font-size:12.5px;color:var(--muted);line-height:1.8}
+.backlinks .bl-l{font:500 10px "IBM Plex Mono",ui-monospace,monospace;text-transform:uppercase;
+  letter-spacing:.1em;margin-right:6px}
+.tfilter{display:block;width:100%;max-width:340px;margin:12px 0 -6px;padding:6px 10px;
+  font:400 12.5px "IBM Plex Mono",ui-monospace,monospace;color:var(--ink);
+  background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.tfilter:focus{outline:2px solid var(--accent);outline-offset:1px}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--accent-ink)}
+th.s-a::after{content:" 91"}
+th.s-d::after{content:" 93"}
+#peek{position:absolute;display:none;z-index:5;background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;padding:9px 12px;max-width:340px;box-shadow:0 8px 24px #0004;
+  font-size:12.5px;line-height:1.5;pointer-events:none}
+#peek b{display:block;color:var(--accent-ink);margin-bottom:2px}
+#peek span{color:var(--muted)}
 </style>
 <button id="menu" aria-label="Menu">☰ pages</button>
 <div class="layout">
@@ -866,11 +898,98 @@ function render(){
     if(d) el.src = d; else el.remove();
   });
   const parts = slug.split('/');
-  crumb.textContent = 'larian codex' + (parts.length>1 ? ' / '+parts[0] : '') + ' / ' + PAGES[slug].title.toLowerCase();
+  crumb.innerHTML = crumbHTML(slug, parts);
   document.querySelectorAll('nav a[data-slug]').forEach(a=>a.classList.toggle('on', a.dataset.slug===slug));
   nav.classList.remove('open');
+  const onA = document.querySelector('nav a.on');
+  if (onA && onA.scrollIntoView) onA.scrollIntoView({block:'nearest'});
+  enhance(slug);
   window.scrollTo(0,0);
 }
+
+/* usability pass */
+const FAMS = Object.keys(PAGES).filter(s => s.indexOf('families/') === 0);
+function crumbHTML(slug, parts){
+  let h = '<a href="#/overview">larian codex</a>';
+  if (parts.length > 1) h += PAGES[parts[0]] ? ' / <a href="#/' + parts[0] + '">' + parts[0] + '</a>' : ' / ' + parts[0];
+  return h + ' / ' + PAGES[slug].title.toLowerCase();
+}
+function firstText(h){
+  const d = document.createElement('div'); d.innerHTML = h;
+  let t = '';
+  for (const el of d.querySelectorAll('p')){ t = el.textContent.trim(); if (t.length > 40) break; }
+  if (!t) t = d.textContent;
+  t = t.split(String.fromCharCode(10)).join(' ').split(String.fromCharCode(9)).join(' ');
+  while (t.indexOf('  ') !== -1) t = t.split('  ').join(' ');
+  t = t.trim();
+  return t.length > 180 ? t.slice(0, 177) + '…' : t;
+}
+const peek = document.createElement('div'); peek.id = 'peek'; document.body.appendChild(peek);
+let peekT;
+art.addEventListener('mouseover', e => {
+  const a = e.target.closest('a[href^="#/"]'); if (!a) return;
+  const t = a.getAttribute('href').slice(2), p = PAGES[t];
+  if (!p) return;
+  clearTimeout(peekT);
+  peekT = setTimeout(() => {
+    peek.innerHTML = '<b></b><span></span>';
+    peek.firstChild.textContent = p.title;
+    peek.lastChild.textContent = firstText(p.html);
+    const r = a.getBoundingClientRect(), pw = Math.min(340, innerWidth - 24);
+    peek.style.display = 'block';
+    peek.style.left = Math.max(8, Math.min(r.left, innerWidth - pw - 12)) + 'px';
+    peek.style.top = (r.bottom + 6 + scrollY) + 'px';
+  }, 220);
+});
+art.addEventListener('mouseout', e => {
+  if (e.target.closest('a[href^="#/"]')){ clearTimeout(peekT); peek.style.display = 'none'; }
+});
+window.addEventListener('hashchange', () => { peek.style.display = 'none'; });
+function enhance(slug){
+  if (slug.indexOf('families/') === 0){
+    const i = FAMS.indexOf(slug);
+    const pn = document.createElement('div'); pn.className = 'pn';
+    const pv = i > 0 ? FAMS[i-1] : null, nx = i < FAMS.length - 1 ? FAMS[i+1] : null;
+    pn.innerHTML =
+      (pv ? '<a href="#/' + pv + '">← ' + PAGES[pv].title + '</a>' : '<span></span>') +
+      (nx ? '<a href="#/' + nx + '">' + PAGES[nx].title + ' →</a>' : '<span></span>');
+    art.appendChild(pn);
+  }
+  art.querySelectorAll('.tw table').forEach(tbl => {
+    const all = [...tbl.querySelectorAll('tr')].filter(r => r.querySelector('td'));
+    if (!all.length) return;
+    if (all.length > 14){
+      const box = document.createElement('input');
+      box.className = 'tfilter'; box.type = 'search';
+      box.placeholder = 'filter ' + all.length + ' rows…';
+      box.addEventListener('input', () => {
+        const q = box.value.toLowerCase();
+        all.forEach(r => { r.style.display = r.textContent.toLowerCase().indexOf(q) !== -1 ? '' : 'none'; });
+      });
+      tbl.parentElement.parentElement.insertBefore(box, tbl.parentElement);
+    }
+    const ths = tbl.querySelectorAll('tr:first-child th');
+    ths.forEach((th, ci) => {
+      th.classList.add('sortable');
+      th.title = 'sort';
+      th.addEventListener('click', () => {
+        const dir = th.dataset.d === 'a' ? -1 : 1;
+        ths.forEach(x => { delete x.dataset.d; x.classList.remove('s-a', 's-d'); });
+        th.dataset.d = dir === 1 ? 'a' : 'd';
+        th.classList.add(dir === 1 ? 's-a' : 's-d');
+        const body = all[0].parentElement;
+        const key = r => r.cells[ci] ? r.cells[ci].textContent.trim() : '';
+        const isNum = all.every(r => { const v = key(r); return v === '' || !isNaN(parseFloat(v)); });
+        all.slice().sort((a, b) => {
+          const va = key(a), vb = key(b);
+          if (isNum) return dir * ((parseFloat(va) || -1e9) - (parseFloat(vb) || -1e9));
+          return dir * va.localeCompare(vb);
+        }).forEach(r => body.appendChild(r));
+      });
+    });
+  });
+}
+
 window.addEventListener('hashchange', render);
 document.getElementById('menu').addEventListener('click',()=>nav.classList.toggle('open'));
 render();

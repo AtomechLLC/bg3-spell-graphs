@@ -1,6 +1,6 @@
 # <span class="femoji">❤️‍🩹</span> One Heal, Nine Names
 
-<span class="tier tier-clone">Verbatim clone</span> · 13 abilities · mechanical similarity 0.29–1.00
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>13</b> abilities</span><span class="pv">similarity <b>0.29–1.00</b></span><span class="pv"><b>4</b> classes</span><span class="pv pvc">Druid, Paladin, Priest, Shaman</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # <span class="femoji">🛡️</span> The Protection Series
 
-<span class="tier tier-engine">Shared engine</span> · 3 spells · masked-text similarity 0.12–0.25
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.12–0.25</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

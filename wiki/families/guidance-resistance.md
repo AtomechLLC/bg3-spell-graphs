@@ -1,6 +1,6 @@
 # <span class="femoji">🎲</span> Guidance & Resistance
 
-<span class="tier tier-clone">Verbatim clone</span> · 2 spells · masked-text similarity 0.91
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.91</b></span><span class="pv"><b>2</b> classes</span><span class="pv pvc">Cleric, Druid</span></span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

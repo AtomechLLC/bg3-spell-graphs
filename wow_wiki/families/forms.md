@@ -1,6 +1,6 @@
 # <span class="femoji">🐻</span> The Form Rack
 
-<span class="tier tier-template">Shared template</span> · 9 abilities · mechanical similarity 0.27–1.00
+<span class="plate"><span class="tier tier-template">Shared template</span><span class="pv"><b>9</b> abilities</span><span class="pv">similarity <b>0.27–1.00</b></span><span class="pv"><b>2</b> classes</span><span class="pv pvc">Druid, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

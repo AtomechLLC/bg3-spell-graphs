@@ -1,6 +1,6 @@
 # <span class="femoji">🏹</span> The Bolt Engine
 
-<span class="tier tier-engine">Shared engine</span> · 19 abilities · mechanical similarity 0.20–0.92
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>19</b> abilities</span><span class="pv">similarity <b>0.20–0.92</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Druid, Hunter, Mage, Paladin, Priest, Shaman, Warlock</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # <span class="femoji">🎒</span> The Fieldcraft Kit
 
-<span class="tier tier-engine">Shared engine</span> · 8 abilities · mechanical similarity 0.10–0.90
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>8</b> abilities</span><span class="pv">similarity <b>0.10–0.90</b></span><span class="pv"><b>5</b> classes</span><span class="pv pvc">Druid, Priest, Rogue, Shaman, Warlock</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|

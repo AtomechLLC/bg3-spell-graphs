@@ -1,6 +1,6 @@
 # <span class="femoji">🌗</span> Darkness & Daylight
 
-<span class="tier tier-engine">Shared engine</span> · 2 spells · masked-text similarity 0.66
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>2</b> spells</span><span class="pv">similarity <b>0.66</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</span></span>
 
 | Spell | Lv | School | Cast | Range | Duration | Save / Attack | Damage | Classes |
 |---|---|---|---|---|---|---|---|---|

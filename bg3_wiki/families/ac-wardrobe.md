@@ -1,6 +1,6 @@
 # <span class="femoji">🛡️</span> The Armour-Class Wardrobe
 
-<span class="tier tier-clone">Verbatim clone</span> · 3 spells · mechanical similarity 0.80–0.86
+<span class="plate"><span class="tier tier-clone">Verbatim clone</span><span class="pv"><b>3</b> spells</span><span class="pv">similarity <b>0.80–0.86</b></span><span class="pv"><b>8</b> classes</span><span class="pv pvc">Cleric, Druid, Fighter, Paladin, Ranger, Rogue, Sorcerer, Wizard</span></span>
 
 | Spell | Lv | School | Type | Cost | Damage | Save / Attack | Classes |
 |---|---|---|---|---|---|---|---|

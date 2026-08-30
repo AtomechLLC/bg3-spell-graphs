@@ -1,6 +1,6 @@
 # <span class="femoji">🩸</span> The Affliction Engine
 
-<span class="tier tier-engine">Shared engine</span> · 18 abilities · mechanical similarity 0.21–0.86
+<span class="plate"><span class="tier tier-engine">Shared engine</span><span class="pv"><b>18</b> abilities</span><span class="pv">similarity <b>0.21–0.86</b></span><span class="pv"><b>7</b> classes</span><span class="pv pvc">Druid, Hunter, Priest, Rogue, Shaman, Warlock, Warrior</span></span>
 
 | Ability | Class | Level | School | Ranks | Tooltip |
 |---|---|---|---|---|---|
