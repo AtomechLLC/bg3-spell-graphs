@@ -440,6 +440,18 @@ footer{{line-height:1.8}}
 #helpov .card{{background:#1B1822;border:1px solid #3a3647;border-radius:12px;padding:20px 26px;max-width:430px;font-size:12.5px;line-height:2.1}}
 #helpov b{{color:#E3C377;display:block;margin-bottom:4px}}
 #helpov kbd{{border:1px solid #3a3647;border-bottom-width:2px;border-radius:4px;padding:0 6px;font:500 11px "IBM Plex Mono",monospace;background:#211E2B}}
+#fpanel{{position:absolute;top:14px;display:none;z-index:3;background:#1B1822F2;
+  border:1px solid #3a3647;border-radius:10px;padding:10px 12px;width:230px;
+  max-height:calc(100% - 28px);overflow-y:auto;font-size:12px;scrollbar-width:thin;
+  scrollbar-color:#3a3647 transparent}}
+.fph{{font:600 11px "IBM Plex Mono",monospace;color:#E3C377;text-transform:uppercase;
+  letter-spacing:.08em;margin:10px 0 5px}}
+.fph:first-child{{margin-top:0}}
+.fph em{{color:#8a879a;font-style:normal;margin-left:4px}}
+.fpr{{display:flex;align-items:center;gap:8px;padding:2.5px 4px;border-radius:5px;cursor:default}}
+.fpr:hover{{background:#D4AF5E1f}}
+.fpr img{{width:20px;height:20px;border-radius:4px;flex:0 0 20px}}
+.fpr .fpn{{width:20px;height:20px;border-radius:4px;background:#322D3B;flex:0 0 20px;display:inline-block}}
 </style>
 <header>
   <div class="topline">
@@ -464,6 +476,7 @@ footer{{line-height:1.8}}
   <div class="view" data-v="sch"><svg viewBox="0 0 {W_} {H_}" role="img" aria-label="WoW abilities clustered by school">{SVG_SCH}</svg></div>
   <div class="view" data-v="pur"><svg viewBox="0 0 {W_} {H_}" role="img" aria-label="WoW abilities clustered by purpose">{SVG_PUR}</svg></div>
   <div id="tip"></div>
+  <div id="fpanel"></div>
 </div>
 <div class="bar">
   <div class="bgroup"><span class="blabel">Classes</span>{pick_cls}</div>
@@ -499,6 +512,7 @@ document.querySelectorAll('image.sic').forEach(el => {{
 }});
 const FAMTITLE = {json.dumps({f["slug"]: f["title"] for f in FAMS})};
 const PURSHORT = {json.dumps({p: PSHORT[p] for p in PURS})};
+const FAMMEM = {json.dumps({f["slug"]: [[icon_key(BYID[m]) or "", BYID[m]["name"]] for m in f["members"]] for f in FAMS})};
 const tip = document.getElementById('tip'), wrap = document.querySelector('.wrap');
 function show(v) {{
   document.querySelectorAll('.view').forEach(x => x.classList.toggle('on', x.dataset.v === v));
@@ -524,7 +538,7 @@ function matches(n) {{
 }}
 function updateCount() {{
   const el = document.getElementById('fcount');
-  if (!anySel()) {{ el.textContent = ''; saveState(); return; }}
+  if (!anySel()) {{ el.textContent = ''; saveState(); updatePanel(); return; }}
   const act = document.querySelector('.view.on svg');
   const litN = act.querySelectorAll('.n.lit').length;
   const parts = [];
@@ -535,6 +549,7 @@ function updateCount() {{
   if (state.pur.size) parts.push([...state.pur].map(p => PURSHORT[p] || p).join(' + '));
   el.textContent = litN + ' abilities lit' + (parts.length ? ' \u2014 ' + parts.join(' \u00b7 ') : '');
   saveState();
+  updatePanel();
 }}
 function applyFilter() {{
   const any = anySel();
@@ -565,6 +580,46 @@ document.getElementById('clear').addEventListener('click', () => {{
   Object.values(state).forEach(s => s.clear());
   document.querySelectorAll('.pchip.on').forEach(b => b.classList.remove('on'));
   applyFilter();
+}});
+function updatePanel() {{
+  const fp = document.getElementById('fpanel');
+  const sel = [...state.fam];
+  if (!sel.length) {{ fp.style.display = 'none'; return; }}
+  let html = '';
+  for (const s of sel) {{
+    const mem = FAMMEM[s] || [];
+    html += '<div class="fph">' + (FAMTITLE[s] || s) + '<em>' + mem.length + '</em></div>';
+    for (const m of mem) {{
+      const ic = ICONS[m[0]];
+      html += '<div class="fpr" data-n="' + m[1].split('"').join('&quot;') + '">' +
+        (ic ? '<img src="' + ic + '" alt="">' : '<span class="fpn"></span>') +
+        '<span>' + m[1] + '</span></div>';
+    }}
+  }}
+  fp.innerHTML = html;
+  const svg = document.querySelector('.view.on svg');
+  const wr = wrap.getBoundingClientRect();
+  let sx = 0, cnt = 0;
+  svg.querySelectorAll('.n.lit').forEach(nd => {{
+    const r = nd.getBoundingClientRect();
+    sx += r.left + r.width / 2; cnt++;
+  }});
+  const mid = cnt ? (sx / cnt - wr.left) : wr.width / 2;
+  if (mid < wr.width / 2) {{ fp.style.right = '14px'; fp.style.left = 'auto'; }}
+  else {{ fp.style.left = '14px'; fp.style.right = 'auto'; }}
+  fp.style.display = 'block';
+}}
+document.getElementById('fpanel').addEventListener('mouseover', e => {{
+  const row = e.target.closest('.fpr'); if (!row) return;
+  const svg = document.querySelector('.view.on svg');
+  svg.classList.add('hov');
+  svg.querySelectorAll('.n').forEach(nd => nd.classList.toggle('hl', nd.dataset.name === row.dataset.n));
+}});
+document.getElementById('fpanel').addEventListener('mouseout', e => {{
+  if (!e.target.closest('.fpr')) return;
+  const svg = document.querySelector('.view.on svg');
+  svg.classList.remove('hov');
+  svg.querySelectorAll('.n.hl').forEach(x => x.classList.remove('hl'));
 }});
 function saveState() {{
   try {{ localStorage.setItem('wow-constellation-filters', JSON.stringify({{cls: [...state.cls], sch: [...state.sch], tier: [...state.tier], fam: [...state.fam], pur: [...state.pur]}})); }} catch (e) {{}}

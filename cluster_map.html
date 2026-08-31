@@ -76,6 +76,18 @@ footer{line-height:1.8}
 #helpov .card{background:#1B1822;border:1px solid #3a3647;border-radius:12px;padding:20px 26px;max-width:430px;font-size:12.5px;line-height:2.1}
 #helpov b{color:#E3C377;display:block;margin-bottom:4px}
 #helpov kbd{border:1px solid #3a3647;border-bottom-width:2px;border-radius:4px;padding:0 6px;font:500 11px "IBM Plex Mono",monospace;background:#211E2B}
+#fpanel{position:absolute;top:14px;display:none;z-index:3;background:#1B1822F2;
+  border:1px solid #3a3647;border-radius:10px;padding:10px 12px;width:230px;
+  max-height:calc(100% - 28px);overflow-y:auto;font-size:12px;scrollbar-width:thin;
+  scrollbar-color:#3a3647 transparent}
+.fph{font:600 11px "IBM Plex Mono",monospace;color:#E3C377;text-transform:uppercase;
+  letter-spacing:.08em;margin:10px 0 5px}
+.fph:first-child{margin-top:0}
+.fph em{color:#8a879a;font-style:normal;margin-left:4px}
+.fpr{display:flex;align-items:center;gap:8px;padding:2.5px 4px;border-radius:5px;cursor:default}
+.fpr:hover{background:#D4AF5E1f}
+.fpr img{width:20px;height:20px;border-radius:4px;flex:0 0 20px}
+.fpr .fpn{width:20px;height:20px;border-radius:4px;background:#322D3B;flex:0 0 20px;display:inline-block}
 </style>
 <header>
   <div class="topline">
@@ -2074,6 +2086,7 @@ footer{line-height:1.8}
 <text x="526" y="114" text-anchor="middle" fill="#E3C377" font-family="Cinzel,Georgia,serif" font-size="15" font-weight="600" letter-spacing="1.5" stroke="#16161D" stroke-width="6" paint-order="stroke" class="anchor" data-c="utility"><tspan class="femoji">🔧</tspan> UTILITY</text>
 <text x="526" y="130" text-anchor="middle" fill="#a8a4b5" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="5" paint-order="stroke">16</text></svg></div>
   <div id="tip"></div>
+  <div id="fpanel"></div>
 </div>
 <div class="bar">
   <div class="bgroup"><span class="blabel">Classes</span><button class="pchip" data-g="cls" data-val="Druid">Druid</button><button class="pchip" data-g="cls" data-val="Ranger">Ranger</button><button class="pchip" data-g="cls" data-val="Cleric">Cleric</button><button class="pchip" data-g="cls" data-val="Paladin">Paladin</button><button class="pchip" data-g="cls" data-val="Bard">Bard</button><button class="pchip" data-g="cls" data-val="Sorcerer">Sorcerer</button><button class="pchip" data-g="cls" data-val="Wizard">Wizard</button><button class="pchip" data-g="cls" data-val="Fighter">Fighter</button><button class="pchip" data-g="cls" data-val="Rogue">Rogue</button><button class="pchip" data-g="cls" data-val="Warlock">Warlock</button></div>
@@ -2111,6 +2124,7 @@ document.querySelectorAll('image.sic').forEach(el => {
 });
 const FAMTITLE = {"duplicate-skus": "The Duplicate SKUs", "cure": "The Cure Family", "hp-pool": "The Hit-Point Pool Engine", "dominate": "The Dominate Pair", "hold": "The Hold Pair", "charm": "The Charm Pair", "cc-misc": "The Control Ward", "invisibility": "The Invisibility Ladder", "ac-wardrobe": "The Armour-Class Wardrobe", "bane-bless": "Bane & Bless", "walls": "The Wall Foundry", "blast": "The Elemental Blast Template", "surfaces": "The Surface Engine", "smites": "The Smite Armoury", "imbues": "The Imbue Shelf", "teleports": "The Blink Ladder", "touch-buffs": "The Touch-Buff Skeleton", "conjure": "The Summoning Contract", "attack-cantrips": "The Damage Cantrip Engine", "cleanse": "The Cleanse Counter", "fieldcraft": "The Fieldcraft Kit", "d4-riders": "Guidance & Resistance", "marks": "The Mark & Curse Desk", "zones": "The Blender Aisle", "protection": "The Protection Rack", "temp-hp": "The Temp-HP Ledger", "provisions": "The Commissary", "bolts": "The Bolt Rack", "counters": "The Cancel Desk", "movers": "The Shove Aisle"};
 const PURSHORT = {"damage": "DAMAGE", "offboost": "OFF BOOST", "defboost": "DEF BOOST", "negation": "NEGATION", "create": "CREATE", "remove": "REMOVE", "disable": "DISABLE", "degrade": "DEGRADE", "heal": "HEALING", "mobility": "MOBILITY", "zone": "ZONE", "stealth": "STEALTH", "provision": "PROVISION", "threat": "THREAT", "drain": "DRAIN", "utility": "UTILITY"};
+const FAMMEM = {"duplicate-skus": [["Shout_Shield_Sorcerer", "Shield"], ["Shout_Shield_Warlock", "Shield"], ["Shout_Shield_Wizard", "Shield"], ["Target_Darkness", "Darkness"], ["", "Eyes of the Dark: Darkness"]], "cure": [["Target_CureWounds", "Cure Wounds"], ["Target_HealingWord", "Healing Word"], ["Shout_PrayerOfHealing", "Prayer of Healing"], ["Target_CureWounds_Mass", "Mass Cure Wounds"], ["Shout_HealingWord_Mass", "Mass Healing Word"], ["Target_Heal", "Heal"], ["Shout_AuraOfVitality", "Warden of Vitality"], ["Shout_BeaconOfHope", "Beacon of Hope"]], "hp-pool": [["Target_Sleep", "Sleep"], ["Zone_ColorSpray", "Colour Spray"]], "dominate": [["Target_DominateBeast", "Dominate Beast"], ["Target_DominatePerson", "Dominate Person"]], "hold": [["Target_HoldPerson", "Hold Person"], ["Target_HoldMonster", "Hold Monster"]], "charm": [["Target_AnimalFriendship", "Animal Friendship"], ["Target_CharmPerson", "Charm Person"]], "cc-misc": [["Zone_Fear", "Fear"], ["Target_Confusion", "Confusion"], ["Target_Command_Container", "Command"], ["Target_HideousLaughter", "Tasha's Hideous Laughter"], ["Target_IrresistibleDance", "Otto's Irresistible Dance"], ["Target_HypnoticPattern", "Hypnotic Pattern"], ["Target_Blindness", "Blindness"], ["Target_Banishment", "Banishment"], ["Target_Slow", "Slow"], ["Target_Eyebite", "Eyebite"], ["Target_CrownOfMadness", "Crown of Madness"], ["Target_DissonantWhispers", "Dissonant Whispers"], ["Target_Enthrall", "Enthrall"], ["Target_Polymorph", "Polymorph"], ["Target_FleshToStone", "Flesh to Stone"], ["Target_PhantasmalKiller", "Phantasmal Killer"], ["Target_PlanarBinding", "Planar Binding"]], "invisibility": [["Target_Invisibility", "Invisibility"], ["Target_Invisibility_Greater", "Greater Invisibility"], ["Shout_PassWithoutTrace", "Pass Without Trace"]], "ac-wardrobe": [["Target_MageArmor", "Mage Armour"], ["Target_ShieldOfFaith", "Shield of Faith"], ["Target_Barkskin", "Barkskin"]], "bane-bless": [["Target_Bane", "Bane"], ["Target_Bless", "Bless"]], "walls": [["Wall_WallOfFire", "Wall of Fire"], ["Wall_WallOfIce", "Wall of Ice"], ["Wall_WallOfStone", "Wall of Stone"], ["Wall_WallOfThorns", "Wall of Thorns"], ["Wall_BladeBarrier", "Blade Barrier"]], "blast": [["Projectile_Fireball", "Fireball"], ["Zone_LightningBolt", "Lightning Bolt"], ["Zone_Thunderwave", "Thunderwave"], ["Target_FlameStrike", "Flame Strike"], ["Target_IceStorm", "Ice Storm"], ["Zone_ConeOfCold", "Cone of Cold"], ["Zone_Sunbeam", "Sunbeam"], ["Target_CircleOfDeath", "Circle of Death"], ["Zone_BurningHands", "Burning Hands"], ["Target_Shatter", "Shatter"], ["Projectile_ChainLightning", "Chain Lightning"], ["Shout_DestructiveWave", "Destructive Wave"], ["Target_FreezingSphere", "Otiluke's Freezing Sphere"], ["Shout_ArmsOfHadar", "Arms of Hadar"], ["Zone_ConjureBarrage", "Conjure Barrage"]], "surfaces": [["Target_Grease", "Grease"], ["Target_Web", "Web"], ["Target_Entangle", "Entangle"], ["Target_FogCloud", "Fog Cloud"], ["Target_StinkingCloud", "Stinking Cloud"], ["Target_BlackTentacles", "Evard's Black Tentacles"], ["Target_PlantGrowth", "Plant Growth"], ["Target_Cloudkill", "Cloudkill"], ["Target_SpikeGrowth", "Spike Growth"], ["Target_SleetStorm", "Sleet Storm"]], "smites": [["Target_Smite_Searing", "Searing Smite"], ["Target_Smite_Thunderous", "Thunderous Smite"], ["Target_Smite_Wrathful", "Wrathful Smite"], ["Target_Smite_Branding_Container", "Branding Smite"], ["Target_Smite_Blinding", "Blinding Smite"], ["Target_StaggeringSmite", "Staggering Smite"], ["Projectile_Smite_Banishing_Container", "Banishing Smite"], ["Projectile_EnsnaringStrike_Container", "Ensnaring Strike"], ["Projectile_HailOfThorns", "Hail of Thorns"], ["Projectile_LightningArrow", "Lightning Arrow"], ["", "Booming Blade"]], "imbues": [["Target_ElementalWeapon", "Elemental Weapon"], ["Target_MagicWeapon", "Magic Weapon"], ["Shout_DivineFavor", "Divine Favour"], ["Shout_CrusadersMantle", "Crusader's Mantle"], ["Shout_FlameBlade", "Flame Blade"], ["Shout_ShadowBlade_Class", "Shadow Blade"], ["Shout_Shillelagh", "Shillelagh"]], "teleports": [["Target_MistyStep", "Misty Step"], ["Teleportation_DimensionDoor", "Dimension Door"], ["Teleportation_ArcaneGate", "Arcane Gate"]], "touch-buffs": [["Target_Longstrider", "Longstrider"], ["Target_Jump", "Enhance Leap"], ["Target_Fly", "Grant Flight"], ["Target_Darkvision", "Darkvision"], ["Shout_FeatherFall", "Feather Fall"], ["Target_FreedomOfMovement", "Freedom of Movement"], ["Target_GaseousForm", "Gaseous Form"], ["Shout_WindWalk", "Wind Walk"]], "conjure": [["Target_ConjureElemental_Container", "Conjure Elemental"], ["Target_ConjureElementals_Minor_Container", "Conjure Minor Elemental"], ["Target_FindFamiliar", "Find Familiar"], ["Target_AnimateDead", "Animate Dead"], ["Target_PlanarAlly_Container", "Planar Ally"], ["Target_SpiritualWeapon", "Spiritual Weapon"], ["Target_FlamingSphere", "Flaming Sphere"], ["Target_ConjureWoodlandBeings", "Conjure Woodland Being"], ["Target_CreateUndead", "Create Undead"], ["Target_GuardianOfFaith", "Guardian of Faith"]], "attack-cantrips": [["Projectile_FireBolt", "Fire Bolt"], ["Projectile_RayOfFrost", "Ray of Frost"], ["Target_ChillTouch", "Bone Chill"], ["Target_ShockingGrasp", "Shocking Grasp"], ["Projectile_EldritchBlast", "Eldritch Blast"], ["Projectile_AcidSplash", "Acid Splash"], ["Projectile_PoisonSpray", "Poison Spray"], ["Target_SacredFlame", "Sacred Flame"], ["Target_ThornWhip", "Thorn Whip"], ["", "Toll the Dead"], ["Shout_ProduceFlame", "Produce Flame"], ["Target_ViciousMockery", "Vicious Mockery"]], "cleanse": [["Target_LesserRestoration", "Lesser Restoration"], ["Target_GreaterRestoration", "Greater Restoration"], ["Target_RemoveCurse", "Remove Curse"], ["Target_ProtectionFromPoison", "Protection from Poison"], ["Shout_DispelEvilAndGood", "Dispel Evil And Good"]], "fieldcraft": [["Shout_SpeakWithAnimals", "Speak with Animals"], ["Target_SpeakWithDead", "Speak with Dead"], ["Shout_DetectThoughts", "Detect Thoughts"], ["Target_Knock", "Knock"], ["Target_Friends", "Friends"], ["Shout_DisguiseSelf", "Disguise Self"], ["Target_FeignDeath", "Feign Death"], ["Target_ArcaneLock", "Arcane Lock"], ["Target_EnhanceAbility", "Enhance Ability"], ["Target_Light", "Light"], ["Target_DancingLights", "Dancing Lights"], ["Target_MageHand", "Mage Hand"], ["Target_MinorIllusion", "Minor Illusion"], ["Target_Seeming", "Seeming"], ["Shout_Thaumaturgy", "Thaumaturgy"]], "d4-riders": [["Target_Guidance", "Guidance"], ["Target_Resistance", "Resistance"]], "marks": [["Target_Hex", "Hex"], ["Target_HuntersMark", "Hunter's Mark"], ["Target_BestowCurse", "Bestow Curse"], ["Target_Contagion", "Contagion"], ["Projectile_RayOfEnfeeblement", "Ray of Enfeeblement"], ["Target_FaerieFire", "Faerie Fire"], ["Target_HeatMetal", "Heat Metal"], ["Target_PhantasmalForce", "Phantasmal Force"]], "zones": [["Target_CloudOfDaggers", "Cloud of Daggers"], ["Target_Moonbeam", "Moonbeam"], ["Shout_SpiritGuardians", "Spirit Guardians"], ["Target_CallLightning", "Call Lightning"], ["Target_HungerOfHadar", "Hunger of Hadar"], ["Target_InsectPlague", "Insect Plague"]], "protection": [["Shout_Blur", "Blur"], ["Shout_MirrorImage", "Mirror Image"], ["Shout_BladeWard", "Blade Ward"], ["Target_Stoneskin", "Stoneskin"], ["Target_ProtectionFromEnergy", "Protection from Energy"], ["Target_DeathWard", "Death Ward"], ["Target_WardingBond", "Warding Bond"], ["Shout_FireShield", "Fire Shield"], ["Target_GlobeOfInvulnerability", "Globe of Invulnerability"], ["Target_ResilientSphere", "Otiluke's Resilient Sphere"], ["Target_Sanctuary", "Sanctuary"], ["Shout_HellishRebuke", "Hellish Rebuke"], ["Shout_Blink", "Blink"], ["Target_ProtectionFromEvilAndGood", "Protection from Evil and Good"]], "temp-hp": [["Shout_FalseLife", "False Life"], ["Shout_ArmorOfAgathys", "Armour of Agathys"], ["Shout_Aid", "Aid"], ["Target_Heroism", "Heroism"]], "provisions": [["Target_Goodberry", "Goodberry"], ["Shout_HeroesFeast", "Heroes' Feast"], ["Target_CreateDestroyWater", "Create or Destroy Water"]], "bolts": [["Projectile_ChromaticOrb", "Chromatic Orb"], ["Projectile_GuidingBolt", "Guiding Bolt"], ["Projectile_WitchBolt", "Witch Bolt"], ["Projectile_ScorchingRay", "Scorching Ray"], ["Projectile_AcidArrow", "Melf's Acid Arrow"], ["Projectile_IceKnife", "Ice Knife"], ["Projectile_MagicMissile", "Magic Missile"], ["Projectile_RayOfSickness", "Ray of Sickness"], ["Target_Blight", "Blight"], ["Projectile_Disintegrate", "Disintegrate"], ["Target_Harm", "Harm"], ["Target_InflictWounds", "Inflict Wounds"], ["Target_VampiricTouch", "Vampiric Touch"]], "counters": [["Target_Counterspell", "Counterspell"], ["Target_Silence", "Silence"], ["Target_CalmEmotions", "Calm Emotions"], ["Target_Daylight_Container", "Daylight"], ["Shout_SeeInvisibility", "See Invisibility"]], "movers": [["Throw_Telekinesis", "Telekinesis"], ["Zone_GustOfWind", "Gust of Wind"], ["Target_GraspingVine", "Grasping Vine"]]};
 const tip = document.getElementById('tip'), wrap = document.querySelector('.wrap');
 function show(v) {
   document.querySelectorAll('.view').forEach(x => x.classList.toggle('on', x.dataset.v === v));
@@ -2138,7 +2152,7 @@ function anySel() {
 function updateCount() {
   const any = anySel();
   const el = document.getElementById('fcount');
-  if (!any) { el.textContent = ''; saveState(); return; }
+  if (!any) { el.textContent = ''; saveState(); updatePanel(); return; }
   const act = document.querySelector('.view.on svg');
   const litN = act.querySelectorAll('.n.lit').length;
   const parts = [];
@@ -2149,6 +2163,7 @@ function updateCount() {
   if (state.pur.size) parts.push([...state.pur].map(p => PURSHORT[p] || p).join(' + '));
   el.textContent = litN + ' spells lit' + (parts.length ? ' — ' + parts.join(' · ') : '');
   saveState();
+  updatePanel();
 }
 function applyFilter() {
   const any = anySel();
@@ -2182,6 +2197,46 @@ document.getElementById('clear').addEventListener('click', () => {
 });
 document.querySelectorAll('.seg button').forEach(b =>
   b.addEventListener('click', () => show(b.dataset.v)));
+function updatePanel() {
+  const fp = document.getElementById('fpanel');
+  const sel = [...state.fam];
+  if (!sel.length) { fp.style.display = 'none'; return; }
+  let html = '';
+  for (const s of sel) {
+    const mem = FAMMEM[s] || [];
+    html += '<div class="fph">' + (FAMTITLE[s] || s) + '<em>' + mem.length + '</em></div>';
+    for (const m of mem) {
+      const ic = ICONS[m[0]];
+      html += '<div class="fpr" data-n="' + m[1].split('"').join('&quot;') + '">' +
+        (ic ? '<img src="' + ic + '" alt="">' : '<span class="fpn"></span>') +
+        '<span>' + m[1] + '</span></div>';
+    }
+  }
+  fp.innerHTML = html;
+  const svg = document.querySelector('.view.on svg');
+  const wr = wrap.getBoundingClientRect();
+  let sx = 0, cnt = 0;
+  svg.querySelectorAll('.n.lit').forEach(nd => {
+    const r = nd.getBoundingClientRect();
+    sx += r.left + r.width / 2; cnt++;
+  });
+  const mid = cnt ? (sx / cnt - wr.left) : wr.width / 2;
+  if (mid < wr.width / 2) { fp.style.right = '14px'; fp.style.left = 'auto'; }
+  else { fp.style.left = '14px'; fp.style.right = 'auto'; }
+  fp.style.display = 'block';
+}
+document.getElementById('fpanel').addEventListener('mouseover', e => {
+  const row = e.target.closest('.fpr'); if (!row) return;
+  const svg = document.querySelector('.view.on svg');
+  svg.classList.add('hov');
+  svg.querySelectorAll('.n').forEach(nd => nd.classList.toggle('hl', nd.dataset.name === row.dataset.n));
+});
+document.getElementById('fpanel').addEventListener('mouseout', e => {
+  if (!e.target.closest('.fpr')) return;
+  const svg = document.querySelector('.view.on svg');
+  svg.classList.remove('hov');
+  svg.querySelectorAll('.n.hl').forEach(x => x.classList.remove('hl'));
+});
 function saveState() {
   try { localStorage.setItem('constellation-filters', JSON.stringify({cls: [...state.cls], sch: [...state.sch], tier: [...state.tier], fam: [...state.fam], pur: [...state.pur]})); } catch (e) {}
 }
