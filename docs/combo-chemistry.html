@@ -45,13 +45,19 @@ footer{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align:
   border-radius:999px;padding:4px 12px;font:500 11px "IBM Plex Mono",monospace;color:#C9C6D4;
   text-decoration:none;letter-spacing:.05em;align-self:flex-start}
 .fsc:hover{border-color:#D4AF5E;color:#E3C377}
+.segrow{margin-left:auto;display:flex;align-items:center;gap:10px}
+#copybtn.ok{border-color:#5fbf83;color:#7fdfa3}
+#copybtn.err{border-color:#e58a9b;color:#e58a9b}
 </style>
 <header>
   <div class="topline">
     <div><h1>Combo Chemistry</h1>
     <div class="sub">70 spells · 8 hooks · 89 spokes — every combo is
 spell → <b>hook</b> → spell: creators feed the wheel, exploiters cash it</div></div>
-    <a class="fsc" href="http://funsmith.club" target="_blank" rel="noopener" title="Funsmith Club — game design community on Discord"><svg viewBox="0 0 127.14 96.36" width="16" height="12" fill="currentColor" aria-hidden="true"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>funsmith.club</a>
+    <div class="segrow">
+      <a class="fsc" href="http://funsmith.club" target="_blank" rel="noopener" title="Funsmith Club — game design community on Discord"><svg viewBox="0 0 127.14 96.36" width="16" height="12" fill="currentColor" aria-hidden="true"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>funsmith.club</a>
+      <button id="copybtn" class="pchip" title="Copy the current view (with active hook filters) as a PNG image">⧉ copy image</button>
+    </div>
   </div>
   <div class="legend"><button class="pchip lc on" data-h="fuel"><span class="femoji">🛢</span><span class="dot" style="background:#E06A3A"></span>fuel</button><button class="pchip lc on" data-h="wet"><span class="femoji">💧</span><span class="dot" style="background:#5A9BF0"></span>wet</button><button class="pchip lc on" data-h="ice"><span class="femoji">🧊</span><span class="dot" style="background:#7FD4E8"></span>ice</button><button class="pchip lc on" data-h="helpless"><span class="femoji">⛓</span><span class="dot" style="background:#E3C377"></span>helpless</button><button class="pchip lc on" data-h="adv"><span class="femoji">🎯</span><span class="dot" style="background:#D4AF5E"></span>advantage</button><button class="pchip lc on" data-h="mark"><span class="femoji">🏷</span><span class="dot" style="background:#E58A9B"></span>marked</button><button class="pchip lc on" data-h="hazard"><span class="femoji">🕳</span><span class="dot" style="background:#B67AF0"></span>hazard</button><button class="pchip lc on" data-h="cloud"><span class="femoji">💨</span><span class="dot" style="background:#8a879a"></span>cloud</button>
     <button class="pchip" id="allch">all</button></div>
@@ -557,6 +563,39 @@ document.querySelectorAll('.lc').forEach(b => b.addEventListener('click', () => 
 document.getElementById('allch').addEventListener('click', () => {
   HKS.forEach(k => chs.add(k));
   applyCh();
+});
+async function exportPNG() {
+  const clone = svg.cloneNode(true);
+  clone.querySelectorAll('line.e.offch').forEach(l => l.remove());
+  clone.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  const xml = new XMLSerializer().serializeToString(clone);
+  const url = URL.createObjectURL(new Blob([xml], {type: 'image/svg+xml'}));
+  const img = new Image();
+  await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = url; });
+  const c = document.createElement('canvas');
+  c.width = 3000; c.height = 1900;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#101016';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.drawImage(img, 0, 0, c.width, c.height);
+  URL.revokeObjectURL(url);
+  return new Promise(res => c.toBlob(res, 'image/png'));
+}
+const copybtn = document.getElementById('copybtn');
+function flashCopy(cls, text) {
+  copybtn.classList.add(cls);
+  copybtn.textContent = text;
+  setTimeout(() => { copybtn.classList.remove(cls); copybtn.textContent = '⧉ copy image'; }, 2200);
+}
+copybtn.addEventListener('click', async () => {
+  copybtn.textContent = '… rendering';
+  try {
+    const blob = await exportPNG();
+    await navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
+    flashCopy('ok', '✓ copied');
+  } catch (e) {
+    flashCopy('err', '✕ blocked');
+  }
 });
 </script>
 

@@ -303,13 +303,19 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
   border-radius:999px;padding:4px 12px;font:500 11px "IBM Plex Mono",monospace;color:#C9C6D4;
   text-decoration:none;letter-spacing:.05em;align-self:flex-start}}
 .fsc:hover{{border-color:#D4AF5E;color:#E3C377}}
+.segrow{{margin-left:auto;display:flex;align-items:center;gap:10px}}
+#copybtn.ok{{border-color:#5fbf83;color:#7fdfa3}}
+#copybtn.err{{border-color:#e58a9b;color:#e58a9b}}
 </style>
 <header>
   <div class="topline">
     <div><h1>Combo Chemistry</h1>
     <div class="sub">{len(NODES)} spells · {len(HOOKS)} hooks · {len(EDGES)} spokes — every combo is
 spell → <b>hook</b> → spell: creators feed the wheel, exploiters cash it</div></div>
-    {FSC}
+    <div class="segrow">
+      {FSC}
+      <button id="copybtn" class="pchip" title="Copy the current view (with active hook filters) as a PNG image">⧉ copy image</button>
+    </div>
   </div>
   <div class="legend">{legend}
     <button class="pchip" id="allch">all</button></div>
@@ -403,6 +409,39 @@ document.querySelectorAll('.lc').forEach(b => b.addEventListener('click', () => 
 document.getElementById('allch').addEventListener('click', () => {{
   HKS.forEach(k => chs.add(k));
   applyCh();
+}});
+async function exportPNG() {{
+  const clone = svg.cloneNode(true);
+  clone.querySelectorAll('line.e.offch').forEach(l => l.remove());
+  clone.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  const xml = new XMLSerializer().serializeToString(clone);
+  const url = URL.createObjectURL(new Blob([xml], {{type: 'image/svg+xml'}}));
+  const img = new Image();
+  await new Promise((res, rej) => {{ img.onload = res; img.onerror = rej; img.src = url; }});
+  const c = document.createElement('canvas');
+  c.width = 3000; c.height = 1900;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#101016';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.drawImage(img, 0, 0, c.width, c.height);
+  URL.revokeObjectURL(url);
+  return new Promise(res => c.toBlob(res, 'image/png'));
+}}
+const copybtn = document.getElementById('copybtn');
+function flashCopy(cls, text) {{
+  copybtn.classList.add(cls);
+  copybtn.textContent = text;
+  setTimeout(() => {{ copybtn.classList.remove(cls); copybtn.textContent = '⧉ copy image'; }}, 2200);
+}}
+copybtn.addEventListener('click', async () => {{
+  copybtn.textContent = '… rendering';
+  try {{
+    const blob = await exportPNG();
+    await navigator.clipboard.write([new ClipboardItem({{'image/png': blob}})]);
+    flashCopy('ok', '✓ copied');
+  }} catch (e) {{
+    flashCopy('err', '✕ blocked');
+  }}
 }});
 </script>
 """
