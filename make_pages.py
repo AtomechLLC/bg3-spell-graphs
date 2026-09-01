@@ -14,6 +14,7 @@ PAGES = [
     ("magicka_map.html", "magicka-chemistry.html", "🪄"),
     ("magicka_tree.html", "magicka-casting-tree.html", "🌳"),
     ("magicka_hooks.html", "magicka-hooks.html", "🪝"),
+    ("magicka.html", "magicka.html", "🧙"),
 ]
 os.makedirs("docs", exist_ok=True)
 
@@ -170,22 +171,12 @@ divergences that reveal each medium's design priorities.</p></a>
 <div class="meta">BG3 · 70 spells · 8 hooks · 89 spokes</div>
 <p>The constellation wired by what <em>plays together</em>: a central wheel of hooks — fuel, wet,
 helpless, marked — with creators feeding each state and exploiters cashing it.</p></a>
-<a class="card" href="magicka-chemistry.html" style="--ac:#9B7BE8;--face:Cinzel">
-<span class="em">🪄</span><h2>Magicka Chemistry</h2>
-<div class="meta">Magicka (2011) · 10 elements · 29 magicks</div>
-<p>The purest combo system ever shipped, on one wheel: opposites cancel, water boils and freezes,
-statuses chain — and every magick recipe drawn as its casting sequence.</p></a>
-<a class="card" href="magicka-casting-tree.html" style="--ac:#9B7BE8;--face:Cinzel">
-<span class="em">🌳</span><h2>Magicka Casting Tree</h2>
-<div class="meta">Magicka (2011) · 29 recipes + 10 element stacks · 105 steps</div>
-<p>The recipes traversed in casting order, radially — magicks share trunks with each other and with
-the plain stacks. Includes a live sequence builder: type Q-W-E-R-A-S-D-F and watch the queue
-resolve, cancel, combine, and light its path.</p></a>
-<a class="card" href="magicka-hooks.html" style="--ac:#9B7BE8;--face:Cinzel">
-<span class="em">🪝</span><h2>Magicka Hooks</h2>
-<div class="meta">Magicka (2011) · 6 states · 21 creators &amp; exploiters</div>
-<p>The hook-economy lens on the same game: WET, FROZEN, BURNING, GREASE, BARRIER, and the beam
-clash — with the elements and magicks that feed each state and the ones that cash it.</p></a>
+<a class="card" href="magicka.html" style="--ac:#9B7BE8;--face:Cinzel">
+<span class="em">🧙</span><h2>Magicka Lenses</h2>
+<div class="meta">Magicka (2011) · 3 lenses · 10 elements · 29 magicks · 6 states</div>
+<p>The purest combo system ever shipped, on one page: the element wheel (opposites, mixes,
+statuses), the casting tree with its live sequence builder, and the hook economy — swap lenses
+without a reload, and a queued sequence survives the trip.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data
