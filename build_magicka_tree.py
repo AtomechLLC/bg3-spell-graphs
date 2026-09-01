@@ -424,7 +424,7 @@ KEYMAP_JS = {"q": "water", "w": "life", "e": "shield", "r": "cold",
 
 BUILDER_CSS = """
 <style>
-#builder{width:100%;max-width:1500px;margin:0 0 12px;background:#15131C;border:1px solid #2A2734;
+#builder{width:100%;max-width:1500px;margin:12px 0 0;background:#15131C;border:1px solid #2A2734;
   border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
 .brow1{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 #slots{display:flex;gap:7px}
@@ -600,7 +600,7 @@ refresh();
 </script>
 """
 
-HTML = HTML.replace('<div class="wrap">', BUILDER_CSS + '<div class="wrap">')
+HTML = HTML.replace('<footer>', BUILDER_CSS + '<footer>')
 HTML += (BUILDER_JS
          .replace('__TRIE__', json.dumps(TRIE_JS))
          .replace('__EINFO__', json.dumps(EINFO_JS))
