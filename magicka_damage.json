@@ -1,0 +1,46 @@
+{
+ "scaling": "amount = base * sqrt(element share of queue)",
+ "forward": {
+  "earth": 150,
+  "ice": 180,
+  "iceearth_pair": 275,
+  "lightning": 250,
+  "life": -180,
+  "arcane": 225,
+  "fire": 60,
+  "cold": 25,
+  "steam": 280,
+  "water": 0
+ },
+ "water_push_strength": 70,
+ "self": {
+  "fire": 60,
+  "earth": 100,
+  "arcane": 200,
+  "ice": 120,
+  "steam": 80,
+  "lightning": 80
+ },
+ "barrier": {
+  "lightning": 130,
+  "ice": 275,
+  "life": -600,
+  "arcane": 225,
+  "steam": 225,
+  "fire": 225
+ },
+ "status": {
+  "burn_damage": 60,
+  "burn_tick_s": 0.2,
+  "life_status": -80
+ },
+ "frozen": {
+  "bonus_armor": 50,
+  "physical_shatter_multiplier": 10
+ },
+ "shield_hp": 500,
+ "barrier_hp": 500,
+ "elemental_barrier_hp": 100,
+ "push_base": 50,
+ "push_var": 500
+}

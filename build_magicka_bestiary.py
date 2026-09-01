@@ -105,12 +105,26 @@ footer{{color:#8a879a;font-size:11px;margin-top:12px;max-width:1180px;text-align
 <header>
   <div class="topline">
     <div><h1>Magicka Bestiary</h1>
-    <div class="sub">{len(rows)} enemies · real combat values decompressed from the install's
-CharacterTemplate data — {n_res} with resistance tables, {n_cast} with scripted casts</div></div>
+    <div class="sub">real combat values from the install — the spell damage table decompiled from
+Magicka.Defines (damage = base × √share of queue), then {len(rows)} enemies with
+{n_res} resistance tables and {n_cast} scripted AI casts</div></div>
     <div class="segrow">{FSC}</div>
   </div>
   <input id="q" type="search" placeholder="filter {len(rows)} enemies…">
 </header>
+<div class="tw" style="margin-bottom:14px"><table>
+<tr><th>Element</th><th>Forward cast</th><th>Self cast</th><th>Shield mine/ward</th><th>Notes (all from Magicka.Defines)</th></tr>
+<tr><td class="nm" style="color:#9B7BE8">Lightning A</td><td class="hp">250</td><td class="hp">80</td><td class="hp">130</td><td>doubled on WET targets</td></tr>
+<tr><td class="nm" style="color:#C8CBD9">Steam QF</td><td class="hp">280</td><td class="hp">80</td><td class="hp">225</td><td>the hardest forward base in the game — and it wets</td></tr>
+<tr><td class="nm" style="color:#D9463E">Arcane S</td><td class="hp">225</td><td class="hp">200</td><td class="hp">225</td><td>beam; steady per tick</td></tr>
+<tr><td class="nm" style="color:#7FC4E8">Ice QR</td><td class="hp">180</td><td class="hp">120</td><td class="hp">275</td><td>with Earth in the mix the pair jumps to 275</td></tr>
+<tr><td class="nm" style="color:#8C6844">Earth D</td><td class="hp">150</td><td class="hp">100</td><td class="hp">—</td><td>physical — ×10 against FROZEN targets</td></tr>
+<tr><td class="nm" style="color:#E87A2D">Fire F</td><td class="hp">60</td><td class="hp">60</td><td class="hp">225</td><td>+ BURNING: 60 status damage on a 0.2s tick</td></tr>
+<tr><td class="nm" style="color:#A8DCE8">Cold R</td><td class="hp">25</td><td class="hp">—</td><td class="hp">—</td><td>the damage is a decoy — chill and FREEZE are the product</td></tr>
+<tr><td class="nm" style="color:#3D7BD9">Water Q</td><td class="hp">0</td><td class="hp">—</td><td class="hp">—</td><td>push strength 70 · applies WET</td></tr>
+<tr><td class="nm" style="color:#4FC46F">Life W</td><td class="hp">−180</td><td class="hp">−180</td><td class="hp">−600</td><td>negative = healing; the Life ward is a 600-point fountain</td></tr>
+<tr><td class="nm" style="color:#E8D44D">Shield E</td><td class="hp">—</td><td class="hp">—</td><td class="hp">—</td><td>barrier HP 500 (elemental walls 100)</td></tr>
+</table></div>
 <div class="tw"><table id="t">
 <tr><th data-k="0">Enemy</th><th data-k="1">HP</th><th>Resistances (damage ×)</th>
 <th>AI casts (hover for trigger)</th></tr>

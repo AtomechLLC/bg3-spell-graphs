@@ -1442,6 +1442,8 @@ function formOf(q) {
   if (s.has('arcane') || s.has('life')) return 'casts as: a beam — the other elements ride the beam';
   return 'casts as: a spray / arc from the staff';
 }
+const DMGF = {water: 0, life: -180, shield: 0, cold: 25, lightning: 250,
+              arcane: 225, earth: 150, fire: 60, steam: 280, ice: 180};
 let fpClosed = false;
 const fpop = document.getElementById('fpop');
 function updateFpop(w) {
@@ -1450,9 +1452,19 @@ function updateFpop(w) {
   if (!freeform || fpClosed) { fpop.hidden = true; return; }
   const counts = {};
   Q.forEach(e => { counts[e] = (counts[e] || 0) + 1; });
+  let dmg = 0, heal = 0;
+  for (const e of Object.keys(counts)) {
+    const c = DMGF[e] * Math.sqrt(counts[e] / Q.length);
+    if (c >= 0) dmg += c; else heal -= c;
+  }
+  let est = '';
+  if (dmg > 0) est += ' &amp;middot; ~' + Math.round(dmg) + ' dmg';
+  if (heal > 0) est += ' &amp;middot; ~' + Math.round(heal) + ' healing';
+  if (counts.water) est += ' &amp;middot; push ' + Math.round(70 * Math.sqrt(counts.water / Q.length));
   let html = '<span class=&quot;fx&quot; title=&quot;dismiss until the queue clears&quot;>&amp;#10005;</span>' +
-    '<h3>FREEFORM SPELL &amp;middot; ' + Q.length + '/5 slots</h3>' +
-    '<div class=&quot;fform&quot;>' + formOf(Q) + ' &amp;middot; power scales with every duplicate</div>';
+    '<h3>FREEFORM SPELL &amp;middot; ' + Q.length + '/5 slots' + est + '</h3>' +
+    '<div class=&quot;fform&quot;>' + formOf(Q) +
+    ' &amp;middot; damage = base &amp;times; &amp;radic;share (decompiled from Magicka.Defines)</div>';
   for (const e of Object.keys(counts)) {
     const n = counts[e];
     const info = EFFECT_INFO[e];
@@ -2087,12 +2099,26 @@ footer{color:#8a879a;font-size:11px;margin-top:12px;max-width:1180px;text-align:
 <header>
   <div class=&quot;topline&quot;>
     <div><h1>Magicka Bestiary</h1>
-    <div class=&quot;sub&quot;>329 enemies · real combat values decompressed from the install's
-CharacterTemplate data — 180 with resistance tables, 68 with scripted casts</div></div>
+    <div class=&quot;sub&quot;>real combat values from the install — the spell damage table decompiled from
+Magicka.Defines (damage = base × √share of queue), then 329 enemies with
+180 resistance tables and 68 scripted AI casts</div></div>
     <div class=&quot;segrow&quot;><a class=&quot;fsc&quot; href=&quot;http://funsmith.club&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; title=&quot;Funsmith Club — game design community on Discord&quot;><svg viewBox=&quot;0 0 127.14 96.36&quot; width=&quot;16&quot; height=&quot;12&quot; fill=&quot;currentColor&quot; aria-hidden=&quot;true&quot;><path d=&quot;M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z&quot;/></svg>funsmith.club</a></div>
   </div>
   <input id=&quot;q&quot; type=&quot;search&quot; placeholder=&quot;filter 329 enemies…&quot;>
 </header>
+<div class=&quot;tw&quot; style=&quot;margin-bottom:14px&quot;><table>
+<tr><th>Element</th><th>Forward cast</th><th>Self cast</th><th>Shield mine/ward</th><th>Notes (all from Magicka.Defines)</th></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#9B7BE8&quot;>Lightning A</td><td class=&quot;hp&quot;>250</td><td class=&quot;hp&quot;>80</td><td class=&quot;hp&quot;>130</td><td>doubled on WET targets</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#C8CBD9&quot;>Steam QF</td><td class=&quot;hp&quot;>280</td><td class=&quot;hp&quot;>80</td><td class=&quot;hp&quot;>225</td><td>the hardest forward base in the game — and it wets</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#D9463E&quot;>Arcane S</td><td class=&quot;hp&quot;>225</td><td class=&quot;hp&quot;>200</td><td class=&quot;hp&quot;>225</td><td>beam; steady per tick</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#7FC4E8&quot;>Ice QR</td><td class=&quot;hp&quot;>180</td><td class=&quot;hp&quot;>120</td><td class=&quot;hp&quot;>275</td><td>with Earth in the mix the pair jumps to 275</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#8C6844&quot;>Earth D</td><td class=&quot;hp&quot;>150</td><td class=&quot;hp&quot;>100</td><td class=&quot;hp&quot;>—</td><td>physical — ×10 against FROZEN targets</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#E87A2D&quot;>Fire F</td><td class=&quot;hp&quot;>60</td><td class=&quot;hp&quot;>60</td><td class=&quot;hp&quot;>225</td><td>+ BURNING: 60 status damage on a 0.2s tick</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#A8DCE8&quot;>Cold R</td><td class=&quot;hp&quot;>25</td><td class=&quot;hp&quot;>—</td><td class=&quot;hp&quot;>—</td><td>the damage is a decoy — chill and FREEZE are the product</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#3D7BD9&quot;>Water Q</td><td class=&quot;hp&quot;>0</td><td class=&quot;hp&quot;>—</td><td class=&quot;hp&quot;>—</td><td>push strength 70 · applies WET</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#4FC46F&quot;>Life W</td><td class=&quot;hp&quot;>−180</td><td class=&quot;hp&quot;>−180</td><td class=&quot;hp&quot;>−600</td><td>negative = healing; the Life ward is a 600-point fountain</td></tr>
+<tr><td class=&quot;nm&quot; style=&quot;color:#E8D44D&quot;>Shield E</td><td class=&quot;hp&quot;>—</td><td class=&quot;hp&quot;>—</td><td class=&quot;hp&quot;>—</td><td>barrier HP 500 (elemental walls 100)</td></tr>
+</table></div>
 <div class=&quot;tw&quot;><table id=&quot;t&quot;>
 <tr><th data-k=&quot;0&quot;>Enemy</th><th data-k=&quot;1&quot;>HP</th><th>Resistances (damage ×)</th>
 <th>AI casts (hover for trigger)</th></tr>
