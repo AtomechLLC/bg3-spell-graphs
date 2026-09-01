@@ -105,44 +105,119 @@ sort_rec(0)
 print(f"{len(MAGICKS)} recipes + {len(STACKS)} element stacks -> {len(NODES) - 1} trie nodes "
       f"(vs {sum(len(m[1]) for m in MAGICKS) + sum(s[1] for s in STACKS)} raw steps: shared openings merge)")
 
-# leaf slots: terminals count as leaves for spacing when childless
-leaves = [n["id"] for n in NODES[1:] if not n["children"]]
+# sector layout: every element owns a fixed compass ray (the wheel's ring
+# order - Life north, then clockwise); its pure stack runs straight out
+# along the ray, and each element's magick branches fan inside its sector.
+# two side-fans of five rays with north/south deadzones; the biggest trees
+# (cold, steam, life, arcane) sit at fan edges and borrow deadzone space
+SECT = {"cold": -0.98, "ice": -0.49, "water": 0.0, "fire": 0.49, "steam": 0.98,
+        "life": -2.16, "shield": -2.65, "earth": math.pi, "lightning": 2.65, "arcane": 2.16}
+HALFS = {"cold": (0.45, 0.21), "steam": (0.21, 0.45),
+         "life": (0.21, 0.45), "arcane": (0.45, 0.21)}
 ANG = {}
-for i, nid in enumerate(leaves):
-    ANG[nid] = 2 * math.pi * i / len(leaves) - math.pi / 2
+PURE = set()
+
+def mark_pure(nid, eid):
+    for c in NODES[nid]["children"]:
+        if NODES[c]["elem"] == eid:
+            PURE.add(c)
+            mark_pure(c, eid)
+
+def leaves_of(nid):
+    n = NODES[nid]
+    if not n["children"]:
+        return [nid]
+    out = []
+    for c in n["children"]:
+        out += leaves_of(c)
+    return out
+
+GUARD = 0.105
+for rc in NODES[0]["children"]:
+    eid = NODES[rc]["elem"]
+    c = SECT[eid]
+    hl, hr = HALFS.get(eid, (0.21, 0.21))
+    PURE.add(rc)
+    mark_pure(rc, eid)
+    lv = leaves_of(rc)
+    npl = [l for l in lv if l not in PURE]
+    k = len(npl)
+    for i, l in enumerate(npl):
+        t = (i + 0.5) / k
+        if t < 0.5:
+            ANG[l] = c - GUARD - (0.5 - t) * 2 * (hl - GUARD)
+        else:
+            ANG[l] = c + GUARD + (t - 0.5) * 2 * (hr - GUARD)
+for nid in PURE:
+    eid = NODES[nid]["elem"]
+    ANG[nid] = SECT[eid]
+
 def set_ang(nid):
     n = NODES[nid]
+    a = [set_ang(c) for c in n["children"]]
     if nid in ANG:
         return ANG[nid]
-    a = [set_ang(c) for c in n["children"]]
-    # circular mean is safe here: children of one parent stay in one sector
     ANG[nid] = math.atan2(sum(math.sin(x) for x in a), sum(math.cos(x) for x in a))
     return ANG[nid]
 set_ang(0)
 
-RX = [0, 120, 216, 312, 408, 504]
+RX = [0, 120, 240, 336, 424, 504]
+ROFF = {}
 
-# per-ring minimum angular separation so nodes never overlap
+# per-ring separation, pin-aware: pure-run nodes never leave their ray
 for d in range(1, 6):
     ring = sorted((n["id"] for n in NODES[1:] if n["depth"] == d), key=lambda i: ANG[i])
     if len(ring) < 2:
         continue
-    mingap = 40 / (RX[d] * 0.88)
+    mingap = 34 / (RX[d] * 0.82)
+    pins = [i for i, nid in enumerate(ring) if nid in PURE]
+    if not pins:
+        base = ANG[ring[0]]
+        xs = [(ANG[i] - base) % (2 * math.pi) for i in ring]
+        for i in range(1, len(xs)):
+            xs[i] = max(xs[i], xs[i - 1] + mingap)
+        span = 2 * math.pi - mingap
+        if xs[-1] > span:
+            xs = [x * span / xs[-1] for x in xs]
+        for i, nid in enumerate(ring):
+            ANG[nid] = base + xs[i]
+        continue
+    ring = ring[pins[0]:] + ring[:pins[0]]
     base = ANG[ring[0]]
-    xs = [(ANG[i] - base) % (2 * math.pi) for i in ring]
-    for i in range(1, len(xs)):
-        xs[i] = max(xs[i], xs[i - 1] + mingap)
-    span = 2 * math.pi - mingap
-    if xs[-1] > span:
-        xs = [x * span / xs[-1] for x in xs]
-    for i, nid in enumerate(ring):
-        ANG[nid] = base + xs[i]
+    xs = [(ANG[nid] - base) % (2 * math.pi) for nid in ring]
+    xs[0] = 0.0
+    pin_idx = [i for i, nid in enumerate(ring) if nid in PURE] + [len(ring)]
+    xs.append(2 * math.pi)
+    for a_i, b_i in zip(pin_idx, pin_idx[1:]):
+        m = b_i - a_i - 1
+        if m == 0:
+            continue
+        left, right = xs[a_i], xs[b_i]
+        prev = left
+        for j in range(a_i + 1, b_i):
+            xs[j] = max(xs[j], prev + mingap)
+            prev = xs[j]
+        nxt = right
+        for j in range(b_i - 1, a_i, -1):
+            xs[j] = min(xs[j], nxt - mingap)
+            nxt = xs[j]
+        if any(xs[j] < xs[j - 1] + mingap - 1e-9 for j in range(a_i + 1, b_i + 1)):
+            for step, j in enumerate(range(a_i + 1, b_i), 1):
+                xs[j] = left + (right - left) * step / (m + 1)
+            if (right - left) / (m + 1) * RX[d] * 0.82 < 30:
+                for step, j in enumerate(range(a_i + 1, b_i)):
+                    ROFF[ring[j % len(ring)]] = 20 if step % 2 else -20
+    for j, nid in enumerate(ring):
+        if nid not in PURE:
+            ANG[nid] = base + xs[j]
+
 def pos(nid):
     n = NODES[nid]
     if n["depth"] == 0:
         return CX, CY
     a = ANG[nid]
-    return CX + RX[n["depth"]] * math.cos(a), CY + RX[n["depth"]] * 0.80 * math.sin(a)
+    r = RX[n["depth"]] + ROFF.get(nid, 0)
+    return CX + r * math.cos(a), CY + r * 0.80 * math.sin(a)
 
 def desc(nid):
     out = [nid]
