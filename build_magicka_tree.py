@@ -121,6 +121,22 @@ def set_ang(nid):
 set_ang(0)
 
 RX = [0, 120, 216, 312, 408, 504]
+
+# per-ring minimum angular separation so nodes never overlap
+for d in range(1, 6):
+    ring = sorted((n["id"] for n in NODES[1:] if n["depth"] == d), key=lambda i: ANG[i])
+    if len(ring) < 2:
+        continue
+    mingap = 40 / (RX[d] * 0.88)
+    base = ANG[ring[0]]
+    xs = [(ANG[i] - base) % (2 * math.pi) for i in ring]
+    for i in range(1, len(xs)):
+        xs[i] = max(xs[i], xs[i - 1] + mingap)
+    span = 2 * math.pi - mingap
+    if xs[-1] > span:
+        xs = [x * span / xs[-1] for x in xs]
+    for i, nid in enumerate(ring):
+        ANG[nid] = base + xs[i]
 def pos(nid):
     n = NODES[nid]
     if n["depth"] == 0:
@@ -191,6 +207,16 @@ for n in NODES[1:]:
               f'font-weight="600">{E[n["elem"]]["key"]}</text>')
     sv.append('</g>')
 
+placed = []
+def label_box(lx, ly, anchor, text):
+    w = 7.2 * len(text)
+    x0 = lx - (w if anchor == "end" else w / 2 if anchor == "middle" else 0)
+    return (x0, ly - 12, x0 + w, ly + 3)
+
+def collides(box):
+    return any(box[0] < p[2] and p[0] < box[2] and box[1] < p[3] and p[1] < box[3]
+               for p in placed)
+
 for n in NODES[1:]:
     if not n["magick"]:
         continue
@@ -205,6 +231,12 @@ for n in NODES[1:]:
         anchor = "start" if ca > 0.30 else ("end" if ca < -0.30 else "middle")
         if anchor == "middle":
             ly = y + (30 if math.sin(a) > 0 else -24)
+    for _try in range(4):                 # push outward along the ray until clear
+        if not collides(label_box(lx, ly, anchor, n["magick"][0])):
+            break
+        lx += 16 * ca
+        ly += 15 * (1 if math.sin(a) >= 0 else -1) * abs(math.sin(a)) + (14 if abs(ca) < 0.3 and math.sin(a) >= 0 else -14 if abs(ca) < 0.3 else 0)
+    placed.append(label_box(lx, ly, anchor, n["magick"][0]))
     lcol = E[n["elem"]]["color"] if n["stack"] else "#C9C6D4"
     sv.append(f'<text x="{lx:.0f}" y="{ly:.0f}" text-anchor="{anchor}" fill="{lcol}" '
               f'font-family="IBM Plex Mono,monospace" font-size="12"'
