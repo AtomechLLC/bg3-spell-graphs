@@ -438,6 +438,10 @@ copybtn.addEventListener('click', async () => {{
 }});
 </script>
 """
+MTABS = '<style>\n.mtabs{display:flex;border:1px solid #3a3647;border-radius:7px;overflow:hidden;align-self:flex-start}\n.mtabs a{color:#A7A4B3;font:500 11px "IBM Plex Mono",monospace;letter-spacing:.08em;\n  padding:7px 14px;text-decoration:none;cursor:pointer}\n.mtabs a + a{border-left:1px solid #3a3647}\n.mtabs a.on{background:#D4AF5E1f;color:#E3C377;cursor:default}\n.mtabs a:not(.on):hover{color:#E8E6EF}\n.mtabs a:focus-visible{outline:2px solid #E3C377;outline-offset:-2px}\n</style>\n<div class="mtabs" role="navigation" aria-label="Magicka views">\n  <a data-p="wheel">ELEMENT WHEEL</a>\n  <a data-p="tree">CASTING TREE</a>\n  <a data-p="hooks">HOOKS</a>\n</div>\n'
+MTABS_JS = "\n<script>\n(function () {\n  var CUR = 'wheel';\n  var ART = {wheel: 'https://claude.ai/code/artifact/7d834068-95da-4943-b7d7-36d02a28f3f5',\n             tree: 'https://claude.ai/code/artifact/d453af2e-2023-45f0-917e-07a3c016d68a',\n             hooks: 'https://claude.ai/code/artifact/2b477318-74aa-4c89-92fd-5b8371d0da51'};\n  var DOCS = {wheel: 'magicka-chemistry.html', tree: 'magicka-casting-tree.html', hooks: 'magicka-hooks.html'};\n  var LOCAL = {wheel: 'magicka_map.html', tree: 'magicka_tree.html', hooks: 'magicka_hooks.html'};\n  var path = location.pathname.split('/').pop();\n  var map = location.hostname.indexOf('claude') !== -1 ? ART\n          : (path.indexOf('_') !== -1 ? LOCAL : DOCS);\n  document.querySelectorAll('.mtabs a').forEach(function (a) {\n    var p = a.getAttribute('data-p');\n    if (p === CUR) { a.classList.add('on'); return; }\n    a.href = map[p];\n  });\n})();\n</script>\n"
+HTML = HTML.replace('<div class="segrow">', MTABS + '<div class="segrow">', 1)
+HTML += MTABS_JS
 with open("magicka_map.html", "w", encoding="utf-8") as f:
     f.write(HTML)
 print(f"magicka_map.html: {os.path.getsize('magicka_map.html') / 1024:.0f} KB")
