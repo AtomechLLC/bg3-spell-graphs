@@ -643,6 +643,107 @@ All **{len(DEDUP)} distinct class-list spells** in Baldur's Gate 3, with family 
 Back to [[overview|Overview]] · [[findings|The Identical-Spell List]]
 """)
 
+# ---------------------------------------------------------------- skeleton page
+from collections import Counter as _Counter
+_sk_chassis = _Counter(r["stype"] for r in POP if r.get("stype"))
+_sk_rolls = _Counter()
+for r in POP:
+    a = (r.get("attack_save") or "").strip()
+    if not a:
+        _sk_rolls["none (auto-hit or pure effect)"] += 1
+    elif "Attack" in a:
+        _sk_rolls[a.split(";")[0]] += 1
+    else:
+        _sk_rolls[a.split(";")[0] + " save"] += 1
+_sk_dtypes = _Counter(d for r in POP for d in [(r.get("damage_type") or "").strip()] if d)
+_sk_costs = _Counter()
+for r in POP:
+    uc = r.get("use_costs") or ""
+    act = ("bonus action" if "BonusAction" in uc else
+           "reaction" if "Reaction" in uc else "action" if "ActionPoint" in uc else "free")
+    slot = "slot" if "SpellSlot" in uc else "no slot"
+    _sk_costs[f"{act} · {slot}"] += 1
+_sk_surf = _Counter()
+for r in POP:
+    _blob = " ".join(str(r.get(k) or "") for k in ("properties", "spell_success", "status_apply"))
+    for m in re.findall(r"CreateSurface\(\s*[\d.]*\s*,?\s*[\d.]*\s*,?\s*([A-Za-z]+)", _blob):
+        _sk_surf[m] += 1
+
+def _sk_tab(counter, head, top=None):
+    items = counter.most_common(top)
+    lines = [f"| {head} | Spells |", "|---|---|"]
+    lines += [f"| {k} | {v} |" for k, v in items]
+    return chr(10).join(lines)
+
+SK_MD = f"""# 🧩 The Parameterized Skeleton
+
+Every one of the {len(DEDUP)} spells in this codex compiles from **one parameterized definition** —
+the skeleton below. A "spell" is a point in this parameter space; a [[overview|family]] is a
+neighbourhood of points that differ in one or two slots; a [[containers|container]] is a spell whose
+menu axis is exposed to the player.
+
+```
+Spell :=
+  Chassis    ( Target | Projectile | Shout | Zone | Wall | Teleportation | Throw )
+  x Cost     ( action | bonus | reaction | free ,  slot level 0-6 ,  concentration? )
+  x Delivery ( range , area shape , legal targets )
+  x Gate     ( AttackRoll(melee|ranged, weapon|spell) | Save(ability, negate|half) | Auto )
+  x Payload  ( Damage(dice, type)* + ApplyStatus(name, duration, save)* +
+               CreateSurface(type, radius)? + Summon(stats)? + RemoveStatus(list)? )
+  x Scaling  ( +dice per slot | +targets per slot | children per menu choice )
+  x Rider    ( on-hit condition | on-move detonation | proc per hit )
+```
+
+The rest of this page is the skeleton's actual value inventory, mined from the game data.
+
+## Chassis — Larian's own delivery taxonomy
+
+The engine's spell-type prefix *is* a delivery chassis. Two chassis carry
+{100 * (_sk_chassis["Target"] + _sk_chassis["Shout"]) // sum(_sk_chassis.values())}% of the entire game.
+
+{_sk_tab(_sk_chassis, "Chassis (`stype` in the data)")}
+
+## Gate — how the effect is allowed to land
+
+{_sk_tab(_sk_rolls, "Gate", 10)}
+
+## Cost signature
+
+{_sk_tab(_sk_costs, "Action x slot")}
+
+## Damage types in the payload slot
+
+{_sk_tab(_sk_dtypes, "Damage type", 14)}
+
+## Surfaces the payload can print
+
+{_sk_tab(_sk_surf, "Surface")}
+
+## Five spells, written as parameter tuples
+
+| Spell | Chassis | Cost | Gate | Payload | Scaling |
+|---|---|---|---|---|---|
+| **Fireball** | Projectile | action · slot 3 | Dex save, half | 8d6 Fire + ignite surfaces | +1d6/slot |
+| **Hold Person** | Target | action · slot 2 · conc. | Wis save, negate | ApplyStatus(PARALYZED) | +1 target/slot |
+| **Searing Smite** | Target (on-hit) | bonus · slot 1 | weapon attack | weapon + 1d6 Fire + ApplyStatus(BURNING) | +1d6/slot |
+| **Misty Step** | Teleportation | bonus · slot 2 | auto | relocate self | — |
+| **Cloud of Daggers** | Target (zone) | action · slot 2 · conc. | auto (enter/turn) | 4d4 Slashing per tick | +2d4/slot |
+
+## The design read
+
+Larian's data model makes the SRD's implicit skeleton *explicit*: chassis is a field, the gate is a
+field, the payload is a call list. That is why the [[methodology|signature similarity]] works — and
+why the families are so tight: **the game was compiled from this skeleton, so reading spells back
+into it is lossless.** A designer building a new spell system could start from this table of slots
+and the value inventories above; the three-game comparison suggests every RPG fills the same slots
+with different vocabularies.
+
+See it interactive: the Combo Chemistry map draws the *edges between* payload outputs (surfaces,
+statuses) and the gates that consume them.
+"""
+page("skeleton", "The Parameterized Skeleton", "Start", SK_MD, icon="🧩")
+
+
 # ---------------------------------------------------------------- backlinks, md out
 WIKILINK = re.compile(r"\[\[([a-zA-Z0-9\-/]+)(?:\|([^\]]+))?\]\]")
 links_to = defaultdict(set)
@@ -731,7 +832,7 @@ def md_to_html(md):
 PAGES_HTML = {slug: md_to_html(p["md"]) for slug, p in PAGES.items()}
 
 NAV = [
-    ("Start", ["overview", "findings", "containers", "spells", "methodology"]),
+    ("Start", ["overview", "findings", "containers", "spells", "skeleton", "methodology"]),
     ("Families · Clones", [f"families/{f['slug']}" for f in F if f["tier"] == CLONE]),
     ("Families · Templates", [f"families/{f['slug']}" for f in F if f["tier"] == TEMPLATE]),
     ("Families · Engines", [f"families/{f['slug']}" for f in F if f["tier"] == ENGINE]),

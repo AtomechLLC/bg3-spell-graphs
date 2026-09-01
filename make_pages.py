@@ -10,6 +10,7 @@ PAGES = [
     ("cluster_map.html", "constellations.html", "🌌"),
     ("wow_map.html", "azeroth-constellations.html", "🌠"),
     ("purpose_atlas.html", "purpose-atlas.html", "🎯"),
+    ("combo_map.html", "combo-chemistry.html", "🧪"),
 ]
 os.makedirs("docs", exist_ok=True)
 
@@ -156,6 +157,11 @@ same layouts, same overlap pickers, same hotkeys.</p></a>
 <div class="meta">All three games · 953 abilities · 19 purposes</div>
 <p>What every spell is <em>for</em> — one functional taxonomy across all three games, and the
 divergences that reveal each medium's design priorities.</p></a>
+<a class="card" href="combo-chemistry.html" style="--ac:var(--bg3);--face:Cinzel">
+<span class="em">🧪</span><h2>Combo Chemistry</h2>
+<div class="meta">BG3 · 70 spells · 184 interlocks</div>
+<p>The same constellation wired by what <em>plays together</em>: ignition, conduction, deep-freeze,
+crit set-ups, mark procs, and the shove-into-hazard economy.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data

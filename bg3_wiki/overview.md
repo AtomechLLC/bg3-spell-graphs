@@ -52,4 +52,4 @@ And the deeper measure the WoW study introduced — **mechanical twins**: the sh
 - **Every spell, tagged:** [[spells|All Spells, Tagged]] · **How:** [[methodology|Methodology]]
 
 ---
-*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/monk|Monk]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[containers|Container Spells]] · [[spells|All Spells, Tagged]]*
+*Linked from: [[classes/bard|Bard]] · [[classes/cleric|Cleric]] · [[classes/druid|Druid]] · [[classes/fighter|Fighter]] · [[classes/monk|Monk]] · [[classes/paladin|Paladin]] · [[classes/ranger|Ranger]] · [[classes/rogue|Rogue]] · [[classes/sorcerer|Sorcerer]] · [[classes/warlock|Warlock]] · [[classes/wizard|Wizard]] · [[containers|Container Spells]] · [[skeleton|The Parameterized Skeleton]] · [[spells|All Spells, Tagged]]*
