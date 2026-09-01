@@ -716,6 +716,9 @@ svg.q .ml{opacity:.13}
 svg.q .ml.ql{opacity:1}
 svg.q line.e{opacity:.05}
 svg.q line.e.ql{stroke-opacity:.95;opacity:1;stroke-width:3}
+svg.q .n.qf{opacity:.55}
+svg.q .ml.qf{opacity:.55}
+svg.q line.e.qf{opacity:1;stroke-opacity:.42;stroke-width:2.2}
 </style>
 <div id="builder">
   <div class="brow1">
@@ -870,7 +873,7 @@ function refresh() {
     if (Q[i]) { d.style.setProperty('--sc', EINFO[Q[i]].col); d.textContent = EINFO[Q[i]].k; }
     slotsEl.appendChild(d);
   }
-  svg.querySelectorAll('.ql').forEach(x => x.classList.remove('ql'));
+  svg.querySelectorAll('.ql, .qf').forEach(x => x.classList.remove('ql', 'qf'));
   svg.classList.toggle('q', Q.length > 0);
   if (!Q.length) {
     rline.innerHTML = 'queue elements &mdash; <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd> ' +
@@ -894,6 +897,21 @@ function refresh() {
     const ml = svg.querySelector('.ml.m' + id);
     if (ml) ml.classList.add('ql');
   });
+  if (!w.off) {                       // half-light every still-viable continuation
+    const fut = [];
+    (function rec(k) {
+      Object.values(TRIE[k].c).forEach(c => { fut.push(String(c)); rec(String(c)); });
+    })(String(w.node));
+    fut.forEach(id => {
+      const nn = svg.querySelector('.n[data-id="' + id + '"]');
+      if (nn && !nn.classList.contains('ql')) nn.classList.add('qf');
+      svg.querySelectorAll('line.e.c' + id).forEach(l => {
+        if (!l.classList.contains('ql')) l.classList.add('qf');
+      });
+      const ml = svg.querySelector('.ml.m' + id);
+      if (ml && !ml.classList.contains('ql')) ml.classList.add('qf');
+    });
+  }
   const keys = Q.map(e => EINFO[e].k).join('-');
   const node = TRIE[w.node];
   let html = '<b>' + keys + '</b> &middot; ';
