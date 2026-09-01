@@ -61,23 +61,40 @@ MAGICKS = [
     ("Chain Lightning", ["lightning", "lightning", "lightning"], "longer, meaner lightning", True),
 ]
 
+# mono-element stacks: (element, max repeats, what the full stack casts)
+STACKS = [
+    ("water", 5, "a fire-hose that soaks and shoves"),
+    ("life", 5, "the heal beam at full strength"),
+    ("shield", 1, "one barrier — a second E cancels the first"),
+    ("cold", 5, "a wide, deep chill"),
+    ("ice", 2, "a heavy shard volley (two hybrids fill four slots)"),
+    ("steam", 2, "a scalding blast (two hybrids fill four slots)"),
+    ("fire", 5, "a broad flamethrower"),
+    ("earth", 5, "the boulder — one rock, maximum caliber"),
+    ("lightning", 5, "the hardest arc (never while wet)"),
+    ("arcane", 5, "the disintegrating beam at full power"),
+]
+
 # ---------------------------------------------------------------- trie
-NODES = [dict(id=0, elem=None, depth=0, parent=None, children=[], magick=None, dlc=False)]
-def insert(seq, name, eff, dlc):
+NODES = [dict(id=0, elem=None, depth=0, parent=None, children=[], magick=None, dlc=False, stack=False)]
+def insert(seq, name, eff, dlc, stack=False):
     cur = 0
     for eid in seq:
         nxt = next((c for c in NODES[cur]["children"] if NODES[c]["elem"] == eid), None)
         if nxt is None:
             nxt = len(NODES)
             NODES.append(dict(id=nxt, elem=eid, depth=NODES[cur]["depth"] + 1,
-                              parent=cur, children=[], magick=None, dlc=False))
+                              parent=cur, children=[], magick=None, dlc=False, stack=False))
             NODES[cur]["children"].append(nxt)
         cur = nxt
     NODES[cur]["magick"] = (name, eff)
     NODES[cur]["dlc"] = dlc
+    NODES[cur]["stack"] = stack
 
 for name, seq, eff, dlc in MAGICKS:
     insert(seq, name, eff, dlc)
+for eid, mx, eff in STACKS:
+    insert([eid] * mx, f"{E[eid]['name']} ×{mx}", eff, False, stack=True)
 
 def sort_rec(nid):
     NODES[nid]["children"].sort(key=lambda c: ORDER[NODES[c]["elem"]])
@@ -85,9 +102,8 @@ def sort_rec(nid):
         sort_rec(c)
 sort_rec(0)
 
-shared = sum(1 for n in NODES[1:] if len(NODES[n["parent"]]["children"]) > 1 or True)
-print(f"{len(MAGICKS)} recipes -> {len(NODES) - 1} trie nodes "
-      f"(vs {sum(len(m[1]) for m in MAGICKS)} raw steps: shared openings merge)")
+print(f"{len(MAGICKS)} recipes + {len(STACKS)} element stacks -> {len(NODES) - 1} trie nodes "
+      f"(vs {sum(len(m[1]) for m in MAGICKS) + sum(s[1] for s in STACKS)} raw steps: shared openings merge)")
 
 # leaf slots: terminals count as leaves for spacing when childless
 leaves = [n["id"] for n in NODES[1:] if not n["children"]]
@@ -189,7 +205,8 @@ for n in NODES[1:]:
         anchor = "start" if ca > 0.30 else ("end" if ca < -0.30 else "middle")
         if anchor == "middle":
             ly = y + (30 if math.sin(a) > 0 else -24)
-    sv.append(f'<text x="{lx:.0f}" y="{ly:.0f}" text-anchor="{anchor}" fill="#C9C6D4" '
+    lcol = E[n["elem"]]["color"] if n["stack"] else "#C9C6D4"
+    sv.append(f'<text x="{lx:.0f}" y="{ly:.0f}" text-anchor="{anchor}" fill="{lcol}" '
               f'font-family="IBM Plex Mono,monospace" font-size="12"'
               f'{" font-style=" + chr(34) + "italic" + chr(34) if n["dlc"] else ""} '
               f'stroke="{SURFACE}" stroke-width="4" paint-order="stroke" class="ml m{n["id"]}" '
@@ -258,7 +275,7 @@ footer a{{color:#D4AF5E;text-decoration:none}}
   <div class="topline">
     <div><h1>Magicka Casting Tree</h1>
     <div class="sub">every magick traversed in casting order — the centre is the empty queue, each ring
-one more element, and recipes that share an opening share a trunk</div></div>
+one more element · magicks share trunks with each other and with the plain element stacks</div></div>
     <div class="segrow">
       {FSC}
       <button id="copybtn" class="pchip" title="Copy the tree as a PNG image">⧉ copy image</button>
@@ -272,7 +289,7 @@ one more element, and recipes that share an opening share a trunk</div></div>
   <div id="tip"></div>
 </div>
 <footer>hover any step to light the path in from CAST and everything that grows out of it ·
-hover a name to trace its whole recipe · a double ring marks a spot where a magick casts ·
+hover a name to trace its whole recipe · a double ring marks a spot where a magick casts mid-branch (release at S-E for Nullify, keep queuing for Invisibility; Chain Lightning sits three steps down the Lightning ×5 run) · colored end-labels are the mono-element stacks — Shield stops at one because a second E cancels the first ·
 dashed rings are the hybrids (QF steam, QR ice) · read the trunks: S-E is the ritual opening three
 magicks share, A-S forks into Haste and Teleport, and Chain Lightning is A-A-A straight out ·
 recipes from <a href="https://magicka.fandom.com/wiki/Magicks_(Magicka_1)">Magickapedia</a> and
