@@ -840,23 +840,35 @@ for (const k of ['q', 'w', 'e', 'r', 'a', 's', 'd', 'f']) {
   b.addEventListener('click', () => { push(eid); b.blur(); });
   btnbar.insertBefore(b, document.getElementById('bclear'));
 }
+for (const h of ['steam', 'ice']) {
+  const seq = h === 'steam' ? ['water', 'fire'] : ['water', 'cold'];
+  const b = document.createElement('button');
+  b.className = 'eb';
+  b.style.setProperty('--sc', EINFO[h].col);
+  b.innerHTML = '<b>' + EINFO[h].k + '</b>' + EINFO[h].n.toLowerCase();
+  b.title = EINFO[h].n + ' = ' + seq.map(e => EINFO[e].k).join(' then ') + ' (two real presses)';
+  b.addEventListener('click', () => { seq.forEach(e => pushInto(Q, e)); refresh(); b.blur(); });
+  btnbar.insertBefore(b, document.getElementById('bclear'));
+}
 document.getElementById('bclear').addEventListener('click', () => { Q.length = 0; refresh(); });
 
-function push(eid) {
-  for (let i = Q.length - 1; i >= 0; i--) {
-    const s = Q[i];
-    if (DOWN[eid + '|' + s]) { Q[i] = DOWN[eid + '|' + s]; return refresh(); }
-    if ((OPP[eid] || []).includes(s)) { Q.splice(i, 1); return refresh(); }
-    if (COMB[eid + '|' + s]) { Q[i] = COMB[eid + '|' + s]; return refresh(); }
+function pushInto(arr, eid) {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    const s = arr[i];
+    if (DOWN[eid + '|' + s]) { arr[i] = DOWN[eid + '|' + s]; return arr; }
+    if ((OPP[eid] || []).includes(s)) { arr.splice(i, 1); return arr; }
+    if (COMB[eid + '|' + s]) { arr[i] = COMB[eid + '|' + s]; return arr; }
   }
-  if (Q.length < 5) Q.push(eid);
-  refresh();
+  if (arr.length < 5) arr.push(eid);
+  return arr;
 }
+function push(eid) { pushInto(Q, eid); refresh(); }
 
-function walk() {
+function walk(arr) {
+  arr = arr || Q;
   let cur = '0';
   let ok = 0;
-  for (const eid of Q) {
+  for (const eid of arr) {
     const nxt = TRIE[cur].c[eid];
     if (nxt === undefined) return {node: cur, depth: ok, off: true};
     cur = String(nxt);
@@ -916,7 +928,16 @@ function refresh() {
   const node = TRIE[w.node];
   let html = '<b>' + keys + '</b> &middot; ';
   if (w.off) {
-    html += 'freeform spell &mdash; no magick continues from here; the lit path is the longest known opening';
+    const recov = [];
+    for (const k of ['q', 'w', 'e', 'r', 'a', 's', 'd', 'f']) {
+      const tw = walk(pushInto(Q.slice(), KEYMAP[k]));
+      if (!tw.off && (TRIE[tw.node].m || magicksBelow(tw.node).length)) recov.push(k);
+    }
+    html += 'freeform spell &mdash; off the recipe map';
+    if (recov.length) {
+      html += ' &middot; recover with ' + recov.map(k => '<kbd>' + k.toUpperCase() + '</kbd>').join(' ') +
+        ' (a cancel or mix puts you back on a path)';
+    }
   } else {
     const below = magicksBelow(w.node).filter(m => m !== (node.m && node.m[0]));
     if (node.m) {
