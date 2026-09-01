@@ -317,7 +317,7 @@ one more element · magicks share trunks with each other and with the plain elem
 </header>
 <div class="wrap">
   <svg viewBox="0 0 {W} {H}" role="img" aria-label="Radial prefix tree of Magicka recipes in casting order">
-  {SVG}</svg>
+  {SVG}<g id="ghosts"></g></svg>
   <div id="tip"></div>
 </div>
 <footer>hover any step to light the path in from CAST and everything that grows out of it ·
@@ -416,7 +416,9 @@ copybtn.addEventListener('click', async () => {{
 TRIE_JS = {str(n["id"]): {"e": n["elem"],
                           "c": {NODES[c]["elem"]: c for c in n["children"]},
                           "m": list(n["magick"]) if n["magick"] else None,
-                          "s": n["stack"], "d": n["dlc"]}
+                          "s": n["stack"], "d": n["dlc"],
+                          "x": round(pos(n["id"])[0], 1), "y": round(pos(n["id"])[1], 1),
+                          "a": round(ANG[n["id"]], 4) if n["id"] in ANG else None}
            for n in NODES}
 EINFO_JS = {e[0]: {"n": e[1], "k": e[2], "col": e[3]} for e in ELEMS}
 KEYMAP_JS = {"q": "water", "w": "life", "e": "shield", "r": "cold",
@@ -461,6 +463,10 @@ svg.q line.e.ql{stroke-opacity:.95;opacity:1;stroke-width:3}
 svg.q .n.qf{opacity:.55}
 svg.q .ml.qf{opacity:.55}
 svg.q line.e.qf{opacity:1;stroke-opacity:.42;stroke-width:2.2}
+#ghosts circle.gn{fill:#101016;stroke-dasharray:3 2.5;cursor:pointer}
+#ghosts text.gk{font:600 9.5px "IBM Plex Mono",monospace;pointer-events:none}
+#ghosts line.ge{stroke-dasharray:3 4}
+svg.q #ghosts{opacity:1}
 </style>
 <div id="builder">
   <div class="brow1">
@@ -579,6 +585,7 @@ function refresh() {
       if (ml && !ml.classList.contains('ql')) ml.classList.add('qf');
     });
   }
+  drawGhosts(w);
   const keys = Q.map(e => EINFO[e].k).join('-');
   const node = TRIE[w.node];
   let html = '<b>' + keys + '</b> &middot; ';
@@ -607,6 +614,92 @@ function refresh() {
     }
   }
   rline.innerHTML = html;
+}
+const GCX = 750, GCY = 505, GRY = 0.80, GSTEP = 96;
+const ghosts = document.getElementById('ghosts');
+function ghostEnd(w) {
+  // where the queue currently ends: a trie node, or a ghost tail beyond it
+  const base = TRIE[w.node];
+  let x = base.x, y = base.y;
+  let a = base.a === null ? null : base.a;
+  let rr = a === null ? 0 : Math.hypot(x - GCX, (y - GCY) / GRY);
+  const extra = Q.length - w.depth;          // off-trie slots
+  if (a === null && extra > 0) a = -Math.PI / 2;
+  for (let i = 0; i < extra; i++) {
+    rr += GSTEP;
+    x = GCX + rr * Math.cos(a);
+    y = GCY + GRY * rr * Math.sin(a);
+  }
+  return {x, y, a, rr, extra};
+}
+function ghostNode(x, y, eid, dash, title, onclick) {
+  const col = EINFO[eid].col;
+  const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+  c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('r', 10);
+  c.setAttribute('stroke', col); c.setAttribute('stroke-width', 1.8);
+  c.setAttribute('class', 'gn'); c.setAttribute('opacity', 0.55);
+  const tl = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+  tl.textContent = title;
+  c.appendChild(tl);
+  if (onclick) c.addEventListener('click', onclick);
+  ghosts.appendChild(c);
+  const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  t.setAttribute('x', x); t.setAttribute('y', y + 3.5); t.setAttribute('text-anchor', 'middle');
+  t.setAttribute('fill', col); t.setAttribute('class', 'gk'); t.setAttribute('opacity', 0.75);
+  t.textContent = EINFO[eid].k;
+  ghosts.appendChild(t);
+}
+function ghostEdge(x1, y1, x2, y2, col, op) {
+  const l = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+  l.setAttribute('x1', x1); l.setAttribute('y1', y1);
+  l.setAttribute('x2', x2); l.setAttribute('y2', y2);
+  l.setAttribute('stroke', col); l.setAttribute('stroke-width', 1.4);
+  l.setAttribute('stroke-opacity', op); l.setAttribute('class', 'ge');
+  ghosts.insertBefore(l, ghosts.firstChild);
+}
+function drawGhosts(w) {
+  ghosts.innerHTML = '';
+  if (!Q.length) return;
+  const end = ghostEnd(w);
+  // ghost tail: render the queue's own off-trie slots
+  if (end.extra > 0) {
+    const base = TRIE[w.node];
+    let px = base.x, py = base.y;
+    let rr = base.a === null ? 0 : Math.hypot(px - GCX, (py - GCY) / GRY);
+    const a = end.a;
+    for (let i = 0; i < end.extra; i++) {
+      rr += GSTEP;
+      const gx = GCX + rr * Math.cos(a), gy = GCY + GRY * rr * Math.sin(a);
+      const eid = Q[w.depth + i];
+      ghostEdge(px, py, gx, gy, EINFO[eid].col, 0.35);
+      ghostNode(gx, gy, eid, true, EINFO[eid].n + ' — queued off the recipe map');
+      px = gx; py = gy;
+    }
+  }
+  // fan of every engine-valid next slot, once past 2 nodes
+  if (Q.length < 3 || Q.length >= 5) return;
+  const opts = [];
+  for (const eid of Object.keys(EINFO)) {
+    const presses = eid === 'steam' ? ['water', 'fire'] : eid === 'ice' ? ['water', 'cold'] : [eid];
+    const test = Q.slice();
+    presses.forEach(p => pushInto(test, p));
+    if (test.length === Q.length + 1 && test[test.length - 1] === eid) {
+      const onTrie = w.off ? false : TRIE[w.node].c[eid] !== undefined;
+      if (!onTrie) opts.push({eid, presses});      // recipe continuations are already half-lit
+    }
+  }
+  if (!opts.length) return;
+  const rr2 = end.rr + GSTEP * 0.72;
+  const spread = Math.min(0.85, 0.16 * (opts.length - 1) + 0.001);
+  opts.forEach((o, i) => {
+    const oa = end.a + (opts.length === 1 ? 0 : -spread / 2 + spread * i / (opts.length - 1));
+    let gx = GCX + rr2 * Math.cos(oa), gy = GCY + GRY * rr2 * Math.sin(oa);
+    gx = Math.min(Math.max(gx, 25), 1475); gy = Math.min(Math.max(gy, 25), 985);
+    ghostEdge(end.x, end.y, gx, gy, EINFO[o.eid].col, 0.22);
+    ghostNode(gx, gy, o.eid, true,
+      EINFO[o.eid].n + ' — engine-valid, no magick this way (click to queue)',
+      () => { o.presses.forEach(p => pushInto(Q, p)); refresh(); });
+  });
 }
 function magicksBelow(id) {
   const out = [];
