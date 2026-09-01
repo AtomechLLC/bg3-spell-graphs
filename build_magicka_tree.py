@@ -307,7 +307,7 @@ footer a{{color:#D4AF5E;text-decoration:none}}
   <div class="topline">
     <div><h1>Magicka Casting Tree</h1>
     <div class="sub">every magick traversed in casting order — the centre is the empty queue, each ring
-one more element · magicks share trunks with each other and with the plain element stacks</div></div>
+one more element · magicks share trunks with each other and with the plain element stacks · type below to test a queue</div></div>
     <div class="segrow">
       {FSC}
       <button id="copybtn" class="pchip" title="Copy the tree as a PNG image">⧉ copy image</button>
@@ -410,6 +410,202 @@ copybtn.addEventListener('click', async () => {{
 }});
 </script>
 """
+
+
+# ---------------------------------------------------------------- sequence builder
+TRIE_JS = {str(n["id"]): {"e": n["elem"],
+                          "c": {NODES[c]["elem"]: c for c in n["children"]},
+                          "m": list(n["magick"]) if n["magick"] else None,
+                          "s": n["stack"], "d": n["dlc"]}
+           for n in NODES}
+EINFO_JS = {e[0]: {"n": e[1], "k": e[2], "col": e[3]} for e in ELEMS}
+KEYMAP_JS = {"q": "water", "w": "life", "e": "shield", "r": "cold",
+             "a": "lightning", "s": "arcane", "d": "earth", "f": "fire"}
+
+BUILDER_CSS = """
+<style>
+#builder{width:100%;max-width:1500px;margin:0 0 12px;background:#15131C;border:1px solid #2A2734;
+  border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.brow1{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+#slots{display:flex;gap:7px}
+.slot{width:46px;height:46px;border-radius:9px;border:1.5px dashed #3a3647;display:flex;
+  align-items:center;justify-content:center;font:600 15px "IBM Plex Mono",monospace;color:#6b6880;
+  background:#101016}
+.slot.f{border-style:solid;color:var(--sc);border-color:var(--sc);
+  box-shadow:inset 0 0 10px color-mix(in srgb,var(--sc) 22%,transparent)}
+#rline{font-size:12px;color:#A7A4B3;line-height:1.7;min-height:20px}
+#rline b{color:#E3C377}
+#rline .cast{color:#7fdfa3;font-weight:600}
+#rline .stackr{font-weight:600}
+#rline kbd{border:1px solid #3a3647;border-bottom-width:2px;border-radius:4px;padding:0 5px;
+  font:500 10.5px "IBM Plex Mono",monospace;background:#211E2B;margin:0 1px}
+.brow2{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.eb{border:1px solid #3a3647;border-radius:8px;background:#101016;color:var(--sc);cursor:pointer;
+  font:500 11.5px "IBM Plex Mono",monospace;padding:5px 10px;display:inline-flex;gap:7px;
+  align-items:center;letter-spacing:.04em}
+.eb:hover{border-color:var(--sc)}
+.eb b{font-size:13px}
+.eb:focus-visible{outline:2px solid #E3C377;outline-offset:1px}
+#bclear{border:1px solid #3a3647;border-radius:8px;background:transparent;color:#C9C6D4;
+  cursor:pointer;font:500 11px "IBM Plex Mono",monospace;padding:6px 11px;margin-left:auto}
+#bclear:hover{border-color:#e58a9b;color:#e58a9b}
+#builder.flash{animation:bfl .5s}
+@keyframes bfl{0%{border-color:#7fdfa3}100%{border-color:#2A2734}}
+@media (prefers-reduced-motion: reduce){#builder.flash{animation:none}}
+svg.q .n{opacity:.13}
+svg.q .n.ql{opacity:1}
+svg.q .ml{opacity:.13}
+svg.q .ml.ql{opacity:1}
+svg.q line.e{opacity:.05}
+svg.q line.e.ql{stroke-opacity:.95;opacity:1;stroke-width:3}
+</style>
+<div id="builder">
+  <div class="brow1">
+    <div id="slots"></div>
+    <div id="rline"></div>
+  </div>
+  <div class="brow2" id="ebtns"><button id="bclear">&#10005; clear</button></div>
+</div>
+"""
+
+BUILDER_JS = """
+<script>
+const TRIE = __TRIE__;
+const EINFO = __EINFO__;
+const KEYMAP = __KEYMAP__;
+const OPP = {water: ['lightning'], lightning: ['water', 'earth'], earth: ['lightning'],
+             fire: ['cold'], cold: ['fire'], life: ['arcane'], arcane: ['life'], shield: ['shield']};
+const COMB = {'water|fire': 'steam', 'fire|water': 'steam', 'water|cold': 'ice', 'cold|water': 'ice'};
+const DOWN = {'fire|ice': 'water', 'cold|steam': 'water'};
+const Q = [];
+const slotsEl = document.getElementById('slots');
+const rline = document.getElementById('rline');
+const builder = document.getElementById('builder');
+
+const btnbar = document.getElementById('ebtns');
+for (const k of ['q', 'w', 'e', 'r', 'a', 's', 'd', 'f']) {
+  const eid = KEYMAP[k];
+  const b = document.createElement('button');
+  b.className = 'eb';
+  b.style.setProperty('--sc', EINFO[eid].col);
+  b.innerHTML = '<b>' + k.toUpperCase() + '</b>' + EINFO[eid].n.toLowerCase();
+  b.addEventListener('click', () => { push(eid); b.blur(); });
+  btnbar.insertBefore(b, document.getElementById('bclear'));
+}
+document.getElementById('bclear').addEventListener('click', () => { Q.length = 0; refresh(); });
+
+function push(eid) {
+  for (let i = Q.length - 1; i >= 0; i--) {
+    const s = Q[i];
+    if (DOWN[eid + '|' + s]) { Q[i] = DOWN[eid + '|' + s]; return refresh(); }
+    if ((OPP[eid] || []).includes(s)) { Q.splice(i, 1); return refresh(); }
+    if (COMB[eid + '|' + s]) { Q[i] = COMB[eid + '|' + s]; return refresh(); }
+  }
+  if (Q.length < 5) Q.push(eid);
+  refresh();
+}
+
+function walk() {
+  let cur = '0';
+  let ok = 0;
+  for (const eid of Q) {
+    const nxt = TRIE[cur].c[eid];
+    if (nxt === undefined) return {node: cur, depth: ok, off: true};
+    cur = String(nxt);
+    ok++;
+  }
+  return {node: cur, depth: ok, off: false};
+}
+
+function refresh() {
+  slotsEl.innerHTML = '';
+  for (let i = 0; i < 5; i++) {
+    const d = document.createElement('div');
+    d.className = 'slot' + (Q[i] ? ' f' : '');
+    if (Q[i]) { d.style.setProperty('--sc', EINFO[Q[i]].col); d.textContent = EINFO[Q[i]].k; }
+    slotsEl.appendChild(d);
+  }
+  svg.querySelectorAll('.ql').forEach(x => x.classList.remove('ql'));
+  svg.classList.toggle('q', Q.length > 0);
+  if (!Q.length) {
+    rline.innerHTML = 'queue elements &mdash; <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd> ' +
+      '<kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd> &middot; <kbd>&#9003;</kbd> undo &middot; ' +
+      '<kbd>esc</kbd> clear &middot; opposites cancel, water mixes, and the tree lights your path';
+    return;
+  }
+  const w = walk();
+  let cur = w.node;
+  const ids = [];
+  let c2 = cur;
+  while (c2 !== null && c2 !== undefined && c2 !== '0') {
+    ids.push(c2);
+    const p = [...Object.keys(TRIE)].find(k => Object.values(TRIE[k].c).map(String).includes(String(c2)));
+    c2 = p === '0' ? null : p;
+  }
+  ids.forEach(id => {
+    const nn = svg.querySelector('.n[data-id="' + id + '"]');
+    if (nn) nn.classList.add('ql');
+    svg.querySelectorAll('line.e.c' + id).forEach(l => l.classList.add('ql'));
+    const ml = svg.querySelector('.ml.m' + id);
+    if (ml) ml.classList.add('ql');
+  });
+  const keys = Q.map(e => EINFO[e].k).join('-');
+  const node = TRIE[w.node];
+  let html = '<b>' + keys + '</b> &middot; ';
+  if (w.off) {
+    html += 'freeform spell &mdash; no magick continues from here; the lit path is the longest known opening';
+  } else {
+    const below = magicksBelow(w.node).filter(m => m !== (node.m && node.m[0]));
+    if (node.m) {
+      html += '<span class="' + (node.s ? 'stackr' : 'cast') + '"' +
+        (node.s ? ' style="color:' + EINFO[node.e].col + '"' : '') + '>' +
+        (node.s ? node.m[0] : '&#9889; SPACE casts ' + node.m[0]) + '</span> &mdash; ' + node.m[1];
+      if (below.length) html += ' &middot; or keep queuing: ' + below.slice(0, 4).join(', ');
+    } else if (below.length) {
+      html += 'on the path to: ' + below.slice(0, 5).join(', ') + (below.length > 5 ? '&hellip;' : '');
+    } else {
+      html += 'a freeform mix &mdash; nothing named down this branch';
+    }
+  }
+  rline.innerHTML = html;
+}
+function magicksBelow(id) {
+  const out = [];
+  (function rec(k) {
+    if (TRIE[k].m) out.push(TRIE[k].m[0]);
+    Object.values(TRIE[k].c).forEach(c => rec(String(c)));
+  })(String(id));
+  return out;
+}
+document.addEventListener('keydown', e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  const k = e.key.toLowerCase();
+  if (KEYMAP[k]) { push(KEYMAP[k]); e.preventDefault(); }
+  else if (e.key === 'Backspace') { Q.pop(); refresh(); e.preventDefault(); }
+  else if (e.key === 'Escape') { Q.length = 0; refresh(); }
+  else if (e.key === ' ') {
+    e.preventDefault();
+    const w = walk();
+    if (!w.off && TRIE[w.node].m) {
+      builder.classList.remove('flash');
+      void builder.offsetWidth;
+      builder.classList.add('flash');
+      Q.length = 0;
+      refresh();
+    }
+  }
+});
+refresh();
+</script>
+"""
+
+HTML = HTML.replace('<div class="wrap">', BUILDER_CSS + '<div class="wrap">')
+HTML += (BUILDER_JS
+         .replace('__TRIE__', json.dumps(TRIE_JS))
+         .replace('__EINFO__', json.dumps(EINFO_JS))
+         .replace('__KEYMAP__', json.dumps(KEYMAP_JS)))
+
 with open("magicka_tree.html", "w", encoding="utf-8") as f:
     f.write(HTML)
 print(f"magicka_tree.html: {os.path.getsize('magicka_tree.html') / 1024:.0f} KB")

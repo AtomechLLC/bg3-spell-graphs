@@ -177,9 +177,9 @@ statuses chain — and every magick recipe drawn as its casting sequence.</p></a
 <a class="card" href="magicka-casting-tree.html" style="--ac:#9B7BE8;--face:Cinzel">
 <span class="em">🌳</span><h2>Magicka Casting Tree</h2>
 <div class="meta">Magicka (2011) · 29 recipes + 10 element stacks · 105 steps</div>
-<p>The recipes traversed in casting order, radially: the centre is the empty queue, each ring one
-more element — magicks share trunks with each other and with the plain stacks (five earth = the
-boulder).</p></a>
+<p>The recipes traversed in casting order, radially — magicks share trunks with each other and with
+the plain stacks. Includes a live sequence builder: type Q-W-E-R-A-S-D-F and watch the queue
+resolve, cancel, combine, and light its path.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data
