@@ -11,18 +11,19 @@ import os
 
 VIEWS = [("wheel", "ELEMENT WHEEL", "magicka_map.html"),
          ("tree", "CASTING TREE", "magicka_tree.html"),
-         ("hooks", "HOOKS", "magicka_hooks.html")]
+         ("hooks", "HOOKS", "magicka_hooks.html"),
+         ("bestiary", "BESTIARY", "magicka_bestiary.html")]
 
 def load(fn):
     s = open(fn, encoding="utf-8").read()
     a = s.find('<div class="mtabs"')
-    assert a != -1, fn
-    b = s.find("</div>", a)
-    s = s[:a] + s[b + 6:]
+    if a != -1:
+        b = s.find("</div>", a)
+        s = s[:a] + s[b + 6:]
     a = s.find("<script>\n(function () {\n  var CUR")
-    assert a != -1, fn
-    b = s.find("</script>", a)
-    s = s[:a] + s[b + 9:]
+    if a != -1:
+        b = s.find("</script>", a)
+        s = s[:a] + s[b + 9:]
     return s.replace("&", "&amp;").replace('"', "&quot;")
 
 frames = "\n".join(
@@ -81,4 +82,4 @@ document.addEventListener('keydown', e => {{
 """
 with open("magicka.html", "w", encoding="utf-8") as f:
     f.write(HTML)
-print(f"magicka.html: {os.path.getsize('magicka.html') / 1024:.0f} KB (3 lenses, one page)")
+print(f"magicka.html: {os.path.getsize('magicka.html') / 1024:.0f} KB ({len(VIEWS)} lenses, one page)")

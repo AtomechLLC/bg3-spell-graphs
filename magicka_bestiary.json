@@ -1,0 +1,9277 @@
+[
+ {
+  "file": "Beastman_brute",
+  "id": "beastman_brute",
+  "loc": "Ent_Beast_Brute",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Beastman_brute_earth",
+  "id": "beastman_brute_earth",
+  "loc": "Ent_Beast_BruteA",
+  "hp": 4000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Beastman_brute_fire",
+  "id": "beastman_brute_fire",
+  "loc": "Ent_Beast_BruteA",
+  "hp": 4000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Beastman_chieftain",
+  "id": "beastman_chieftain",
+  "loc": "Ent_Beast_Chieftain",
+  "hp": 8000,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.25,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "D"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(2,10))",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "D",
+     "D"
+    ],
+    "mode": "area",
+    "cond": "(distExp(2,10))",
+    "weight": 15.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Beastman_mutant",
+  "id": "beastman_mutant",
+  "loc": "Ent_Beast_Mutant",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Beastman_mutant_noscore",
+  "id": "beastman_mutant_noscore",
+  "loc": "Ent_Beast_Mutant",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Beastman_raider",
+  "id": "beastman_raider",
+  "loc": "Ent_Beast_Raider",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Beastman_raider_lightning",
+  "id": "beastman_raider_lightning",
+  "loc": "Ent_Beast_RaiderA",
+  "hp": 1200,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Beastman_raider_water",
+  "id": "beastman_raider_water",
+  "loc": "Ent_Beast_RaiderA",
+  "hp": 1200,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Beastman_torcher",
+  "id": "beastman_torcher",
+  "loc": "Ent_Beast_Raider",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Beholder_benign",
+  "id": "beholder_benign",
+  "loc": "Ent_Evil_Beholder_Easy",
+  "hp": 2400,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Beholder_malign",
+  "id": "beholder_malign",
+  "loc": "Ent_Evil_Beholder_Hard",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.1,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Bird_cliff",
+  "id": "bird_cliff",
+  "loc": "",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Cult_Cold",
+  "id": "boss_cult_cold",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "Q",
+     "R",
+     "Q",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,25))",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(8) + t.status(wet)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "ranged",
+    "cond": "s.danger(offensive) * 4",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Cult_Fire",
+  "id": "boss_cult_fire",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,20)) * !s.status(wet)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) * !t.status(wet)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Cult_Leader",
+  "id": "boss_cult_leader",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 4500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,20)) * !s.status(wet)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "D",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,25) * 0.75",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "R",
+     "S"
+    ],
+    "mode": "area",
+    "cond": "distExp(8) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "ranged",
+    "cond": "s.danger(offensive) * 4",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Cult_Lightning",
+  "id": "boss_cult_lightning",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,20)) * !s.status(wet)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "area",
+    "cond": "distExp(8) * !t.status(wet)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Cult_Nature",
+  "id": "boss_cult_nature",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,20) * !t.status(wet) * !t.status(burning)",
+    "weight": 16.0
+   },
+   {
+    "seq": [
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,20) * 0.75",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health * 2 - 0.5",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health*5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Machine_Warlock",
+  "id": "boss_machine_warlock",
+  "loc": "",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) + (t.status(wet) * 0.5)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "F",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,15) + !t.status(wet)) * 0.5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "F"
+    ],
+    "mode": "area",
+    "cond": "distExp(10) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health * !s.status(life)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Boss_Vlad_Diplomat",
+  "id": "boss_vlad_diplomat",
+  "loc": "Boss_T10",
+  "hp": 15000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(2,10))",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "area",
+    "cond": "(distExp(4,14))",
+    "weight": 7.5
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "area",
+    "cond": "distExp(6)",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 3.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Vlad_Diplomat_Nohand",
+  "id": "boss_vlad_diplomat_nohand",
+  "loc": "Boss_T10",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Boss_Vlad_Spirit",
+  "id": "boss_vlad_spirit",
+  "loc": "Boss_T10",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(6))",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "Q",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(4,20))",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(6)",
+    "weight": 12.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold) + (s.status(frozen)*5)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 3.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Vlad_Swamp",
+  "id": "boss_vlad_swamp",
+  "loc": "Boss_T10",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "S",
+     "S",
+     "R"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(2,10))",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "D",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(t.threat(arcane|earth))*3",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(4,14))",
+    "weight": 12.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "F"
+    ],
+    "mode": "area",
+    "cond": "distExp(6)",
+    "weight": 12.0
+   },
+   {
+    "seq": [
+     "E",
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold) + (s.status(frozen)*5)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 3.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Boss_Warlord",
+  "id": "boss_warlord",
+  "loc": "Ent_Orc_Warlord",
+  "hp": 8000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Bugswarm",
+  "id": "bugswarm",
+  "loc": "Ent_Patch_Swarm",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female00",
+  "id": "citizen_female00",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female00_evil",
+  "id": "citizen_female00_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female01",
+  "id": "citizen_female01",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female01_evil",
+  "id": "citizen_female01_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female02",
+  "id": "citizen_female02",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female02_evil",
+  "id": "citizen_female02_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female03",
+  "id": "citizen_female03",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female03_evil",
+  "id": "citizen_female03_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female04",
+  "id": "citizen_female04",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female04_evil",
+  "id": "citizen_female04_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female05",
+  "id": "citizen_female05",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_female05_evil",
+  "id": "citizen_female05_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male00",
+  "id": "citizen_male00",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male00_evil",
+  "id": "citizen_male00_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male01",
+  "id": "citizen_male01",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male01_evil",
+  "id": "citizen_male01_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male02",
+  "id": "citizen_male02",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male02_evil",
+  "id": "citizen_male02_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male03",
+  "id": "citizen_male03",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male03_evil",
+  "id": "citizen_male03_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male04",
+  "id": "citizen_male04",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male04_evil",
+  "id": "citizen_male04_evil",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Citizen_male05",
+  "id": "citizen_male05",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Coin",
+  "id": "coin",
+  "loc": "",
+  "hp": 3800,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Concious_Flame",
+  "id": "concious_flame",
+  "loc": "",
+  "hp": 2000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Conscious_blaze",
+  "id": "conscious_blaze",
+  "loc": "",
+  "hp": 2000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Cross",
+  "id": "cross",
+  "loc": "",
+  "hp": 3800,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Cultist",
+  "id": "cultist",
+  "loc": "Ent_Crazed_Cultist",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Daemon_cold_lesser",
+  "id": "daemon_cold_lesser",
+  "loc": "Ent_Evil_Daemon_Lesser_Cold",
+  "hp": 700,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "area",
+    "cond": "!Target.HasStatus(cold)+!Target.HasStatus(frozen)+Target.HasStatus(wet)",
+    "weight": 0.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Daemon_greater",
+  "id": "daemon_greater",
+  "loc": "Ent_Evil_Daemon",
+  "hp": 2999,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": -200.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Daemon_lesser",
+  "id": "daemon_lesser",
+  "loc": "Ent_Evil_Daemon_lesser",
+  "hp": 380,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": -200.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Daemon_lord",
+  "id": "daemon_lord",
+  "loc": "Ent_Evil_Daemon_Lord",
+  "hp": 9999,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": -500.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Death",
+  "id": "death",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) + (t.status(wet) * 0.5)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "F",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,15) + !t.status(wet)) * 0.5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "F"
+    ],
+    "mode": "area",
+    "cond": "distExp(10) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "danger(fire) * 4",
+    "weight": 0.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Deep_one",
+  "id": "deep_one",
+  "loc": "Ent_Deep_One",
+  "hp": 1800,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Druid",
+  "id": "druid",
+  "loc": "Ent_Wild_Druid",
+  "hp": 2800,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "E"
+    ],
+    "mode": "ranged",
+    "cond": "(t.threat(arcane|life))",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "area",
+    "cond": "s.danger(offensive)*(distExp(5,8)",
+    "weight": 13.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "D"
+    ],
+    "mode": "weapon",
+    "cond": "distExp(0,15) * !LOS",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,15) * LOS",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(8) * (t.status(burning)+t.resistance(water))*0.6",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q"
+    ],
+    "mode": "area",
+    "cond": "EDensity(3)+DistLin(4)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*1.5",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*1.5",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Drunk_fool",
+  "id": "drunk_fool",
+  "loc": "Ent_Old_Fool",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Dungeons_Druid",
+  "id": "dungeons_druid",
+  "loc": "Ent_Wild_Druid",
+  "hp": 5800,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "E"
+    ],
+    "mode": "ranged",
+    "cond": "(t.threat(arcane|life))",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "area",
+    "cond": "s.danger(offensive)*(distExp(5,8)",
+    "weight": 13.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "D"
+    ],
+    "mode": "weapon",
+    "cond": "distExp(0,15) * !LOS",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,15) * LOS",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(8) * (t.status(burning)+t.resistance(water))*0.6",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q"
+    ],
+    "mode": "area",
+    "cond": "EDensity(3)+DistLin(4)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*1.5",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*1.5",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dungeons_acolyte_a",
+  "id": "dungeons_acolyte_a",
+  "loc": "Ent_Evil_Acolyte",
+  "hp": 1400,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "QR",
+     "S",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(12,14)) * 1.1",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "D",
+     "QR",
+     "S",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,12)) * 1.2",
+    "weight": 3.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dungeons_acolyte_b",
+  "id": "dungeons_acolyte_b",
+  "loc": "Ent_Evil_Acolyte",
+  "hp": 2600,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D"
+    ],
+    "mode": "self",
+    "cond": "(distExp(5,12)) - FDensity(5)",
+    "weight": 9.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "ranged",
+    "cond": "(T.Threat(physical)*4 + distExp(2,4))",
+    "weight": 7.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "(FDensity(5)+Danger(fire))*0.65 - s.status(greased)",
+    "weight": 24.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "distExp(5,14)*2 + 0.8",
+    "weight": 22.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)* 10 * !s.shielded",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*1.5 * !s.shielded",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*1.5 * !s.shielded",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dungeons_acolyte_c",
+  "id": "dungeons_acolyte_c",
+  "loc": "Ent_Evil_Acolyte",
+  "hp": 3500,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "D",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,10)) * (!t.status(wet))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,10)) * (t.EDensity(4))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health*1.5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "A",
+     "A",
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(2,8)*2 * LOS * t.FDensity(3))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(5,20) + !t.health*0.75",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "S",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,20) * (t.status(wet)*1.5) * !s.status(wet)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "S",
+     "S"
+    ],
+    "mode": "weapon",
+    "cond": "distLin(5)*s.health*1.5",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "self",
+    "cond": "t.danger(offensive) * 1.5 * !s.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)* 10 * !s.shielded",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*1.5 * !s.shielded",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*1.5 * !s.shielded",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dungeons_dwarf_adventurer",
+  "id": "dungeons_dwarf_adventurer",
+  "loc": "Ent_Dungeons_Dwarf_Adventurer",
+  "hp": 8000,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dungeons_elf_adventurer",
+  "id": "dungeons_elf_adventurer",
+  "loc": "Ent_Dungeons_Elf_Adventurer",
+  "hp": 13000,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_elf_adventurer_ressurected",
+  "id": "dungeons_elf_adventurer_ressurected",
+  "loc": "Ent_Dungeons_Elf_Adventurer",
+  "hp": 13000,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_gargoyle",
+  "id": "dungeons_gargoyle",
+  "loc": "Ent_Dungeons_Gargoyle",
+  "hp": 6000,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_gargoyle_flesh",
+  "id": "dungeons_gargoyle_flesh",
+  "loc": "Ent_Dungeons_Gargoyle",
+  "hp": 6000,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_human_adventurer",
+  "id": "dungeons_human_adventurer",
+  "loc": "Ent_Dungeons_Human_Adventurer",
+  "hp": 9500,
+  "resist": [
+   {
+    "elem": "ice",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "QR",
+     "QR",
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "",
+    "weight": 19.0
+   },
+   {
+    "seq": [
+     "D",
+     "QR",
+     "QR",
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "t.status(frozen)*LOS",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "S",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "LOS*(1-distLin(20))",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "D",
+     "D"
+    ],
+    "mode": "area",
+    "cond": "distLin(7)*1.1",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "QF",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distLin(7)*s.health",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "E",
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning)*1.5",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "E",
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet)*1.5",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(cold)+s.status(frozen))*1.5",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dungeons_human_adventurer_clone",
+  "id": "dungeons_human_adventurer_clone",
+  "loc": "Ent_Dungeons_Human_Adventurer_Ethereal_Clone",
+  "hp": null,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "Q",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "!t.status(wet)*(1-distLin(7))",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "R",
+     "S",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "t.status(wet)*(1-distLin(7)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "t.status(wet)",
+    "weight": 1.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dungeons_noapron_wurstmacher",
+  "id": "dungeons_noapron_wurstmacher",
+  "loc": "Ent_Dungeons_Wurstmacher",
+  "hp": 65000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "lightning",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "ice",
+    "mult": 1.15,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": -0.8,
+    "mod": 0.0,
+    "imm": true
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_slimecube_arcane",
+  "id": "dungeons_slimecube_arcane",
+  "loc": "Ent_Dungeons_Slime_Medium",
+  "hp": 1100,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_slimecube_arcane_small",
+  "id": "dungeons_slimecube_arcane_small",
+  "loc": "Ent_Dungeons_Slime_Medium",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dungeons_slimecube_poison",
+  "id": "dungeons_slimecube_poison",
+  "loc": "Ent_Dungeons_Slime_Medium",
+  "hp": 1100,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Dungeons_slimecube_poison_large",
+  "id": "dungeons_slimecube_poison_large",
+  "loc": "Ent_Dungeons_Slime_Large",
+  "hp": 2000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Dungeons_slimecube_poison_small",
+  "id": "dungeons_slimecube_poison_small",
+  "loc": "Ent_Dungeons_Slime_Small",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Dungeons_wight",
+  "id": "dungeons_wight",
+  "loc": "Ent_Dungeons_Wight",
+  "hp": 3000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Dungeons_wizalf",
+  "id": "dungeons_wizalf",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(10) + t.status(wet))*0.75*LOS*!t.resistance(lightning)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.status(wet) * (distExp(6,20))*LOS*!t.resistance(fire)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.health*danger(offensive)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dungeons_wurstmacher",
+  "id": "dungeons_wurstmacher",
+  "loc": "Ent_Dungeons_Wurstmacher",
+  "hp": 65000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "lightning",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "ice",
+    "mult": 1.15,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": -0.8,
+    "mod": 0.0,
+    "imm": true
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Dwarf_cannon",
+  "id": "dwarf_cannon",
+  "loc": "Ent_XMAS2012_Dwarf_Cannon",
+  "hp": 6000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Dwarf_captain",
+  "id": "dwarf_captain",
+  "loc": "",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.25)*4",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_captain_nodrop",
+  "id": "dwarf_captain_nodrop",
+  "loc": "",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.25)*4",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_captain_noshield",
+  "id": "dwarf_captain_noshield",
+  "loc": "Ent_Dwarf_Champ",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -150.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.25)*4",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_captain_noshield_nodrop",
+  "id": "dwarf_captain_noshield_nodrop",
+  "loc": "Ent_Dwarf_Champ",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -150.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.25)*4",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_diplomat",
+  "id": "dwarf_diplomat",
+  "loc": "Ent_Osotc_Dwarf_Diplomat",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -150.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_engineer",
+  "id": "dwarf_engineer",
+  "loc": "Ent_Osotc_Dwarf_Engineer",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -150.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_mage",
+  "id": "dwarf_mage",
+  "loc": "Ent_Dwarf_Mage",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A",
+     "A",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) + (t.status(wet) * 0.5)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "D",
+     "D",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,15)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D"
+    ],
+    "mode": "area",
+    "cond": "(distExp(6))*1.5",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "self",
+    "cond": "danger(offensive)*2",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health - 0.5) * 2",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 1.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dwarf_mage_nodrop",
+  "id": "dwarf_mage_nodrop",
+  "loc": "Ent_Dwarf_Mage",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A",
+     "A",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) + (t.status(wet) * 0.5)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "D",
+     "D",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,15)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D"
+    ],
+    "mode": "area",
+    "cond": "(distExp(6))*1.5",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "self",
+    "cond": "danger(offensive)*2",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health - 0.5) * 2",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 1.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dwarf_rifleman",
+  "id": "dwarf_rifleman",
+  "loc": "Ent_Osotc_Dwarf_Rifleman",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -150.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Dwarf_smith",
+  "id": "dwarf_smith",
+  "loc": "Ent_Dwarf_Mage",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) + (t.status(wet) * 0.5)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,15)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "self",
+    "cond": "danger(all)*2",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health - 0.5) * 2",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 1.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Dwarf_warrior",
+  "id": "dwarf_warrior",
+  "loc": "",
+  "hp": 350,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.25)*4",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Dwarf_warrior_noshield",
+  "id": "dwarf_warrior_noshield",
+  "loc": "Ent_Dwarf_Warrior",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -150.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.25)*4",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet) + s.status(cold)) * 2",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 5.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Elder_thing",
+  "id": "elder_thing",
+  "loc": "Ent_Elder_Thing",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Elemental",
+  "id": "elemental",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "distExp(4)",
+    "weight": 0.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Elemental_Arcane",
+  "id": "elemental_arcane",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Cold",
+  "id": "elemental_cold",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Fire",
+  "id": "elemental_fire",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Life",
+  "id": "elemental_life",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Lightning",
+  "id": "elemental_lightning",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Poison",
+  "id": "elemental_poison",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Steam",
+  "id": "elemental_steam",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elemental_Water",
+  "id": "elemental_water",
+  "loc": "",
+  "hp": 4000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elf_diplomat",
+  "id": "elf_diplomat",
+  "loc": "Ent_Osotc_Elf_Diplomat",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 1.0,
+    "mod": -500.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elf_mage",
+  "id": "elf_mage",
+  "loc": "Ent_Osotc_Elf_Mage",
+  "hp": 4500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "Q",
+     "Q"
+    ],
+    "mode": "area",
+    "cond": "distExp(6)",
+    "weight": 7.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "area",
+    "cond": "distExp(6) + !t.health*1.5",
+    "weight": 7.0
+   },
+   {
+    "seq": [
+     "D",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health*1.5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "D",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(t.status(wet)*1.5) * !s.status(wet)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "A",
+     "A",
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(2,8)*2 * LOS * t.FDensity(3))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "QF",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!EDensity(5)+EDensity(15))*0.5+FDensity(20)*0.5+T.danger(lightning)",
+    "weight": 40.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "self",
+    "cond": "t.danger(offensive) * 1.5 * !s.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)* 10 * !s.shielded",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold) + (s.status(frozen)*5)",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Elf_noble",
+  "id": "elf_noble",
+  "loc": "Ent_Osotc_Elf_Noble",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 1.0,
+    "mod": -500.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Elf_pathfinder",
+  "id": "elf_pathfinder",
+  "loc": "Ent_Osotc_Elf_Pathfinder",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Elf_pathfindermelee",
+  "id": "elf_pathfindermelee",
+  "loc": "Ent_Osotc_Elf_Pathfindermelee",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Enderman",
+  "id": "enderman",
+  "loc": "Ent_Enderman",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.6,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.6,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Firedrake",
+  "id": "firedrake",
+  "loc": "Ent_Wild_Drake",
+  "hp": 3200,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Frost_goblin_miner",
+  "id": "frost_goblin_miner",
+  "loc": "Ent_XMAS2012_Frost_Goblin_Miner",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Frost_goblin_rogue_archer",
+  "id": "frost_goblin_rogue_archer",
+  "loc": "Ent_XMAS2012_Frost_Goblin_Rogue_Archer",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Frost_goblin_shaman",
+  "id": "frost_goblin_shaman",
+  "loc": "Ent_XMAS2012_Frost_Goblin_Shaman",
+  "hp": 2000,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(0,7) + t.status(wet))*0.75",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "S",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,15) * !t.status(wet) - !LOS*0.75",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*4",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Frost_goblin_soldier_crowdcooler",
+  "id": "frost_goblin_soldier_crowdcooler",
+  "loc": "Ent_XMAS2012_Frost_Goblin_Trooper",
+  "hp": 700,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "fire",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Frost_wurstmacher",
+  "id": "frost_wurstmacher",
+  "loc": "Ent_XMAS2012_Frost_Wurstmacher",
+  "hp": 20000,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "ice",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "fire",
+    "mult": 2.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "GRIMLOL",
+  "id": "grimlol",
+  "loc": "",
+  "hp": null,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "lightning",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "ice",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "steam",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Ghost",
+  "id": "ghost",
+  "loc": "",
+  "hp": 1100,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Ghost_Acolyte",
+  "id": "ghost_acolyte",
+  "loc": "Ent_Human_Ghost_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Ghost_Citizen_female00",
+  "id": "ghost_citizen_female00",
+  "loc": "Ent_Human_Ghost_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Ghost_Citizen_male00",
+  "id": "ghost_citizen_male00",
+  "loc": "Ent_Human_Ghost_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Ghost_Wizard_Hat",
+  "id": "ghost_wizard_hat",
+  "loc": "Ent_Human_Ghost_Wizard",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "E",
+     "W"
+    ],
+    "mode": "area",
+    "cond": "distExp(3)",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "(!t.health*1.5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "A",
+     "S",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "t.danger(offensive) * 1.5 * !s.shielded",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Ghoul",
+  "id": "ghoul",
+  "loc": "Ent_Undead_Ghoul",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Ghoul_flamer",
+  "id": "ghoul_flamer",
+  "loc": "Ent_Undead_Ghoul_Flamer",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Ghoul_poison",
+  "id": "ghoul_poison",
+  "loc": "Ent_Undead_Ghoul_Poison",
+  "hp": 1500,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Goblin_bomber",
+  "id": "goblin_bomber",
+  "loc": "Ent_Goblin_Bomber",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 1.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_commando",
+  "id": "goblin_commando",
+  "loc": "Ent_Goblin_Commando",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Goblin_commando_bush",
+  "id": "goblin_commando_bush",
+  "loc": "",
+  "hp": null,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_fallen",
+  "id": "goblin_fallen",
+  "loc": "Ent_Goblin_Fallen",
+  "hp": 2400,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": -0.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "lightning",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.7,
+    "mod": -100.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "steam",
+    "mult": 0.25,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "ice",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Goblin_miner",
+  "id": "goblin_miner",
+  "loc": "Ent_Goblin_Miner",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Goblin_pirate",
+  "id": "goblin_pirate",
+  "loc": "Ent_Goblin_Rogue",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Goblin_ranger",
+  "id": "goblin_ranger",
+  "loc": "Ent_Goblin_Hood",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_rogue",
+  "id": "goblin_rogue",
+  "loc": "Ent_Goblin_Rogue",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Goblin_rogue_archer",
+  "id": "goblin_rogue_archer",
+  "loc": "Ent_Goblin_Ranger",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Goblin_shaman",
+  "id": "goblin_shaman",
+  "loc": "Ent_Goblin_Shaman",
+  "hp": 2000,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(0,7) + t.status(wet))*0.75",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "S",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,15) * !t.status(wet) - !LOS*0.75",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "(FDensity(5)+Danger(fire))*0.75 - s.status(greased)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*4",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Goblin_shaman_nodrop",
+  "id": "goblin_shaman_nodrop",
+  "loc": "Ent_Goblin_Shaman",
+  "hp": 2000,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(0,7) + t.status(wet))*0.75",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "S",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,15) * !t.status(wet) - !LOS*0.75",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "(FDensity(5)+Danger(fire))*0.75 - s.status(greased)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*4",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Goblin_vietnam_farmer_mat49",
+  "id": "goblin_vietnam_farmer_mat49",
+  "loc": "Ent_Goblin_Farmer",
+  "hp": 600,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_vietnam_farmer_nagant",
+  "id": "goblin_vietnam_farmer_nagant",
+  "loc": "Ent_Goblin_Farmer",
+  "hp": 600,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Goblin_vietnam_soldier_ak47",
+  "id": "goblin_vietnam_soldier_ak47",
+  "loc": "Ent_Goblin_AK47",
+  "hp": 600,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_vietnam_soldier_mortar",
+  "id": "goblin_vietnam_soldier_mortar",
+  "loc": "Ent_Goblin_Mortar",
+  "hp": 600,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_vietnam_soldier_rpg7",
+  "id": "goblin_vietnam_soldier_rpg7",
+  "loc": "Ent_Goblin_RPG7",
+  "hp": 600,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Goblin_vietnam_soldier_tower",
+  "id": "goblin_vietnam_soldier_tower",
+  "loc": "Ent_Goblin_AK47",
+  "hp": 600,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_warlock",
+  "id": "goblin_warlock",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "A",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,20)) * !s.status(wet)",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(8) * !t.status(wet)",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(15) * t.status(burning)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 3.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_warlock_nodrop",
+  "id": "goblin_warlock_nodrop",
+  "loc": "Ent_Goblin_Warlock",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "A",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,20)) * !s.status(wet)",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(8) * !t.status(wet)",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(15) * t.status(burning)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 3.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_warrior",
+  "id": "goblin_warrior",
+  "loc": "",
+  "hp": 100,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Goblin_warrior_archer",
+  "id": "goblin_warrior_archer",
+  "loc": "Ent_Goblin_Archer",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Goblin_warrior_captain",
+  "id": "goblin_warrior_captain",
+  "loc": "",
+  "hp": 150,
+  "resist": [],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Goblin_warrior_captain_nodrop",
+  "id": "goblin_warrior_captain_nodrop",
+  "loc": "",
+  "hp": 150,
+  "resist": [],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Goblin_warrior_captain_noshield",
+  "id": "goblin_warrior_captain_noshield",
+  "loc": "Ent_Goblin_Captain",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.4,
+    "mod": -50.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Goblin_warrior_captain_noshield_nodrop",
+  "id": "goblin_warrior_captain_noshield_nodrop",
+  "loc": "Ent_Goblin_Captain",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.4,
+    "mod": -50.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Goblin_warrior_noshield",
+  "id": "goblin_warrior_noshield",
+  "loc": "Ent_Goblin_Warrior",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Grimnirs_Starspawn",
+  "id": "grimnirs_starspawn",
+  "loc": "Ent_Grimnir_Starspawn",
+  "hp": 30000,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "S"
+    ],
+    "mode": "area",
+    "cond": "t.edensity+0.5",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "S"
+    ],
+    "mode": "area",
+    "cond": "distExp(3,10)+behind",
+    "weight": 3.0
+   }
+  ],
+  "melee": 4
+ },
+ {
+  "file": "Horse",
+  "id": "horse",
+  "loc": "Ent_Horse",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Human_diplomat",
+  "id": "human_diplomat",
+  "loc": "Ent_Osotc_Human_Diplomat",
+  "hp": 2100,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.6,
+    "mod": -700.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 2.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.3,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Human_horseman",
+  "id": "human_horseman",
+  "loc": "Ent_Osotc_Human_Horseman",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.6,
+    "mod": -500.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Human_onhorseman",
+  "id": "human_onhorseman",
+  "loc": "",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.6,
+    "mod": -300.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Human_paladin",
+  "id": "human_paladin",
+  "loc": "Ent_Osotc_Human_Paladin",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.6,
+    "mod": -700.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 2.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.3,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Imp",
+  "id": "imp",
+  "loc": "Ent_Imp",
+  "hp": 300,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "King",
+  "id": "king",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Luggage_item",
+  "id": "luggage_item",
+  "loc": "Ent_Luggage",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Luggage_magick",
+  "id": "luggage_magick",
+  "loc": "Ent_Luggage",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Mcleod",
+  "id": "mcleod",
+  "loc": "",
+  "hp": 100,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "MountainKing",
+  "id": "mountainking",
+  "loc": "",
+  "hp": 8000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.3,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.4,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Murray",
+  "id": "murray",
+  "loc": "",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "NecroFriend_Ghoul",
+  "id": "necrofriend_ghoul",
+  "loc": "Ent_Undead_Ghoul",
+  "hp": 70,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "NecroFriend_Ghoul_flamer",
+  "id": "necrofriend_ghoul_flamer",
+  "loc": "Ent_Undead_Ghoul_Flamer",
+  "hp": 140,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "NecroFriend_Skeleton_noob",
+  "id": "necrofriend_skeleton_noob",
+  "loc": "Ent_Undead_Skeleton",
+  "hp": 100,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "NecroFriend_Wight",
+  "id": "necrofriend_wight",
+  "loc": "Ent_Undead_Wight",
+  "hp": 400,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "NecroFriend_Zombie",
+  "id": "necrofriend_zombie",
+  "loc": "Ent_Undead_Zombie",
+  "hp": null,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "NecroFriend_darksoul_arcane",
+  "id": "necrofriend_darksoul_arcane",
+  "loc": "Ent_Darksoul",
+  "hp": 50,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "NecroFriend_darksoul_lightning",
+  "id": "necrofriend_darksoul_lightning",
+  "loc": "Ent_Darksoul",
+  "hp": 50,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Necromancer",
+  "id": "necromancer",
+  "loc": "Ent_Undead_Necromancer",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "S",
+     "D"
+    ],
+    "mode": "area",
+    "cond": "distExp(0,15)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "D"
+    ],
+    "mode": "area",
+    "cond": "distExp(5) + !s.health + !t.health",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!t.health",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health *1.5",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "R"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning)",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Orc_berserk",
+  "id": "orc_berserk",
+  "loc": "Ent_Orc_Berserk",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Orc_captain",
+  "id": "orc_captain",
+  "loc": "Ent_Orc_Captain",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Orc_captain_noarmour",
+  "id": "orc_captain_noarmour",
+  "loc": "Ent_Orc_Captain",
+  "hp": 5500,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Orc_captain_noshield",
+  "id": "orc_captain_noshield",
+  "loc": "Ent_Orc_Captain",
+  "hp": 2200,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Orc_infested",
+  "id": "orc_infested",
+  "loc": "Ent_Orc_Infested",
+  "hp": 2500,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Orc_light_armored",
+  "id": "orc_light_armored",
+  "loc": "Ent_Orc_Foreman",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Orc_regular",
+  "id": "orc_regular",
+  "loc": "Ent_Orc_Scout",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Orc_regular_axe",
+  "id": "orc_regular_axe",
+  "loc": "Ent_Orc_Lumberjack0",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Orc_vietcong_rpd",
+  "id": "orc_vietcong_rpd",
+  "loc": "Ent_Orc_RPD",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Orc_warrior",
+  "id": "orc_warrior",
+  "loc": "",
+  "hp": 250,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Orc_warrior_noarmour",
+  "id": "orc_warrior_noarmour",
+  "loc": "Ent_Orc_Warrior",
+  "hp": 2200,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Orc_warrior_noshield",
+  "id": "orc_warrior_noshield",
+  "loc": "Ent_Orc_Warrior",
+  "hp": 2200,
+  "resist": [],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Polymorph_Goblin",
+  "id": "polymorph_goblin",
+  "loc": "Ent_Goblin_Bomber",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 1.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Polymorph_Horse",
+  "id": "polymorph_horse",
+  "loc": "Ent_Horse",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Polymorph_Imp",
+  "id": "polymorph_imp",
+  "loc": "Ent_Imp",
+  "hp": 300,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Polymorph_Troll",
+  "id": "polymorph_troll",
+  "loc": "Ent_Troll_Forest",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Pony",
+  "id": "pony",
+  "loc": "Ent_Horse",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Rat",
+  "id": "rat",
+  "loc": "Ent_Ferocious_Rat",
+  "hp": 125,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Scholar",
+  "id": "scholar",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_Baelyg",
+  "id": "scholar_baelyg",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_bassist",
+  "id": "scholar_bassist",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_drummer",
+  "id": "scholar_drummer",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_flutist",
+  "id": "scholar_flutist",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_lutist",
+  "id": "scholar_lutist",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_old",
+  "id": "scholar_old",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_old_sitting",
+  "id": "scholar_old_sitting",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_party",
+  "id": "scholar_party",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_reading",
+  "id": "scholar_reading",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Scholar_sitting",
+  "id": "scholar_sitting",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Shoggoth",
+  "id": "shoggoth",
+  "loc": "Ent_Shoggoth",
+  "hp": 35000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": -1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_archer",
+  "id": "skeleton_archer",
+  "loc": "Ent_Undead_Skeleton_Archer",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Skeleton_darksoul_arcane",
+  "id": "skeleton_darksoul_arcane",
+  "loc": "Ent_Darksoul",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_darksoul_arcane_mug",
+  "id": "skeleton_darksoul_arcane_mug",
+  "loc": "Ent_Darksoul",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_darksoul_elite",
+  "id": "skeleton_darksoul_elite",
+  "loc": "Ent_Darksoul_Elite",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_darksoul_elite_noscore",
+  "id": "skeleton_darksoul_elite_noscore",
+  "loc": "Ent_Darksoul_Elite",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_darksoul_frost",
+  "id": "skeleton_darksoul_frost",
+  "loc": "Ent_Darksoul",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_darksoul_lightning",
+  "id": "skeleton_darksoul_lightning",
+  "loc": "Ent_Darksoul",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_darksoul_poison",
+  "id": "skeleton_darksoul_poison",
+  "loc": "Ent_Darksoul",
+  "hp": 800,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_elite",
+  "id": "skeleton_elite",
+  "loc": "Ent_Undead_Skeleton_Elite",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_noob",
+  "id": "skeleton_noob",
+  "loc": "Ent_Undead_Skeleton",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Skeleton_swordsman",
+  "id": "skeleton_swordsman",
+  "loc": "Ent_Undead_Skeleton_Soldier",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Skeleton_wight",
+  "id": "skeleton_wight",
+  "loc": "Ent_Undead_Wight",
+  "hp": 3000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Skeleton_wight_friendly",
+  "id": "skeleton_wight_friendly",
+  "loc": "Ent_Undead_Wight",
+  "hp": 2000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Slimedrake",
+  "id": "slimedrake",
+  "loc": "Ent_Drake_Slime",
+  "hp": 3200,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Slimeydrake",
+  "id": "slimeydrake",
+  "loc": "Ent_WildDDDDDD_Drake",
+  "hp": 3200,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_archer",
+  "id": "soldier_archer",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Soldier_archer_evil",
+  "id": "soldier_archer_evil",
+  "loc": "Ent_Osotc_Human_Archer",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Soldier_captain",
+  "id": "soldier_captain",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_captain_evil",
+  "id": "soldier_captain_evil",
+  "loc": "Ent_Osotc_Human_Captain",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_flute",
+  "id": "soldier_flute",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_sitting",
+  "id": "soldier_sitting",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_skifree",
+  "id": "soldier_skifree",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_spearman",
+  "id": "soldier_spearman",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_spearman_evil",
+  "id": "soldier_spearman_evil",
+  "loc": "Ent_Osotc_Human_Spearman",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_swordsman",
+  "id": "soldier_swordsman",
+  "loc": "",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_swordsman_evil",
+  "id": "soldier_swordsman_evil",
+  "loc": "Ent_Osotc_Human_Swordsman",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Soldier_vietnam_grunt",
+  "id": "soldier_vietnam_grunt",
+  "loc": "",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Soldier_vietnam_heavy",
+  "id": "soldier_vietnam_heavy",
+  "loc": "",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Soldier_vietnam_pow",
+  "id": "soldier_vietnam_pow",
+  "loc": "",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Soldier_vietnam_rambo",
+  "id": "soldier_vietnam_rambo",
+  "loc": "",
+  "hp": 1600,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Spider_baby",
+  "id": "spider_baby",
+  "loc": "",
+  "hp": null,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Spider_forest",
+  "id": "spider_forest",
+  "loc": "Ent_Wild_Spider",
+  "hp": 330,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Spider_poison",
+  "id": "spider_poison",
+  "loc": "Ent_Wild_Spider_Poison",
+  "hp": 2500,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Starspawn",
+  "id": "starspawn",
+  "loc": "Ent_Starspawn",
+  "hp": 30000,
+  "resist": [],
+  "casts": [],
+  "melee": 5
+ },
+ {
+  "file": "Swampfrog",
+  "id": "swampfrog",
+  "loc": "",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Swampthing",
+  "id": "swampthing",
+  "loc": "Ent_Wild_SwampThing",
+  "hp": 7000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 2.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": -1.0,
+    "mod": 400.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Targetdoll",
+  "id": "targetdoll",
+  "loc": "",
+  "hp": 500,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Tom",
+  "id": "tom",
+  "loc": "",
+  "hp": 4000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Tower_bomb_osotc",
+  "id": "tower_bomb_osotc",
+  "loc": "",
+  "hp": 7000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 1.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Treespirit",
+  "id": "treespirit",
+  "loc": "Ent_Wild_Treespirit",
+  "hp": 2500,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Troll_forest",
+  "id": "troll_forest",
+  "loc": "Ent_Troll_Forest",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_forest_hook",
+  "id": "troll_forest_hook",
+  "loc": "Ent_Troll_Forest",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_forest_unarmed",
+  "id": "troll_forest_unarmed",
+  "loc": "Ent_Troll_Forest",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.8,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_snow",
+  "id": "troll_snow",
+  "loc": "Ent_Troll_Snow",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.15,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Troll_spirit",
+  "id": "troll_spirit",
+  "loc": "",
+  "hp": 9000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Troll_stone",
+  "id": "troll_stone",
+  "loc": "Ent_Troll_Cave",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.75,
+    "mod": -50.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Troll_stone_gold_looter",
+  "id": "troll_stone_gold_looter",
+  "loc": "Ent_Troll_Cave",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.75,
+    "mod": -50.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Troll_stone_unarmed",
+  "id": "troll_stone_unarmed",
+  "loc": "Ent_Troll_Cave",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.75,
+    "mod": -50.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_vietcong_machinegun",
+  "id": "troll_vietcong_machinegun",
+  "loc": "Ent_Troll_DSHK",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -30.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Troll_war",
+  "id": "troll_war",
+  "loc": "Ent_Troll_War",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -30.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 3
+ },
+ {
+  "file": "Troll_war_arbalest",
+  "id": "troll_war_arbalest",
+  "loc": "Ent_Troll_War",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -30.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Troll_war_hook",
+  "id": "troll_war_hook",
+  "loc": "Ent_Troll_War",
+  "hp": 6000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -30.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_zombie",
+  "id": "troll_zombie",
+  "loc": "Ent_Troll_Zombie",
+  "hp": 6000,
+  "resist": [],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_zombie_club",
+  "id": "troll_zombie_club",
+  "loc": "Ent_Troll_Zombie_Club",
+  "hp": 6000,
+  "resist": [],
+  "casts": [],
+  "melee": 4
+ },
+ {
+  "file": "Troll_zombie_snow",
+  "id": "troll_zombie_snow",
+  "loc": "Ent_Troll_Snow_Zombie",
+  "hp": 6000,
+  "resist": [],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Villager_female00_broom",
+  "id": "villager_female00_broom",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_female01_sickle",
+  "id": "villager_female01_sickle",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_female02_pitchfork",
+  "id": "villager_female02_pitchfork",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_female03_unarmed",
+  "id": "villager_female03_unarmed",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_female03_unarmed_quest",
+  "id": "villager_female03_unarmed_quest",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male00_pitchfork",
+  "id": "villager_male00_pitchfork",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male01_scythe",
+  "id": "villager_male01_scythe",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male02_pitchfork",
+  "id": "villager_male02_pitchfork",
+  "loc": "",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male03_fishing",
+  "id": "villager_male03_fishing",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Villager_male04_broom",
+  "id": "villager_male04_broom",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male05_pitchfork",
+  "id": "villager_male05_pitchfork",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male06_axe",
+  "id": "villager_male06_axe",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male07_hammer",
+  "id": "villager_male07_hammer",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Villager_male08_unarmed",
+  "id": "villager_male08_unarmed",
+  "loc": "Ent_Human_Villager",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Vlad",
+  "id": "vlad",
+  "loc": "",
+  "hp": null,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Vlad_Challenge",
+  "id": "vlad_challenge",
+  "loc": "Boss_T10",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "S",
+     "S",
+     "R"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(2,10))",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "D",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(t.threat(arcane|earth))*3",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "S",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(4,14))",
+    "weight": 12.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "F"
+    ],
+    "mode": "area",
+    "cond": "distExp(6)",
+    "weight": 12.0
+   },
+   {
+    "seq": [
+     "E",
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold) + (s.status(frozen)*5)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 3.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Vlad_Diplomat",
+  "id": "vlad_diplomat",
+  "loc": "Boss_T10",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W",
+     "W",
+     "F"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(2,10))",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "D",
+     "W",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(4,14))",
+    "weight": 12.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "F"
+    ],
+    "mode": "area",
+    "cond": "distExp(6)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "E",
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold) + (s.status(frozen)*5)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 3.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Vlad_Future",
+  "id": "vlad_future",
+  "loc": "",
+  "hp": null,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Vlad_Spirit",
+  "id": "vlad_spirit",
+  "loc": "Boss_T10",
+  "hp": 10000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "Q",
+     "R"
+    ],
+    "mode": "weapon",
+    "cond": "(distExp(2,10))",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(t.threat(arcane|earth))*5",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 3",
+    "weight": 3.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Vlad_cape_nohand",
+  "id": "vlad_cape_nohand",
+  "loc": "",
+  "hp": null,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Vlad_vietnam",
+  "id": "vlad_vietnam",
+  "loc": "",
+  "hp": null,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Warhound",
+  "id": "warhound",
+  "loc": "Ent_Osotc_Warhound",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 2
+ },
+ {
+  "file": "Warlock",
+  "id": "warlock",
+  "loc": "Ent_Evil_Warlock",
+  "hp": 3500,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "D",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,10)) * (!t.status(wet))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,10)) * (t.EDensity(4))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health*1.5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "A",
+     "A",
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(2,8)*2 * LOS * t.FDensity(3))",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(5,20) + !t.health*0.75",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "S",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,20) * (t.status(wet)*1.5) * !s.status(wet)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "S",
+     "S"
+    ],
+    "mode": "weapon",
+    "cond": "distLin(5)*s.health*1.5",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "E"
+    ],
+    "mode": "self",
+    "cond": "t.danger(offensive) * 1.5 * !s.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)* 10 * !s.shielded",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*1.5 * !s.shielded",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*1.5 * !s.shielded",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Warlock_Ice",
+  "id": "warlock_ice",
+  "loc": "",
+  "hp": 3500,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(0,10) + (t.status(wet) * 0.5)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "F",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(7,17) + !t.status(wet)) * 0.5",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "F"
+    ],
+    "mode": "area",
+    "cond": "distExp(10) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "!t.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "s.status(wet) + s.status(cold)",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "s.status(burning) * 2",
+    "weight": 0.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "danger(fire) * 4",
+    "weight": 0.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Wizard",
+  "id": "wizard",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(10) + t.status(wet))*0.75*LOS*!t.resistance(lightning)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.status(wet) * (distExp(6,20))*LOS*!t.resistance(fire)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.health*danger(offensive)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Alucart",
+  "id": "wizard_alucart",
+  "loc": "",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(10) + t.status(wet))*0.75*LOS*!t.resistance(lightning)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.status(wet) * (distExp(6,20))*LOS*!t.resistance(fire)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.health*danger(offensive)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Arctic",
+  "id": "wizard_arctic",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "ice",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": true
+   },
+   {
+    "elem": "cold",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": true
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Astronomer",
+  "id": "wizard_astronomer",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Bathrobe",
+  "id": "wizard_bathrobe",
+  "loc": "Ent_Human_Wizard",
+  "hp": 700,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Centurion",
+  "id": "wizard_centurion",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Coldarr",
+  "id": "wizard_coldarr",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "cold",
+    "mult": -1.2,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "ice",
+    "mult": -1.2,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "steam",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Crowd0",
+  "id": "wizard_crowd0",
+  "loc": "Ent_Human_Wizard_Crowd0",
+  "hp": 200,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Wizard_Crowd1",
+  "id": "wizard_crowd1",
+  "loc": "Ent_Human_Wizard_Crowd1",
+  "hp": 200,
+  "resist": [],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "Wizard_Crusader",
+  "id": "wizard_crusader",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Cultist",
+  "id": "wizard_cultist",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Detective",
+  "id": "wizard_detective",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Doom",
+  "id": "wizard_doom",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": -40.0,
+    "imm": false
+   },
+   {
+    "elem": "lightning",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.6,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Drummer",
+  "id": "wizard_drummer",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.85,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Electrobe",
+  "id": "wizard_electrobe",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": -0.15,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "steam",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Evil",
+  "id": "wizard_evil",
+  "loc": "Ent_Human_Wizard",
+  "hp": 2000,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(10) + t.status(wet))*0.75*LOS*!t.resistance(lightning)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.status(wet) * (distExp(6,20))*LOS*!t.resistance(fire)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "D",
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.resistance(ice)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F",
+     "A",
+     "S",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "t.danger(offensive) * 1.5 * !s.shielded",
+    "weight": 10.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Flamos",
+  "id": "wizard_flamos",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": -1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "ice",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 1.4,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "steam",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Hat",
+  "id": "wizard_hat",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Hat_Evil",
+  "id": "wizard_hat_evil",
+  "loc": "Ent_Human_Wizard",
+  "hp": 3000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "E",
+     "W"
+    ],
+    "mode": "area",
+    "cond": "distExp(3)",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "W",
+     "W"
+    ],
+    "mode": "ranged",
+    "cond": "(!t.health*1.5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "A",
+     "S",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "t.danger(offensive) * 1.5 * !s.shielded",
+    "weight": 10.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Headcrab",
+  "id": "wizard_headcrab",
+  "loc": "Ent_Human_Wizard",
+  "hp": 5000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Horrible",
+  "id": "wizard_horrible",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "lightning",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.7,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_IceRegent",
+  "id": "wizard_iceregent",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 2.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.3,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "cold",
+    "mult": -1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Jazz",
+  "id": "wizard_jazz",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.6,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "steam",
+    "mult": 0.6,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Metal",
+  "id": "wizard_metal",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.9,
+    "mod": -100.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.9,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Morten",
+  "id": "wizard_morten",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "A"
+    ],
+    "mode": "ranged",
+    "cond": "!s.status(wet) * (distExp(10) + t.status(wet))*0.75*LOS*!t.resistance(lightning)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "D",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "!t.status(wet) * (distExp(6,20))*LOS*!t.resistance(fire)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "D",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.health*danger(offensive)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Necromancer",
+  "id": "wizard_necromancer",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "life",
+    "mult": -1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": -1.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Patchwork",
+  "id": "wizard_patchwork",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Pharaoh",
+  "id": "wizard_pharaoh",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.0,
+    "mod": 0.0,
+    "imm": true
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "F"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "R",
+     "R",
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(20)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "QR",
+     "QR",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.shielded*!t.resistance(cold)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "EDensity(5)+DistLin(5)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Purple",
+  "id": "wizard_purple",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1326,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.25,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.25,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.75,
+    "mod": -40.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Reddit",
+  "id": "wizard_reddit",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Reservoir",
+  "id": "wizard_reservoir",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Rogue",
+  "id": "wizard_rogue",
+  "loc": "Ent_Human_Wizard",
+  "hp": 400,
+  "resist": [],
+  "casts": [
+   {
+    "seq": [
+     "D",
+     "QF",
+     "QF"
+    ],
+    "mode": "ranged",
+    "cond": "DistLin(6)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "D",
+     "QF",
+     "QF"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(6,20))*LOS*!t.resistance(steam)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Samurai",
+  "id": "wizard_samurai",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Shaman",
+  "id": "wizard_shaman",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Support",
+  "id": "wizard_support",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "area",
+    "cond": "FDensity(5)*(!t.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "D"
+    ],
+    "mode": "ranged",
+    "cond": "0.2",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "S",
+     "S",
+     "R",
+     "R",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)*!s.resistance(arcane)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "F",
+     "F",
+     "F",
+     "F",
+     "E"
+    ],
+    "mode": "self",
+    "cond": "!s.resistance(fire)*!s.resistance(arcane)+FDensity(5)",
+    "weight": 15.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "Wizard_Tank",
+  "id": "wizard_tank",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "R",
+     "R",
+     "R"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(10)*!t.status(cold)",
+    "weight": 3.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Tentacle",
+  "id": "wizard_tentacle",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1200,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Trekkie",
+  "id": "wizard_trekkie",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "fire",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "S",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(5,20)*LOS*!t.shielded*!t.resistance(arcane)",
+    "weight": 8.0
+   },
+   {
+    "seq": [
+     "W",
+     "W",
+     "W"
+    ],
+    "mode": "self",
+    "cond": "(!s.health-0.5)*10",
+    "weight": 6.0
+   },
+   {
+    "seq": [
+     "Q"
+    ],
+    "mode": "self",
+    "cond": "(s.status(burning)+s.status(greased))*2",
+    "weight": 2.0
+   },
+   {
+    "seq": [
+     "F"
+    ],
+    "mode": "self",
+    "cond": "(s.status(wet)+s.status(cold)+s.status(frozen))*2",
+    "weight": 2.0
+   }
+  ],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Tron",
+  "id": "wizard_tron",
+  "loc": "Ent_Human_Wizard",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": -1.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "life",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 3.0,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "water",
+    "mult": 1.0,
+    "mod": 500.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Vietnam",
+  "id": "wizard_vietnam",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Vizier",
+  "id": "wizard_vizier",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [
+   {
+    "elem": "arcane",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Who",
+  "id": "wizard_who",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_Wuxia",
+  "id": "wizard_wuxia",
+  "loc": "Ent_Human_Wizard",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Wizard_space",
+  "id": "wizard_space",
+  "loc": "Ent_Human_Wizard",
+  "hp": 2000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "Zombie",
+  "id": "zombie",
+  "loc": "Ent_Undead_Zombie",
+  "hp": 500,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 0.0,
+    "mod": 100.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "a_basic_character",
+  "id": "a_basic_character",
+  "loc": "",
+  "hp": 1000,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "dungeons_Treespirit",
+  "id": "dungeons_treespirit",
+  "loc": "Ent_Dungeons_Wild_Treespirit",
+  "hp": 1400,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_Enraged_Goblin_warlock",
+  "id": "woot_enraged_goblin_warlock",
+  "loc": "Ent_WOOT_Goblin_Warlock",
+  "hp": 2800,
+  "resist": [
+   {
+    "elem": "earth",
+    "mult": 1.75,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "lightning",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "arcane",
+    "mult": 0.75,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [
+   {
+    "seq": [
+     "A",
+     "A",
+     "S",
+     "QR"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,25)) * !s.status(wet)",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "A",
+     "A",
+     "S",
+     "QF"
+    ],
+    "mode": "area",
+    "cond": "(distExp(0,8)) * !s.status(wet)",
+    "weight": 4.0
+   },
+   {
+    "seq": [
+     "QR",
+     "S",
+     "S"
+    ],
+    "mode": "ranged",
+    "cond": "(distExp(0,25)) * s.status(wet)",
+    "weight": 1.0
+   },
+   {
+    "seq": [
+     "D",
+     "Q",
+     "Q",
+     "Q",
+     "Q"
+    ],
+    "mode": "ranged",
+    "cond": "distExp(10,40)",
+    "weight": 5.0
+   },
+   {
+    "seq": [
+     "W"
+    ],
+    "mode": "self",
+    "cond": "!s.health",
+    "weight": 3.0
+   }
+  ],
+  "melee": 0
+ },
+ {
+  "file": "woot_Goblin_warrior_archer",
+  "id": "woot_goblin_warrior_archer",
+  "loc": "Ent_WOOT_Goblin_Archer",
+  "hp": 600,
+  "resist": [
+   {
+    "elem": "lightning",
+    "mult": 1.2,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "earth",
+    "mult": 0.5,
+    "mod": 0.0,
+    "imm": false
+   },
+   {
+    "elem": "fire",
+    "mult": 1.2,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 0
+ },
+ {
+  "file": "woot_Unstable_Elemental_Arcane",
+  "id": "woot_unstable_elemental_arcane",
+  "loc": "Ent_WOOT_Arcane_Elemental",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_Unstable_Elemental_Cold",
+  "id": "woot_unstable_elemental_cold",
+  "loc": "Ent_WOOT_Cold_Elemental",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_Unstable_Elemental_Fire",
+  "id": "woot_unstable_elemental_fire",
+  "loc": "",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_Unstable_Elemental_Life",
+  "id": "woot_unstable_elemental_life",
+  "loc": "Ent_WOOT_Life_Elemental",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_Unstable_Elemental_Lightning",
+  "id": "woot_unstable_elemental_lightning",
+  "loc": "Ent_WOOT_Lightning_Elemental",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_Unstable_Elemental_Water",
+  "id": "woot_unstable_elemental_water",
+  "loc": "Ent_WOOT_Water_Elemental",
+  "hp": 900,
+  "resist": [
+   {
+    "elem": "water",
+    "mult": 0.0,
+    "mod": 0.0,
+    "imm": false
+   }
+  ],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_panicking_functionary_female",
+  "id": "woot_panicking_functionary_female",
+  "loc": "Ent_WOOT_Panicking_Functionary",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ },
+ {
+  "file": "woot_panicking_functionary_male",
+  "id": "woot_panicking_functionary_male",
+  "loc": "Ent_WOOT_Panicking_Functionary",
+  "hp": 800,
+  "resist": [],
+  "casts": [],
+  "melee": 1
+ }
+]

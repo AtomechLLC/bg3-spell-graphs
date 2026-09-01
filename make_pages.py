@@ -14,6 +14,7 @@ PAGES = [
     ("magicka_map.html", "magicka-chemistry.html", "🪄"),
     ("magicka_tree.html", "magicka-casting-tree.html", "🌳"),
     ("magicka_hooks.html", "magicka-hooks.html", "🪝"),
+    ("magicka_bestiary.html", "magicka-bestiary.html", "🐲"),
     ("magicka.html", "magicka.html", "🧙"),
 ]
 os.makedirs("docs", exist_ok=True)
@@ -173,10 +174,10 @@ divergences that reveal each medium's design priorities.</p></a>
 helpless, marked — with creators feeding each state and exploiters cashing it.</p></a>
 <a class="card" href="magicka.html" style="--ac:#9B7BE8;--face:Cinzel">
 <span class="em">🧙</span><h2>Magicka Lenses</h2>
-<div class="meta">Magicka (2011) · 3 lenses · 10 elements · 29 magicks · 6 states</div>
-<p>The purest combo system ever shipped, on one page: the element wheel (opposites, mixes,
-statuses), the casting tree with its live sequence builder, and the hook economy — swap lenses
-without a reload, and a queued sequence survives the trip.</p></a>
+<div class="meta">Magicka (2011) · 4 lenses · 29 magicks · 329 enemies from game data</div>
+<p>The purest combo system ever shipped, on one page: the element wheel, the casting tree with its
+live sequence builder, the hook economy — and a bestiary of real combat values decompressed from
+the install: HP, resistances, and the enemies' own scripted casts.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data
