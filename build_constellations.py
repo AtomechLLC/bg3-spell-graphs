@@ -484,6 +484,7 @@ footer{{line-height:1.8}}
 #helpov .card{{background:#1B1822;border:1px solid #3a3647;border-radius:12px;padding:20px 26px;max-width:430px;font-size:12.5px;line-height:2.1}}
 #helpov b{{color:#E3C377;display:block;margin-bottom:4px}}
 #helpov kbd{{border:1px solid #3a3647;border-bottom-width:2px;border-radius:4px;padding:0 6px;font:500 11px "IBM Plex Mono",monospace;background:#211E2B}}
+svg.filtered.hov .n.lit{{opacity:.45}}
 #fpanel{{position:absolute;top:14px;display:none;z-index:3;background:#1B1822F2;
   border:1px solid #3a3647;border-radius:10px;padding:10px 12px;width:230px;
   max-height:calc(100% - 28px);overflow-y:auto;font-size:12px;scrollbar-width:thin;
@@ -635,6 +636,10 @@ document.getElementById('clear').addEventListener('click', () => {{
 document.querySelectorAll('.seg button').forEach(b =>
   b.addEventListener('click', () => show(b.dataset.v)));
 function updatePanel() {{
+  document.querySelectorAll('.view svg').forEach(s => {{
+    s.classList.remove('hov');
+    s.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  }});
   const fp = document.getElementById('fpanel');
   const sel = [...state.fam];
   if (!sel.length) {{ fp.style.display = 'none'; return; }}
