@@ -1,9 +1,9 @@
 """Combo Chemistry: the interlocking-design map of BG3 -> combo_map.html.
 
-Nodes are spells; edges are *combos*, not similarity: surface ignition,
-wet conduction, deep freeze, shove-into-hazard, mark procs, crit set-ups,
-and the counter-chemistry that undoes them. Same nodes as the
-constellation, a completely different graph.
+The central wheel holds the HOOKS - the game-state tokens a combo passes
+through (fuel, wet, helpless, marked...). Creator spells feed a hook from
+outside; exploiter spells cash it. Every combo is spell -> hook -> spell,
+so the wheel is the grammar and the edges stay linear, not quadratic.
 """
 import base64
 import io
@@ -33,108 +33,99 @@ def deals(r, dtype):
 def surfaces_of(r):
     return set(re.findall(r"CreateSurface\(\s*[\d.]*\s*,?\s*[\d.]*\s*,?\s*([A-Za-z]+)", blob(r)))
 
-# ---------------------------------------------------------------- rosters
 def names(*ns):
-    out = []
-    for n in ns:
-        if n in BYNAME:
-            out.append(BYNAME[n])
-    return out
+    return [BYNAME[n] for n in ns if n in BYNAME]
 
 FIRE = [r for r in ROOTS if deals(r, "Fire") and r["name"] not in ("Fire Shield",)]
 LIGHTNING = [r for r in ROOTS if deals(r, "Lightning")]
 COLD = [r for r in ROOTS if deals(r, "Cold")]
-
 FLAMMABLE_MAKERS = [r for r in ROOTS if surfaces_of(r) & {"Grease", "Web", "Poison"}]
 WET_MAKERS = [r for r in ROOTS if "WET" in blob(r) or surfaces_of(r) & {"Water"}]
 ICE_MAKERS = [r for r in ROOTS if surfaces_of(r) & {"WaterFrozen"}]
 CLOUD_MAKERS = [r for r in ROOTS if surfaces_of(r) & {"FogCloud", "CloudkillCloud", "StinkingCloud", "DarknessCloud"}]
-
 PARALYZERS = names("Hold Person", "Hold Monster", "Sleep", "Flesh to Stone")
-MELEE_CRITTERS = names("Searing Smite", "Thunderous Smite", "Wrathful Smite", "Staggering Smite",
-                       "Inflict Wounds", "Vampiric Touch", "Flame Blade", "Shadow Blade")
+MELEE = names("Searing Smite", "Thunderous Smite", "Wrathful Smite", "Staggering Smite",
+              "Inflict Wounds", "Vampiric Touch", "Flame Blade", "Shadow Blade")
 ADV_MAKERS = names("Faerie Fire", "Guiding Bolt", "Blindness", "Greater Invisibility")
 MARKS = names("Hex", "Hunter's Mark")
 MULTI_HIT = names("Scorching Ray", "Eldritch Blast", "Magic Missile")
 MOVERS = names("Telekinesis", "Gust of Wind", "Grasping Vine", "Thunderwave", "Destructive Wave")
 HAZARDS = names("Spike Growth", "Cloud of Daggers", "Wall of Fire", "Hunger of Hadar",
                 "Moonbeam", "Insect Plague", "Flaming Sphere", "Black Tentacles")
-DOUSERS = names("Create or Destroy Water")
 CLEARERS = names("Gust of Wind")
 
-CHEM = [
-    ("ignite", "#E06A3A", "ignite", "fire lit on a flammable surface",
-     [(a, b) for a in FLAMMABLE_MAKERS for b in FIRE]),
-    ("conduct", "#5A9BF0", "conduct", "lightning doubled through wet targets",
-     [(a, b) for a in WET_MAKERS for b in LIGHTNING]),
-    ("freeze", "#7FD4E8", "deep-freeze", "cold freezes wet targets solid",
-     [(a, b) for a in WET_MAKERS for b in COLD]),
-    ("slip", "#9BD47F", "slip", "ice surfaces knock walkers prone",
-     [(a, b) for a in ICE_MAKERS for b in MELEE_CRITTERS[:4]]),
-    ("crit", "#E3C377", "crit set-up", "paralysed and sleeping targets take melee crits",
-     [(a, b) for a in PARALYZERS for b in MELEE_CRITTERS]),
-    ("adv", "#D4AF5E", "advantage", "the tag that makes the next attack land",
-     [(a, b) for a in ADV_MAKERS for b in MELEE_CRITTERS[:4] + MULTI_HIT[:1]]),
-    ("mark", "#E58A9B", "mark proc", "per-hit riders multiplied by multi-hit spells",
-     [(a, b) for a in MARKS for b in MULTI_HIT]),
-    ("shove", "#B67AF0", "shove into", "forced movement priced in hazard zones",
-     [(a, b) for a in MOVERS for b in HAZARDS]),
-    ("counter", "#8a879a", "counter", "water douses fire · wind clears clouds",
-     [(a, b) for a in DOUSERS for b in FIRE[:6]] + [(a, b) for a in CLEARERS for b in CLOUD_MAKERS]),
+# hook = (id, emoji, LABEL, color, state-description, makers, [(edge-color, verb, users)])
+HOOKS = [
+    ("fuel", "🛢", "FUEL", "#E06A3A", "a flammable surface waiting for a spark",
+     FLAMMABLE_MAKERS, [("#E06A3A", "ignites", FIRE)]),
+    ("wet", "💧", "WET", "#5A9BF0", "soaked targets take double lightning and cold",
+     WET_MAKERS, [("#5A9BF0", "conducts through", LIGHTNING),
+                  ("#7FD4E8", "deep-freezes", COLD)]),
+    ("ice", "🧊", "ICE", "#7FD4E8", "a frozen floor that drops walkers prone",
+     ICE_MAKERS, [("#9BD47F", "crits the slipped", MELEE[:4])]),
+    ("helpless", "⛓", "HELPLESS", "#E3C377", "paralysed and sleeping targets take melee auto-crits",
+     PARALYZERS, [("#E3C377", "auto-crits", MELEE)]),
+    ("adv", "🎯", "ADVANTAGE", "#D4AF5E", "the tag that makes the next attack land",
+     ADV_MAKERS, [("#D4AF5E", "lands with advantage", MELEE[:4] + MULTI_HIT[:1])]),
+    ("mark", "🏷", "MARKED", "#E58A9B", "+1d6 riding every single hit",
+     MARKS, [("#E58A9B", "procs per beam", MULTI_HIT)]),
+    ("hazard", "🕳", "HAZARD", "#B67AF0", "zones and ledges that price forced movement",
+     HAZARDS, [("#B67AF0", "shoves victims in", MOVERS)]),
+    ("cloud", "💨", "CLOUD", "#8a879a", "lingering clouds - and the wind that cancels them",
+     CLOUD_MAKERS, [("#8a879a", "disperses", CLEARERS)]),
 ]
 
-ENGINES = [
-    ("kitchen", "THE FIRE KITCHEN", ["ignite"]),
-    ("stormlab", "THE STORM LAB", ["conduct", "freeze", "slip"]),
-    ("critmill", "THE CRIT MILL", ["crit", "adv"]),
-    ("refinery", "THE MARK REFINERY", ["mark"]),
-    ("chasm", "THE CHASM ECONOMY", ["shove"]),
-    ("fireman", "THE COUNTER DESK", ["counter"]),
-]
-
-# ---------------------------------------------------------------- graph
 NODES = {}
-EDGES = []
-for key, col, lab, desc, pairs in CHEM:
-    for a, b in pairs:
-        if a["id"] == b["id"]:
-            continue
-        NODES[a["id"]] = a
-        NODES[b["id"]] = b
-        EDGES.append((key, col, a["id"], b["id"]))
-print(f"{len(NODES)} nodes, {len(EDGES)} combo edges")
+EDGES = []       # (hook_id, color, spell_id, direction 'make'|'use', dashed)
+ROLES = {}
+for hid, em, lab, col, desc, makers, uses in HOOKS:
+    for r in makers:
+        NODES[r["id"]] = r
+        EDGES.append((hid, col, r["id"], "make", hid == "cloud" and False))
+        ROLES.setdefault(r["id"], []).append(f"creates {lab.lower()}")
+    for ecol, verb, users in uses:
+        for r in users:
+            NODES[r["id"]] = r
+            EDGES.append((hid, ecol, r["id"], "use", hid == "cloud"))
+            ROLES.setdefault(r["id"], []).append(f"{verb} {lab.lower()}")
+print(f"{len(NODES)} spells, {len(HOOKS)} hooks, {len(EDGES)} spokes")
 
-ENGINE_OF = {}
-for ek, _, chems in ENGINES:
-    for ckey, _c, _l, _d, pairs in CHEM:
-        if ckey in chems:
-            for a, b in pairs:
-                ENGINE_OF.setdefault(a["id"], set()).add(ek)
-                ENGINE_OF.setdefault(b["id"], set()).add(ek)
-
+# ---------------------------------------------------------------- layout
 W, H = 1500, 950
-CX, CY = W / 2, H / 2
+CX, CY = W / 2, 480
 SURFACE = "#16161D"
-EANCHOR = {}
-for i, (ek, _t, _c) in enumerate(ENGINES):
-    a = 2 * math.pi * i / len(ENGINES) - math.pi / 2
-    EANCHOR[ek] = (CX + 470 * math.cos(a), CY + 20 + 330 * math.sin(a))
+HOOK_ANGLE = {}
+HOOK_POS = {}
+for i, h in enumerate(HOOKS):
+    a = 2 * math.pi * i / len(HOOKS) - math.pi / 2
+    HOOK_ANGLE[h[0]] = a
+    HOOK_POS[h[0]] = (CX + 185 * math.cos(a), CY + 150 * math.sin(a))
 
-rng = random.Random(7)
+SPELL_HOOKS = {}
+for hid, col, sid, d, dash in EDGES:
+    SPELL_HOOKS.setdefault(sid, set()).add(hid)
+
+rng = random.Random(11)
 pos = {}
-for nid in NODES:
-    eng = ENGINE_OF.get(nid, set())
-    xs = [EANCHOR[e][0] for e in eng] or [CX]
-    ys = [EANCHOR[e][1] for e in eng] or [CY]
-    pos[nid] = [sum(xs) / len(xs) + rng.uniform(-60, 60),
-                sum(ys) / len(ys) + rng.uniform(-50, 50)]
+for sid in NODES:
+    vx = sum(math.cos(HOOK_ANGLE[h]) for h in SPELL_HOOKS[sid])
+    vy = sum(math.sin(HOOK_ANGLE[h]) for h in SPELL_HOOKS[sid])
+    a = math.atan2(vy, vx) if (vx or vy) else rng.uniform(0, 2 * math.pi)
+    a += rng.uniform(-0.28, 0.28)
+    rad = 400 + rng.uniform(-55, 55)
+    pos[sid] = [CX + rad * math.cos(a), CY + rad * 0.82 * math.sin(a)]
 
 def clamp(p):
     p[0] = min(max(p[0], 60), W - 60)
-    p[1] = min(max(p[1], 90), H - 60)
+    p[1] = min(max(p[1], 60), H - 60)
+    dx, dy = p[0] - CX, (p[1] - CY) / 0.82
+    d = math.sqrt(dx * dx + dy * dy) or 1
+    if d < 300:                       # keep the wheel clear
+        p[0] = CX + dx / d * 300
+        p[1] = CY + dy / d * 300 * 0.82
 
-for it in range(240):
-    t = 1 - it / 240
+for it in range(200):
+    t = 1 - it / 200
     disp = {i: [0.0, 0.0] for i in pos}
     items = list(pos.items())
     for i in range(len(items)):
@@ -145,20 +136,23 @@ for it in range(240):
             d2 = dx * dx + dy * dy
             if d2 < 1:
                 dx, dy, d2 = rng.uniform(-1, 1), rng.uniform(-1, 1), 1
-            if d2 < 120 * 120:
+            if d2 < 110 * 110:
                 d = math.sqrt(d2)
-                fr = 900 / d2 * 60
+                fr = 800 / d2 * 60
                 disp[id1][0] += dx / d * fr; disp[id1][1] += dy / d * fr
                 disp[id2][0] -= dx / d * fr; disp[id2][1] -= dy / d * fr
-    for nid in pos:
-        eng = ENGINE_OF.get(nid, set())
-        for e in eng:
-            ax, ay = EANCHOR[e]
-            disp[nid][0] += (ax - pos[nid][0]) * 0.10 / len(eng)
-            disp[nid][1] += (ay - pos[nid][1]) * 0.10 / len(eng)
-    step = 12 * t + 1
-    for nid, p in pos.items():
-        dx, dy = disp[nid]
+    for sid in pos:
+        hooks = SPELL_HOOKS[sid]
+        for h in hooks:
+            hx, hy = HOOK_POS[h]
+            dx, dy = hx - pos[sid][0], hy - pos[sid][1]
+            d = math.sqrt(dx * dx + dy * dy) or 1
+            k = 0.045 / len(hooks) * (d - 240)
+            disp[sid][0] += dx / d * k
+            disp[sid][1] += dy / d * k
+    step = 11 * t + 1
+    for sid, p in pos.items():
+        dx, dy = disp[sid]
         d = math.sqrt(dx * dx + dy * dy) or 1
         m = min(d, step)
         p[0] += dx / d * m; p[1] += dy / d * m
@@ -172,8 +166,8 @@ for _ in range(80):
             p2 = pos[ids[j]]
             dx, dy = p2[0] - p1[0], p2[1] - p1[1]
             d = math.sqrt(dx * dx + dy * dy) or 0.5
-            if d < 44:
-                push = (44 - d) / 2
+            if d < 45:
+                push = (45 - d) / 2
                 ux, uy = dx / d, dy / d
                 p1[0] -= ux * push; p1[1] -= uy * push
                 p2[0] += ux * push; p2[1] += uy * push
@@ -195,40 +189,55 @@ def icon_uri(sid):
     ICONS[sid] = "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode()
     return sid
 
-CHEM_BY_KEY = {c[0]: c for c in CHEM}
-role_of = {}
-for key, col, lab, desc, pairs in CHEM:
-    for a, b in pairs:
-        role_of.setdefault(a["id"], set()).add(key + ":make")
-        role_of.setdefault(b["id"], set()).add(key + ":use")
+colors = sorted({c for _h, c, *_ in [(e[0], e[1]) for e in EDGES]} | {h[3] for h in HOOKS})
+markers = "".join(
+    f'<marker id="m{c.lstrip("#")}" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" '
+    f'markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="{c}"/></marker>'
+    for c in colors)
 
 sv = [f'<rect width="{W}" height="{H}" fill="{SURFACE}" rx="14"/>']
-for ek, title, chems in ENGINES:
-    ax, ay = EANCHOR[ek]
-    col = CHEM_BY_KEY[chems[0]][1]
-    sv.append(f'<circle cx="{ax:.0f}" cy="{ay:.0f}" r="170" fill="{col}" opacity="0.05" filter="url(#blur)"/>')
-    ly = ay - 150 if ay < CY else ay + 165
-    sv.append(f'<text x="{min(max(ax, 130), W - 130):.0f}" y="{ly:.0f}" text-anchor="middle" '
-              f'fill="#E3C377" font-family="Cinzel,Georgia,serif" font-size="17" font-weight="600" '
-              f'letter-spacing="2" stroke="{SURFACE}" stroke-width="6" paint-order="stroke" '
-              f'class="anchor">{title}</text>')
-for k, (key, col, lab, desc, _p) in enumerate(CHEM):
-    pass
-for ei, (key, col, a, b) in enumerate(EDGES):
-    pa, pb = pos[a], pos[b]
-    dash = ' stroke-dasharray="5 4"' if key == "counter" else ""
-    sv.append(f'<line x1="{pa[0]:.0f}" y1="{pa[1]:.0f}" x2="{pb[0]:.0f}" y2="{pb[1]:.0f}" '
-              f'stroke="{col}" stroke-opacity="0.16" stroke-width="1.3"{dash} '
-              f'class="e t-{key} n{a} n{b}"/>')
-for nid, r in NODES.items():
-    x, y = pos[nid]
-    iid = icon_uri(nid)
-    roles = sorted(role_of.get(nid, []))
-    chems = "|" + "|".join(sorted({q.split(":")[0] for q in roles})) + "|"
-    sub = " · ".join(
-        ("creates" if q.endswith(":make") else "exploits") + " " + CHEM_BY_KEY[q.split(":")[0]][2]
-        for q in roles)
-    sv.append(f'<g class="n" data-id="{nid}" data-name="{r["name"]}" data-ch="{chems}" data-sub="{sub}">')
+sv.append(f'<ellipse cx="{CX}" cy="{CY}" rx="185" ry="150" fill="none" stroke="#2A2734" stroke-width="1.5" stroke-dasharray="3 6"/>')
+sv.append(f'<ellipse cx="{CX}" cy="{CY}" rx="185" ry="150" fill="#D4AF5E" opacity="0.04" filter="url(#blur)"/>')
+sv.append(f'<text x="{CX}" y="{CY + 5:.0f}" text-anchor="middle" fill="#6b6880" '
+          f'font-family="Cinzel,Georgia,serif" font-size="15" letter-spacing="3">THE HOOKS</text>')
+
+for hid, col, sid, d, dash in EDGES:
+    hx, hy = HOOK_POS[hid]
+    sx, sy = pos[sid]
+    dx, dy = hx - sx, hy - sy
+    dist = math.sqrt(dx * dx + dy * dy) or 1
+    ux, uy = dx / dist, dy / dist
+    if d == "make":     # spell feeds the hook: arrow points inward
+        x1, y1 = sx + ux * 20, sy + uy * 20
+        x2, y2 = hx - ux * 36, hy - uy * 36
+    else:               # hook feeds the spell: arrow points outward
+        x1, y1 = hx - ux * 36, hy - uy * 36
+        x2, y2 = sx + ux * 20, sy + uy * 20
+    dsh = ' stroke-dasharray="5 4"' if dash else ""
+    sv.append(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" stroke="{col}" '
+              f'stroke-opacity="0.28" stroke-width="1.4"{dsh} marker-end="url(#m{col.lstrip("#")})" '
+              f'class="e h-{hid} n{sid}"/>')
+
+for hid, em, lab, col, desc, makers, uses in HOOKS:
+    hx, hy = HOOK_POS[hid]
+    nmk = len(makers)
+    nus = sum(len(u[2]) for u in uses)
+    sv.append(f'<g class="hook" data-h="{hid}" data-name="{lab.title()}" '
+              f'data-sub="{desc} · {nmk} creators → {nus} exploiters">')
+    sv.append(f'<circle cx="{hx:.0f}" cy="{hy:.0f}" r="27" fill="{SURFACE}" stroke="{col}" stroke-width="2.6"/>')
+    sv.append(f'<text x="{hx:.0f}" y="{hy + 7:.0f}" text-anchor="middle" font-size="21" class="femoji">{em}</text>')
+    ly = hy + 45 if hy >= CY else hy - 36
+    sv.append(f'<text x="{hx:.0f}" y="{ly:.0f}" text-anchor="middle" fill="{col}" '
+              f'font-family="IBM Plex Mono,monospace" font-size="11.5" font-weight="600" letter-spacing="2" '
+              f'stroke="{SURFACE}" stroke-width="5" paint-order="stroke">{lab}</text>')
+    sv.append('</g>')
+
+for sid, r in NODES.items():
+    x, y = pos[sid]
+    iid = icon_uri(sid)
+    sub = " · ".join(dict.fromkeys(ROLES[sid]))
+    hooks = "|" + "|".join(sorted(SPELL_HOOKS[sid])) + "|"
+    sv.append(f'<g class="n" data-id="{sid}" data-name="{r["name"]}" data-hk="{hooks}" data-sub="{sub}">')
     sv.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="16" fill="{SURFACE}" stroke="#6b6880" stroke-width="2"/>')
     if iid:
         sv.append(f'<image class="sic" data-i="{iid}" x="{x - 12:.0f}" y="{y - 12:.0f}" '
@@ -239,12 +248,25 @@ for nid, r in NODES.items():
 SVG = "\n".join(sv)
 
 legend = "".join(
-    f'<button class="pchip lc on" data-ch="{key}"><span class="dot" style="background:{col}"></span>'
-    f'{lab}</button>' for key, col, lab, desc, _p in CHEM)
+    f'<button class="pchip lc on" data-h="{hid}"><span class="femoji">{em}</span>'
+    f'<span class="dot" style="background:{col}"></span>{lab.lower()}</button>'
+    for hid, em, lab, col, *_ in HOOKS)
+
+DISCORD = ('<svg viewBox="0 0 127.14 96.36" width="16" height="12" fill="currentColor" aria-hidden="true">'
+           '<path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,'
+           '0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,'
+           '56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,'
+           '0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,'
+           '2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,'
+           '80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,'
+           '11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,'
+           '53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>')
+FSC = (f'<a class="fsc" href="http://funsmith.club" target="_blank" rel="noopener" '
+       f'title="Funsmith Club — game design community on Discord">{DISCORD}funsmith.club</a>')
 
 HTML = f"""<title>Combo Chemistry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 *{{box-sizing:border-box}}
 body{{margin:0;background:#101016;color:#E8E6EF;font:400 14px/1.5 "IBM Plex Mono",ui-monospace,monospace;
@@ -260,17 +282,18 @@ h1{{font:600 22px Cinzel,Georgia,serif;color:#E3C377;margin:0;letter-spacing:.06
 .pchip:hover{{border-color:#6b6880}}
 .pchip.on{{background:#D4AF5E14;border-color:#6b6880;color:#E8E6EF}}
 .pchip:focus-visible{{outline:2px solid #E3C377;outline-offset:1px}}
-.dot{{width:11px;height:11px;border-radius:50%;display:inline-block}}
+.dot{{width:10px;height:10px;border-radius:50%;display:inline-block}}
+.femoji{{font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;font-style:normal}}
 .wrap{{width:100%;max-width:1500px;position:relative}}
 svg{{width:100%;height:auto;display:block}}
-.n{{cursor:pointer}}
-svg.hov .n{{opacity:.16}}
-svg.hov .n.hl{{opacity:1}}
-svg.hov line.e{{opacity:.04}}
-svg.hov line.e.hl{{stroke-opacity:.9;opacity:1;stroke-width:2}}
+.n,.hook{{cursor:pointer}}
+svg.hov .n,svg.hov .hook{{opacity:.15}}
+svg.hov .n.hl,svg.hov .hook.hl{{opacity:1}}
+svg.hov line.e{{opacity:.05}}
+svg.hov line.e.hl{{stroke-opacity:.95;opacity:1;stroke-width:2}}
 line.e.offch{{display:none}}
 #tip{{position:absolute;pointer-events:none;background:#211E2Bee;border:1px solid #3a3647;
-  border-radius:8px;padding:7px 11px;font-size:12.5px;display:none;z-index:2;max-width:320px;
+  border-radius:8px;padding:7px 11px;font-size:12.5px;display:none;z-index:2;max-width:330px;
   box-shadow:0 8px 28px #000A}}
 #tip b{{color:#E3C377;display:block;font-size:13px}}
 #tip span{{color:#A7A4B3}}
@@ -284,25 +307,24 @@ footer{{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align
 <header>
   <div class="topline">
     <div><h1>Combo Chemistry</h1>
-    <div class="sub">{len(NODES)} spells · {len(EDGES)} interlocks · edges are combos, not similarity — the same
-constellation, wired by what plays together</div></div>
-    <a class="fsc" href="http://funsmith.club" target="_blank" rel="noopener" title="Funsmith Club — game design community on Discord"><svg viewBox="0 0 127.14 96.36" width="16" height="12" fill="currentColor" aria-hidden="true"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>funsmith.club</a>
+    <div class="sub">{len(NODES)} spells · {len(HOOKS)} hooks · {len(EDGES)} spokes — every combo is
+spell → <b>hook</b> → spell: creators feed the wheel, exploiters cash it</div></div>
+    {FSC}
   </div>
   <div class="legend">{legend}
     <button class="pchip" id="allch">all</button></div>
 </header>
 <div class="wrap">
-  <svg viewBox="0 0 {W} {H}" role="img" aria-label="BG3 spells connected by combo interactions">
-  <defs><filter id="blur"><feGaussianBlur stdDeviation="26"/></filter></defs>
+  <svg viewBox="0 0 {W} {H}" role="img" aria-label="BG3 combo hooks: creators feed each hook, exploiters cash it">
+  <defs><filter id="blur"><feGaussianBlur stdDeviation="26"/></filter>{markers}</defs>
   {SVG}</svg>
   <div id="tip"></div>
 </div>
-<footer>hover a spell to light its combos · toggle a chemistry to isolate it ·
-🔥 ignite: grease and webs are fuel · ⚡ conduct: wet targets take double lightning ·
-❄ deep-freeze: wet + cold = frozen solid · ⛓ crit: paralysed targets take auto-crits in melee ·
-🏷 mark procs: Hex pays out once per beam · 🕳 shove: forced movement priced in hazard zones and ledges ·
-counters (dashed): water douses, wind disperses · data: spell effect rows from a local BG3 install ·
-© Larian Studios &amp; Wizards of the Coast</footer>
+<footer>hover a hook to see its whole economy · hover a spell to see what it feeds or cashes ·
+arrows point the way the combo flows: into the wheel to create the state, out of it to spend it ·
+🛢 fuel: grease and webs wait for a spark · 💧 wet: double lightning and cold · ⛓ helpless: melee auto-crits ·
+🏷 marked: Hex pays per beam · 🕳 hazard: forced movement priced in zones and ledges · 💨 dashed = counterplay ·
+data: spell effect rows from a local BG3 install · © Larian Studios &amp; Wizards of the Coast</footer>
 <script>
 const ICONS = {json.dumps(ICONS)};
 document.querySelectorAll('image.sic').forEach(el => {{
@@ -310,7 +332,23 @@ document.querySelectorAll('image.sic').forEach(el => {{
   if (d) el.setAttribute('href', d); else el.remove();
 }});
 const tip = document.getElementById('tip'), wrap = document.querySelector('.wrap');
-const svg = document.querySelector('svg');
+const svg = document.querySelector('.wrap svg');
+function moveTip(e) {{
+  const r = wrap.getBoundingClientRect();
+  tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 340) + 'px';
+  tip.style.top = (e.clientY - r.top + 14) + 'px';
+}}
+function clearHl() {{
+  svg.classList.remove('hov');
+  svg.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  tip.style.display = 'none';
+}}
+function showTip(el) {{
+  tip.innerHTML = '<b></b><span></span>';
+  tip.firstChild.textContent = el.dataset.name;
+  tip.lastChild.textContent = el.dataset.sub;
+  tip.style.display = 'block';
+}}
 document.querySelectorAll('.n').forEach(n => {{
   n.addEventListener('mouseenter', () => {{
     svg.classList.add('hov');
@@ -318,44 +356,52 @@ document.querySelectorAll('.n').forEach(n => {{
     svg.querySelectorAll('line.e.n' + CSS.escape(n.dataset.id)).forEach(l => {{
       if (l.classList.contains('offch')) return;
       l.classList.add('hl');
-      [...l.classList].filter(c => c.indexOf('n') === 0 && c !== 'n' + n.dataset.id)
-        .forEach(c => {{
-          const on = svg.querySelector('.n[data-id="' + c.slice(1) + '"]');
-          if (on) on.classList.add('hl');
-        }});
+      const h = [...l.classList].find(c => c.indexOf('h-') === 0).slice(2);
+      const hk = svg.querySelector('.hook[data-h="' + h + '"]');
+      if (hk) hk.classList.add('hl');
     }});
-    tip.innerHTML = '<b></b><span></span>';
-    tip.firstChild.textContent = n.dataset.name;
-    tip.lastChild.textContent = n.dataset.sub;
-    tip.style.display = 'block';
+    showTip(n);
   }});
-  n.addEventListener('mousemove', e => {{
-    const r = wrap.getBoundingClientRect();
-    tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 330) + 'px';
-    tip.style.top = (e.clientY - r.top + 14) + 'px';
-  }});
-  n.addEventListener('mouseleave', () => {{
-    svg.classList.remove('hov');
-    svg.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
-    tip.style.display = 'none';
-  }});
+  n.addEventListener('mousemove', moveTip);
+  n.addEventListener('mouseleave', clearHl);
 }});
-const chs = new Set({json.dumps([c[0] for c in CHEM])});
+document.querySelectorAll('.hook').forEach(hk => {{
+  hk.addEventListener('mouseenter', () => {{
+    svg.classList.add('hov');
+    hk.classList.add('hl');
+    svg.querySelectorAll('line.e.h-' + hk.dataset.h).forEach(l => {{
+      if (l.classList.contains('offch')) return;
+      l.classList.add('hl');
+      const sn = [...l.classList].filter(c => c !== 'e' && c !== 'hl' && c.indexOf('h-') !== 0);
+      sn.forEach(c => {{
+        const nn = svg.querySelector('.n[data-id="' + c.slice(1) + '"]');
+        if (nn) nn.classList.add('hl');
+      }});
+    }});
+    showTip(hk);
+  }});
+  hk.addEventListener('mousemove', moveTip);
+  hk.addEventListener('mouseleave', clearHl);
+}});
+const HKS = {json.dumps([h[0] for h in HOOKS])};
+const chs = new Set(HKS);
 function applyCh() {{
   svg.querySelectorAll('line.e').forEach(l => {{
-    const key = [...l.classList].find(c => c.indexOf('t-') === 0).slice(2);
+    const key = [...l.classList].find(c => c.indexOf('h-') === 0).slice(2);
     l.classList.toggle('offch', !chs.has(key));
   }});
-  document.querySelectorAll('.lc').forEach(b => b.classList.toggle('on', chs.has(b.dataset.ch)));
+  svg.querySelectorAll('.hook').forEach(h =>
+    h.style.opacity = chs.has(h.dataset.h) ? '' : '0.25');
+  document.querySelectorAll('.lc').forEach(b => b.classList.toggle('on', chs.has(b.dataset.h)));
 }}
 document.querySelectorAll('.lc').forEach(b => b.addEventListener('click', () => {{
-  if (chs.size === {len(CHEM)}) {{ chs.clear(); chs.add(b.dataset.ch); }}
-  else if (chs.has(b.dataset.ch)) {{ chs.delete(b.dataset.ch); if (!chs.size) {json.dumps([c[0] for c in CHEM])}.forEach(k => chs.add(k)); }}
-  else chs.add(b.dataset.ch);
+  if (chs.size === HKS.length) {{ chs.clear(); chs.add(b.dataset.h); }}
+  else if (chs.has(b.dataset.h)) {{ chs.delete(b.dataset.h); if (!chs.size) HKS.forEach(k => chs.add(k)); }}
+  else chs.add(b.dataset.h);
   applyCh();
 }}));
 document.getElementById('allch').addEventListener('click', () => {{
-  {json.dumps([c[0] for c in CHEM])}.forEach(k => chs.add(k));
+  HKS.forEach(k => chs.add(k));
   applyCh();
 }});
 </script>
