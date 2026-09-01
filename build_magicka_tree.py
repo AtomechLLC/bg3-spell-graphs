@@ -451,6 +451,8 @@ BUILDER_CSS = """
 #bclear{border:1px solid #3a3647;border-radius:8px;background:transparent;color:#C9C6D4;
   cursor:pointer;font:500 11px "IBM Plex Mono",monospace;padding:6px 11px;margin-left:auto}
 #bclear:hover{border-color:#e58a9b;color:#e58a9b}
+.slot.xr{border-style:solid;border-color:#e58a9b;color:#e58a9b}
+.rej{color:#e58a9b;font-weight:600}
 #builder.flash{animation:bfl .5s}
 @keyframes bfl{0%{border-color:#7fdfa3}100%{border-color:#2A2734}}
 @media (prefers-reduced-motion: reduce){#builder.flash{animation:none}}
@@ -508,7 +510,7 @@ for (const h of ['steam', 'ice']) {
   b.style.setProperty('--sc', EINFO[h].col);
   b.innerHTML = '<b>' + EINFO[h].k + '</b>' + EINFO[h].n.toLowerCase();
   b.title = EINFO[h].n + ' = ' + seq.map(e => EINFO[e].k).join(' then ') + ' (two real presses)';
-  b.addEventListener('click', () => { seq.forEach(e => pushInto(Q, e)); refresh(); b.blur(); });
+  b.addEventListener('click', () => { if (push(seq[0]) !== false && seq[1]) push(seq[1]); b.blur(); });
   btnbar.insertBefore(b, document.getElementById('bclear'));
 }
 document.getElementById('bclear').addEventListener('click', () => { Q.length = 0; refresh(); });
@@ -523,7 +525,36 @@ function pushInto(arr, eid) {
   if (arr.length < 5) arr.push(eid);
   return arr;
 }
-function push(eid) { pushInto(Q, eid); refresh(); }
+function classify(eid) {
+  const test = Q.slice();
+  pushInto(test, eid);
+  if (test.length === Q.length + 1) return {ok: true, arr: test};
+  if (test.length === Q.length && test.some((v, i) => v !== Q[i])) return {ok: true, arr: test};
+  let culprit = null;
+  for (let i = Q.length - 1; i >= 0; i--) {
+    if ((OPP[eid] || []).includes(Q[i])) { culprit = Q[i]; break; }
+  }
+  return {ok: false, full: culprit === null, culprit};
+}
+let rejT = null;
+function rejectFlash(eid, c) {
+  const slot = slotsEl.children[Math.min(Q.length, 4)];
+  if (slot) { slot.classList.add('xr'); slot.textContent = '\u2715'; }
+  clearTimeout(rejT);
+  rejT = setTimeout(refresh, 850);
+  const why = c.full ? 'the queue is full'
+    : (eid === 'shield' && c.culprit === 'shield') ? 'a second Shield cancels the first'
+    : EINFO[eid].n + ' would annihilate the queued ' + EINFO[c.culprit].n;
+  rline.innerHTML = '<span class="rej">&#10005; not accepted</span> &mdash; ' + why +
+    ' &middot; the queue stands';
+}
+function push(eid) {
+  const c = classify(eid);
+  if (!c.ok) return rejectFlash(eid, c) || false;
+  Q.splice(0, Q.length, ...c.arr);
+  refresh();
+  return true;
+}
 
 function walk(arr) {
   arr = arr || Q;
@@ -551,7 +582,7 @@ function refresh() {
   if (!Q.length) {
     rline.innerHTML = 'queue elements &mdash; <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd> ' +
       '<kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd> &middot; <kbd>&#9003;</kbd> undo &middot; ' +
-      '<kbd>esc</kbd> clear &middot; opposites cancel, water mixes, and the tree lights your path';
+      '<kbd>esc</kbd> clear &middot; water mixes, annihilating presses are refused (&#10005;) &mdash; the queue only builds castable sequences';
     return;
   }
   const w = walk();
@@ -592,13 +623,15 @@ function refresh() {
   if (w.off) {
     const recov = [];
     for (const k of ['q', 'w', 'e', 'r', 'a', 's', 'd', 'f']) {
-      const tw = walk(pushInto(Q.slice(), KEYMAP[k]));
+      const c = classify(KEYMAP[k]);
+      if (!c.ok) continue;
+      const tw = walk(c.arr);
       if (!tw.off && (TRIE[tw.node].m || magicksBelow(tw.node).length)) recov.push(k);
     }
     html += 'freeform spell &mdash; off the recipe map';
     if (recov.length) {
       html += ' &middot; recover with ' + recov.map(k => '<kbd>' + k.toUpperCase() + '</kbd>').join(' ') +
-        ' (a cancel or mix puts you back on a path)';
+        ' (a mix puts you back on a path)';
     }
   } else {
     const below = magicksBelow(w.node).filter(m => m !== (node.m && node.m[0]));
@@ -698,7 +731,7 @@ function drawGhosts(w) {
     ghostEdge(end.x, end.y, gx, gy, EINFO[o.eid].col, 0.22);
     ghostNode(gx, gy, o.eid, true,
       EINFO[o.eid].n + ' — engine-valid, no magick this way (click to queue)',
-      () => { o.presses.forEach(p => pushInto(Q, p)); refresh(); });
+      () => { if (push(o.presses[0]) !== false && o.presses[1]) push(o.presses[1]); });
   });
 }
 function magicksBelow(id) {
