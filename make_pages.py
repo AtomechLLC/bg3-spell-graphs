@@ -12,6 +12,7 @@ PAGES = [
     ("purpose_atlas.html", "purpose-atlas.html", "🎯"),
     ("combo_map.html", "combo-chemistry.html", "🧪"),
     ("magicka_map.html", "magicka-chemistry.html", "🪄"),
+    ("magicka_tree.html", "magicka-casting-tree.html", "🌳"),
 ]
 os.makedirs("docs", exist_ok=True)
 
@@ -173,6 +174,11 @@ helpless, marked — with creators feeding each state and exploiters cashing it.
 <div class="meta">Magicka (2011) · 10 elements · 29 magicks</div>
 <p>The purest combo system ever shipped, on one wheel: opposites cancel, water boils and freezes,
 statuses chain — and every magick recipe drawn as its casting sequence.</p></a>
+<a class="card" href="magicka-casting-tree.html" style="--ac:#9B7BE8;--face:Cinzel">
+<span class="em">🌳</span><h2>Magicka Casting Tree</h2>
+<div class="meta">Magicka (2011) · 29 recipes · 77 shared-prefix steps</div>
+<p>The recipes traversed in casting order, radially: the centre is the empty queue, each ring one
+more element — and magicks that share an opening share a trunk.</p></a>
 </div>
 <footer>Includes content from the SRD 5.1 by Wizards of the Coast (CC-BY-4.0).
 Baldur's Gate 3 data and icons © Larian Studios &amp; Wizards of the Coast; WoW Classic data

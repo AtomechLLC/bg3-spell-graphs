@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magicka Casting Tree</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌳</text></svg>">
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101016;color:#E8E6EF;font:400 14px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:22px 18px 30px}
+header{width:100%;max-width:1500px;display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.topline{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font:600 22px Cinzel,Georgia,serif;color:#E3C377;margin:0;letter-spacing:.06em}
+.sub{color:#A7A4B3;font-size:11.5px}
+.legend{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pchip{background:transparent;border:1px solid #3a3647;border-radius:999px;color:#C9C6D4;
+  font:500 11px "IBM Plex Mono",monospace;padding:3px 11px;letter-spacing:.05em;
+  display:inline-flex;align-items:center;gap:6px}
+.pchip.lk{cursor:default;padding:2px 9px}
+button.pchip{cursor:pointer}
+button.pchip:hover{border-color:#6b6880}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.segrow{margin-left:auto;display:flex;align-items:center;gap:10px}
+#copybtn.ok{border-color:#5fbf83;color:#7fdfa3}
+#copybtn.err{border-color:#e58a9b;color:#e58a9b}
+.wrap{width:100%;max-width:1500px;position:relative}
+svg{width:100%;height:auto;display:block}
+.n,.ml{cursor:pointer}
+svg.hov .n,svg.hov .ml{opacity:.13}
+svg.hov .n.hl,svg.hov .ml.hl{opacity:1}
+svg.hov line.e{opacity:.05}
+svg.hov line.e.hl{stroke-opacity:.95;opacity:1;stroke-width:3}
+#tip{position:absolute;pointer-events:none;background:#211E2Bee;border:1px solid #3a3647;
+  border-radius:8px;padding:7px 11px;font-size:12.5px;display:none;z-index:2;max-width:360px;
+  box-shadow:0 8px 28px #000A}
+#tip b{color:#E3C377;display:block;font-size:13px}
+#tip span{color:#A7A4B3}
+footer{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align:center;line-height:1.8}
+footer a{color:#D4AF5E;text-decoration:none}
+::selection{background:#D4AF5E44}
+.fsc{display:inline-flex;align-items:center;gap:7px;border:1px solid #3a3647;
+  border-radius:999px;padding:4px 12px;font:500 11px "IBM Plex Mono",monospace;color:#C9C6D4;
+  text-decoration:none;letter-spacing:.05em}
+.fsc:hover{border-color:#D4AF5E;color:#E3C377}
+</style>
+<header>
+  <div class="topline">
+    <div><h1>Magicka Casting Tree</h1>
+    <div class="sub">every magick traversed in casting order — the centre is the empty queue, each ring
+one more element, and recipes that share an opening share a trunk</div></div>
+    <div class="segrow">
+      <a class="fsc" href="http://funsmith.club" target="_blank" rel="noopener" title="Funsmith Club — game design community on Discord"><svg viewBox="0 0 127.14 96.36" width="16" height="12" fill="currentColor" aria-hidden="true"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>funsmith.club</a>
+      <button id="copybtn" class="pchip" title="Copy the tree as a PNG image">⧉ copy image</button>
+    </div>
+  </div>
+  <div class="legend"><span class="pchip lk"><span class="dot" style="background:#4FC46F"></span>W life</span><span class="pchip lk"><span class="dot" style="background:#E8D44D"></span>E shield</span><span class="pchip lk"><span class="dot" style="background:#A8DCE8"></span>R cold</span><span class="pchip lk"><span class="dot" style="background:#7FC4E8"></span>QR ice</span><span class="pchip lk"><span class="dot" style="background:#3D7BD9"></span>Q water</span><span class="pchip lk"><span class="dot" style="background:#C8CBD9"></span>QF steam</span><span class="pchip lk"><span class="dot" style="background:#E87A2D"></span>F fire</span><span class="pchip lk"><span class="dot" style="background:#8C6844"></span>D earth</span><span class="pchip lk"><span class="dot" style="background:#9B7BE8"></span>A lightning</span><span class="pchip lk"><span class="dot" style="background:#D9463E"></span>S arcane</span></div>
+</header>
+<div class="wrap">
+  <svg viewBox="0 0 1500 1010" role="img" aria-label="Radial prefix tree of Magicka recipes in casting order">
+  <rect width="1500" height="1010" fill="#16161D" rx="14"/>
+<ellipse cx="750.0" cy="505" rx="120" ry="96" fill="none" stroke="#23202C" stroke-width="1" stroke-dasharray="2 7"/>
+<text x="756" y="423" fill="#4a4758" font-family="IBM Plex Mono,monospace" font-size="10">1st</text>
+<ellipse cx="750.0" cy="505" rx="216" ry="173" fill="none" stroke="#23202C" stroke-width="1" stroke-dasharray="2 7"/>
+<text x="756" y="346" fill="#4a4758" font-family="IBM Plex Mono,monospace" font-size="10">2nd</text>
+<ellipse cx="750.0" cy="505" rx="312" ry="250" fill="none" stroke="#23202C" stroke-width="1" stroke-dasharray="2 7"/>
+<text x="756" y="269" fill="#4a4758" font-family="IBM Plex Mono,monospace" font-size="10">3rd</text>
+<ellipse cx="750.0" cy="505" rx="408" ry="326" fill="none" stroke="#23202C" stroke-width="1" stroke-dasharray="2 7"/>
+<text x="756" y="193" fill="#4a4758" font-family="IBM Plex Mono,monospace" font-size="10">4th</text>
+<ellipse cx="750.0" cy="505" rx="504" ry="403" fill="none" stroke="#23202C" stroke-width="1" stroke-dasharray="2 7"/>
+<text x="756" y="116" fill="#4a4758" font-family="IBM Plex Mono,monospace" font-size="10">5th</text>
+<line x1="750" y1="505" x2="804" y2="591" stroke="#4FC46F" stroke-opacity="0.35" stroke-width="2" class="e c1"/>
+<line x1="804" y1="591" x2="907" y2="624" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c2"/>
+<line x1="750" y1="505" x2="778" y2="412" stroke="#3D7BD9" stroke-opacity="0.35" stroke-width="2" class="e c3"/>
+<line x1="778" y1="412" x2="750" y2="332" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c4"/>
+<line x1="750" y1="332" x2="750" y2="255" stroke="#4FC46F" stroke-opacity="0.35" stroke-width="2" class="e c5"/>
+<line x1="750" y1="505" x2="757" y2="409" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c6"/>
+<line x1="757" y1="409" x2="937" y2="419" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c7"/>
+<line x1="937" y1="419" x2="822" y2="262" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c8"/>
+<line x1="778" y1="412" x2="847" y2="351" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c9"/>
+<line x1="750" y1="505" x2="696" y2="591" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c10"/>
+<line x1="696" y1="591" x2="653" y2="659" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c11"/>
+<line x1="750" y1="505" x2="757" y2="409" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c12"/>
+<line x1="757" y1="409" x2="700" y2="337" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c13"/>
+<line x1="700" y1="337" x2="951" y2="314" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c14"/>
+<line x1="951" y1="314" x2="1012" y2="255" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c15"/>
+<line x1="750" y1="505" x2="750" y2="409" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c16"/>
+<line x1="750" y1="409" x2="923" y2="402" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c17"/>
+<line x1="923" y1="402" x2="1000" y2="356" stroke="#3D7BD9" stroke-opacity="0.35" stroke-width="2" class="e c18"/>
+<line x1="1000" y1="356" x2="1077" y2="310" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c19"/>
+<line x1="757" y1="409" x2="948" y2="437" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c20"/>
+<line x1="948" y1="437" x2="1036" y2="406" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c21"/>
+<line x1="1036" y1="406" x2="1125" y2="376" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c22"/>
+<line x1="1125" y1="376" x2="1213" y2="345" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c23"/>
+<line x1="750" y1="505" x2="863" y2="537" stroke="#A8DCE8" stroke-opacity="0.35" stroke-width="2" class="e c24"/>
+<line x1="863" y1="537" x2="963" y2="475" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c25"/>
+<line x1="863" y1="537" x2="966" y2="515" stroke="#7FC4E8" stroke-opacity="0.35" stroke-width="2" class="e c26"/>
+<line x1="966" y1="515" x2="1061" y2="520" stroke="#A8DCE8" stroke-opacity="0.35" stroke-width="2" class="e c27"/>
+<line x1="937" y1="419" x2="1049" y2="577" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c28"/>
+<line x1="757" y1="409" x2="937" y2="591" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c29"/>
+<line x1="937" y1="591" x2="1020" y2="630" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c30"/>
+<line x1="1020" y1="630" x2="1103" y2="668" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c31"/>
+<line x1="1103" y1="668" x2="1186" y2="707" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c32"/>
+<line x1="907" y1="624" x2="977" y2="676" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c33"/>
+<line x1="750" y1="505" x2="722" y2="598" stroke="#7FC4E8" stroke-opacity="0.35" stroke-width="2" class="e c34"/>
+<line x1="722" y1="598" x2="869" y2="649" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c35"/>
+<line x1="869" y1="649" x2="921" y2="714" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c36"/>
+<line x1="921" y1="714" x2="974" y2="778" stroke="#A8DCE8" stroke-opacity="0.35" stroke-width="2" class="e c37"/>
+<line x1="863" y1="537" x2="824" y2="667" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c38"/>
+<line x1="824" y1="667" x2="857" y2="740" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c39"/>
+<line x1="804" y1="591" x2="775" y2="677" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c40"/>
+<line x1="775" y1="677" x2="786" y2="753" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c41"/>
+<line x1="696" y1="591" x2="725" y2="677" stroke="#A8DCE8" stroke-opacity="0.35" stroke-width="2" class="e c42"/>
+<line x1="725" y1="677" x2="714" y2="753" stroke="#7FC4E8" stroke-opacity="0.35" stroke-width="2" class="e c43"/>
+<line x1="714" y1="753" x2="703" y2="829" stroke="#A8DCE8" stroke-opacity="0.35" stroke-width="2" class="e c44"/>
+<line x1="703" y1="829" x2="691" y2="905" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c45"/>
+<line x1="653" y1="659" x2="643" y2="740" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c46"/>
+<line x1="643" y1="740" x2="610" y2="812" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c47"/>
+<line x1="653" y1="659" x2="579" y2="714" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c48"/>
+<line x1="579" y1="714" x2="526" y2="778" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c49"/>
+<line x1="526" y1="778" x2="473" y2="842" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c50"/>
+<line x1="696" y1="591" x2="593" y2="624" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c51"/>
+<line x1="593" y1="624" x2="523" y2="676" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c52"/>
+<line x1="523" y1="676" x2="453" y2="729" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c53"/>
+<line x1="453" y1="729" x2="383" y2="782" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c54"/>
+<line x1="722" y1="598" x2="563" y2="591" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c55"/>
+<line x1="563" y1="591" x2="480" y2="630" stroke="#7FC4E8" stroke-opacity="0.35" stroke-width="2" class="e c56"/>
+<line x1="480" y1="630" x2="397" y2="668" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c57"/>
+<line x1="397" y1="668" x2="314" y2="707" stroke="#7FC4E8" stroke-opacity="0.35" stroke-width="2" class="e c58"/>
+<line x1="750" y1="505" x2="635" y2="477" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c59"/>
+<line x1="635" y1="477" x2="543" y2="555" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c60"/>
+<line x1="543" y1="555" x2="451" y2="577" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c61"/>
+<line x1="451" y1="577" x2="359" y2="599" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c62"/>
+<line x1="359" y1="599" x2="267" y2="621" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c63"/>
+<line x1="757" y1="409" x2="577" y2="402" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c64"/>
+<line x1="577" y1="402" x2="439" y2="520" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c65"/>
+<line x1="439" y1="520" x2="343" y2="524" stroke="#4FC46F" stroke-opacity="0.35" stroke-width="2" class="e c66"/>
+<line x1="757" y1="409" x2="537" y2="475" stroke="#8C6844" stroke-opacity="0.35" stroke-width="2" class="e c67"/>
+<line x1="537" y1="475" x2="443" y2="462" stroke="#4FC46F" stroke-opacity="0.35" stroke-width="2" class="e c68"/>
+<line x1="443" y1="462" x2="348" y2="448" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c69"/>
+<line x1="348" y1="448" x2="254" y2="435" stroke="#E87A2D" stroke-opacity="0.35" stroke-width="2" class="e c70"/>
+<line x1="700" y1="337" x2="464" y2="406" stroke="#E8D44D" stroke-opacity="0.35" stroke-width="2" class="e c71"/>
+<line x1="750" y1="409" x2="577" y2="402" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c72"/>
+<line x1="635" y1="477" x2="611" y2="373" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c73"/>
+<line x1="611" y1="373" x2="549" y2="314" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c74"/>
+<line x1="757" y1="409" x2="653" y2="351" stroke="#D9463E" stroke-opacity="0.35" stroke-width="2" class="e c75"/>
+<line x1="653" y1="351" x2="610" y2="282" stroke="#C8CBD9" stroke-opacity="0.35" stroke-width="2" class="e c76"/>
+<line x1="577" y1="402" x2="678" y2="262" stroke="#9B7BE8" stroke-opacity="0.35" stroke-width="2" class="e c77"/>
+<circle cx="750.0" cy="505" r="26" fill="#16161D" stroke="#6b6880" stroke-width="2"/>
+<text x="750.0" y="509" text-anchor="middle" fill="#8a879a" font-family="Cinzel,Georgia,serif" font-size="12" letter-spacing="1">CAST</text>
+<g class="n" data-id="1" data-anc="|1|0|" data-desc="|1|40|41|2|33|" data-name="Life" data-sub="W · 3 magicks pass through: Charm, Revive, Summon Phoenix">
+<circle cx="804" cy="591" r="12" fill="#16161D" stroke="#4FC46F" stroke-width="2.4"/>
+<text x="804" y="595" text-anchor="middle" fill="#4FC46F" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">W</text>
+</g>
+<g class="n" data-id="2" data-anc="|2|1|0|" data-desc="|2|33|" data-name="Lightning" data-sub="W-A · Revive casts here; 1 more continue">
+<circle cx="907" cy="624" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<circle cx="907" cy="624" r="17" fill="none" stroke="#9B7BE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="907" y="628" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="3" data-anc="|3|0|" data-desc="|3|9|4|5|" data-name="Water" data-sub="Q · 2 magicks pass through: Rain, Grease">
+<circle cx="778" cy="412" r="12" fill="#16161D" stroke="#3D7BD9" stroke-width="2.4"/>
+<text x="778" y="416" text-anchor="middle" fill="#3D7BD9" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">Q</text>
+</g>
+<g class="n" data-id="4" data-anc="|4|3|0|" data-desc="|4|5|" data-name="Earth" data-sub="Q-D · 1 magick pass through: Grease">
+<circle cx="750" cy="332" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="750" y="336" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="5" data-anc="|5|4|3|0|" data-desc="|5|" data-name="Life" data-sub="Q-D-W · Grease — slippery, flammable floor">
+<circle cx="750" cy="255" r="12" fill="#16161D" stroke="#4FC46F" stroke-width="2.4"/>
+<circle cx="750" cy="255" r="17" fill="none" stroke="#4FC46F" stroke-width="1" stroke-opacity="0.7"/>
+<text x="750" y="259" text-anchor="middle" fill="#4FC46F" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">W</text>
+</g>
+<g class="n" data-id="6" data-anc="|6|0|" data-desc="|6|64|65|66|77|7|8|28|" data-name="Lightning" data-sub="A · 4 magicks pass through: Crash To Desktop, Chain Lightning, Haste, Teleport">
+<circle cx="757" cy="409" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<text x="757" y="413" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="7" data-anc="|7|6|0|" data-desc="|7|8|28|" data-name="Arcane" data-sub="A-S · 2 magicks pass through: Haste, Teleport">
+<circle cx="937" cy="419" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="937" y="423" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="8" data-anc="|8|7|6|0|" data-desc="|8|" data-name="Fire" data-sub="A-S-F · Haste — run much faster">
+<circle cx="822" cy="262" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<circle cx="822" cy="262" r="17" fill="none" stroke="#E87A2D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="822" y="266" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="9" data-anc="|9|3|0|" data-desc="|9|" data-name="Steam" data-sub="Q-QF · Rain — rain that wets everyone">
+<circle cx="847" cy="351" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<circle cx="847" cy="351" r="18.5" fill="none" stroke="#C8CBD9" stroke-width="1" stroke-opacity="0.7"/>
+<text x="847" y="355" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="10" data-anc="|10|0|" data-desc="|10|11|46|47|48|49|50|42|43|44|45|51|52|53|54|" data-name="Arcane" data-sub="S · 5 magicks pass through: Nullify, Invisibility, Summon Elemental, Summon Death, Corporealise">
+<circle cx="696" cy="591" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="696" y="595" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="11" data-anc="|11|10|0|" data-desc="|11|46|47|48|49|50|" data-name="Shield" data-sub="S-E · Nullify casts here; 2 more continue">
+<circle cx="653" cy="659" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<circle cx="653" cy="659" r="17" fill="none" stroke="#E8D44D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="653" y="663" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="12" data-anc="|12|0|" data-desc="|12|29|30|31|32|20|21|22|23|67|68|69|70|13|71|14|15|75|76|" data-name="Steam" data-sub="QF · 6 magicks pass through: Thunderstorm, Conflagration, Napalm, Portal, Thunder Bolt…">
+<circle cx="757" cy="409" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="757" y="413" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="13" data-anc="|13|12|0|" data-desc="|13|71|14|15|" data-name="Lightning" data-sub="QF-A · 2 magicks pass through: Portal, Thunder Bolt">
+<circle cx="700" cy="337" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<text x="700" y="341" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="14" data-anc="|14|13|12|0|" data-desc="|14|15|" data-name="Arcane" data-sub="QF-A-S · 1 magick pass through: Thunder Bolt">
+<circle cx="951" cy="314" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="951" y="318" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="15" data-anc="|15|14|13|12|0|" data-desc="|15|" data-name="Lightning" data-sub="QF-A-S-A · Thunder Bolt — one heavy bolt">
+<circle cx="1012" cy="255" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<circle cx="1012" cy="255" r="17" fill="none" stroke="#9B7BE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="1012" y="259" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="16" data-anc="|16|0|" data-desc="|16|17|18|19|72|" data-name="Earth" data-sub="D · 2 magicks pass through: Tornado, Tractor Pull">
+<circle cx="750" cy="409" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="750" y="413" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="17" data-anc="|17|16|0|" data-desc="|17|18|19|" data-name="Steam" data-sub="D-QF · 1 magick pass through: Tornado">
+<circle cx="923" cy="402" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="923" y="406" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="18" data-anc="|18|17|16|0|" data-desc="|18|19|" data-name="Water" data-sub="D-QF-Q · 1 magick pass through: Tornado">
+<circle cx="1000" cy="356" r="12" fill="#16161D" stroke="#3D7BD9" stroke-width="2.4"/>
+<text x="1000" y="360" text-anchor="middle" fill="#3D7BD9" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">Q</text>
+</g>
+<g class="n" data-id="19" data-anc="|19|18|17|16|0|" data-desc="|19|" data-name="Steam" data-sub="D-QF-Q-QF · Tornado — launches everyone skyward">
+<circle cx="1077" cy="310" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<circle cx="1077" cy="310" r="18.5" fill="none" stroke="#C8CBD9" stroke-width="1" stroke-opacity="0.7"/>
+<text x="1077" y="314" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="20" data-anc="|20|12|0|" data-desc="|20|21|22|23|" data-name="Fire" data-sub="QF-F · 1 magick pass through: Conflagration">
+<circle cx="948" cy="437" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<text x="948" y="441" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="21" data-anc="|21|20|12|0|" data-desc="|21|22|23|" data-name="Steam" data-sub="QF-F-QF · 1 magick pass through: Conflagration">
+<circle cx="1036" cy="406" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="1036" y="410" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="22" data-anc="|22|21|20|12|0|" data-desc="|22|23|" data-name="Fire" data-sub="QF-F-QF-F · 1 magick pass through: Conflagration">
+<circle cx="1125" cy="376" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<text x="1125" y="380" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="23" data-anc="|23|22|21|20|12|0|" data-desc="|23|" data-name="Steam" data-sub="QF-F-QF-F-QF · Conflagration — a rolling heat wave">
+<circle cx="1213" cy="345" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<circle cx="1213" cy="345" r="18.5" fill="none" stroke="#C8CBD9" stroke-width="1" stroke-opacity="0.7"/>
+<text x="1213" y="349" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="24" data-anc="|24|0|" data-desc="|24|25|26|27|38|39|" data-name="Cold" data-sub="R · 3 magicks pass through: Time Warp, Blizzard, Fear">
+<circle cx="863" cy="537" r="12" fill="#16161D" stroke="#A8DCE8" stroke-width="2.4"/>
+<text x="863" y="541" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">R</text>
+</g>
+<g class="n" data-id="25" data-anc="|25|24|0|" data-desc="|25|" data-name="Shield" data-sub="R-E · Time Warp — slows time itself">
+<circle cx="963" cy="475" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<circle cx="963" cy="475" r="17" fill="none" stroke="#E8D44D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="963" y="479" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="26" data-anc="|26|24|0|" data-desc="|26|27|" data-name="Ice" data-sub="R-QR · 1 magick pass through: Blizzard">
+<circle cx="966" cy="515" r="13.5" fill="#16161D" stroke="#7FC4E8" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="966" y="519" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QR</text>
+</g>
+<g class="n" data-id="27" data-anc="|27|26|24|0|" data-desc="|27|" data-name="Cold" data-sub="R-QR-R · Blizzard — freezes the whole field">
+<circle cx="1061" cy="520" r="12" fill="#16161D" stroke="#A8DCE8" stroke-width="2.4"/>
+<circle cx="1061" cy="520" r="17" fill="none" stroke="#A8DCE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="1061" y="524" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">R</text>
+</g>
+<g class="n" data-id="28" data-anc="|28|7|6|0|" data-desc="|28|" data-name="Lightning" data-sub="A-S-A · Teleport — blink to the cursor">
+<circle cx="1049" cy="577" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<circle cx="1049" cy="577" r="17" fill="none" stroke="#9B7BE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="1049" y="581" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="29" data-anc="|29|12|0|" data-desc="|29|30|31|32|" data-name="Steam" data-sub="QF-QF · 1 magick pass through: Thunderstorm">
+<circle cx="937" cy="591" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="937" y="595" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="30" data-anc="|30|29|12|0|" data-desc="|30|31|32|" data-name="Lightning" data-sub="QF-QF-A · 1 magick pass through: Thunderstorm">
+<circle cx="1020" cy="630" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<text x="1020" y="634" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="31" data-anc="|31|30|29|12|0|" data-desc="|31|32|" data-name="Arcane" data-sub="QF-QF-A-S · 1 magick pass through: Thunderstorm">
+<circle cx="1103" cy="668" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="1103" y="672" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="32" data-anc="|32|31|30|29|12|0|" data-desc="|32|" data-name="Lightning" data-sub="QF-QF-A-S-A · Thunderstorm — random rain and thunder">
+<circle cx="1186" cy="707" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<circle cx="1186" cy="707" r="17" fill="none" stroke="#9B7BE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="1186" y="711" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="33" data-anc="|33|2|1|0|" data-desc="|33|" data-name="Fire" data-sub="W-A-F · Summon Phoenix — fire bird; revives the fallen">
+<circle cx="977" cy="676" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<circle cx="977" cy="676" r="17" fill="none" stroke="#E87A2D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="977" y="680" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="34" data-anc="|34|0|" data-desc="|34|35|36|37|55|56|57|58|" data-name="Ice" data-sub="QR · 2 magicks pass through: Raise Dead, Vortex">
+<circle cx="722" cy="598" r="13.5" fill="#16161D" stroke="#7FC4E8" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="722" y="602" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QR</text>
+</g>
+<g class="n" data-id="35" data-anc="|35|34|0|" data-desc="|35|36|37|" data-name="Earth" data-sub="QR-D · 1 magick pass through: Raise Dead">
+<circle cx="869" cy="649" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="869" y="653" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="36" data-anc="|36|35|34|0|" data-desc="|36|37|" data-name="Arcane" data-sub="QR-D-S · 1 magick pass through: Raise Dead">
+<circle cx="921" cy="714" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="921" y="718" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="37" data-anc="|37|36|35|34|0|" data-desc="|37|" data-name="Cold" data-sub="QR-D-S-R · Raise Dead — undead fighters">
+<circle cx="974" cy="778" r="12" fill="#16161D" stroke="#A8DCE8" stroke-width="2.4"/>
+<circle cx="974" cy="778" r="17" fill="none" stroke="#A8DCE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="974" y="782" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">R</text>
+</g>
+<g class="n" data-id="38" data-anc="|38|24|0|" data-desc="|38|39|" data-name="Arcane" data-sub="R-S · 1 magick pass through: Fear">
+<circle cx="824" cy="667" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="824" y="671" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="39" data-anc="|39|38|24|0|" data-desc="|39|" data-name="Shield" data-sub="R-S-E · Fear — enemies flee">
+<circle cx="857" cy="740" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<circle cx="857" cy="740" r="17" fill="none" stroke="#E8D44D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="857" y="744" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="40" data-anc="|40|1|0|" data-desc="|40|41|" data-name="Shield" data-sub="W-E · 1 magick pass through: Charm">
+<circle cx="775" cy="677" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<text x="775" y="681" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="41" data-anc="|41|40|1|0|" data-desc="|41|" data-name="Earth" data-sub="W-E-D · Charm — turns an enemy friendly">
+<circle cx="786" cy="753" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<circle cx="786" cy="753" r="17" fill="none" stroke="#8C6844" stroke-width="1" stroke-opacity="0.7"/>
+<text x="786" y="757" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="42" data-anc="|42|10|0|" data-desc="|42|43|44|45|" data-name="Cold" data-sub="S-R · 1 magick pass through: Summon Death">
+<circle cx="725" cy="677" r="12" fill="#16161D" stroke="#A8DCE8" stroke-width="2.4"/>
+<text x="725" y="681" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">R</text>
+</g>
+<g class="n" data-id="43" data-anc="|43|42|10|0|" data-desc="|43|44|45|" data-name="Ice" data-sub="S-R-QR · 1 magick pass through: Summon Death">
+<circle cx="714" cy="753" r="13.5" fill="#16161D" stroke="#7FC4E8" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="714" y="757" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QR</text>
+</g>
+<g class="n" data-id="44" data-anc="|44|43|42|10|0|" data-desc="|44|45|" data-name="Cold" data-sub="S-R-QR-R · 1 magick pass through: Summon Death">
+<circle cx="703" cy="829" r="12" fill="#16161D" stroke="#A8DCE8" stroke-width="2.4"/>
+<text x="703" y="833" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">R</text>
+</g>
+<g class="n" data-id="45" data-anc="|45|44|43|42|10|0|" data-desc="|45|" data-name="Arcane" data-sub="S-R-QR-R-S · Summon Death — reaps the weakest nearby">
+<circle cx="691" cy="905" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<circle cx="691" cy="905" r="17" fill="none" stroke="#D9463E" stroke-width="1" stroke-opacity="0.7"/>
+<text x="691" y="909" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="46" data-anc="|46|11|10|0|" data-desc="|46|47|" data-name="Steam" data-sub="S-E-QF · 1 magick pass through: Invisibility">
+<circle cx="643" cy="740" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="643" y="744" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="47" data-anc="|47|46|11|10|0|" data-desc="|47|" data-name="Arcane" data-sub="S-E-QF-S · Invisibility — untargetable">
+<circle cx="610" cy="812" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<circle cx="610" cy="812" r="17" fill="none" stroke="#D9463E" stroke-width="1" stroke-opacity="0.7"/>
+<text x="610" y="816" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="48" data-anc="|48|11|10|0|" data-desc="|48|49|50|" data-name="Earth" data-sub="S-E-D · 1 magick pass through: Summon Elemental">
+<circle cx="579" cy="714" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="579" y="718" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="49" data-anc="|49|48|11|10|0|" data-desc="|49|50|" data-name="Steam" data-sub="S-E-D-QF · 1 magick pass through: Summon Elemental">
+<circle cx="526" cy="778" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="526" y="782" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="50" data-anc="|50|49|48|11|10|0|" data-desc="|50|" data-name="Arcane" data-sub="S-E-D-QF-S · Summon Elemental — an elemental ally">
+<circle cx="473" cy="842" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<circle cx="473" cy="842" r="17" fill="none" stroke="#D9463E" stroke-width="1" stroke-opacity="0.7"/>
+<text x="473" y="846" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="51" data-anc="|51|10|0|" data-desc="|51|52|53|54|" data-name="Steam" data-sub="S-QF · 1 magick pass through: Corporealise">
+<circle cx="593" cy="624" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="593" y="628" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="52" data-anc="|52|51|10|0|" data-desc="|52|53|54|" data-name="Lightning" data-sub="S-QF-A · 1 magick pass through: Corporealise">
+<circle cx="523" cy="676" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<text x="523" y="680" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="53" data-anc="|53|52|51|10|0|" data-desc="|53|54|" data-name="Shield" data-sub="S-QF-A-E · 1 magick pass through: Corporealise">
+<circle cx="453" cy="729" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<text x="453" y="733" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="54" data-anc="|54|53|52|51|10|0|" data-desc="|54|" data-name="Arcane" data-sub="S-QF-A-E-S · Corporealise — makes Assatur touchable">
+<circle cx="383" cy="782" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<circle cx="383" cy="782" r="17" fill="none" stroke="#D9463E" stroke-width="1" stroke-opacity="0.7"/>
+<text x="383" y="786" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="55" data-anc="|55|34|0|" data-desc="|55|56|57|58|" data-name="Arcane" data-sub="QR-S · 1 magick pass through: Vortex">
+<circle cx="563" cy="591" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="563" y="595" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="56" data-anc="|56|55|34|0|" data-desc="|56|57|58|" data-name="Ice" data-sub="QR-S-QR · 1 magick pass through: Vortex">
+<circle cx="480" cy="630" r="13.5" fill="#16161D" stroke="#7FC4E8" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="480" y="634" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QR</text>
+</g>
+<g class="n" data-id="57" data-anc="|57|56|55|34|0|" data-desc="|57|58|" data-name="Shield" data-sub="QR-S-QR-E · 1 magick pass through: Vortex">
+<circle cx="397" cy="668" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<text x="397" y="672" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="58" data-anc="|58|57|56|55|34|0|" data-desc="|58|" data-name="Ice" data-sub="QR-S-QR-E-QR · Vortex — a hungry vortex">
+<circle cx="314" cy="707" r="13.5" fill="#16161D" stroke="#7FC4E8" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<circle cx="314" cy="707" r="18.5" fill="none" stroke="#7FC4E8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="314" y="711" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QR</text>
+</g>
+<g class="n" data-id="59" data-anc="|59|0|" data-desc="|59|73|74|60|61|62|63|" data-name="Fire" data-sub="F · 2 magicks pass through: Propp's Party Plasma, Meteor Shower">
+<circle cx="635" cy="477" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<text x="635" y="481" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="60" data-anc="|60|59|0|" data-desc="|60|61|62|63|" data-name="Earth" data-sub="F-D · 1 magick pass through: Meteor Shower">
+<circle cx="543" cy="555" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="543" y="559" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="61" data-anc="|61|60|59|0|" data-desc="|61|62|63|" data-name="Steam" data-sub="F-D-QF · 1 magick pass through: Meteor Shower">
+<circle cx="451" cy="577" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="451" y="581" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="62" data-anc="|62|61|60|59|0|" data-desc="|62|63|" data-name="Earth" data-sub="F-D-QF-D · 1 magick pass through: Meteor Shower">
+<circle cx="359" cy="599" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="359" y="603" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="63" data-anc="|63|62|61|60|59|0|" data-desc="|63|" data-name="Fire" data-sub="F-D-QF-D-F · Meteor Shower — meteors, everywhere">
+<circle cx="267" cy="621" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<circle cx="267" cy="621" r="17" fill="none" stroke="#E87A2D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="267" y="625" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="64" data-anc="|64|6|0|" data-desc="|64|65|66|77|" data-name="Lightning" data-sub="A-A · 2 magicks pass through: Crash To Desktop, Chain Lightning">
+<circle cx="577" cy="402" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<text x="577" y="406" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<g class="n" data-id="65" data-anc="|65|64|6|0|" data-desc="|65|66|" data-name="Fire" data-sub="A-A-F · 1 magick pass through: Crash To Desktop">
+<circle cx="439" cy="520" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<text x="439" y="524" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="66" data-anc="|66|65|64|6|0|" data-desc="|66|" data-name="Life" data-sub="A-A-F-W · Crash To Desktop — the instant-kill joke">
+<circle cx="343" cy="524" r="12" fill="#16161D" stroke="#4FC46F" stroke-width="2.4"/>
+<circle cx="343" cy="524" r="17" fill="none" stroke="#4FC46F" stroke-width="1" stroke-opacity="0.7"/>
+<text x="343" y="528" text-anchor="middle" fill="#4FC46F" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">W</text>
+</g>
+<g class="n" data-id="67" data-anc="|67|12|0|" data-desc="|67|68|69|70|" data-name="Earth" data-sub="QF-D · 1 magick pass through: Napalm">
+<circle cx="537" cy="475" r="12" fill="#16161D" stroke="#8C6844" stroke-width="2.4"/>
+<text x="537" y="479" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">D</text>
+</g>
+<g class="n" data-id="68" data-anc="|68|67|12|0|" data-desc="|68|69|70|" data-name="Life" data-sub="QF-D-W · 1 magick pass through: Napalm">
+<circle cx="443" cy="462" r="12" fill="#16161D" stroke="#4FC46F" stroke-width="2.4"/>
+<text x="443" y="466" text-anchor="middle" fill="#4FC46F" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">W</text>
+</g>
+<g class="n" data-id="69" data-anc="|69|68|67|12|0|" data-desc="|69|70|" data-name="Fire" data-sub="QF-D-W-F · 1 magick pass through: Napalm">
+<circle cx="348" cy="448" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<text x="348" y="452" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="70" data-anc="|70|69|68|67|12|0|" data-desc="|70|" data-name="Fire" data-sub="QF-D-W-F-F · Napalm — phantom airstrike">
+<circle cx="254" cy="435" r="12" fill="#16161D" stroke="#E87A2D" stroke-width="2.4"/>
+<circle cx="254" cy="435" r="17" fill="none" stroke="#E87A2D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="254" y="439" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">F</text>
+</g>
+<g class="n" data-id="71" data-anc="|71|13|12|0|" data-desc="|71|" data-name="Shield" data-sub="QF-A-E · Portal — a blue and an orange portal">
+<circle cx="464" cy="406" r="12" fill="#16161D" stroke="#E8D44D" stroke-width="2.4"/>
+<circle cx="464" cy="406" r="17" fill="none" stroke="#E8D44D" stroke-width="1" stroke-opacity="0.7"/>
+<text x="464" y="410" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">E</text>
+</g>
+<g class="n" data-id="72" data-anc="|72|16|0|" data-desc="|72|" data-name="Arcane" data-sub="D-S · Tractor Pull — pulls instead of pushes">
+<circle cx="577" cy="402" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<circle cx="577" cy="402" r="17" fill="none" stroke="#D9463E" stroke-width="1" stroke-opacity="0.7"/>
+<text x="577" y="406" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="73" data-anc="|73|59|0|" data-desc="|73|74|" data-name="Steam" data-sub="F-QF · 1 magick pass through: Propp's Party Plasma">
+<circle cx="611" cy="373" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<text x="611" y="377" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="74" data-anc="|74|73|59|0|" data-desc="|74|" data-name="Arcane" data-sub="F-QF-S · Propp's Party Plasma — arcane fire spray">
+<circle cx="549" cy="314" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<circle cx="549" cy="314" r="17" fill="none" stroke="#D9463E" stroke-width="1" stroke-opacity="0.7"/>
+<text x="549" y="318" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="75" data-anc="|75|12|0|" data-desc="|75|76|" data-name="Arcane" data-sub="QF-S · 1 magick pass through: Levitation">
+<circle cx="653" cy="351" r="12" fill="#16161D" stroke="#D9463E" stroke-width="2.4"/>
+<text x="653" y="355" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">S</text>
+</g>
+<g class="n" data-id="76" data-anc="|76|75|12|0|" data-desc="|76|" data-name="Steam" data-sub="QF-S-QF · Levitation — float over ground and water">
+<circle cx="610" cy="282" r="13.5" fill="#16161D" stroke="#C8CBD9" stroke-width="2.4" stroke-dasharray="4 2.5"/>
+<circle cx="610" cy="282" r="18.5" fill="none" stroke="#C8CBD9" stroke-width="1" stroke-opacity="0.7"/>
+<text x="610" y="286" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="9.5" font-weight="600">QF</text>
+</g>
+<g class="n" data-id="77" data-anc="|77|64|6|0|" data-desc="|77|" data-name="Lightning" data-sub="A-A-A · Chain Lightning — longer, meaner lightning">
+<circle cx="678" cy="262" r="12" fill="#16161D" stroke="#9B7BE8" stroke-width="2.4"/>
+<circle cx="678" cy="262" r="17" fill="none" stroke="#9B7BE8" stroke-width="1" stroke-opacity="0.7"/>
+<text x="678" y="266" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600">A</text>
+</g>
+<text x="907" y="602" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m2" data-for="2">Revive</text>
+<text x="750" y="231" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m5" data-for="5">Grease</text>
+<text x="829" y="238" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m8" data-for="8">Haste</text>
+<text x="861" y="336" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m9" data-for="9">Rain</text>
+<text x="653" y="637" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m11" data-for="11">Nullify</text>
+<text x="1033" y="243" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m15" data-for="15">Thunder Bolt</text>
+<text x="1103" y="302" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m19" data-for="19">Tornado</text>
+<text x="1243" y="341" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m23" data-for="23">Conflagration</text>
+<text x="995" y="475" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m25" data-for="25">Time Warp</text>
+<text x="1094" y="525" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m27" data-for="27">Blizzard</text>
+<text x="1080" y="586" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m28" data-for="28">Teleport</text>
+<text x="1215" y="721" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m32" data-for="32">Thunderstorm</text>
+<text x="1001" y="694" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m33" data-for="33">Summon Phoenix</text>
+<text x="992" y="799" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m37" data-for="37">Raise Dead</text>
+<text x="868" y="763" text-anchor="start" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m39" data-for="39">Fear</text>
+<text x="790" y="783" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m41" data-for="41">Charm</text>
+<text x="688" y="935" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m45" data-for="45">Summon Death</text>
+<text x="599" y="835" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m47" data-for="47">Invisibility</text>
+<text x="455" y="863" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m50" data-for="50">Summon Elemental</text>
+<text x="360" y="800" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m54" data-for="54">Corporealise</text>
+<text x="285" y="721" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m58" data-for="58">Vortex</text>
+<text x="236" y="630" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m63" data-for="63">Meteor Shower</text>
+<text x="310" y="529" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m66" data-for="66">Crash To Desktop</text>
+<text x="222" y="435" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m70" data-for="70">Napalm</text>
+<text x="434" y="402" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m71" data-for="71">Portal</text>
+<text x="551" y="394" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m72" data-for="72">Tractor Pull</text>
+<text x="529" y="302" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m74" data-for="74">Propp's Party Plasma</text>
+<text x="595" y="268" text-anchor="end" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m76" data-for="76">Levitation</text>
+<text x="671" y="238" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="12" font-style="italic" stroke="#16161D" stroke-width="4" paint-order="stroke" class="ml m77" data-for="77">Chain Lightning</text></svg>
+  <div id="tip"></div>
+</div>
+<footer>hover any step to light the path in from CAST and everything that grows out of it ·
+hover a name to trace its whole recipe · a double ring marks a spot where a magick casts ·
+dashed rings are the hybrids (QF steam, QR ice) · read the trunks: S-E is the ritual opening three
+magicks share, A-S forks into Haste and Teleport, and Chain Lightning is A-A-A straight out ·
+recipes from <a href="https://magicka.fandom.com/wiki/Magicks_(Magicka_1)">Magickapedia</a> and
+<a href="https://kingtoko.com/2011/01/29/magicka-magicks-guide/">kingtoko's guide</a>, roster
+cross-checked against a local install's Magick effect data (which also lists item- and boss-granted
+magicks — Earthquake, Polymorph, Grow, Shrink, Etherealize — that have no element queue and so no
+branch here) · Magicka © Arrowhead Game Studios / Paradox Interactive</footer>
+<script>
+const tip = document.getElementById('tip'), wrap = document.querySelector('.wrap');
+const svg = document.querySelector('.wrap svg');
+function moveTip(e) {
+  const r = wrap.getBoundingClientRect();
+  tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 370) + 'px';
+  tip.style.top = (e.clientY - r.top + 14) + 'px';
+}
+function clearHl() {
+  svg.classList.remove('hov');
+  svg.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  tip.style.display = 'none';
+}
+function light(ids) {
+  svg.classList.add('hov');
+  ids.forEach(id => {
+    const nn = svg.querySelector('.n[data-id="' + id + '"]');
+    if (nn) nn.classList.add('hl');
+    svg.querySelectorAll('line.e.c' + id).forEach(l => l.classList.add('hl'));
+    const ml = svg.querySelector('.ml.m' + id);
+    if (ml) ml.classList.add('hl');
+  });
+}
+svg.querySelectorAll('.n').forEach(n => {
+  n.addEventListener('mouseenter', () => {
+    const ids = (n.dataset.anc + n.dataset.desc).split('|').filter(Boolean);
+    light([...new Set(ids)]);
+    tip.innerHTML = '<b></b><span></span>';
+    tip.firstChild.textContent = n.dataset.name;
+    tip.lastChild.textContent = n.dataset.sub;
+    tip.style.display = 'block';
+  });
+  n.addEventListener('mousemove', moveTip);
+  n.addEventListener('mouseleave', clearHl);
+});
+svg.querySelectorAll('.ml').forEach(ml => {
+  ml.addEventListener('mouseenter', () => {
+    const n = svg.querySelector('.n[data-id="' + ml.dataset.for + '"]');
+    light(n.dataset.anc.split('|').filter(Boolean));
+    tip.innerHTML = '<b></b><span></span>';
+    tip.firstChild.textContent = ml.textContent;
+    tip.lastChild.textContent = n.dataset.sub;
+    tip.style.display = 'block';
+  });
+  ml.addEventListener('mousemove', moveTip);
+  ml.addEventListener('mouseleave', clearHl);
+});
+async function exportPNG() {
+  const clone = svg.cloneNode(true);
+  clone.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  const xml = new XMLSerializer().serializeToString(clone);
+  const url = URL.createObjectURL(new Blob([xml], {type: 'image/svg+xml'}));
+  const img = new Image();
+  await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = url; });
+  const c = document.createElement('canvas');
+  c.width = 3000; c.height = 2020;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#101016';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.drawImage(img, 0, 0, c.width, c.height);
+  URL.revokeObjectURL(url);
+  return new Promise(res => c.toBlob(res, 'image/png'));
+}
+const copybtn = document.getElementById('copybtn');
+function flashCopy(cls, text) {
+  copybtn.classList.add(cls);
+  copybtn.textContent = text;
+  setTimeout(() => { copybtn.classList.remove(cls); copybtn.textContent = '⧉ copy image'; }, 2200);
+}
+copybtn.addEventListener('click', async () => {
+  copybtn.textContent = '… rendering';
+  try {
+    const blob = await exportPNG();
+    await navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
+    flashCopy('ok', '✓ copied');
+  } catch (e) {
+    flashCopy('err', '✕ blocked');
+  }
+});
+</script>
+
+<a href="index.html" id="suitehome" title="All spell graphs" aria-label="All spell graphs">✨</a>
+<style>#suitehome{position:fixed;right:16px;bottom:16px;z-index:9;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;text-decoration:none;background:var(--panel,#1D1A23);border:1px solid var(--line,#3a3647);box-shadow:0 4px 16px #0004;opacity:.85}#suitehome:hover{opacity:1;border-color:var(--accent,#D4AF5E)}</style>
+<script>function sgMark(){try{localStorage.setItem("sg_last",JSON.stringify({u:location.pathname.split("/").pop()+location.hash,t:document.title}))}catch(e){}}sgMark();addEventListener("hashchange",sgMark);</script>
+</body>
+</html>
