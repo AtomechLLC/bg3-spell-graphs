@@ -1,0 +1,351 @@
+<title>Magicka Hooks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101016;color:#E8E6EF;font:400 14px/1.5 "IBM Plex Mono",ui-monospace,monospace;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:22px 18px 30px}
+header{width:100%;max-width:1500px;display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.topline{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font:600 22px Cinzel,Georgia,serif;color:#E3C377;margin:0;letter-spacing:.06em}
+.sub{color:#A7A4B3;font-size:11.5px}
+.legend{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.pchip{background:transparent;border:1px solid #3a3647;border-radius:999px;color:#C9C6D4;
+  font:500 11px "IBM Plex Mono",monospace;padding:3px 11px;cursor:pointer;letter-spacing:.05em;
+  display:inline-flex;align-items:center;gap:6px}
+.pchip:hover{border-color:#6b6880}
+.pchip.on{background:#D4AF5E14;border-color:#6b6880;color:#E8E6EF}
+.pchip:focus-visible{outline:2px solid #E3C377;outline-offset:1px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.femoji{font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;font-style:normal}
+.segrow{margin-left:auto;display:flex;align-items:center;gap:10px}
+#copybtn.ok{border-color:#5fbf83;color:#7fdfa3}
+#copybtn.err{border-color:#e58a9b;color:#e58a9b}
+.wrap{width:100%;max-width:1500px;position:relative}
+svg{width:100%;height:auto;display:block}
+.n,.hook{cursor:pointer}
+svg.hov .n,svg.hov .hook{opacity:.15}
+svg.hov .n.hl,svg.hov .hook.hl{opacity:1}
+svg.hov line.e{opacity:.05}
+svg.hov line.e.hl{stroke-opacity:.95;opacity:1;stroke-width:2.2}
+line.e.offch{display:none}
+#tip{position:absolute;pointer-events:none;background:#211E2Bee;border:1px solid #3a3647;
+  border-radius:8px;padding:7px 11px;font-size:12.5px;display:none;z-index:2;max-width:360px;
+  box-shadow:0 8px 28px #000A}
+#tip b{color:#E3C377;display:block;font-size:13px}
+#tip span{color:#A7A4B3}
+footer{color:#8a879a;font-size:11px;margin-top:10px;max-width:1500px;text-align:center;line-height:1.8}
+footer a{color:#D4AF5E;text-decoration:none}
+::selection{background:#D4AF5E44}
+.fsc{display:inline-flex;align-items:center;gap:7px;border:1px solid #3a3647;
+  border-radius:999px;padding:4px 12px;font:500 11px "IBM Plex Mono",monospace;color:#C9C6D4;
+  text-decoration:none;letter-spacing:.05em}
+.fsc:hover{border-color:#D4AF5E;color:#E3C377}
+</style>
+<header>
+  <div class="topline">
+    <div><h1>Magicka Hooks</h1>
+    <div class="sub">6 states · 21 elements &amp; magicks · 30 spokes —
+what BG3 hides in status rows, Magicka wears as its whole combat system</div></div>
+    <div class="segrow">
+      <a class="fsc" href="http://funsmith.club" target="_blank" rel="noopener" title="Funsmith Club — game design community on Discord"><svg viewBox="0 0 127.14 96.36" width="16" height="12" fill="currentColor" aria-hidden="true"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>funsmith.club</a>
+      <button id="copybtn" class="pchip" title="Copy the current view as a PNG image">⧉ copy image</button>
+    </div>
+  </div>
+  <div class="legend"><button class="pchip lc on" data-h="wet"><span class="femoji">💧</span><span class="dot" style="background:#3D7BD9"></span>wet</button><button class="pchip lc on" data-h="frozen"><span class="femoji">🧊</span><span class="dot" style="background:#7FC4E8"></span>frozen</button><button class="pchip lc on" data-h="burning"><span class="femoji">🔥</span><span class="dot" style="background:#E87A2D"></span>burning</button><button class="pchip lc on" data-h="grease"><span class="femoji">🛢</span><span class="dot" style="background:#C9B458"></span>grease</button><button class="pchip lc on" data-h="barrier"><span class="femoji">🛡</span><span class="dot" style="background:#E8D44D"></span>barrier</button><button class="pchip lc on" data-h="clash"><span class="femoji">✨</span><span class="dot" style="background:#D9463E"></span>beam clash</button>
+    <button class="pchip" id="allch">all</button></div>
+</header>
+<div class="wrap">
+  <svg viewBox="0 0 1500 960" role="img" aria-label="Magicka's game-states with the elements and magicks that create and exploit them">
+  <defs><filter id="blur"><feGaussianBlur stdDeviation="26"/></filter><marker id="m3D7BD9" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#3D7BD9"/></marker><marker id="m4FC46F" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#4FC46F"/></marker><marker id="m7FC4E8" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#7FC4E8"/></marker><marker id="m8C6844" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#8C6844"/></marker><marker id="m8a879a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#8a879a"/></marker><marker id="m9B7BE8" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#9B7BE8"/></marker><marker id="mA8DCE8" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#A8DCE8"/></marker><marker id="mC8CBD9" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#C8CBD9"/></marker><marker id="mC9B458" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#C9B458"/></marker><marker id="mD9463E" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#D9463E"/></marker><marker id="mE3C377" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#E3C377"/></marker><marker id="mE87A2D" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#E87A2D"/></marker><marker id="mE8D44D" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#E8D44D"/></marker></defs>
+  <rect width="1500" height="960" fill="#16161D" rx="14"/>
+<ellipse cx="750.0" cy="490" rx="190" ry="150" fill="none" stroke="#2A2734" stroke-width="1.5" stroke-dasharray="3 6"/>
+<ellipse cx="750.0" cy="490" rx="190" ry="150" fill="#D4AF5E" opacity="0.04" filter="url(#blur)"/>
+<text x="750.0" y="495" text-anchor="middle" fill="#6b6880" font-family="Cinzel,Georgia,serif" font-size="15" letter-spacing="3">THE STATES</text>
+<line x1="781" y1="354" x2="878" y2="398" stroke="#E3C377" stroke-opacity="0.55" stroke-width="2.2" marker-end="url(#mE3C377)" class="e t-chain h-wet h-frozen"><title>wet + cold = frozen</title></line>
+<line x1="781" y1="626" x2="878" y2="582" stroke="#E3C377" stroke-opacity="0.55" stroke-width="2.2" marker-end="url(#mE3C377)" class="e t-chain h-grease h-burning"><title>grease + fire = burning</title></line>
+<line x1="948" y1="325" x2="786" y2="337" stroke="#3D7BD9" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m3D7BD9)" class="e t-make h-wet n-water"/>
+<line x1="1042" y1="435" x2="784" y2="351" stroke="#3D7BD9" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m3D7BD9)" class="e t-make h-wet n-rain"/>
+<line x1="792" y1="106" x2="756" y2="305" stroke="#3D7BD9" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m3D7BD9)" class="e t-make h-wet n-thunderstorm"/>
+<line x1="556" y1="219" x2="719" y2="321" stroke="#C8CBD9" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mC8CBD9)" class="e t-make h-wet n-steam"/>
+<line x1="714" y1="341" x2="519" y2="347" stroke="#9B7BE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m9B7BE8)" class="e t-use h-wet n-lightning"/>
+<line x1="775" y1="314" x2="861" y2="225" stroke="#9B7BE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m9B7BE8)" class="e t-use h-wet n-chain-l"/>
+<line x1="736" y1="307" x2="658" y2="129" stroke="#9B7BE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m9B7BE8)" class="e t-use h-wet n-thunderbolt"/>
+<line x1="773" y1="312" x2="939" y2="110" stroke="#A8DCE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mA8DCE8)" class="e t-use h-wet n-cold"/>
+<line x1="766" y1="372" x2="911" y2="660" stroke="#8a879a" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#m8a879a)" class="e t-counter h-wet n-fire"/>
+<line x1="952" y1="116" x2="919" y2="379" stroke="#A8DCE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mA8DCE8)" class="e t-make h-frozen n-cold"/>
+<line x1="1127" y1="329" x2="948" y2="402" stroke="#A8DCE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mA8DCE8)" class="e t-make h-frozen n-blizzard"/>
+<line x1="1033" y1="578" x2="936" y2="444" stroke="#7FC4E8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m7FC4E8)" class="e t-make h-frozen n-vortex"/>
+<line x1="900" y1="448" x2="788" y2="698" stroke="#E3C377" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE3C377)" class="e t-use h-frozen n-earth"/>
+<line x1="935" y1="385" x2="1045" y2="221" stroke="#8C6844" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m8C6844)" class="e t-use h-frozen n-tornado"/>
+<line x1="921" y1="657" x2="917" y2="601" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-make h-burning n-fire"/>
+<line x1="1158" y1="539" x2="950" y2="561" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-make h-burning n-conflagration"/>
+<line x1="1034" y1="754" x2="934" y2="595" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-make h-burning n-napalm"/>
+<line x1="908" y1="806" x2="914" y2="601" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-make h-burning n-meteor"/>
+<line x1="1145" y1="675" x2="947" y2="581" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-make h-burning n-phoenix"/>
+<line x1="923" y1="530" x2="968" y2="348" stroke="#8a879a" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#m8a879a)" class="e t-counter h-burning n-water"/>
+<line x1="943" y1="542" x2="1046" y2="459" stroke="#8a879a" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#m8a879a)" class="e t-counter h-burning n-rain"/>
+<line x1="704" y1="859" x2="743" y2="675" stroke="#C9B458" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mC9B458)" class="e t-make h-grease n-grease-m"/>
+<line x1="785" y1="649" x2="897" y2="677" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-use h-grease n-fire"/>
+<line x1="399" y1="690" x2="556" y2="585" stroke="#E8D44D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE8D44D)" class="e t-make h-barrier n-shield"/>
+<line x1="613" y1="588" x2="757" y2="705" stroke="#8C6844" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m8C6844)" class="e t-use h-barrier n-earth"/>
+<line x1="619" y1="577" x2="898" y2="675" stroke="#E87A2D" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mE87A2D)" class="e t-use h-barrier n-fire"/>
+<line x1="571" y1="532" x2="503" y2="372" stroke="#9B7BE8" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m9B7BE8)" class="e t-use h-barrier n-lightning"/>
+<line x1="551" y1="556" x2="373" y2="511" stroke="#8a879a" stroke-opacity="0.30" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#m8a879a)" class="e t-counter h-barrier n-arcane"/>
+<line x1="372" y1="496" x2="552" y2="428" stroke="#D9463E" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#mD9463E)" class="e t-make h-clash n-arcane"/>
+<line x1="367" y1="361" x2="550" y2="406" stroke="#4FC46F" stroke-opacity="0.30" stroke-width="1.5" marker-end="url(#m4FC46F)" class="e t-make h-clash n-life"/>
+<g class="hook" data-h="wet" data-name="Wet" data-sub="soaked — lightning doubles and chains, cold freezes solid, fire won't stick · 4 in → 5 out">
+<circle cx="750" cy="340" r="28" fill="#16161D" stroke="#3D7BD9" stroke-width="2.6"/>
+<text x="750" y="347" text-anchor="middle" font-size="21" class="femoji">💧</text>
+<text x="750" y="303" text-anchor="middle" fill="#3D7BD9" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" letter-spacing="1.6" stroke="#16161D" stroke-width="5" paint-order="stroke">WET</text>
+</g>
+<g class="hook" data-h="frozen" data-name="Frozen" data-sub="solid ice — helpless until it thaws, and physical force shatters for massive damage · 3 in → 2 out">
+<circle cx="915" cy="415" r="28" fill="#16161D" stroke="#7FC4E8" stroke-width="2.6"/>
+<text x="915" y="422" text-anchor="middle" font-size="21" class="femoji">🧊</text>
+<text x="915" y="378" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" letter-spacing="1.6" stroke="#16161D" stroke-width="5" paint-order="stroke">FROZEN</text>
+</g>
+<g class="hook" data-h="burning" data-name="Burning" data-sub="fire over time — panic, damage, and spreading until doused · 5 in → 2 out">
+<circle cx="915" cy="565" r="28" fill="#16161D" stroke="#E87A2D" stroke-width="2.6"/>
+<text x="915" y="572" text-anchor="middle" font-size="21" class="femoji">🔥</text>
+<text x="915" y="612" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" letter-spacing="1.6" stroke="#16161D" stroke-width="5" paint-order="stroke">BURNING</text>
+</g>
+<g class="hook" data-h="grease" data-name="Grease" data-sub="a slick, flammable floor — enemies slip, and one spark makes it a firestorm · 1 in → 1 out">
+<circle cx="750" cy="640" r="28" fill="#16161D" stroke="#C9B458" stroke-width="2.6"/>
+<text x="750" y="647" text-anchor="middle" font-size="21" class="femoji">🛢</text>
+<text x="750" y="687" text-anchor="middle" fill="#C9B458" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" letter-spacing="1.6" stroke="#16161D" stroke-width="5" paint-order="stroke">GREASE</text>
+</g>
+<g class="hook" data-h="barrier" data-name="Barrier" data-sub="walls, domes, mines and wards — the arena itself becomes a spell · 1 in → 4 out">
+<circle cx="585" cy="565" r="28" fill="#16161D" stroke="#E8D44D" stroke-width="2.6"/>
+<text x="585" y="572" text-anchor="middle" font-size="21" class="femoji">🛡</text>
+<text x="585" y="612" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" letter-spacing="1.6" stroke="#16161D" stroke-width="5" paint-order="stroke">BARRIER</text>
+</g>
+<g class="hook" data-h="clash" data-name="Beam Clash" data-sub="crossed beams detonate — the co-op hazard that defines the game's comedy · 2 in → 0 out">
+<circle cx="585" cy="415" r="28" fill="#16161D" stroke="#D9463E" stroke-width="2.6"/>
+<text x="585" y="422" text-anchor="middle" font-size="21" class="femoji">✨</text>
+<text x="585" y="378" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="11" font-weight="600" letter-spacing="1.6" stroke="#16161D" stroke-width="5" paint-order="stroke">BEAM CLASH</text>
+</g>
+<g class="n" data-id="water" data-name="Water (Q)" data-sub="creates wet: soaks with every spray · counters burning: douses">
+<circle cx="974" cy="323" r="24" fill="#16161D" stroke="#3D7BD9" stroke-width="2.6"/>
+<text x="974" y="329" text-anchor="middle" font-size="17" class="femoji" fill="#3D7BD9">💧</text>
+<text x="974" y="291" text-anchor="middle" fill="#3D7BD9" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">WATER <tspan fill="#6b6880">Q</tspan></text>
+</g>
+<g class="n" data-id="rain" data-name="Rain" data-sub="creates wet: wets the whole field · counters burning: douses the whole field">
+<circle cx="1067" cy="443" r="16" fill="#16161D" stroke="#3D7BD9" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1067" y="447" text-anchor="middle" fill="#3D7BD9" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1067" y="418" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Rain</text>
+</g>
+<g class="n" data-id="thunderstorm" data-name="Thunderstorm" data-sub="creates wet: rains while it strikes">
+<circle cx="796" cy="80" r="16" fill="#16161D" stroke="#9B7BE8" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="796" y="84" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="796" y="55" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Thunderstorm</text>
+</g>
+<g class="n" data-id="steam" data-name="Steam (QF)" data-sub="creates wet: condenses onto targets">
+<circle cx="534" cy="205" r="24" fill="#16161D" stroke="#C8CBD9" stroke-width="2.6"/>
+<text x="534" y="211" text-anchor="middle" font-size="17" class="femoji" fill="#C8CBD9">♨</text>
+<text x="534" y="173" text-anchor="middle" fill="#C8CBD9" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">STEAM <tspan fill="#6b6880">QF</tspan></text>
+</g>
+<g class="n" data-id="lightning" data-name="Lightning (A)" data-sub="exploits wet: conducts — double damage, self-zap for wet casters · exploits barrier: lightning storms (E + A)">
+<circle cx="493" cy="348" r="24" fill="#16161D" stroke="#9B7BE8" stroke-width="2.6"/>
+<text x="493" y="354" text-anchor="middle" font-size="17" class="femoji" fill="#9B7BE8">⚡</text>
+<text x="493" y="316" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">LIGHTNING <tspan fill="#6b6880">A</tspan></text>
+</g>
+<g class="n" data-id="chain-l" data-name="Chain Lightning" data-sub="exploits wet: chains harder through the soaked">
+<circle cx="879" cy="207" r="16" fill="#16161D" stroke="#9B7BE8" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="879" y="211" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="879" y="182" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Chain Lightning</text>
+</g>
+<g class="n" data-id="thunderbolt" data-name="Thunder Bolt" data-sub="exploits wet: lands the big bolt">
+<circle cx="648" cy="105" r="16" fill="#16161D" stroke="#9B7BE8" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="648" y="109" text-anchor="middle" fill="#9B7BE8" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="648" y="80" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Thunder Bolt</text>
+</g>
+<g class="n" data-id="cold" data-name="Cold (R)" data-sub="exploits wet: freezes the soaked solid · creates frozen: freezes the wet">
+<circle cx="956" cy="90" r="24" fill="#16161D" stroke="#A8DCE8" stroke-width="2.6"/>
+<text x="956" y="96" text-anchor="middle" font-size="17" class="femoji" fill="#A8DCE8">❄</text>
+<text x="956" y="58" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">COLD <tspan fill="#6b6880">R</tspan></text>
+</g>
+<g class="n" data-id="fire" data-name="Fire (F)" data-sub="counters wet: dries — and wet refuses burning · creates burning: ignites on touch · exploits grease: one spark, one firestorm · exploits barrier: fire mines and storms (E + F)">
+<circle cx="922" cy="683" r="24" fill="#16161D" stroke="#E87A2D" stroke-width="2.6"/>
+<text x="922" y="689" text-anchor="middle" font-size="17" class="femoji" fill="#E87A2D">🔥</text>
+<text x="922" y="724" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">FIRE <tspan fill="#6b6880">F</tspan></text>
+</g>
+<g class="n" data-id="blizzard" data-name="Blizzard" data-sub="creates frozen: freezes everyone, caster included">
+<circle cx="1152" cy="319" r="16" fill="#16161D" stroke="#A8DCE8" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1152" y="323" text-anchor="middle" fill="#A8DCE8" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1152" y="294" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Blizzard</text>
+</g>
+<g class="n" data-id="vortex" data-name="Vortex" data-sub="creates frozen: ice-cold pull">
+<circle cx="1048" cy="599" r="16" fill="#16161D" stroke="#7FC4E8" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1048" y="603" text-anchor="middle" fill="#7FC4E8" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1048" y="632" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Vortex</text>
+</g>
+<g class="n" data-id="earth" data-name="Earth (D)" data-sub="exploits frozen: shatters — the boulder crit · exploits barrier: stone walls (E + D)">
+<circle cx="778" cy="722" r="24" fill="#16161D" stroke="#8C6844" stroke-width="2.6"/>
+<text x="778" y="728" text-anchor="middle" font-size="17" class="femoji" fill="#8C6844">🪨</text>
+<text x="778" y="763" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">EARTH <tspan fill="#6b6880">D</tspan></text>
+</g>
+<g class="n" data-id="tornado" data-name="Tornado" data-sub="exploits frozen: launches the helpless">
+<circle cx="1060" cy="200" r="16" fill="#16161D" stroke="#8C6844" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1060" y="204" text-anchor="middle" fill="#8C6844" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1060" y="175" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Tornado</text>
+</g>
+<g class="n" data-id="conflagration" data-name="Conflagration" data-sub="creates burning: a rolling heat wave">
+<circle cx="1184" cy="536" r="16" fill="#16161D" stroke="#E87A2D" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1184" y="540" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1184" y="569" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Conflagration</text>
+</g>
+<g class="n" data-id="napalm" data-name="Napalm" data-sub="creates burning: airstrike-grade ignition">
+<circle cx="1048" cy="776" r="16" fill="#16161D" stroke="#E87A2D" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1048" y="780" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1048" y="809" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Napalm</text>
+</g>
+<g class="n" data-id="meteor" data-name="Meteor Shower" data-sub="creates burning: meteors ignite where they land">
+<circle cx="908" cy="832" r="16" fill="#16161D" stroke="#E87A2D" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="908" y="836" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="908" y="865" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Meteor Shower</text>
+</g>
+<g class="n" data-id="phoenix" data-name="Summon Phoenix" data-sub="creates burning: the bird burns as it heals">
+<circle cx="1168" cy="686" r="16" fill="#16161D" stroke="#E87A2D" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="1168" y="690" text-anchor="middle" fill="#E87A2D" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="1168" y="719" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Summon Phoenix</text>
+</g>
+<g class="n" data-id="grease-m" data-name="Grease" data-sub="creates grease: paints the floor">
+<circle cx="699" cy="885" r="16" fill="#16161D" stroke="#C9B458" stroke-width="2" stroke-dasharray="4 2.5"/>
+<text x="699" y="889" text-anchor="middle" fill="#C9B458" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">MK</text>
+<text x="699" y="918" text-anchor="middle" fill="#C9C6D4" font-family="IBM Plex Mono,monospace" font-size="11" stroke="#16161D" stroke-width="4" paint-order="stroke">Grease</text>
+</g>
+<g class="n" data-id="shield" data-name="Shield (E)" data-sub="creates barrier: walls and domes">
+<circle cx="378" cy="704" r="24" fill="#16161D" stroke="#E8D44D" stroke-width="2.6"/>
+<text x="378" y="710" text-anchor="middle" font-size="17" class="femoji" fill="#E8D44D">⬟</text>
+<text x="378" y="745" text-anchor="middle" fill="#E8D44D" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">SHIELD <tspan fill="#6b6880">E</tspan></text>
+</g>
+<g class="n" data-id="arcane" data-name="Arcane (S)" data-sub="counters barrier: the beam grinds barriers down · creates beam clash: the red beam">
+<circle cx="347" cy="505" r="24" fill="#16161D" stroke="#D9463E" stroke-width="2.6"/>
+<text x="347" y="511" text-anchor="middle" font-size="17" class="femoji" fill="#D9463E">✦</text>
+<text x="347" y="546" text-anchor="middle" fill="#D9463E" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">ARCANE <tspan fill="#6b6880">S</tspan></text>
+</g>
+<g class="n" data-id="life" data-name="Life (W)" data-sub="creates beam clash: the heal beam — cross them and duck">
+<circle cx="341" cy="355" r="24" fill="#16161D" stroke="#4FC46F" stroke-width="2.6"/>
+<text x="341" y="361" text-anchor="middle" font-size="17" class="femoji" fill="#4FC46F">✚</text>
+<text x="341" y="323" text-anchor="middle" fill="#4FC46F" font-family="IBM Plex Mono,monospace" font-size="10.5" font-weight="600" letter-spacing="1" stroke="#16161D" stroke-width="4" paint-order="stroke">LIFE <tspan fill="#6b6880">W</tspan></text>
+</g></svg>
+  <div id="tip"></div>
+</div>
+<footer>hover a state to see its whole economy · hover an element or magick (dashed ring, MK) for its roles ·
+arrows point the way the combo flows: in to create the state, out to spend it · dashed spokes are counters ·
+the gold chords are the wheel's own chemistry: wet + cold = frozen, grease + fire = burning ·
+companion views: the element wheel (Magicka Chemistry) and the recipe trie (Casting Tree) ·
+Magicka © Arrowhead Game Studios / Paradox Interactive</footer>
+<script>
+const tip = document.getElementById('tip'), wrap = document.querySelector('.wrap');
+const svg = document.querySelector('.wrap svg');
+function moveTip(e) {
+  const r = wrap.getBoundingClientRect();
+  tip.style.left = Math.min(e.clientX - r.left + 14, r.width - 370) + 'px';
+  tip.style.top = (e.clientY - r.top + 14) + 'px';
+}
+function clearHl() {
+  svg.classList.remove('hov');
+  svg.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  tip.style.display = 'none';
+}
+function showTip(el) {
+  tip.innerHTML = '<b></b><span></span>';
+  tip.firstChild.textContent = el.dataset.name;
+  tip.lastChild.textContent = el.dataset.sub;
+  tip.style.display = 'block';
+}
+document.querySelectorAll('.n').forEach(n => {
+  n.addEventListener('mouseenter', () => {
+    svg.classList.add('hov');
+    n.classList.add('hl');
+    svg.querySelectorAll('line.e.n-' + n.dataset.id).forEach(l => {
+      if (l.classList.contains('offch')) return;
+      l.classList.add('hl');
+      const h = [...l.classList].find(c => c.indexOf('h-') === 0).slice(2);
+      const hk = svg.querySelector('.hook[data-h="' + h + '"]');
+      if (hk) hk.classList.add('hl');
+    });
+    showTip(n);
+  });
+  n.addEventListener('mousemove', moveTip);
+  n.addEventListener('mouseleave', clearHl);
+});
+document.querySelectorAll('.hook').forEach(hk => {
+  hk.addEventListener('mouseenter', () => {
+    svg.classList.add('hov');
+    hk.classList.add('hl');
+    svg.querySelectorAll('line.e.h-' + hk.dataset.h).forEach(l => {
+      if (l.classList.contains('offch')) return;
+      l.classList.add('hl');
+      [...l.classList].forEach(c => {
+        if (c.indexOf('n-') === 0) {
+          const nn = svg.querySelector('.n[data-id="' + c.slice(2) + '"]');
+          if (nn) nn.classList.add('hl');
+        }
+        if (c.indexOf('h-') === 0 && c.slice(2) !== hk.dataset.h) {
+          const oh = svg.querySelector('.hook[data-h="' + c.slice(2) + '"]');
+          if (oh) oh.classList.add('hl');
+        }
+      });
+    });
+    showTip(hk);
+  });
+  hk.addEventListener('mousemove', moveTip);
+  hk.addEventListener('mouseleave', clearHl);
+});
+const HKS = ["wet", "frozen", "burning", "grease", "barrier", "clash"];
+const chs = new Set(HKS);
+function applyCh() {
+  svg.querySelectorAll('line.e').forEach(l => {
+    const hs = [...l.classList].filter(c => c.indexOf('h-') === 0).map(c => c.slice(2));
+    l.classList.toggle('offch', !hs.some(h => chs.has(h)));
+  });
+  svg.querySelectorAll('.hook').forEach(h =>
+    h.style.opacity = chs.has(h.dataset.h) ? '' : '0.25');
+  document.querySelectorAll('.lc').forEach(b => b.classList.toggle('on', chs.has(b.dataset.h)));
+}
+document.querySelectorAll('.lc').forEach(b => b.addEventListener('click', () => {
+  if (chs.size === HKS.length) { chs.clear(); chs.add(b.dataset.h); }
+  else if (chs.has(b.dataset.h)) { chs.delete(b.dataset.h); if (!chs.size) HKS.forEach(k => chs.add(k)); }
+  else chs.add(b.dataset.h);
+  applyCh();
+}));
+document.getElementById('allch').addEventListener('click', () => {
+  HKS.forEach(k => chs.add(k));
+  applyCh();
+});
+async function exportPNG() {
+  const clone = svg.cloneNode(true);
+  clone.querySelectorAll('line.e.offch').forEach(l => l.remove());
+  clone.querySelectorAll('.hl').forEach(x => x.classList.remove('hl'));
+  const xml = new XMLSerializer().serializeToString(clone);
+  const url = URL.createObjectURL(new Blob([xml], {type: 'image/svg+xml'}));
+  const img = new Image();
+  await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = url; });
+  const c = document.createElement('canvas');
+  c.width = 3000; c.height = 1920;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#101016';
+  ctx.fillRect(0, 0, c.width, c.height);
+  ctx.drawImage(img, 0, 0, c.width, c.height);
+  URL.revokeObjectURL(url);
+  return new Promise(res => c.toBlob(res, 'image/png'));
+}
+const copybtn = document.getElementById('copybtn');
+function flashCopy(cls, text) {
+  copybtn.classList.add(cls);
+  copybtn.textContent = text;
+  setTimeout(() => { copybtn.classList.remove(cls); copybtn.textContent = '⧉ copy image'; }, 2200);
+}
+copybtn.addEventListener('click', async () => {
+  copybtn.textContent = '… rendering';
+  try {
+    const blob = await exportPNG();
+    await navigator.clipboard.write([new ClipboardItem({'image/png': blob})]);
+    flashCopy('ok', '✓ copied');
+  } catch (e) {
+    flashCopy('err', '✕ blocked');
+  }
+});
+</script>
