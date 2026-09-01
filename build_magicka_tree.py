@@ -670,29 +670,36 @@ function formOf(q) {
   if (s.has('arcane') || s.has('life')) return 'casts as: a beam — the other elements ride the beam';
   return 'casts as: a spray / arc from the staff';
 }
-const DMGF = {water: 0, life: -180, shield: 0, cold: 25, lightning: 250,
-              arcane: 225, earth: 150, fire: 60, steam: 280, ice: 180};
+const DMGF = {cold: 25, lightning: 250, arcane: 225, fire: 60, steam: 280};
 let fpClosed = false;
 const fpop = document.getElementById('fpop');
 function updateFpop(w) {
   const node = TRIE[w.node];
-  const freeform = Q.length > 0 && (w.off || !node.m);
-  if (!freeform || fpClosed) { fpop.hidden = true; return; }
+  const isRealMagick = !w.off && node.m && !node.s;
+  if (!Q.length || isRealMagick || fpClosed) { fpop.hidden = true; return; }
   const counts = {};
   Q.forEach(e => { counts[e] = (counts[e] || 0) + 1; });
-  let dmg = 0, heal = 0;
-  for (const e of Object.keys(counts)) {
-    const c = DMGF[e] * Math.sqrt(counts[e] / Q.length);
-    if (c >= 0) dmg += c; else heal -= c;
+  const ne = counts.earth || 0, ni = counts.ice || 0;
+  let dmg = 0, heal = 0, law = 'base &times; &radic;count';
+  if (ne > 0) {                    // the rock: quadratic, carries the rest as payload
+    dmg += 150 * ne * ne + 275 * ni * ni;
+    law = 'the rock is quadratic: 150&times;n&sup2; (+275&times;n&sup2; for ice inside it)';
+  } else {
+    if (ni > 0) dmg += 275 * Math.sqrt(ni);
+    for (const e of Object.keys(DMGF)) {
+      if (counts[e]) dmg += DMGF[e] * Math.sqrt(counts[e]);
+    }
+    if (counts.life) heal += 180 * Math.sqrt(counts.life);
   }
   let est = '';
   if (dmg > 0) est += ' &middot; ~' + Math.round(dmg) + ' dmg';
   if (heal > 0) est += ' &middot; ~' + Math.round(heal) + ' healing';
-  if (counts.water) est += ' &middot; push ' + Math.round(70 * Math.sqrt(counts.water / Q.length));
+  if (counts.water && !ne) est += ' &middot; push ' + Math.round(70 * counts.water);
+  const title = (!w.off && node.m && node.s) ? node.m[0].toUpperCase() : 'FREEFORM SPELL';
   let html = '<span class="fx" title="dismiss until the queue clears">&#10005;</span>' +
-    '<h3>FREEFORM SPELL &middot; ' + Q.length + '/5 slots' + est + '</h3>' +
+    '<h3>' + title + ' &middot; ' + Q.length + '/5 slots' + est + '</h3>' +
     '<div class="fform">' + formOf(Q) +
-    ' &middot; damage = base &times; &radic;share (decompiled from Magicka.Defines)</div>';
+    ' &middot; ' + law + ' (decompiled from Magicka.Defines)</div>';
   for (const e of Object.keys(counts)) {
     const n = counts[e];
     const info = EFFECT_INFO[e];

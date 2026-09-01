@@ -1,9 +1,9 @@
 {
- "scaling": "amount = base * sqrt(element share of queue)",
+ "scaling": "sprays/beams/arcs: amount = base * sqrt(count); the rock is quadratic: earth 150*n^2 (+ice 275*n^2 inside it); water push is linear 70*n",
  "forward": {
-  "earth": 150,
+  "earth": "150*n^2 (projectile)",
   "ice": 180,
-  "iceearth_pair": 275,
+  "iceearth_pair": "275*n^2 when ice rides an earth rock",
   "lightning": 250,
   "life": -180,
   "arcane": 225,
