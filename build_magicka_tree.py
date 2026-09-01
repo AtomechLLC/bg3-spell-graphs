@@ -110,10 +110,10 @@ print(f"{len(MAGICKS)} recipes + {len(STACKS)} element stacks -> {len(NODES) - 1
 # along the ray, and each element's magick branches fan inside its sector.
 # two side-fans of five rays with north/south deadzones; the biggest trees
 # (cold, steam, life, arcane) sit at fan edges and borrow deadzone space
-SECT = {"cold": -0.98, "ice": -0.49, "water": 0.0, "fire": 0.49, "steam": 0.98,
-        "life": -2.16, "shield": -2.65, "earth": math.pi, "lightning": 2.65, "arcane": 2.16}
-HALFS = {"cold": (0.45, 0.21), "steam": (0.21, 0.45),
-         "life": (0.21, 0.45), "arcane": (0.45, 0.21)}
+SECT = {"cold": -1.24, "ice": -0.62, "water": 0.0, "fire": 0.62, "steam": 1.24,
+        "life": -1.90, "shield": -2.52, "earth": math.pi, "lightning": 2.52, "arcane": 1.90}
+HALFS = {"cold": (0.20, 0.28), "steam": (0.28, 0.20),
+         "life": (0.28, 0.20), "arcane": (0.20, 0.28)}
 ANG = {}
 PURE = set()
 
@@ -136,7 +136,7 @@ GUARD = 0.105
 for rc in NODES[0]["children"]:
     eid = NODES[rc]["elem"]
     c = SECT[eid]
-    hl, hr = HALFS.get(eid, (0.21, 0.21))
+    hl, hr = HALFS.get(eid, (0.28, 0.28))
     PURE.add(rc)
     mark_pure(rc, eid)
     lv = leaves_of(rc)
@@ -284,9 +284,9 @@ for n in NODES[1:]:
 
 placed = []
 def label_box(lx, ly, anchor, text):
-    w = 7.2 * len(text)
+    w = 7.9 * len(text) + 6
     x0 = lx - (w if anchor == "end" else w / 2 if anchor == "middle" else 0)
-    return (x0, ly - 12, x0 + w, ly + 3)
+    return (x0, ly - 13, x0 + w, ly + 4)
 
 def collides(box):
     return any(box[0] < p[2] and p[0] < box[2] and box[1] < p[3] and p[1] < box[3]
