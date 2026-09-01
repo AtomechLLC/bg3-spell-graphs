@@ -695,7 +695,7 @@ footer a{color:#D4AF5E;text-decoration:none}
 </div>
 
 <style>
-#builder{width:100%;max-width:1500px;margin:12px 0 0;background:#15131C;border:1px solid #2A2734;
+#builder{position:relative;width:100%;max-width:1500px;margin:12px 0 0;background:#15131C;border:1px solid #2A2734;
   border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
 .brow1{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 #slots{display:flex;gap:7px}
@@ -738,8 +738,23 @@ svg.q line.e.qf{opacity:1;stroke-opacity:.42;stroke-width:2.2}
 #ghosts text.gk{font:600 9.5px "IBM Plex Mono",monospace;pointer-events:none}
 #ghosts line.ge{stroke-dasharray:3 4}
 svg.q #ghosts{opacity:1}
+#fpop{position:absolute;bottom:calc(100% + 12px);left:0;z-index:6;width:min(460px,92vw);
+  background:#1B1822F8;border:1px solid #3a3647;border-radius:12px;padding:13px 16px;
+  box-shadow:0 10px 34px #000B;font-size:12px;line-height:1.6}
+#fpop::after{content:"";position:absolute;top:100%;left:34px;border:8px solid transparent;
+  border-top-color:#3a3647}
+#fpop h3{margin:0 0 2px;font:600 12.5px "IBM Plex Mono",monospace;color:#E3C377;letter-spacing:.05em}
+#fpop .fform{color:#A7A4B3;font-style:italic;margin-bottom:8px}
+#fpop .fer{display:flex;gap:8px;align-items:baseline;padding:2px 0}
+#fpop .fer .dot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;align-self:center}
+#fpop .fer b{color:#E8E6EF;font-weight:600;white-space:nowrap}
+#fpop .fer span{color:#A7A4B3}
+#fpop .fwarn{margin-top:8px;padding-top:8px;border-top:1px dashed #3a3647;color:#e5b98a}
+#fpop .fx{position:absolute;top:8px;right:11px;cursor:pointer;color:#6b6880;font-size:13px}
+#fpop .fx:hover{color:#e58a9b}
 </style>
 <div id="builder">
+  <div id="fpop" hidden></div>
   <div class="brow1">
     <div id="slots"></div>
     <div id="rline"></div>
@@ -912,6 +927,57 @@ function push(eid) {
   return true;
 }
 
+const EFFECT_INFO = {
+  water: ['a soaking jet — knocks back and applies WET', 'a wider, harder fire-hose; heavier knockback, more soaked targets'],
+  life: ['a healing beam (self-cast to heal yourself)', 'a much stronger heal per tick'],
+  shield: ['turns the cast into a barrier, ward or mine', 'shield never stacks — one E is all it takes'],
+  cold: ['a chilling mist — slows, and freezes the wet', 'a deeper chill; the wet freeze faster'],
+  lightning: ['a crackling arc — chains, doubled on wet targets', 'harder, longer arcs; brutal on the soaked'],
+  arcane: ['the red beam — steady disintegration', 'beam damage climbs steeply with each stack'],
+  earth: ['a thrown rock — physical impact, shatters the frozen', 'a bigger boulder — the ×5 is the heaviest single hit in the game'],
+  fire: ['a flame cone — ignites, dries the wet', 'a broader, hotter cone; more BURNING per second'],
+  steam: ['scalding steam — damages and soaks at once', 'a denser scald; still carries lightning where water refuses it'],
+  ice: ['an ice-shard volley — physical, chilling', 'a heavier volley'],
+};
+function formOf(q) {
+  const s = new Set(q);
+  if (s.has('shield')) {
+    const rest = q.filter(e => e !== 'shield');
+    if (!rest.length) return 'casts as: a barrier wall';
+    if (rest.includes('earth')) return 'casts as: stone walls (shield shapes the earth)';
+    return 'casts as: wards, mines or an element storm — shield turns the payload into terrain';
+  }
+  if (s.has('earth')) return 'casts as: a projectile — the rock carries every other element as payload';
+  if (s.has('ice')) return 'casts as: a shard volley with the rest riding along';
+  if (s.has('arcane') || s.has('life')) return 'casts as: a beam — the other elements ride the beam';
+  return 'casts as: a spray / arc from the staff';
+}
+let fpClosed = false;
+const fpop = document.getElementById('fpop');
+function updateFpop(w) {
+  const node = TRIE[w.node];
+  const freeform = Q.length > 0 && (w.off || !node.m);
+  if (!freeform || fpClosed) { fpop.hidden = true; return; }
+  const counts = {};
+  Q.forEach(e => { counts[e] = (counts[e] || 0) + 1; });
+  let html = '<span class="fx" title="dismiss until the queue clears">&#10005;</span>' +
+    '<h3>FREEFORM SPELL &middot; ' + Q.length + '/5 slots</h3>' +
+    '<div class="fform">' + formOf(Q) + ' &middot; power scales with every duplicate</div>';
+  for (const e of Object.keys(counts)) {
+    const n = counts[e];
+    const info = EFFECT_INFO[e];
+    html += '<div class="fer"><span class="dot" style="background:' + EINFO[e].col + '"></span>' +
+      '<b>' + EINFO[e].n + (n > 1 ? ' ×' + n : '') + '</b><span>— ' + info[n > 1 ? 1 : 0] + '</span></div>';
+  }
+  const warns = [];
+  if (counts.lightning) warns.push('⚡ never release this while you are wet — the arc grounds through you');
+  if (counts.arcane || counts.life) warns.push('✨ a beam that crosses another wizard’s beam detonates — mind your co-op lanes');
+  if (counts.fire && counts.steam) warns.push('🔥 fire and steam together dry their own wetness — scald first, then burn');
+  if (warns.length) html += '<div class="fwarn">' + warns.join('<br>') + '</div>';
+  fpop.innerHTML = html;
+  fpop.hidden = false;
+  fpop.querySelector('.fx').addEventListener('click', () => { fpClosed = true; fpop.hidden = true; });
+}
 function walk(arr) {
   arr = arr || Q;
   let cur = '0';
@@ -936,6 +1002,8 @@ function refresh() {
   svg.querySelectorAll('.ql, .qf').forEach(x => x.classList.remove('ql', 'qf'));
   svg.classList.toggle('q', Q.length > 0);
   if (!Q.length) {
+    fpClosed = false;
+    fpop.hidden = true;
     rline.innerHTML = 'queue elements &mdash; <kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><kbd>R</kbd> ' +
       '<kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><kbd>F</kbd> &middot; <kbd>&#9003;</kbd> undo &middot; ' +
       '<kbd>esc</kbd> clear &middot; water mixes, annihilating presses are refused (&#10005;) &mdash; the queue only builds castable sequences';
@@ -973,6 +1041,7 @@ function refresh() {
     });
   }
   drawGhosts(w);
+  updateFpop(w);
   const keys = Q.map(e => EINFO[e].k).join('-');
   const node = TRIE[w.node];
   let html = '<b>' + keys + '</b> &middot; ';
