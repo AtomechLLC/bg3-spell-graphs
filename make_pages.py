@@ -14,6 +14,7 @@ PAGES = [
     ("magicka_map.html", "magicka-chemistry.html", "🪄"),
     ("magicka_tree.html", "magicka-casting-tree.html", "🌳"),
     ("magicka_hooks.html", "magicka-hooks.html", "🪝"),
+    ("wow_archetypes.html", "azeroth-archetypes.html", "🏹"),
     ("magicka_bestiary.html", "magicka-bestiary.html", "🐲"),
     ("magicka.html", "magicka.html", "🧙"),
 ]
@@ -149,6 +150,11 @@ the upcast clone farm, duplicate SKUs, and the mechanical-twin matrix.</p></a>
 <div class="meta">WoW Classic · 423 abilities · 32 families · 100% familied</div>
 <p>Every trainer ability from the client's own tables, in function-primary families —
 plus the rank clone farm, the twin matrix, and the Effects Ledger.</p></a>
+<a class="card" href="azeroth-archetypes.html" style="--ac:var(--wow);--face:Marcellus">
+<span class="em">🏹</span><h2>Azeroth Archetypes</h2>
+<div class="meta">WoW Classic · 11 archetypes · 87 variations</div>
+<p>Eleven textbook spell archetypes — Basic Missile, Heal Other, Curse Enemy — each expanded into
+the real Classic abilities that re-sell it, with authentic icons and class colours.</p></a>
 </div>
 <div class="slabel">The sky charts &amp; the atlas</div>
 <div class="cards">
